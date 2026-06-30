@@ -7,5 +7,20 @@
     "noEmit": true,
     "allowImportingTsExtensions": true
   },
-  "include": ["src/ui/**/*.ts", "src/ui/**/*.tsx", "src/utils/**/*.ts"]
+  "include": [
+    "src/ui/**/*.ts",
+    "src/ui/**/*.tsx",
+    "src/utils/statKeyMapper.ts",
+    "src/utils/parseAttachmentEffect.ts",
+    "src/utils/verifiedModifierLoader.ts",
+    "src/utils/externalResearch/**/*.ts",
+    "src/utils/scorer/normalizer.ts",
+    "src/utils/scorer/scenarioProfiles.ts",
+    "src/utils/scorer/scoringWeights.ts",
+    "src/utils/scorer/types.ts"
+  ],
+  "exclude": [
+    "src/ui/**/*SmokeTest*",
+    "src/ui/**/*smokeTest*"
+  ]
 }
