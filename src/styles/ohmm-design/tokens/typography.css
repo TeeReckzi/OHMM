@@ -1,0 +1,44 @@
+/* ============================================================
+   OHMM — TYPOGRAPHY TOKENS
+   Rajdhani for the HUD voice (labels, headings, buttons — always
+   tracked & often uppercased). Inter for readable prose. JetBrains
+   Mono for every number, stat, timestamp and telemetry readout.
+   ============================================================ */
+
+:root {
+  /* ---- Families ---- */
+  --font-display: 'Rajdhani', 'Oswald', sans-serif;   /* UI chrome, labels, headings */
+  --font-body:    'Inter', system-ui, sans-serif;     /* paragraphs, descriptions */
+  --font-mono:    'JetBrains Mono', 'SFMono-Regular', monospace; /* numerics, code, stats */
+
+  /* ---- Type scale (px) — HUD runs tight & small ---- */
+  --text-2xs: 8px;    /* micro badge / star label */
+  --text-xs:  10px;   /* slot labels, meta */
+  --text-sm:  12px;   /* secondary UI, inputs */
+  --text-base:14px;   /* body default (root font-size) */
+  --text-md:  16px;   /* emphasized body */
+  --text-lg:  20px;   /* h3 / panel titles */
+  --text-xl:  26px;   /* h2 */
+  --text-2xl: 34px;   /* h1 */
+  --text-3xl: 46px;   /* hero / display */
+  --text-4xl: 64px;   /* oversized brand numeral */
+
+  /* ---- Weights ---- */
+  --weight-light:    300;
+  --weight-normal:   400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ---- Line heights ---- */
+  --leading-tight:  1.1;
+  --leading-snug:   1.3;
+  --leading-normal: 1.5;
+
+  /* ---- Letter spacing — the HUD signature is wide tracking ---- */
+  --tracking-tight:  -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.08em;
+  --tracking-wider:  0.15em;   /* label default */
+  --tracking-widest: 0.22em;   /* section eyebrows */
+}

@@ -1,0 +1,72 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Accidental unpacked dependency packages at workspace root
+/baseline-browser-mapping/
+/buffer-indexof-polyfill/
+/buffers/
+/commondir/
+/concat-map/
+/convert-source-map/
+/core-util-is/
+/csstype/
+/fill-keys/
+/is-core-module/
+/js-tokens/
+/lightningcss/
+/postcss/
+/react/
+/react-dom/
+/react-refresh/
+
+# Build outputs
+dist/
+dist-ui/
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Temporary / cache
+.cache/
+tmp/
+temp/
+temp_*
+.claude/
+/theme/base64-js/
+
+# Large asset corpora (optional - uncomment if you want to gitignore the image pack)
+# src/ohai/public/assets/ohdb_import_corpus_v2/
+# src/ohai/dist-ui/assets/ohdb_import_corpus_v2/
+
+# Generated registry source is imported by the app and must be committed.
+# Staging scripts remain local tooling.
+src/ohai/src/ui/registries/staging/
+
+# Misc
+*.bak
+*.patch
+*.diff
+
+# Figma / make artifacts (if any local)
+figma-assets/

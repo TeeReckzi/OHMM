@@ -1,0 +1,3672 @@
+{
+  "module": "star_tier_scaling",
+  "moduleStatus": "verified_snapshot_locked",
+  "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+  "sourceOriginalName": "七日世界",
+  "sourceWorkbook": "七日世界.xlsx",
+  "sourceSheetOriginal": "武器防具星級",
+  "sourceSheetEnglish": "Weapon & Armor Stars",
+  "importedAt": "2026-05-17T08:58:16.736Z",
+  "locked": true,
+  "confidence": "B_pending_formula_interpretation",
+  "languagePolicy": {
+    "projectLanguage": "English",
+    "preserveOriginalSourceValues": true,
+    "originalValuesLocation": "blocks[].rows[].original",
+    "normalizedEnglishValuesLocation": "blocks[].rows[].normalized"
+  },
+  "workbook": {
+    "detectedWorkbookPath": "C:\\Users\\tyr3x\\OnceHumanMasterCalc\\data\\raw\\七日世界.xlsx",
+    "sheetCount": 43,
+    "sheetNamesOriginal": [
+      " ",
+      "搖籃",
+      "關鍵詞",
+      "武器",
+      "圖紙",
+      "防具",
+      "套裝",
+      "毛皮",
+      "武器防具星級",
+      "模組來源",
+      "模組核心效果",
+      "模組詞條效果",
+      "料理",
+      "食材",
+      "創意料理",
+      "種植",
+      "養殖",
+      "養殖(特性)",
+      "養殖(食物、水)",
+      "釣魚",
+      "電",
+      "油",
+      "酸",
+      "異常物",
+      "異常物特性",
+      "異常物(非正常收容) ",
+      "商人",
+      "公開事件",
+      "經驗",
+      "溫控塔",
+      "願望箱(舊)",
+      "夢域(舊)",
+      "區域資源(舊)",
+      "專精表(舊)",
+      "專精材料(舊)",
+      "模組來源(舊)",
+      "模組強化.置換(舊)",
+      "模組核心效果(舊)",
+      "模組詞條效果(舊)",
+      "養殖(繼承規則)(舊)",
+      "料理(舊)",
+      "物品(舊)",
+      "電(舊)"
+    ],
+    "sheetNamesEnglish": [
+      " ",
+      "搖籃",
+      "關鍵詞",
+      "武器",
+      "圖紙",
+      "防具",
+      "套裝",
+      "毛皮",
+      "Weapon & Armor Stars",
+      "模組來源",
+      "模組核心效果",
+      "模組詞條效果",
+      "料理",
+      "食材",
+      "創意料理",
+      "種植",
+      "養殖",
+      "養殖(特性)",
+      "養殖(食物、水)",
+      "釣魚",
+      "電",
+      "油",
+      "酸",
+      "異常物",
+      "異常物特性",
+      "異常物(非正常收容) ",
+      "商人",
+      "公開事件",
+      "經驗",
+      "溫控塔",
+      "願望箱(舊)",
+      "夢域(舊)",
+      "區域資源(舊)",
+      "專精表(舊)",
+      "專精材料(舊)",
+      "模組來源(舊)",
+      "模組強化.置換(舊)",
+      "模組核心效果(舊)",
+      "模組詞條效果(舊)",
+      "養殖(繼承規則)(舊)",
+      "料理(舊)",
+      "物品(舊)",
+      "電(舊)"
+    ]
+  },
+  "extraction": {
+    "detectedSheetName": "武器防具星級",
+    "layoutType": "multi_block",
+    "detectedBlocks": 9,
+    "rowCount": 33,
+    "blankRowsSkipped": 936,
+    "warnings": [
+      "Mixed reference table preserved conservatively."
+    ]
+  },
+  "blocks": [
+    {
+      "blockId": "armor-star-up-materials",
+      "blockType": "armor_star_up_materials",
+      "blockTitleOriginal": "防具升星星之彩",
+      "blockTitleEnglish": "Armor Star-Up Materials",
+      "startRow": 1,
+      "endRow": 3,
+      "headerRow": 2,
+      "headerConfidence": "high",
+      "headersOriginal": [
+        "星級",
+        "1 → 2",
+        "2 → 3",
+        "3 → 4",
+        "4 → 5",
+        "5 → 6",
+        "1 → 2",
+        "2 → 3",
+        "3 → 4",
+        "4 → 5"
+      ],
+      "headersEnglishBestEffort": [
+        "Star Level",
+        "1 → 2",
+        "2 → 3",
+        "3 → 4",
+        "4 → 5",
+        "5 → 6",
+        "1 → 2",
+        "2 → 3",
+        "3 → 4",
+        "4 → 5"
+      ],
+      "rows": [
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 3,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 3,
+            "blockTitleOriginal": "防具升星星之彩",
+            "headersOriginal": [
+              "星級",
+              "1 → 2",
+              "2 → 3",
+              "3 → 4",
+              "4 → 5",
+              "5 → 6",
+              "1 → 2",
+              "2 → 3",
+              "3 → 4",
+              "4 → 5"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級",
+                "valueOriginal": "經驗"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "1 → 2",
+                "valueOriginal": 750
+              },
+              {
+                "column": 3,
+                "headerOriginal": "2 → 3",
+                "valueOriginal": 1500
+              },
+              {
+                "column": 4,
+                "headerOriginal": "3 → 4",
+                "valueOriginal": 2250
+              },
+              {
+                "column": 5,
+                "headerOriginal": "4 → 5",
+                "valueOriginal": 3000
+              },
+              {
+                "column": 6,
+                "headerOriginal": "5 → 6",
+                "valueOriginal": 3750
+              },
+              {
+                "column": 7,
+                "headerOriginal": "1 → 2",
+                "valueOriginal": 150
+              },
+              {
+                "column": 8,
+                "headerOriginal": "2 → 3",
+                "valueOriginal": 350
+              },
+              {
+                "column": 9,
+                "headerOriginal": "3 → 4",
+                "valueOriginal": 550
+              },
+              {
+                "column": 10,
+                "headerOriginal": "4 → 5",
+                "valueOriginal": 750
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_star_up_materials-3-經驗",
+            "category": "tier",
+            "blockType": "armor_star_up_materials",
+            "armorSlot": "unknown",
+            "starLevelOriginal": null,
+            "starLevel": null,
+            "tierOriginal": null,
+            "tier": null,
+            "furQualityOriginal": null,
+            "furQuality": null,
+            "itemSlotOriginal": "防具升星星之彩",
+            "itemSlotEnglish": "Armor Star-Up Material",
+            "statOriginal": "經驗",
+            "statEnglish": "Experience",
+            "valueOriginal": "經驗 | 750 | 1500 | 2250 | 3000 | 3750 | 150 | 350 | 550 | 750",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "cost",
+            "notes": [
+              "Upgrade transition costs preserved across original columns."
+            ]
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "blockId": "weapon-star-up-materials",
+      "blockType": "weapon_star_up_materials",
+      "blockTitleOriginal": "武器升星星之彩",
+      "blockTitleEnglish": "Weapon Star-Up Materials",
+      "startRow": 4,
+      "endRow": 6,
+      "headerRow": 5,
+      "headerConfidence": "high",
+      "headersOriginal": [
+        "星級",
+        "1 → 2",
+        "2 → 3",
+        "3 → 4",
+        "4 → 5",
+        "5 → 6",
+        "1 → 2",
+        "2 → 3",
+        "3 → 4",
+        "4 → 5"
+      ],
+      "headersEnglishBestEffort": [
+        "Star Level",
+        "1 → 2",
+        "2 → 3",
+        "3 → 4",
+        "4 → 5",
+        "5 → 6",
+        "1 → 2",
+        "2 → 3",
+        "3 → 4",
+        "4 → 5"
+      ],
+      "rows": [
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 6,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 6,
+            "blockTitleOriginal": "武器升星星之彩",
+            "headersOriginal": [
+              "星級",
+              "1 → 2",
+              "2 → 3",
+              "3 → 4",
+              "4 → 5",
+              "5 → 6",
+              "1 → 2",
+              "2 → 3",
+              "3 → 4",
+              "4 → 5"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級",
+                "valueOriginal": "經驗"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "1 → 2",
+                "valueOriginal": 3000
+              },
+              {
+                "column": 3,
+                "headerOriginal": "2 → 3",
+                "valueOriginal": 6000
+              },
+              {
+                "column": 4,
+                "headerOriginal": "3 → 4",
+                "valueOriginal": 9000
+              },
+              {
+                "column": 5,
+                "headerOriginal": "4 → 5",
+                "valueOriginal": 12000
+              },
+              {
+                "column": 6,
+                "headerOriginal": "5 → 6",
+                "valueOriginal": 15000
+              },
+              {
+                "column": 7,
+                "headerOriginal": "1 → 2",
+                "valueOriginal": 750
+              },
+              {
+                "column": 8,
+                "headerOriginal": "2 → 3",
+                "valueOriginal": 1500
+              },
+              {
+                "column": 9,
+                "headerOriginal": "3 → 4",
+                "valueOriginal": 2250
+              },
+              {
+                "column": 10,
+                "headerOriginal": "4 → 5",
+                "valueOriginal": 3000
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-weapon_star_up_materials-6-經驗",
+            "category": "tier",
+            "blockType": "weapon_star_up_materials",
+            "armorSlot": "unknown",
+            "starLevelOriginal": null,
+            "starLevel": null,
+            "tierOriginal": null,
+            "tier": null,
+            "furQualityOriginal": null,
+            "furQuality": null,
+            "itemSlotOriginal": "武器升星星之彩",
+            "itemSlotEnglish": "Weapon Star-Up Material",
+            "statOriginal": "經驗",
+            "statEnglish": "Experience",
+            "valueOriginal": "經驗 | 3000 | 6000 | 9000 | 12000 | 15000 | 750 | 1500 | 2250 | 3000",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "cost",
+            "notes": [
+              "Upgrade transition costs preserved across original columns."
+            ]
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "blockId": "max-stat-reference",
+      "blockType": "max_stat_reference",
+      "blockTitleOriginal": null,
+      "blockTitleEnglish": "T5 Reference Matrix",
+      "startRow": 11,
+      "endRow": 18,
+      "headerRow": 11,
+      "headerConfidence": "medium",
+      "headersOriginal": [
+        "生命值",
+        "超感強度",
+        "T5汙染抗性",
+        "T5汙染抗性"
+      ],
+      "headersEnglishBestEffort": [
+        "HP",
+        "Super Anomaly Strength",
+        "T5 Pollution Resist",
+        "T5 Pollution Resist"
+      ],
+      "rows": [
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 12,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 12,
+            "blockTitleOriginal": null,
+            "headersOriginal": [
+              "生命值",
+              "超感強度",
+              "T5汙染抗性",
+              "T5汙染抗性"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "生命值",
+                "valueOriginal": "全T5六星金品質 + 金品質毛皮"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "超感強度",
+                "valueOriginal": "全T5六星金品質 + 金品質毛皮"
+              },
+              {
+                "column": 3,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": "全T5六星金品質 + 金品質毛皮"
+              },
+              {
+                "column": 4,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": 12949
+              },
+              {
+                "column": 5,
+                "headerOriginal": null,
+                "valueOriginal": 803
+              },
+              {
+                "column": 6,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": null,
+                "valueOriginal": "頭盔"
+              },
+              {
+                "column": 8,
+                "headerOriginal": null,
+                "valueOriginal": 16
+              },
+              {
+                "column": 9,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": null,
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-max_stat_reference-12-全t5六星金品質-金品質毛皮",
+            "category": "armor",
+            "blockType": "max_stat_reference",
+            "armorSlot": null,
+            "starLevelOriginal": null,
+            "starLevel": null,
+            "tierOriginal": null,
+            "tier": null,
+            "furQualityOriginal": null,
+            "furQuality": null,
+            "itemSlotOriginal": "全T5六星金品質 + 金品質毛皮",
+            "itemSlotEnglish": "All T5 6-Star Gold Quality + Gold Fur",
+            "statOriginal": "生命值 / 超感強度 / 汙染抗性",
+            "statEnglish": "HP / Super Anomaly Strength / Pollution Resist",
+            "valueOriginal": "全T5六星金品質 + 金品質毛皮 | 全T5六星金品質 + 金品質毛皮 | 全T5六星金品質 + 金品質毛皮 | 12949 | 803 | 頭盔 | 16",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Reference table contains mixed sub-sections; preserved conservatively."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 13,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 13,
+            "blockTitleOriginal": null,
+            "headersOriginal": [
+              "生命值",
+              "超感強度",
+              "T5汙染抗性",
+              "T5汙染抗性"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "生命值",
+                "valueOriginal": "全T5六星金品質 + 紫品質毛皮"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "超感強度",
+                "valueOriginal": "全T5六星金品質 + 紫品質毛皮"
+              },
+              {
+                "column": 3,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": "全T5六星金品質 + 紫品質毛皮"
+              },
+              {
+                "column": 4,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": 12300
+              },
+              {
+                "column": 5,
+                "headerOriginal": null,
+                "valueOriginal": 762
+              },
+              {
+                "column": 6,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": null,
+                "valueOriginal": "面具"
+              },
+              {
+                "column": 8,
+                "headerOriginal": null,
+                "valueOriginal": 16
+              },
+              {
+                "column": 9,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": null,
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-max_stat_reference-13-全t5六星金品質-紫品質毛皮",
+            "category": "armor",
+            "blockType": "max_stat_reference",
+            "armorSlot": null,
+            "starLevelOriginal": null,
+            "starLevel": null,
+            "tierOriginal": null,
+            "tier": null,
+            "furQualityOriginal": null,
+            "furQuality": null,
+            "itemSlotOriginal": "全T5六星金品質 + 紫品質毛皮",
+            "itemSlotEnglish": "All T5 6-Star Gold Quality + Purple Fur",
+            "statOriginal": "生命值 / 超感強度 / 汙染抗性",
+            "statEnglish": "HP / Super Anomaly Strength / Pollution Resist",
+            "valueOriginal": "全T5六星金品質 + 紫品質毛皮 | 全T5六星金品質 + 紫品質毛皮 | 全T5六星金品質 + 紫品質毛皮 | 12300 | 762 | 面具 | 16",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Reference table contains mixed sub-sections; preserved conservatively."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 14,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 14,
+            "blockTitleOriginal": null,
+            "headersOriginal": [
+              "生命值",
+              "超感強度",
+              "T5汙染抗性",
+              "T5汙染抗性"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 2,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 3,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 4,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 5,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 6,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": null,
+                "valueOriginal": "衣服"
+              },
+              {
+                "column": 8,
+                "headerOriginal": null,
+                "valueOriginal": 16
+              },
+              {
+                "column": 9,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": null,
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-max_stat_reference-14-衣服",
+            "category": "armor",
+            "blockType": "max_stat_reference",
+            "armorSlot": null,
+            "starLevelOriginal": null,
+            "starLevel": null,
+            "tierOriginal": null,
+            "tier": null,
+            "furQualityOriginal": null,
+            "furQuality": null,
+            "itemSlotOriginal": "衣服",
+            "itemSlotEnglish": "Top",
+            "statOriginal": "生命值 / 超感強度 / 汙染抗性",
+            "statEnglish": "HP / Super Anomaly Strength / Pollution Resist",
+            "valueOriginal": "衣服 | 16",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Reference table contains mixed sub-sections; preserved conservatively."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 15,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 15,
+            "blockTitleOriginal": null,
+            "headersOriginal": [
+              "生命值",
+              "超感強度",
+              "T5汙染抗性",
+              "T5汙染抗性"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 2,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 3,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 4,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 5,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 6,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": null,
+                "valueOriginal": "手套"
+              },
+              {
+                "column": 8,
+                "headerOriginal": null,
+                "valueOriginal": 12
+              },
+              {
+                "column": 9,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": null,
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-max_stat_reference-15-手套",
+            "category": "armor",
+            "blockType": "max_stat_reference",
+            "armorSlot": null,
+            "starLevelOriginal": null,
+            "starLevel": null,
+            "tierOriginal": null,
+            "tier": null,
+            "furQualityOriginal": null,
+            "furQuality": null,
+            "itemSlotOriginal": "手套",
+            "itemSlotEnglish": "Gloves",
+            "statOriginal": "生命值 / 超感強度 / 汙染抗性",
+            "statEnglish": "HP / Super Anomaly Strength / Pollution Resist",
+            "valueOriginal": "手套 | 12",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Reference table contains mixed sub-sections; preserved conservatively."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 16,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 16,
+            "blockTitleOriginal": null,
+            "headersOriginal": [
+              "生命值",
+              "超感強度",
+              "T5汙染抗性",
+              "T5汙染抗性"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 2,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 3,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 4,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 5,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 6,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": null,
+                "valueOriginal": "褲子"
+              },
+              {
+                "column": 8,
+                "headerOriginal": null,
+                "valueOriginal": 12
+              },
+              {
+                "column": 9,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": null,
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-max_stat_reference-16-褲子",
+            "category": "armor",
+            "blockType": "max_stat_reference",
+            "armorSlot": null,
+            "starLevelOriginal": null,
+            "starLevel": null,
+            "tierOriginal": null,
+            "tier": null,
+            "furQualityOriginal": null,
+            "furQuality": null,
+            "itemSlotOriginal": "褲子",
+            "itemSlotEnglish": "Bottoms",
+            "statOriginal": "生命值 / 超感強度 / 汙染抗性",
+            "statEnglish": "HP / Super Anomaly Strength / Pollution Resist",
+            "valueOriginal": "褲子 | 12",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Reference table contains mixed sub-sections; preserved conservatively."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 17,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 17,
+            "blockTitleOriginal": null,
+            "headersOriginal": [
+              "生命值",
+              "超感強度",
+              "T5汙染抗性",
+              "T5汙染抗性"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 2,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 3,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 4,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 5,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 6,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": null,
+                "valueOriginal": "鞋子"
+              },
+              {
+                "column": 8,
+                "headerOriginal": null,
+                "valueOriginal": 12
+              },
+              {
+                "column": 9,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": null,
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-max_stat_reference-17-鞋子",
+            "category": "armor",
+            "blockType": "max_stat_reference",
+            "armorSlot": null,
+            "starLevelOriginal": null,
+            "starLevel": null,
+            "tierOriginal": null,
+            "tier": null,
+            "furQualityOriginal": null,
+            "furQuality": null,
+            "itemSlotOriginal": "鞋子",
+            "itemSlotEnglish": "Shoes",
+            "statOriginal": "生命值 / 超感強度 / 汙染抗性",
+            "statEnglish": "HP / Super Anomaly Strength / Pollution Resist",
+            "valueOriginal": "鞋子 | 12",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Reference table contains mixed sub-sections; preserved conservatively."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 18,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 18,
+            "blockTitleOriginal": null,
+            "headersOriginal": [
+              "生命值",
+              "超感強度",
+              "T5汙染抗性",
+              "T5汙染抗性"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 2,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 3,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 4,
+                "headerOriginal": "T5汙染抗性",
+                "valueOriginal": null
+              },
+              {
+                "column": 5,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 6,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": null,
+                "valueOriginal": "合計"
+              },
+              {
+                "column": 8,
+                "headerOriginal": null,
+                "valueOriginal": 84
+              },
+              {
+                "column": 9,
+                "headerOriginal": null,
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": null,
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-max_stat_reference-18-合計",
+            "category": "armor",
+            "blockType": "max_stat_reference",
+            "armorSlot": null,
+            "starLevelOriginal": null,
+            "starLevel": null,
+            "tierOriginal": null,
+            "tier": null,
+            "furQualityOriginal": null,
+            "furQuality": null,
+            "itemSlotOriginal": "合計",
+            "itemSlotEnglish": "Total",
+            "statOriginal": "生命值 / 超感強度 / 汙染抗性",
+            "statEnglish": "HP / Super Anomaly Strength / Pollution Resist",
+            "valueOriginal": "合計 | 84",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Reference table contains mixed sub-sections; preserved conservatively."
+            ]
+          }
+        }
+      ],
+      "warnings": [
+        "Mixed reference table preserved conservatively."
+      ]
+    },
+    {
+      "blockId": "t5面具",
+      "blockType": "armor_quality_scaling",
+      "blockTitleOriginal": "T5面具",
+      "blockTitleEnglish": "T5 Mask",
+      "startRow": 20,
+      "endRow": 26,
+      "headerRow": 21,
+      "headerConfidence": "high",
+      "headersOriginal": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "生命值",
+        "超感強度",
+        "生命值",
+        "超感強度"
+      ],
+      "headersEnglishBestEffort": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "HP",
+        "Super Anomaly Strength",
+        "HP",
+        "Super Anomaly Strength"
+      ],
+      "rows": [
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 23,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 23,
+            "blockTitleOriginal": "T5面具",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "完美"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 646
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 201
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 568
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 177
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-23-完美",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "mask",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "完美",
+            "tier": "perfect",
+            "furQualityOriginal": "完美",
+            "furQuality": "perfect",
+            "itemSlotOriginal": "T5面具",
+            "itemSlotEnglish": "Mask",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "完美 | 646 | 201 | 568 | 177",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 24,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 24,
+            "blockTitleOriginal": "T5面具",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "卓越"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 614
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 191
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 539
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 168
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-24-卓越",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "mask",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "卓越",
+            "tier": "excellent",
+            "furQualityOriginal": "卓越",
+            "furQuality": "excellent",
+            "itemSlotOriginal": "T5面具",
+            "itemSlotEnglish": "Mask",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "卓越 | 614 | 191 | 539 | 168",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 25,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 25,
+            "blockTitleOriginal": "T5面具",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "精良"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 577
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 180
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 507
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 158
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-25-精良",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "mask",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "精良",
+            "tier": "rare",
+            "furQualityOriginal": "精良",
+            "furQuality": "rare",
+            "itemSlotOriginal": "T5面具",
+            "itemSlotEnglish": "Mask",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "精良 | 577 | 180 | 507 | 158",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 26,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 26,
+            "blockTitleOriginal": "T5面具",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "一般"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 535
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 167
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 470
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 147
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-26-一般",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "mask",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "一般",
+            "tier": "common",
+            "furQualityOriginal": "一般",
+            "furQuality": "common",
+            "itemSlotOriginal": "T5面具",
+            "itemSlotEnglish": "Mask",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "一般 | 535 | 167 | 470 | 147",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "blockId": "t5頭盔",
+      "blockType": "armor_quality_scaling",
+      "blockTitleOriginal": "T5頭盔",
+      "blockTitleEnglish": "T5 Helmet",
+      "startRow": 27,
+      "endRow": 33,
+      "headerRow": 28,
+      "headerConfidence": "high",
+      "headersOriginal": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "生命值",
+        "超感強度",
+        "生命值",
+        "超感強度"
+      ],
+      "headersEnglishBestEffort": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "HP",
+        "Super Anomaly Strength",
+        "HP",
+        "Super Anomaly Strength"
+      ],
+      "rows": [
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 30,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 30,
+            "blockTitleOriginal": "T5頭盔",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "完美"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 1295
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 161
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 1138
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 141
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-30-完美",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "helmet",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "完美",
+            "tier": "perfect",
+            "furQualityOriginal": "完美",
+            "furQuality": "perfect",
+            "itemSlotOriginal": "T5頭盔",
+            "itemSlotEnglish": "Helmet",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "完美 | 1295 | 161 | 1138 | 141",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 31,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 31,
+            "blockTitleOriginal": "T5頭盔",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "卓越"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 1230
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 152
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 1081
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 134
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-31-卓越",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "helmet",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "卓越",
+            "tier": "excellent",
+            "furQualityOriginal": "卓越",
+            "furQuality": "excellent",
+            "itemSlotOriginal": "T5頭盔",
+            "itemSlotEnglish": "Helmet",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "卓越 | 1230 | 152 | 1081 | 134",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 32,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 32,
+            "blockTitleOriginal": "T5頭盔",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "精良"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 1156
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 143
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 1016
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 126
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-32-精良",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "helmet",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "精良",
+            "tier": "rare",
+            "furQualityOriginal": "精良",
+            "furQuality": "rare",
+            "itemSlotOriginal": "T5頭盔",
+            "itemSlotEnglish": "Helmet",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "精良 | 1156 | 143 | 1016 | 126",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 33,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 33,
+            "blockTitleOriginal": "T5頭盔",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "一般"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 1073
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 133
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 943
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 117
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-33-一般",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "helmet",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "一般",
+            "tier": "common",
+            "furQualityOriginal": "一般",
+            "furQuality": "common",
+            "itemSlotOriginal": "T5頭盔",
+            "itemSlotEnglish": "Helmet",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "一般 | 1073 | 133 | 943 | 117",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "blockId": "t5褲子",
+      "blockType": "armor_quality_scaling",
+      "blockTitleOriginal": "T5褲子",
+      "blockTitleEnglish": "T5 Bottoms",
+      "startRow": 34,
+      "endRow": 40,
+      "headerRow": 35,
+      "headerConfidence": "high",
+      "headersOriginal": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "生命值",
+        "超感強度",
+        "生命值",
+        "超感強度"
+      ],
+      "headersEnglishBestEffort": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "HP",
+        "Super Anomaly Strength",
+        "HP",
+        "Super Anomaly Strength"
+      ],
+      "rows": [
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 37,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 37,
+            "blockTitleOriginal": "T5褲子",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "完美"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 3108
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 128
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2730
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 113
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-37-完美",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "pants",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "完美",
+            "tier": "perfect",
+            "furQualityOriginal": "完美",
+            "furQuality": "perfect",
+            "itemSlotOriginal": "T5褲子",
+            "itemSlotEnglish": "Bottoms",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "完美 | 3108 | 128 | 2730 | 113",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 38,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 38,
+            "blockTitleOriginal": "T5褲子",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "卓越"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 2952
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 122
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2593
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 107
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-38-卓越",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "pants",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "卓越",
+            "tier": "excellent",
+            "furQualityOriginal": "卓越",
+            "furQuality": "excellent",
+            "itemSlotOriginal": "T5褲子",
+            "itemSlotEnglish": "Bottoms",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "卓越 | 2952 | 122 | 2593 | 107",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 39,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 39,
+            "blockTitleOriginal": "T5褲子",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "精良"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 2775
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 115
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2437
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 101
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-39-精良",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "pants",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "精良",
+            "tier": "rare",
+            "furQualityOriginal": "精良",
+            "furQuality": "rare",
+            "itemSlotOriginal": "T5褲子",
+            "itemSlotEnglish": "Bottoms",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "精良 | 2775 | 115 | 2437 | 101",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 40,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 40,
+            "blockTitleOriginal": "T5褲子",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "一般"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 2575
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 106
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2262
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 93
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-40-一般",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "pants",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "一般",
+            "tier": "common",
+            "furQualityOriginal": "一般",
+            "furQuality": "common",
+            "itemSlotOriginal": "T5褲子",
+            "itemSlotEnglish": "Bottoms",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "一般 | 2575 | 106 | 2262 | 93",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "blockId": "t5手套",
+      "blockType": "armor_quality_scaling",
+      "blockTitleOriginal": "T5手套",
+      "blockTitleEnglish": "T5 Gloves",
+      "startRow": 41,
+      "endRow": 47,
+      "headerRow": 42,
+      "headerConfidence": "high",
+      "headersOriginal": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "生命值",
+        "超感強度",
+        "生命值",
+        "超感強度"
+      ],
+      "headersEnglishBestEffort": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "HP",
+        "Super Anomaly Strength",
+        "HP",
+        "Super Anomaly Strength"
+      ],
+      "rows": [
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 44,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 44,
+            "blockTitleOriginal": "T5手套",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "完美"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 1943
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 120
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 1706
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 106
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-44-完美",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "gloves",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "完美",
+            "tier": "perfect",
+            "furQualityOriginal": "完美",
+            "furQuality": "perfect",
+            "itemSlotOriginal": "T5手套",
+            "itemSlotEnglish": "Gloves",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "完美 | 1943 | 120 | 1706 | 106",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 45,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 45,
+            "blockTitleOriginal": "T5手套",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "卓越"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 1846
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 114
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 1621
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 101
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-45-卓越",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "gloves",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "卓越",
+            "tier": "excellent",
+            "furQualityOriginal": "卓越",
+            "furQuality": "excellent",
+            "itemSlotOriginal": "T5手套",
+            "itemSlotEnglish": "Gloves",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "卓越 | 1846 | 114 | 1621 | 101",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 46,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 46,
+            "blockTitleOriginal": "T5手套",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "精良"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 1735
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 107
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 1523
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 95
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-46-精良",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "gloves",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "精良",
+            "tier": "rare",
+            "furQualityOriginal": "精良",
+            "furQuality": "rare",
+            "itemSlotOriginal": "T5手套",
+            "itemSlotEnglish": "Gloves",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "精良 | 1735 | 107 | 1523 | 95",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 47,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 47,
+            "blockTitleOriginal": "T5手套",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "一般"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 1610
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 99
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 1414
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 88
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-47-一般",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "gloves",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "一般",
+            "tier": "common",
+            "furQualityOriginal": "一般",
+            "furQuality": "common",
+            "itemSlotOriginal": "T5手套",
+            "itemSlotEnglish": "Gloves",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "一般 | 1610 | 99 | 1414 | 88",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "blockId": "t5衣服",
+      "blockType": "armor_quality_scaling",
+      "blockTitleOriginal": "T5衣服",
+      "blockTitleEnglish": "T5 Top",
+      "startRow": 48,
+      "endRow": 54,
+      "headerRow": 49,
+      "headerConfidence": "high",
+      "headersOriginal": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "生命值",
+        "超感強度",
+        "生命值",
+        "超感強度"
+      ],
+      "headersEnglishBestEffort": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "HP",
+        "Super Anomaly Strength",
+        "HP",
+        "Super Anomaly Strength"
+      ],
+      "rows": [
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 51,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 51,
+            "blockTitleOriginal": "T5衣服",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "完美"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 3367
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 112
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2958
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 99
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-51-完美",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "chest",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "完美",
+            "tier": "perfect",
+            "furQualityOriginal": "完美",
+            "furQuality": "perfect",
+            "itemSlotOriginal": "T5衣服",
+            "itemSlotEnglish": "Top",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "完美 | 3367 | 112 | 2958 | 99",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 52,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 52,
+            "blockTitleOriginal": "T5衣服",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "卓越"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 3198
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 106
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2810
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 94
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-52-卓越",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "chest",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "卓越",
+            "tier": "excellent",
+            "furQualityOriginal": "卓越",
+            "furQuality": "excellent",
+            "itemSlotOriginal": "T5衣服",
+            "itemSlotEnglish": "Top",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "卓越 | 3198 | 106 | 2810 | 94",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 53,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 53,
+            "blockTitleOriginal": "T5衣服",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "精良"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 3006
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 100
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2641
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 88
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-53-精良",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "chest",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "精良",
+            "tier": "rare",
+            "furQualityOriginal": "精良",
+            "furQuality": "rare",
+            "itemSlotOriginal": "T5衣服",
+            "itemSlotEnglish": "Top",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "精良 | 3006 | 100 | 2641 | 88",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 54,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 54,
+            "blockTitleOriginal": "T5衣服",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "一般"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 2789
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 92
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2451
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 82
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-54-一般",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "chest",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "一般",
+            "tier": "common",
+            "furQualityOriginal": "一般",
+            "furQuality": "common",
+            "itemSlotOriginal": "T5衣服",
+            "itemSlotEnglish": "Top",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "一般 | 2789 | 92 | 2451 | 82",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "blockId": "t5鞋子",
+      "blockType": "armor_quality_scaling",
+      "blockTitleOriginal": "T5鞋子",
+      "blockTitleEnglish": "T5 Shoes",
+      "startRow": 55,
+      "endRow": 61,
+      "headerRow": 56,
+      "headerConfidence": "high",
+      "headersOriginal": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "生命值",
+        "超感強度",
+        "生命值",
+        "超感強度"
+      ],
+      "headersEnglishBestEffort": [
+        "星級         毛皮品質",
+        "六星完美品質",
+        "六星完美品質",
+        "五星卓越品質",
+        "五星卓越品質",
+        "星級         毛皮品質",
+        "HP",
+        "Super Anomaly Strength",
+        "HP",
+        "Super Anomaly Strength"
+      ],
+      "rows": [
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 58,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 58,
+            "blockTitleOriginal": "T5鞋子",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "完美"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 2590
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 81
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2275
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 70
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-58-完美",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "shoes",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "完美",
+            "tier": "perfect",
+            "furQualityOriginal": "完美",
+            "furQuality": "perfect",
+            "itemSlotOriginal": "T5鞋子",
+            "itemSlotEnglish": "Shoes",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "完美 | 2590 | 81 | 2275 | 70",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 59,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 59,
+            "blockTitleOriginal": "T5鞋子",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "卓越"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 2460
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 77
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2161
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 66
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-59-卓越",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "shoes",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "卓越",
+            "tier": "excellent",
+            "furQualityOriginal": "卓越",
+            "furQuality": "excellent",
+            "itemSlotOriginal": "T5鞋子",
+            "itemSlotEnglish": "Shoes",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "卓越 | 2460 | 77 | 2161 | 66",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 60,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 60,
+            "blockTitleOriginal": "T5鞋子",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "精良"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 2312
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 72
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 2031
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 62
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-60-精良",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "shoes",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "精良",
+            "tier": "rare",
+            "furQualityOriginal": "精良",
+            "furQuality": "rare",
+            "itemSlotOriginal": "T5鞋子",
+            "itemSlotEnglish": "Shoes",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "精良 | 2312 | 72 | 2031 | 62",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        },
+        {
+          "sourceId": "OH_CN_TW_Community_Sheet_Seven_Day_World",
+          "sourceSheetOriginal": "武器防具星級",
+          "sourceSheetEnglish": "Weapon & Armor Stars",
+          "originalRowNumber": 61,
+          "locked": true,
+          "confidence": "B_pending_verification",
+          "original": {
+            "rowNumber": 61,
+            "blockTitleOriginal": "T5鞋子",
+            "headersOriginal": [
+              "星級         毛皮品質",
+              "六星完美品質",
+              "六星完美品質",
+              "五星卓越品質",
+              "五星卓越品質",
+              "星級         毛皮品質",
+              "生命值",
+              "超感強度",
+              "生命值",
+              "超感強度"
+            ],
+            "cells": [
+              {
+                "column": 1,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": "一般"
+              },
+              {
+                "column": 2,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 2146
+              },
+              {
+                "column": 3,
+                "headerOriginal": "六星完美品質",
+                "valueOriginal": 67
+              },
+              {
+                "column": 4,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 1885
+              },
+              {
+                "column": 5,
+                "headerOriginal": "五星卓越品質",
+                "valueOriginal": 58
+              },
+              {
+                "column": 6,
+                "headerOriginal": "星級         毛皮品質",
+                "valueOriginal": null
+              },
+              {
+                "column": 7,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 8,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              },
+              {
+                "column": 9,
+                "headerOriginal": "生命值",
+                "valueOriginal": null
+              },
+              {
+                "column": 10,
+                "headerOriginal": "超感強度",
+                "valueOriginal": null
+              }
+            ]
+          },
+          "normalized": {
+            "id": "star-tier-armor_quality_scaling-61-一般",
+            "category": "armor",
+            "blockType": "armor_quality_scaling",
+            "armorSlot": "shoes",
+            "starLevelOriginal": "6★ perfect / 5★ excellent",
+            "starLevel": null,
+            "tierOriginal": "一般",
+            "tier": "common",
+            "furQualityOriginal": "一般",
+            "furQuality": "common",
+            "itemSlotOriginal": "T5鞋子",
+            "itemSlotEnglish": "Shoes",
+            "statOriginal": "生命值 / 超感強度",
+            "statEnglish": "HP / Super Anomaly Strength",
+            "valueOriginal": "一般 | 2146 | 67 | 1885 | 58",
+            "valueParsed": null,
+            "valueUnit": null,
+            "scalingType": "flat",
+            "notes": [
+              "Mixed 6-star perfect and 5-star excellent scaling preserved in original row data."
+            ]
+          }
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+digraph OHMM_Architecture {
+  rankdir=TB;
+  node [shape=box, style=rounded, fontname="Arial", fontsize=10];
+  edge [fontname="Arial", fontsize=9];
+
+  // High Level Entry
+  subgraph cluster_entry {
+    label="Entry & Bootstrap";
+    style=dashed;
+    index_html [label="index.html\n<script src=\"/src/main.tsx\">"];
+    main_tsx [label="src/main.tsx"];
+    app_shim [label="src/app/App.tsx\n(thin shim)"];
+    index_html -> main_tsx;
+    main_tsx -> app_shim;
+  }
+
+  // Real App (the "ohai" inner project - active source of truth)
+  subgraph cluster_ohai {
+    label="Active Core: src/ohai/src (Source of Truth)\n(Legacy copies exist at root + src/imports)";
+    style=filled;
+    color=lightblue;
+
+    ohai_ui_App [label="src/ohai/src/ui/App.tsx\n(Main React App - massive component)"];
+    app_shim -> ohai_ui_App [label="import { App as OHAIApp } from '../ohai/src/ui/App'"];
+
+    // State
+    BuildSelection [label="BuildSelection\n(weapon, armor, modSelections, mods(legacy), cradle, deviant, food)"];
+    RuntimeState [label="Runtime State (UI layer)\nmode, pveTargetId, uptimeProfile,\ncustomCombatAssumptions"];
+    ohai_ui_App -> BuildSelection [label="useState (attacker/defender)"];
+    ohai_ui_App -> RuntimeState [label="separate useState"];
+
+    // Normalization Layer (recently introduced)
+    subgraph cluster_normalization {
+      label="Normalization Layer (Customs Checkpoint)";
+      color=lightgreen;
+      normalizeArmor [label="normalizeArmorToBuildKeys()\ntoBuildArmorSlot()"];
+      deriveMods [label="deriveCanonicalModIds()"];
+      applyWeapon [label="applyWeaponSelection()"];
+      sanitize [label="sanitizeBuildOnLoad()\n{build, warnings, errors}"];
+    }
+
+    BuildSelection -> normalizeArmor [label="on load / before calc"];
+    BuildSelection -> deriveMods [label="in resolver / sanitize"];
+    BuildSelection -> applyWeapon [label="on weapon change"];
+    BuildSelection -> sanitize [label="on import/load/share"];
+
+    // UI Components
+    subgraph cluster_components {
+      label="UI Components Layer";
+      LoadoutMatrix [label="LoadoutMatrix.tsx\n(direct patches to build)"];
+      BuffPanel [label="BuffPanel, CradleGrid, etc."];
+      SelectorModal [label="SelectorModal / WeaponSelector"];
+      Projection [label="ProjectionPanel, ScalerEngine,\nCombatSimulation, etc."];
+    }
+    ohai_ui_App -> LoadoutMatrix [label="props + onBuildChange"];
+    LoadoutMatrix -> BuildSelection [label="onBuildChange spreads"];
+    ohai_ui_App -> Projection [label="passes effectiveDmg, formula*"];
+
+    // Calculation Flow (core)
+    subgraph cluster_calc {
+      label="Calculation Flow (UI -> Engine)";
+      formulaBridge [label="formulaBridge.ts\nbuildCalculationInputFromSelection()"];
+      resolver [label="loadoutEffectResolver.ts\n(pipeline for mods, food, cradle...)"];
+      CalcInput [label="CalculationInput\n(modifierSources, effects, uptime, assumptions...)"];
+      damageAdapter [label="formulaDamageAdapter.ts\nbuildExpectedDamageFromCalculationInput()"];
+      engine [label="engine/formulaApplicator.ts + officialFormula*"];
+      CombatOutput [label="CombatOutput\n(damage, survivability, pvpDuel...)"];
+    }
+
+    ohai_ui_App -> formulaBridge [label="useMemo attackerCalcInput = ... (attacker, mode, pveTarget, uptime, customAssumptions)"];
+    formulaBridge -> resolver [label="main effects pipeline"];
+    resolver -> registries [label="reads from weapon/armor/mod/ammo/attachment/food registries"];
+    formulaBridge -> CalcInput;
+    CalcInput -> damageAdapter;
+    damageAdapter -> engine;
+    engine -> CombatOutput;
+
+    // Note on healthy separation
+    CombatOutput -> Projection [label="for metrics / viz"];
+    formulaBridge -> ohai_ui_App [label="returns formulaResult + warnings (no mutation of BuildSelection)"];
+
+    // Registries & Data
+    subgraph cluster_registries {
+      label="Registries & Data Layer (Source of Truth for Items)";
+      weaponReg [label="weaponRegistry.ts + generated/"];
+      armorReg [label="armorRegistry.ts"];
+      modReg [label="modRegistry.ts"];
+      ammoReg [label="ammoRegistry.ts\n+ isAmmoCompatible()"];
+      attachReg [label="attachmentRegistry.ts"];
+      otherReg [label="cradle, deviation, foodBuff, pveTarget..."];
+    }
+    registries -> resolver;
+    registries -> formulaBridge;
+    registries -> selectors [label="for filtering"];
+
+    // Selectors
+    subgraph cluster_selectors {
+      label="Selectors & Filtering";
+      weaponSelector [label="weaponSelectorBuilder.ts"];
+      filterItems [label="filterSelectorItems.ts"];
+      slotValidation [label="slotValidation.ts"];
+      normalization [label="normalization.ts\n(armor, weapon family, etc.)"];
+    }
+    selectors -> ohai_ui_App;
+    selectors -> components;
+
+    // Persistence Layer
+    subgraph cluster_persist {
+      label="Persistence, Share, Import/Export";
+      savedSchema [label="savedBuildSchema.ts\n(normalizeSavedBuild, sanitizeBuildOnLoad)"];
+      persistService [label="buildPersistenceService.ts"];
+      share [label="buildShareService.ts\n(encode/decode - currently only legacy mods)"];
+      importExport [label="buildImportExportService.ts"];
+    }
+    BuildSelection -> savedSchema;
+    savedSchema -> persistService;
+    persistService -> share;
+    share -> sanitize;
+    importExport -> sanitize;
+    ohai_ui_App -> persistService [label="SavedBuildsPanel, load/save"];
+
+    // Legacy / Duplication (major issue)
+    subgraph cluster_legacy {
+      label="Legacy / Duplication (Major Architectural Debt)";
+      color=red;
+      root_engine [label="root/engine/ (legacy copy)"];
+      root_components [label="root/components/ (legacy)"];
+      root_registries [label="root/registries/ etc."];
+      src_imports [label="src/imports/ (another copy)"];
+      ohai_nested [label="src/ohai/ (self-contained with own node_modules, vite.config.mjs, src/)"];
+    }
+    root_engine -> ohai_ui_App [style=dashed, label="not used, but pollutes"];
+    src_imports -> app_shim [style=dashed, label="unused dump"];
+    ohai_nested -> ohai_ui_App [label="contains the real ui/engine"];
+
+    // External / Figma
+    figma_resolver [label="figmaAssetResolver (in vite.config.ts)\nresolves figma:asset/* -> src/assets (MISSING dir)"];
+    vite_config [label="vite.config.ts\nalias @ -> ./src\nzod -> src/ohai/node_modules/zod (v4.4.3 vs root v3)"];
+  }
+
+  // Key Flows & Relationships
+  BuildSelection -> CalcInput [label=" + runtime params"];
+  CalcInput -> CombatOutput;
+  CombatOutput -> UI [label="display only (healthy)"];
+  sanitize -> BuildSelection [label="on all external entry (share, load, import)"];
+  normalizeArmor -> BuildSelection;
+  deriveMods -> resolver;
+
+  // Legend
+  subgraph cluster_legend {
+    label="Legend & Issues";
+    healthy [label="Healthy: formulaBridge warns only, no mutation of user state"];
+    problem1 [label="PROBLEM: duplicated repair logic (was in App + loadoutOptions) - now consolidating to applyWeaponSelection"];
+    problem2 [label="PROBLEM: massive duplication (root copies + src/ohai nested + src/imports)"];
+    problem3 [label="PROBLEM: zod alias forcing v4 while root has v3 - potential crash source"];
+    problem4 [label="PROBLEM: no src/assets (figma resolver may fail silently)"];
+    problem5 [label="PROBLEM: Chef Rex still has dual (ratings vs stored bonusPercent)"];
+    healthy [color=green];
+    problem1 [color=red];
+    problem2 [color=red];
+    problem3 [color=red];
+    problem4 [color=red];
+    problem5 [color=orange];
+  }
+}

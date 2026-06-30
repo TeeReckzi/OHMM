@@ -1,0 +1,2280 @@
+{
+  "module": "build_goal_profiles",
+  "moduleStatus": "verified_snapshot_locked",
+  "locked": true,
+  "confidence": "B_rules_registry_pending_formula_validation",
+  "createdAt": "2026-05-17T15:08:59.489Z",
+  "purpose": "Define build goal profiles with scoring weights for the optimizer to recommend gear, mods, food buffs, and deviations based on player-selected playstyle goals.",
+  "statKeys": [
+    "weaponDMG",
+    "meleeDMG",
+    "statusDMG",
+    "elementalDMG",
+    "burnDMG",
+    "powerSurgeDMG",
+    "frostVortexDMG",
+    "bounceDMG",
+    "shrapnelDMG",
+    "fastGunnerDMG",
+    "unstableBomberDMG",
+    "bullseyeDMG",
+    "critRate",
+    "critDMG",
+    "weakspotDMG",
+    "fireRate",
+    "reloadSpeed",
+    "reloadEfficiency",
+    "magazineCapacity",
+    "psiIntensity",
+    "superAnomalyStrength",
+    "maxHP",
+    "hpRecovery",
+    "shield",
+    "shieldStrength",
+    "dmgReduction",
+    "playerDMGReduction",
+    "statusDMGReduction",
+    "weakspotDMGReduction",
+    "critDMGReduction",
+    "healingReceived",
+    "movementSpeed",
+    "stamina",
+    "resistances",
+    "gatheringYield",
+    "miningYield",
+    "loggingYield",
+    "fishingYield",
+    "craftingEfficiency",
+    "foodDuration",
+    "deviationSupport"
+  ],
+  "scoringWeightScale": {
+    "1.0": "Core stat — essential for the build to function",
+    "0.9": "Near-core — very high priority",
+    "0.8": "Strong priority",
+    "0.7": "Important supporting stat",
+    "0.6": "Valuable supporting stat",
+    "0.5": "Useful supporting stat",
+    "0.4": "Moderate supporting stat",
+    "0.3": "Situational or minor utility",
+    "0.2": "Low impact or luxury",
+    "0.1": "Marginal benefit",
+    "-0.2": "Minor anti-synergy",
+    "-0.3": "Moderate anti-synergy",
+    "-0.5": "Strong anti-synergy — actively detrimental to build"
+  },
+  "profiles": [
+    {
+      "id": "burn_dps",
+      "displayName": "Burn DPS",
+      "description": "Optimizes for Burn status effect damage over time. Relies on status/elemental damage stacking and anomaly intensity.",
+      "primaryStats": [
+        {
+          "key": "burnDMG",
+          "reason": "Core burn tick damage source"
+        },
+        {
+          "key": "statusDMG",
+          "reason": "Amplifies all status effect damage including burn"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Broad elemental damage multiplier for burn source"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "psiIntensity",
+          "reason": "Anomaly intensity increases burn effectiveness"
+        },
+        {
+          "key": "superAnomalyStrength",
+          "reason": "Further amplifies anomaly/status potency"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Base weapon damage still contributes to initial hit"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "Survivability while burn ticks"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "General damage reduction"
+        },
+        {
+          "key": "statusDMGReduction",
+          "reason": "Mirror-match survivability"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "burn",
+        "status effect",
+        "anomaly",
+        "elemental",
+        "over-time"
+      ],
+      "preferredFoodBuffCategories": [
+        "status_dmg",
+        "elemental_dmg",
+        "psi_intensity",
+        "weapon_dmg"
+      ],
+      "preferredModCategories": [
+        "status_anomaly",
+        "elemental",
+        "weapon_damage"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "elemental_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "bounceDMG",
+          "reason": "No synergy with burn DoT playstyle"
+        },
+        {
+          "key": "shrapnelDMG",
+          "reason": "No synergy with burn DoT playstyle"
+        },
+        {
+          "key": "critRate",
+          "reason": "Burn ticks typically do not crit"
+        }
+      ],
+      "scoringWeights": {
+        "burnDMG": 1,
+        "statusDMG": 0.9,
+        "elementalDMG": 0.8,
+        "psiIntensity": 0.7,
+        "superAnomalyStrength": 0.6,
+        "weaponDMG": 0.4,
+        "maxHP": 0.2,
+        "dmgReduction": 0.2,
+        "statusDMGReduction": 0.1,
+        "bounceDMG": -0.5,
+        "shrapnelDMG": -0.5,
+        "critRate": -0.3
+      },
+      "notes": [
+        "Burn DoT tick formula not yet confirmed — verify whether crit applies",
+        "Psi intensity scaling coefficient needs in-game testing",
+        "Some burn sources may have different damage formulas (weapon vs deviation)",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "power_surge_dmg",
+      "displayName": "Power Surge DPS",
+      "description": "Specializes in Power Surge elemental damage proc. Benefits from fast attack speed to trigger procs frequently.",
+      "primaryStats": [
+        {
+          "key": "powerSurgeDMG",
+          "reason": "Direct Power Surge proc damage"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Amplifies Power Surge elemental damage"
+        },
+        {
+          "key": "statusDMG",
+          "reason": "Increases status effect damage component"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "fireRate",
+          "reason": "Faster attacks = more Power Surge trigger chances"
+        },
+        {
+          "key": "reloadSpeed",
+          "reason": "Reduces downtime between trigger windows"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Base damage for non-proc hits"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "General survivability"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "Damage mitigation"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "power surge",
+        "elemental proc",
+        "status effect",
+        "anomaly",
+        "rapid fire"
+      ],
+      "preferredFoodBuffCategories": [
+        "elemental_dmg",
+        "status_dmg",
+        "fire_rate",
+        "reload_speed"
+      ],
+      "preferredModCategories": [
+        "status_anomaly",
+        "elemental",
+        "weapon_damage"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "elemental_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "bounceDMG",
+          "reason": "No synergy with Power Surge"
+        },
+        {
+          "key": "shrapnelDMG",
+          "reason": "No synergy with Power Surge"
+        },
+        {
+          "key": "meleeDMG",
+          "reason": "Ranged-focused build"
+        }
+      ],
+      "scoringWeights": {
+        "powerSurgeDMG": 1,
+        "elementalDMG": 0.8,
+        "statusDMG": 0.7,
+        "fireRate": 0.7,
+        "reloadSpeed": 0.5,
+        "weaponDMG": 0.4,
+        "maxHP": 0.2,
+        "dmgReduction": 0.2,
+        "bounceDMG": -0.5,
+        "shrapnelDMG": -0.5,
+        "meleeDMG": -0.3
+      },
+      "notes": [
+        "Power Surge proc rate tied to fire rate — verify internal cooldowns",
+        "Proc damage formula may include weapon damage base component",
+        "Some weapons may have better Power Surge synergy than others",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "frost_vortex_dps",
+      "displayName": "Frost Vortex DPS",
+      "description": "Focuses on Frost Vortex area control and damage. Combines elemental damage with critical scaling for burst potential.",
+      "primaryStats": [
+        {
+          "key": "frostVortexDMG",
+          "reason": "Core Frost Vortex damage"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Amplifies frost elemental damage"
+        },
+        {
+          "key": "statusDMG",
+          "reason": "Increases status effect damage"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "critRate",
+          "reason": "Frost Vortex may benefit from crit scaling"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Critical damage multiplier for frost crits"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Base weapon damage contribution"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "Survivability in close-mid range"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "Damage reduction"
+        },
+        {
+          "key": "movementSpeed",
+          "reason": "Positioning for vortex placement"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "frost",
+        "vortex",
+        "elemental",
+        "crowd control",
+        "area damage"
+      ],
+      "preferredFoodBuffCategories": [
+        "elemental_dmg",
+        "status_dmg",
+        "crit_rate",
+        "crit_dmg"
+      ],
+      "preferredModCategories": [
+        "status_anomaly",
+        "elemental",
+        "crit"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "elemental_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "bounceDMG",
+          "reason": "No synergy with frost vortex"
+        },
+        {
+          "key": "shrapnelDMG",
+          "reason": "No synergy with frost vortex"
+        }
+      ],
+      "scoringWeights": {
+        "frostVortexDMG": 1,
+        "elementalDMG": 0.8,
+        "statusDMG": 0.7,
+        "critRate": 0.5,
+        "critDMG": 0.5,
+        "weaponDMG": 0.4,
+        "maxHP": 0.3,
+        "dmgReduction": 0.2,
+        "movementSpeed": 0.2,
+        "bounceDMG": -0.5,
+        "shrapnelDMG": -0.5
+      },
+      "notes": [
+        "Verify whether Frost Vortex can crit or if it uses fixed damage",
+        "Crowd control duration may affect vortex uptime",
+        "Some frost weapons may have unique vortex modifiers",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "bounce_dps",
+      "displayName": "Bounce DPS",
+      "description": "Leverages bullet bounce/ricochet mechanics for multi-target damage. Scales with weapon damage and critical stats.",
+      "primaryStats": [
+        {
+          "key": "bounceDMG",
+          "reason": "Core ricochet damage multiplier"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Base damage for each bounce hit"
+        },
+        {
+          "key": "critRate",
+          "reason": "Each bounce hit can crit independently"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "critDMG",
+          "reason": "Critical damage for bounce crits"
+        },
+        {
+          "key": "fireRate",
+          "reason": "More bullets = more bounce opportunities"
+        },
+        {
+          "key": "reloadSpeed",
+          "reason": "Minimize downtime between bounce chains"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "General survivability"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "Damage mitigation"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "bounce",
+        "ricochet",
+        "multi-target",
+        "crit",
+        "rapid fire"
+      ],
+      "preferredFoodBuffCategories": [
+        "weapon_dmg",
+        "crit_rate",
+        "crit_dmg",
+        "fire_rate",
+        "reload_speed"
+      ],
+      "preferredModCategories": [
+        "weapon_damage",
+        "crit",
+        "ricochet"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "statusDMG",
+          "reason": "Bounce is direct damage, not status-based"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Bounce typically deals physical damage"
+        },
+        {
+          "key": "burnDMG",
+          "reason": "No synergy"
+        }
+      ],
+      "scoringWeights": {
+        "bounceDMG": 1,
+        "weaponDMG": 0.9,
+        "critRate": 0.7,
+        "critDMG": 0.7,
+        "fireRate": 0.5,
+        "reloadSpeed": 0.4,
+        "maxHP": 0.2,
+        "dmgReduction": 0.2,
+        "statusDMG": -0.3,
+        "elementalDMG": -0.3,
+        "burnDMG": -0.5
+      },
+      "notes": [
+        "Bounce count and damage falloff per ricochet needs confirmation",
+        "Some weapons may have inherent bounce mechanics independent of mods",
+        "Bounce may have range limits per hop",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "shrapnel_dps",
+      "displayName": "Shrapnel DPS",
+      "description": "Uses shrapnel fragmentation for explosive area damage. Magazine size and crit scaling are key.",
+      "primaryStats": [
+        {
+          "key": "shrapnelDMG",
+          "reason": "Core shrapnel fragment damage"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Base damage for each shrapnel hit"
+        },
+        {
+          "key": "critRate",
+          "reason": "Shrapnel fragments can crit"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "critDMG",
+          "reason": "Critical multiplier for shrapnel crits"
+        },
+        {
+          "key": "magazineCapacity",
+          "reason": "Larger mag = more sustained shrapnel uptime"
+        },
+        {
+          "key": "fireRate",
+          "reason": "Faster fire rate for more shrapnel generation"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "Survivability at close-mid range"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "Damage mitigation"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "shrapnel",
+        "fragmentation",
+        "area damage",
+        "explosive",
+        "crit"
+      ],
+      "preferredFoodBuffCategories": [
+        "weapon_dmg",
+        "crit_rate",
+        "crit_dmg",
+        "magazine_capacity"
+      ],
+      "preferredModCategories": [
+        "weapon_damage",
+        "crit",
+        "shrapnel"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "statusDMG",
+          "reason": "Shrapnel is direct explosive damage"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Physical damage focused"
+        }
+      ],
+      "scoringWeights": {
+        "shrapnelDMG": 1,
+        "weaponDMG": 0.9,
+        "critRate": 0.7,
+        "critDMG": 0.7,
+        "magazineCapacity": 0.5,
+        "fireRate": 0.4,
+        "maxHP": 0.2,
+        "dmgReduction": 0.2,
+        "statusDMG": -0.3,
+        "elementalDMG": -0.3
+      },
+      "notes": [
+        "Shrapnel count per shot varies by weapon type",
+        "Fragment spread pattern affects single-target vs AoE effectiveness",
+        "Explosive damage may have separate resistance calculations",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "fast_gunner_dps",
+      "displayName": "Fast Gunner DPS",
+      "description": "Rapid-fire weapon build maximizing sustained DPS through fire rate, reload efficiency, and crit consistency.",
+      "primaryStats": [
+        {
+          "key": "weaponDMG",
+          "reason": "Core damage per bullet"
+        },
+        {
+          "key": "fireRate",
+          "reason": "More bullets per second = more DPS"
+        },
+        {
+          "key": "reloadSpeed",
+          "reason": "Reload efficiency = less downtime"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "critRate",
+          "reason": "Consistent crits from many bullets"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Crit multiplier for sustained burst"
+        },
+        {
+          "key": "magazineCapacity",
+          "reason": "Larger mag = longer firing windows"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "General survivability"
+        },
+        {
+          "key": "movementSpeed",
+          "reason": "Kiting while firing"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "rapid fire",
+        "sustained dps",
+        "fire rate",
+        "crit",
+        "reload"
+      ],
+      "preferredFoodBuffCategories": [
+        "weapon_dmg",
+        "fire_rate",
+        "reload_speed",
+        "crit_rate",
+        "crit_dmg"
+      ],
+      "preferredModCategories": [
+        "weapon_damage",
+        "crit",
+        "fire_rate"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "statusDMG",
+          "reason": "Direct damage build"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Physical damage primary"
+        },
+        {
+          "key": "bounceDMG",
+          "reason": "Not a bounce build"
+        },
+        {
+          "key": "shrapnelDMG",
+          "reason": "Not a shrapnel build"
+        }
+      ],
+      "scoringWeights": {
+        "weaponDMG": 1,
+        "fireRate": 0.9,
+        "reloadSpeed": 0.7,
+        "critRate": 0.5,
+        "critDMG": 0.5,
+        "magazineCapacity": 0.4,
+        "maxHP": 0.2,
+        "movementSpeed": 0.2,
+        "statusDMG": -0.3,
+        "elementalDMG": -0.3,
+        "bounceDMG": -0.5,
+        "shrapnelDMG": -0.5
+      },
+      "notes": [
+        "Fire rate caps or diminishing returns not yet confirmed",
+        "Reload speed vs reload efficiency distinction needs formula verification",
+        "Some weapons have unique fire rate modifiers not in standard stats",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "unstable_bomber_dmg",
+      "displayName": "Unstable Bomber DPS",
+      "description": "Explosion-based build using Unstable Bomber procs for burst elemental damage. Pairs anomaly intensity with area effect.",
+      "primaryStats": [
+        {
+          "key": "unstableBomberDMG",
+          "reason": "Core explosion proc damage"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Amplifies explosion elemental damage"
+        },
+        {
+          "key": "statusDMG",
+          "reason": "Increases status component of explosion"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "weaponDMG",
+          "reason": "Base damage for initial hit before explosion"
+        },
+        {
+          "key": "fireRate",
+          "reason": "Faster shots = more proc chances"
+        },
+        {
+          "key": "psiIntensity",
+          "reason": "Anomaly intensity amplifies explosion"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "Survivability during close-range explosions"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "Self-damage mitigation if applicable"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "unstable bomber",
+        "explosion",
+        "elemental",
+        "anomaly",
+        "aoe"
+      ],
+      "preferredFoodBuffCategories": [
+        "elemental_dmg",
+        "status_dmg",
+        "psi_intensity",
+        "weapon_dmg"
+      ],
+      "preferredModCategories": [
+        "status_anomaly",
+        "elemental",
+        "explosion"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "elemental_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "bounceDMG",
+          "reason": "Explosion-focused, not ricochet"
+        },
+        {
+          "key": "shrapnelDMG",
+          "reason": "Separate explosion mechanic"
+        },
+        {
+          "key": "critRate",
+          "reason": "Explosion procs may not crit"
+        }
+      ],
+      "scoringWeights": {
+        "unstableBomberDMG": 1,
+        "elementalDMG": 0.8,
+        "statusDMG": 0.7,
+        "weaponDMG": 0.5,
+        "fireRate": 0.5,
+        "psiIntensity": 0.5,
+        "maxHP": 0.3,
+        "dmgReduction": 0.2,
+        "bounceDMG": -0.5,
+        "shrapnelDMG": -0.5,
+        "critRate": -0.2
+      },
+      "notes": [
+        "Unstable Bomber proc rate and internal cooldown not confirmed",
+        "Self-damage from explosions needs verification",
+        "Explosion radius may scale with different stats",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "bullseye_weakspot",
+      "displayName": "Bullseye Weakspot",
+      "description": "Precision build maximizing weakspot hit damage. Bullseye marker amplifies subsequent weakspot hits.",
+      "primaryStats": [
+        {
+          "key": "bullseyeDMG",
+          "reason": "Bullseye-marked target damage bonus"
+        },
+        {
+          "key": "weakspotDMG",
+          "reason": "Core weakspot hit multiplier"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Base damage per shot"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "critRate",
+          "reason": "Crits on weakspots for multiplicative damage"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Critical damage on weakspot hits"
+        },
+        {
+          "key": "fireRate",
+          "reason": "Consistent firing rhythm for bullseye uptime"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "Survivability while aiming"
+        },
+        {
+          "key": "movementSpeed",
+          "reason": "Positioning for sightlines"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "bullseye",
+        "weakspot",
+        "precision",
+        "crit",
+        "marksman"
+      ],
+      "preferredFoodBuffCategories": [
+        "weakspot_dmg",
+        "weapon_dmg",
+        "crit_rate",
+        "crit_dmg"
+      ],
+      "preferredModCategories": [
+        "weapon_damage",
+        "crit",
+        "weakspot"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "statusDMG",
+          "reason": "Direct precision damage build"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Physical damage focused"
+        },
+        {
+          "key": "bounceDMG",
+          "reason": "Precision anti-synergy with random bounces"
+        },
+        {
+          "key": "shrapnelDMG",
+          "reason": "Precision anti-synergy with spread"
+        }
+      ],
+      "scoringWeights": {
+        "bullseyeDMG": 1,
+        "weakspotDMG": 1,
+        "weaponDMG": 0.8,
+        "critRate": 0.6,
+        "critDMG": 0.6,
+        "fireRate": 0.3,
+        "maxHP": 0.2,
+        "movementSpeed": 0.2,
+        "statusDMG": -0.3,
+        "elementalDMG": -0.3,
+        "bounceDMG": -0.5,
+        "shrapnelDMG": -0.5
+      },
+      "notes": [
+        "Bullseye marker duration and stack mechanics need confirmation",
+        "Weakspot hitbox sizes vary by enemy type",
+        "Weapon accuracy and stability affect weakspot consistency",
+        "Bullseye vs regular weakspot damage formula stacking needs testing",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "crit_burst",
+      "displayName": "Crit Burst",
+      "description": "High critical chance and damage burst build. Maximizes peak damage windows through crit multiplier stacking.",
+      "primaryStats": [
+        {
+          "key": "critRate",
+          "reason": "Critical hit chance — must reach threshold first"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Critical hit damage multiplier"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Base damage multiplied by crits"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "fireRate",
+          "reason": "More attempts = more crit procs per second"
+        },
+        {
+          "key": "reloadSpeed",
+          "reason": "Reduce downtime between crit windows"
+        },
+        {
+          "key": "weakspotDMG",
+          "reason": "Weakspot + crit multiplicative scaling"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "General survivability"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "Damage mitigation"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "crit",
+        "burst",
+        "critical chance",
+        "critical damage",
+        "high risk"
+      ],
+      "preferredFoodBuffCategories": [
+        "crit_rate",
+        "crit_dmg",
+        "weapon_dmg",
+        "fire_rate"
+      ],
+      "preferredModCategories": [
+        "crit",
+        "weapon_damage",
+        "fire_rate"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "statusDMG",
+          "reason": "Direct damage build"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Physical crit build"
+        },
+        {
+          "key": "burnDMG",
+          "reason": "DoT anti-synergy with burst"
+        }
+      ],
+      "scoringWeights": {
+        "critRate": 1,
+        "critDMG": 1,
+        "weaponDMG": 0.8,
+        "fireRate": 0.5,
+        "reloadSpeed": 0.4,
+        "weakspotDMG": 0.4,
+        "maxHP": 0.2,
+        "dmgReduction": 0.2,
+        "statusDMG": -0.3,
+        "elementalDMG": -0.3,
+        "burnDMG": -0.5
+      },
+      "notes": [
+        "Crit rate soft cap or diminishing returns not confirmed",
+        "Some weapons have inherent crit rate bonuses not reflected in stats",
+        "Crit damage formula (additive vs multiplicative) needs verification",
+        "Mod sets may provide crit bonuses that interact differently",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "weapon_dmg_general",
+      "displayName": "Weapon DMG General",
+      "description": "Generic weapon damage build for any direct-damage playstyle. Flexible fallback when no specific build is targeted.",
+      "primaryStats": [
+        {
+          "key": "weaponDMG",
+          "reason": "Core universal damage stat"
+        },
+        {
+          "key": "critRate",
+          "reason": "Universal DPS multiplier"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Critical damage scaling"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "fireRate",
+          "reason": "DPS through attack speed"
+        },
+        {
+          "key": "reloadSpeed",
+          "reason": "Uptime efficiency"
+        },
+        {
+          "key": "magazineCapacity",
+          "reason": "Sustained fire duration"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "General survivability"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "General damage mitigation"
+        },
+        {
+          "key": "movementSpeed",
+          "reason": "Positioning flexibility"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "generic",
+        "weapon damage",
+        "direct damage",
+        "flexible"
+      ],
+      "preferredFoodBuffCategories": [
+        "weapon_dmg",
+        "crit_rate",
+        "crit_dmg",
+        "fire_rate",
+        "reload_speed"
+      ],
+      "preferredModCategories": [
+        "weapon_damage",
+        "crit",
+        "fire_rate"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "gatheringYield",
+          "reason": "Non-combat stat not relevant"
+        },
+        {
+          "key": "miningYield",
+          "reason": "Non-combat stat not relevant"
+        },
+        {
+          "key": "loggingYield",
+          "reason": "Non-combat stat not relevant"
+        },
+        {
+          "key": "fishingYield",
+          "reason": "Non-combat stat not relevant"
+        }
+      ],
+      "scoringWeights": {
+        "weaponDMG": 1,
+        "critRate": 0.7,
+        "critDMG": 0.7,
+        "fireRate": 0.5,
+        "reloadSpeed": 0.4,
+        "magazineCapacity": 0.3,
+        "maxHP": 0.3,
+        "dmgReduction": 0.2,
+        "movementSpeed": 0.2,
+        "gatheringYield": -0.5,
+        "miningYield": -0.5,
+        "loggingYield": -0.5,
+        "fishingYield": -0.5
+      },
+      "notes": [
+        "Fallback profile when no specialized build is selected",
+        "May underperform compared to specialized profiles",
+        "Weights are intentionally conservative to favor specialized builds in optimizer",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "elemental_dmg_general",
+      "displayName": "Elemental DMG General",
+      "description": "Generic elemental damage build for any elemental-focused weapon or playstyle. Broad coverage across elemental types.",
+      "primaryStats": [
+        {
+          "key": "elementalDMG",
+          "reason": "Core elemental damage multiplier"
+        },
+        {
+          "key": "statusDMG",
+          "reason": "Amplifies elemental status effects"
+        },
+        {
+          "key": "psiIntensity",
+          "reason": "Anomaly scaling for elemental sources"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "weaponDMG",
+          "reason": "Base damage component"
+        },
+        {
+          "key": "superAnomalyStrength",
+          "reason": "Additional anomaly potency"
+        },
+        {
+          "key": "fireRate",
+          "reason": "Proc frequency for elemental effects"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "General survivability"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "Damage mitigation"
+        },
+        {
+          "key": "statusDMGReduction",
+          "reason": "Elemental mirror match defense"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "elemental",
+        "status",
+        "anomaly",
+        "generic elemental"
+      ],
+      "preferredFoodBuffCategories": [
+        "elemental_dmg",
+        "status_dmg",
+        "psi_intensity"
+      ],
+      "preferredModCategories": [
+        "status_anomaly",
+        "elemental"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "elemental_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "gatheringYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "miningYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "critRate",
+          "reason": "Elemental builds may not prioritize crit"
+        }
+      ],
+      "scoringWeights": {
+        "elementalDMG": 1,
+        "statusDMG": 0.8,
+        "psiIntensity": 0.7,
+        "weaponDMG": 0.5,
+        "superAnomalyStrength": 0.5,
+        "fireRate": 0.4,
+        "maxHP": 0.3,
+        "dmgReduction": 0.2,
+        "statusDMGReduction": 0.2,
+        "gatheringYield": -0.5,
+        "miningYield": -0.5,
+        "critRate": -0.2
+      },
+      "notes": [
+        "Generic elemental profile — specialized elemental builds (burn, frost) preferred",
+        "Elemental damage type interactions not yet fully mapped",
+        "Some enemies have elemental resistances that shift priority",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "status_dmg_general",
+      "displayName": "Status DMG General",
+      "description": "Generic status effect damage build for anomaly-based weapons and status-proc playstyles.",
+      "primaryStats": [
+        {
+          "key": "statusDMG",
+          "reason": "Core status effect damage multiplier"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Most status effects are elemental"
+        },
+        {
+          "key": "psiIntensity",
+          "reason": "Anomaly intensity for status potency"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "superAnomalyStrength",
+          "reason": "Additional anomaly damage scaling"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Base damage for status-applying hits"
+        },
+        {
+          "key": "fireRate",
+          "reason": "Status application frequency"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "General survivability"
+        },
+        {
+          "key": "statusDMGReduction",
+          "reason": "Defense against enemy status effects"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "status",
+        "anomaly",
+        "proc",
+        "elemental",
+        "general status"
+      ],
+      "preferredFoodBuffCategories": [
+        "status_dmg",
+        "elemental_dmg",
+        "psi_intensity"
+      ],
+      "preferredModCategories": [
+        "status_anomaly",
+        "elemental"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "elemental_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "gatheringYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "miningYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "critRate",
+          "reason": "Status ticks typically do not crit"
+        }
+      ],
+      "scoringWeights": {
+        "statusDMG": 1,
+        "elementalDMG": 0.8,
+        "psiIntensity": 0.7,
+        "superAnomalyStrength": 0.6,
+        "weaponDMG": 0.4,
+        "fireRate": 0.4,
+        "maxHP": 0.3,
+        "statusDMGReduction": 0.2,
+        "gatheringYield": -0.5,
+        "miningYield": -0.5,
+        "critRate": -0.2
+      },
+      "notes": [
+        "Generic status profile — specialized status builds (burn, frost) preferred",
+        "Status effect durations and tick rates need formula confirmation",
+        "Some status effects may stack while others refresh duration",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "pve_boss_dps",
+      "displayName": "PvE Boss DPS",
+      "description": "Optimized for boss encounters. Balances sustained DPS with survivability for long fights.",
+      "primaryStats": [
+        {
+          "key": "weaponDMG",
+          "reason": "Consistent base damage output"
+        },
+        {
+          "key": "critRate",
+          "reason": "Reliable crit rate for sustained boss fights"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Crit multiplier for burst phases"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "weakspotDMG",
+          "reason": "Boss weakspot damage windows"
+        },
+        {
+          "key": "reloadSpeed",
+          "reason": "Minimize downtime during DPS phases"
+        },
+        {
+          "key": "fireRate",
+          "reason": "Sustained damage throughput"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "If boss has elemental weakness"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "Survive boss mechanics"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "Mitigate heavy boss hits"
+        },
+        {
+          "key": "hpRecovery",
+          "reason": "Sustain between boss attacks"
+        },
+        {
+          "key": "shield",
+          "reason": "Additional survivability layer"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "boss",
+        "pve",
+        "sustained dps",
+        "endgame",
+        "raid"
+      ],
+      "preferredFoodBuffCategories": [
+        "weapon_dmg",
+        "crit_rate",
+        "crit_dmg",
+        "reload_speed",
+        "max_hp"
+      ],
+      "preferredModCategories": [
+        "weapon_damage",
+        "crit",
+        "boss_slayer"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support",
+        "territory_buff"
+      ],
+      "avoidStats": [
+        {
+          "key": "gatheringYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "miningYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "fishingYield",
+          "reason": "Non-combat stat"
+        }
+      ],
+      "scoringWeights": {
+        "weaponDMG": 1,
+        "critRate": 0.8,
+        "critDMG": 0.8,
+        "weakspotDMG": 0.6,
+        "reloadSpeed": 0.5,
+        "fireRate": 0.5,
+        "elementalDMG": 0.4,
+        "maxHP": 0.5,
+        "dmgReduction": 0.4,
+        "hpRecovery": 0.3,
+        "shield": 0.3,
+        "gatheringYield": -0.5,
+        "miningYield": -0.5,
+        "fishingYield": -0.5
+      },
+      "notes": [
+        "Boss-specific mechanics (enrage timers, phases) not modeled here",
+        "Optimal build may vary per boss depending on mechanics",
+        "Elemental weakness matching could shift weights significantly",
+        "Deviation choice may be encounter-specific",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "pvp_survivability",
+      "displayName": "PvP Survivability",
+      "description": "Maximum durability in player combat. Focuses on damage reduction, shields, and health sustain.",
+      "primaryStats": [
+        {
+          "key": "playerDMGReduction",
+          "reason": "Direct PvP damage mitigation"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "General damage reduction"
+        },
+        {
+          "key": "shield",
+          "reason": "Extra health buffer against burst"
+        },
+        {
+          "key": "maxHP",
+          "reason": "Maximum health pool"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "healingReceived",
+          "reason": "Sustain during and after fights"
+        },
+        {
+          "key": "movementSpeed",
+          "reason": "Dodge and reposition"
+        },
+        {
+          "key": "statusDMGReduction",
+          "reason": "PvP status effect mitigation"
+        },
+        {
+          "key": "weakspotDMGReduction",
+          "reason": "Reduce precision damage from marksmen"
+        },
+        {
+          "key": "critDMGReduction",
+          "reason": "Reduce crit burst damage"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "shieldStrength",
+          "reason": "Shield effectiveness"
+        },
+        {
+          "key": "hpRecovery",
+          "reason": "Passive health regen"
+        },
+        {
+          "key": "resistances",
+          "reason": "Elemental damage mitigation"
+        },
+        {
+          "key": "stamina",
+          "reason": "Dodge and sprint capacity"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "pvp",
+        "survivability",
+        "tank",
+        "durable",
+        "battle",
+        "defense"
+      ],
+      "preferredFoodBuffCategories": [
+        "max_hp",
+        "dmg_reduction",
+        "shield",
+        "healing_bonus",
+        "movement_speed"
+      ],
+      "preferredModCategories": [
+        "defense",
+        "shield",
+        "pvp_survival"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "defense_support",
+        "territory_shield"
+      ],
+      "avoidStats": [
+        {
+          "key": "gatheringYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "miningYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "loggingYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "fishingYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "craftingEfficiency",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "foodDuration",
+          "reason": "Non-combat stat"
+        }
+      ],
+      "scoringWeights": {
+        "playerDMGReduction": 1,
+        "dmgReduction": 0.9,
+        "shield": 0.8,
+        "maxHP": 0.8,
+        "healingReceived": 0.6,
+        "movementSpeed": 0.5,
+        "statusDMGReduction": 0.5,
+        "weakspotDMGReduction": 0.5,
+        "critDMGReduction": 0.5,
+        "shieldStrength": 0.4,
+        "hpRecovery": 0.3,
+        "resistances": 0.3,
+        "stamina": 0.3,
+        "gatheringYield": -0.5,
+        "miningYield": -0.5,
+        "loggingYield": -0.5,
+        "fishingYield": -0.5,
+        "craftingEfficiency": -0.3,
+        "foodDuration": -0.3
+      },
+      "notes": [
+        "PvP damage formula differs from PvE — playerDMGReduction is distinct from dmgReduction",
+        "Shield mechanics vs health pool balance needs player testing",
+        "Some PvP modes may have stat scaling adjustments",
+        "Healing received may be affected by PvP healing reduction modifiers",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "pvp_hybrid",
+      "displayName": "PvP Hybrid",
+      "description": "Balanced PvP build trading some survivability for offensive capability. For players who want both kill power and staying power.",
+      "primaryStats": [
+        {
+          "key": "playerDMGReduction",
+          "reason": "Essential PvP damage mitigation"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Offensive capability"
+        },
+        {
+          "key": "maxHP",
+          "reason": "Survivability foundation"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "shield",
+          "reason": "Extra burst protection"
+        },
+        {
+          "key": "critRate",
+          "reason": "Offensive crit potential"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Crit burst damage"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "General damage mitigation"
+        },
+        {
+          "key": "movementSpeed",
+          "reason": "Combat mobility"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "healingReceived",
+          "reason": "Combat sustain"
+        },
+        {
+          "key": "statusDMGReduction",
+          "reason": "Status defense"
+        },
+        {
+          "key": "hpRecovery",
+          "reason": "Passive recovery"
+        },
+        {
+          "key": "stamina",
+          "reason": "Sprint and dodge"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "pvp",
+        "hybrid",
+        "balanced",
+        "offense",
+        "defense"
+      ],
+      "preferredFoodBuffCategories": [
+        "weapon_dmg",
+        "max_hp",
+        "crit_rate",
+        "crit_dmg",
+        "dmg_reduction",
+        "movement_speed"
+      ],
+      "preferredModCategories": [
+        "weapon_damage",
+        "crit",
+        "defense",
+        "pvp_survival"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support",
+        "defense_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "gatheringYield",
+          "reason": "Non-PvP stat"
+        },
+        {
+          "key": "miningYield",
+          "reason": "Non-PvP stat"
+        },
+        {
+          "key": "loggingYield",
+          "reason": "Non-PvP stat"
+        },
+        {
+          "key": "fishingYield",
+          "reason": "Non-PvP stat"
+        },
+        {
+          "key": "craftingEfficiency",
+          "reason": "Non-PvP stat"
+        }
+      ],
+      "scoringWeights": {
+        "playerDMGReduction": 0.9,
+        "weaponDMG": 0.8,
+        "maxHP": 0.7,
+        "shield": 0.5,
+        "critRate": 0.5,
+        "critDMG": 0.5,
+        "dmgReduction": 0.5,
+        "movementSpeed": 0.5,
+        "healingReceived": 0.4,
+        "statusDMGReduction": 0.3,
+        "hpRecovery": 0.2,
+        "stamina": 0.2,
+        "gatheringYield": -0.5,
+        "miningYield": -0.5,
+        "loggingYield": -0.5,
+        "fishingYield": -0.5,
+        "craftingEfficiency": -0.3
+      },
+      "notes": [
+        "Hybrid builds may underperform specialized builds in their respective areas",
+        "Adjustable weights — trading offense for defense is playstyle-dependent",
+        "PvP mode rules may affect optimal balance (domination vs deathmatch)",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "shield_tank",
+      "displayName": "Shield Tank",
+      "description": "Maximum shield-focused tank build. Relies on shield capacity and strength to absorb damage before health is touched.",
+      "primaryStats": [
+        {
+          "key": "shield",
+          "reason": "Primary damage absorption pool"
+        },
+        {
+          "key": "shieldStrength",
+          "reason": "Shield damage mitigation effectiveness"
+        },
+        {
+          "key": "maxHP",
+          "reason": "Health buffer behind shield"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "dmgReduction",
+          "reason": "Damage reduction before shield calculation"
+        },
+        {
+          "key": "hpRecovery",
+          "reason": "Health recovery while shield is active"
+        },
+        {
+          "key": "healingReceived",
+          "reason": "Sustain throughput"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "playerDMGReduction",
+          "reason": "PvP-specific shield defense"
+        },
+        {
+          "key": "statusDMGReduction",
+          "reason": "Status effect mitigation"
+        },
+        {
+          "key": "resistances",
+          "reason": "Elemental damage reduction"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "shield",
+        "tank",
+        "absorb",
+        "defense",
+        "protection"
+      ],
+      "preferredFoodBuffCategories": [
+        "shield",
+        "max_hp",
+        "dmg_reduction",
+        "healing_bonus"
+      ],
+      "preferredModCategories": [
+        "defense",
+        "shield",
+        "tank"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "defense_support",
+        "territory_shield"
+      ],
+      "avoidStats": [
+        {
+          "key": "weaponDMG",
+          "reason": "Tank build does not prioritize offense"
+        },
+        {
+          "key": "critRate",
+          "reason": "Non-offensive role"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Non-offensive role"
+        },
+        {
+          "key": "fireRate",
+          "reason": "Non-offensive role"
+        },
+        {
+          "key": "gatheringYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "fishingYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "craftingEfficiency",
+          "reason": "Non-combat stat"
+        }
+      ],
+      "scoringWeights": {
+        "shield": 1,
+        "shieldStrength": 0.9,
+        "maxHP": 0.8,
+        "dmgReduction": 0.6,
+        "hpRecovery": 0.5,
+        "healingReceived": 0.5,
+        "playerDMGReduction": 0.4,
+        "statusDMGReduction": 0.3,
+        "resistances": 0.3,
+        "weaponDMG": -0.5,
+        "critRate": -0.5,
+        "critDMG": -0.5,
+        "fireRate": -0.3,
+        "gatheringYield": -0.5,
+        "fishingYield": -0.5,
+        "craftingEfficiency": -0.3
+      },
+      "notes": [
+        "Shield recharge rate and delay not yet modeled",
+        "Shield strength damage formula vs health damage formula may differ",
+        "Some effects may bypass shields entirely",
+        "Shield synergy with specific armor sets needs evaluation",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "melee_dps",
+      "displayName": "Melee DPS",
+      "description": "Close-quarters melee combat build. Prioritizes melee damage, critical stats, and mobility for positioning.",
+      "primaryStats": [
+        {
+          "key": "meleeDMG",
+          "reason": "Core melee weapon damage"
+        },
+        {
+          "key": "weaponDMG",
+          "reason": "Base weapon damage affecting melee"
+        },
+        {
+          "key": "critRate",
+          "reason": "Melee crit chance"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "critDMG",
+          "reason": "Melee crit damage multiplier"
+        },
+        {
+          "key": "movementSpeed",
+          "reason": "Closing distance and dodging"
+        },
+        {
+          "key": "stamina",
+          "reason": "Sprint and melee attack stamina management"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "maxHP",
+          "reason": "Close range requires more survivability"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "Damage mitigation at close range"
+        },
+        {
+          "key": "hpRecovery",
+          "reason": "Sustain between engagements"
+        }
+      ],
+      "utilityStats": [],
+      "relevantKeywords": [
+        "melee",
+        "close range",
+        "crit",
+        "mobility",
+        "brawler"
+      ],
+      "preferredFoodBuffCategories": [
+        "melee_dmg",
+        "weapon_dmg",
+        "crit_rate",
+        "crit_dmg",
+        "movement_speed",
+        "stamina"
+      ],
+      "preferredModCategories": [
+        "weapon_damage",
+        "crit",
+        "melee"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support",
+        "defense_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "statusDMG",
+          "reason": "Melee is direct damage focused"
+        },
+        {
+          "key": "elementalDMG",
+          "reason": "Physical melee primary"
+        },
+        {
+          "key": "bounceDMG",
+          "reason": "No synergy with melee"
+        },
+        {
+          "key": "shrapnelDMG",
+          "reason": "No synergy with melee"
+        },
+        {
+          "key": "reloadSpeed",
+          "reason": "Melee weapons typically do not reload"
+        },
+        {
+          "key": "magazineCapacity",
+          "reason": "Melee weapons typically have no magazine"
+        }
+      ],
+      "scoringWeights": {
+        "meleeDMG": 1,
+        "weaponDMG": 0.8,
+        "critRate": 0.7,
+        "critDMG": 0.7,
+        "movementSpeed": 0.6,
+        "stamina": 0.5,
+        "maxHP": 0.5,
+        "dmgReduction": 0.4,
+        "hpRecovery": 0.3,
+        "statusDMG": -0.3,
+        "elementalDMG": -0.3,
+        "bounceDMG": -0.5,
+        "shrapnelDMG": -0.5,
+        "reloadSpeed": -0.3,
+        "magazineCapacity": -0.3
+      },
+      "notes": [
+        "Melee weapon types may have unique movesets not reflected in stats",
+        "Stamina cost per melee attack varies by weapon type",
+        "Some melee attacks may count as abilities vs basic attacks",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "farming_gathering",
+      "displayName": "Farming & Gathering",
+      "description": "Resource gathering build optimized for yield efficiency across all gathering types. Non-combat focused.",
+      "primaryStats": [
+        {
+          "key": "gatheringYield",
+          "reason": "Universal gathering yield increase"
+        },
+        {
+          "key": "miningYield",
+          "reason": "Mining resource efficiency"
+        },
+        {
+          "key": "loggingYield",
+          "reason": "Logging resource efficiency"
+        },
+        {
+          "key": "fishingYield",
+          "reason": "Fishing resource efficiency"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "movementSpeed",
+          "reason": "Travel efficiency between nodes"
+        },
+        {
+          "key": "stamina",
+          "reason": "Sustained gathering runs"
+        },
+        {
+          "key": "deviationSupport",
+          "reason": "Gathering deviation support effectiveness"
+        }
+      ],
+      "defensiveStats": [],
+      "utilityStats": [
+        {
+          "key": "craftingEfficiency",
+          "reason": "Processing gathered materials"
+        }
+      ],
+      "relevantKeywords": [
+        "farming",
+        "gathering",
+        "mining",
+        "logging",
+        "fishing",
+        "resource",
+        "utility"
+      ],
+      "preferredFoodBuffCategories": [
+        "gathering_yield",
+        "movement_speed",
+        "stamina",
+        "crafting_efficiency"
+      ],
+      "preferredModCategories": [
+        "gathering",
+        "utility"
+      ],
+      "preferredDeviationRoles": [
+        "gathering",
+        "crafting",
+        "territory_buff"
+      ],
+      "avoidStats": [
+        {
+          "key": "weaponDMG",
+          "reason": "Non-combat build"
+        },
+        {
+          "key": "critRate",
+          "reason": "Non-combat build"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Non-combat build"
+        },
+        {
+          "key": "burnDMG",
+          "reason": "Non-combat build"
+        },
+        {
+          "key": "meleeDMG",
+          "reason": "Non-combat build"
+        },
+        {
+          "key": "playerDMGReduction",
+          "reason": "Non-combat build"
+        }
+      ],
+      "scoringWeights": {
+        "gatheringYield": 1,
+        "miningYield": 0.9,
+        "loggingYield": 0.9,
+        "fishingYield": 0.9,
+        "movementSpeed": 0.6,
+        "stamina": 0.5,
+        "deviationSupport": 0.4,
+        "craftingEfficiency": 0.3,
+        "weaponDMG": -0.5,
+        "critRate": -0.5,
+        "critDMG": -0.5,
+        "burnDMG": -0.5,
+        "meleeDMG": -0.5,
+        "playerDMGReduction": -0.3
+      },
+      "notes": [
+        "Gathering yield formulas (additive vs multiplicative) not confirmed",
+        "Some zones may have gathering caps not affected by yield stats",
+        "Deviation gathering bonuses may stack multiplicatively with gear stats",
+        "Fishing may have separate mechanics not fully mapped",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "food_buff_general",
+      "displayName": "Food Buff General",
+      "description": "Support-focused build for maximizing food buff uptime and crafting efficiency. Useful for characters who rely heavily on consumables.",
+      "primaryStats": [
+        {
+          "key": "foodDuration",
+          "reason": "Extended food and drink buff uptime"
+        },
+        {
+          "key": "craftingEfficiency",
+          "reason": "Resource-efficient consumable crafting"
+        },
+        {
+          "key": "deviationSupport",
+          "reason": "Deviation contribution while cooking/crafting"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "maxHP",
+          "reason": "Survivability while cooking"
+        },
+        {
+          "key": "hpRecovery",
+          "reason": "Passive sustain"
+        },
+        {
+          "key": "stamina",
+          "reason": "General utility"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "dmgReduction",
+          "reason": "General protection"
+        }
+      ],
+      "utilityStats": [
+        {
+          "key": "gatheringYield",
+          "reason": "Ingredient gathering bonus"
+        },
+        {
+          "key": "fishingYield",
+          "reason": "Alternative ingredient source"
+        }
+      ],
+      "relevantKeywords": [
+        "food",
+        "cooking",
+        "consumable",
+        "buff",
+        "support",
+        "crafting"
+      ],
+      "preferredFoodBuffCategories": [
+        "food_duration",
+        "crafting_efficiency",
+        "max_hp",
+        "stamina"
+      ],
+      "preferredModCategories": [
+        "utility",
+        "support"
+      ],
+      "preferredDeviationRoles": [
+        "crafting",
+        "territory_buff"
+      ],
+      "avoidStats": [
+        {
+          "key": "critRate",
+          "reason": "Non-combat support build"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Non-combat support build"
+        },
+        {
+          "key": "burnDMG",
+          "reason": "Non-combat support build"
+        },
+        {
+          "key": "shrapnelDMG",
+          "reason": "Non-combat support build"
+        },
+        {
+          "key": "bounceDMG",
+          "reason": "Non-combat support build"
+        }
+      ],
+      "scoringWeights": {
+        "foodDuration": 1,
+        "craftingEfficiency": 0.8,
+        "deviationSupport": 0.6,
+        "maxHP": 0.4,
+        "hpRecovery": 0.3,
+        "stamina": 0.3,
+        "dmgReduction": 0.2,
+        "gatheringYield": 0.3,
+        "fishingYield": 0.2,
+        "critRate": -0.5,
+        "critDMG": -0.5,
+        "burnDMG": -0.5,
+        "shrapnelDMG": -0.5,
+        "bounceDMG": -0.5
+      },
+      "notes": [
+        "Food duration stat behavior and stacking rules not confirmed",
+        "Crafting efficiency may or may not affect cooking specifically",
+        "Deviation support for cooking deviations (e.g., Chefosaurus) needs mapping",
+        "Creative Cooking ignored for V1"
+      ]
+    },
+    {
+      "id": "balanced_general",
+      "displayName": "Balanced General",
+      "description": "General-purpose all-rounder build with moderate offense and defense. Safe default for new or undecided players.",
+      "primaryStats": [
+        {
+          "key": "weaponDMG",
+          "reason": "Universal damage output"
+        },
+        {
+          "key": "maxHP",
+          "reason": "Universal survivability"
+        },
+        {
+          "key": "dmgReduction",
+          "reason": "General damage mitigation"
+        }
+      ],
+      "secondaryStats": [
+        {
+          "key": "critRate",
+          "reason": "Moderate offense scaling"
+        },
+        {
+          "key": "critDMG",
+          "reason": "Crit multiplier"
+        },
+        {
+          "key": "movementSpeed",
+          "reason": "General mobility"
+        },
+        {
+          "key": "reloadSpeed",
+          "reason": "General combat quality of life"
+        }
+      ],
+      "defensiveStats": [
+        {
+          "key": "hpRecovery",
+          "reason": "Passive sustain"
+        },
+        {
+          "key": "shield",
+          "reason": "Extra safety buffer"
+        },
+        {
+          "key": "statusDMGReduction",
+          "reason": "General status protection"
+        }
+      ],
+      "utilityStats": [
+        {
+          "key": "stamina",
+          "reason": "General utility"
+        },
+        {
+          "key": "craftingEfficiency",
+          "reason": "General quality of life"
+        }
+      ],
+      "relevantKeywords": [
+        "general",
+        "balanced",
+        "all-rounder",
+        "default",
+        "beginner"
+      ],
+      "preferredFoodBuffCategories": [
+        "weapon_dmg",
+        "max_hp",
+        "dmg_reduction",
+        "crit_rate",
+        "movement_speed"
+      ],
+      "preferredModCategories": [
+        "weapon_damage",
+        "crit",
+        "defense"
+      ],
+      "preferredDeviationRoles": [
+        "combat",
+        "damage_support",
+        "defense_support"
+      ],
+      "avoidStats": [
+        {
+          "key": "gatheringYield",
+          "reason": "Non-combat stat with low general value"
+        },
+        {
+          "key": "miningYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "loggingYield",
+          "reason": "Non-combat stat"
+        },
+        {
+          "key": "fishingYield",
+          "reason": "Non-combat stat"
+        }
+      ],
+      "scoringWeights": {
+        "weaponDMG": 0.8,
+        "maxHP": 0.7,
+        "dmgReduction": 0.6,
+        "critRate": 0.5,
+        "critDMG": 0.5,
+        "movementSpeed": 0.4,
+        "reloadSpeed": 0.4,
+        "hpRecovery": 0.3,
+        "shield": 0.3,
+        "statusDMGReduction": 0.2,
+        "stamina": 0.2,
+        "craftingEfficiency": 0.2,
+        "gatheringYield": -0.3,
+        "miningYield": -0.3,
+        "loggingYield": -0.3,
+        "fishingYield": -0.3
+      },
+      "notes": [
+        "Fallback profile — specialized profiles will outperform in their areas",
+        "Intended for players unfamiliar with build optimization",
+        "Weights are conservative; meant as safe starting point",
+        "Creative Cooking ignored for V1"
+      ]
+    }
+  ]
+}

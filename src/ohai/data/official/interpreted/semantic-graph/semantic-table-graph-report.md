@@ -1,0 +1,184 @@
+# Semantic Table Graph
+
+Tables: 3781
+
+## Stage boundaries
+- `raw_extracted`: `data/official/raw_extracted`
+- `interpreted`: `data/official/interpreted`
+- `canonical_runtime`: `data/official/canonical_runtime`
+- `verified`: `data/official/verified`
+
+## Entity types
+- **audio_visual**: 148 tables
+- **buff_runtime**: 4 tables
+- **camera_recoil**: 17 tables
+- **equipment_definition**: 242 tables
+- **formula_graph**: 7 tables
+- **global_config**: 24 tables
+- **item_definition**: 53 tables
+- **keyword_proc**: 1 tables
+- **ui_reference**: 118 tables
+- **unknown_table**: 2959 tables
+- **weapon_accessory**: 174 tables
+- **weapon_config**: 34 tables
+
+## Strong relationship candidates
+- `branch_t1_Citrus3.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus3.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus3.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus3.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus3.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus3.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus4.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus4.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus4.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus4.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus4.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus4.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus5.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus5.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus5.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus5.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus5.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t1_Citrus5.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_01.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_01.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_01.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_01.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_01.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_01.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_02.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_02.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_02.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_02.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_02.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t1_baoluo_02.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t1_lighthouse01.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t1_lighthouse01.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t1_lighthouse01.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t1_lighthouse01.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t1_lighthouse01.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t1_lighthouse01.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry03.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry03.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry03.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry03.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry03.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry03.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry04.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry04.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry04.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry04.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry04.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t1_tomjerry04.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_1.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_1.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_1.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_1.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_1.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_1.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_2.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_2.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_2.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_2.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_2.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_2.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_5.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_5.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_5.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_5.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_5.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_Devilsdetail_5.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Harborside1_1.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_Harborside1_1.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_Harborside1_1.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_Harborside1_1.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Harborside1_1.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_Harborside1_1.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_02.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_02.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_02.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_02.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_02.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_02.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_05.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_05.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_05.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_05.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_05.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_Russia_roulette_joker_05.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_claire01.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_claire01.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_claire01.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_claire01.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_claire01.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_claire01.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_moxi01.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_moxi01.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_moxi01.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_moxi01.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_moxi01.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_Unfinished_Adventure_moxi01.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter1.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter1.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter1.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter1.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter1.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter1.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter2.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter2.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter2.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter2.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter2.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter2.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter3.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter3.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter3.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter3.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter3.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter3.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter5.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter5.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter5.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter5.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter5.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_daughter5.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor1.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor1.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor1.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor1.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor1.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor1.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor2.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor2.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor2.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor2.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor2.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_flavor2.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp1.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp1.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp1.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp1.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp1.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp1.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp2.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp2.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp2.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp2.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp2.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t2_lamp2.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+- `branch_t3_H37_1.npc_mesh_no` -> `cutscene_main_t6_mary.npc_mesh_no` confidence=0.77
+- `branch_t3_H37_1.npc_mesh_no` -> `beginner_guide_01.npc_mesh_no` confidence=0.77
+- `branch_t3_H37_1.npc_mesh_no` -> `beginner_guide_04.npc_mesh_no` confidence=0.77
+- `branch_t3_H37_1.npc_mesh_no` -> `beginner_guide_04_start.npc_mesh_no` confidence=0.77
+- `branch_t3_H37_1.npc_mesh_no` -> `beginner_guide_05.npc_mesh_no` confidence=0.77
+- `branch_t3_H37_1.npc_mesh_no` -> `boss_cryinggiant_start.npc_mesh_no` confidence=0.77
+
+## Canonical promotion queue
+No tables are ready for canonical promotion from schema-only evidence. This is expected until row-value overlap is available.
+
+## Verified gate requirements
+- Source artifact must be preserved under raw_extracted or external-research.
+- Schema and row decoding must exist under interpreted with confidence/evidence.
+- Canonical adapter must include tests and no unknown low-confidence fields.
+- Verified data must cite an in-game observation, official extracted table row, or repeatable test protocol.

@@ -1,0 +1,41 @@
+/* ============================================================
+   OHMM — SPACING, RADII & SIZING TOKENS
+   Dense, instrument-panel layout. Small radii (2–4px) keep the
+   machined, beveled-panel feel; spacing runs on a 4px grid.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (4px base grid) ---- */
+  --space-0:  0;
+  --space-1:  2px;
+  --space-2:  4px;
+  --space-3:  6px;
+  --space-4:  8px;
+  --space-5:  12px;
+  --space-6:  16px;
+  --space-7:  20px;
+  --space-8:  24px;
+  --space-9:  32px;
+  --space-10: 40px;
+  --space-12: 56px;
+
+  /* ---- Corner radii — machined, never pill-soft ---- */
+  --radius-xs:  2px;   /* badges, tiny chips */
+  --radius-sm:  3px;   /* slots, tiles */
+  --radius-md:  4px;   /* cards, panels, buttons */
+  --radius-lg:  6px;   /* modals */
+  --radius-full: 9999px; /* status dots only */
+
+  /* ---- Border widths ---- */
+  --border-hairline: 1px;
+  --border-accent:   2px;   /* the signature left/top accent rail */
+
+  /* ---- Control sizing ---- */
+  --control-h-sm: 28px;
+  --control-h:    34px;
+  --control-h-lg: 40px;
+
+  /* ---- Layout ---- */
+  --panel-pad: 12px;
+  --grid-line: 48px;   /* background blueprint grid pitch */
+}

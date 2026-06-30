@@ -1,0 +1,62 @@
+{
+  "module": "mod_system_registry",
+  "moduleStatus": "verified_snapshot_locked",
+  "locked": true,
+  "confidence": "B_project_policy",
+  "createdAt": "2026-05-15T16:18:00.000Z",
+  "purpose": "Define current versus legacy mod system rules so future mod and suffix modules can support current-only, legacy-only, and hybrid inventory modes without merging distinct records.",
+  "modSystemVersions": [
+    "legacy_pre_overhaul",
+    "current_post_overhaul",
+    "hybrid_player_inventory",
+    "unknown"
+  ],
+  "availabilityCategories": [
+    "currently_farmable",
+    "legacy_retained_only",
+    "deprecated_unavailable",
+    "event_limited",
+    "unknown"
+  ],
+  "legacyStatuses": [
+    "not_legacy",
+    "legacy",
+    "mixed",
+    "unknown"
+  ],
+  "optimizerPoolModes": [
+    "current_only",
+    "legacy_only",
+    "hybrid_inventory",
+    "unrestricted_debug"
+  ],
+  "defaultOptimizerPoolMode": "current_only",
+  "futureMetadataTemplate": {
+    "systemVersion": "unknown",
+    "availability": "unknown",
+    "legacyStatus": "unknown",
+    "introducedPatch": null,
+    "retiredPatch": null,
+    "canDropNow": true,
+    "canExistInPlayerInventory": true,
+    "requiresLegacyOwnership": false,
+    "sourceConfidence": "unknown",
+    "notes": []
+  },
+  "optimizerRules": [
+    "Never recommend legacy_retained_only mods in current_only mode.",
+    "Allow legacy_retained_only mods in legacy_only mode.",
+    "Allow both current and legacy mods in hybrid_inventory mode.",
+    "If availability is unknown, do not recommend as best-in-slot by default.",
+    "If systemVersion is unknown, flag the row for review.",
+    "If a current and legacy mod share a similar name but have different effects, treat them as separate records.",
+    "Never merge legacy and current effects into one record.",
+    "Every future mod or suffix record must preserve original source values and normalized English values separately.",
+    "Every future mod or suffix record must include systemVersion and availability metadata."
+  ],
+  "notes": [
+    "This registry only defines policy and metadata rules for future mod and suffix modules.",
+    "No actual mod or suffix data is imported here.",
+    "Locked modules 0, 1, and 2 remain unchanged."
+  ]
+}

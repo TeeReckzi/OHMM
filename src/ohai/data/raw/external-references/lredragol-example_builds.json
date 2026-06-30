@@ -1,0 +1,1213 @@
+{
+  "builds": [
+    {
+      "id": "empty",
+      "name": {
+        "ru": "Пустой пресет",
+        "en": "Empty preset"
+      },
+      "description": {
+        "ru": "Снимает всё оружие, броню и моды, чтобы можно было начать сборку с нуля.",
+        "en": "Clears all equipped weapons, armor pieces, and mods so you can start from scratch."
+      },
+      "weapon": null,
+      "items": {},
+      "mods": {},
+      "source": {
+        "title": "Built-in reset preset"
+      }
+    },
+    {
+      "id": "de50_unstable_bomber",
+      "name": {
+        "ru": "DE.50 - Jaws / Unstable Bomber",
+        "en": "DE.50 - Jaws / Unstable Bomber"
+      },
+      "description": {
+        "ru": "Критовый билд на DE.50 - Jaws с упором на частые проки Unstable Bomber и стабильный урон по одной цели.",
+        "en": "Crit-focused DE.50 - Jaws setup built around frequent Unstable Bomber procs and steady single-target damage."
+      },
+      "weapon": {
+        "id": "de50_jaws",
+        "name": "DE.50 - Jaws"
+      },
+      "deviation": {
+        "name": "Lonewolf's Whisper",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "lonewolf_hat",
+        "mask": "lonewolf_mask",
+        "top": "lonewolf_jacket",
+        "gloves": "lonewolf_gloves",
+        "pants": "lonewolf_pants",
+        "boots": "bastille_boots"
+      },
+      "mods": {
+        "weapon": "Bombardier Souvenir",
+        "helmet": "Momentum Up",
+        "mask": "Point Detonation",
+        "top": "Rejuvenating",
+        "gloves": "Crit Amplifier",
+        "pants": "Deadshot",
+        "boots": "Slow And Steady General"
+      },
+      "source": {
+        "title": "Game8 Best Unstable Bomber Build, Weapons, and Mods",
+        "url": "https://game8.co/games/Once-Human/archives/466957"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_2x_dp",
+          "muzzle": "220_lcpis_brake_01",
+          "magazine": "420_pis_spr_mag_02"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["unstable_bomber_damage", "unstable_bomber_trigger_chance", "crit_damage", "weapon_damage"],
+        "helmet": ["crit_rate", "crit_damage", "weapon_damage"],
+        "mask": ["instant_keyword_damage", "instant_keyword_trigger_chance", "status_damage"],
+        "top": ["weapon_damage", "crit_rate", "reload_efficiency"],
+        "gloves": ["crit_damage", "weakspot_damage", "damage_vs_normal"],
+        "pants": ["crit_rate", "weapon_damage", "magazine_capacity"],
+        "boots": ["magazine_capacity", "reload_efficiency", "damage_vs_normal"]
+      }
+    },
+    {
+      "id": "de50_jaws_reloadless_bomber",
+      "name": {
+        "ru": "DE.50 - Jaws / Бомбер без перезарядки",
+        "en": "DE.50 - Jaws / Reloadless Bomber"
+      },
+      "description": {
+        "ru": "Вариант Jaws под длинные серии без лишней перезарядки, чтобы чаще поддерживать Unstable Bomber в бою.",
+        "en": "Jaws variant tuned for longer strings of fire and minimal reload downtime while keeping Unstable Bomber rolling."
+      },
+      "weapon": {
+        "id": "de50_jaws",
+        "name": "DE.50 - Jaws"
+      },
+      "deviation": {
+        "name": "Lonewolf's Whisper",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "lonewolf_hat",
+        "mask": "lonewolf_mask",
+        "top": "heavy_duty_top",
+        "gloves": "lonewolf_gloves",
+        "pants": "lonewolf_pants",
+        "boots": "bastille_boots"
+      },
+      "mods": {
+        "weapon": "Bombardier Souvenir Unstable Bomber",
+        "helmet": "Deviation Expert",
+        "mask": "Point Detonation",
+        "top": "Critical Rescue",
+        "gloves": "Crit Boost",
+        "pants": "Deadshot",
+        "boots": "Slow And Steady General"
+      },
+      "source": {
+        "title": "Gameplay.tips Reloadless Jaws / Unstable Bomber build"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_2x_05",
+          "muzzle": "220_lcpis_brake_01",
+          "magazine": "420_pis_ex_mag_02"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["unstable_bomber_trigger_chance", "unstable_bomber_damage", "magazine_capacity", "reload_efficiency"],
+        "helmet": ["crit_rate", "weapon_damage"],
+        "mask": ["instant_keyword_trigger_chance", "instant_keyword_damage", "status_damage"],
+        "top": ["reload_efficiency", "weapon_damage"],
+        "gloves": ["crit_damage", "weapon_damage"],
+        "pants": ["crit_rate", "damage_vs_normal"],
+        "boots": ["reload_efficiency", "weapon_damage"]
+      }
+    },
+    {
+      "id": "socr_shrapnel",
+      "name": {
+        "ru": "SOCR / Shrapnel",
+        "en": "SOCR / Shrapnel"
+      },
+      "description": {
+        "ru": "Базовый шрапнель-билд с хорошим балансом урона по weakspot, крита и стабильных Shrapnel-проков.",
+        "en": "Baseline Shrapnel build with a solid balance of weakspot damage, crit scaling, and stable Shrapnel uptime."
+      },
+      "weapon": {
+        "id": "socr_the_last_valor",
+        "name": "SOCR - The Last Valor"
+      },
+      "deviation": {
+        "name": "Lonewolf's Whisper",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "beret",
+        "mask": "lonewolf_mask",
+        "top": "lonewolf_jacket",
+        "gloves": "lonewolf_gloves",
+        "pants": "lonewolf_pants",
+        "boots": "bastille_boots"
+      },
+      "mods": {
+        "weapon": "Shatter Them All",
+        "helmet": "Momentum Up",
+        "mask": "Targeted Strike",
+        "top": "Healing Fortification",
+        "gloves": "Crit Amplifier",
+        "pants": "Bullet Siphon",
+        "boots": "Covered Advance General"
+      },
+      "source": {
+        "title": "Game8 Best Shrapnel Build, Weapons, and Mods",
+        "url": "https://game8.co/games/Once-Human/archives/466935"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_4x_02",
+          "muzzle": "220_556_sup_01",
+          "underbarrel": "320_rvg_grip_01",
+          "magazine": "420_rif_ex_mag_03",
+          "stock": "620_strike_stock_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["shrapnel_damage", "shrapnel_trigger_chance", "shrapnel_crit_damage", "weakspot_damage"],
+        "helmet": ["crit_rate", "crit_damage", "weapon_damage"],
+        "mask": ["marked_target_damage", "marked_target_weakspot_damage", "status_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "damage_vs_normal"],
+        "gloves": ["crit_damage", "weakspot_damage", "shrapnel_crit_damage"],
+        "pants": ["bullet_effect_damage", "bullet_effect_trigger_chance", "magazine_capacity"],
+        "boots": ["magazine_capacity", "reload_efficiency", "damage_vs_normal"]
+      }
+    },
+    {
+      "id": "mps7_power_surge",
+      "name": {
+        "ru": "MPS7 - Outer Space / Power Surge",
+        "en": "MPS7 - Outer Space / Power Surge"
+      },
+      "description": {
+        "ru": "Power Surge-билд с акцентом на частые shock-проки, высокий elemental/status урон и давление по shocked target.",
+        "en": "Power Surge setup focused on frequent shock procs, high elemental/status damage, and pressure against shocked targets."
+      },
+      "weapon": {
+        "id": "mps7_outer_space",
+        "name": "MPS7 - Outer Space"
+      },
+      "deviation": {
+        "name": "Lonewolf's Whisper",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "mayfly_goggles",
+        "mask": "shelterer_mask",
+        "top": "shelterer_top",
+        "gloves": "shelterer_gloves",
+        "pants": "bastille_pants",
+        "boots": "shelterer_shoes"
+      },
+      "mods": {
+        "weapon": "Static Shock Power Surge",
+        "helmet": "Deviation Expert",
+        "mask": "Thunderclap Power Surge",
+        "top": "Rejuvenating",
+        "gloves": "Status Enhancement",
+        "pants": "Precision Charge",
+        "boots": "Covered Advance General"
+      },
+      "source": {
+        "title": "Game8 Best Builds - Power Surge",
+        "url": "https://game8.co/games/Once-Human/archives/Best-Builds"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_2x_03",
+          "muzzle": "220_allin_sup_01",
+          "underbarrel": "320_tango_grip_01",
+          "magazine": "420_smg_tac_mag_04",
+          "stock": "620_tac_stock_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 4,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["shock_damage", "shock_trigger_chance", "damage_to_shocked_target", "shock_elemental_damage"],
+        "helmet": ["elemental_damage", "crit_rate", "weapon_damage"],
+        "mask": ["shock_trigger_chance", "damage_to_shocked_target", "status_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "crit_rate"],
+        "gloves": ["elemental_damage", "shock_elemental_damage", "status_damage"],
+        "pants": ["shock_crit_damage", "crit_damage", "weapon_damage"],
+        "boots": ["magazine_capacity", "reload_efficiency", "damage_vs_normal"]
+      }
+    },
+    {
+      "id": "dbsg_doombringer_fortress",
+      "name": {
+        "ru": "DBSG - Doombringer / Fortress Warfare",
+        "en": "DBSG - Doombringer / Fortress Warfare"
+      },
+      "description": {
+        "ru": "Ближний билд на Doombringer для постоянной Fortress Warfare и плотного дробового урона в упоре.",
+        "en": "Close-range Doombringer build for frequent Fortress Warfare uptime and heavy shotgun burst at point-blank range."
+      },
+      "weapon": {
+        "id": "dbsg_doombringer",
+        "name": "DBSG - Doombringer"
+      },
+      "deviation": {
+        "name": "Lonewolf's Whisper",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "savior_helmet",
+        "mask": "savior_mask",
+        "top": "savior_top",
+        "gloves": "bastille_gloves",
+        "pants": "savior_pants",
+        "boots": "earthly_boots"
+      },
+      "mods": {
+        "weapon": "Portable Territory Fortress Warfare",
+        "helmet": "Precise Strike",
+        "mask": "Unbreakable Fortress Warfare",
+        "top": "Healing Fortification",
+        "gloves": "Crit Amplifier",
+        "pants": "Unstoppable",
+        "boots": "Covered Advance General"
+      },
+      "source": {
+        "title": "Game8 Doombringer Build",
+        "url": "https://game8.co/games/Once-Human/archives/472205"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "underbarrel": "320_tac_laser_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["fortress_damage", "weapon_damage", "crit_damage", "reload_efficiency"],
+        "helmet": ["crit_rate", "weakspot_damage", "weapon_damage"],
+        "mask": ["fortress_damage", "weapon_damage", "status_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "damage_vs_normal"],
+        "gloves": ["crit_damage", "weapon_damage", "weakspot_damage"],
+        "pants": ["magazine_capacity", "damage_vs_normal", "weapon_damage"],
+        "boots": ["reload_efficiency", "magazine_capacity", "damage_vs_normal"]
+      }
+    },
+    {
+      "id": "kvd_icebreaker_frost",
+      "name": {
+        "ru": "KVD - Icebreaker / Frost Vortex",
+        "en": "KVD - Icebreaker / Frost Vortex"
+      },
+      "description": {
+        "ru": "Frost Vortex-сборка с упором на длительность вихря, ледяной урон и быстрый разгон статуса.",
+        "en": "Frost Vortex build focused on vortex duration, frost damage, and fast status ramp-up."
+      },
+      "weapon": {
+        "id": "kvd_icebreaker",
+        "name": "KVD - Icebreaker"
+      },
+      "deviation": {
+        "name": "Snowsprite",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "mayfly_goggles",
+        "mask": "scout_mask",
+        "top": "heavy_duty_top",
+        "gloves": "shelterer_gloves",
+        "pants": "shelterer_pants",
+        "boots": "heavy_duty_shoes"
+      },
+      "mods": {
+        "weapon": "Cryo Blast Frost Vortex",
+        "helmet": "Deviation Expert",
+        "mask": "Frost Construct Frost Vortex",
+        "top": "Critical Rescue",
+        "gloves": "Elemental Overload",
+        "pants": "Critical Surge General",
+        "boots": "Covered Advance General"
+      },
+      "source": {
+        "title": "Game8 Frost Vortex Build",
+        "url": "https://game8.co/games/Once-Human/archives/Builds-Frost-Vortex"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_6x_02",
+          "muzzle": "220_large_sup_01",
+          "underbarrel": "320_rvg_grip_01",
+          "magazine": "420_lmg_lrg_drum_02",
+          "stock": "620_large_stock_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 4,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["frost_vortex_damage", "frost_vortex_trigger_chance", "frost_vortex_duration", "frost_elemental_damage"],
+        "helmet": ["elemental_damage", "crit_rate", "weapon_damage"],
+        "mask": ["frost_vortex_trigger_chance", "frost_vortex_damage", "status_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "crit_rate"],
+        "gloves": ["elemental_damage", "frost_elemental_damage", "status_damage"],
+        "pants": ["crit_damage", "frost_vortex_duration", "weapon_damage"],
+        "boots": ["magazine_capacity", "reload_efficiency", "damage_vs_normal"]
+      }
+    },
+    {
+      "id": "m416_scorched_earth_burn",
+      "name": {
+        "ru": "M416 - Scorched Earth / Burn",
+        "en": "M416 - Scorched Earth / Burn"
+      },
+      "description": {
+        "ru": "Burn-сборка для теста стаков горения, тиков статуса и усиления blaze-урона через экипировку и моды.",
+        "en": "Burn setup for testing burn stacks, status ticks, and blaze damage scaling through gear and mods."
+      },
+      "weapon": {
+        "id": "m416_scorched_earth",
+        "name": "M416 - Scorched Earth"
+      },
+      "deviation": {
+        "name": "Pyro Dino",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "lonewolf_hat",
+        "mask": "lonewolf_mask",
+        "top": "heavy_duty_top",
+        "gloves": "lonewolf_gloves",
+        "pants": "lonewolf_pants",
+        "boots": "fire_rune_boots"
+      },
+      "mods": {
+        "weapon": "Burning Wrath Burn",
+        "helmet": "Deviation Expert",
+        "mask": "Blaze Amplifier Burn",
+        "top": "Critical Rescue",
+        "gloves": "Elemental Overload",
+        "pants": "Deadshot",
+        "boots": "Slow And Steady General"
+      },
+      "source": {
+        "title": "Game8 Burn Build",
+        "url": "https://game8.co/games/Once-Human/archives/Builds-Burn"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_4x_02",
+          "muzzle": "220_556_sup_01",
+          "underbarrel": "320_bcm_grip_01",
+          "magazine": "420_rif_ex_mag_03",
+          "stock": "620_tac_stock_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["burn_damage", "burn_trigger_chance", "burn_duration", "burn_elemental_damage"],
+        "helmet": ["crit_rate", "weapon_damage", "elemental_damage"],
+        "mask": ["burn_trigger_chance", "burn_damage", "status_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "crit_rate"],
+        "gloves": ["elemental_damage", "burn_elemental_damage", "status_damage"],
+        "pants": ["crit_damage", "weapon_damage", "damage_vs_normal"],
+        "boots": ["magazine_capacity", "reload_efficiency", "damage_vs_normal"]
+      }
+    },
+    {
+      "id": "critical_pulse_power_surge",
+      "name": {
+        "ru": "Critical Pulse / Power Surge",
+        "en": "Critical Pulse / Power Surge"
+      },
+      "description": {
+        "ru": "Кроссбоу-билд под Charge State, частые Power Surge-проки и усиленный shock-урон.",
+        "en": "Crossbow setup built around Charge State, frequent Power Surge procs, and boosted shock damage."
+      },
+      "weapon": {
+        "id": "critical_pulse",
+        "name": "Critical Pulse"
+      },
+      "deviation": {
+        "name": "Lonewolf's Whisper",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "shelterer_hat",
+        "mask": "shelterer_mask",
+        "top": "savior_top",
+        "gloves": "shelterer_gloves",
+        "pants": "overloaded_pants",
+        "boots": "renegade_shoes"
+      },
+      "mods": {
+        "weapon": "Static Shock Power Surge",
+        "helmet": "Work of Proficiency",
+        "mask": "Thunderclap Power Surge",
+        "top": "Critical Rescue",
+        "gloves": "Status Enhancement",
+        "pants": "Abnormal Increase",
+        "boots": "Covered Advance General"
+      },
+      "source": {
+        "title": "Game8 Best Critical Pulse Build",
+        "url": "https://game8.co/games/Once-Human/archives/500911"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["shock_damage", "shock_trigger_chance", "damage_to_shocked_target", "shock_elemental_damage"],
+        "helmet": ["elemental_damage", "crit_rate", "weapon_damage"],
+        "mask": ["shock_trigger_chance", "damage_to_shocked_target", "status_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "crit_rate"],
+        "gloves": ["elemental_damage", "shock_elemental_damage", "status_damage"],
+        "pants": ["shock_crit_damage", "crit_damage", "weapon_damage"],
+        "boots": ["reload_efficiency", "damage_vs_normal", "weapon_damage"]
+      }
+    },
+    {
+      "id": "m416_silent_anabasis_frost",
+      "name": {
+        "ru": "M416 - Silent Anabasis / Frost Vortex",
+        "en": "M416 - Silent Anabasis / Frost Vortex"
+      },
+      "description": {
+        "ru": "Frost Vortex-сборка с упором на ледяной урон, длительность вихря и взрыв ледяных кристаллов.",
+        "en": "Frost Vortex setup focused on frost damage, longer vortex uptime, and Ice Crystal detonations."
+      },
+      "weapon": {
+        "id": "m416_silent_anabasis",
+        "name": "M416 - Silent Anabasis"
+      },
+      "deviation": {
+        "name": "Snowsprite",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "shelterer_hat",
+        "mask": "shelterer_mask",
+        "top": "savior_top",
+        "gloves": "snow_camo_gloves",
+        "pants": "savior_pants",
+        "boots": "shelterer_shoes"
+      },
+      "mods": {
+        "weapon": "Vortex Multiplier",
+        "helmet": "Deviation Expert",
+        "mask": "Lingering Frost",
+        "top": "Critical Rescue",
+        "gloves": "Elemental Overload",
+        "pants": "Bullet Siphon",
+        "boots": "Covered Advance General"
+      },
+      "source": {
+        "title": "Game8 Best Silent Anabasis Build",
+        "url": "https://game8.co/games/Once-Human/archives/481013"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_4x_02",
+          "muzzle": "220_556_sup_01",
+          "underbarrel": "320_bcm_grip_01",
+          "magazine": "420_rif_ex_mag_03",
+          "stock": "620_tac_stock_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["frost_vortex_damage", "frost_vortex_trigger_chance", "frost_vortex_duration", "frost_elemental_damage"],
+        "helmet": ["elemental_damage", "crit_rate", "weapon_damage"],
+        "mask": ["frost_vortex_trigger_chance", "frost_vortex_damage", "status_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "crit_rate"],
+        "gloves": ["elemental_damage", "frost_elemental_damage", "status_damage"],
+        "pants": ["crit_damage", "frost_vortex_duration", "weapon_damage"],
+        "boots": ["magazine_capacity", "reload_efficiency", "damage_vs_normal"]
+      }
+    },
+    {
+      "id": "m416_autumn_equinox_fortress",
+      "name": {
+        "ru": "M416 - Autumn Equinox / Fortress Warfare",
+        "en": "M416 - Autumn Equinox / Fortress Warfare"
+      },
+      "description": {
+        "ru": "Fortress Warfare-билд с хорошим uptime зоны, бонусом урона на высоком HP и стабильным rifle-DPS.",
+        "en": "Fortress Warfare build with strong zone uptime, bonus damage at high HP, and stable rifle DPS."
+      },
+      "weapon": {
+        "id": "m416_autumn_equinox",
+        "name": "M416 - Autumn Equinox"
+      },
+      "deviation": {
+        "name": "Lonewolf's Whisper",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "bastille_helmet",
+        "mask": "lonewolf_mask",
+        "top": "lonewolf_jacket",
+        "gloves": "lonewolf_gloves",
+        "pants": "lonewolf_pants",
+        "boots": "tactical_combat_boots"
+      },
+      "mods": {
+        "weapon": "Portable Territory Fortress Warfare",
+        "helmet": "Momentum Up",
+        "mask": "Unbreakable Fortress Warfare",
+        "top": "Healing Fortification",
+        "gloves": "Crit Boost",
+        "pants": "Deadshot",
+        "boots": "Covered Advance General"
+      },
+      "source": {
+        "title": "Game8 Best Autumn Equinox Build",
+        "url": "https://game8.co/games/Once-Human/archives/483993"
+      },
+      "weapon_settings": {
+        "star": 5,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_4x_02",
+          "muzzle": "220_556_sup_01",
+          "underbarrel": "320_bcm_grip_01",
+          "magazine": "420_rif_ex_mag_03",
+          "stock": "620_tac_stock_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["fortress_damage", "fortress_trigger_chance", "fortress_duration", "weapon_damage"],
+        "helmet": ["crit_rate", "weapon_damage", "weakspot_damage"],
+        "mask": ["fortress_damage", "fortress_duration", "weapon_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "damage_vs_normal"],
+        "gloves": ["crit_damage", "weapon_damage", "weakspot_damage"],
+        "pants": ["crit_rate", "magazine_capacity", "damage_vs_normal"],
+        "boots": ["reload_efficiency", "damage_vs_normal", "weapon_damage"]
+      }
+    },
+    {
+      "id": "mg4_predator_fast_gunner",
+      "name": {
+        "ru": "MG4 - Predator / Fast Gunner",
+        "en": "MG4 - Predator / Fast Gunner"
+      },
+      "description": {
+        "ru": "LMG-сборка под разгон Fast Gunner, высокий урон на длинной очереди и максимум пользы от большого магазина.",
+        "en": "LMG build for stacking Fast Gunner, scaling long-burst damage, and getting the most out of a large magazine."
+      },
+      "weapon": {
+        "id": "mg4_predator",
+        "name": "MG4 - Predator"
+      },
+      "deviation": {
+        "name": "Lonewolf's Whisper",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "bastille_helmet",
+        "mask": "oasis_mask",
+        "top": "renegade_jacket",
+        "gloves": "renegade_gloves",
+        "pants": "renegade_pants",
+        "boots": "lonewolf_shoes"
+      },
+      "mods": {
+        "weapon": "Precision Rush",
+        "helmet": "Precise Strike",
+        "mask": "Blitzkrieg",
+        "top": "Healing Fortification",
+        "gloves": "Weakspot Dmg Boost Precision",
+        "pants": "Bullet Siphon Precision",
+        "boots": "Covered Advance Precision"
+      },
+      "source": {
+        "title": "Game8 Best Fast Gunner Build",
+        "url": "https://game8.co/games/Once-Human/archives/Builds-Fast-Gunner"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_4x_02",
+          "muzzle": "220_556_sup_01",
+          "underbarrel": "320_rvg_grip_01",
+          "magazine": "420_lmg_lrg_drum_02",
+          "stock": "620_rs2_stock_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["fast_gunner_trigger_chance", "fast_gunner_weapon_damage", "weapon_damage", "magazine_capacity"],
+        "helmet": ["crit_rate", "weapon_damage", "crit_damage"],
+        "mask": ["fast_gunner_trigger_chance", "fast_gunner_duration", "weapon_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "damage_vs_normal"],
+        "gloves": ["weakspot_damage", "crit_damage", "weapon_damage"],
+        "pants": ["magazine_capacity", "weapon_damage", "damage_vs_normal"],
+        "boots": ["reload_efficiency", "magazine_capacity", "damage_vs_normal"]
+      }
+    },
+    {
+      "id": "hamr_brahminy_bounce",
+      "name": {
+        "ru": "HAMR - Brahminy / Bounce",
+        "en": "HAMR - Brahminy / Bounce"
+      },
+      "description": {
+        "ru": "Bounce-билд на HAMR с фокусом на ricochet-урон, weakspot и усиление следующих выстрелов.",
+        "en": "Bounce build for HAMR focused on ricochet damage, weakspot hits, and stronger follow-up shots."
+      },
+      "weapon": {
+        "id": "hamr_brahminy",
+        "name": "HAMR - Brahminy"
+      },
+      "deviation": {
+        "name": "Lonewolf's Whisper",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "agent_helmet",
+        "mask": "agent_mask",
+        "top": "bastille_top",
+        "gloves": "agent_gloves",
+        "pants": "hot_dog_shorts",
+        "boots": "agent_shoes"
+      },
+      "mods": {
+        "weapon": "Targeted Bounce",
+        "helmet": "Precise Strike",
+        "mask": "Break Bounce",
+        "top": "Healing Fortification",
+        "gloves": "Weakspot Dmg Boost Precision",
+        "pants": "Deadshot Precision",
+        "boots": "Covered Advance Precision"
+      },
+      "source": {
+        "title": "Game8 Best Brahminy Build",
+        "url": "https://game8.co/games/Once-Human/archives/469252"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_6x_02",
+          "muzzle": "220_556_sup_01",
+          "magazine": "420_sr_ameh_mag_05",
+          "stock": "620_rs2_stock_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 5,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["bounce_damage", "bounce_trigger_chance", "bounce_crit_damage", "bounce_weakspot_damage"],
+        "helmet": ["crit_rate", "weapon_damage", "crit_damage"],
+        "mask": ["bounce_trigger_chance", "bounce_damage", "weapon_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "damage_vs_normal"],
+        "gloves": ["weakspot_damage", "crit_damage", "bounce_weakspot_damage"],
+        "pants": ["crit_rate", "damage_vs_normal", "magazine_capacity"],
+        "boots": ["reload_efficiency", "magazine_capacity", "damage_vs_normal"]
+      }
+    },
+    {
+      "id": "acs12_pyroclasm_starter_burn",
+      "name": {
+        "ru": "ACS12 - Pyroclasm Starter / Burn",
+        "en": "ACS12 - Pyroclasm Starter / Burn"
+      },
+      "description": {
+        "ru": "Дробовиковый burn-билд под Dragon's Breath, частое наложение горения и усиление blaze-урона.",
+        "en": "Shotgun burn build centered on Dragon's Breath ammo, frequent Burn application, and stronger blaze damage."
+      },
+      "weapon": {
+        "id": "acs12_pyroclasm_starter",
+        "name": "ACS12 - Pyroclasm Starter"
+      },
+      "deviation": {
+        "name": "Invincible Sun",
+        "degree": 0
+      },
+      "items": {
+        "helmet": "shelterer_hat",
+        "mask": "shelterer_mask",
+        "top": "blackstone_top",
+        "gloves": "blackstone_gloves",
+        "pants": "blackstone_pants",
+        "boots": "fire_rune_boots"
+      },
+      "mods": {
+        "weapon": "Burning Wrath Burn",
+        "helmet": "Deviation Expert",
+        "mask": "Blaze Amplifier Burn",
+        "top": "Critical Rescue",
+        "gloves": "Status Enhancement",
+        "pants": "Abnormal Increase",
+        "boots": "Covered Advance General"
+      },
+      "source": {
+        "title": "Game8 Best Pyroclasm Starter Build",
+        "url": "https://game8.co/games/Once-Human/archives/481283"
+      },
+      "weapon_settings": {
+        "star": 6,
+        "level": 5,
+        "calibration": 6,
+        "attachments": {
+          "sight": "120_2x_03",
+          "muzzle": "220_12g_brake_01",
+          "underbarrel": "320_bas_laser_01",
+          "magazine": "420_shot_tac_mag_01",
+          "stock": "620_tac_stock_01"
+        }
+      },
+      "item_settings": {
+        "helmet": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "mask": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "top": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "gloves": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "pants": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        },
+        "boots": {
+          "star": 6,
+          "level": 5,
+          "calibration": 6
+        }
+      },
+      "mod_secondary_attributes": {
+        "weapon": ["burn_damage", "burn_trigger_chance", "burn_duration", "burn_elemental_damage"],
+        "helmet": ["elemental_damage", "weapon_damage", "crit_rate"],
+        "mask": ["burn_trigger_chance", "burn_damage", "status_damage"],
+        "top": ["weapon_damage", "reload_efficiency", "damage_vs_normal"],
+        "gloves": ["elemental_damage", "burn_elemental_damage", "status_damage"],
+        "pants": ["burn_duration", "weapon_damage", "damage_vs_normal"],
+        "boots": ["reload_efficiency", "damage_vs_normal", "weapon_damage"]
+      }
+    }
+  ]
+}

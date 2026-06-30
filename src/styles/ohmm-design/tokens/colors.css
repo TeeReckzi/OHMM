@@ -1,0 +1,101 @@
+/* ============================================================
+   OHMM — COLOR TOKENS
+   A deep-space survival HUD palette: near-black navy voids,
+   electric cyan as the primary signal, ember orange for the
+   opposing/defensive axis, and arc-violet for perks/mods.
+   ============================================================ */
+
+:root {
+  /* ---- Base voids (backgrounds, deepest → lifted) ---- */
+  --void-900: #010710;   /* app letterbox / deepest */
+  --void-800: #030c14;   /* primary background */
+  --void-700: #051019;   /* raised surface */
+  --void-600: #071420;   /* card / popover */
+  --void-500: #0a1828;   /* muted panel */
+  --void-400: #0e2030;   /* hover surface */
+
+  /* ---- Signal cyan (primary) ---- */
+  --cyan-500: #00c8ff;   /* primary action / live data */
+  --cyan-400: #38d4ff;
+  --cyan-300: #7ce0ff;
+  --cyan-700: #0090bd;
+
+  /* ---- Ember orange (accent / defensive / warning-warm) ---- */
+  --ember-500: #ff6b35;
+  --ember-400: #ff8a5c;
+  --ember-600: #e0501c;
+
+  /* ---- Arc violet (perks / mods / secondary) ---- */
+  --violet-500: #7c5cff;
+  --violet-400: #9d83ff;
+  --violet-300: #c8b8ff;
+  --violet-deep: #1a0f3d;
+
+  /* ---- Text on dark ---- */
+  --ice-100: #d4ecf5;    /* high-emphasis headings */
+  --ice-200: #b8d8e8;    /* default body */
+  --ice-300: #7ab8cc;    /* secondary / labels */
+  --ice-400: #4a7080;    /* muted / placeholder */
+  --ice-500: #2a4456;    /* disabled / faint */
+
+  /* ---- Status ---- */
+  --status-go:   #4ade80; /* ready / online / success */
+  --status-warn: #fbbf24; /* caution */
+  --status-crit: #ff3b5e; /* destructive / danger */
+  --status-info: #38bdf8; /* neutral info */
+
+  /* ---- Rarity ladder (game item tiers) ---- */
+  --rarity-common:    #8898a8;
+  --rarity-uncommon:  #4ade80;
+  --rarity-rare:      #38bdf8;
+  --rarity-epic:      #c084fc;
+  --rarity-legendary: #fb923c;
+
+  /* ---- Chart series ---- */
+  --chart-1: #00c8ff;
+  --chart-2: #7c5cff;
+  --chart-3: #ff6b35;
+  --chart-4: #4ade80;
+  --chart-5: #ff3b5e;
+
+  /* ============================================================
+     SEMANTIC ALIASES — reference these in components
+     ============================================================ */
+  --background:        var(--void-800);
+  --surface:           var(--void-700);
+  --surface-card:      var(--void-600);
+  --surface-muted:     var(--void-500);
+  --surface-hover:     var(--void-400);
+  --surface-glass:     rgba(4, 14, 26, 0.88);
+
+  --text-strong:       var(--ice-100);
+  --text-body:         var(--ice-200);
+  --text-secondary:    var(--ice-300);
+  --text-muted:        var(--ice-400);
+  --text-faint:        var(--ice-500);
+
+  --primary:           var(--cyan-500);
+  --primary-hover:     var(--cyan-400);
+  --on-primary:        var(--void-800);
+  --accent:            var(--ember-500);
+  --on-accent:         var(--void-800);
+  --perk:              var(--violet-500);
+
+  --border:            rgba(0, 200, 255, 0.16);
+  --border-strong:     rgba(0, 200, 255, 0.40);
+  --border-warm:       rgba(255, 107, 53, 0.20);
+  --border-perk:       rgba(124, 92, 255, 0.22);
+
+  --input-bg:          rgba(0, 200, 255, 0.05);
+  --input-border:      rgba(0, 200, 255, 0.15);
+  --ring:              rgba(0, 200, 255, 0.40);
+
+  --danger:            var(--status-crit);
+  --success:           var(--status-go);
+
+  /* faint tints used for fills / wash backgrounds */
+  --tint-cyan:   rgba(0, 200, 255, 0.06);
+  --tint-ember:  rgba(255, 107, 53, 0.07);
+  --tint-violet: rgba(124, 92, 255, 0.06);
+  --tint-go:     rgba(74, 222, 128, 0.08);
+}

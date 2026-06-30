@@ -1,0 +1,211 @@
+.ohmm-app-shell,
+:root {
+  --void-900: #010710;
+  --void-800: #030c14;
+  --void-700: #051019;
+  --void-600: #071420;
+  --void-500: #0a1828;
+  --void-400: #0e2030;
+  --cyan-500: #00c8ff;
+  --cyan-400: #38d4ff;
+  --ember-500: #ff6b35;
+  --violet-500: #7c5cff;
+  --ice-100: #d4ecf5;
+  --ice-200: #b8d8e8;
+  --ice-300: #7ab8cc;
+  --ice-400: #4a7080;
+  --ice-500: #2a4456;
+  --status-go: #4ade80;
+  --status-warn: #fbbf24;
+  --status-crit: #ff3b5e;
+  --rarity-common: #8898a8;
+  --rarity-uncommon: #4ade80;
+  --rarity-rare: #38bdf8;
+  --rarity-epic: #c084fc;
+  --rarity-legendary: #fb923c;
+  --background: var(--void-800);
+  --surface: var(--void-700);
+  --surface-card: var(--void-600);
+  --surface-muted: var(--void-500);
+  --surface-glass: rgba(4, 14, 26, 0.88);
+  --text-strong: var(--ice-100);
+  --text-body: var(--ice-200);
+  --text-secondary: var(--ice-300);
+  --text-muted: var(--ice-400);
+  --text-faint: var(--ice-500);
+  --primary: var(--cyan-500);
+  --primary-hover: var(--cyan-400);
+  --accent: var(--ember-500);
+  --perk: var(--violet-500);
+  --border: rgba(0, 200, 255, 0.16);
+  --border-strong: rgba(0, 200, 255, 0.40);
+  --tint-cyan: rgba(0, 200, 255, 0.06);
+  --tint-ember: rgba(255, 107, 53, 0.07);
+  --tint-violet: rgba(124, 92, 255, 0.06);
+  --font-display: 'Rajdhani', 'Oswald', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', monospace;
+  --text-2xs: 8px;
+  --text-xs: 10px;
+  --text-sm: 12px;
+  --text-base: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-full: 9999px;
+  --space-2: 4px;
+  --space-4: 8px;
+  --space-5: 12px;
+  --space-6: 16px;
+  --space-8: 24px;
+  --shadow-panel: 0 0 24px rgba(0, 200, 255, 0.05), inset 0 1px 0 rgba(0, 200, 255, 0.12);
+  --shadow-header: 0 2px 30px rgba(0, 200, 255, 0.05);
+  --transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --grid-overlay:
+    linear-gradient(rgba(0, 200, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 255, 0.022) 1px, transparent 1px);
+  --ambient-wash:
+    radial-gradient(ellipse at 14% 50%, rgba(0, 80, 160, 0.09) 0%, transparent 55%),
+    radial-gradient(ellipse at 86% 50%, rgba(160, 55, 0, 0.07) 0%, transparent 55%);
+  --hud-backdrop: var(--ambient-wash), var(--grid-overlay);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-body);
+}
+
+.ohmm-grid-bg {
+  background-color: var(--background);
+  background-image: var(--hud-backdrop);
+  background-size: auto, auto, 48px 48px, 48px 48px;
+}
+
+.ohmm-glass {
+  background: var(--surface-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(8px);
+}
+
+.ohmm-app-shell {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  color: var(--text-body);
+  background-color: var(--background);
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.ohmm-workspace {
+  flex: 1;
+  display: flex;
+  gap: var(--space-6);
+  min-height: 0;
+  padding: var(--space-6);
+  overflow: hidden;
+}
+
+.ohmm-side-column {
+  width: 272px;
+  flex: none;
+  overflow: hidden;
+}
+
+.ohmm-analysis-frame {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.ohmm-app-header {
+  height: 58px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-6);
+  background: rgba(1, 7, 16, 0.96);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-header);
+}
+
+.ohmm-navbar-mark {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 12px rgba(0, 200, 255, 0.22));
+}
+
+.ohmm-status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 24px;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-sm);
+  background: rgba(0, 200, 255, 0.045);
+  border: 1px solid rgba(0, 200, 255, 0.14);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  letter-spacing: 0;
+}
+
+.ohmm-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  flex: none;
+}
+
+.ohmm-icon-btn {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: rgba(0, 200, 255, 0.035);
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.ohmm-icon-btn:hover {
+  color: var(--primary);
+  border-color: var(--border-strong);
+  background: var(--tint-cyan);
+}
+
+.ohmm-slot-button:hover,
+.ohmm-tile-button:hover {
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+}
+
+.ohmm-module-toggle {
+  background: rgba(0, 200, 255, 0.04);
+  border: 1px solid rgba(0, 200, 255, 0.12);
+  box-shadow: inset 0 1px 0 rgba(0, 200, 255, 0.08);
+}
+
+@media (max-width: 1100px) {
+  .ohmm-app-shell {
+    overflow: auto;
+  }
+
+  .ohmm-workspace {
+    min-width: 1040px;
+  }
+}

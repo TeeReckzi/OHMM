@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="Transformer-Encoder-Decoder" id="transformer-mt">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Transformer Encoder-Decoder (Machine Translation)" style="text;html=1;fontSize=20;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ========== INPUT SIDE ========== -->
+        <!-- Input Embeddings -->
+        <mxCell id="input_emb" value="Input Embeddings&#xa;(B, 512, 768)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="180" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Positional Encoding -->
+        <mxCell id="pos_enc" value="Positional Encoding&#xa;+ Input Embeddings" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="210" width="180" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Encoder Label -->
+        <mxCell id="enc_label" value="ENCODER (6 layers)" style="text;html=1;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Encoder Block 1 -->
+        <mxCell id="enc1" value="Layer 1&#xa;Multi-Head Self-Attention&#xa;(B, 512, 768)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="320" y="120" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Encoder Block 2 -->
+        <mxCell id="enc2" value="Layer 2&#xa;Multi-Head Self-Attention&#xa;(B, 512, 768)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="320" y="210" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Encoder Block 3-6 (condensed) -->
+        <mxCell id="enc_mid" value="Layers 3–5&#xa;... (Self-Attention + FFN)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="enc6" value="Layer 6&#xa;Multi-Head Self-Attention&#xa;(B, 512, 768)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="320" y="370" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- ========== DECODER SIDE ========== -->
+        <!-- Decoder Label -->
+        <mxCell id="dec_label" value="DECODER (6 layers)" style="text;html=1;fontSize=14;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Decoder Block 1 -->
+        <mxCell id="dec1" value="Layer 1&#xa;Masked Self-Attn → Cross-Attn&#xa;(B, 512, 768)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Decoder Block 2 -->
+        <mxCell id="dec2" value="Layer 2&#xa;Masked Self-Attn → Cross-Attn&#xa;(B, 512, 768)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="210" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Decoder Block 3-6 -->
+        <mxCell id="dec_mid" value="Layers 3–5&#xa;... (Self-Attn + Cross-Attn + FFN)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="300" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dec6" value="Layer 6&#xa;Masked Self-Attn → Cross-Attn&#xa;(B, 512, 768)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="370" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Output Projection -->
+        <mxCell id="output_proj" value="Output Projection&#xa;Linear + Softmax&#xa;(B, 512, vocab_size)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="880" y="250" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- ========== CONNECTIONS ========== -->
+        <!-- Encoder connections -->
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="input_emb" target="pos_enc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pos_enc" target="enc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="enc1" target="enc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="enc2" target="enc_mid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="enc_mid" target="enc6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Cross connection from Encoder to Decoder -->
+        <mxCell id="cross" value="Encoder Output&#xa;(context)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="enc6" target="dec1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Decoder connections -->
+        <mxCell id="d1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dec1" target="dec2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dec2" target="dec_mid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dec_mid" target="dec6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Decoder to Output -->
+        <mxCell id="out" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dec6" target="output_proj">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
