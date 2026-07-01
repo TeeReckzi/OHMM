@@ -47,5 +47,20 @@ export default defineConfig({
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
 
-  // Build config simplified to avoid chunk issues during migration. Re-add manualChunks after stable.
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // Recharts — heavy charting library (~564KB)
+          if (id.includes('node_modules/recharts') || id.includes('node_modules/d3-')) {
+            return 'vendor-recharts';
+          }
+          // Motion library
+          if (id.includes('node_modules/motion') || id.includes('node_modules/framer-motion')) {
+            return 'vendor-motion';
+          }
+        },
+      },
+    },
+  },
 })
