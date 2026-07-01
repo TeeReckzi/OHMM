@@ -15,6 +15,7 @@ import { BuffModal } from "./components/modals/BuffModal";
 import { AttachmentModal } from "./components/modals/AttachmentModal";
 import { CradleModal } from "./components/modals/CradleModal";
 import { CalibrationModal, CALIBRATION_OPTIONS } from "./components/modals/CalibrationModal";
+import { SaveLoadModal } from "./components/modals/SaveLoadModal";
 
 // Extracted panels (Phase 3)
 import { LoadoutPanel } from "./components/panels/LoadoutPanel";
@@ -163,17 +164,32 @@ function applyCalibrationRollToCalculationInput(calcInput: any, loadout: Loadout
 
 // ─────────────────────────────────────────────────────────────
 // MAIN APP
+// Persistence (Phase 4A)
+import { autoSaveSession, restoreSession } from "./persistence/buildPersistence";
+
 // ─────────────────────────────────────────────────────────────
 
 export default function App() {
-  const [offLoadout, setOffLoadout] = useState<LoadoutMap>(() => ({}));
-  const [defLoadout, setDefLoadout] = useState<LoadoutMap>(() => ({}));
+  const [offLoadout, setOffLoadout] = useState<LoadoutMap>(() => {
+    const session = restoreSession();
+    return session?.offLoadout || {};
+  });
+  const [defLoadout, setDefLoadout] = useState<LoadoutMap>(() => {
+    const session = restoreSession();
+    return session?.defLoadout || {};
+  });
   const [modal, setModal] = useState<ModalState>({
     open: false, kind: null, slot: "", side: "offensive", label: "",
   });
   const [showSettings, setShowSettings] = useState(false);
+  const [showSaveLoad, setShowSaveLoad] = useState(false);
   const [fullArmorList, setFullArmorList] = useState<any[]>([]);
   const [fullFoodBuffs, setFullFoodBuffs] = useState<any[]>([]);
+
+  // Auto-save session on every loadout change
+  useEffect(() => {
+    autoSaveSession(offLoadout, defLoadout);
+  }, [offLoadout, defLoadout]);
 
   useEffect(() => {
     (async () => {
@@ -702,7 +718,7 @@ export default function App() {
   // The main Figma layout render — 3-column: 272px loadouts flanking Analysis Hub
   return (
     <div className="ohmm-app-shell ohmm-grid-bg">
-      <AppHeader onOpenSettings={() => setShowSettings(true)} />
+      <AppHeader onOpenSettings={() => setShowSettings(true)} onOpenSaveLoad={() => setShowSaveLoad(true)} />
 
       <div className="ohmm-workspace">
         {/* OFFENSIVE LOADOUT — 272px */}
@@ -753,6 +769,15 @@ export default function App() {
           onClose={() => setShowSettings(false)}
           onResetOffensive={() => setOffLoadout({})}
           onResetDefensive={() => setDefLoadout({})}
+        />
+      )}
+
+      {showSaveLoad && (
+        <SaveLoadModal
+          onClose={() => setShowSaveLoad(false)}
+          offLoadout={offLoadout}
+          defLoadout={defLoadout}
+          onLoadBuild={(off, def) => { setOffLoadout(off); setDefLoadout(def); }}
         />
       )}
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Settings, CheckCircle2, Database } from "lucide-react";
+import { Settings, CheckCircle2, Database, Save } from "lucide-react";
 import { CYAN, ORANGE, GREEN, OHMM_NAVBAR_LOGO } from "../../types";
 
 // ─────────────────────────────────────────────────────────────
@@ -8,9 +8,10 @@ import { CYAN, ORANGE, GREEN, OHMM_NAVBAR_LOGO } from "../../types";
 
 export interface AppHeaderProps {
   onOpenSettings: () => void;
+  onOpenSaveLoad: () => void;
 }
 
-export function AppHeader({ onOpenSettings }: AppHeaderProps) {
+export function AppHeader({ onOpenSettings, onOpenSaveLoad }: AppHeaderProps) {
   return (
     <div className="ohmm-app-header">
       {/* Left status row */}
@@ -52,6 +53,9 @@ export function AppHeader({ onOpenSettings }: AppHeaderProps) {
           <Database size={9} style={{ color: CYAN }} />
           <span style={{ fontFamily: "'JetBrains Mono', monospace" }}>v2.4.1</span>
         </div>
+        <button onClick={onOpenSaveLoad} className="ohmm-icon-btn" title="Save / Load Builds">
+          <Save size={12} style={{ color: "#7ab8cc" }} />
+        </button>
         <button onClick={onOpenSettings} className="ohmm-icon-btn" title="Settings">
           <Settings size={12} style={{ color: "#7ab8cc" }} />
         </button>
