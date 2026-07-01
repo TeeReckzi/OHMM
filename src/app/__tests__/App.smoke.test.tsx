@@ -141,4 +141,25 @@ describe('App — Critical Smoke Tests', () => {
     // Should contain chart containers (ResponsiveContainer renders a div)
     expect(analysisFrame!.innerHTML.length).toBeGreaterThan(100);
   });
+
+  it('calibration modal opens with weapon DMG control and substat select', () => {
+    render(<App />);
+    // Find calibration tile buttons (they have ohmm-tile-button class and title="Weapon Calibration")
+    const calibTile = document.querySelector('button[title="Weapon Calibration"]');
+    expect(calibTile).toBeInTheDocument();
+
+    fireEvent.click(calibTile!);
+
+    // Modal should open
+    const modal = document.querySelector('.fixed.inset-0.z-50');
+    expect(modal).toBeInTheDocument();
+
+    // Weapon DMG slider/input should be present
+    const weaponDmgInput = modal!.querySelector('input[aria-label="Weapon DMG calibration roll"]');
+    expect(weaponDmgInput).toBeInTheDocument();
+
+    // Secondary substat select should be present
+    const substatSelect = modal!.querySelector('select[aria-label="Rolled secondary calibration substat"]');
+    expect(substatSelect).toBeInTheDocument();
+  });
 });
