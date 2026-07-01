@@ -162,4 +162,64 @@ describe('App — Critical Smoke Tests', () => {
     const substatSelect = modal!.querySelector('select[aria-label="Rolled secondary calibration substat"]');
     expect(substatSelect).toBeInTheDocument();
   });
+
+  it('buff modal opens when food slot is clicked', () => {
+    render(<App />);
+    // Food buff slot is the 9th ohmm-slot-button (index 8: after 2 weapons + 6 armor)
+    const slotButtons = document.querySelectorAll('.ohmm-slot-button');
+    // Click the food buff slot (9th slot in offensive panel)
+    fireEvent.click(slotButtons[8]);
+
+    const modal = document.querySelector('.fixed.inset-0.z-50');
+    expect(modal).toBeInTheDocument();
+    // Modal should have close button
+    expect(modal!.querySelector('button[aria-label="Close modal"]')).toBeInTheDocument();
+  });
+
+  it('deviation modal opens when deviation slot is clicked', () => {
+    render(<App />);
+    // Deviation slot is the 11th ohmm-slot-button (index 10: after 2 weapons + 6 armor + 2 buffs)
+    const slotButtons = document.querySelectorAll('.ohmm-slot-button');
+    fireEvent.click(slotButtons[10]);
+
+    const modal = document.querySelector('.fixed.inset-0.z-50');
+    expect(modal).toBeInTheDocument();
+    expect(modal!.querySelector('button[aria-label="Close modal"]')).toBeInTheDocument();
+  });
+
+  it('cradle modal opens when cradle perk tile is clicked', () => {
+    render(<App />);
+    // Cradle tiles are rendered with specific structure — find by the grid of small tiles
+    // They don't have the ohmm-tile-button class, but they do have Cpu icon and P1/P2 labels
+    // The CradleTile doesn't use ohmm-tile-button class, it's a plain button
+    // Find all buttons that are NOT ohmm-slot-button and NOT ohmm-tile-button and are in the cradle section
+    // Simpler: cradle tiles are in a "grid grid-cols-4" container
+    const cradleGrids = document.querySelectorAll('.grid.grid-cols-4');
+    expect(cradleGrids.length).toBeGreaterThan(0);
+    
+    // Click the first cradle tile (first button inside first 4-col grid)
+    const firstCradleTile = cradleGrids[0].querySelector('button');
+    expect(firstCradleTile).toBeInTheDocument();
+    fireEvent.click(firstCradleTile!);
+
+    const modal = document.querySelector('.fixed.inset-0.z-50');
+    expect(modal).toBeInTheDocument();
+    expect(modal!.querySelector('button[aria-label="Close modal"]')).toBeInTheDocument();
+  });
+
+  it('attachment modal opens when attachment tile is clicked', () => {
+    render(<App />);
+    // Attachment tiles are in a "grid grid-cols-5" container and have ohmm-tile-button class
+    const attachGrids = document.querySelectorAll('.grid.grid-cols-5');
+    expect(attachGrids.length).toBeGreaterThan(0);
+
+    // Click the first attachment tile
+    const firstAttachTile = attachGrids[0].querySelector('.ohmm-tile-button');
+    expect(firstAttachTile).toBeInTheDocument();
+    fireEvent.click(firstAttachTile!);
+
+    const modal = document.querySelector('.fixed.inset-0.z-50');
+    expect(modal).toBeInTheDocument();
+    expect(modal!.querySelector('button[aria-label="Close modal"]')).toBeInTheDocument();
+  });
 });

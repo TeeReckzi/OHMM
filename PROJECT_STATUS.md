@@ -2,7 +2,26 @@
 
 ## Current Architecture State
 
-The Once Human Meta Metrics (OHMM) project is structured as a React-based web application containing a main Figma-derived UI frontend wrapper (`OHMM/`) and an internal core mathematical simulation engine and registry module (`OHMM/src/ohai/`).
+The Once Human Meta Metrics (OHMM) project is structured as a React-based web application containing a main UI frontend (`OHMM/src/app/`) and an internal core mathematical simulation engine and registry module (`OHMM/src/ohai/`).
+
+### Recent Changes (Phase 3 — In Progress)
+
+**All 6 inline modal components extracted from App.tsx:**
+- SettingsModal → `src/app/components/modals/SettingsModal.tsx`
+- DeviationModal → `src/app/components/modals/DeviationModal.tsx`
+- BuffModal → `src/app/components/modals/BuffModal.tsx`
+- AttachmentModal → `src/app/components/modals/AttachmentModal.tsx`
+- CradleModal → `src/app/components/modals/CradleModal.tsx`
+- CalibrationModal → `src/app/components/modals/CalibrationModal.tsx`
+
+**App.tsx reduced from 2,060 to 1,461 lines (29% reduction).**
+
+### Phase 2 Stabilization (Complete)
+- Removed 56 dead files (-7,012 LOC)
+- Added Vitest + React Testing Library (18 smoke tests)
+- Bundle splitting (recharts chunk separated)
+- Fixed metadata (title, package name)
+- Fixed `typecheck:ui` validation (68 errors → 0)
 
 ### Folder Structure
 - `OHMM/package.json`: Configuration for the outer Figma canvas app. Uses React 18, Vite 6, and Tailwind CSS 4.
