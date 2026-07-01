@@ -29,7 +29,7 @@ import { buildExpectedDamageFromCalculationInput } from "../ohai/src/ui/formulaD
 import { computeCombatOutput } from "../ohai/src/ui/combatOutput";
 import { aggregateModifiers } from "../ohai/src/engine/modifierAggregation";
 import { weaponBlueprints } from "../ohai/src/ui/data/catalog";
-import { getWeapon as getRegistryWeapon } from "../ohai/src/ui/registries/weaponRegistry";
+
 import { weaponRegistry } from "../ohai/src/ui/registries/weaponRegistry";
 import { keyGearRegistry, armorRegistry } from "../ohai/src/ui/registries/armorRegistry";
 import { modRegistry } from "../ohai/src/ui/registries/modRegistry";
@@ -42,7 +42,7 @@ import { cradleRegistry } from "../ohai/src/ui/registries/cradleRegistry";
 import { loadoutMapToBuildSelection } from "../lib/ohmm/convertLoadout";
 
 // Image pipelines: Supabase (structured URLs) + GitHub CDN fallback (ohmm-icondb)
-import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+
 import { getItemImage } from "../ohai/src/presentation/itemImageResolver";
 import { buildCdnUrl, getSupabaseImageUrl } from "../ohai/src/ui/data/supabaseImageResolver";
 import { SUPABASE_URL, ANON_KEY } from "../ohai/src/data/supabaseClient";
@@ -187,7 +187,7 @@ export default function App() {
               const d = await res.json();
               if (d && d.length) {
                 combined = [...combined, ...d];
-                console.log(`[Supabase] Fetched ${d.length} from ${table}`);
+                if (import.meta.env.DEV) console.log(`[Supabase] Fetched ${d.length} from ${table}`);
               }
             }
           } catch {}
@@ -200,9 +200,9 @@ export default function App() {
           } catch {}
         }
         setFullArmorList(combined);
-        console.log('[Supabase] Loaded', combined.length, 'armor pieces (using Supabase as source of truth for full list + spellings)');
+        if (import.meta.env.DEV) console.log('[Supabase] Loaded', combined.length, 'armor pieces (using Supabase as source of truth for full list + spellings)');
       } catch (e) {
-        console.warn('Supabase armor fetch failed, using local registry', e);
+        if (import.meta.env.DEV) console.warn('Supabase armor fetch failed, using local registry', e);
       }
     })();
   }, []);
@@ -216,10 +216,10 @@ export default function App() {
         if (res.ok) {
           const data = await res.json();
           setFullFoodBuffs(data);
-          console.log('[Supabase] Loaded', data.length, 'food buffs from DB');
+          if (import.meta.env.DEV) console.log('[Supabase] Loaded', data.length, 'food buffs from DB');
         }
       } catch (e) {
-        console.warn('Supabase food_buffs fetch failed, using local registry', e);
+        if (import.meta.env.DEV) console.warn('Supabase food_buffs fetch failed, using local registry', e);
       }
     })();
   }, []);
@@ -267,33 +267,6 @@ export default function App() {
       return computeCombatOutput(defenderCalcInput, pvp);
     } catch { return null; }
   }, [defenderCalcInput]);
-
-  // Derived chart data from real formula outputs (replaces EMPTY_*)
-  const dpsBarData = attackerCombatOutput ? [
-    { name: 'Sustained', off: Math.round(attackerCombatOutput.damageOutput.DPS || attackerCombatOutput.damageOutput.expectedDamage || 0), def: Math.round((defenderCombatOutput?.damageOutput.DPS || defenderCombatOutput?.damageOutput.expectedDamage || 0)) }
-  ] : [{ name: 'Sustained', off: 0, def: 0 }];
-
-  const timelineData = Array.from({ length: 12 }, (_, i) => {
-    const t = (i * 0.5).toFixed(1) + 's';
-    const base = attackerCombatOutput ? (attackerCombatOutput.damageOutput.expectedDamage || 1200) : 0;
-    return {
-      t,
-      burn: Math.round(base * (0.15 + Math.sin(i) * 0.05)),
-      frost: Math.round(base * (0.08 + Math.cos(i) * 0.04)),
-      surge: Math.round(base * 0.05)
-    };
-  });
-
-  const pieData = (() => {
-    const dmg = attackerDamageResult?.formulaDamage || attackerCombatOutput?.damageOutput.expectedDamage || 1000;
-    return [
-      { name: 'Direct', value: Math.round(dmg * 0.55), color: CYAN },
-      { name: 'Crit', value: Math.round(dmg * 0.25), color: VIOLET },
-      { name: 'Status', value: Math.round(dmg * 0.12), color: ORANGE },
-      { name: 'Mod', value: Math.round(dmg * 0.05), color: '#fb923c' },
-      { name: 'Set', value: Math.round(dmg * 0.03), color: GREEN },
-    ];
-  })();
 
   // Handlers for LoadoutPanel -> modals, and modal -> loadout update
   const openSlot = useCallback((slot: string, kind: ModalKind, label: string, side: Side = 'offensive') => {
