@@ -43,6 +43,7 @@ import { attachmentRegistry, getAttachmentsBySlot, getAttachmentsBySlotAndFamily
 import type { AttachmentSlot } from "../ohai/src/ui/itemTypes";
 import { cradleRegistry } from "../ohai/src/ui/registries/cradleRegistry";
 import { loadoutMapToBuildSelection } from "../lib/ohmm/convertLoadout";
+import { TheoryCraftPanel } from "./components/theorycraft/TheoryCraftPanel";
 
 // Image pipelines: Supabase (structured URLs) + GitHub CDN fallback (ohmm-icondb)
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
@@ -2044,6 +2045,17 @@ export default function App() {
           />
         </div>
       </div>
+
+      {/* Theorycraft Decision-Support Panel (Phase 4B) */}
+      {attackerBuild && attackerCalcInput && attackerCombatOutput && (
+        <div className="px-4 pb-4">
+          <TheoryCraftPanel
+            buildSelection={attackerBuild}
+            calcInput={attackerCalcInput}
+            combatOutput={attackerCombatOutput}
+          />
+        </div>
+      )}
 
       {/* Clean modal routing via dispatcher */}
       <ModalDispatcher modal={modal} onClose={closeModal} onSelect={handleEquip} />

@@ -1,0 +1,381 @@
+---
+description: Gantry design system — composition-first, layered rules for all UI work
+globs: **/*.tsx, **/*.jsx, **/*.ts
+alwaysApply: true
+---
+
+# Gantry — Design System Rules
+> Auto-generated 2026-07-03. Do not edit manually.
+
+## Current design-system health: 56/100 — Needs work
+
+Composition coverage: **100%** of composing-layer UI is built from catalog components (0 catalog vs 0 raw elements). Push this toward 100% — replace raw HTML with catalog components.
+
+Detected drift: 0 error(s), 0 warning(s), 88 info. **Do not reproduce these; fix them when you touch the file.**
+
+## Core principle: composition-first design
+
+Every UI must be built **only** from components in the catalog below, following the **layer rules** (see *Layer rules* below — a component may import only from its layer's allowed layers, and the graph must stay acyclic).
+**Never** assemble screens from ad-hoc HTML, random one-off JSX, or unrelated primitives.
+
+Forbidden forever:
+- Raw UI elements: `<div>`, `<button>`, `<input>`, `<a>`, `<span>`
+- Inline styles (`style={{}}`) and arbitrary one-off CSS classes
+- Inventing markup that bypasses the design system
+- **Hardcoded design values** — raw `#hex` / `rgb()` / `hsl()` colors, `px`/`rem` spacing, one-off radii, shadows, font sizes, or magic numbers when a design token expresses them
+
+---
+
+## Build on design tokens (mandatory)
+
+**Every visual value MUST come from a design-system token** (a CSS custom property), never a hardcoded literal. Tokens are the single source of truth — editing one in Gantry's **Tokens** tab updates every component at once. Hardcoded values silently break that contract.
+
+Rules:
+1. Colors, spacing, radii, typography, shadows, z-index, and motion **must** reference a token: `var(--token-name)`.
+2. **Never** inline a literal (`#4f46e5`, `12px`, `0 1px 3px rgba(...)`) when a token already expresses it — use the token from the catalog below.
+3. If the token you need **does not exist**: add it to the project's token file first (`:root { --token-name: value; }`), re-scan, **then** reference it with `var(--token-name)`. Do not hardcode the raw value as a shortcut.
+4. Keep variant style maps keyed by `variant` / `tone`, but their values must be tokens:
+   ```ts
+   const styles = {
+     primary:   { background: 'var(--color-primary)', color: 'var(--color-on-primary)' },
+     secondary: { background: 'var(--color-surface)',  color: 'var(--color-text)' },
+   }
+   ```
+5. Reuse existing tokens before inventing new ones. Only introduce a new token when no existing token fits its semantic role; name it by **purpose** (`--color-danger`), not by raw value (`--red-500`).
+
+---
+
+## Token architecture — semantic, layered, restrained
+
+Good token systems are **small, semantic, and layered** — not a variable per value.
+
+1. **Three layers; components consume only the semantic layer.**
+   - *Primitive / reference* tokens hold the raw palette + scales (`--blue-600: #2563eb`, `--space-4: 16px`). Internal building blocks only.
+   - *Semantic / system* tokens express **intent** (`--color-primary`, `--color-text`, `--color-text-muted`, `--color-border`, `--space-inset-md`). **Components use these.**
+   - *Component* tokens are optional and rare — only when a value genuinely can't be expressed semantically.
+   - **Never reference a primitive (`--blue-600`) from a component.** Reference the semantic token; the semantic token references the primitive — that is what makes theming (light / dark / brand) a one-place change.
+2. **Name by role, not by value or component:** `--color-text-muted` ✔, `--gray-500` ✘ (value), `--button-bg` ✘ (component, unless it is a true component token).
+3. **Use scales; reuse steps.** Spacing (4 / 8 / 12 / 16 / 24 / 32…), the type scale, radii, and elevation all come from one small consistent ramp. Pick the nearest existing step — do **not** invent a one-off `--space-13`.
+4. **A token must earn its place.** Create one only when the value is reused **or** encodes a real decision. Used once → use an existing scale step, not a new token. Fewer well-named tokens beat hundreds of ad-hoc ones.
+5. **Consolidate duplicates.** Two tokens with the same value and overlapping meaning → merge into one semantic name.
+
+---
+
+## Fewer, better — component API restraint
+
+**More variants and props is NOT better.** The best API is the *smallest* one that covers the real, recurring use cases. Every extra variant, prop, and boolean is permanent surface area to design, document, test, preview, and keep consistent. Bias toward **less**.
+
+### Composition over configuration
+- Prefer **slots / `children`** over configuration props: `<Card>{header}{body}{footer}</Card>` (or `header` / `footer` slot props) beats `<Card showHeader headerTitle headerIcon headerActions footerAlign … />`.
+- If a need is a one-off, **compose it at the call site** — do not bake a new prop/variant into the component for it.
+
+### Add a variant only when it earns it
+Add a `variant` / `tone` / `size` value **only if all** hold:
+1. It is a **semantic** distinction (e.g. primary vs secondary action), not a one-off visual tweak.
+2. It is **reused** in ~3+ real places.
+3. It can't be achieved by composing existing pieces.
+Otherwise compose, or extend at the call site. **Delete** variants/props that aren't used — dead options are liability, not flexibility.
+
+### Avoid combinatorial explosion
+- N independent booleans = 2^N states to maintain and preview. Collapse mutually-exclusive booleans into **one enum**: `state: 'default' | 'loading' | 'disabled'` — not `isLoading` + `isDisabled` + `isActive` together.
+- **One axis of meaning per prop.** Don't overload `variant` to mean colour *and* size *and* shape; split only into the axes that are separately, genuinely needed (often just `variant`; add `size` only if real).
+- Lean on **sensible defaults** so the common case needs zero props.
+
+### Decision: variant vs compose vs new component
+| Situation | Do this |
+|-----------|---------|
+| Recurring semantic difference of the same thing (~3+ uses) | add a **variant** value |
+| One-off visual need | **compose** at the call site / pass `children` |
+| Different responsibility or structure | **new component** at the correct layer |
+| Many flags toggling parts on / off | **split** into smaller composable components |
+
+> Rule of thumb: prefer **3 small composable components over 1 component with 12 props**. Reach for the fewest variants and variables that still read clearly — restraint *is* the architecture.
+
+---
+
+## Build components systematically (maintainable by default)
+
+Create UI **the same way every time** — predictable folders, readable props, and one clear job per component. If a teammate (or Gantry) opens the files, they should understand the component in under a minute.
+
+### Folder & file system (one component = one module)
+
+Every component lives in its own folder under the correct layer:
+
+```
+ComponentName/
+  ComponentName.tsx          # implementation
+  ComponentName.types.ts     # public props API (required)
+  ComponentName.meta.ts      # optional: export const description = '...'
+  ComponentName.variants.ts  # optional: gantryVariants for preview states
+  index.ts                   # re-export
+```
+
+Rules:
+- **One component per folder** — no shared grab-bag files.
+- **Names match** — folder, files, export, and `ComponentNameProps` all use the same `ComponentName`.
+- **Types live in `.types.ts`** — do not bury the public API inside the `.tsx` file.
+- **Add `description`** in `.meta.ts` or JSDoc so Gantry and humans know *why* the component exists.
+
+### Props must be human-readable (the public API)
+
+Props are a **user interface for developers**. Name them like product copy, not like minified code.
+
+**Do:**
+- Use full words: `label`, `variant`, `isDisabled` (or `disabled`), `actionLabel`, `imageUrl`.
+- Use string unions for visual choices: `variant?: 'primary' | 'secondary' | 'ghost'` — not magic numbers.
+- Keep prop count small (roughly **3–8** on leaf primitives, slightly more on composing components). If there are many knobs, split into another component or compose.
+- Mark optional props with `?` and sensible defaults in the function signature.
+- Document non-obvious props with a one-line JSDoc above the property in `ComponentName.types.ts`.
+- Group visual tokens in named maps (`styles`, `tones`) keyed by `variant` / `tone` — not anonymous inline blobs.
+
+**Don't:**
+- Cryptic names: `t`, `v`, `cfg`, `data`, `opts`, `item` (when you mean `product` or `user`).
+- Giant config objects: `options: { theme: ..., size: ..., flags: ... }` unless the component is a true layout engine.
+- Boolean soup without meaning: five `showX` flags — prefer composition or a single `variant`.
+- `any`, `unknown`, or overly wide types on the public API.
+- Leaking implementation details as props (`classNames`, raw `style`, internal IDs) unless the design system explicitly allows them.
+
+**Good vs bad examples:**
+
+| Bad | Good | Why |
+|-----|------|-----|
+| `txt: string` | `label: string` | Reads like UI, not code |
+| `type: 1 \| 2 \| 3` | `variant: 'primary' \| 'secondary'` | Self-documenting in Gantry & IDE |
+| `onPress` + `onClick` duplicate | one `onClick?` | One obvious action |
+| 12 optional booleans | 2–3 props + composition | Easier to preview and maintain |
+| `variant` with 8 values, 1 used | `variant: 'primary' \| 'secondary'` + compose | Variants must be reused & semantic |
+| `isLoading` + `isDisabled` + `isActive` | `state: 'loading' \| 'disabled' \| …` | Avoid 2^N boolean combinations |
+
+### Behaviour & styling conventions
+
+Layer roles in this project:
+- **Primitives** (`primitive`) — leaf primitive (a single visual idea); imports nothing from the design system.
+- **Components** (`component`) — composes from primitive / component; do not re-style raw HTML.
+
+- **Styles** — keep variant colors in a `const styles` / `const tones` map at the top of the file; every value must be a design token (`var(--token)`), never a hardcoded literal.
+- **Callbacks** — `onClick`, `onSubmit`, `onChange` only when needed; never required for preview.
+
+### Checklist before considering a component "done"
+
+1. Folder structure matches the template above.
+2. Every prop name is obvious without reading the implementation.
+3. `ComponentName.types.ts` exports `ComponentNameProps` with unions/booleans/strings Gantry can edit.
+4. Default props render a meaningful preview (not an empty box).
+5. `description` explains the purpose in one sentence.
+6. Component is registered in the catalog after sync (correct layer, import path).
+7. **API is minimal** — every variant and prop earns its place; no unused options, no boolean soup, composition preferred over configuration (see *Fewer, better*).
+8. **Every visual value is a semantic token** (`var(--token)`) — no primitives, no literals (see *Token architecture*).
+
+---
+
+## When the user asks for UI (e.g. "user card", "profile block")
+
+**Do not** improvise a new card from random elements. Follow this order:
+
+1. **Match** — Search the catalog for an existing component that already solves the request (name, props, layer).
+   - Example: "user card" → prefer **ProfileCard**, **Card**, or compose documented catalog components before creating anything new.
+2. **Compose** — If no single component fits, build the UI by **combining existing** catalog components only.
+3. **Gap analysis** — List each UI piece you need (avatar, title, actions, layout, etc.). Map every piece to a catalog component.
+4. **Fill gaps bottom-up** — If something is missing, add the **smallest** missing component at the **lowest layer** that fits (often a `primitive`), sync, then compose upward. Never import upward or skip the layer rules.
+5. **Last resort** — Only create a higher-layer component after all the lower-layer pieces it composes already exist.
+
+Before writing code, briefly state: *matched component* OR *composition plan* OR *missing pieces to add (with layer)*.
+
+---
+
+## Creating ANY new component (mandatory workflow)
+
+1. **Inventory** — Write the UI pieces required (text, image, actions, layout container, etc.).
+2. **Map to catalog** — For each piece, pick an existing component from the list below. No piece may be left unmapped.
+3. **Check layers** — a component may import **only** from the layers its own layer allows (see *Layer rules*):
+- **Primitives** (`primitive`) — leaf primitive (a single visual idea); imports nothing from the design system.
+- **Components** (`component`) — composes from primitive / component; do not re-style raw HTML.
+4. **Add missing lower-layer pieces first** — Create `ComponentName/ComponentName.tsx` + `ComponentName.types.ts` under the correct layer folder, then re-scan.
+5. **Compose** — Implement the new component using imports from the catalog only (same `importPath` style as siblings).
+6. **No raw HTML** for UI structure — use catalog layout components (e.g. **Surface**, **Stack**, **Row**, **Text** if present) instead of `<div>` / `<span>`.
+
+### Gantry preview & Customize (mandatory for every component)
+
+Every component **must** work in Gantry preview and the **Customize** editor:
+
+- Add `ComponentName.types.ts` with an exported `ComponentNameProps` interface (string/union/boolean/number props — not only `children`).
+- Prefer a `styles` or `tones` map in `.tsx` with variant keys (`primary`, `secondary`, …). Every color/spacing value must reference a design token (`var(--token)`) — edit those values in Gantry's Tokens tab, not by hardcoding.
+- Optional: `ComponentName.variants.ts` with `gantryVariants` for rich preview states.
+- Layout wrappers (`Surface`, `Stack`, `Row`) may use `children`; Gantry injects default child text in preview — still add editable props (`padding`, `gap`, `variant`, etc.).
+- Leaf primitives should expose at least one of: `label`, `text`, `title`, `variant`, `tone`, `size` so Customize always has fields.
+
+Reject approaches that: mix random HTML, duplicate an existing component, jump to a higher layer when a lower-layer component already covers the need, import upward across layers, or ship unreadable prop names that only the author understands.
+
+---
+
+## Available design tokens
+
+223 tokens total. Reference CSS-variable tokens with `var(--token)`; reference Tailwind theme tokens via their utility classes (shown per token). Never hardcode a value one of these already expresses.
+
+### Color (142)
+- `--ohai-bg`: #02050d
+- `--ohai-bg-deep`: #00040a
+- `--ohai-surface`: rgba(7, 17, 31, 0.78)
+- `--ohai-surface-elevated`: rgba(11, 22, 40, 0.84)
+- `--ohai-border`: rgba(107, 231, 255, 0.18)
+- `--ohai-border-strong`: rgba(0, 240, 255, 0.34)
+- `--ohai-text`: #eef7ff
+- `--ohai-text-muted`: #8ea2c9
+- `--ohai-cyan`: #00f0ff
+- `--ohai-blue`: #2f7dff
+- `--ohai-violet`: #8f36ff
+- `--ohai-verified`: #35f2a1
+- `--ohai-candidate`: #67b7ff
+- `--ohai-blocked`: #ffb457
+- `--ohai-unknown`: #8ea2c9
+- `--ohai-gradient-border`: linear-gradient(135deg, rgba(0, 240, 255, 0.62), rgba(47, 125, 255, 0.42), rgba(143, 54, 255, 0.62))
+- `--theme-soft`: rgba(0, 240, 255, 0.11)
+- `--theme-border`: rgba(0, 240, 255, 0.32)
+- `--theme-text`: #9ff7ff
+- `--theme-text-soft`: #8ea2c9
+- `--void-900`: #010710
+- `--void-800`: #030c14
+- `--void-700`: #051019
+- `--void-600`: #071420
+- `--void-500`: #0a1828
+- `--void-400`: #0e2030
+- `--cyan-500`: #00c8ff
+- `--cyan-400`: #38d4ff
+- `--ember-500`: #ff6b35
+- `--violet-500`: #7c5cff
+- `--ice-100`: #d4ecf5
+- `--ice-200`: #b8d8e8
+- `--ice-300`: #7ab8cc
+- `--ice-400`: #4a7080
+- `--ice-500`: #2a4456
+- `--status-go`: #4ade80
+- `--status-warn`: #fbbf24
+- `--status-crit`: #ff3b5e
+- `--rarity-common`: #8898a8
+- `--rarity-uncommon`: #4ade80
+- …and 102 more
+
+### Typography (36)
+- `--ohai-gradient-text`: linear-gradient(135deg, var(--ohai-cyan) 0%, var(--ohai-blue) 48%, var(--ohai-violet) 100%)
+- `--text-strong`: var(--ice-100)
+- `--text-body`: var(--ice-200)
+- `--text-faint`: var(--ice-500)
+- `--font-display`: 'Rajdhani', 'Oswald', sans-serif
+- `--font-body`: 'Inter', system-ui, sans-serif
+- `--font-mono`: 'JetBrains Mono', 'SFMono-Regular', monospace
+- `--text-2xs`: 8px
+- `--text-xs`: 10px
+- `--text-sm`: 12px
+- `--text-base`: 14px
+- `--text-md`: 16px
+- `--text-lg`: 20px
+- `--weight-medium`: 500
+- `--weight-semibold`: 600
+- `--font-size`: 16px
+- `--font-weight-medium`: 500
+- `--font-weight-normal`: 400
+- `--font-heading`: "Orbitron", "Inter", ui-sans-serif, system-ui, sans-serif
+- `--text-glow-cyan`: 0 0 12px rgba(0, 200, 255, 0.45)
+- `--text-glow-ember`: 0 0 12px rgba(255, 107, 53, 0.40)
+- `--text-xl`: 26px
+- `--text-2xl`: 34px
+- `--text-3xl`: 46px
+- `--text-4xl`: 64px
+- `--weight-light`: 300
+- `--weight-normal`: 400
+- `--weight-bold`: 700
+- `--leading-tight`: 1.1
+- `--leading-snug`: 1.3
+- `--leading-normal`: 1.5
+- `--tracking-tight`: -0.01em
+- `--tracking-normal`: 0
+- `--tracking-wide`: 0.08em
+- `--tracking-wider`: 0.15em
+- `--tracking-widest`: 0.22em
+
+### Other (19)
+- `--ohai-card-glow`: 0 0 0 1px rgba(0, 240, 255, 0.08), 0 18px 70px rgba(0, 0, 0, 0.42), 0 0 44px rgba(47, 125, 255, 0.08)
+- `--theme-rgb`: 0, 240, 255
+- `--perk`: var(--violet-500)
+- `--grid-overlay`: linear-gradient(rgba(0, 200, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 255, 0.022) 1px, transparent 1px)
+- `--ambient-wash`: radial-gradient(ellipse at 14% 50%, rgba(0, 80, 160, 0.09) 0%, transparent 55%),
+    radial-gradient(ellipse at 86% 50%, rgba(160, 55, 0, 0.07) 0%, transparent 55%)
+- `--hud-backdrop`: var(--ambient-wash), var(--grid-overlay)
+- `--glow-cyan`: 0 0 24px rgba(0, 200, 255, 0.20)
+- `--glow-cyan-sm`: 0 0 6px  rgba(0, 200, 255, 0.55)
+- `--glow-ember`: 0 0 24px rgba(255, 107, 53, 0.18)
+- `--glow-violet`: 0 0 24px rgba(124, 92, 255, 0.20)
+- `--glow-go`: 0 0 6px  rgba(74, 222, 128, 0.65)
+- `--dur-fast`: 120ms
+- `--dur-base`: 150ms
+- `--dur-slow`: 240ms
+- `--control-h-sm`: 28px
+- `--control-h`: 34px
+- `--control-h-lg`: 40px
+- `--panel-pad`: 12px
+- `--grid-line`: 48px
+
+### Radius (7)
+- `--radius-xs`: 2px
+- `--radius-sm`: 3px
+- `--radius-md`: 4px
+- `--radius-lg`: 6px
+- `--radius-full`: 9999px
+- `--radius`: 0.625rem
+- `--radius-xl`: calc(var(--radius) + 4px) — use `rounded-xl`
+
+### Spacing (12)
+- `--space-2`: 4px
+- `--space-4`: 8px
+- `--space-5`: 12px
+- `--space-6`: 16px
+- `--space-8`: 24px
+- `--space-0`: 0
+- `--space-1`: 2px
+- `--space-3`: 6px
+- `--space-7`: 20px
+- `--space-9`: 32px
+- `--space-10`: 40px
+- `--space-12`: 56px
+
+### Shadow (4)
+- `--shadow-panel`: 0 0 24px rgba(0, 200, 255, 0.05), inset 0 1px 0 rgba(0, 200, 255, 0.12)
+- `--shadow-header`: 0 2px 30px rgba(0, 200, 255, 0.05)
+- `--shadow-card`: 0 8px 30px rgba(0, 0, 0, 0.45),
+                  inset 0 1px 0 rgba(0, 200, 255, 0.10)
+- `--shadow-modal`: 0 0 80px rgba(0, 200, 255, 0.10),
+                  0 0 160px rgba(0, 200, 255, 0.05),
+                  0 24px 60px rgba(0, 0, 0, 0.6)
+
+### Motion (3)
+- `--transition`: all 150ms cubic-bezier(0.16, 1, 0.3, 1)
+- `--ease-out`: cubic-bezier(0.16, 1, 0.3, 1)
+- `--ease-snap`: cubic-bezier(0.34, 1.56, 0.64, 1)
+
+---
+
+## Available components (0 total)
+
+
+
+---
+
+## Layer rules (strict)
+
+This project has no layer folders, so Gantry uses **flat-library mode**: a component is a *primitive* if it imports no other catalog component, otherwise a *composer*. The only hard rule is **no circular dependencies**.
+
+| Layer | Role | May import from |
+|-------|------|-----------------|
+| `primitive` | primitive (raw HTML OK) | nothing from the design system |
+| `component` | composes catalog | primitive + component |
+
+---
+
+## Import convention
+
+Use the exact `importPath` from the catalog, e.g.:
+
+```tsx
+import { Button } from '@/components/Example'
+```

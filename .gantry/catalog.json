@@ -1,0 +1,2533 @@
+{
+  "generatedAt": "2026-07-03T10:09:23.627Z",
+  "componentsDir": "./src/components",
+  "layerMode": "flat",
+  "layers": [
+    {
+      "name": "primitive",
+      "label": "Primitives",
+      "index": 0,
+      "canImport": [],
+      "primitive": true,
+      "composes": false
+    },
+    {
+      "name": "component",
+      "label": "Components",
+      "index": 1,
+      "canImport": [
+        "primitive",
+        "component"
+      ],
+      "primitive": false,
+      "composes": true
+    }
+  ],
+  "health": {
+    "score": 56,
+    "grade": "Needs work",
+    "counts": {
+      "error": 0,
+      "warning": 0,
+      "info": 88
+    },
+    "coverage": {
+      "percent": 100,
+      "catalog": 0,
+      "raw": 0
+    }
+  },
+  "components": [],
+  "tokens": [
+    {
+      "name": "--ohai-bg",
+      "value": "#02050d",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-bg)"
+    },
+    {
+      "name": "--ohai-bg-deep",
+      "value": "#00040a",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-bg-deep)"
+    },
+    {
+      "name": "--ohai-surface",
+      "value": "rgba(7, 17, 31, 0.78)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-surface)"
+    },
+    {
+      "name": "--ohai-surface-elevated",
+      "value": "rgba(11, 22, 40, 0.84)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-surface-elevated)"
+    },
+    {
+      "name": "--ohai-border",
+      "value": "rgba(107, 231, 255, 0.18)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-border)"
+    },
+    {
+      "name": "--ohai-border-strong",
+      "value": "rgba(0, 240, 255, 0.34)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-border-strong)"
+    },
+    {
+      "name": "--ohai-text",
+      "value": "#eef7ff",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-text)"
+    },
+    {
+      "name": "--ohai-text-muted",
+      "value": "#8ea2c9",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-text-muted)"
+    },
+    {
+      "name": "--ohai-cyan",
+      "value": "#00f0ff",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-cyan)"
+    },
+    {
+      "name": "--ohai-blue",
+      "value": "#2f7dff",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-blue)"
+    },
+    {
+      "name": "--ohai-violet",
+      "value": "#8f36ff",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-violet)"
+    },
+    {
+      "name": "--ohai-verified",
+      "value": "#35f2a1",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-verified)"
+    },
+    {
+      "name": "--ohai-candidate",
+      "value": "#67b7ff",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-candidate)"
+    },
+    {
+      "name": "--ohai-blocked",
+      "value": "#ffb457",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-blocked)"
+    },
+    {
+      "name": "--ohai-unknown",
+      "value": "#8ea2c9",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-unknown)"
+    },
+    {
+      "name": "--ohai-gradient-text",
+      "value": "linear-gradient(135deg, var(--ohai-cyan) 0%, var(--ohai-blue) 48%, var(--ohai-violet) 100%)",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-gradient-text)"
+    },
+    {
+      "name": "--ohai-gradient-border",
+      "value": "linear-gradient(135deg, rgba(0, 240, 255, 0.62), rgba(47, 125, 255, 0.42), rgba(143, 54, 255, 0.62))",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-gradient-border)"
+    },
+    {
+      "name": "--ohai-card-glow",
+      "value": "0 0 0 1px rgba(0, 240, 255, 0.08), 0 18px 70px rgba(0, 0, 0, 0.42), 0 0 44px rgba(47, 125, 255, 0.08)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ohai-card-glow)"
+    },
+    {
+      "name": "--theme-rgb",
+      "value": "0, 240, 255",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--theme-rgb)"
+    },
+    {
+      "name": "--theme-soft",
+      "value": "rgba(0, 240, 255, 0.11)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--theme-soft)"
+    },
+    {
+      "name": "--theme-border",
+      "value": "rgba(0, 240, 255, 0.32)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--theme-border)"
+    },
+    {
+      "name": "--theme-text",
+      "value": "#9ff7ff",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--theme-text)"
+    },
+    {
+      "name": "--theme-text-soft",
+      "value": "#8ea2c9",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--theme-text-soft)"
+    },
+    {
+      "name": "--void-900",
+      "value": "#010710",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--void-900)"
+    },
+    {
+      "name": "--void-800",
+      "value": "#030c14",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--void-800)"
+    },
+    {
+      "name": "--void-700",
+      "value": "#051019",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--void-700)"
+    },
+    {
+      "name": "--void-600",
+      "value": "#071420",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--void-600)"
+    },
+    {
+      "name": "--void-500",
+      "value": "#0a1828",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--void-500)"
+    },
+    {
+      "name": "--void-400",
+      "value": "#0e2030",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--void-400)"
+    },
+    {
+      "name": "--cyan-500",
+      "value": "#00c8ff",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--cyan-500)"
+    },
+    {
+      "name": "--cyan-400",
+      "value": "#38d4ff",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--cyan-400)"
+    },
+    {
+      "name": "--ember-500",
+      "value": "#ff6b35",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--ember-500)"
+    },
+    {
+      "name": "--violet-500",
+      "value": "#7c5cff",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--violet-500)"
+    },
+    {
+      "name": "--ice-100",
+      "value": "#d4ecf5",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--ice-100)"
+    },
+    {
+      "name": "--ice-200",
+      "value": "#b8d8e8",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--ice-200)"
+    },
+    {
+      "name": "--ice-300",
+      "value": "#7ab8cc",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--ice-300)"
+    },
+    {
+      "name": "--ice-400",
+      "value": "#4a7080",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--ice-400)"
+    },
+    {
+      "name": "--ice-500",
+      "value": "#2a4456",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--ice-500)"
+    },
+    {
+      "name": "--status-go",
+      "value": "#4ade80",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--status-go)"
+    },
+    {
+      "name": "--status-warn",
+      "value": "#fbbf24",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--status-warn)"
+    },
+    {
+      "name": "--status-crit",
+      "value": "#ff3b5e",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--status-crit)"
+    },
+    {
+      "name": "--rarity-common",
+      "value": "#8898a8",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--rarity-common)"
+    },
+    {
+      "name": "--rarity-uncommon",
+      "value": "#4ade80",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--rarity-uncommon)"
+    },
+    {
+      "name": "--rarity-rare",
+      "value": "#38bdf8",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--rarity-rare)"
+    },
+    {
+      "name": "--rarity-epic",
+      "value": "#c084fc",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--rarity-epic)"
+    },
+    {
+      "name": "--rarity-legendary",
+      "value": "#fb923c",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--rarity-legendary)"
+    },
+    {
+      "name": "--background",
+      "value": "var(--void-800)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--background)"
+    },
+    {
+      "name": "--surface",
+      "value": "var(--void-700)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--surface)"
+    },
+    {
+      "name": "--surface-card",
+      "value": "var(--void-600)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--surface-card)"
+    },
+    {
+      "name": "--surface-muted",
+      "value": "var(--void-500)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--surface-muted)"
+    },
+    {
+      "name": "--surface-glass",
+      "value": "rgba(4, 14, 26, 0.88)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--surface-glass)"
+    },
+    {
+      "name": "--text-strong",
+      "value": "var(--ice-100)",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-strong)"
+    },
+    {
+      "name": "--text-body",
+      "value": "var(--ice-200)",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-body)"
+    },
+    {
+      "name": "--text-secondary",
+      "value": "var(--ice-300)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-secondary)"
+    },
+    {
+      "name": "--text-muted",
+      "value": "var(--ice-400)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-muted)"
+    },
+    {
+      "name": "--text-faint",
+      "value": "var(--ice-500)",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-faint)"
+    },
+    {
+      "name": "--primary",
+      "value": "var(--cyan-500)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--primary)"
+    },
+    {
+      "name": "--primary-hover",
+      "value": "var(--cyan-400)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--primary-hover)"
+    },
+    {
+      "name": "--accent",
+      "value": "var(--ember-500)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--accent)"
+    },
+    {
+      "name": "--perk",
+      "value": "var(--violet-500)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--perk)"
+    },
+    {
+      "name": "--border",
+      "value": "rgba(0, 200, 255, 0.16)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--border)"
+    },
+    {
+      "name": "--border-strong",
+      "value": "rgba(0, 200, 255, 0.40)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--border-strong)"
+    },
+    {
+      "name": "--tint-cyan",
+      "value": "rgba(0, 200, 255, 0.06)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--tint-cyan)"
+    },
+    {
+      "name": "--tint-ember",
+      "value": "rgba(255, 107, 53, 0.07)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--tint-ember)"
+    },
+    {
+      "name": "--tint-violet",
+      "value": "rgba(124, 92, 255, 0.06)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--tint-violet)"
+    },
+    {
+      "name": "--font-display",
+      "value": "'Rajdhani', 'Oswald', sans-serif",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--font-display)"
+    },
+    {
+      "name": "--font-body",
+      "value": "'Inter', system-ui, sans-serif",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--font-body)"
+    },
+    {
+      "name": "--font-mono",
+      "value": "'JetBrains Mono', 'SFMono-Regular', monospace",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--font-mono)"
+    },
+    {
+      "name": "--text-2xs",
+      "value": "8px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-2xs)"
+    },
+    {
+      "name": "--text-xs",
+      "value": "10px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-xs)"
+    },
+    {
+      "name": "--text-sm",
+      "value": "12px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-sm)"
+    },
+    {
+      "name": "--text-base",
+      "value": "14px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-base)"
+    },
+    {
+      "name": "--text-md",
+      "value": "16px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-md)"
+    },
+    {
+      "name": "--text-lg",
+      "value": "20px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-lg)"
+    },
+    {
+      "name": "--weight-medium",
+      "value": "500",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--weight-medium)"
+    },
+    {
+      "name": "--weight-semibold",
+      "value": "600",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--weight-semibold)"
+    },
+    {
+      "name": "--radius-xs",
+      "value": "2px",
+      "group": "Radius",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--radius-xs)"
+    },
+    {
+      "name": "--radius-sm",
+      "value": "3px",
+      "group": "Radius",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--radius-sm)"
+    },
+    {
+      "name": "--radius-md",
+      "value": "4px",
+      "group": "Radius",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--radius-md)"
+    },
+    {
+      "name": "--radius-lg",
+      "value": "6px",
+      "group": "Radius",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--radius-lg)"
+    },
+    {
+      "name": "--radius-full",
+      "value": "9999px",
+      "group": "Radius",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--radius-full)"
+    },
+    {
+      "name": "--space-2",
+      "value": "4px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-2)"
+    },
+    {
+      "name": "--space-4",
+      "value": "8px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-4)"
+    },
+    {
+      "name": "--space-5",
+      "value": "12px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-5)"
+    },
+    {
+      "name": "--space-6",
+      "value": "16px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-6)"
+    },
+    {
+      "name": "--space-8",
+      "value": "24px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-8)"
+    },
+    {
+      "name": "--shadow-panel",
+      "value": "0 0 24px rgba(0, 200, 255, 0.05), inset 0 1px 0 rgba(0, 200, 255, 0.12)",
+      "group": "Shadow",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--shadow-panel)"
+    },
+    {
+      "name": "--shadow-header",
+      "value": "0 2px 30px rgba(0, 200, 255, 0.05)",
+      "group": "Shadow",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--shadow-header)"
+    },
+    {
+      "name": "--transition",
+      "value": "all 150ms cubic-bezier(0.16, 1, 0.3, 1)",
+      "group": "Motion",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--transition)"
+    },
+    {
+      "name": "--grid-overlay",
+      "value": "linear-gradient(rgba(0, 200, 255, 0.022) 1px, transparent 1px),\r\n    linear-gradient(90deg, rgba(0, 200, 255, 0.022) 1px, transparent 1px)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--grid-overlay)"
+    },
+    {
+      "name": "--ambient-wash",
+      "value": "radial-gradient(ellipse at 14% 50%, rgba(0, 80, 160, 0.09) 0%, transparent 55%),\r\n    radial-gradient(ellipse at 86% 50%, rgba(160, 55, 0, 0.07) 0%, transparent 55%)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ambient-wash)"
+    },
+    {
+      "name": "--hud-backdrop",
+      "value": "var(--ambient-wash), var(--grid-overlay)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--hud-backdrop)"
+    },
+    {
+      "name": "--font-size",
+      "value": "16px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--font-size)"
+    },
+    {
+      "name": "--foreground",
+      "value": "oklch(0.145 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--foreground)"
+    },
+    {
+      "name": "--card",
+      "value": "#ffffff",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--card)"
+    },
+    {
+      "name": "--card-foreground",
+      "value": "oklch(0.145 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--card-foreground)"
+    },
+    {
+      "name": "--popover",
+      "value": "oklch(1 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--popover)"
+    },
+    {
+      "name": "--popover-foreground",
+      "value": "oklch(0.145 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--popover-foreground)"
+    },
+    {
+      "name": "--primary-foreground",
+      "value": "oklch(1 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--primary-foreground)"
+    },
+    {
+      "name": "--secondary",
+      "value": "oklch(0.95 0.0058 264.53)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--secondary)"
+    },
+    {
+      "name": "--secondary-foreground",
+      "value": "#030213",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--secondary-foreground)"
+    },
+    {
+      "name": "--muted",
+      "value": "#ececf0",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--muted)"
+    },
+    {
+      "name": "--muted-foreground",
+      "value": "#717182",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--muted-foreground)"
+    },
+    {
+      "name": "--accent-foreground",
+      "value": "#030213",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--accent-foreground)"
+    },
+    {
+      "name": "--destructive",
+      "value": "#d4183d",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--destructive)"
+    },
+    {
+      "name": "--destructive-foreground",
+      "value": "#ffffff",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--destructive-foreground)"
+    },
+    {
+      "name": "--input",
+      "value": "transparent",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--input)"
+    },
+    {
+      "name": "--input-background",
+      "value": "#f3f3f5",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--input-background)"
+    },
+    {
+      "name": "--switch-background",
+      "value": "#cbced4",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--switch-background)"
+    },
+    {
+      "name": "--font-weight-medium",
+      "value": "500",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--font-weight-medium)"
+    },
+    {
+      "name": "--font-weight-normal",
+      "value": "400",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--font-weight-normal)"
+    },
+    {
+      "name": "--ring",
+      "value": "oklch(0.708 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ring)"
+    },
+    {
+      "name": "--chart-1",
+      "value": "oklch(0.646 0.222 41.116)",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--chart-1)"
+    },
+    {
+      "name": "--chart-2",
+      "value": "oklch(0.6 0.118 184.704)",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--chart-2)"
+    },
+    {
+      "name": "--chart-3",
+      "value": "oklch(0.398 0.07 227.392)",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--chart-3)"
+    },
+    {
+      "name": "--chart-4",
+      "value": "oklch(0.828 0.189 84.429)",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--chart-4)"
+    },
+    {
+      "name": "--chart-5",
+      "value": "oklch(0.769 0.188 70.08)",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--chart-5)"
+    },
+    {
+      "name": "--radius",
+      "value": "0.625rem",
+      "group": "Radius",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--radius)"
+    },
+    {
+      "name": "--sidebar",
+      "value": "oklch(0.985 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--sidebar)"
+    },
+    {
+      "name": "--sidebar-foreground",
+      "value": "oklch(0.145 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--sidebar-foreground)"
+    },
+    {
+      "name": "--sidebar-primary",
+      "value": "#030213",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--sidebar-primary)"
+    },
+    {
+      "name": "--sidebar-primary-foreground",
+      "value": "oklch(0.985 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--sidebar-primary-foreground)"
+    },
+    {
+      "name": "--sidebar-accent",
+      "value": "oklch(0.97 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--sidebar-accent)"
+    },
+    {
+      "name": "--sidebar-accent-foreground",
+      "value": "oklch(0.205 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--sidebar-accent-foreground)"
+    },
+    {
+      "name": "--sidebar-border",
+      "value": "oklch(0.922 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--sidebar-border)"
+    },
+    {
+      "name": "--sidebar-ring",
+      "value": "oklch(0.708 0 0)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--sidebar-ring)"
+    },
+    {
+      "name": "--font-heading",
+      "value": "\"Orbitron\", \"Inter\", ui-sans-serif, system-ui, sans-serif",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--font-heading)"
+    },
+    {
+      "name": "--cyan-300",
+      "value": "#7ce0ff",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--cyan-300)"
+    },
+    {
+      "name": "--cyan-700",
+      "value": "#0090bd",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--cyan-700)"
+    },
+    {
+      "name": "--ember-400",
+      "value": "#ff8a5c",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--ember-400)"
+    },
+    {
+      "name": "--ember-600",
+      "value": "#e0501c",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--ember-600)"
+    },
+    {
+      "name": "--violet-400",
+      "value": "#9d83ff",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--violet-400)"
+    },
+    {
+      "name": "--violet-300",
+      "value": "#c8b8ff",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--violet-300)"
+    },
+    {
+      "name": "--violet-deep",
+      "value": "#1a0f3d",
+      "group": "Color",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--violet-deep)"
+    },
+    {
+      "name": "--status-info",
+      "value": "#38bdf8",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--status-info)"
+    },
+    {
+      "name": "--surface-hover",
+      "value": "var(--void-400)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--surface-hover)"
+    },
+    {
+      "name": "--on-primary",
+      "value": "var(--void-800)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--on-primary)"
+    },
+    {
+      "name": "--on-accent",
+      "value": "var(--void-800)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--on-accent)"
+    },
+    {
+      "name": "--border-warm",
+      "value": "rgba(255, 107, 53, 0.20)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--border-warm)"
+    },
+    {
+      "name": "--border-perk",
+      "value": "rgba(124, 92, 255, 0.22)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--border-perk)"
+    },
+    {
+      "name": "--input-bg",
+      "value": "rgba(0, 200, 255, 0.05)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--input-bg)"
+    },
+    {
+      "name": "--input-border",
+      "value": "rgba(0, 200, 255, 0.15)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--input-border)"
+    },
+    {
+      "name": "--danger",
+      "value": "var(--status-crit)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--danger)"
+    },
+    {
+      "name": "--success",
+      "value": "var(--status-go)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--success)"
+    },
+    {
+      "name": "--tint-go",
+      "value": "rgba(74, 222, 128, 0.08)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--tint-go)"
+    },
+    {
+      "name": "--glow-cyan",
+      "value": "0 0 24px rgba(0, 200, 255, 0.20)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--glow-cyan)"
+    },
+    {
+      "name": "--glow-cyan-sm",
+      "value": "0 0 6px  rgba(0, 200, 255, 0.55)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--glow-cyan-sm)"
+    },
+    {
+      "name": "--glow-ember",
+      "value": "0 0 24px rgba(255, 107, 53, 0.18)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--glow-ember)"
+    },
+    {
+      "name": "--glow-violet",
+      "value": "0 0 24px rgba(124, 92, 255, 0.20)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--glow-violet)"
+    },
+    {
+      "name": "--glow-go",
+      "value": "0 0 6px  rgba(74, 222, 128, 0.65)",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--glow-go)"
+    },
+    {
+      "name": "--shadow-card",
+      "value": "0 8px 30px rgba(0, 0, 0, 0.45),\r\n                  inset 0 1px 0 rgba(0, 200, 255, 0.10)",
+      "group": "Shadow",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--shadow-card)"
+    },
+    {
+      "name": "--shadow-modal",
+      "value": "0 0 80px rgba(0, 200, 255, 0.10),\r\n                  0 0 160px rgba(0, 200, 255, 0.05),\r\n                  0 24px 60px rgba(0, 0, 0, 0.6)",
+      "group": "Shadow",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--shadow-modal)"
+    },
+    {
+      "name": "--text-glow-cyan",
+      "value": "0 0 12px rgba(0, 200, 255, 0.45)",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-glow-cyan)"
+    },
+    {
+      "name": "--text-glow-ember",
+      "value": "0 0 12px rgba(255, 107, 53, 0.40)",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-glow-ember)"
+    },
+    {
+      "name": "--ease-out",
+      "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "group": "Motion",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ease-out)"
+    },
+    {
+      "name": "--ease-snap",
+      "value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "group": "Motion",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--ease-snap)"
+    },
+    {
+      "name": "--dur-fast",
+      "value": "120ms",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--dur-fast)"
+    },
+    {
+      "name": "--dur-base",
+      "value": "150ms",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--dur-base)"
+    },
+    {
+      "name": "--dur-slow",
+      "value": "240ms",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--dur-slow)"
+    },
+    {
+      "name": "--space-0",
+      "value": "0",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-0)"
+    },
+    {
+      "name": "--space-1",
+      "value": "2px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-1)"
+    },
+    {
+      "name": "--space-3",
+      "value": "6px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-3)"
+    },
+    {
+      "name": "--space-7",
+      "value": "20px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-7)"
+    },
+    {
+      "name": "--space-9",
+      "value": "32px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-9)"
+    },
+    {
+      "name": "--space-10",
+      "value": "40px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-10)"
+    },
+    {
+      "name": "--space-12",
+      "value": "56px",
+      "group": "Spacing",
+      "layer": "primitive",
+      "source": "css",
+      "usage": "var(--space-12)"
+    },
+    {
+      "name": "--border-hairline",
+      "value": "1px",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--border-hairline)"
+    },
+    {
+      "name": "--border-accent",
+      "value": "2px",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--border-accent)"
+    },
+    {
+      "name": "--control-h-sm",
+      "value": "28px",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--control-h-sm)"
+    },
+    {
+      "name": "--control-h",
+      "value": "34px",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--control-h)"
+    },
+    {
+      "name": "--control-h-lg",
+      "value": "40px",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--control-h-lg)"
+    },
+    {
+      "name": "--panel-pad",
+      "value": "12px",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--panel-pad)"
+    },
+    {
+      "name": "--grid-line",
+      "value": "48px",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--grid-line)"
+    },
+    {
+      "name": "--text-xl",
+      "value": "26px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-xl)"
+    },
+    {
+      "name": "--text-2xl",
+      "value": "34px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-2xl)"
+    },
+    {
+      "name": "--text-3xl",
+      "value": "46px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-3xl)"
+    },
+    {
+      "name": "--text-4xl",
+      "value": "64px",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--text-4xl)"
+    },
+    {
+      "name": "--weight-light",
+      "value": "300",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--weight-light)"
+    },
+    {
+      "name": "--weight-normal",
+      "value": "400",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--weight-normal)"
+    },
+    {
+      "name": "--weight-bold",
+      "value": "700",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--weight-bold)"
+    },
+    {
+      "name": "--leading-tight",
+      "value": "1.1",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--leading-tight)"
+    },
+    {
+      "name": "--leading-snug",
+      "value": "1.3",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--leading-snug)"
+    },
+    {
+      "name": "--leading-normal",
+      "value": "1.5",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--leading-normal)"
+    },
+    {
+      "name": "--tracking-tight",
+      "value": "-0.01em",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--tracking-tight)"
+    },
+    {
+      "name": "--tracking-normal",
+      "value": "0",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--tracking-normal)"
+    },
+    {
+      "name": "--tracking-wide",
+      "value": "0.08em",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--tracking-wide)"
+    },
+    {
+      "name": "--tracking-wider",
+      "value": "0.15em",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--tracking-wider)"
+    },
+    {
+      "name": "--tracking-widest",
+      "value": "0.22em",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--tracking-widest)"
+    },
+    {
+      "name": "--color-background",
+      "value": "var(--background)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-background / text-background / border-background"
+    },
+    {
+      "name": "--color-foreground",
+      "value": "var(--foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-foreground / text-foreground / border-foreground"
+    },
+    {
+      "name": "--color-card",
+      "value": "var(--card)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-card / text-card / border-card"
+    },
+    {
+      "name": "--color-card-foreground",
+      "value": "var(--card-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-card-foreground / text-card-foreground / border-card-foreground"
+    },
+    {
+      "name": "--color-popover",
+      "value": "var(--popover)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-popover / text-popover / border-popover"
+    },
+    {
+      "name": "--color-popover-foreground",
+      "value": "var(--popover-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-popover-foreground / text-popover-foreground / border-popover-foreground"
+    },
+    {
+      "name": "--color-primary",
+      "value": "var(--primary)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-primary / text-primary / border-primary"
+    },
+    {
+      "name": "--color-primary-foreground",
+      "value": "var(--primary-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-primary-foreground / text-primary-foreground / border-primary-foreground"
+    },
+    {
+      "name": "--color-secondary",
+      "value": "var(--secondary)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-secondary / text-secondary / border-secondary"
+    },
+    {
+      "name": "--color-secondary-foreground",
+      "value": "var(--secondary-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-secondary-foreground / text-secondary-foreground / border-secondary-foreground"
+    },
+    {
+      "name": "--color-muted",
+      "value": "var(--muted)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-muted / text-muted / border-muted"
+    },
+    {
+      "name": "--color-muted-foreground",
+      "value": "var(--muted-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-muted-foreground / text-muted-foreground / border-muted-foreground"
+    },
+    {
+      "name": "--color-accent",
+      "value": "var(--accent)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-accent / text-accent / border-accent"
+    },
+    {
+      "name": "--color-accent-foreground",
+      "value": "var(--accent-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-accent-foreground / text-accent-foreground / border-accent-foreground"
+    },
+    {
+      "name": "--color-destructive",
+      "value": "var(--destructive)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-destructive / text-destructive / border-destructive"
+    },
+    {
+      "name": "--color-destructive-foreground",
+      "value": "var(--destructive-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-destructive-foreground / text-destructive-foreground / border-destructive-foreground"
+    },
+    {
+      "name": "--color-border",
+      "value": "var(--border)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-border / text-border / border-border"
+    },
+    {
+      "name": "--color-input",
+      "value": "var(--input)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-input / text-input / border-input"
+    },
+    {
+      "name": "--color-input-background",
+      "value": "var(--input-background)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-input-background / text-input-background / border-input-background"
+    },
+    {
+      "name": "--color-switch-background",
+      "value": "var(--switch-background)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-switch-background / text-switch-background / border-switch-background"
+    },
+    {
+      "name": "--color-ring",
+      "value": "var(--ring)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-ring / text-ring / border-ring"
+    },
+    {
+      "name": "--color-chart-1",
+      "value": "var(--chart-1)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-chart-1 / text-chart-1 / border-chart-1"
+    },
+    {
+      "name": "--color-chart-2",
+      "value": "var(--chart-2)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-chart-2 / text-chart-2 / border-chart-2"
+    },
+    {
+      "name": "--color-chart-3",
+      "value": "var(--chart-3)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-chart-3 / text-chart-3 / border-chart-3"
+    },
+    {
+      "name": "--color-chart-4",
+      "value": "var(--chart-4)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-chart-4 / text-chart-4 / border-chart-4"
+    },
+    {
+      "name": "--color-chart-5",
+      "value": "var(--chart-5)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-chart-5 / text-chart-5 / border-chart-5"
+    },
+    {
+      "name": "--radius-xl",
+      "value": "calc(var(--radius) + 4px)",
+      "group": "Radius",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "rounded-xl"
+    },
+    {
+      "name": "--color-sidebar",
+      "value": "var(--sidebar)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-sidebar / text-sidebar / border-sidebar"
+    },
+    {
+      "name": "--color-sidebar-foreground",
+      "value": "var(--sidebar-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-sidebar-foreground / text-sidebar-foreground / border-sidebar-foreground"
+    },
+    {
+      "name": "--color-sidebar-primary",
+      "value": "var(--sidebar-primary)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-sidebar-primary / text-sidebar-primary / border-sidebar-primary"
+    },
+    {
+      "name": "--color-sidebar-primary-foreground",
+      "value": "var(--sidebar-primary-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-sidebar-primary-foreground / text-sidebar-primary-foreground / border-sidebar-primary-foreground"
+    },
+    {
+      "name": "--color-sidebar-accent",
+      "value": "var(--sidebar-accent)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-sidebar-accent / text-sidebar-accent / border-sidebar-accent"
+    },
+    {
+      "name": "--color-sidebar-accent-foreground",
+      "value": "var(--sidebar-accent-foreground)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-sidebar-accent-foreground / text-sidebar-accent-foreground / border-sidebar-accent-foreground"
+    },
+    {
+      "name": "--color-sidebar-border",
+      "value": "var(--sidebar-border)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-sidebar-border / text-sidebar-border / border-sidebar-border"
+    },
+    {
+      "name": "--color-sidebar-ring",
+      "value": "var(--sidebar-ring)",
+      "group": "Color",
+      "layer": "semantic",
+      "source": "tailwind",
+      "usage": "bg-sidebar-ring / text-sidebar-ring / border-sidebar-ring"
+    }
+  ],
+  "drift": [
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--ohai-surface-elevated`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
+      "line": 5
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--ohai-unknown`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
+      "line": 16
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--ohai-gradient-border`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
+      "line": 18
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--theme-text-soft`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
+      "line": 24
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--void-900`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 3
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--status-warn`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 19
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--rarity-common`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 21
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--rarity-uncommon`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 22
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--rarity-rare`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 23
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--rarity-epic`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 24
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--rarity-legendary`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 25
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--surface`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 27
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--surface-card`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 28
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--surface-muted`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 29
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--perk`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 39
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--tint-ember`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 43
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--tint-violet`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 44
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--text-xs`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 49
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--radius-xs`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 56
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--radius-md`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 58
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--radius-lg`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 59
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--space-8`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 65
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--cyan-300`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 20
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--cyan-700`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 21
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--ember-400`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 25
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--ember-600`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 26
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--violet-400`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 30
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--violet-300`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 31
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--violet-deep`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 32
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--status-info`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 45
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--surface-hover`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 68
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--on-primary`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 79
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--on-accent`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 81
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--border-warm`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 86
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--border-perk`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 87
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--input-bg`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 89
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--input-border`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 90
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--danger`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 93
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--success`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 94
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--tint-go`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 100
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--glow-cyan`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 10
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--glow-cyan-sm`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 11
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--glow-ember`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 12
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--glow-violet`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 13
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--glow-go`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 14
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--shadow-card`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 19
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--shadow-modal`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 21
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--text-glow-cyan`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 27
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--text-glow-ember`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 28
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--ease-snap`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 32
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--dur-fast`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 33
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--dur-slow`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 35
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--space-0`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
+      "line": 9
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--space-1`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
+      "line": 10
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--space-3`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
+      "line": 12
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--space-7`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
+      "line": 16
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--space-9`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
+      "line": 18
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--space-10`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
+      "line": 19
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--space-12`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
+      "line": 20
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--border-hairline`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
+      "line": 30
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #8ea2c9",
+      "detail": "Same value as --ohai-unknown, --theme-text-soft — consolidate into one semantic token.",
+      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
+      "line": 9
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #8ea2c9",
+      "detail": "Same value as --ohai-text-muted, --theme-text-soft — consolidate into one semantic token.",
+      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
+      "line": 16
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #8ea2c9",
+      "detail": "Same value as --ohai-text-muted, --ohai-unknown — consolidate into one semantic token.",
+      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
+      "line": 24
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #4ade80",
+      "detail": "Same value as --rarity-uncommon — consolidate into one semantic token.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 18
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #4ade80",
+      "detail": "Same value as --status-go — consolidate into one semantic token.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 22
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #38bdf8",
+      "detail": "Same value as --status-info — consolidate into one semantic token.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 23
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #38bdf8",
+      "detail": "Same value as --rarity-rare — consolidate into one semantic token.",
+      "relFile": "src/styles/ohmm-design/tokens/colors.css",
+      "line": 45
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value 16px",
+      "detail": "Same value as --font-size — consolidate into one semantic token.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 52
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value 16px",
+      "detail": "Same value as --text-md — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 4
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value 500",
+      "detail": "Same value as --font-weight-medium — consolidate into one semantic token.",
+      "relFile": "src/styles/ohmm-app.css",
+      "line": 54
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value 500",
+      "detail": "Same value as --weight-medium — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 25
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(0.145 0 0)",
+      "detail": "Same value as --card-foreground, --popover-foreground, --sidebar-foreground — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 6
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(0.145 0 0)",
+      "detail": "Same value as --foreground, --popover-foreground, --sidebar-foreground — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 8
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(0.145 0 0)",
+      "detail": "Same value as --foreground, --card-foreground, --sidebar-foreground — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 10
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(0.145 0 0)",
+      "detail": "Same value as --foreground, --card-foreground, --popover-foreground — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 35
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #ffffff",
+      "detail": "Same value as --destructive-foreground — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 7
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #ffffff",
+      "detail": "Same value as --card — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 20
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(1 0 0)",
+      "detail": "Same value as --primary-foreground — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 9
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(1 0 0)",
+      "detail": "Same value as --popover — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 12
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #030213",
+      "detail": "Same value as --accent-foreground, --sidebar-primary — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 14
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #030213",
+      "detail": "Same value as --secondary-foreground, --sidebar-primary — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 18
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value #030213",
+      "detail": "Same value as --secondary-foreground, --accent-foreground — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 36
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value 400",
+      "detail": "Same value as --weight-normal — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 26
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value 400",
+      "detail": "Same value as --font-weight-normal — consolidate into one semantic token.",
+      "relFile": "src/styles/ohmm-design/tokens/typography.css",
+      "line": 28
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(0.708 0 0)",
+      "detail": "Same value as --sidebar-ring — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 27
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(0.708 0 0)",
+      "detail": "Same value as --ring — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 41
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(0.985 0 0)",
+      "detail": "Same value as --sidebar-primary-foreground — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 34
+    },
+    {
+      "severity": "info",
+      "kind": "duplicate-token",
+      "title": "Duplicate value oklch(0.985 0 0)",
+      "detail": "Same value as --sidebar — consolidate into one semantic token.",
+      "relFile": "src/styles/theme.css",
+      "line": 37
+    }
+  ]
+}
