@@ -1,0 +1,2725 @@
+{
+  "_meta": {
+    "sourceFile": "07079_f558d089.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07079_f558d089.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.312Z",
+    "recordCount": 37,
+    "sourceHash": "ac31588eafa711363432dac64ad0e2d79f6715089c9b2c07ce1beb7e01579431",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_anchor_worldstone01",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "102",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "WORLD_STONE",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrGameplayWorldStone": {
+          "cls_type": "RuntimeAttrGameplayWorldStone",
+          "init_state": "001",
+          "reward_no": "",
+          "submit_item_no_list": [],
+          "unlock_state_infos": [
+            {
+              "state_name": "001",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "002",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01_to_02.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_02.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "003",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_02_to_03.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_03.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020024,
+            810020059,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "001",
+          "enable_exec_state": true,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "001",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": false,
+              "tag": "001",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "002",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "003",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            "001",
+            "002",
+            "003"
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -5.3594,
+            -0.8818,
+            25.4583,
+            0,
+            -1.7851,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "worldstone01",
+          "node_uuid": "6932ad6090f22c321c1cb3ca",
+          "world_trans": [
+            4534.3159,
+            144.9304,
+            -1287.1924,
+            0,
+            -1.5149,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": false,
+          "enable_vertical_occluder": false,
+          "init_model_path": "environment/dynamic_objects/world_stone/world_stone_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                20,
+                4,
+                20
+              ],
+              "shape": "box",
+              "tag": "001",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            },
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                4,
+                5
+              ],
+              "shape": "box",
+              "tag": "002",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "first_meet_world_stone",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "001",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "002",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrAreaDefine": {
+          "area_uuid": 0,
+          "areas": [
+            {
+              "tag": "area_0",
+              "vertices": [
+                [
+                  24.5703,
+                  0,
+                  5.9973
+                ],
+                [
+                  -20.8979,
+                  0,
+                  39.6589
+                ],
+                [
+                  -55.7734,
+                  0,
+                  -7.5142
+                ],
+                [
+                  -38.3491,
+                  0,
+                  -28.2874
+                ],
+                [
+                  -15.5811,
+                  0,
+                  -46.5448
+                ]
+              ],
+              "cls_type": "RuntimeAreaDefineItemPolygon"
+            }
+          ],
+          "cls_type": "RuntimeAttrAreaDefine",
+          "export_area_data": "",
+          "gameplay_subtype": "",
+          "gameplay_type": "",
+          "gameplay_value": 0,
+          "import_area_data": "",
+          "mask_pixel_size": 4
+        },
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_building_defense_node",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "DEFENSE_FORTIFY_AREA",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": "area_0"
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -56.2173,
+            0.1377,
+            -192.7644,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node",
+          "node_uuid": "6932ad6090f22c321c1cb3e4",
+          "world_trans": [
+            4354.9165,
+            145.4339,
+            -1480.036,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_building_defense_workshop_spawn_point_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "DEFENSE_FORTIFY_SPAWN_POINT",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            29.7295,
+            -1.2564,
+            15.4701,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "workshop_spawn_point_1",
+          "node_uuid": "6932ad6090f22c321c1cb3cf",
+          "world_trans": [
+            4369.7524,
+            145.3476,
+            -1465.5054,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_building_defense_workshop_spawn_point_2",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "DEFENSE_FORTIFY_SPAWN_POINT",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -21.8018,
+            -1.0674,
+            33.9441,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "workshop_spawn_point_2",
+          "node_uuid": "6932ad6090f22c321c1cb3e0",
+          "world_trans": [
+            4318.2212,
+            145.5366,
+            -1447.0314,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_building_defense_workshop_spawn_point_3",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "DEFENSE_FORTIFY_SPAWN_POINT",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -34.2109,
+            -1.0123,
+            -14.3353,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "workshop_spawn_point_3",
+          "node_uuid": "6932ad6090f22c321c1cb3e1",
+          "world_trans": [
+            4305.812,
+            145.5917,
+            -1495.3108,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_building_defense_workshop_spawn_point_4",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "DEFENSE_FORTIFY_SPAWN_POINT",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            27.7769,
+            -1.2183,
+            -17.6307,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "workshop_spawn_point_4",
+          "node_uuid": "6932ad6090f22c321c1cb3e3",
+          "world_trans": [
+            4367.7998,
+            145.3857,
+            -1498.6062,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_building_defense_workshop_spawn_point_5",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "DEFENSE_FORTIFY_SPAWN_POINT",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -1.4966,
+            4.5543,
+            -17.448,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "workshop_spawn_point_5",
+          "node_uuid": "6932ad6090f22c321c1cb3e5",
+          "world_trans": [
+            4338.5264,
+            151.1583,
+            -1498.4235,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_0",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -17.9173,
+            4.3325,
+            35.9621,
+            0,
+            0.5713,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_0",
+          "node_uuid": "6932ad6090f22c321c1cb404",
+          "world_trans": [
+            4393.2163,
+            149.6287,
+            -1251.3094,
+            0,
+            0.5713,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                33.2714,
+                21.0656,
+                90.5316
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            24.576,
+            2.1326,
+            45.9399,
+            0,
+            -0.7854,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_1",
+          "node_uuid": "6932ad6090f22c321c1cb3fa",
+          "world_trans": [
+            4435.71,
+            147.4288,
+            -1241.3317,
+            0,
+            -0.7854,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                26.7371,
+                18.3478,
+                27.5107
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_1",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_10",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -32.0505,
+            12.8328,
+            -101.1132,
+            0,
+            0.4757,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_10",
+          "node_uuid": "6932ad6090f22c321c1cb3f7",
+          "world_trans": [
+            4379.0835,
+            158.129,
+            -1388.3848,
+            0,
+            0.4757,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                53.41,
+                38.7235,
+                62.9074
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_10",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_11",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -70.6467,
+            4.4361,
+            -190.4793,
+            0,
+            0.7051,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_11",
+          "node_uuid": "6932ad6090f22c321c1cb3f6",
+          "world_trans": [
+            4340.4873,
+            149.7323,
+            -1477.7509,
+            0,
+            0.7051,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                81.0786,
+                19.1638,
+                90.4006
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_11",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_2",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -65.6973,
+            2.1903,
+            27.8798,
+            0,
+            0.5404,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_2",
+          "node_uuid": "6932ad6090f22c321c1cb3ed",
+          "world_trans": [
+            4345.4365,
+            147.4865,
+            -1259.3918,
+            0,
+            0.5404,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                25.0368,
+                18.4269,
+                27.1067
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_2",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_3",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            52.6612,
+            2.5502,
+            22.6681,
+            0,
+            -1.1071,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_3",
+          "node_uuid": "6932ad6090f22c321c1cb3fd",
+          "world_trans": [
+            4463.7949,
+            147.8464,
+            -1264.6035,
+            0,
+            -1.1071,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                24.3574,
+                14.9992,
+                32.904
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_3",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_4",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -82.9547,
+            36.0608,
+            -40.3821,
+            0,
+            0.598,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_4",
+          "node_uuid": "6932ad6090f22c321c1cb400",
+          "world_trans": [
+            4328.1792,
+            181.357,
+            -1327.6537,
+            0,
+            0.598,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                102.2556,
+                90.251,
+                104.2287
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_4",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_5",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            40.8426,
+            3.5982,
+            10.4425,
+            0,
+            -0.7854,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_5",
+          "node_uuid": "6932ad6090f22c321c1cb402",
+          "world_trans": [
+            4451.9766,
+            148.8944,
+            -1276.8291,
+            0,
+            -0.7854,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                26.7371,
+                15.3123,
+                29.0182
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_5",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_6",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            72.2027,
+            3.0962,
+            -7.7582,
+            0,
+            -0.9505,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_6",
+          "node_uuid": "6932ad6090f22c321c1cb407",
+          "world_trans": [
+            4483.3364,
+            148.3924,
+            -1295.0298,
+            0,
+            -0.9505,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                28.6023,
+                16.2402,
+                32.2066
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_6",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_7",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            20.5943,
+            2.3665,
+            -18.0355,
+            0,
+            -1.1071,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_7",
+          "node_uuid": "6932ad6090f22c321c1cb3f1",
+          "world_trans": [
+            4431.728,
+            147.6627,
+            -1305.3071,
+            0,
+            -1.1071,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                23.6503,
+                14.9225,
+                32.6033
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_7",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_8",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            8.8254,
+            2.3268,
+            -28.705,
+            0,
+            0.7854,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_8",
+          "node_uuid": "6932ad6090f22c321c1cb3e7",
+          "world_trans": [
+            4419.959,
+            147.623,
+            -1315.9766,
+            0,
+            0.7854,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                23.9241,
+                14.894,
+                31.8042
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_8",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_acoustic_bake_9",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            22.4892,
+            5.0695,
+            -52.6227,
+            0,
+            0.9129,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_9",
+          "node_uuid": "6932ad6090f22c321c1cb408",
+          "world_trans": [
+            4433.623,
+            150.3657,
+            -1339.8943,
+            0,
+            0.9129,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                42.0408,
+                22.8418,
+                53.0322
+              ],
+              "shape": "box",
+              "tag": "blackfelltown_01_9",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_bedroom",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -167.1641,
+            -0.9804,
+            -52.7765,
+            0,
+            0.6741,
+            0,
+            5.4782,
+            3.1007,
+            5.2076
+          ],
+          "name": "bedroom",
+          "node_uuid": "6932ad6090f22c321c1cb409",
+          "world_trans": [
+            4264.5469,
+            147.9936,
+            -1376.0032,
+            0,
+            0.6741,
+            0,
+            5.4782,
+            3.1007,
+            5.2076
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_room1",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            3.2437,
+            -0.2893,
+            -2.1292,
+            0,
+            0.6272,
+            0,
+            7.8893,
+            3.9382,
+            10.0475
+          ],
+          "name": "room1",
+          "node_uuid": "6932ad6090f22c321c1cb3f3",
+          "world_trans": [
+            4434.9546,
+            148.6847,
+            -1325.3558,
+            0,
+            0.6272,
+            0,
+            7.8893,
+            3.9382,
+            10.0475
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_room2",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            9.7749,
+            -0.2645,
+            -6.877,
+            0,
+            0.6455,
+            0,
+            7.7738,
+            4.0583,
+            9.6851
+          ],
+          "name": "room2",
+          "node_uuid": "6932ad6090f22c321c1cb3ff",
+          "world_trans": [
+            4441.4858,
+            148.7095,
+            -1330.1036,
+            0,
+            0.6455,
+            0,
+            7.7738,
+            4.0583,
+            9.6851
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_room3",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -11.4795,
+            -0.3424,
+            -21.8394,
+            0,
+            0.6345,
+            0,
+            7.2257,
+            4.0654,
+            10.4249
+          ],
+          "name": "room3",
+          "node_uuid": "6932ad6090f22c321c1cb3ea",
+          "world_trans": [
+            4420.2314,
+            148.6316,
+            -1345.066,
+            0,
+            0.6345,
+            0,
+            7.2257,
+            4.0654,
+            10.4249
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_room4",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -5.0415,
+            -0.2179,
+            -26.5393,
+            0,
+            0.6296,
+            0,
+            8.5131,
+            4.0651,
+            10.4455
+          ],
+          "name": "room4",
+          "node_uuid": "6932ad6090f22c321c1cb3fe",
+          "world_trans": [
+            4426.6694,
+            148.7561,
+            -1349.7659,
+            0,
+            0.6296,
+            0,
+            8.5131,
+            4.0651,
+            10.4455
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_room5",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -185.1753,
+            -1.4557,
+            94.0356,
+            0,
+            0.6218,
+            0,
+            5.9689,
+            3.4369,
+            5.6131
+          ],
+          "name": "room5",
+          "node_uuid": "6932ad6090f22c321c1cb3f5",
+          "world_trans": [
+            4246.5356,
+            147.5183,
+            -1229.191,
+            0,
+            0.6218,
+            0,
+            5.9689,
+            3.4369,
+            5.6131
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet1",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -37.2402,
+            -0.9594,
+            63.8146,
+            0,
+            0.5809,
+            0,
+            4.9551,
+            5.0965,
+            5.3705
+          ],
+          "name": "toilet1",
+          "node_uuid": "6932ad6090f22c321c1cb403",
+          "world_trans": [
+            4394.4707,
+            148.0146,
+            -1259.412,
+            0,
+            0.5809,
+            0,
+            4.9551,
+            5.0965,
+            5.3705
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet10",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -453.2124,
+            4.3652,
+            -48.9181,
+            0,
+            -0.4583,
+            0,
+            3.1067,
+            3.627,
+            2.0548
+          ],
+          "name": "toilet10",
+          "node_uuid": "6932ad6090f22c321c1cb401",
+          "world_trans": [
+            3978.4985,
+            153.3392,
+            -1372.1447,
+            0,
+            -0.4583,
+            0,
+            3.1067,
+            3.627,
+            2.0548
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet11",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            69.1934,
+            -1.1042,
+            -131.7574,
+            0,
+            0,
+            0,
+            2.794,
+            3.1692,
+            2.9917
+          ],
+          "name": "toilet11",
+          "node_uuid": "6932ad6090f22c321c1cb3fc",
+          "world_trans": [
+            4500.9043,
+            147.8698,
+            -1454.984,
+            0,
+            0,
+            0,
+            2.794,
+            3.1692,
+            2.9917
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet2",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -32.8965,
+            -0.9769,
+            60.9172,
+            0,
+            0.5821,
+            0,
+            5.2216,
+            5.0997,
+            5.3593
+          ],
+          "name": "toilet2",
+          "node_uuid": "6932ad6090f22c321c1cb3f2",
+          "world_trans": [
+            4398.8145,
+            147.9971,
+            -1262.3094,
+            0,
+            0.5821,
+            0,
+            5.2216,
+            5.0997,
+            5.3593
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet3",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -175.9683,
+            -1.0638,
+            -40.9946,
+            0,
+            0.6535,
+            0,
+            4.6777,
+            2.934,
+            3.1071
+          ],
+          "name": "toilet3",
+          "node_uuid": "6932ad6090f22c321c1cb405",
+          "world_trans": [
+            4255.7427,
+            147.9102,
+            -1364.2212,
+            0,
+            0.6535,
+            0,
+            4.6777,
+            2.934,
+            3.1071
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet4",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -443.3044,
+            0.5759,
+            -44.1339,
+            0,
+            -0.4518,
+            0,
+            3.0844,
+            3.6043,
+            2.0754
+          ],
+          "name": "toilet4",
+          "node_uuid": "6932ad6090f22c321c1cb3eb",
+          "world_trans": [
+            3988.4065,
+            149.5499,
+            -1367.3605,
+            0,
+            -0.4518,
+            0,
+            3.0844,
+            3.6043,
+            2.0754
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet5",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -433.4329,
+            0.6374,
+            -39.3556,
+            0,
+            -0.4477,
+            0,
+            3.0718,
+            3.7376,
+            2.1078
+          ],
+          "name": "toilet5",
+          "node_uuid": "6932ad6090f22c321c1cb3fb",
+          "world_trans": [
+            3998.2781,
+            149.6114,
+            -1362.5822,
+            0,
+            -0.4477,
+            0,
+            3.0718,
+            3.7376,
+            2.1078
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet6",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -428.5076,
+            0.6276,
+            -36.964,
+            0,
+            -0.4518,
+            0,
+            3.0705,
+            3.7637,
+            2.0961
+          ],
+          "name": "toilet6",
+          "node_uuid": "6932ad6090f22c321c1cb406",
+          "world_trans": [
+            4003.2034,
+            149.6016,
+            -1360.1907,
+            0,
+            -0.4518,
+            0,
+            3.0705,
+            3.7637,
+            2.0961
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet7",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -423.5525,
+            4.3509,
+            -34.5719,
+            0,
+            -0.4522,
+            0,
+            3.1173,
+            3.7339,
+            2.0754
+          ],
+          "name": "toilet7",
+          "node_uuid": "6932ad6090f22c321c1cb3ef",
+          "world_trans": [
+            4008.1584,
+            153.3249,
+            -1357.7985,
+            0,
+            -0.4522,
+            0,
+            3.1173,
+            3.7339,
+            2.0754
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet8",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -438.3767,
+            4.355,
+            -41.7419,
+            0,
+            -0.4544,
+            0,
+            3.1006,
+            3.7077,
+            2.0892
+          ],
+          "name": "toilet8",
+          "node_uuid": "6932ad6090f22c321c1cb3ee",
+          "world_trans": [
+            3993.3342,
+            153.329,
+            -1364.9685,
+            0,
+            -0.4544,
+            0,
+            3.1006,
+            3.7077,
+            2.0892
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_toilet9",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -443.3191,
+            4.3711,
+            -44.1489,
+            0,
+            -0.4528,
+            0,
+            3.0699,
+            3.708,
+            2.0724
+          ],
+          "name": "toilet9",
+          "node_uuid": "6932ad6090f22c321c1cb3f0",
+          "world_trans": [
+            3988.3918,
+            153.3451,
+            -1367.3755,
+            0,
+            -0.4528,
+            0,
+            3.0699,
+            3.708,
+            2.0724
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E8040F-11380035-5010B861-0CE8201D_default_node272",
+          "parent_global_name": "",
+          "prefab_instance_id": "blackfelltown_01_175013",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node272",
+          "node_uuid": "6932ad6090f22c321c1cb3f8",
+          "world_trans": [
+            4444.5996,
+            148.8487,
+            -1326.8594,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": []
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

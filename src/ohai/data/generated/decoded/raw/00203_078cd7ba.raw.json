@@ -1,0 +1,212 @@
+{
+  "_meta": {
+    "sourceFile": "00203_078cd7ba.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00203_078cd7ba.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.626Z",
+    "recordCount": 2,
+    "sourceHash": "3ac9ccbe4b6a3a7d32727b422e8590b1b3fd8cec6643678e92f450e1df9d24e4",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            19,
+            47
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "7": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 7
+          },
+          "type": "NodeForeachIdList"
+        },
+        "event_action": {
+          "process": [
+            17
+          ]
+        },
+        "in_data_pin": {
+          "id_list": [
+            9,
+            "process",
+            "entity_list"
+          ]
+        },
+        "out_data_pin": {
+          "process": [
+            "target_uid"
+          ]
+        }
+      },
+      "8": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_id": "111",
+            "effect_index": 8,
+            "end_sfx_path": "effect/boss/kxm0417/kxm_mind_link_b01.pse",
+            "is_bending": true,
+            "need_disable": false,
+            "remove_without_target_pos": false,
+            "sfx_path": "effect/boss/kxm0417/kxm_mind_link_b02.pse",
+            "socket_name": "name_player",
+            "target_socket": "name_player",
+            "visual_selection": -1
+          },
+          "type": "NodeMultiTarBendingSfx"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "id_list": [
+            9,
+            "process",
+            "entity_list"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "aoi_height": 30,
+            "aoi_range": 20,
+            "camp_type": [
+              99
+            ],
+            "condition": [],
+            "condition_op": 1,
+            "effect_index": 9,
+            "max_entity_num": 1,
+            "order_by_distance": false,
+            "persist": false,
+            "save_to_bb": false,
+            "save_to_bb_key": "",
+            "scope": 0
+          },
+          "type": "NodeGetAoiEntity"
+        },
+        "event_action": {
+          "process": [
+            8,
+            33,
+            7
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": [
+            "entity_list",
+            "entity_count"
+          ]
+        }
+      },
+      "17": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "111",
+            "effect_index": 17,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveIdData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            7,
+            "process",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "19": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_id": "111",
+            "effect_index": 19,
+            "need_disable": false
+          },
+          "type": "NodeMultiTarBendingSfxReset"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "33": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "counter_key": "123321",
+            "counter_max": 1,
+            "counter_value": 0,
+            "effect_index": 33,
+            "is_abs": false,
+            "merge_interval": 0.1,
+            "need_disable": false,
+            "reset": true
+          },
+          "type": "NodeFlowCounterSet"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "47": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 47
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            9
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_500000433_1",
+      "preload_res_list": [
+        "effect/boss/kxm0417/kxm_mind_link_b02.pse",
+        "effect/boss/kxm0417/kxm_mind_link_b01.pse"
+      ],
+      "source_info": [
+        "buff",
+        500000433,
+        1
+      ],
+      "tid": 16104
+    }
+  ]
+}

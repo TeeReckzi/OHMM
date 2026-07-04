@@ -1,0 +1,91 @@
+{
+  "_meta": {
+    "sourceFile": "05081_acdb5e09.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05081_acdb5e09.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:52.886Z",
+    "recordCount": 2,
+    "sourceHash": "b6bdd21d339f6714586fc43b42ea7336bba1be266cb6341d823edeca0ea7e772",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "278": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "degrade": false,
+            "dispel_buff_sub_tag_list": [],
+            "dispel_buff_tag_list": [],
+            "dispel_debuff_num": 1,
+            "dispel_id_list": [
+              501100036
+            ],
+            "dispel_tag_list": [],
+            "dispel_type": 0,
+            "effect_index": 278,
+            "match_caster_id": false,
+            "need_disable": false
+          },
+          "type": "NodeDispelBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            279,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "279": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 279
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "280": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 280
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            278
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 280,
+      "name": "behavior_ancientones_plane_lv2tolv1_s4_3to1_buwudi",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "ancientones_plane",
+        "lv2tolv1_s4_3to1",
+        ""
+      ],
+      "tid": 16523
+    }
+  ]
+}

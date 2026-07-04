@@ -1,0 +1,116 @@
+{
+  "_meta": {
+    "sourceFile": "06716_e7f611f5.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06716_e7f611f5.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:56.428Z",
+    "recordCount": 2,
+    "sourceHash": "180876d09b0a4cbbda8ea50dd317b804242a549df664074b41837533df0ceaa7",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 2
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            3
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 3,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "socket_gun_bulletout",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "warning",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/monster/ghostship_m/cannon_warning_sector.pse",
+              "rot_off": [
+                0,
+                180,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 2,
+      "name": "behavior_fixed_cannon_power_shoot_npc_warning",
+      "preload_res_list": [
+        "effect/monster/ghostship_m/cannon_warning_sector.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "fixed_cannon",
+        "power_shoot_npc",
+        ""
+      ],
+      "tid": 16290
+    }
+  ]
+}

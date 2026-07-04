@@ -5,6 +5,7 @@ import { ModalShell, EmptySlate, GenericDetail, RarityBadge } from "../ui/Primit
 import type { Rarity, EquippedItem } from "../../types";
 import { R_COLOR, CYAN } from "../../types";
 import { armorRegistry, keyGearRegistry } from "../../../ohai/src/ui/registries/armorRegistry";
+import { formatEffectForDisplay } from "../../../lib/ohmm/effectDisplayFormatter";
 
 const ARMOR_SLOTS_FILTER = ["All", "Helmet", "Mask", "Chest", "Gloves", "Pants", "Boots"] as const;
 
@@ -34,6 +35,16 @@ export function ArmorModal({ slotLabel, onClose, onSelect, items }: {
   const [query, setQuery] = useState("");
   const [slot, setSlot] = useState<string>(slotLabel || "All");
   const [selected, setSelected] = useState<EquippedItem | null>(null);
+
+  // Clear selection when slot filter changes if selected item doesn't match new filter
+  React.useEffect(() => {
+    if (selected && slot !== "All") {
+      const itemSlot = selected.category || (selected.meta as any)?.displaySlot || '';
+      if (itemSlot.toLowerCase() !== slot.toLowerCase() && getArmorDisplaySlot(itemSlot).toLowerCase() !== slot.toLowerCase()) {
+        setSelected(null);
+      }
+    }
+  }, [slot]);
 
   // Use passed items (from getArmorItems with proper category = display slot)
   let armors: EquippedItem[] = items && items.length ? items : [];
@@ -125,7 +136,7 @@ export function ArmorModal({ slotLabel, onClose, onSelect, items }: {
                     </div>
                     {a.effectSummary && (
                       <div className="text-[9px] mt-0.5 truncate" style={{ color: '#6aa8c0' }}>
-                        {a.effectSummary}
+                        {formatEffectForDisplay(a.effectSummary, a.confidence)}
                       </div>
                     )}
                   </div>

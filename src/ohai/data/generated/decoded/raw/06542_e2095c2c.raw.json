@@ -1,0 +1,202 @@
+{
+  "_meta": {
+    "sourceFile": "06542_e2095c2c.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06542_e2095c2c.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:56.007Z",
+    "recordCount": 2,
+    "sourceHash": "0641b4511fa40366f1f4d4eeb98acab3be71d2169440851be8f73eb43dbedab1",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 2,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": true,
+              "bind_name": "abn_fire_01",
+              "bind_type": 5,
+              "common_name": "electric",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": true,
+              "delay_remove_time": 2,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "gain_01",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/skill/buff/gain_01.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 400,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": 9
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "6": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 6
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            2,
+            12
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "10": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "hp",
+            "effect_index": 10,
+            "need_disable": false,
+            "percent_base": 1,
+            "value_type": 2
+          },
+          "type": "NodeCostAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": -10
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "12": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 12,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 13510798947758080,
+                "params": {
+                  "add_buff": true,
+                  "buff_id": 501100012,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::501100012"
+                  ],
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "change_buff_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            10
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "13": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 13,
+            "value": -10
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 6,
+      "name": "buff_501100012_1",
+      "preload_res_list": [
+        "effect/skill/buff/gain_01.pse"
+      ],
+      "source_info": [
+        "buff",
+        501100012,
+        1
+      ],
+      "tid": 16027
+    }
+  ]
+}

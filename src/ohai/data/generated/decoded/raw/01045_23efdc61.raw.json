@@ -1,0 +1,466 @@
+{
+  "_meta": {
+    "sourceFile": "01045_23efdc61.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01045_23efdc61.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.964Z",
+    "recordCount": 4,
+    "sourceHash": "7592abe38e05ed64ce5bd75a3314c1bc351e7a3420a641676d6afe41d8bb80d9",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B06-0A2B0034-8CC9DE50-68E136D6_T6_2_group8",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_leaf_238632",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810010003
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -3.7656,
+            -0.0315,
+            0.0544,
+            0,
+            1.7075,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "group8",
+          "node_uuid": "",
+          "world_trans": [
+            1803.7313,
+            216.52,
+            -719.8715,
+            0,
+            -2.7542,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B06-0A2B0034-8CC9DE50-68E136D6_T6_2_node20",
+          "parent_global_name": "scene_openworld_07E70B06-0A2B0034-8CC9DE50-68E136D6_T6_2_group8",
+          "prefab_instance_id": "prefab_landmark_leaf_238632",
+          "season_config": {}
+        },
+        "RuntimeAttrGameplayLotusleaf": {
+          "cls_type": "RuntimeAttrGameplayLotusleaf",
+          "cooldown": 10,
+          "entities_count": 3
+        },
+        "RuntimeAttrGameplayLotusleafMember": {
+          "active_time": 5,
+          "cls_type": "RuntimeAttrGameplayLotusleafMember",
+          "stealth": false,
+          "stealth_duration": 5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810010003,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0.2241,
+            0.3876,
+            0.8546,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node20",
+          "node_uuid": "",
+          "world_trans": [
+            1803.2009,
+            216.9076,
+            -720.5781,
+            0,
+            -2.7542,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/interaction/components/deviant_lotus_leaf_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "LotusLeafUnit",
+              "pos": [
+                0.0378,
+                0.7152,
+                0.1255
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.1389,
+                1,
+                1.2234
+              ],
+              "shape": "box",
+              "tag": "tag8",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "tag8",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "tag8",
+              "cls_type": "RuntimeTriggerItemLeave"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B06-0A2B0034-8CC9DE50-68E136D6_T6_2_node21",
+          "parent_global_name": "scene_openworld_07E70B06-0A2B0034-8CC9DE50-68E136D6_T6_2_group8",
+          "prefab_instance_id": "prefab_landmark_leaf_238632",
+          "season_config": {}
+        },
+        "RuntimeAttrGameplayLotusleafMember": {
+          "active_time": 5,
+          "cls_type": "RuntimeAttrGameplayLotusleafMember",
+          "stealth": false,
+          "stealth_duration": 5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810010003,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -7.0375,
+            0.4331,
+            2.3896,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node21",
+          "node_uuid": "",
+          "world_trans": [
+            1809.3447,
+            216.9531,
+            -724.7423,
+            0,
+            -2.7542,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/interaction/components/deviant_lotus_leaf_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "LotusLeafUnit",
+              "pos": [
+                0.0903,
+                0.6853,
+                0.1133
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.2409,
+                0.9072,
+                0.9944
+              ],
+              "shape": "box",
+              "tag": "tag9",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "tag9",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "tag9",
+              "cls_type": "RuntimeTriggerItemLeave"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B06-0A2B0034-8CC9DE50-68E136D6_T6_2_node22",
+          "parent_global_name": "scene_openworld_07E70B06-0A2B0034-8CC9DE50-68E136D6_T6_2_group8",
+          "prefab_instance_id": "prefab_landmark_leaf_238632",
+          "season_config": {}
+        },
+        "RuntimeAttrGameplayLotusleafMember": {
+          "active_time": 5,
+          "cls_type": "RuntimeAttrGameplayLotusleafMember",
+          "stealth": false,
+          "stealth_duration": 5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810010003,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -3.4373,
+            0.2676,
+            7.1942,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node22",
+          "node_uuid": "",
+          "world_trans": [
+            1804.1964,
+            216.7876,
+            -727.8311,
+            0,
+            -2.7542,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/interaction/components/deviant_lotus_leaf_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "LotusLeafUnit",
+              "pos": [
+                0.0903,
+                0.6853,
+                0.1133
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.2409,
+                0.9072,
+                0.9944
+              ],
+              "shape": "box",
+              "tag": "tag9",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "tag9",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "tag9",
+              "cls_type": "RuntimeTriggerItemLeave"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

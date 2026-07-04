@@ -1,0 +1,890 @@
+{
+  "_meta": {
+    "sourceFile": "06384_dbba60bd.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06384_dbba60bd.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:55.667Z",
+    "recordCount": 2,
+    "sourceHash": "e691c5ff37348d76820049045b8c8a8a1a1ce72dc839587ec471f840efc910a3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            43,
+            25,
+            11,
+            36,
+            18
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "11": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "col_only": true,
+            "effect_index": 11,
+            "enable": false,
+            "hit_box_only": false,
+            "need_disable": false
+          },
+          "type": "NodeDisableColHitBox"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "18": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 18,
+            "enter_max_times": -1,
+            "exit_max_times": -1,
+            "perceive_tag": "",
+            "select_data": {
+              "select_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 2,
+                  "label_enemy": false,
+                  "label_enemy_only_editor0": true,
+                  "label_enemy_only_editor1": false,
+                  "label_friend": false,
+                  "label_friend_only_editor0": true,
+                  "label_friend_only_editor1": false,
+                  "label_neutral": false,
+                  "label_neutral_only_editor0": true,
+                  "label_neutral_only_editor1": false,
+                  "label_self": false
+                }
+              }
+            }
+          },
+          "type": "NodeSetPerceivedEvent"
+        },
+        "event_action": {
+          "enter": [
+            22,
+            33
+          ],
+          "exit": [
+            35,
+            38
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "enter": [
+            "enter_id"
+          ],
+          "exit": [
+            "exit_id"
+          ]
+        }
+      },
+      "22": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 22,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "damage_socket",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "popo",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/monster/soundeater/rust_airpocket.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": true,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "25": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 25,
+            "need_disable": false,
+            "value": 1,
+            "value_type": 2
+          },
+          "type": "NodeLockHp"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "33": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 56000430422,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 33,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            18,
+            "enter",
+            "enter_id"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "35": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "degrade": false,
+            "dispel_buff_sub_tag_list": [],
+            "dispel_buff_tag_list": [],
+            "dispel_debuff_num": 1,
+            "dispel_id_list": [
+              56000430422
+            ],
+            "dispel_tag_list": [],
+            "dispel_type": 0,
+            "effect_index": 35,
+            "match_caster_id": false,
+            "need_disable": false
+          },
+          "type": "NodeDispelBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            18,
+            "exit",
+            "exit_id"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "36": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 36,
+            "is_active": true,
+            "match_id": "tree_",
+            "material_params": {
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "effect_speed": 1,
+              "is_fade_in": true,
+              "mtl_type": "soundeater_permanent",
+              "need_dynamic_priority": false,
+              "need_keep": true,
+              "need_revert": true,
+              "offset_y": 0,
+              "priority": 1,
+              "revert_speed": 1,
+              "slot_type": 0,
+              "steal_type": 1,
+              "target_slot": [],
+              "traits_direction": [
+                0,
+                0,
+                0
+              ],
+              "traits_pos": [
+                0,
+                0,
+                0
+              ],
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "reset": true
+          },
+          "type": "NodeMaterial"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "38": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 38,
+            "mount_uid": "popo",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "43": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 43
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            55,
+            46,
+            72
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "46": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 56000430423,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 46,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            47,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "47": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 47
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "54": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "max_hp",
+            "effect_index": 54,
+            "percent": 50
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            56,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "55": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "max_field_type_1",
+            "effect_index": 55,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "value": [
+            54,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "56": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 56
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "72": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 72
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            81
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "73": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 73,
+            "invincible_state": 0,
+            "invincible_tag": "",
+            "need_disable": false,
+            "reset": true
+          },
+          "type": "NodeSwitchInvincible"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "74": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "cure_add_rate": 100,
+            "effect_index": 74,
+            "need_disable": false
+          },
+          "type": "NodeHeal"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "heal_value": [
+            82,
+            "utility",
+            "data"
+          ],
+          "target_uid": [
+            77,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "75": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 75,
+            "mount_uid": "xuanyun",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "76": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "disability_type": 3,
+            "duration": 0,
+            "effect_index": 76,
+            "enabled": false,
+            "forbidden_reason": "",
+            "forbidden_reset": false,
+            "need_disable": true,
+            "reason": "1",
+            "reset": true,
+            "tag": 0
+          },
+          "type": "NodeSetupDisability"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "77": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 77
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "78": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 78,
+            "loop_max_times": 99,
+            "loop_time": 0.5,
+            "reset_last_effect": true,
+            "start_trigger": true
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            74
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "79": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 15,
+            "effect_index": 79
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            75,
+            76,
+            101,
+            73
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "80": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 80,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "socket_top",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "xuanyun",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0.5,
+                0
+              ],
+              "res_path": "effect/monster/aplysia/aplysia_player.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                3,
+                3,
+                3
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": true,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "81": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 3,
+            "effect_index": 81,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [
+              {
+                "checker_sid": 91197892495220740,
+                "params": {
+                  "attribute_l": "hp",
+                  "attribute_r": "max_hp",
+                  "dynamic_event": [],
+                  "effect_index": 83,
+                  "event_names": [
+                    "on_attr_changed::hp",
+                    "on_attr_changed::max_hp"
+                  ],
+                  "only_overflow": false,
+                  "op": 0,
+                  "role": 0,
+                  "value": 99
+                },
+                "type": "attr_percent_comp_checker"
+              }
+            ],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 91197892495220740,
+                "params": {
+                  "attribute_l": "hp",
+                  "attribute_r": "max_hp",
+                  "dynamic_event": [],
+                  "effect_index": 86,
+                  "event_names": [
+                    "on_attr_changed::hp",
+                    "on_attr_changed::max_hp"
+                  ],
+                  "only_overflow": false,
+                  "op": 1,
+                  "role": 0,
+                  "value": 2
+                },
+                "type": "attr_percent_comp_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            98,
+            80,
+            85,
+            84,
+            79,
+            78
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "82": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "max_hp",
+            "effect_index": 82,
+            "percent": 3
+          },
+          "type": "NodeGetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "84": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "disability_type": 3,
+            "duration": 0,
+            "effect_index": 84,
+            "enabled": true,
+            "forbidden_reason": "",
+            "forbidden_reset": false,
+            "need_disable": false,
+            "reason": "1",
+            "reset": true,
+            "tag": 0
+          },
+          "type": "NodeSetupDisability"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "85": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 85,
+            "invincible_state": 2,
+            "invincible_tag": "",
+            "need_disable": false,
+            "reset": true
+          },
+          "type": "NodeSwitchInvincible"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "90": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 90
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "93": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 56000430433,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 93,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            90,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "98": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 98,
+            "event": "stop",
+            "need_disable": false
+          },
+          "type": "NodeAIEvent"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "101": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.5,
+            "effect_index": 101
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            93
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_5600043042_1",
+      "preload_res_list": [
+        "effect/monster/soundeater/rust_airpocket.pse",
+        "effect/monster/aplysia/aplysia_player.pse"
+      ],
+      "source_info": [
+        "buff",
+        5600043042,
+        1
+      ],
+      "tid": 10002
+    }
+  ]
+}

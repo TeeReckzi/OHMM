@@ -1,0 +1,1238 @@
+{
+  "_meta": {
+    "sourceFile": "03903_853e7fb2.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03903_853e7fb2.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:49.766Z",
+    "recordCount": 16,
+    "sourceHash": "87f1b983246c335fd3e3659acfecb82ce1cdcbbed50c394e7291fffc1179d20a",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_anchor_worldstone01",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "102",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "WORLD_STONE",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrGameplayWorldStone": {
+          "cls_type": "RuntimeAttrGameplayWorldStone",
+          "init_state": "001",
+          "reward_no": "",
+          "submit_item_no_list": [],
+          "unlock_state_infos": [
+            {
+              "state_name": "001",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "002",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01_to_02.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_02.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "003",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_02_to_03.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_03.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020024,
+            810020059,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "001",
+          "enable_exec_state": true,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "001",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": false,
+              "tag": "001",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "002",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "003",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            "001",
+            "002",
+            "003"
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            1.4429,
+            0.2734,
+            3.8418,
+            0,
+            -0.249,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "worldstone01",
+          "node_uuid": "6931262803ca0a42dc190eb5",
+          "world_trans": [
+            4836.9673,
+            141.7558,
+            -6377.4199,
+            0,
+            2.1071,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": false,
+          "enable_vertical_occluder": false,
+          "init_model_path": "environment/dynamic_objects/world_stone/world_stone_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                20,
+                4,
+                20
+              ],
+              "shape": "box",
+              "tag": "001",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            },
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                4,
+                5
+              ],
+              "shape": "box",
+              "tag": "002",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "first_meet_world_stone",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "001",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "002",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_acoustic_bake_0",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -111.384,
+            19.4346,
+            85.8326,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_0",
+          "node_uuid": "6931261803ca0a42dc190d4c",
+          "world_trans": [
+            4873.3545,
+            146.8493,
+            -6194.4341,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                42.1119,
+                20.1438,
+                46.8578
+              ],
+              "shape": "box",
+              "tag": "sutherland_chemical_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_acoustic_bake_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -21.1111,
+            26.9634,
+            39.8718,
+            0,
+            0.9025,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_1",
+          "node_uuid": "6931261803ca0a42dc190d36",
+          "world_trans": [
+            4963.627,
+            154.3781,
+            -6240.395,
+            0,
+            0.9025,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                39.5368,
+                35.3772,
+                69.7496
+              ],
+              "shape": "box",
+              "tag": "sutherland_chemical_1",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_acoustic_bake_2",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -152.922,
+            18.3729,
+            13.3737,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_2",
+          "node_uuid": "6931261803ca0a42dc190d2b",
+          "world_trans": [
+            4831.8164,
+            145.7876,
+            -6266.8931,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                38.2071,
+                24.6463,
+                82.0069
+              ],
+              "shape": "box",
+              "tag": "sutherland_chemical_2",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_acoustic_bake_3",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -14.9872,
+            22.7806,
+            -3.1674,
+            0,
+            1.1071,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_3",
+          "node_uuid": "6931261803ca0a42dc190d2f",
+          "world_trans": [
+            4969.751,
+            150.1953,
+            -6283.4341,
+            0,
+            1.1071,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                24.3574,
+                25.6317,
+                26.5769
+              ],
+              "shape": "box",
+              "tag": "sutherland_chemical_3",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_acoustic_bake_4",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -112.1204,
+            15.5824,
+            -17.6523,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_4",
+          "node_uuid": "6931261803ca0a42dc190d2d",
+          "world_trans": [
+            4872.6177,
+            142.9971,
+            -6297.9189,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                23.7071,
+                15.1963,
+                27.0355
+              ],
+              "shape": "box",
+              "tag": "sutherland_chemical_4",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_warehouse",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            86.3188,
+            -6.2851,
+            -1.3296,
+            0,
+            0,
+            0,
+            9.2924,
+            3.0929,
+            10.8388
+          ],
+          "name": "warehouse",
+          "node_uuid": "6931261803ca0a42dc190d45",
+          "world_trans": [
+            5026.1162,
+            142.452,
+            -6258.2622,
+            0,
+            0,
+            0,
+            9.2924,
+            3.0929,
+            10.8388
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_node",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -6.743,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -60.1865,
+            3.484,
+            -134.9023,
+            0,
+            1.5856,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node",
+          "node_uuid": "6931261803ca0a42dc190d1b",
+          "world_trans": [
+            4972.124,
+            148.6284,
+            -6223.9092,
+            0,
+            1.5856,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_node1",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -3.8032,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -75.4023,
+            -0.9768,
+            -81.1523,
+            0,
+            1.5376,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node1",
+          "node_uuid": "6931261803ca0a42dc190d21",
+          "world_trans": [
+            4956.9082,
+            144.1675,
+            -6170.1592,
+            0,
+            1.5376,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_node114",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -3.7873,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -54.1948,
+            1.8201,
+            -192.729,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node114",
+          "node_uuid": "6931261803ca0a42dc190d43",
+          "world_trans": [
+            4978.1157,
+            146.9644,
+            -6281.7358,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_node115",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -0.7432,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -54.3169,
+            4.3521,
+            -201.7329,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node115",
+          "node_uuid": "6931261803ca0a42dc190d4b",
+          "world_trans": [
+            4977.9937,
+            149.4964,
+            -6290.7397,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_node121",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -3.6612,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -149.4678,
+            2.0942,
+            -89.1348,
+            0,
+            1.57,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node121",
+          "node_uuid": "6931261803ca0a42dc190d1d",
+          "world_trans": [
+            4882.8428,
+            147.2386,
+            -6178.1416,
+            0,
+            1.57,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_node2",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            -0.001,
+            -8.265,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -194.9004,
+            5.3539,
+            -159.4351,
+            0,
+            0.1863,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node2",
+          "node_uuid": "6931261803ca0a42dc190d1f",
+          "world_trans": [
+            4837.4102,
+            150.4982,
+            -6248.4419,
+            0,
+            0.1863,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_node31",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0308,
+            -3.6963,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            1.6187,
+            -1.1552,
+            -1.0874,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node31",
+          "node_uuid": "6931261803ca0a42dc190d23",
+          "world_trans": [
+            5033.9292,
+            143.9892,
+            -6090.0942,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_node32",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0005,
+            -2.7745,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -1.6196,
+            3.6219,
+            0.6963,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node32",
+          "node_uuid": "6931261803ca0a42dc190d2a",
+          "world_trans": [
+            5030.6909,
+            148.7663,
+            -6088.3105,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E7070E-10140001-285A1A03-6C076543_default_node34",
+          "parent_global_name": "",
+          "prefab_instance_id": "sutherland_chemical_0",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0005,
+            -5.1402,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            37.9688,
+            2.1834,
+            -39.0562,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node34",
+          "node_uuid": "6931261803ca0a42dc190d4f",
+          "world_trans": [
+            5070.2793,
+            147.3277,
+            -6128.063,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

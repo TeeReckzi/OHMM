@@ -1,0 +1,217 @@
+{
+  "_meta": {
+    "sourceFile": "06136_d26f2aaf.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06136_d26f2aaf.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:55.145Z",
+    "recordCount": 2,
+    "sourceHash": "f8eb42ebf7d304ec7a934a0f23c6a79eafeb79f4cacdf9d0bd70ab0894d4f011",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "damage_data": {
+              "attack_level": 1,
+              "be_hit_type": 0,
+              "box_damage_rate": 0.1,
+              "damage_feature_type": 0,
+              "death_cause": 0,
+              "direct_damage_ignore_field": true,
+              "element_type": 0,
+              "extra_toughness_dam_rate": 1,
+              "force_jump_word": false,
+              "formula_attack_type": 0,
+              "ignore_field": false,
+              "ignore_structure_field": false,
+              "invincible_tag": [],
+              "knock_back_dis": 0,
+              "need_knock_back": false,
+              "recycle_weapon": false,
+              "rm_sync_point_name": "",
+              "sub_melee_attack_type": 0
+            },
+            "damage_select_arg": {
+              "hard_hit_type": 0,
+              "hard_hit_units": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "ignore_hard_hit_cd": false,
+              "is_select_entity": false
+            },
+            "effect_index": 0,
+            "need_disable": false,
+            "source_behavior": ""
+          },
+          "type": "NodeDamage"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "hit_info": [
+            1,
+            "effect_trigger",
+            "hit_info"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "1": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "box_data": {
+              "atk_lose_color_tags": [],
+              "attack_box_hit_dir_type": 0,
+              "attack_box_type": 0,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_enemy_only_editor0": true,
+                  "label_enemy_only_editor1": false,
+                  "label_friend": false,
+                  "label_friend_only_editor0": true,
+                  "label_friend_only_editor1": false,
+                  "label_neutral": false,
+                  "label_neutral_only_editor0": true,
+                  "label_neutral_only_editor1": false,
+                  "label_self": false
+                }
+              },
+              "attack_repeat_num": 1,
+              "attenuation_factor": 0,
+              "be_hit_sfx_no": "",
+              "block_filter": false,
+              "block_filter_size": 0.5,
+              "can_destroy_tree": false,
+              "can_swing_tree": false,
+              "config_be_hit_dir": [
+                0,
+                0,
+                0
+              ],
+              "config_hit_sfx_dir": false,
+              "disregard_block_normal": false,
+              "disregard_building": false,
+              "disregard_collection": false,
+              "disregard_environment": false,
+              "disregard_shield": false,
+              "disregard_terrain": false,
+              "enable_cost_durability": true,
+              "env_col_box_size": [
+                1,
+                1,
+                1
+              ],
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "env_collision_shape": 2,
+              "env_collision_type": 1,
+              "filter_num": 0,
+              "filter_rule": 0,
+              "follow_socket": false,
+              "group_id": 1,
+              "group_id_behavior_range": false,
+              "group_id_with_opera": false,
+              "hit_sfx_dir": [
+                0,
+                0,
+                0
+              ],
+              "hit_sound_event": "",
+              "mute_entity_hit_sound": false,
+              "mute_env_hit_sound": false,
+              "mute_hit_sound": false,
+              "need_group": false,
+              "preferentially_select_destroy_part": false,
+              "select_hit_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "select_owned_summon": true,
+              "strike_death": false,
+              "swing_size": [
+                1,
+                1,
+                1
+              ],
+              "target_socket_name": "",
+              "use_specify_attacker_camp": true,
+              "with_building_attack": false
+            },
+            "effect_index": 1,
+            "locus_trap_args": {
+              "add_point": true,
+              "attack_range": 20,
+              "effect_duration": 8,
+              "effect_interval": 1,
+              "effect_type": 1,
+              "finish_sfx_duration": 1,
+              "first_effect_time": 0,
+              "normal_finish_sfx": "",
+              "point_min_distance": 1.5,
+              "summon_use_skill_config": false,
+              "trap_scale": [
+                1,
+                1,
+                1
+              ],
+              "trap_type": 0,
+              "trigger_sfx": "effect/boss/dogdark/black_lazer_2.pse",
+              "trigger_sfx_is_loop": true,
+              "trigger_type": 1
+            }
+          },
+          "type": "NodeInitLocusTrap"
+        },
+        "event_action": {
+          "effect_trigger": [
+            0
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "effect_trigger": [
+            "hit_info"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 1,
+      "name": "behavior_ancientones_plane_turn85_s4_trap",
+      "preload_res_list": [
+        "effect/boss/dogdark/black_lazer_2.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "ancientones_plane",
+        "turn85_s4",
+        ""
+      ],
+      "tid": 15942
+    }
+  ]
+}

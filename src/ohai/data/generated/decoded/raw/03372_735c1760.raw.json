@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "sourceFile": "03372_735c1760.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03372_735c1760.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:47.792Z",
+    "recordCount": 2,
+    "sourceHash": "2f4c41846890345235c923759d0bb67093883e72f3d36c6c6b6a3953775a8ef8",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 1,
+            "need_disable": false,
+            "vehicle_change_gravity_args": {
+              "101": {
+                "gravity_value": -7.5,
+                "jump_rate": 2
+              },
+              "102": {
+                "gravity_value": -7.5,
+                "jump_rate": 2
+              },
+              "104": {
+                "gravity_value": -7.5,
+                "jump_rate": 2
+              },
+              "105": {
+                "gravity_value": -7.5,
+                "jump_rate": 2
+              },
+              "106": {
+                "gravity_value": -7.5,
+                "jump_rate": 2
+              },
+              "110": {
+                "gravity_value": -7.5,
+                "jump_rate": 2
+              },
+              "111": {
+                "gravity_value": -7.5,
+                "jump_rate": 2
+              }
+            },
+            "vehicle_key_type": 0
+          },
+          "type": "NodeVehicleChangeGravity"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 2
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 2,
+      "name": "buff_91000002_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        91000002,
+        1
+      ],
+      "tid": 9888
+    }
+  ]
+}

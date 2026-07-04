@@ -1,0 +1,375 @@
+{
+  "_meta": {
+    "sourceFile": "03600_7b8f5d8c.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03600_7b8f5d8c.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:48.942Z",
+    "recordCount": 2,
+    "sourceHash": "e561b7052512677e4a1396027a38c5283b70c4eb13561f0ca7e45f1bb1433aa9",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "73": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 205112100,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 73,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": false,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_uid": [
+            75,
+            "utility",
+            "attacker_uid"
+          ],
+          "target_uid": [
+            75,
+            "utility",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "74": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 74,
+            "trap_args": {
+              "can_be_hit": false,
+              "effect_duration": 3,
+              "effect_interval": 0.5,
+              "effect_side_type": 0,
+              "effect_type": 1,
+              "event_trigger_sfx": "",
+              "first_effect_time": 0,
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "hit_destroy_sfx": "",
+              "is_trap_follow": false,
+              "is_trigger_sfx_move": false,
+              "last_trigger_time": 99,
+              "max_effect_time": 99,
+              "normal_finish_sfx": "",
+              "not_trigger_finish_sfx": "",
+              "period_effect_limited": false,
+              "pre_trigger_gim": "",
+              "pre_trigger_sfx": "",
+              "sfx_pos_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_vertical": false,
+              "shortest_trigger_time": 0,
+              "summon_use_skill_config": false,
+              "trap_scale": [
+                1,
+                1,
+                1
+              ],
+              "trap_type": 0,
+              "trigger_event": "",
+              "trigger_gim": "",
+              "trigger_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_enemy": true,
+                  "label_friend": true,
+                  "label_neutral": true,
+                  "label_self": true
+                }
+              },
+              "trigger_range": 1,
+              "trigger_sfx": "",
+              "trigger_sfx_is_loop": false,
+              "trigger_type": 1
+            }
+          },
+          "type": "NodeInitTrap"
+        },
+        "event_action": {
+          "destroy": [],
+          "effect_trigger": [
+            76
+          ],
+          "event_effect_trigger": [],
+          "hit_destroy": [],
+          "start_effect": []
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "destroy": [
+            "destroy_pos",
+            "destroy_dir"
+          ],
+          "effect_trigger": [
+            "effect_trigger_pos",
+            "effect_trigger_dir"
+          ],
+          "event_effect_trigger": [
+            "event_effect_trigger_pos",
+            "event_effect_trigger_dir"
+          ],
+          "hit_destroy": [
+            "hit_destroy_pos",
+            "hit_destroy_dir"
+          ],
+          "start_effect": [
+            "start_effect_pos",
+            "start_effect_dir"
+          ]
+        }
+      },
+      "75": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 75
+          },
+          "type": "NodeBreakHitInfo"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "hit_info": [
+            76,
+            "process",
+            "hit_info"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "attacker_uid",
+            "target_uid",
+            "target_pos",
+            "target_dir",
+            "delay_time",
+            "bone_name"
+          ]
+        }
+      },
+      "76": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "attack_building_set": false,
+            "bind_target": false,
+            "box_data": {
+              "angle": 60,
+              "atk_lose_color_tags": [],
+              "attack_box_hit_dir_type": 0,
+              "attack_box_type": 0,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_friend": false,
+                  "label_neutral": false,
+                  "label_self": false
+                }
+              },
+              "attack_repeat_num": 1,
+              "attenuation_factor": 0,
+              "be_hit_sfx_no": "",
+              "block_filter": false,
+              "block_filter_size": 0.5,
+              "can_destroy_tree": false,
+              "can_swing_tree": false,
+              "config_be_hit_dir": [
+                0,
+                0,
+                0
+              ],
+              "config_hit_sfx_dir": false,
+              "disregard_block_normal": false,
+              "disregard_building": false,
+              "disregard_collection": false,
+              "disregard_environment": true,
+              "disregard_shield": false,
+              "disregard_terrain": false,
+              "enable_cost_durability": true,
+              "env_col_box_size": [
+                1,
+                1,
+                1
+              ],
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "env_collision_shape": 2,
+              "env_collision_type": 1,
+              "filter_num": 0,
+              "filter_rule": 0,
+              "follow_socket": false,
+              "group_id": 1,
+              "group_id_behavior_range": false,
+              "group_id_with_opera": false,
+              "height": 0.5,
+              "hit_sfx_dir": [
+                0,
+                0,
+                0
+              ],
+              "hit_sound_event": "",
+              "inner_radius": 0.5,
+              "mute_entity_hit_sound": false,
+              "mute_env_hit_sound": false,
+              "mute_hit_sound": true,
+              "need_group": false,
+              "pos_off": [
+                0,
+                0.5,
+                0
+              ],
+              "preferentially_select_destroy_part": false,
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                5,
+                5
+              ],
+              "select_hit_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "select_owned_summon": true,
+              "shape": 0,
+              "simple_check": {
+                "angle_data": {
+                  "local_angle": 0,
+                  "offset_angle": 3.1416
+                },
+                "distance_data": {
+                  "max_distance": 5.5,
+                  "min_distance": -4.5
+                }
+              },
+              "strike_death": false,
+              "swing_size": [
+                1,
+                1,
+                1
+              ],
+              "target_socket_name": "",
+              "thickness": 0.5,
+              "use_specify_attacker_camp": true,
+              "with_building_attack": false
+            },
+            "building_aoi_radius": 10,
+            "check_hold_no": false,
+            "custom_aoi_radius": 10,
+            "custom_aoi_set": false,
+            "dir_type": 1,
+            "effect_index": 76,
+            "frame_lock_time": 0,
+            "large_range_flag": false,
+            "only_new_hit_result": false,
+            "only_use_server_atk_box": false,
+            "pause_by_tick_flag": true,
+            "ray_sfx_match_id": "",
+            "record_bone_name": false,
+            "target_name": "",
+            "target_type": 2
+          },
+          "type": "NodeAttackBox"
+        },
+        "event_action": {
+          "hit": [],
+          "miss": [],
+          "process": [
+            73
+          ],
+          "process_building": []
+        },
+        "in_data_pin": {
+          "center_pos": [
+            74,
+            "effect_trigger",
+            "effect_trigger_pos"
+          ],
+          "damage_pos": [
+            74,
+            "effect_trigger",
+            "effect_trigger_pos"
+          ]
+        },
+        "out_data_pin": {
+          "hit": [
+            "len_hit_list",
+            "hit_list"
+          ],
+          "miss": [],
+          "process": [
+            "hit_info"
+          ],
+          "process_building": [
+            "hit_building_info_lst"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 74,
+      "name": "behavior_player_throw_pvp_bomb1_tree_trap_2",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "throw_pvp_bomb1",
+        ""
+      ],
+      "tid": 9454
+    }
+  ]
+}

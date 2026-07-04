@@ -1,0 +1,91 @@
+{
+  "_meta": {
+    "sourceFile": "04076_8a647672.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04076_8a647672.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.109Z",
+    "recordCount": 2,
+    "sourceHash": "262dd6e7eab91c3506f4cf3212b8d543e4528c8d520d783376e1ca169007020f",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            53
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "53": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "bag_max_personal_heavy",
+            "effect_index": 53,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": 30
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "54": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 54,
+            "value": 30
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {
+        "54": [
+          [
+            [
+              "effect_params",
+              "params",
+              "value"
+            ],
+            0
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_499002500_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        499002500,
+        1
+      ],
+      "tid": 5209
+    }
+  ]
+}

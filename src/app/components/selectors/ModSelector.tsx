@@ -7,6 +7,7 @@ import { CYAN, VIOLET } from "../../types";
 import { modRegistry } from "../../../ohai/src/ui/registries/modRegistry";
 import { verifiedSuffixPoolsByModId } from "../../../ohai/src/ui/registries/verifiedModFamilies";
 import { buildCdnUrl } from "../../../ohai/src/ui/data/supabaseImageResolver";
+import { formatEffectForDisplay } from "../../../lib/ohmm/effectDisplayFormatter";
 
 const MOD_CATS = ["All", "Burn", "Power Surge", "Frost", "Bullseye", "Fortress Warfare", "Unstable Bomber", "Fast Gunner", "Bounce", "Shrapnel", "General"] as const;
 
@@ -49,14 +50,35 @@ export function gearSlotLabel(modSlot: string | undefined): string {
 // to a keyword heuristic mapped onto the same 9 real categories, with
 // "General" as a catch-all for gear mods that don't have an elemental theme
 // in-game (the real Mods menu doesn't sub-categorize gear mods at all).
-export function categorizeMod(m: { name?: string; effectSummary?: string; tags?: string[]; id?: string; slug?: string }): string {
-  const verifiedTag = (m.tags || []).find((t) => VERIFIED_WEAPON_MOD_CATEGORIES.includes(t));
-  if (verifiedTag) return verifiedTag;
+export function categorizeMod(m: { name?: string; effectSummary?: string; tags?: string[]; id?: string; slug?: string; weaponCategory?: string; modSlot?: string }): string {
+  // 1. Check direct weaponCategory field (set on VerifiedModSpec entries)
+  if (m.weaponCategory && VERIFIED_WEAPON_MOD_CATEGORIES.includes(m.weaponCategory)) {
+    return m.weaponCategory;
+  }
+
+  // 2. Check tags for a verified category match (case-insensitive to handle
+  //    lowercased tags produced by toCanonicalMod in verifiedModFamilies.ts)
+  const verifiedTag = (m.tags || []).find((t) =>
+    VERIFIED_WEAPON_MOD_CATEGORIES.some(cat => cat.toLowerCase() === t.toLowerCase())
+  );
+  if (verifiedTag) {
+    // Return the properly-cased category name
+    return VERIFIED_WEAPON_MOD_CATEGORIES.find(cat => cat.toLowerCase() === verifiedTag.toLowerCase()) || verifiedTag;
+  }
+
+  // 3. For gear mods (non-weapon slots), NEVER run keyword heuristic — they
+  //    aren't sub-categorized by mechanic in-game.
+  const slot = m.modSlot || '';
+  if (slot && slot !== 'weapon') {
+    return 'General';
+  }
+
+  // 4. Fall back to regex heuristics only for weapon mods without verified data
   const text = [m.name, m.effectSummary, ...(m.tags || []), m.id, m.slug].filter(Boolean).join(' ').toLowerCase();
   if (/\bburn\b|blaze|scorch|\bfire\b/.test(text)) return 'Burn';
   if (/frost|\bice\b|cryo|chill|freeze/.test(text)) return 'Frost';
   if (/power[\s-]?surge|\bshock\b|electric|surge|thunder/.test(text)) return 'Power Surge';
-  if (/unstable|\bbomb|explosi|\bblast\b|blitz/.test(text)) return 'Unstable Bomber';
+  if (/unstable|\bbomb|explosi|\bblast\b/.test(text)) return 'Unstable Bomber';
   if (/territory|\bshield\b|\bguard\b|defensive|defense|fortress/.test(text)) return 'Fortress Warfare';
   if (/precision|accuracy|weakspot|\bcrit\b|\bmark\b|deadshot/.test(text)) return 'Bullseye';
   if (/quick|rapid|reload|cowboy|gunner/.test(text)) return 'Fast Gunner';
@@ -74,6 +96,16 @@ export function ModModal({ isWeaponMod, onClose, onSelect, items, targetSlot }: 
   const [cat, setCat] = useState<string>("All");
   const [selected, setSelected] = useState<EquippedItem | null>(null);
   const [selectedSuffix, setSelectedSuffix] = useState<string | null>(null);
+
+  // Clear selection when category filter changes if selected item doesn't match new filter
+  React.useEffect(() => {
+    if (selected && cat !== "All") {
+      if (selected.category !== cat) {
+        setSelected(null);
+        setSelectedSuffix(null);
+      }
+    }
+  }, [cat]);
   const mods: EquippedItem[] = items && items.length ? items : (modRegistry || [])
     .filter((m: any) => !m.tags?.includes('test-fixture'))
     .map((m: any) => {
@@ -82,7 +114,7 @@ export function ModModal({ isWeaponMod, onClose, onSelect, items, targetSlot }: 
         id: m.id,
         name: m.name,
         category: isWeaponMod
-          ? categorizeMod({ name: m.name, effectSummary: m.effectSummary, tags: m.tags, id: m.id, slug: iconSlug })
+          ? categorizeMod({ name: m.name, effectSummary: m.effectSummary, tags: m.tags, id: m.id, slug: iconSlug, modSlot: m.modSlot })
           : gearSlotLabel(m.modSlot),
         rarity: 'Rare' as Rarity,
         tier: 0,
@@ -173,7 +205,7 @@ export function ModModal({ isWeaponMod, onClose, onSelect, items, targetSlot }: 
                     <span className="text-[9px]" style={{ color: "#7ab8cc" }}>{m.category} {m.modType ? `· ${m.modType}` : ''}</span>
                     {m.effectSummary && (
                       <div className="text-[9px] mt-0.5 truncate" style={{ color: '#6aa8c0' }}>
-                        {m.effectSummary}
+                        {formatEffectForDisplay(m.effectSummary, m.confidence)}
                       </div>
                     )}
                   </div>

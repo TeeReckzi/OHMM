@@ -1,0 +1,513 @@
+{
+  "_meta": {
+    "sourceFile": "01345_2ea00a4a.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01345_2ea00a4a.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:42.517Z",
+    "recordCount": 34,
+    "sourceHash": "5a9640878eb159c6995670a372c83b21d7f52494b6ed279cd6a9bf725dff7964",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "color_tag": "red",
+      "detail_description": "每击杀一名敌方玩家增加的分数",
+      "icon_path": "icon_stronghold_hud_kill.png",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        300
+      ],
+      "score_description": "击杀敌方玩家",
+      "team_conflict_value": [
+        0
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "每对敌方玩家造成一点伤害增加的分数",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        0.4
+      ],
+      "score_description": "对玩家造成伤害",
+      "team_conflict_value": [
+        0.1
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "助攻增加的分数X,助攻有效的判定时间Y，单位：秒",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        50,
+        8
+      ],
+      "score_description": "助攻",
+      "team_conflict_value": [
+        25,
+        8
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "每对敌方玩家造成一点伤害增加的分数",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        0.5
+      ],
+      "score_description": "对蜂巢信标造成伤害",
+      "team_conflict_value": [
+        0.1
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "标记每位敌方玩家每秒增加的分数",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        2
+      ],
+      "score_description": "标记",
+      "team_conflict_value": [
+        1
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "每给一名敌方玩家上一种负面状态的得分",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        20
+      ],
+      "score_description": "负面状态",
+      "team_conflict_value": [
+        10
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "每给一名友方玩家上一种增益状态的得分",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        20
+      ],
+      "score_description": "正面状态",
+      "team_conflict_value": [
+        10
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "每治疗友方一点血量的得分",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        0.1
+      ],
+      "score_description": "治疗",
+      "team_conflict_value": [
+        0.05
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "救起一名倒地同阵营玩家的得分",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        240
+      ],
+      "score_description": "救助同阵营玩家",
+      "team_conflict_value": [
+        120
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "占点过程(我方分数持续增加才算)中每秒得分",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        100
+      ],
+      "score_description": "持续占点",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "yellow",
+      "detail_description": "成功占领据点时，争夺区域半径Y内的玩家增加的分数X;Y单位米，X是分数",
+      "icon_path": "icon_stronghold_hud_occupied.png",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        500,
+        50
+      ],
+      "score_description": "占领据点",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "玩家在己方占领的据点周围Y米内，每击杀一名敌人额外增加的分数X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        80,
+        25
+      ],
+      "score_description": "防守据点",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "玩家击杀敌方占领的据点Y米内的敌人额外增加的分数X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        80,
+        25
+      ],
+      "score_description": "进攻据点",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "清除敌方占点进度的过程中每秒得分X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        50
+      ],
+      "score_description": "清除敌方进度",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "进攻方玩家获取信标得分X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        50
+      ],
+      "score_description": "获取信标",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "green",
+      "detail_description": "进攻方玩家成功在信标区放置信标的得分X",
+      "icon_path": "icon_stronghold_hud_beacon.png",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        100
+      ],
+      "score_description": "放置信标",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "进攻方玩家在信标周围每击杀一名敌人额外增加的分数X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        50
+      ],
+      "score_description": "守护信标",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "防守方玩家击杀信标周围的进攻方玩家额外增加的分数X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        50
+      ],
+      "score_description": "争夺信标",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "防守方玩家拆除、摧毁信标增加的分数X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        250
+      ],
+      "score_description": "摧毁信标",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "信标生效时，信标周围Y米内的进攻方增加的分数X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        250,
+        20
+      ],
+      "score_description": "信标生效",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "每位玩家第一次得分行为的额外的分X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        50
+      ],
+      "score_description": "整装待发",
+      "team_conflict_value": [
+        50
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "全场第一次击杀行为的额外得分X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        150
+      ],
+      "score_description": "第一滴血",
+      "team_conflict_value": [
+        150
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "在一定时间内连续击杀敌方玩家，从第二为玩家开始，每击杀一位玩家额外获得的分数X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        50
+      ],
+      "score_description": "连续击杀",
+      "team_conflict_value": [
+        50
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "击杀敌方单位时，小队队友有助攻行为，击杀者将额外获得分数X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        25
+      ],
+      "score_description": "小队击杀",
+      "team_conflict_value": [
+        25
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "小队队友有击杀行为时，参与助攻将有额外得分X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        15
+      ],
+      "score_description": "小队助攻",
+      "team_conflict_value": [
+        15
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "救起的玩家为小队队友时的额外得分X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        30
+      ],
+      "score_description": "小队救援",
+      "team_conflict_value": [
+        30
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "治疗小队队友时，每点血量额外获得的分数X",
+      "icon_path": "",
+      "icon_vx_max_time": 1.5,
+      "icon_vx_min_time": 0.7,
+      "med_stronghold_value": [
+        0.02
+      ],
+      "score_description": "小队治疗",
+      "team_conflict_value": [
+        0.02
+      ],
+      "txt_vx_max_time": 2.5,
+      "txt_vx_min_time": 0.2
+    },
+    {
+      "color_tag": "",
+      "detail_description": "Salog使用",
+      "icon_path": "",
+      "icon_vx_max_time": 0,
+      "icon_vx_min_time": 0,
+      "med_stronghold_value": [],
+      "score_description": "被杀死玩家",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 0,
+      "txt_vx_min_time": 0
+    },
+    {
+      "color_tag": "",
+      "detail_description": "Salog使用",
+      "icon_path": "",
+      "icon_vx_max_time": 0,
+      "icon_vx_min_time": 0,
+      "med_stronghold_value": [],
+      "score_description": "技能治疗",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 0,
+      "txt_vx_min_time": 0
+    },
+    {
+      "color_tag": "",
+      "detail_description": "Salog使用",
+      "icon_path": "",
+      "icon_vx_max_time": 0,
+      "icon_vx_min_time": 0,
+      "med_stronghold_value": [],
+      "score_description": "玩家自己承受的伤害",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 0,
+      "txt_vx_min_time": 0
+    },
+    {
+      "color_tag": "",
+      "detail_description": "Salog使用",
+      "icon_path": "",
+      "icon_vx_max_time": 0,
+      "icon_vx_min_time": 0,
+      "med_stronghold_value": [],
+      "score_description": "各种死亡",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 0,
+      "txt_vx_min_time": 0
+    },
+    {
+      "color_tag": "",
+      "detail_description": "Salog使用",
+      "icon_path": "",
+      "icon_vx_max_time": 0,
+      "icon_vx_min_time": 0,
+      "med_stronghold_value": [],
+      "score_description": "对怪物造成伤害",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 0,
+      "txt_vx_min_time": 0
+    },
+    {
+      "color_tag": "",
+      "detail_description": "Salog使用",
+      "icon_path": "",
+      "icon_vx_max_time": 0,
+      "icon_vx_min_time": 0,
+      "med_stronghold_value": [],
+      "score_description": "复活次数",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 0,
+      "txt_vx_min_time": 0
+    },
+    {
+      "color_tag": "",
+      "detail_description": "Salog使用",
+      "icon_path": "",
+      "icon_vx_max_time": 0,
+      "icon_vx_min_time": 0,
+      "med_stronghold_value": [],
+      "score_description": "倒地次数",
+      "team_conflict_value": [],
+      "txt_vx_max_time": 0,
+      "txt_vx_min_time": 0
+    }
+  ]
+}

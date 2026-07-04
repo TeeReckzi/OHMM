@@ -70,6 +70,21 @@ export const statKeySchema = z.enum([
   "weaponVulnerability",
   "statusVulnerability",
 
+  // ── Keyword group bonuses (condition-encoded) ──
+  "dotEffectDMGBonus",
+  "instantEffectDMGBonus",
+
+  // ── Marked target conditionals (Bullseye/Hunter's Mark) ──
+  "markedTargetDMGBonus",
+  "markedTargetCritDMGBonus",
+  "markedTargetWeakspotDMGBonus",
+
+  // ── Target-keyword conditionals ──
+  "damageVsPowerSurgeTargetBonus",
+
+  // ── Zone-gated bonuses ──
+  "fortressWarfareZoneDMGBonus",
+
   // ── DoT mechanics ──
   "burnCurrentStacks",
   "burnTickFrequencyBonus",

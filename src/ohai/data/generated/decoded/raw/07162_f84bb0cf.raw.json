@@ -1,0 +1,515 @@
+{
+  "_meta": {
+    "sourceFile": "07162_f84bb0cf.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07162_f84bb0cf.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.525Z",
+    "recordCount": 2,
+    "sourceHash": "54ffa1e3e8dc2fcd21acd712f9a45876ca6cbd25f6839c629d2c88d6f0856ebd",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "99": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 99,
+            "info": {
+              "aim_dis_max": 20,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_enemy_only_editor0": true,
+                  "label_enemy_only_editor1": false,
+                  "label_friend": false,
+                  "label_friend_only_editor0": true,
+                  "label_friend_only_editor1": false,
+                  "label_neutral": false,
+                  "label_neutral_only_editor0": true,
+                  "label_neutral_only_editor1": false,
+                  "label_self": false
+                }
+              },
+              "auto_relative_vehicle": false,
+              "bb_key": "",
+              "bb_scope": 0,
+              "block_filter": false,
+              "block_filter_size": 0.5,
+              "bullet_speed": 0.01,
+              "collision_be_hit": {
+                "collision_box_size_be_hit_check": [
+                  1,
+                  1,
+                  1
+                ],
+                "collision_shape_be_hit_check": -1
+              },
+              "collision_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "collision_check_box": {
+                "angle": 90,
+                "height": 3,
+                "inner_radius": 0,
+                "offset": [
+                  0,
+                  0.5,
+                  0
+                ],
+                "rot": [
+                  0,
+                  0,
+                  0
+                ],
+                "size": [
+                  1,
+                  1,
+                  1
+                ],
+                "thickness": 25
+              },
+              "collision_check_interval": 2,
+              "collision_check_on_init": true,
+              "collision_check_shape": 4,
+              "collision_param": {
+                "is_block_destroy": false,
+                "max_apply_count": 0
+              },
+              "collision_scene": {
+                "collision_box_size": [
+                  1,
+                  1,
+                  1
+                ],
+                "collision_shape": 1
+              },
+              "collision_type": 3,
+              "delay_ignore_collision_args": {
+                "delay_dis": 0,
+                "delay_ignore_collision": 0,
+                "delay_time": 0
+              },
+              "des_pos_type": 0,
+              "destroy_without_follow_target": false,
+              "dir_param": {
+                "dir_type": 6,
+                "ignore_pitch": true,
+                "rot_offset": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "disregard_environment": true,
+              "enable_follow_logic_pos": true,
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "follow_target_bone_surface": true,
+              "height_param": {
+                "attach_ground_offset": 0.2,
+                "attach_ground_speed": 0
+              },
+              "ignore_collision": true,
+              "init_transform": {
+                "fire_socket_name": "",
+                "is_pos_follow_rot": true,
+                "offset": [
+                  1.2,
+                  0,
+                  1.6
+                ],
+                "socket_name": "root"
+              },
+              "is_trajectory": false,
+              "max_count_once_check": 5,
+              "max_fly_time": 1.5,
+              "multi_hit_target": true,
+              "need_ignore_friend": false,
+              "only_sight_block": false,
+              "perceive_animation_hit_interval": 0,
+              "perceive_animation_interval": 0,
+              "perceive_animation_path": "",
+              "perceive_by_dir": false,
+              "perceive_check_box": {
+                "angle": 60,
+                "height": 0.5,
+                "inner_radius": 0,
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "rot": [
+                  0,
+                  0,
+                  0
+                ],
+                "size": [
+                  1,
+                  1,
+                  1
+                ],
+                "thickness": 0.5
+              },
+              "perceive_check_model": {
+                "anim_graph_path": "",
+                "animation_interval": false,
+                "animation_loop": false,
+                "animation_path": "",
+                "block_change": false,
+                "block_change_anim_args": {
+                  "animation_loop": false,
+                  "animation_path": ""
+                },
+                "hide_state_list": [],
+                "model_path": "",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "rot": [
+                  0,
+                  0,
+                  0
+                ],
+                "size": [
+                  1,
+                  1,
+                  1
+                ],
+                "update_pos": true,
+                "update_rotation": false,
+                "use_hold_model": false,
+                "use_model_col_data": false,
+                "visual_selection": -1
+              },
+              "perceive_check_shape": 1,
+              "perceive_dir_angle": 0,
+              "perceive_dir_speed": 0,
+              "perf_param_list": [
+                {
+                  "spell_fly_perf_type": 1,
+                  "spell_model_args": {
+                    "anim_graph_path": "character/player/backpack_sco/sco_me40/anim_graph/sco_me40.animgraph",
+                    "animation_interval": false,
+                    "animation_loop": false,
+                    "animation_path": "character/player/backpack_sco/sco_me40/animation/sco_me40_born02.animation",
+                    "block_change": false,
+                    "block_change_anim_args": {
+                      "animation_loop": false,
+                      "animation_path": ""
+                    },
+                    "hide_state_list": [],
+                    "model_path": "character/player/backpack_sco/sco_me40/sco_me40.gim",
+                    "offset": [
+                      0,
+                      -0.3,
+                      0
+                    ],
+                    "rot": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "size": [
+                      1,
+                      1,
+                      1
+                    ],
+                    "update_pos": true,
+                    "update_rotation": true,
+                    "use_hold_model": false,
+                    "use_model_col_data": false,
+                    "visual_selection": -1
+                  },
+                  "spell_sfx_args": {
+                    "collision_sfx_param": {
+                      "offset": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "rot": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sfx_path": "",
+                      "size": [
+                        1,
+                        1,
+                        1
+                      ]
+                    },
+                    "fly_sfx_param": {
+                      "hide_state_list": [],
+                      "offset": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "rot": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sfx_path": "",
+                      "size": [
+                        1,
+                        1,
+                        1
+                      ],
+                      "update_pos": true,
+                      "update_rotation": false
+                    },
+                    "visual_selection": -1
+                  }
+                },
+                {
+                  "spell_fly_perf_type": 0,
+                  "spell_model_args": {
+                    "anim_graph_path": "",
+                    "animation_interval": false,
+                    "animation_loop": false,
+                    "animation_path": "",
+                    "block_change": false,
+                    "block_change_anim_args": {
+                      "animation_loop": false,
+                      "animation_path": ""
+                    },
+                    "hide_state_list": [],
+                    "model_path": "",
+                    "offset": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "rot": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "size": [
+                      1,
+                      1,
+                      1
+                    ],
+                    "update_pos": true,
+                    "update_rotation": false,
+                    "use_hold_model": false,
+                    "use_model_col_data": false,
+                    "visual_selection": -1
+                  },
+                  "spell_sfx_args": {
+                    "collision_sfx_param": {
+                      "offset": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "rot": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sfx_path": "",
+                      "size": [
+                        1,
+                        1,
+                        1
+                      ]
+                    },
+                    "fly_sfx_param": {
+                      "hide_state_list": [],
+                      "offset": [
+                        0,
+                        -0.3,
+                        0
+                      ],
+                      "rot": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sfx_path": "effect/yaolan/container_02/sco_me40/sco_me40_skill01.pse",
+                      "size": [
+                        1,
+                        1,
+                        1
+                      ],
+                      "update_pos": true,
+                      "update_rotation": true
+                    },
+                    "visual_selection": -1
+                  }
+                }
+              ],
+              "sfx_budget_rule_id": 400,
+              "sfx_param": {
+                "collision_sfx_param": {
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sfx_path": "",
+                  "size": [
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                "fly_sfx_param": {
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sfx_path": "",
+                  "size": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "update_pos": true,
+                  "update_rotation": false
+                },
+                "visual_selection": -1
+              },
+              "spell_field_can_destroy_args": {
+                "be_hit_hp_base": "hp",
+                "be_hit_hp_type": 1,
+                "be_hit_value": 1,
+                "can_be_hit": false,
+                "hit_box_label_camp": {
+                  "label_camp_rule": 4,
+                  "label_enemy": true,
+                  "label_friend": false,
+                  "label_neutral": true,
+                  "label_self": false
+                },
+                "hit_box_pos_off": [
+                  0,
+                  0,
+                  0
+                ],
+                "hit_box_rot_off": [
+                  0,
+                  0,
+                  0
+                ],
+                "hit_box_shape": 2,
+                "hit_box_size": [
+                  1,
+                  1,
+                  1
+                ],
+                "use_model_col_data": false
+              },
+              "spell_field_gravity": 0,
+              "spell_fly_type": 5,
+              "trajectory_interval": 999,
+              "trajectory_max_time": 1,
+              "use_perceive_check": false
+            },
+            "reset": false
+          },
+          "type": "NodeSpellFieldMissile"
+        },
+        "event_action": {
+          "OnMissileBlock": [],
+          "OnMissileFinish": [],
+          "OnMissileHit": [],
+          "OnMissileHitBuilding": [],
+          "OnMissileInit": [],
+          "OnMissileInterval": [],
+          "destroy": []
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "OnMissileBlock": [
+            "block_pos"
+          ],
+          "OnMissileFinish": [
+            "finish_pid",
+            "finish_pos",
+            "finish_dir",
+            "finish_type"
+          ],
+          "OnMissileHit": [
+            "missile_hit_info",
+            "spell_field_pos"
+          ],
+          "OnMissileHitBuilding": [
+            "missile_hit_building_info"
+          ],
+          "OnMissileInit": [
+            "fly_pid",
+            "missile_init_pos"
+          ],
+          "OnMissileInterval": [],
+          "destroy": []
+        }
+      },
+      "100": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 100
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            99
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 100,
+      "name": "behavior_player_me40_skill01_pve_show",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "me40_skill01_pve",
+        ""
+      ],
+      "tid": 15286
+    }
+  ]
+}

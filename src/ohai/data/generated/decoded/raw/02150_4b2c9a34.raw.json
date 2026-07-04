@@ -1,0 +1,256 @@
+{
+  "_meta": {
+    "sourceFile": "02150_4b2c9a34.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02150_4b2c9a34.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:44.532Z",
+    "recordCount": 2,
+    "sourceHash": "2f156659ab003f82b2b63eb08958c7a29709112cac813ab6cc803c905aab6b43",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            3
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 1,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "fx_lightning_glow",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": false,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "blood",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/lighthouse_tentacle_endure_skill.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 2,
+            "mount_uid": "blood",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "3": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 3,
+            "loop_max_times": 0,
+            "loop_time": 5,
+            "reset_last_effect": true,
+            "start_trigger": false
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            1,
+            4,
+            6
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "4": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 3,
+            "effect_index": 4
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "5": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "cure_add_rate": 100,
+            "effect_index": 5,
+            "need_disable": false
+          },
+          "type": "NodeHeal"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "heal_value": [
+            7,
+            "utility",
+            "data"
+          ],
+          "target_uid": [
+            8,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "6": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 1,
+            "effect_index": 6
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            5
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "7": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "max_hp",
+            "effect_index": 7,
+            "percent": 5
+          },
+          "type": "NodeGetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "8": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 8
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_60143060_1",
+      "preload_res_list": [
+        "effect/boss/lighthouse/lighthouse_tentacle_endure_skill.pse"
+      ],
+      "source_info": [
+        "buff",
+        60143060,
+        1
+      ],
+      "tid": 16220
+    }
+  ]
+}

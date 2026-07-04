@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "sourceFile": "07171_f8a35b82.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07171_f8a35b82.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.553Z",
+    "recordCount": 2,
+    "sourceHash": "8192262dc6bc50d13bc3af41629a8fcb5fa2e281586bd515dda3de991efd08d0",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "value": 10,
+                "attribute": "aiming_speed_add_rate",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value_type": 1
+              },
+              {
+                "value": -0.8,
+                "attribute": "weapon_bow_charge_duration_add_rate",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value_type": 1
+              },
+              {
+                "value": 3,
+                "attribute": "weapon_rpm_add_rate",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 2,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_363004001_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        363004001,
+        1
+      ],
+      "tid": 14726
+    }
+  ]
+}

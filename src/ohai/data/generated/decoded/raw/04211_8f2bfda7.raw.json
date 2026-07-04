@@ -1,0 +1,214 @@
+{
+  "_meta": {
+    "sourceFile": "04211_8f2bfda7.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04211_8f2bfda7.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.364Z",
+    "recordCount": 2,
+    "sourceHash": "e3038cddc240df3174a0c2a94975753ec13fa1ca457937ecb6ec1a5d661a8c8f",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            6
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "4": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 500000438,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 4,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            11,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "6": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 6,
+            "max_effect_count": 20,
+            "max_effect_times": 20,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 6755399507505153,
+                "params": {
+                  "check_args": {
+                    "attack_negate": false,
+                    "attack_type": [],
+                    "bullet_hit_source": false,
+                    "check_all_bullet": false,
+                    "check_all_hit": false,
+                    "check_all_hit_same_one": true,
+                    "check_detect_mark": false,
+                    "check_hit_source": true,
+                    "check_node": false,
+                    "check_weapon_no": false,
+                    "crit_attack": false,
+                    "damage_feature_negate": false,
+                    "damage_feature_type": [],
+                    "element_negate": false,
+                    "element_type": [],
+                    "formula_attack_type": [],
+                    "formula_negate": false,
+                    "hit_part": [],
+                    "hit_part_negate": false,
+                    "in_weapon_range": false,
+                    "keyword": [],
+                    "keyword_negate": false,
+                    "keyword_tag": [],
+                    "keyword_tag_negate": false,
+                    "multi_bullet_one_attack": false,
+                    "node_index": -1,
+                    "sub_melee_attack_negate": false,
+                    "sub_melee_attack_type": [],
+                    "target_negate": false,
+                    "target_type": [],
+                    "unit_species": [],
+                    "unit_species_negate": false,
+                    "weak_attack": false,
+                    "weapon_no": []
+                  },
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_killed"
+                  ],
+                  "role": 0
+                },
+                "type": "killed_checker"
+              },
+              {
+                "checker_sid": 6755400581246977,
+                "params": {
+                  "dynamic_event": [],
+                  "enter_state": true,
+                  "event_names": [
+                    "on_state_change::5"
+                  ],
+                  "role": 0,
+                  "state": 5
+                },
+                "type": "enter_state_checker"
+              },
+              {
+                "checker_sid": 6755401654988801,
+                "params": {
+                  "attribute_l": "hp",
+                  "attribute_r": "max_hp",
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_attr_changed::hp",
+                    "on_attr_changed::max_hp"
+                  ],
+                  "only_overflow": false,
+                  "op": 1,
+                  "role": 0,
+                  "value": 5
+                },
+                "type": "attr_percent_comp_checker"
+              },
+              {
+                "checker_sid": 6755402728730625,
+                "params": {
+                  "buff_id": 100000005,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "attacker_buff_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 0
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            4
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "11": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 11
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_500000437_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        500000437,
+        1
+      ],
+      "tid": 16223
+    }
+  ]
+}

@@ -1,0 +1,732 @@
+{
+  "_meta": {
+    "sourceFile": "03826_82d01a83.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03826_82d01a83.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:49.584Z",
+    "recordCount": 2,
+    "sourceHash": "6184ed6542c1520ae89e2539ce7edcd6f5410995588321fe0c14462034047c13",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            1,
+            20,
+            21,
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 1,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "fx_bow",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "bow_spray",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/monster/ghostship_s/motorboat_s_bow_spray.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 2,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "fx_stern",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "stern_spray",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/monster/ghostship_s/ghostship_s_stern_spray.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "6": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 6,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [
+              {
+                "checker_sid": 6755399507791874,
+                "params": {
+                  "dynamic_event": [],
+                  "effect_index": 9,
+                  "event_names": [
+                    "on_state_change::13"
+                  ],
+                  "in_state": false,
+                  "role": 0,
+                  "state": 13
+                },
+                "type": "state_checker"
+              }
+            ],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 6755399507791873,
+                "params": {
+                  "dynamic_event": [],
+                  "effect_index": 8,
+                  "event_names": [
+                    "on_state_change::13"
+                  ],
+                  "in_state": true,
+                  "role": 0,
+                  "state": 13
+                },
+                "type": "state_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            13
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "7": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 7
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            6,
+            22
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "10": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 10
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            11,
+            18,
+            19,
+            12
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "11": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 11,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "fx_bow",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "bow_spray_fast",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/monster/ghostship_s/motorboat_s_bow_spray_fast.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "12": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 12,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "fx_stern",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "stern_spray_fast",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/monster/ghostship_s/motorboat_s_stern_spray_fast.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "13": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 13
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [
+            0
+          ],
+          "True": [
+            10
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            16,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "14": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "swimspeed",
+            "effect_index": 14,
+            "percent": 100
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            15,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "15": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 15
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "16": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 16,
+            "operation": 0
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 8
+        },
+        "in_data_pin": {
+          "data1": [
+            14,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "17": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 17,
+            "value": 8
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "18": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 18,
+            "mount_uid": "bow_spray",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "19": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 19,
+            "mount_uid": "stern_spray",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "20": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 20,
+            "mount_uid": "bow_spray_fast",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "21": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 21,
+            "mount_uid": "stern_spray_fast",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "22": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 22,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 24769798017273856,
+                "params": {
+                  "dynamic_event": [],
+                  "effect_index": 23,
+                  "event_names": [
+                    "on_state_change::13"
+                  ],
+                  "in_state": false,
+                  "role": 0,
+                  "state": 13
+                },
+                "type": "state_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            26,
+            24,
+            25,
+            27
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "24": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 24,
+            "mount_uid": "bow_spray",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "25": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 25,
+            "mount_uid": "stern_spray_fast",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "26": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 26,
+            "mount_uid": "bow_spray_fast",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "27": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 27,
+            "mount_uid": "stern_spray",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 7,
+      "name": "buff_5300320216_1",
+      "preload_res_list": [
+        "effect/monster/ghostship_s/motorboat_s_bow_spray_fast.pse",
+        "effect/monster/ghostship_s/motorboat_s_stern_spray_fast.pse",
+        "effect/monster/ghostship_s/motorboat_s_bow_spray.pse",
+        "effect/monster/ghostship_s/ghostship_s_stern_spray.pse"
+      ],
+      "source_info": [
+        "buff",
+        5300320216,
+        1
+      ],
+      "tid": 16293
+    }
+  ]
+}

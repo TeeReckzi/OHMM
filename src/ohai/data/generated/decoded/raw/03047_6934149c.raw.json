@@ -1,0 +1,2577 @@
+{
+  "_meta": {
+    "sourceFile": "03047_6934149c.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03047_6934149c.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:47.032Z",
+    "recordCount": 132,
+    "sourceHash": "3fd8d368994cd44499379ef823ffc2da35b4460679ee508d48cf7661939549a3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attr_id": [
+        "D01"
+      ],
+      "config": "attack",
+      "config_name": {
+        "lan_translate": [
+          "攻击力_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 0,
+      "val_hide": 0,
+      "val_type": 0,
+      "value": 0
+    },
+    {
+      "attr_id": [
+        "D41"
+      ],
+      "config": "skill_power",
+      "config_name": {
+        "lan_translate": [
+          "超感强度_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 0,
+      "val_hide": 0,
+      "val_type": 0,
+      "value": 0
+    },
+    {
+      "attr_id": [
+        "A07",
+        "A08"
+      ],
+      "config": "field",
+      "config_name": {
+        "lan_translate": [
+          "力场值_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "lib_no": 99,
+      "sub_value": 0,
+      "val_hide": 0,
+      "val_type": 0,
+      "value": 0
+    },
+    {
+      "attr_id": [
+        "A00",
+        "A02"
+      ],
+      "config": "hp",
+      "config_name": {
+        "lan_translate": [
+          "生命值_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 0,
+      "val_hide": 0,
+      "val_type": 0,
+      "value": 0
+    },
+    {
+      "attr_id": [
+        "R36"
+      ],
+      "config": "contamination_resistance",
+      "config_name": {
+        "lan_translate": [
+          "污染抗性_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 0,
+      "val_hide": 0,
+      "val_type": 0,
+      "value": 0
+    },
+    {
+      "attr_id": [
+        "B153"
+      ],
+      "config": "cold_resist",
+      "config_name": {
+        "lan_translate": [
+          "寒冷抗性_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "hover_tips": {
+        "lan_translate": [
+          "寒冷抗性提高@cold_resist@1@cold_resist@点。角色每拥有一点寒冷抗性，寒冷区间上限降低1℃_$S@TIDS$_da|0"
+        ]
+      },
+      "sub_value": 0,
+      "val_hide": 1,
+      "val_type": 0,
+      "value": 0
+    },
+    {
+      "attr_id": [
+        "B155"
+      ],
+      "config": "freezing_resist",
+      "config_name": {
+        "lan_translate": [
+          "霜冻抗性_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "hover_tips": {
+        "lan_translate": [
+          "霜冻抗性提高@freezing_resist@1@freezing_resist@点。角色每拥有一点霜冻抗性，霜冻区间上限降低1℃_$S@TIDS$_da|0"
+        ]
+      },
+      "sub_value": 0,
+      "val_hide": 1,
+      "val_type": 0,
+      "value": 0
+    },
+    {
+      "attr_id": [
+        "B154"
+      ],
+      "config": "hot_resist",
+      "config_name": {
+        "lan_translate": [
+          "炎热抗性_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "hover_tips": {
+        "lan_translate": [
+          "炎热抗性提高@hot_resist@1@hot_resist@点。角色每拥有一点炎热抗性，炎热区间下限上升1℃_$S@TIDS$_da|0"
+        ]
+      },
+      "sub_value": 0,
+      "val_hide": 1,
+      "val_type": 0,
+      "value": 0
+    },
+    {
+      "attr_id": [
+        "B156"
+      ],
+      "config": "burn_resist",
+      "config_name": {
+        "lan_translate": [
+          "燃烧抗性_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "hover_tips": {
+        "lan_translate": [
+          "燃烧抗性提高@burn_resist@1@burn_resist@点。角色每拥有一点燃烧抗性，燃烧区间下限上升1℃_$S@TIDS$_da|0"
+        ]
+      },
+      "sub_value": 0,
+      "val_hide": 1,
+      "val_type": 0,
+      "value": 0
+    },
+    {
+      "attr_id": [
+        "E01"
+      ],
+      "config": "crit_rate",
+      "config_name": {
+        "lan_translate": [
+          "暴击率_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E02"
+      ],
+      "config": "crit_dam_rate",
+      "config_name": {
+        "lan_translate": [
+          "暴击伤害_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E03"
+      ],
+      "config": "weak_dam_rate",
+      "config_name": {
+        "lan_translate": [
+          "弱点伤害_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L111"
+      ],
+      "config": "keyword_proc_crit_rate_add_rate_scorch",
+      "config_name": {
+        "lan_translate": [
+          "灼烧伤害暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L112"
+      ],
+      "config": "keyword_proc_crit_rate_add_rate_surge",
+      "config_name": {
+        "lan_translate": [
+          "电涌伤害暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L113"
+      ],
+      "config": "keyword_proc_crit_rate_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "冰霜漩涡伤害暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L114"
+      ],
+      "config": "keyword_proc_crit_rate_add_rate_blast",
+      "config_name": {
+        "lan_translate": [
+          "不稳定爆弹伤害暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "J51"
+      ],
+      "config": "keyword_proc_crit_rate_add_rate_shrap",
+      "config_name": {
+        "lan_translate": [
+          "碎弹暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "J52"
+      ],
+      "config": "keyword_proc_crit_rate_add_rate_proj",
+      "config_name": {
+        "lan_translate": [
+          "弹射暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L222"
+      ],
+      "config": "tag_melee_crit_rate_add_rate_blunt",
+      "config_name": {
+        "lan_translate": [
+          "钝挫伤暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L121"
+      ],
+      "config": "keyword_proc_crit_dam_add_rate_scorch",
+      "config_name": {
+        "lan_translate": [
+          "灼烧伤害暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L122"
+      ],
+      "config": "keyword_proc_crit_dam_add_rate_surge",
+      "config_name": {
+        "lan_translate": [
+          "电涌伤害暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L123"
+      ],
+      "config": "keyword_proc_crit_dam_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "冰霜漩涡伤害暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L124"
+      ],
+      "config": "keyword_proc_crit_dam_add_rate_blast",
+      "config_name": {
+        "lan_translate": [
+          "不稳定爆弹伤害暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "J61"
+      ],
+      "config": "keyword_proc_crit_dam_add_rate_shrap",
+      "config_name": {
+        "lan_translate": [
+          "碎弹暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "J62"
+      ],
+      "config": "keyword_proc_crit_dam_add_rate_proj",
+      "config_name": {
+        "lan_translate": [
+          "弹射暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L232"
+      ],
+      "config": "tag_melee_crit_dam_add_rate_blunt",
+      "config_name": {
+        "lan_translate": [
+          "钝挫伤暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F81"
+      ],
+      "config": "debuff_type_crit_rate_add_rate_scorch",
+      "config_name": {
+        "lan_translate": [
+          "对受灼烧效果目标暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F82"
+      ],
+      "config": "debuff_type_crit_rate_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "对受冰霜漩涡效果目标暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F83"
+      ],
+      "config": "debuff_type_crit_rate_add_rate_mark",
+      "config_name": {
+        "lan_translate": [
+          "对受猎人标记效果目标暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F84"
+      ],
+      "config": "debuff_type_crit_rate_add_rate_frozen",
+      "config_name": {
+        "lan_translate": [
+          "对受冻结效果目标暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F86"
+      ],
+      "config": "debuff_type_crit_rate_add_rate_surge",
+      "config_name": {
+        "lan_translate": [
+          "对受电涌效果目标暴击率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F91"
+      ],
+      "config": "debuff_type_crit_dam_add_rate_scorch",
+      "config_name": {
+        "lan_translate": [
+          "对受灼烧效果目标暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F92"
+      ],
+      "config": "debuff_type_crit_dam_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "对受冰霜漩涡效果目标暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F93"
+      ],
+      "config": "debuff_type_crit_dam_add_rate_mark",
+      "config_name": {
+        "lan_translate": [
+          "对受猎人标记效果目标暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F94"
+      ],
+      "config": "debuff_type_crit_dam_add_rate_frozen",
+      "config_name": {
+        "lan_translate": [
+          "对受冻结效果目标暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F96"
+      ],
+      "config": "debuff_type_crit_dam_add_rate_surge",
+      "config_name": {
+        "lan_translate": [
+          "对受电涌效果目标暴击伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F101"
+      ],
+      "config": "debuff_type_weak_dam_add_rate_scorch",
+      "config_name": {
+        "lan_translate": [
+          "对受灼烧效果目标弱点伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F102"
+      ],
+      "config": "debuff_type_weak_dam_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "对受冰霜漩涡效果目标弱点伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F103"
+      ],
+      "config": "debuff_type_weak_dam_add_rate_mark",
+      "config_name": {
+        "lan_translate": [
+          "对受猎人标记效果目标弱点伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F104"
+      ],
+      "config": "debuff_type_weak_dam_add_rate_frozen",
+      "config_name": {
+        "lan_translate": [
+          "对受冻结效果目标弱点伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F106"
+      ],
+      "config": "debuff_type_weak_dam_add_rate_surge",
+      "config_name": {
+        "lan_translate": [
+          "对受电涌效果目标弱点伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 1,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E42"
+      ],
+      "config": "attack_type_dam_add_rate_remote",
+      "config_name": {
+        "lan_translate": [
+          "枪械伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 2,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E41"
+      ],
+      "config": "attack_type_dam_add_rate_melee",
+      "config_name": {
+        "lan_translate": [
+          "近战伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 2,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E43"
+      ],
+      "config": "attack_type_dam_add_rate_dot",
+      "config_name": {
+        "lan_translate": [
+          "异常伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 2,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E31"
+      ],
+      "config": "element_type_dam_add_rate_physics",
+      "config_name": {
+        "lan_translate": [
+          "无属性伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 3,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E32"
+      ],
+      "config": "element_type_dam_add_rate_fire",
+      "config_name": {
+        "lan_translate": [
+          "炽能元素伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 3,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E33"
+      ],
+      "config": "element_type_dam_add_rate_ice",
+      "config_name": {
+        "lan_translate": [
+          "霜寒元素伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 3,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E34"
+      ],
+      "config": "element_type_dam_add_rate_lightning",
+      "config_name": {
+        "lan_translate": [
+          "电离元素伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 3,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E38"
+      ],
+      "config": "element_type_dam_add_rate_explode",
+      "config_name": {
+        "lan_translate": [
+          "爆炸元素伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 3,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E111"
+      ],
+      "config": "keyword_proc_dam_add_rate_scorch",
+      "config_name": {
+        "lan_translate": [
+          "灼烧伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 4,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E121"
+      ],
+      "config": "keyword_proc_dam_add_rate_surge",
+      "config_name": {
+        "lan_translate": [
+          "电涌伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 4,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E122"
+      ],
+      "config": "keyword_proc_dam_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "冰霜漩涡伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 4,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E123"
+      ],
+      "config": "keyword_proc_dam_add_rate_blast",
+      "config_name": {
+        "lan_translate": [
+          "不稳定爆弹伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 4,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "J12"
+      ],
+      "config": "keyword_proc_dam_add_rate_shrap",
+      "config_name": {
+        "lan_translate": [
+          "碎弹伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 4,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "J13"
+      ],
+      "config": "keyword_proc_dam_add_rate_proj",
+      "config_name": {
+        "lan_translate": [
+          "弹射伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 4,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L202"
+      ],
+      "config": "tag_melee_dam_add_rate_blunt",
+      "config_name": {
+        "lan_translate": [
+          "顿挫伤伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 4,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E99"
+      ],
+      "config": "unit_prototype_dam_add_rate_elite",
+      "config_name": {
+        "lan_translate": [
+          "对精英伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E100"
+      ],
+      "config": "unit_prototype_dam_add_rate_boss",
+      "config_name": {
+        "lan_translate": [
+          "对boss伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E101"
+      ],
+      "config": "unit_prototype_dam_add_rate_creeps",
+      "config_name": {
+        "lan_translate": [
+          "对小怪伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E102"
+      ],
+      "config": "unit_prototype_dam_add_rate_leader",
+      "config_name": {
+        "lan_translate": [
+          "对首领伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F71"
+      ],
+      "config": "debuff_type_dam_add_rate_scorch",
+      "config_name": {
+        "lan_translate": [
+          "对受灼烧效果目标伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F72"
+      ],
+      "config": "debuff_type_dam_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "对受冰霜漩涡效果目标伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F73"
+      ],
+      "config": "debuff_type_dam_add_rate_mark",
+      "config_name": {
+        "lan_translate": [
+          "对受猎人标记效果目标伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F74"
+      ],
+      "config": "debuff_type_dam_add_rate_frozen",
+      "config_name": {
+        "lan_translate": [
+          "对受冻结效果目标伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "F76"
+      ],
+      "config": "debuff_type_dam_add_rate_surge",
+      "config_name": {
+        "lan_translate": [
+          "对受电涌效果目标伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E54"
+      ],
+      "config": "species_dam_add_rate_ascender",
+      "config_name": {
+        "lan_translate": [
+          "对超越者伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E55"
+      ],
+      "config": "species_dam_add_rate_alters",
+      "config_name": {
+        "lan_translate": [
+          "对畸变怪物伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E56"
+      ],
+      "config": "species_dam_add_rate_rosetta",
+      "config_name": {
+        "lan_translate": [
+          "对罗塞塔伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E57"
+      ],
+      "config": "species_dam_add_rate_vulcher",
+      "config_name": {
+        "lan_translate": [
+          "对秃鹫伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E58"
+      ],
+      "config": "species_dam_add_rate_creatures",
+      "config_name": {
+        "lan_translate": [
+          "对动物伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E59"
+      ],
+      "config": "species_dam_add_rate_machina",
+      "config_name": {
+        "lan_translate": [
+          "对机械伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E60"
+      ],
+      "config": "species_dam_add_rate_master",
+      "config_name": {
+        "lan_translate": [
+          "对上位者伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E61"
+      ],
+      "config": "species_dam_add_rate_deviation",
+      "config_name": {
+        "lan_translate": [
+          "对异常物伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 5,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E46"
+      ],
+      "config": "species_field_dam_add_rate_ascender",
+      "config_name": {
+        "lan_translate": [
+          "对超越者护盾伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 6,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E47"
+      ],
+      "config": "species_field_dam_add_rate_alters",
+      "config_name": {
+        "lan_translate": [
+          "对畸变怪护盾伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 6,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E48"
+      ],
+      "config": "species_field_dam_add_rate_rosetta",
+      "config_name": {
+        "lan_translate": [
+          "对罗塞塔护盾伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 6,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E49"
+      ],
+      "config": "species_field_dam_add_rate_vulcher",
+      "config_name": {
+        "lan_translate": [
+          "对秃鹫护盾伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 6,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E50"
+      ],
+      "config": "species_field_dam_add_rate_creatures",
+      "config_name": {
+        "lan_translate": [
+          "对动物护盾伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 6,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E51"
+      ],
+      "config": "species_field_dam_add_rate_machina",
+      "config_name": {
+        "lan_translate": [
+          "对机械护盾伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 6,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E52"
+      ],
+      "config": "species_field_dam_add_rate_master",
+      "config_name": {
+        "lan_translate": [
+          "对上位者护盾伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 6,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "E53"
+      ],
+      "config": "species_field_dam_add_rate_deviation",
+      "config_name": {
+        "lan_translate": [
+          "对异常物护盾伤害加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 6,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L01"
+      ],
+      "config": "tag_debuff_time_extend_add_rate_scorch",
+      "config_name": {
+        "lan_translate": [
+          "灼烧触发时间加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L02"
+      ],
+      "config": "tag_debuff_time_extend_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "冰霜漩涡触发时间加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L03"
+      ],
+      "config": "tag_debuff_time_extend_add_rate_mark",
+      "config_name": {
+        "lan_translate": [
+          "猎人标记触发时间加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L21"
+      ],
+      "config": "tag_buff_time_extend_add_rate_armed",
+      "config_name": {
+        "lan_translate": [
+          "重装阵地触发时间加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L22"
+      ],
+      "config": "tag_buff_time_extend_add_rate_quick_draw",
+      "config_name": {
+        "lan_translate": [
+          "快枪手触发时间加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L31"
+      ],
+      "config": "tag_aoe_range_extend_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "冰霜漩涡触发范围加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L32"
+      ],
+      "config": "tag_aoe_range_extend_add_rate_blast",
+      "config_name": {
+        "lan_translate": [
+          "不稳定爆弹触发范围加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L33"
+      ],
+      "config": "tag_aoe_range_extend_add_rate_armed",
+      "config_name": {
+        "lan_translate": [
+          "重装阵地触发范围加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L41"
+      ],
+      "config": "keyword_proc_chance_add_rate_shrap",
+      "config_name": {
+        "lan_translate": [
+          "碎弹触发概率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L42"
+      ],
+      "config": "keyword_proc_chance_add_rate_proj",
+      "config_name": {
+        "lan_translate": [
+          "弹射触发概率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L43"
+      ],
+      "config": "keyword_proc_chance_add_rate_scorch",
+      "config_name": {
+        "lan_translate": [
+          "灼烧触发概率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L44"
+      ],
+      "config": "keyword_proc_chance_add_rate_surge",
+      "config_name": {
+        "lan_translate": [
+          "电涌触发概率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L45"
+      ],
+      "config": "keyword_proc_chance_add_rate_vortex",
+      "config_name": {
+        "lan_translate": [
+          "冰霜漩涡触发概率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L46"
+      ],
+      "config": "keyword_proc_chance_add_rate_mark",
+      "config_name": {
+        "lan_translate": [
+          "猎人标记触发概率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L47"
+      ],
+      "config": "keyword_proc_chance_add_rate_armed",
+      "config_name": {
+        "lan_translate": [
+          "重装阵地触发概率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L48"
+      ],
+      "config": "keyword_proc_chance_add_rate_blast",
+      "config_name": {
+        "lan_translate": [
+          "不稳定爆弹触发概率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "L49"
+      ],
+      "config": "keyword_proc_chance_add_rate_quick_draw",
+      "config_name": {
+        "lan_translate": [
+          "快枪手触发概率加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 7,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "S01"
+      ],
+      "config": "move_speed_add_rate",
+      "config_name": {
+        "lan_translate": [
+          "移动速度加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 8,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "S43"
+      ],
+      "config": "sprint_speed_add_rate",
+      "config_name": {
+        "lan_translate": [
+          "冲刺速度加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 8,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "S40"
+      ],
+      "config": "roll_init_speed_add_rate",
+      "config_name": {
+        "lan_translate": [
+          "翻滚速度加成_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 8,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "Q08"
+      ],
+      "config": "weapon_rpm",
+      "config_name": {
+        "lan_translate": [
+          "射速_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "Q08*(1+Q09)",
+      "sub_value": 9,
+      "val_hide": 1,
+      "val_type": 0,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "Q11"
+      ],
+      "config": "weapon_magazine_size",
+      "config_name": {
+        "lan_translate": [
+          "弹匣容量_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 9,
+      "val_hide": 1,
+      "val_type": 0,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "Q24"
+      ],
+      "config": "weapon_reload_time_reduce",
+      "config_name": {
+        "lan_translate": [
+          "换弹效率_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 9,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 1
+    },
+    {
+      "attr_id": [
+        "G11"
+      ],
+      "config": "ignore_dam_rate",
+      "config_name": {
+        "lan_translate": [
+          "免伤_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 10,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G13"
+      ],
+      "config": "ignore_dam_rate",
+      "config_name": {
+        "lan_translate": [
+          "易伤_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 10,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "E04"
+      ],
+      "config": "ignore_crit_rate",
+      "config_name": {
+        "lan_translate": [
+          "免暴率_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 11,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "E05"
+      ],
+      "config": "ignore_crit_dam_rate",
+      "config_name": {
+        "lan_translate": [
+          "暴击伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 11,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "E06"
+      ],
+      "config": "ignore_weak_dam_rate",
+      "config_name": {
+        "lan_translate": [
+          "弱点伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 11,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G14"
+      ],
+      "config": "non_weak_ignore_dam_rate",
+      "config_name": {
+        "lan_translate": [
+          "非弱点部位免伤_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 11,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G51"
+      ],
+      "config": "attack_type_ignore_dam_rate_melee",
+      "config_name": {
+        "lan_translate": [
+          "近战伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 12,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G52"
+      ],
+      "config": "attack_type_ignore_dam_rate_remote",
+      "config_name": {
+        "lan_translate": [
+          "枪械伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 12,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G53"
+      ],
+      "config": "attack_type_ignore_dam_rate_dot",
+      "config_name": {
+        "lan_translate": [
+          "异常伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 12,
+      "val_hide": 0,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G41"
+      ],
+      "config": "element_type_ignore_dam_rate_physics",
+      "config_name": {
+        "lan_translate": [
+          "无元素伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 13,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G42"
+      ],
+      "config": "element_type_ignore_dam_rate_fire",
+      "config_name": {
+        "lan_translate": [
+          "炽能元素伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 13,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G43"
+      ],
+      "config": "element_type_ignore_dam_rate_ice",
+      "config_name": {
+        "lan_translate": [
+          "霜寒元素伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 13,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G44"
+      ],
+      "config": "element_type_ignore_dam_rate_lightning",
+      "config_name": {
+        "lan_translate": [
+          "电离元素伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 13,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G45"
+      ],
+      "config": "element_type_ignore_dam_rate_explode",
+      "config_name": {
+        "lan_translate": [
+          "爆炸元素伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 13,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G81"
+      ],
+      "config": "part_dam_ignore_rate_head",
+      "config_name": {
+        "lan_translate": [
+          "头部受伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 14,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G82"
+      ],
+      "config": "part_dam_ignore_rate_body",
+      "config_name": {
+        "lan_translate": [
+          "躯干受伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 14,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G83"
+      ],
+      "config": "part_dam_ignore_rate_limbs",
+      "config_name": {
+        "lan_translate": [
+          "四肢受伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 14,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G61"
+      ],
+      "config": "species_dam_ignore_rate_ascender",
+      "config_name": {
+        "lan_translate": [
+          "受超越者伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 15,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G62"
+      ],
+      "config": "species_dam_ignore_rate_alters",
+      "config_name": {
+        "lan_translate": [
+          "受畸变怪物伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 15,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G63"
+      ],
+      "config": "species_dam_ignore_rate_rosetta",
+      "config_name": {
+        "lan_translate": [
+          "受罗塞塔伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 15,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G64"
+      ],
+      "config": "species_dam_ignore_rate_vulcher",
+      "config_name": {
+        "lan_translate": [
+          "受秃鹫伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 15,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G65"
+      ],
+      "config": "species_dam_ignore_rate_creatures",
+      "config_name": {
+        "lan_translate": [
+          "受动物伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 15,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G66"
+      ],
+      "config": "species_dam_ignore_rate_machina",
+      "config_name": {
+        "lan_translate": [
+          "受机械伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 15,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G67"
+      ],
+      "config": "species_dam_ignore_rate_master",
+      "config_name": {
+        "lan_translate": [
+          "受上位者伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 15,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "attr_id": [
+        "G68"
+      ],
+      "config": "species_dam_ignore_rate_deviation",
+      "config_name": {
+        "lan_translate": [
+          "受异常物伤害减免_$S@TIDS$_da|0"
+        ]
+      },
+      "equation": "",
+      "sub_value": 15,
+      "val_hide": 1,
+      "val_type": 1,
+      "value": 2
+    },
+    {
+      "values": [
+        {
+          "0": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "1": [
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "2": [
+            201,
+            202,
+            203
+          ],
+          "3": [
+            301,
+            302,
+            303,
+            304,
+            305
+          ],
+          "4": [
+            401,
+            402,
+            403,
+            404,
+            405,
+            406,
+            407
+          ],
+          "5": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506,
+            507,
+            508,
+            509,
+            510,
+            511,
+            512,
+            513,
+            514,
+            515,
+            516,
+            517
+          ],
+          "6": [
+            601,
+            602,
+            603,
+            604,
+            605,
+            606,
+            607,
+            608
+          ],
+          "7": [
+            701,
+            702,
+            703,
+            704,
+            705,
+            706,
+            707,
+            708,
+            709,
+            710,
+            711,
+            712,
+            713,
+            714,
+            715,
+            716,
+            717
+          ],
+          "8": [
+            801,
+            802,
+            803
+          ],
+          "9": [
+            903,
+            905,
+            907
+          ]
+        },
+        {
+          "10": [
+            1001,
+            1002
+          ],
+          "11": [
+            1101,
+            1102,
+            1103,
+            1104
+          ],
+          "12": [
+            1201,
+            1202,
+            1203
+          ],
+          "13": [
+            1301,
+            1302,
+            1303,
+            1304,
+            1305
+          ],
+          "14": [
+            1401,
+            1402,
+            1403
+          ],
+          "15": [
+            1501,
+            1502,
+            1503,
+            1504,
+            1505,
+            1506,
+            1507,
+            1508
+          ]
+        },
+        {}
+      ]
+    },
+    {
+      "need_cache_attr_names": [
+        "element_type_ignore_dam_rate_fire",
+        "non_weak_ignore_dam_rate",
+        "tag_buff_time_extend_add_rate_quick_draw",
+        "tag_buff_time_extend_add_rate_armed",
+        "keyword_proc_chance_add_rate_shrap",
+        "attack_type_dam_add_rate_remote",
+        "debuff_type_crit_rate_add_rate_frozen",
+        "keyword_proc_dam_add_rate_blast",
+        "species_dam_ignore_rate_creatures",
+        "debuff_type_crit_dam_add_rate_scorch",
+        "keyword_proc_chance_add_rate_scorch",
+        "unit_prototype_dam_add_rate_leader",
+        "keyword_proc_dam_add_rate_proj",
+        "keyword_proc_chance_add_rate_mark",
+        "species_dam_ignore_rate_ascender",
+        "keyword_proc_dam_add_rate_surge",
+        "unit_prototype_dam_add_rate_boss",
+        "ignore_crit_dam_rate",
+        "element_type_dam_add_rate_explode",
+        "keyword_proc_crit_rate_add_rate_surge",
+        "contamination_resistance",
+        "attack_type_dam_add_rate_melee",
+        "weak_dam_rate",
+        "unit_prototype_dam_add_rate_elite",
+        "roll_init_speed_add_rate",
+        "species_dam_add_rate_alters",
+        "debuff_type_crit_dam_add_rate_surge",
+        "debuff_type_dam_add_rate_surge",
+        "tag_melee_crit_rate_add_rate_blunt",
+        "keyword_proc_crit_rate_add_rate_shrap",
+        "keyword_proc_crit_dam_add_rate_shrap",
+        "cold_resist",
+        "keyword_proc_chance_add_rate_blast",
+        "keyword_proc_crit_dam_add_rate_scorch",
+        "keyword_proc_crit_rate_add_rate_proj",
+        "debuff_type_dam_add_rate_frozen",
+        "species_field_dam_add_rate_alters",
+        "tag_debuff_time_extend_add_rate_mark",
+        "keyword_proc_crit_dam_add_rate_proj",
+        "element_type_ignore_dam_rate_ice",
+        "tag_aoe_range_extend_add_rate_armed",
+        "element_type_dam_add_rate_ice",
+        "keyword_proc_chance_add_rate_surge",
+        "weapon_magazine_size",
+        "part_dam_ignore_rate_body",
+        "tag_aoe_range_extend_add_rate_blast",
+        "hot_resist",
+        "attack_type_dam_add_rate_dot",
+        "keyword_proc_crit_dam_add_rate_surge",
+        "element_type_dam_add_rate_lightning",
+        "debuff_type_crit_dam_add_rate_frozen",
+        "tag_debuff_time_extend_add_rate_vortex",
+        "debuff_type_weak_dam_add_rate_scorch",
+        "debuff_type_crit_rate_add_rate_vortex",
+        "debuff_type_crit_dam_add_rate_vortex",
+        "sprint_speed_add_rate",
+        "keyword_proc_dam_add_rate_scorch",
+        "debuff_type_dam_add_rate_mark",
+        "debuff_type_dam_add_rate_vortex",
+        "part_dam_ignore_rate_limbs",
+        "debuff_type_weak_dam_add_rate_vortex",
+        "attack_type_ignore_dam_rate_melee",
+        "species_field_dam_add_rate_vulcher",
+        "species_dam_add_rate_master",
+        "species_field_dam_add_rate_rosetta",
+        "debuff_type_weak_dam_add_rate_frozen",
+        "weapon_reload_time_reduce",
+        "tag_melee_dam_add_rate_blunt",
+        "debuff_type_crit_rate_add_rate_surge",
+        "debuff_type_crit_rate_add_rate_mark",
+        "species_dam_add_rate_ascender",
+        "attack",
+        "debuff_type_weak_dam_add_rate_mark",
+        "element_type_ignore_dam_rate_lightning",
+        "species_dam_ignore_rate_rosetta",
+        "species_field_dam_add_rate_master",
+        "hp",
+        "keyword_proc_chance_add_rate_quick_draw",
+        "species_dam_add_rate_creatures",
+        "element_type_ignore_dam_rate_physics",
+        "keyword_proc_dam_add_rate_shrap",
+        "species_dam_ignore_rate_deviation",
+        "keyword_proc_chance_add_rate_proj",
+        "species_field_dam_add_rate_deviation",
+        "keyword_proc_crit_rate_add_rate_scorch",
+        "species_dam_add_rate_machina",
+        "element_type_ignore_dam_rate_explode",
+        "skill_power",
+        "weapon_rpm",
+        "attack_type_ignore_dam_rate_dot",
+        "debuff_type_crit_rate_add_rate_scorch",
+        "keyword_proc_crit_dam_add_rate_blast",
+        "debuff_type_dam_add_rate_scorch",
+        "move_speed_add_rate",
+        "freezing_resist",
+        "tag_aoe_range_extend_add_rate_vortex",
+        "debuff_type_crit_dam_add_rate_mark",
+        "species_dam_ignore_rate_machina",
+        "keyword_proc_dam_add_rate_vortex",
+        "debuff_type_weak_dam_add_rate_surge",
+        "unit_prototype_dam_add_rate_creeps",
+        "attack_type_ignore_dam_rate_remote",
+        "field",
+        "keyword_proc_chance_add_rate_armed",
+        "ignore_weak_dam_rate",
+        "species_field_dam_add_rate_machina",
+        "keyword_proc_crit_rate_add_rate_blast",
+        "keyword_proc_crit_dam_add_rate_vortex",
+        "part_dam_ignore_rate_head",
+        "species_dam_add_rate_rosetta",
+        "element_type_dam_add_rate_fire",
+        "ignore_dam_rate",
+        "tag_debuff_time_extend_add_rate_scorch",
+        "element_type_dam_add_rate_physics",
+        "tag_melee_crit_dam_add_rate_blunt",
+        "crit_rate",
+        "crit_dam_rate",
+        "species_dam_add_rate_vulcher",
+        "species_dam_add_rate_deviation",
+        "species_field_dam_add_rate_creatures",
+        "species_dam_ignore_rate_vulcher",
+        "species_dam_ignore_rate_master",
+        "species_field_dam_add_rate_ascender",
+        "ignore_crit_rate",
+        "keyword_proc_crit_rate_add_rate_vortex",
+        "species_dam_ignore_rate_alters",
+        "keyword_proc_chance_add_rate_vortex",
+        "burn_resist"
+      ]
+    },
+    {
+      "values": {
+        "99": [
+          {
+            "0": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "1": [
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              130,
+              131,
+              132
+            ],
+            "2": [
+              201,
+              202,
+              203
+            ],
+            "3": [
+              301,
+              302,
+              303,
+              304,
+              305
+            ],
+            "4": [
+              401,
+              402,
+              403,
+              404,
+              405,
+              406,
+              407
+            ],
+            "5": [
+              501,
+              502,
+              503,
+              504,
+              505,
+              506,
+              507,
+              508,
+              509,
+              510,
+              511,
+              512,
+              513,
+              514,
+              515,
+              516,
+              517
+            ],
+            "6": [
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608
+            ],
+            "7": [
+              701,
+              702,
+              703,
+              704,
+              705,
+              706,
+              707,
+              708,
+              709,
+              710,
+              711,
+              712,
+              713,
+              714,
+              715,
+              716,
+              717
+            ],
+            "8": [
+              801,
+              802,
+              803
+            ],
+            "9": [
+              903,
+              905,
+              907
+            ]
+          },
+          {
+            "10": [
+              1001,
+              1002
+            ],
+            "11": [
+              1101,
+              1102,
+              1103,
+              1104
+            ],
+            "12": [
+              1201,
+              1202,
+              1203
+            ],
+            "13": [
+              1301,
+              1302,
+              1303,
+              1304,
+              1305
+            ],
+            "14": [
+              1401,
+              1402,
+              1403
+            ],
+            "15": [
+              1501,
+              1502,
+              1503,
+              1504,
+              1505,
+              1506,
+              1507,
+              1508
+            ]
+          },
+          {}
+        ]
+      }
+    }
+  ]
+}

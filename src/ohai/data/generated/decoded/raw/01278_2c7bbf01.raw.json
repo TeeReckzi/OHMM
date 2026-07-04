@@ -1,0 +1,241 @@
+{
+  "_meta": {
+    "sourceFile": "01278_2c7bbf01.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01278_2c7bbf01.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:42.410Z",
+    "recordCount": 1,
+    "sourceHash": "25985676625556eb2b955d43820189ea15bbe6829be4c7c8383a7498ae08d7b5",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E90217-10240019-C718892A-0CE8201D_default_temperature_tower_public",
+          "parent_global_name": "",
+          "prefab_instance_id": "temperature_tower_empty_346585",
+          "season_config": {
+            "whitelist": "n_xgrs2"
+          }
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "605",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100500100"
+        },
+        "RuntimeAttrBeHit": {
+          "be_hit_events": [
+            {
+              "checkers": [
+                {
+                  "damage_threshold": 0,
+                  "cls_type": "RuntimeBeHitEventDamageChecker"
+                }
+              ],
+              "report_bf": true,
+              "report_buff": true,
+              "tag": "",
+              "cls_type": "RuntimeBeHitEventDefine"
+            }
+          ],
+          "cls_type": "RuntimeAttrBeHit",
+          "element_damage_config": {
+            "cls_type": "RuntimeElementDamageConfig",
+            "immune_exclude": null
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020024,
+            810020033,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "",
+          "enable_exec_state": false,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "",
+              "interact_condition": [
+                {
+                  "interact_text_no_satisfied": "2922",
+                  "interact_text_no_unsatisfied": "",
+                  "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                }
+              ],
+              "interact_cooldown": 1,
+              "interact_detail_ui_type": "",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 8,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": false,
+              "tag": "tp_tw",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            ""
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "IndicatorUnitTower",
+          "local_trans": [
+            0.0024,
+            1.8629,
+            0.0029,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "temperature_tower_public",
+          "node_uuid": "686505a1a0e4e68e4092aece",
+          "world_trans": [
+            -3074.7275,
+            223.952,
+            5006.0029,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/buildingsystem/control_tower/control_tower_public.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": true
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                1.9971,
+                6.7319
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                4.1592,
+                1.8617,
+                2.3145
+              ],
+              "shape": "box",
+              "tag": "tp_tw",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            },
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                120,
+                120,
+                120
+              ],
+              "shape": "sphere",
+              "tag": "toggle_tw_ui",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": false,
+              "send_event_to_buff": true,
+              "tag": "tp_tw",
+              "cls_type": "RuntimeTriggerItemInteract"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": false,
+              "send_event_to_buff": true,
+              "tag": "toggle_tw_ui",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": false,
+              "send_event_to_buff": true,
+              "tag": "toggle_tw_ui",
+              "cls_type": "RuntimeTriggerItemLeave"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

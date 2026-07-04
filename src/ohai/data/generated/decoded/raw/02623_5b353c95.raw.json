@@ -1,0 +1,227 @@
+{
+  "_meta": {
+    "sourceFile": "02623_5b353c95.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02623_5b353c95.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:45.744Z",
+    "recordCount": 2,
+    "sourceHash": "91ed653d4853cf7d743e6ecafa584ab3f04c83596def2dc7477aabef005e6490",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "20": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 20
+          },
+          "type": "NodeGetGuideTargetUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_ai_target_uid",
+            "output_ai_friend_target_uid"
+          ]
+        }
+      },
+      "21": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 21,
+            "enter_share_group": true,
+            "need_disable": false,
+            "private_share": false,
+            "reset": false,
+            "share_enable": true,
+            "share_group_name": "lighthouse_kuxiu",
+            "share_rate": 100
+          },
+          "type": "NodeShareDamageGroup"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_uid": [
+            25,
+            "utility",
+            "holder_uid"
+          ],
+          "target_uid": [
+            20,
+            "utility",
+            "output_ai_friend_target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "22": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "destroy_sfx_path": "",
+            "effect_id": 0,
+            "effect_index": 22,
+            "end_sfx_path": "",
+            "is_bending": true,
+            "max_dis": 0,
+            "need_disable": false,
+            "remove_without_target_pos": true,
+            "sfx_path": "effect/boss/lighthouse/lighthouse_tentacle_endure_line_behit.pse",
+            "socket_name": "fx_lightning_glow",
+            "tar_type": 4,
+            "target_socket": "fx_lightning_glow",
+            "use_target_id": false,
+            "visual_selection": -1
+          },
+          "type": "NodeCreateGuideBendingSfx"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            20,
+            "utility",
+            "output_ai_friend_target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "23": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 23
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            38,
+            24,
+            22,
+            21
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "24": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 24,
+            "enter_share_group": true,
+            "need_disable": false,
+            "private_share": false,
+            "reset": false,
+            "share_enable": false,
+            "share_group_name": "lighthouse_kuxiu",
+            "share_rate": 50
+          },
+          "type": "NodeShareDamageGroup"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_uid": [
+            25,
+            "utility",
+            "holder_uid"
+          ],
+          "target_uid": [
+            25,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "25": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 25
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "30": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 60143010,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 30,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            20,
+            "utility",
+            "output_ai_friend_target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "38": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 38,
+            "loop_max_times": 0,
+            "loop_time": 1.6,
+            "reset_last_effect": true,
+            "start_trigger": true
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            30
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 23,
+      "name": "buff_60143005_1",
+      "preload_res_list": [
+        "effect/boss/lighthouse/lighthouse_tentacle_endure_line_behit.pse"
+      ],
+      "source_info": [
+        "buff",
+        60143005,
+        1
+      ],
+      "tid": 13689
+    }
+  ]
+}

@@ -1,0 +1,1312 @@
+{
+  "_meta": {
+    "sourceFile": "05583_becdf812.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05583_becdf812.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:54.242Z",
+    "recordCount": 16,
+    "sourceHash": "be8783e97bec1d155dd6d89cfed37b5e5db0282b370d11b042a84c1d9cac22d5",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_anchor_worldstone01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "102",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "WORLD_STONE",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrGameplayWorldStone": {
+          "cls_type": "RuntimeAttrGameplayWorldStone",
+          "init_state": "001",
+          "reward_no": "",
+          "submit_item_no_list": [],
+          "unlock_state_infos": [
+            {
+              "state_name": "001",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "002",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01_to_02.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_02.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "003",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_02_to_03.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_03.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020024,
+            810020059,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "001",
+          "enable_exec_state": true,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "001",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": false,
+              "tag": "001",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "002",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "003",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            "001",
+            "002",
+            "003"
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -11.4216,
+            -4.6423,
+            -15.4961,
+            0.0037,
+            0,
+            0.0032,
+            1,
+            1,
+            1
+          ],
+          "name": "worldstone01",
+          "node_uuid": "69312c4b03ca0a42dc196a81",
+          "world_trans": [
+            6170.6592,
+            55.4159,
+            5583.8306,
+            0,
+            1.1709,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": false,
+          "enable_vertical_occluder": false,
+          "init_model_path": "environment/dynamic_objects/world_stone/world_stone_03.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                20,
+                4,
+                20
+              ],
+              "shape": "box",
+              "tag": "001",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            },
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                4,
+                5
+              ],
+              "shape": "box",
+              "tag": "002",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "first_meet_world_stone",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "001",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "002",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_fakeladder",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            5.0435,
+            -0.0767,
+            -2.8252,
+            0,
+            -0.4455,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "fakeladder",
+          "node_uuid": "69312c3b03ca0a42dc196929",
+          "world_trans": [
+            6208.9219,
+            58.9925,
+            5569.8394,
+            0,
+            -0.4455,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/common/prop/box/wooden_box_03.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_fakeladder1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            4.4092,
+            -0.0767,
+            -2.4165,
+            0,
+            -1.067,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "fakeladder1",
+          "node_uuid": "69312c3b03ca0a42dc19695c",
+          "world_trans": [
+            6208.2876,
+            58.9925,
+            5570.248,
+            0,
+            -1.067,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/common/prop/box/wooden_box_03.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_fakeladder2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            5.2383,
+            0.5466,
+            -2.5034,
+            0,
+            -0.4455,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "fakeladder2",
+          "node_uuid": "69312c3b03ca0a42dc196966",
+          "world_trans": [
+            6209.1167,
+            59.6158,
+            5570.1611,
+            0,
+            -0.4455,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/common/prop/box/wooden_box_03.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_fakeladder3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            3.854,
+            -0.0767,
+            -2.021,
+            0,
+            -0.7637,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "fakeladder3",
+          "node_uuid": "69312c3b03ca0a42dc19697d",
+          "world_trans": [
+            6207.7324,
+            58.9925,
+            5570.6436,
+            0,
+            -0.7637,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/common/prop/box/wooden_box_03.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_fakeladder4",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            4.7773,
+            0.5557,
+            -1.959,
+            0,
+            -0.7678,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "fakeladder4",
+          "node_uuid": "69312c3b03ca0a42dc196989",
+          "world_trans": [
+            6208.6558,
+            59.6249,
+            5570.7056,
+            0,
+            -0.7678,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/common/prop/box/wooden_box_03.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_fakeladder5",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            5.0088,
+            1.1837,
+            -2.0698,
+            0,
+            -0.4205,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "fakeladder5",
+          "node_uuid": "69312c3b03ca0a42dc1968bc",
+          "world_trans": [
+            6208.8872,
+            60.2529,
+            5570.5947,
+            0,
+            -0.4205,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/common/prop/box/wooden_box_03.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_fakeladder6",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            4.9561,
+            -0.0767,
+            -2.0093,
+            0,
+            -0.5092,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "fakeladder6",
+          "node_uuid": "69312c3b03ca0a42dc1968cf",
+          "world_trans": [
+            6208.8345,
+            58.9925,
+            5570.6553,
+            0,
+            -0.5092,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/common/prop/box/wooden_box_03.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_ladder_01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -1.2138,
+            -0.0496
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -20.3667,
+            -3.4852,
+            8.9727,
+            0,
+            -0.4168,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_01",
+          "node_uuid": "69312c3b03ca0a42dc196942",
+          "world_trans": [
+            6183.5117,
+            55.584,
+            5581.6372,
+            0,
+            -0.4168,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_ladder_02",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -0.9609,
+            -0.0491
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -17.5215,
+            -0.8483,
+            2.5254,
+            0,
+            -0.4054,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_02",
+          "node_uuid": "69312c3b03ca0a42dc196973",
+          "world_trans": [
+            6186.3569,
+            58.2209,
+            5575.1899,
+            0,
+            -0.4054,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_ladder_03",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0005,
+            -0.8675,
+            -0.0491
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -14.5752,
+            1.6347,
+            -3.915,
+            0,
+            -0.4264,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_03",
+          "node_uuid": "69312c3b03ca0a42dc19698c",
+          "world_trans": [
+            6189.3032,
+            60.7039,
+            5568.7495,
+            0,
+            -0.4264,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_ladder_04",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            0.2331,
+            0.1169
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "industry_ladder_04",
+          "top_control_point_pos": [
+            0,
+            3,
+            0.1169
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            6.8491,
+            1.654,
+            -0.501,
+            0,
+            2.6685,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_04",
+          "node_uuid": "69312c3b03ca0a42dc1968bf",
+          "world_trans": [
+            6210.7275,
+            60.7232,
+            5572.1636,
+            0,
+            2.6685,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_ladder_05",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0005,
+            -1.5767,
+            -0.0493
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -1.1108,
+            1.6296,
+            -5.4282,
+            0,
+            1.1316,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_05",
+          "node_uuid": "69312c3b03ca0a42dc19691e",
+          "world_trans": [
+            6202.7676,
+            60.6988,
+            5567.2363,
+            0,
+            1.1316,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_ladder_06",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            -0.012,
+            -1.3612,
+            -0.041
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            8.8066,
+            -0.1766,
+            -0.3247,
+            0,
+            1.1316,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_06",
+          "node_uuid": "69312c3b03ca0a42dc196938",
+          "world_trans": [
+            6212.6851,
+            58.8926,
+            5572.3398,
+            0,
+            1.1316,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_ladder_10",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0002,
+            -1.8128,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            18.9146,
+            -5.0321,
+            4.5776,
+            0,
+            1.1316,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_10",
+          "node_uuid": "69312c3b03ca0a42dc196992",
+          "world_trans": [
+            6222.793,
+            54.0371,
+            5577.2422,
+            0,
+            1.1316,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80713-1133001B-0655BAC2-0CE8201D_default_ladder_11",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t7_16",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -3.1231,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -10.2983,
+            -0.6577,
+            8.9927,
+            0,
+            1.146,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_11",
+          "node_uuid": "69312c3b03ca0a42dc196955",
+          "world_trans": [
+            6193.5801,
+            58.4115,
+            5581.6572,
+            0,
+            1.146,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

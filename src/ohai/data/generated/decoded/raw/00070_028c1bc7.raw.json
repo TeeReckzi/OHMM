@@ -1,0 +1,505 @@
+{
+  "_meta": {
+    "sourceFile": "00070_028c1bc7.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00070_028c1bc7.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.388Z",
+    "recordCount": 4,
+    "sourceHash": "878098080e2e7f24773e4685778d38db04a01af7b1d46bc8cd8343a9031cfdd4",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A13-0A2A0024-6C28DB44-0CE8201D_default_body_car_11",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_car_jump_03_01_4754",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            800000207
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            1.8,
+            7.29,
+            -5.6802,
+            0.2699,
+            -1.7599,
+            -0.62,
+            1,
+            1,
+            1
+          ],
+          "name": "body_car_11",
+          "node_uuid": "",
+          "world_trans": [
+            5661.5889,
+            135.1615,
+            -3856.594,
+            0.6676,
+            -2.9465,
+            0.0476,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/junkyard/props/body_car_11.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0.0002,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.2009,
+                1,
+                1.7364
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemEnter"
+            }
+          ]
+        },
+        "RuntimeAttrUnitBlastPlatform": {
+          "blast_delay_time": 3,
+          "cls_type": "RuntimeAttrUnitBlastPlatform"
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A13-0A2A0024-6C28DB44-0CE8201D_default_body_car_12",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_car_jump_03_01_4754",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            800000207
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            3.6699,
+            5.72,
+            -4.46,
+            0.04,
+            0.99,
+            -0.2,
+            1,
+            1,
+            1
+          ],
+          "name": "body_car_12",
+          "node_uuid": "",
+          "world_trans": [
+            5660.9346,
+            133.5915,
+            -3854.4592,
+            0.2032,
+            -0.2978,
+            -0.0174,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/junkyard/props/body_car_11.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0.0002,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.2009,
+                1,
+                1.7364
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemEnter"
+            }
+          ]
+        },
+        "RuntimeAttrUnitBlastPlatform": {
+          "blast_delay_time": 3,
+          "cls_type": "RuntimeAttrUnitBlastPlatform"
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A13-0A2A0024-6C28DB44-0CE8201D_default_body_car_13",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_car_jump_03_01_4754",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            800000207
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.6997,
+            9.75,
+            -6.2002,
+            0.36,
+            -1.69,
+            -0.52,
+            1,
+            1,
+            1
+          ],
+          "name": "body_car_13",
+          "node_uuid": "",
+          "world_trans": [
+            5660.8418,
+            137.6215,
+            -3861.0615,
+            0.6054,
+            -2.8343,
+            0.1567,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/junkyard/props/body_car_11.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0.0002,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.2009,
+                1,
+                1.7364
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemEnter"
+            }
+          ]
+        },
+        "RuntimeAttrUnitBlastPlatform": {
+          "blast_delay_time": 3,
+          "cls_type": "RuntimeAttrUnitBlastPlatform"
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A13-0A2A0024-6C28DB44-0CE8201D_default_body_car_14",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_car_jump_03_01_4754",
+          "season_config": {}
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            800000207
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -0.3357,
+            8.71,
+            -5.9521,
+            0.44,
+            -0.27,
+            -0.47,
+            1,
+            1,
+            1
+          ],
+          "name": "body_car_14",
+          "node_uuid": "",
+          "world_trans": [
+            5661.2583,
+            136.5815,
+            -3858.7214,
+            0.5902,
+            -1.3793,
+            0.2418,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/junkyard/props/body_car_11.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0.0002,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.2009,
+                1,
+                1.7364
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemEnter"
+            }
+          ]
+        },
+        "RuntimeAttrUnitBlastPlatform": {
+          "blast_delay_time": 3,
+          "cls_type": "RuntimeAttrUnitBlastPlatform"
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

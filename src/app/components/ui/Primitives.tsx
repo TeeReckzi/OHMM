@@ -3,6 +3,7 @@ import { Star, X, Zap, Cpu, Database } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import type { Rarity, EquippedItem } from "../../types";
 import { R_COLOR, CYAN } from "../../types";
+import { formatEffectForDisplay } from "../../../lib/ohmm/effectDisplayFormatter";
 
 // ─────────────────────────────────────────────────────────────
 // REUSABLE PRIMITIVES
@@ -137,6 +138,10 @@ export function GenericDetail({ item, accent, onEquip }: {
 }) {
   const isMod = item.category?.toLowerCase().includes('mod') || !!item.modType;
   const showTierStars = !isMod && item.tier > 0;
+  // Detect hardcoded defaults: Epic T4 ★★★ is the placeholder assigned to all armor
+  // lacking verified rarity data. Dim these when they look unverified.
+  const isEstimatedRarity = !isMod && item.rarity === 'Epic' && item.tier === 4 && item.stars === 3
+    && !item.tags?.includes('rarity-verified');
 
   return (
     <div className="flex flex-col gap-3 h-full">
@@ -155,11 +160,13 @@ export function GenericDetail({ item, accent, onEquip }: {
           {showTierStars && (
             <>
               <span className="text-[9px]"
-                style={{ color: "#7ab8cc", fontFamily: "'JetBrains Mono', monospace" }}
-                title="Crafted tier of the item">
-                T{item.tier}
+                style={{ color: "#7ab8cc", fontFamily: "'JetBrains Mono', monospace", opacity: isEstimatedRarity ? 0.5 : 1 }}
+                title={isEstimatedRarity ? "Tier not verified — default value" : "Crafted tier of the item"}>
+                T{item.tier}{isEstimatedRarity ? ' (est.)' : ''}
               </span>
-              <StarRating stars={item.stars} />
+              <span style={{ opacity: isEstimatedRarity ? 0.5 : 1 }}>
+                <StarRating stars={item.stars} />
+              </span>
             </>
           )}
         </div>
@@ -171,7 +178,7 @@ export function GenericDetail({ item, accent, onEquip }: {
           style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
           <div className="uppercase tracking-[0.1em] text-[8px] mb-0.5" style={{ color: '#7ab8cc' }}>EFFECTS</div>
           <div style={{ color: '#c0dde8' }}>
-            {item.effectSummary || item.description}
+            {formatEffectForDisplay(item.effectSummary || item.description, item.confidence)}
           </div>
         </div>
       )}
@@ -202,7 +209,9 @@ export function GenericDetail({ item, accent, onEquip }: {
 
       {item.meta && Object.keys(item.meta).length > 0 && (
         <div className="grid grid-cols-2 gap-1.5">
-          {Object.entries(item.meta).map(([k, v]) => (
+          {Object.entries(item.meta)
+            .filter(([_k, v]) => v != null && String(v) !== 'undefined' && String(v) !== 'null' && String(v) !== '')
+            .map(([k, v]) => (
             <div key={k} className="p-2 rounded-[3px]"
               style={{ background: `${accent}06`, border: `1px solid ${accent}14` }}>
               <div className="text-[8px] uppercase tracking-wider mb-0.5" style={{ color: "#7ab8cc" }}>{k}</div>

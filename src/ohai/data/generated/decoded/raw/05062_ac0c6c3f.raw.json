@@ -1,0 +1,148 @@
+{
+  "_meta": {
+    "sourceFile": "05062_ac0c6c3f.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05062_ac0c6c3f.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:52.793Z",
+    "recordCount": 10,
+    "sourceHash": "1c2fe8eff5d46a4b19309c908e2146e64cd2ad18e9f7c68451791cc06e7265f3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "comment": {
+        "lan_translate": [
+          "默认_$S@TIDS$_cmr|0"
+        ]
+      },
+      "depend_tag": [],
+      "tag_append_prob": 1,
+      "tag_append_rule": 0,
+      "tag_compete_range": 0,
+      "tag_name": "none",
+      "tag_priority": 0
+    },
+    {
+      "comment": {
+        "lan_translate": [
+          "医院_$S@TIDS$_cmr|0"
+        ]
+      },
+      "depend_tag": [],
+      "tag_append_prob": 1,
+      "tag_append_rule": 1,
+      "tag_compete_range": 0,
+      "tag_name": "hospital",
+      "tag_priority": 5
+    },
+    {
+      "comment": {
+        "lan_translate": [
+          "海边用品_$S@TIDS$_cmr|0"
+        ]
+      },
+      "depend_tag": [],
+      "tag_append_prob": 0.3,
+      "tag_append_rule": 1,
+      "tag_compete_range": 5,
+      "tag_name": "shore",
+      "tag_priority": 5
+    },
+    {
+      "comment": {
+        "lan_translate": [
+          "医院_$S@TIDS$_cmr|1"
+        ]
+      },
+      "depend_tag": [],
+      "tag_append_prob": 1,
+      "tag_append_rule": 1,
+      "tag_compete_range": 0,
+      "tag_name": "hospital",
+      "tag_priority": 6
+    },
+    {
+      "comment": {
+        "lan_translate": [
+          "餐厅_$S@TIDS$_cmr|0"
+        ]
+      },
+      "depend_tag": [],
+      "tag_append_prob": 1,
+      "tag_append_rule": 4,
+      "tag_compete_range": 0,
+      "tag_name": "canteen",
+      "tag_priority": 10
+    },
+    {
+      "comment": {
+        "lan_translate": [
+          "篮球场_$S@TIDS$_cmr|0"
+        ]
+      },
+      "depend_tag": [],
+      "tag_append_prob": 1,
+      "tag_append_rule": 3,
+      "tag_compete_range": 5,
+      "tag_name": "court",
+      "tag_priority": 10
+    },
+    {
+      "comment": {
+        "lan_translate": [
+          "医院餐厅_$S@TIDS$_cmr|0"
+        ]
+      },
+      "depend_tag": [
+        "1001"
+      ],
+      "tag_append_prob": 1,
+      "tag_append_rule": 4,
+      "tag_compete_range": 0,
+      "tag_name": "hospitalcanteen",
+      "tag_priority": 15
+    },
+    {
+      "comment": {
+        "lan_translate": [
+          "医院餐厅_$S@TIDS$_cmr|1"
+        ]
+      },
+      "depend_tag": [],
+      "tag_append_prob": 0.5,
+      "tag_append_rule": 2,
+      "tag_compete_range": 0,
+      "tag_name": "hospitalcanteen",
+      "tag_priority": 4
+    },
+    {
+      "comment": {
+        "lan_translate": [
+          "卫生间_$S@TIDS$_cmr|0"
+        ]
+      },
+      "depend_tag": [],
+      "tag_append_prob": 1,
+      "tag_append_rule": 4,
+      "tag_compete_range": 5,
+      "tag_name": "toliet",
+      "tag_priority": 10
+    },
+    {
+      "comment": {
+        "lan_translate": [
+          "医院餐厅的吧台_$S@TIDS$_cmr|0"
+        ]
+      },
+      "depend_tag": [
+        "3001",
+        "3002"
+      ],
+      "tag_append_prob": 0.3,
+      "tag_append_rule": 3,
+      "tag_compete_range": 0,
+      "tag_name": "hoscanbar",
+      "tag_priority": 20
+    }
+  ]
+}

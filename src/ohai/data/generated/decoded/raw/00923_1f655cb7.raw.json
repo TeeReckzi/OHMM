@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "sourceFile": "00923_1f655cb7.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00923_1f655cb7.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.763Z",
+    "recordCount": 2,
+    "sourceHash": "6c2243d5b3a3ab3c528e53b8b0b0dcaa04370fb3ce42e2457389bd9e3504ca93",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            5,
+            6
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "5": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 5,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "",
+              "bind_type": 0,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "110",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/scene/cube_01.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                22,
+                10,
+                22
+              ],
+              "sfx_budget_rule_id": 400,
+              "slot_list": [],
+              "socket_for_scene": "root",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "6": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 6,
+            "enter_max_times": -1,
+            "exit_max_times": -1,
+            "perceive_tag": "box",
+            "select_data": {
+              "select_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_enemy_only_editor0": true,
+                  "label_enemy_only_editor1": false,
+                  "label_friend": false,
+                  "label_friend_only_editor0": true,
+                  "label_friend_only_editor1": false,
+                  "label_neutral": false,
+                  "label_neutral_only_editor0": true,
+                  "label_neutral_only_editor1": false,
+                  "label_self": false
+                }
+              }
+            }
+          },
+          "type": "NodeSetPerceivedEvent"
+        },
+        "event_action": {
+          "enter": [
+            7
+          ],
+          "exit": [
+            9
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "enter": [
+            "enter_id"
+          ],
+          "exit": [
+            "exit_id"
+          ]
+        }
+      },
+      "7": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 7,
+            "loop_max_times": 0,
+            "loop_time": 1,
+            "reset_last_effect": true,
+            "start_trigger": false
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            8
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "8": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 10200012,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 8,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            6,
+            "enter",
+            "enter_id"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "degrade": false,
+            "dispel_buff_sub_tag_list": [],
+            "dispel_buff_tag_list": [],
+            "dispel_debuff_num": 1,
+            "dispel_id_list": [
+              10200012
+            ],
+            "dispel_tag_list": [],
+            "dispel_type": 0,
+            "effect_index": 9,
+            "match_caster_id": false,
+            "need_disable": false
+          },
+          "type": "NodeDispelBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            6,
+            "exit",
+            "exit_id"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_10200011_1",
+      "preload_res_list": [
+        "effect/scene/cube_01.pse"
+      ],
+      "source_info": [
+        "buff",
+        10200011,
+        1
+      ],
+      "tid": 16229
+    }
+  ]
+}

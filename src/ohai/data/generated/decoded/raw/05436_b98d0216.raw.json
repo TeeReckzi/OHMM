@@ -1,0 +1,759 @@
+{
+  "_meta": {
+    "sourceFile": "05436_b98d0216.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05436_b98d0216.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:53.927Z",
+    "recordCount": 19,
+    "sourceHash": "02ab36ac53bf6a54e2acb48d833d804035e69494efe2e89eeb9ac7d9f7c789a2",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "column": 1,
+      "default": 2,
+      "info": {
+        "lan_translate": [
+          "调整整体的画面质量。如遇到发热、卡顿，请适当选择更低的选项\n极致：画面质量最高，但对性能的消耗也最大\n质量：画面质量优先，性能负载较高\n均衡：画面质量和性能消耗处于均衡水平\n流畅：性能负载优先，但会降低画面质量\n省电：性能负载最优先，但对画面质量的消耗最大_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "画质设置_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "省电_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "流畅_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "均衡_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "质量_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "极致_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 2,
+      "save_key": "setting_quality_mode",
+      "show_limit": {},
+      "ui_type": 14
+    },
+    {
+      "column": 1,
+      "default": 50,
+      "info": {
+        "lan_translate": [
+          "调节游戏内的画面亮度。_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "亮度_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        100
+      ],
+      "range_img": [],
+      "range_text": [],
+      "row": 5,
+      "save_key": "setting_brightness",
+      "show_limit": {},
+      "ui_type": 2
+    },
+    {
+      "column": 2,
+      "default": 1,
+      "info": {
+        "lan_translate": [
+          "调整整体阴影等级。_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "阴影质量_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "低_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "高_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 6,
+      "save_key": "setting_shadow",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 2,
+      "default": 1,
+      "info": {
+        "lan_translate": [
+          "调整整体特效质量。_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "特效质量_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1,
+        2
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "低_$S@TIDS$_ap|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "中_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "高_$S@TIDS$_ap|1"
+          ]
+        }
+      ],
+      "row": 5,
+      "save_key": "setting_special_effects",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 2,
+      "default": 1,
+      "info": "",
+      "name": {
+        "lan_translate": [
+          "植被密度_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1,
+        2
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "低_$S@TIDS$_ap|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "中_$S@TIDS$_ap|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "高_$S@TIDS$_ap|2"
+          ]
+        }
+      ],
+      "row": 8,
+      "save_key": "setting_grass_density",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 1,
+      "default": 0,
+      "info": {
+        "lan_translate": [
+          "开启后，可使模糊图像变得清晰_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "锐化_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "禁用_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "启用_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 7,
+      "save_key": "setting_sharpening",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 1,
+      "default": 1,
+      "info": {
+        "lan_translate": [
+          "可设定帧率的上限值，实际运行中的帧率将受到画质和设备性能的影响_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "帧率上限_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "低_$S@TIDS$_ap|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "中_$S@TIDS$_ap|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "高_$S@TIDS$_ap|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "超高_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "极限_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "至臻_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 3,
+      "save_key": "setting_fps_limit",
+      "show_limit": {},
+      "ui_type": 14
+    },
+    {
+      "column": 1,
+      "default": 0,
+      "info": "",
+      "name": {
+        "lan_translate": [
+          "设备负载_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        70,
+        90
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "流畅_$S@TIDS$_ap|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "较高_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "极高_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 1,
+      "save_key": "equipment_load",
+      "show_limit": {},
+      "ui_type": 9
+    },
+    {
+      "column": 1,
+      "default": 0,
+      "info": {
+        "lan_translate": [
+          "开启后，会调低非队友玩家的外观表现效果，以此降低性能消耗\n注：此设置仅针对除队友之外的其他玩家_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "非队友玩家外观精简_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 2,
+      "range": [
+        0,
+        1
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 1,
+      "save_key": "setting_lean_look",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 2,
+      "default": 0,
+      "info": {
+        "lan_translate": [
+          "开启后，在根源之战、据点战、公共事件等场景中，其他玩家的角色会被替换为同样的模型，以降低性能消耗\n如有需要，请在进入场景前开启_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "其他玩家同模型展示_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 2,
+      "range": [
+        0,
+        1
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_ap|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_ap|1"
+          ]
+        }
+      ],
+      "row": 1,
+      "save_key": "setting_same_model",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 1,
+      "default": 20,
+      "info": {
+        "lan_translate": [
+          "可以控制屏幕内展示的非敌对玩家的模型数量，超过上限的玩家模型会被隐藏\n敌对玩家不受此设置项影响_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "最大同屏显示玩家数量_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 2,
+      "range": [
+        5,
+        20
+      ],
+      "range_img": [],
+      "range_text": [],
+      "row": 2,
+      "save_key": "setting_teammate_model",
+      "show_limit": {},
+      "ui_type": 2
+    },
+    {
+      "column": 2,
+      "default": 20,
+      "info": {
+        "lan_translate": [
+          "可以控制屏幕内展示的怪物模型数量，超过上限的怪物模型会被隐藏_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "最大同屏显示怪物数量_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 2,
+      "range": [
+        5,
+        20
+      ],
+      "range_img": [],
+      "range_text": [],
+      "row": 2,
+      "save_key": "setting_npc_model",
+      "show_limit": {},
+      "ui_type": 2
+    },
+    {
+      "column": 1,
+      "default": 0,
+      "info": "",
+      "name": {
+        "lan_translate": [
+          "画面风格_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "range_img": [
+        "set_cbt2_bgimg_01.png",
+        "set_cbt2_bgimg_02.png",
+        "set_cbt2_bgimg_03.png",
+        "set_cbt2_bgimg_04.png"
+      ],
+      "range_text": [
+        {
+          "lan_translate": [
+            "写实_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "电影_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "柔和_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "艳丽_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 9,
+      "save_key": "setting_filter_mode",
+      "show_limit": {},
+      "ui_type": 11
+    },
+    {
+      "column": 1,
+      "default": 0,
+      "info": {
+        "lan_translate": [
+          "屏蔽其他玩家产生的特效。（不包含敌对玩家）_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "特效屏蔽_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 2,
+      "range": [
+        0,
+        1,
+        2
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "禁用_$S@TIDS$_ap|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "屏蔽非队友玩家_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "屏蔽其他玩家_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 3,
+      "save_key": "setting_player_effect_mask",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 1,
+      "default": 1,
+      "info": {
+        "lan_translate": [
+          "可设定分辨率的值，实际运行中的分辨率将受到设备性能的影响_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "分辨率_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "低_$S@TIDS$_ap|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "中_$S@TIDS$_ap|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "高_$S@TIDS$_ap|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "超高_$S@TIDS$_ap|1"
+          ]
+        }
+      ],
+      "row": 4,
+      "save_key": "setting_resolution_limit",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 2,
+      "default": 0,
+      "info": {
+        "lan_translate": [
+          "开启后，会动态调整部分场景的分辨率或帧率，降低设备负载\n关闭：不会动态调整分辨率或帧率\n画面优先：不调整分辨率，动态调整游戏的帧率\n帧率优先：不调整游戏帧率，动态调整游戏的分辨率\n自动：动态调整游戏的分辨率和帧率_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "自适应负载_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "画面优先_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "帧率优先_$S@TIDS$_ap|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自动_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 4,
+      "save_key": "setting_dynamic_load",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 1,
+      "default": 0,
+      "info": {
+        "lan_translate": [
+          "开启后，通过超分辨率重建的方式 增加图形的分辨率_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "超分辨率_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_ap|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_ap|0"
+          ]
+        }
+      ],
+      "row": 6,
+      "save_key": "setting_super_resolution",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 2,
+      "default": 0,
+      "info": {
+        "lan_translate": [
+          "开启/关闭水面反射的效果_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "水面反射_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_ap|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_ap|1"
+          ]
+        }
+      ],
+      "row": 7,
+      "save_key": "setting_water_reflection",
+      "show_limit": {},
+      "ui_type": 1
+    },
+    {
+      "column": 1,
+      "default": 0,
+      "info": {
+        "lan_translate": [
+          "开启后，明亮区域边缘会产生光晕效果，优化光照表现_$S@TIDS$_ap|0"
+        ]
+      },
+      "name": {
+        "lan_translate": [
+          "辉光_$S@TIDS$_ap|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range": [
+        0,
+        1
+      ],
+      "range_img": [],
+      "range_text": [
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_ap|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_ap|2"
+          ]
+        }
+      ],
+      "row": 8,
+      "save_key": "setting_glow",
+      "show_limit": {},
+      "ui_type": 1
+    }
+  ]
+}

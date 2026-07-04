@@ -1685,6 +1685,15 @@ export default function App() {
     });
   };
 
+  // Normalize names for deduplication — strips common suffixes, collapses whitespace,
+  // and handles minor typo variants (but NOT wholesale corrections — that requires human review).
+  const normalizeForDedup = (name: string): string => {
+    return name
+      .toLowerCase()
+      .replace(/\s+(top|bottoms?|helmet|mask|gloves|boots|shoes|pants)$/i, '')
+      .replace(/[^a-z0-9]/g, '');
+  };
+
   const getArmorItems = (): EquippedItem[] => {
     // Use Supabase DB (via fullArmorList) as source of truth for complete list + correct English spellings (nameEnglish)
     // Falls back to local registry if Supabase fetch didn't populate yet or failed.
@@ -1728,7 +1737,7 @@ export default function App() {
       }
     }
 
-    return items.map((a: any) => {
+    const mapped = items.map((a: any) => {
       const norm = a.normalized || a;
       let id = norm.id || a.id;
       // Prefer explicit English. Never fall back to original/source-language labels in UI.
@@ -1780,6 +1789,29 @@ export default function App() {
         meta: { slot: rawSlot, displaySlot, set: norm.setEnglish || norm.armorSet || a.armorSet || (regHit && regHit.armorSet) },
       };
     });
+
+    // Deduplicate: prefer items with better English text when normalized names match
+    const dedupMap = new Map<string, EquippedItem>();
+    for (const item of mapped) {
+      const normKey = normalizeForDedup(item.name) + '|' + (item.category || '').toLowerCase();
+      const existing = dedupMap.get(normKey);
+      if (!existing) {
+        dedupMap.set(normKey, item);
+      } else {
+        // Keep the one with more English content (longer effectSummary or better name)
+        const existingScore = (existing.effectSummary?.length || 0) + (existing.name?.length || 0);
+        const newScore = (item.effectSummary?.length || 0) + (item.name?.length || 0);
+        if (newScore > existingScore) {
+          if (process.env.NODE_ENV === 'development') {
+            console.warn(`[ArmorSelector] Potential duplicate: "${existing.name}" replaced by "${item.name}" (normalized key: ${normKey})`);
+          }
+          dedupMap.set(normKey, item);
+        } else if (process.env.NODE_ENV === 'development' && existing.name !== item.name) {
+          console.warn(`[ArmorSelector] Potential duplicate detected: "${item.name}" vs "${existing.name}" (normalized key: ${normKey})`);
+        }
+      }
+    }
+    return Array.from(dedupMap.values());
   };
 
   const getModItems = (isWeapon: boolean, targetSlot?: string): EquippedItem[] => {
@@ -1814,7 +1846,7 @@ export default function App() {
         // was producing spurious matches like "Mag Expansion" -> "Fast Gunner"
         // just because its text contains "reloading").
         category: isWeapon
-          ? categorizeMod({ name: m.name, effectSummary: m.effectSummary, tags: m.tags, id: m.id, slug: iconSlug })
+          ? categorizeMod({ name: m.name, effectSummary: m.effectSummary, tags: m.tags, id: m.id, slug: iconSlug, modSlot: m.modSlot })
           : gearSlotLabel(m.modSlot),
         rarity: 'Rare' as Rarity,
         tier: 0,
@@ -2048,7 +2080,7 @@ export default function App() {
 
       {/* Theorycraft Decision-Support Panel (Phase 4B) */}
       {attackerBuild && attackerCalcInput && attackerCombatOutput && (
-        <div className="px-4 pb-4">
+        <div className="ohmm-theorycraft-region">
           <TheoryCraftPanel
             buildSelection={attackerBuild}
             calcInput={attackerCalcInput}

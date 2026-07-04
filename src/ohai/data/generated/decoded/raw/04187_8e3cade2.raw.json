@@ -1,0 +1,157 @@
+{
+  "_meta": {
+    "sourceFile": "04187_8e3cade2.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04187_8e3cade2.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.289Z",
+    "recordCount": 2,
+    "sourceHash": "9b1991c06c256350b1afaf5fccbecd22c7dcd69e78808a6d19f658e93460bc83",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "29": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 29,
+            "trap_args": {
+              "can_be_hit": false,
+              "effect_duration": 5,
+              "effect_interval": 1.5,
+              "effect_side_type": 0,
+              "effect_type": 2,
+              "event_trigger_sfx": "",
+              "first_effect_time": 1,
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "hit_destroy_sfx": "",
+              "is_trap_follow": false,
+              "is_trigger_sfx_move": false,
+              "last_trigger_time": 99,
+              "max_effect_time": 99,
+              "normal_finish_sfx": "effect/monster/portral/fx_portal_door_end.pse",
+              "not_trigger_finish_sfx": "effect/monster/melt/melt_skill_lava_trap_over.pse",
+              "period_effect_limited": false,
+              "pre_trigger_gim": "",
+              "pre_trigger_sfx": "effect/monster/melt/melt_skill_lava_trap_01_01.pse",
+              "sfx_pos_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_vertical": true,
+              "shortest_trigger_time": 1,
+              "summon_use_skill_config": false,
+              "trap_scale": [
+                3,
+                3,
+                3
+              ],
+              "trap_type": 0,
+              "trigger_event": "",
+              "trigger_gim": "",
+              "trigger_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_enemy": true,
+                  "label_friend": false,
+                  "label_neutral": true,
+                  "label_self": false
+                }
+              },
+              "trigger_range": 1.5,
+              "trigger_sfx": "effect/monster/portral/fx_portal_door.pse",
+              "trigger_sfx_is_loop": false,
+              "trigger_type": 1
+            }
+          },
+          "type": "NodeInitTrap"
+        },
+        "event_action": {
+          "destroy": [],
+          "effect_trigger": [],
+          "event_effect_trigger": [],
+          "hit_destroy": [],
+          "start_effect": []
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "destroy": [
+            "destroy_pos",
+            "destroy_dir"
+          ],
+          "effect_trigger": [
+            "effect_trigger_pos",
+            "effect_trigger_dir"
+          ],
+          "event_effect_trigger": [
+            "event_effect_trigger_pos",
+            "event_effect_trigger_dir"
+          ],
+          "hit_destroy": [
+            "hit_destroy_pos",
+            "hit_destroy_dir"
+          ],
+          "start_effect": [
+            "start_effect_pos",
+            "start_effect_dir"
+          ]
+        }
+      },
+      "35": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 35
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            29
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 35,
+      "name": "behavior_lighthouse_dcs_lighthouse_summon_skill2_target_trap",
+      "preload_res_list": [
+        "effect/monster/portral/fx_portal_door_end.pse",
+        "effect/monster/melt/melt_skill_lava_trap_01_01.pse",
+        "effect/monster/melt/melt_skill_lava_trap_over.pse",
+        "effect/monster/portral/fx_portal_door.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "lighthouse_dcs",
+        "lighthouse_summon_skill2_target",
+        ""
+      ],
+      "tid": 14404
+    }
+  ]
+}

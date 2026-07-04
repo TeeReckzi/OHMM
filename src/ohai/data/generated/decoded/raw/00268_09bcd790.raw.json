@@ -1,0 +1,336 @@
+{
+  "_meta": {
+    "sourceFile": "00268_09bcd790.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00268_09bcd790.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.833Z",
+    "recordCount": 2,
+    "sourceHash": "e5fc4e617b380e6429207cf09901af12e0f8ab571bf5d8f6a4ff00c4ae559b91",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            11,
+            7
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "buff_id": 0,
+            "buff_lv": 1,
+            "effect_index": 1,
+            "mapping_buff": true,
+            "need_disable": false,
+            "physics_data": {
+              "drop_sound_event_name": "",
+              "gravity": -9.8,
+              "linear_speed": 5,
+              "restitution": 0.2,
+              "throw_dir": [
+                0,
+                0,
+                0
+              ],
+              "use_static_col": true,
+              "use_throw_perf": false
+            },
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": null,
+              "anim_graph_path": "",
+              "aoi_radius": 0,
+              "aoi_radius2": 0,
+              "can_mod_pos_y": true,
+              "combat_prototype_no": "611512",
+              "combat_unit_no": "61151001001",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": true,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": true,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": 89,
+              "dynamic_mask_level": 0,
+              "enable_damage_sync": false,
+              "head_bar_rule_list": [
+                30
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "model_path": "environment/dynamic_objects/buildingsystem/weapon/oriented_mine/claymore/directional_mine.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 0,
+              "pulse_detect_effects": [],
+              "removed_no_drop": true,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|5101010169",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": true,
+              "unit_camp_template_no": "602",
+              "unit_entity_type": "StaticGunless",
+              "unit_hold_item": "",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "unit_physics_control_data": {
+              "bounding_offset": [
+                0,
+                0,
+                0
+              ],
+              "bullet_num": 0,
+              "item_no": 0,
+              "override_physics_control": false,
+              "physical_control_enabled": false,
+              "physical_summer_control": false,
+              "physical_unit_no": "",
+              "physics_control_type": 1,
+              "show_interact_btn": true
+            }
+          },
+          "type": "NodeBuffSummon"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            2,
+            "process",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "angle_range": 180,
+            "avoid_territory": false,
+            "effect_index": 2,
+            "grid_dis": 10,
+            "max_dis": 30,
+            "min_dis": 8,
+            "num": 10,
+            "update_plane_toward": false
+          },
+          "type": "NodeGenRandomPosInAreaTask"
+        },
+        "event_action": {
+          "process": [
+            1
+          ]
+        },
+        "in_data_pin": {
+          "center_position": [
+            3,
+            "utility",
+            "output_pos"
+          ],
+          "toward_position": [
+            3,
+            "utility",
+            "output_dir"
+          ]
+        },
+        "out_data_pin": {
+          "process": [
+            "output_pos"
+          ]
+        }
+      },
+      "3": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 3,
+            "include_fly_height": false
+          },
+          "type": "NodeGetTargetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            4,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "4": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 4
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "7": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 7,
+            "loop_max_times": 0,
+            "loop_time": 90,
+            "reset_last_effect": true,
+            "start_trigger": true
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "11": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 11,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "",
+              "bind_type": 0,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "888",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                15,
+                0
+              ],
+              "res_path": "effect/boss/muspel/dd2_fire_idle01.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_60140019_1",
+      "preload_res_list": [
+        "effect/boss/muspel/dd2_fire_idle01.pse"
+      ],
+      "source_info": [
+        "buff",
+        60140019,
+        1
+      ],
+      "tid": 13177
+    }
+  ]
+}

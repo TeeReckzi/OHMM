@@ -1,0 +1,1915 @@
+{
+  "_meta": {
+    "sourceFile": "05734_c42d6d7a.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05734_c42d6d7a.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:54.473Z",
+    "recordCount": 24,
+    "sourceHash": "01cd9eb5c5e3c80e12e8baaf50293358a1226e8708e4bea4799478d6732e30fe",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_anchor_worldstone",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "102",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "WORLD_STONE",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrGameplayWorldStone": {
+          "cls_type": "RuntimeAttrGameplayWorldStone",
+          "init_state": "001",
+          "reward_no": "",
+          "submit_item_no_list": [],
+          "unlock_state_infos": [
+            {
+              "state_name": "001",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "002",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01_to_02.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_02.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "003",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_02_to_03.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_03.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020024,
+            810020059,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "001",
+          "enable_exec_state": true,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "001",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": false,
+              "tag": "001",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "002",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "003",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            "001",
+            "002",
+            "003"
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0,
+            0,
+            0,
+            0,
+            2.6546,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "worldstone",
+          "node_uuid": "6931030a03ca0a5f38ce3ef0",
+          "world_trans": [
+            2467.9062,
+            178.89,
+            -4153.9951,
+            0,
+            -3.0864,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": false,
+          "enable_vertical_occluder": false,
+          "init_model_path": "environment/dynamic_objects/world_stone/world_stone_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                1.5,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                20,
+                4,
+                20
+              ],
+              "shape": "box",
+              "tag": "001",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            },
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                4,
+                5
+              ],
+              "shape": "box",
+              "tag": "002",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "first_meet_world_stone",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "001",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "002",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_0",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            69.8924,
+            2.5421,
+            161.8728,
+            0,
+            -0.245,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_0",
+          "node_uuid": "6931030a03ca0a5f38ce3f6d",
+          "world_trans": [
+            2506.2314,
+            170.411,
+            -3800.4734,
+            0,
+            -0.245,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                22.7687,
+                14.2777,
+                26.5311
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -20.2735,
+            2.7271,
+            93.9614,
+            0,
+            -1.5708,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_1",
+          "node_uuid": "6931030a03ca0a5f38ce3f79",
+          "world_trans": [
+            2416.0657,
+            170.596,
+            -3868.3848,
+            0,
+            -1.5708,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                23.2071,
+                14.5742,
+                28.5641
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_1",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_10",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -108.4363,
+            18.8342,
+            -138.0563,
+            0,
+            -0.0454,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_10",
+          "node_uuid": "6931030a03ca0a5f38ce3f6b",
+          "world_trans": [
+            2327.9028,
+            186.7031,
+            -4100.4023,
+            0,
+            -0.0454,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                32.1294,
+                25.5954,
+                54.0511
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_10",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -74.0158,
+            3.6507,
+            85.1422,
+            0,
+            0.0997,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_2",
+          "node_uuid": "6931030a03ca0a5f38ce3f76",
+          "world_trans": [
+            2362.3232,
+            171.5196,
+            -3877.2041,
+            0,
+            0.0997,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                29.5526,
+                16.5362,
+                32.4496
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_2",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -39.9112,
+            8.6403,
+            -15.4605,
+            0,
+            -1.5708,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_3",
+          "node_uuid": "6931030a03ca0a5f38ce3f6f",
+          "world_trans": [
+            2396.428,
+            176.5092,
+            -3977.8066,
+            0,
+            -1.5708,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                30.618,
+                29.3262,
+                202.2417
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_3",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_4",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0.3768,
+            4.1374,
+            52.2605,
+            0,
+            1.4056,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_4",
+          "node_uuid": "6931030a03ca0a5f38ce3f7b",
+          "world_trans": [
+            2436.7158,
+            172.0063,
+            -3910.0857,
+            0,
+            1.4056,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                25.9569,
+                17.9018,
+                36.7224
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_4",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_5",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            63.7261,
+            3.2729,
+            38.2364,
+            0,
+            -1.4877,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_5",
+          "node_uuid": "6931030a03ca0a5f38ce3f5c",
+          "world_trans": [
+            2500.0652,
+            171.1418,
+            -3924.1099,
+            0,
+            -1.4877,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                28.7134,
+                15.8687,
+                34.4642
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_5",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_6",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            34.497,
+            8.4896,
+            -53.12,
+            0,
+            1.0304,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_6",
+          "node_uuid": "6931030a03ca0a5f38ce3f5f",
+          "world_trans": [
+            2470.8362,
+            176.3585,
+            -4015.4663,
+            0,
+            1.0304,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                25.4155,
+                26.377,
+                170.6246
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_6",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_7",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -1.9603,
+            13.2664,
+            -124.084,
+            0,
+            1.2925,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_7",
+          "node_uuid": "6931030a03ca0a5f38ce3f5a",
+          "world_trans": [
+            2434.3789,
+            181.1353,
+            -4086.4302,
+            0,
+            1.2925,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                32.9817,
+                35.8492,
+                214.4174
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_7",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_8",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            69.3373,
+            36.7561,
+            -21.1971,
+            0,
+            0.1651,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_8",
+          "node_uuid": "6931030a03ca0a5f38ce3f75",
+          "world_trans": [
+            2505.6765,
+            204.625,
+            -3983.5432,
+            0,
+            0.1651,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                27.8855,
+                63.0562,
+                123.94
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_8",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_acoustic_bake_9",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -88.9485,
+            13.4473,
+            -75.7636,
+            0,
+            -0.6107,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_9",
+          "node_uuid": "6931030a03ca0a5f38ce3f5d",
+          "world_trans": [
+            2347.3906,
+            181.3162,
+            -4038.1099,
+            0,
+            -0.6107,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                29.2656,
+                16.5773,
+                38.8958
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t4_d_9",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_bedroom1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -68.8967,
+            -0.8486,
+            49.9573,
+            0,
+            0,
+            0,
+            3.6325,
+            3.1661,
+            7.3239
+          ],
+          "name": "bedroom1",
+          "node_uuid": "6931030a03ca0a5f38ce3f6e",
+          "world_trans": [
+            2375.2783,
+            169.9769,
+            -3911.2573,
+            0,
+            0,
+            0,
+            3.6325,
+            3.1661,
+            7.3239
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_bedroom2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -72.009,
+            -0.7381,
+            104.5098,
+            0,
+            0,
+            0,
+            3.6249,
+            3.2023,
+            7.3516
+          ],
+          "name": "bedroom2",
+          "node_uuid": "6931030a03ca0a5f38ce3f5b",
+          "world_trans": [
+            2372.166,
+            170.0874,
+            -3856.7048,
+            0,
+            0,
+            0,
+            3.6249,
+            3.2023,
+            7.3516
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_bedroom3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -89.5349,
+            0.1909,
+            84.8948,
+            0,
+            0,
+            0,
+            3.7951,
+            3.0909,
+            7.2594
+          ],
+          "name": "bedroom3",
+          "node_uuid": "6931030a03ca0a5f38ce3f63",
+          "world_trans": [
+            2354.6401,
+            171.0164,
+            -3876.3198,
+            0,
+            0,
+            0,
+            3.7951,
+            3.0909,
+            7.2594
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_bedroom4",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -41.8462,
+            4.1852,
+            79.0698,
+            0,
+            0.0243,
+            0,
+            7.4933,
+            3.36,
+            6.0391
+          ],
+          "name": "bedroom4",
+          "node_uuid": "6931030a03ca0a5f38ce3f74",
+          "world_trans": [
+            2402.3289,
+            175.0107,
+            -3882.1448,
+            0,
+            0.0243,
+            0,
+            7.4933,
+            3.36,
+            6.0391
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_bedroom5",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -43.1133,
+            4.1818,
+            58.9387,
+            0,
+            0.0167,
+            0,
+            9.4659,
+            3.3305,
+            5.0599
+          ],
+          "name": "bedroom5",
+          "node_uuid": "6931030a03ca0a5f38ce3f5e",
+          "world_trans": [
+            2401.0618,
+            175.0073,
+            -3902.2759,
+            0,
+            0.0167,
+            0,
+            9.4659,
+            3.3305,
+            5.0599
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_bunker",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0.3318,
+            -13.9439,
+            104.4512,
+            0,
+            0,
+            0,
+            107.8731,
+            19.3235,
+            150.6803
+          ],
+          "name": "bunker",
+          "node_uuid": "6931030a03ca0a5f38ce3f70",
+          "world_trans": [
+            2444.5068,
+            156.8816,
+            -3856.7634,
+            0,
+            0,
+            0,
+            107.8731,
+            19.3235,
+            150.6803
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_toilet1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            5.6033,
+            -0.4772,
+            4.6326,
+            0,
+            0,
+            0,
+            2.9669,
+            3.3276,
+            3.5963
+          ],
+          "name": "toilet1",
+          "node_uuid": "6931030a03ca0a5f38ce3f73",
+          "world_trans": [
+            2449.7783,
+            170.3483,
+            -3956.582,
+            0,
+            0,
+            0,
+            2.9669,
+            3.3276,
+            3.5963
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_toilet2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -72.5295,
+            -0.7717,
+            48.1052,
+            0,
+            0,
+            0,
+            3.1692,
+            3.1625,
+            3.6144
+          ],
+          "name": "toilet2",
+          "node_uuid": "6931030a03ca0a5f38ce3f78",
+          "world_trans": [
+            2371.6455,
+            170.0538,
+            -3913.1094,
+            0,
+            0,
+            0,
+            3.1692,
+            3.1625,
+            3.6144
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_toilet3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -75.6396,
+            -0.7859,
+            102.6982,
+            0,
+            0,
+            0,
+            3.1743,
+            3.0682,
+            3.6485
+          ],
+          "name": "toilet3",
+          "node_uuid": "6931030a03ca0a5f38ce3f6c",
+          "world_trans": [
+            2368.5354,
+            170.0396,
+            -3858.5164,
+            0,
+            0,
+            0,
+            3.1743,
+            3.0682,
+            3.6485
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_toilet4",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -85.8198,
+            0.1884,
+            86.7219,
+            0,
+            0,
+            0,
+            3.1703,
+            3.1052,
+            3.494
+          ],
+          "name": "toilet4",
+          "node_uuid": "6931030a03ca0a5f38ce3f67",
+          "world_trans": [
+            2358.3552,
+            171.0139,
+            -3874.4927,
+            0,
+            0,
+            0,
+            3.1703,
+            3.1052,
+            3.494
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_toilet5",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -47.9299,
+            0.2569,
+            70.8657,
+            0,
+            0.0339,
+            0,
+            4.0982,
+            3.4849,
+            6.0951
+          ],
+          "name": "toilet5",
+          "node_uuid": "6931030a03ca0a5f38ce3f60",
+          "world_trans": [
+            2396.2451,
+            171.0824,
+            -3890.3489,
+            0,
+            0.0339,
+            0,
+            4.0982,
+            3.4849,
+            6.0951
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70B0A-0E240000-7C4A11A2-73A01142_default_warehouse",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t4_d_598160",
+          "season_config": {}
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -0.781,
+            -0.2731,
+            -0.6382,
+            0,
+            0,
+            0,
+            3.112,
+            3.736,
+            3.6406
+          ],
+          "name": "warehouse",
+          "node_uuid": "6931030a03ca0a5f38ce3f69",
+          "world_trans": [
+            2443.394,
+            170.5524,
+            -3961.8528,
+            0,
+            0,
+            0,
+            3.112,
+            3.736,
+            3.6406
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

@@ -25,6 +25,7 @@ export function resolveModEffects(
   selectedModIds: string[],
   uptimeProfile?: UptimeProfileName,
   customAssumptions?: Partial<CombatStateAssumptions>,
+  suffixTiers?: Record<string, number>,
 ): EffectPipelineItem[] {
   const results: EffectPipelineItem[] = [];
   const effectiveProfile = uptimeProfile ?? defaultUptimeProfileName();
@@ -92,7 +93,18 @@ export function resolveModEffects(
     // Each stat row is independent (core + suffix + "substat" rows)
     rawMods.forEach((sm: any, idx: number) => {
       const isSub = idx > 0 || /sub|random|additional|extra/i.test((m as any).effectSummary || '');
-      const scaledValue = sm.value * contribution;
+
+      // Resolve tier value for suffix mods with tierValues
+      let baseValue = sm.value;
+      if (sm.tierValues && sm.tierValues.length > 0 && !isCore) {
+        // Determine tier for this mod's slot
+        const slotName = (m as any).modSlot as string;
+        const tier = suffixTiers?.[slotName] ?? 5; // Default tier 5 (common endgame target)
+        const idx2 = Math.max(0, Math.min(tier - 1, sm.tierValues.length - 1));
+        baseValue = sm.tierValues[idx2];
+      }
+
+      const scaledValue = baseValue * contribution;
       const conditionalSuffix = evaluation
         ? ` [Conditional: ${Math.round(evaluation.contributionFactor * 100)}% scale, ${Math.round(evaluation.effectiveUptime * 100)}% uptime, ${evaluation.effectiveStacks}/${evaluation.maxStacks} stacks. ${evaluation.explanation}]`
         : '';

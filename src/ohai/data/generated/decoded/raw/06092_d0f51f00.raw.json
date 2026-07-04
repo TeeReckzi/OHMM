@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "sourceFile": "06092_d0f51f00.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06092_d0f51f00.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:55.063Z",
+    "recordCount": 2,
+    "sourceHash": "accda41b008f380725c8ab19d18d655374a8e6e3e3e4f7723fc57fbf76f0f35d",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "29": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 29
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            32
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "32": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "aoi_radius": 10,
+            "describe_text": {
+              "lan_translate": [
+                "当前无法使用_$S@TIDS$_5m1k|0"
+              ]
+            },
+            "effect_index": 32,
+            "explain_text": {
+              "lan_translate": [
+                "请静待引力之渊开启_$S@TIDS$_5m1k|0"
+              ]
+            },
+            "is_aoi_tip": false,
+            "is_single_tip": false,
+            "match_id": "",
+            "need_disable": false,
+            "notify_main_client": true,
+            "reset": false,
+            "show_time": 3,
+            "ui_state_up": 1
+          },
+          "type": "NodeShowMechanismTip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 29,
+      "name": "behavior_player_item_uppower_set_no_use",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "item_uppower_set",
+        ""
+      ],
+      "tid": 16044
+    }
+  ]
+}

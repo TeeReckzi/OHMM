@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "sourceFile": "04580_9c8fb2e1.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04580_9c8fb2e1.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:51.305Z",
+    "recordCount": 2,
+    "sourceHash": "290046938ae9efcef0c753a8562ed5ea6f6b8361b7fd355d3224cbce499897b1",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            6
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "6": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 6,
+            "enter_max_times": -1,
+            "exit_max_times": -1,
+            "perceive_tag": "rock",
+            "select_data": {
+              "select_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": false
+                },
+                "label_camp": {
+                  "label_camp_rule": 1,
+                  "label_enemy": false,
+                  "label_enemy_only_editor0": true,
+                  "label_enemy_only_editor1": false,
+                  "label_friend": false,
+                  "label_friend_only_editor0": true,
+                  "label_friend_only_editor1": false,
+                  "label_neutral": false,
+                  "label_neutral_only_editor0": true,
+                  "label_neutral_only_editor1": false,
+                  "label_self": false
+                }
+              }
+            }
+          },
+          "type": "NodeSetPerceivedEvent"
+        },
+        "event_action": {
+          "enter": [
+            8
+          ],
+          "exit": []
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "enter": [
+            "enter_id"
+          ],
+          "exit": [
+            "exit_id"
+          ]
+        }
+      },
+      "8": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "buff_id": 501100043,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::501100043"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 8
+          },
+          "type": "NodeBuffCheckerTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            24,
+            25
+          ]
+        },
+        "in_data_pin": {
+          "target_id": [
+            6,
+            "enter",
+            "enter_id"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "24": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 24,
+            "need_disable": false
+          },
+          "type": "NodeBlastEntity"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "delay_time": 2
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "25": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.5,
+            "effect_index": 25
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            26
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "26": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "body_disappear_keep_time": 10,
+            "body_fade_out_start_time": 6,
+            "body_fade_out_time_length": 2,
+            "custom_death_data": false,
+            "death_cause": 13,
+            "death_effect_scale": 0,
+            "death_effect_type": 0,
+            "effect_index": 26,
+            "enable_ragdoll": true,
+            "force_drop": false,
+            "need_disable": false,
+            "normal_suicide": true
+          },
+          "type": "NodeSuicide"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "27": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 27,
+            "value": 2
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_501100038_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        501100038,
+        1
+      ],
+      "tid": 16319
+    }
+  ]
+}

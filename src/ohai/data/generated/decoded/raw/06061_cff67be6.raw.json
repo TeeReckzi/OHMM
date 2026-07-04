@@ -1,0 +1,2217 @@
+{
+  "_meta": {
+    "sourceFile": "06061_cff67be6.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06061_cff67be6.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:55.012Z",
+    "recordCount": 2,
+    "sourceHash": "a5ccd3304c19337d44fa04461e85aecd3823f70f2404396a5714876fcf0e54ea",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            9,
+            7,
+            23,
+            24,
+            25
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "7": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 7,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_1",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "warning1",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_warning.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_1",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 2,
+            "effect_index": 9
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            12,
+            11,
+            26,
+            29,
+            27,
+            44
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "10": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 1,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 10,
+            "mount_uid": "warning1",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "11": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 11,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_1",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "switch1",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_switch.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_1",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "12": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 2,
+            "effect_index": 12
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            19,
+            63,
+            60,
+            14,
+            33,
+            36,
+            34,
+            35
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "13": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 1,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 13,
+            "mount_uid": "switch1",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "14": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 14,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_1",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "attack1",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_attack.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_1",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "17": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 17,
+            "mount_uid": "attack1",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "19": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 49,
+            "effect_index": 19
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            40
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "23": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 23,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_2",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "warning2",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_warning.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_2",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "24": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 24,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_3",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "warning3",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_warning.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_3",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "25": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 25,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_4",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "warning4",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_warning.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_4",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "26": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 26,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_2",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "switch2",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_switch.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_2",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "27": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 27,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_3",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "switch3",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_switch.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_3",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "29": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 29
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            10,
+            30,
+            31,
+            32
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "30": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 1,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 30,
+            "mount_uid": "warning2",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "31": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 1,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 31,
+            "mount_uid": "warning3",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "32": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 1,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 32,
+            "mount_uid": "warning4",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "33": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 33,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_2",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "attack2",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_attack.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_2",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "34": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 34,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_3",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "attack3",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_attack.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_3",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "35": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 35,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_4",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "attack4",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_attack.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_4",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "36": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 36
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            13,
+            37,
+            39,
+            38
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "37": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 1,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 37,
+            "mount_uid": "switch2",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "38": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 1,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 38,
+            "mount_uid": "switch3",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "39": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 1,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 39,
+            "mount_uid": "switch4",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "40": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 40
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            17,
+            41,
+            42,
+            43
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "41": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 41,
+            "mount_uid": "attack2",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "42": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 42,
+            "mount_uid": "attack3",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "43": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_type": 0,
+            "delta_time": 0.03,
+            "delta_val": 0.02,
+            "effect_index": 43,
+            "mount_uid": "attack4",
+            "need_disable": false
+          },
+          "type": "NodeDelMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "44": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 44,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "rotation_4",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "switch4",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energywall_switch.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                60,
+                5,
+                20
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "rotation_4",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "45": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "box_data": {
+              "angle": 60,
+              "atk_lose_color_tags": [],
+              "attack_box_hit_dir_type": 0,
+              "attack_box_type": 0,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_friend": false,
+                  "label_neutral": false,
+                  "label_self": false
+                }
+              },
+              "attenuation_factor": 0,
+              "be_hit_sfx_no": "",
+              "block_filter": false,
+              "block_filter_size": 0.5,
+              "can_destroy_tree": false,
+              "can_swing_tree": false,
+              "config_be_hit_dir": [
+                0,
+                0,
+                0
+              ],
+              "config_hit_sfx_dir": false,
+              "disregard_block_normal": false,
+              "disregard_building": false,
+              "disregard_collection": false,
+              "disregard_environment": true,
+              "disregard_shield": false,
+              "disregard_terrain": false,
+              "enable_cost_durability": false,
+              "env_col_box_size": [
+                1,
+                1,
+                1
+              ],
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "env_collision_shape": 2,
+              "env_collision_type": 1,
+              "filter_num": 0,
+              "filter_rule": 0,
+              "group_id": 1,
+              "group_id_behavior_range": false,
+              "height": 0.5,
+              "hit_sfx_dir": [
+                0,
+                0,
+                0
+              ],
+              "hit_sound_event": "",
+              "ignore_scale": true,
+              "inner_radius": 0,
+              "mute_entity_hit_sound": false,
+              "mute_env_hit_sound": false,
+              "mute_hit_sound": false,
+              "need_group": false,
+              "pos_off": [
+                -35,
+                -7,
+                0
+              ],
+              "preferentially_select_destroy_part": false,
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                35,
+                8,
+                0.1
+              ],
+              "select_hit_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "select_owned_summon": true,
+              "shape": 1,
+              "simple_check": {
+                "angle_data": {
+                  "local_angle": 0,
+                  "offset_angle": 3.1416
+                },
+                "distance_data": {
+                  "max_distance": 71.5959,
+                  "min_distance": -0.2096
+                }
+              },
+              "strike_death": false,
+              "swing_size": [
+                1,
+                1,
+                1
+              ],
+              "thickness": 0.5,
+              "with_building_attack": true
+            },
+            "detect_interval_time": 0.05,
+            "dir_type": 1,
+            "effect_index": 45,
+            "in_behavior_range": true,
+            "large_range_flag": false,
+            "match_id": "1",
+            "ray_sfx_match_id": "",
+            "target_name": "rotation_1",
+            "target_type": 1,
+            "total_time": 8
+          },
+          "type": "NodeDurativeAttackBox"
+        },
+        "event_action": {
+          "hit": [],
+          "process": [
+            47
+          ],
+          "process_building": []
+        },
+        "in_data_pin": {
+          "center_pos": [
+            46,
+            "utility",
+            "output_pos"
+          ],
+          "damage_pos": [
+            46,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {
+          "hit": [
+            "hit_list"
+          ],
+          "process": [
+            "hit_info"
+          ],
+          "process_building": [
+            "hit_building_info_lst"
+          ]
+        }
+      },
+      "46": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 46
+          },
+          "type": "NodeGetCasterPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "47": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "damage_data": {
+              "attack_level": 1,
+              "be_hit_type": 0,
+              "box_damage_rate": 1,
+              "damage_feature_type": 0,
+              "death_cause": 0,
+              "direct_damage_ignore_field": true,
+              "element_type": 0,
+              "extra_toughness_dam_rate": 1,
+              "force_jump_word": false,
+              "formula_attack_type": 0,
+              "ignore_field": false,
+              "ignore_structure_field": false,
+              "invincible_tag": [],
+              "knock_back_dis": 0,
+              "need_knock_back": false,
+              "recycle_weapon": false,
+              "rm_sync_point_name": "",
+              "sub_melee_attack_type": 0
+            },
+            "damage_select_arg": {
+              "hard_hit_type": 0,
+              "hard_hit_units": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "ignore_hard_hit_cd": false,
+              "is_select_entity": false
+            },
+            "effect_index": 47,
+            "need_disable": false,
+            "source_behavior": ""
+          },
+          "type": "NodeDamage"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "hit_info": [
+            45,
+            "process",
+            "hit_info"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "49": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 49
+          },
+          "type": "NodeGetCasterPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "50": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "box_data": {
+              "angle": 60,
+              "atk_lose_color_tags": [],
+              "attack_box_hit_dir_type": 0,
+              "attack_box_type": 0,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_friend": false,
+                  "label_neutral": false,
+                  "label_self": false
+                }
+              },
+              "attenuation_factor": 0,
+              "be_hit_sfx_no": "",
+              "block_filter": false,
+              "block_filter_size": 0.5,
+              "can_destroy_tree": false,
+              "can_swing_tree": false,
+              "config_be_hit_dir": [
+                0,
+                0,
+                0
+              ],
+              "config_hit_sfx_dir": false,
+              "disregard_block_normal": false,
+              "disregard_building": false,
+              "disregard_collection": false,
+              "disregard_environment": true,
+              "disregard_shield": false,
+              "disregard_terrain": false,
+              "enable_cost_durability": false,
+              "env_col_box_size": [
+                1,
+                1,
+                1
+              ],
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "env_collision_shape": 2,
+              "env_collision_type": 1,
+              "filter_num": 0,
+              "filter_rule": 0,
+              "group_id": 1,
+              "group_id_behavior_range": false,
+              "height": 0.5,
+              "hit_sfx_dir": [
+                0,
+                0,
+                0
+              ],
+              "hit_sound_event": "",
+              "ignore_scale": true,
+              "inner_radius": 0,
+              "mute_entity_hit_sound": false,
+              "mute_env_hit_sound": false,
+              "mute_hit_sound": false,
+              "need_group": false,
+              "pos_off": [
+                -35,
+                -7,
+                0
+              ],
+              "preferentially_select_destroy_part": false,
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                35,
+                8,
+                0.1
+              ],
+              "select_hit_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "select_owned_summon": true,
+              "shape": 1,
+              "simple_check": {
+                "angle_data": {
+                  "local_angle": 0,
+                  "offset_angle": 3.1416
+                },
+                "distance_data": {
+                  "max_distance": 71.5959,
+                  "min_distance": -0.2096
+                }
+              },
+              "strike_death": false,
+              "swing_size": [
+                1,
+                1,
+                1
+              ],
+              "thickness": 0.5,
+              "with_building_attack": true
+            },
+            "detect_interval_time": 0.05,
+            "dir_type": 1,
+            "effect_index": 50,
+            "in_behavior_range": true,
+            "large_range_flag": false,
+            "match_id": "2",
+            "ray_sfx_match_id": "",
+            "target_name": "rotation_2",
+            "target_type": 1,
+            "total_time": 8
+          },
+          "type": "NodeDurativeAttackBox"
+        },
+        "event_action": {
+          "hit": [],
+          "process": [
+            51
+          ],
+          "process_building": []
+        },
+        "in_data_pin": {
+          "center_pos": [
+            49,
+            "utility",
+            "output_pos"
+          ],
+          "damage_pos": [
+            49,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {
+          "hit": [
+            "hit_list"
+          ],
+          "process": [
+            "hit_info"
+          ],
+          "process_building": [
+            "hit_building_info_lst"
+          ]
+        }
+      },
+      "51": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "damage_data": {
+              "attack_level": 1,
+              "be_hit_type": 0,
+              "box_damage_rate": 1,
+              "damage_feature_type": 0,
+              "death_cause": 0,
+              "direct_damage_ignore_field": true,
+              "element_type": 0,
+              "extra_toughness_dam_rate": 1,
+              "force_jump_word": false,
+              "formula_attack_type": 0,
+              "ignore_field": false,
+              "ignore_structure_field": false,
+              "invincible_tag": [],
+              "knock_back_dis": 0,
+              "need_knock_back": false,
+              "recycle_weapon": false,
+              "rm_sync_point_name": "",
+              "sub_melee_attack_type": 0
+            },
+            "damage_select_arg": {
+              "hard_hit_type": 0,
+              "hard_hit_units": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "ignore_hard_hit_cd": false,
+              "is_select_entity": false
+            },
+            "effect_index": 51,
+            "need_disable": false,
+            "source_behavior": ""
+          },
+          "type": "NodeDamage"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "hit_info": [
+            50,
+            "process",
+            "hit_info"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "52": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "box_data": {
+              "angle": 60,
+              "atk_lose_color_tags": [],
+              "attack_box_hit_dir_type": 0,
+              "attack_box_type": 0,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_friend": false,
+                  "label_neutral": false,
+                  "label_self": false
+                }
+              },
+              "attenuation_factor": 0,
+              "be_hit_sfx_no": "",
+              "block_filter": false,
+              "block_filter_size": 0.5,
+              "can_destroy_tree": false,
+              "can_swing_tree": false,
+              "config_be_hit_dir": [
+                0,
+                0,
+                0
+              ],
+              "config_hit_sfx_dir": false,
+              "disregard_block_normal": false,
+              "disregard_building": false,
+              "disregard_collection": false,
+              "disregard_environment": true,
+              "disregard_shield": false,
+              "disregard_terrain": false,
+              "enable_cost_durability": false,
+              "env_col_box_size": [
+                1,
+                1,
+                1
+              ],
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "env_collision_shape": 2,
+              "env_collision_type": 1,
+              "filter_num": 0,
+              "filter_rule": 0,
+              "group_id": 1,
+              "group_id_behavior_range": false,
+              "height": 0.5,
+              "hit_sfx_dir": [
+                0,
+                0,
+                0
+              ],
+              "hit_sound_event": "",
+              "ignore_scale": true,
+              "inner_radius": 0,
+              "mute_entity_hit_sound": false,
+              "mute_env_hit_sound": false,
+              "mute_hit_sound": false,
+              "need_group": false,
+              "pos_off": [
+                -35,
+                -7,
+                0
+              ],
+              "preferentially_select_destroy_part": false,
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                35,
+                8,
+                0.1
+              ],
+              "select_hit_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "select_owned_summon": true,
+              "shape": 1,
+              "simple_check": {
+                "angle_data": {
+                  "local_angle": 0,
+                  "offset_angle": 3.1416
+                },
+                "distance_data": {
+                  "max_distance": 71.5959,
+                  "min_distance": -0.2096
+                }
+              },
+              "strike_death": false,
+              "swing_size": [
+                1,
+                1,
+                1
+              ],
+              "thickness": 0.5,
+              "with_building_attack": true
+            },
+            "detect_interval_time": 0.05,
+            "dir_type": 1,
+            "effect_index": 52,
+            "in_behavior_range": true,
+            "large_range_flag": false,
+            "match_id": "3",
+            "ray_sfx_match_id": "",
+            "target_name": "rotation_3",
+            "target_type": 1,
+            "total_time": 8
+          },
+          "type": "NodeDurativeAttackBox"
+        },
+        "event_action": {
+          "hit": [],
+          "process": [
+            53
+          ],
+          "process_building": []
+        },
+        "in_data_pin": {
+          "center_pos": [
+            54,
+            "utility",
+            "output_pos"
+          ],
+          "damage_pos": [
+            54,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {
+          "hit": [
+            "hit_list"
+          ],
+          "process": [
+            "hit_info"
+          ],
+          "process_building": [
+            "hit_building_info_lst"
+          ]
+        }
+      },
+      "53": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "damage_data": {
+              "attack_level": 1,
+              "be_hit_type": 0,
+              "box_damage_rate": 1,
+              "damage_feature_type": 0,
+              "death_cause": 0,
+              "direct_damage_ignore_field": true,
+              "element_type": 0,
+              "extra_toughness_dam_rate": 1,
+              "force_jump_word": false,
+              "formula_attack_type": 0,
+              "ignore_field": false,
+              "ignore_structure_field": false,
+              "invincible_tag": [],
+              "knock_back_dis": 0,
+              "need_knock_back": false,
+              "recycle_weapon": false,
+              "rm_sync_point_name": "",
+              "sub_melee_attack_type": 0
+            },
+            "damage_select_arg": {
+              "hard_hit_type": 0,
+              "hard_hit_units": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "ignore_hard_hit_cd": false,
+              "is_select_entity": false
+            },
+            "effect_index": 53,
+            "need_disable": false,
+            "source_behavior": ""
+          },
+          "type": "NodeDamage"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "hit_info": [
+            52,
+            "process",
+            "hit_info"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "54": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 54
+          },
+          "type": "NodeGetCasterPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "55": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "box_data": {
+              "angle": 60,
+              "atk_lose_color_tags": [],
+              "attack_box_hit_dir_type": 0,
+              "attack_box_type": 0,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_friend": false,
+                  "label_neutral": false,
+                  "label_self": false
+                }
+              },
+              "attenuation_factor": 0,
+              "be_hit_sfx_no": "",
+              "block_filter": false,
+              "block_filter_size": 0.5,
+              "can_destroy_tree": false,
+              "can_swing_tree": false,
+              "config_be_hit_dir": [
+                0,
+                0,
+                0
+              ],
+              "config_hit_sfx_dir": false,
+              "disregard_block_normal": false,
+              "disregard_building": false,
+              "disregard_collection": false,
+              "disregard_environment": true,
+              "disregard_shield": false,
+              "disregard_terrain": false,
+              "enable_cost_durability": false,
+              "env_col_box_size": [
+                1,
+                1,
+                1
+              ],
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "env_collision_shape": 2,
+              "env_collision_type": 1,
+              "filter_num": 0,
+              "filter_rule": 0,
+              "group_id": 1,
+              "group_id_behavior_range": false,
+              "height": 0.5,
+              "hit_sfx_dir": [
+                0,
+                0,
+                0
+              ],
+              "hit_sound_event": "",
+              "ignore_scale": true,
+              "inner_radius": 0,
+              "mute_entity_hit_sound": false,
+              "mute_env_hit_sound": false,
+              "mute_hit_sound": false,
+              "need_group": false,
+              "pos_off": [
+                -35,
+                -7,
+                0
+              ],
+              "preferentially_select_destroy_part": false,
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                35,
+                8,
+                0.1
+              ],
+              "select_hit_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "select_owned_summon": true,
+              "shape": 1,
+              "simple_check": {
+                "angle_data": {
+                  "local_angle": 0,
+                  "offset_angle": 3.1416
+                },
+                "distance_data": {
+                  "max_distance": 71.5959,
+                  "min_distance": -0.2096
+                }
+              },
+              "strike_death": false,
+              "swing_size": [
+                1,
+                1,
+                1
+              ],
+              "thickness": 0.5,
+              "with_building_attack": true
+            },
+            "detect_interval_time": 0.05,
+            "dir_type": 1,
+            "effect_index": 55,
+            "in_behavior_range": true,
+            "large_range_flag": false,
+            "match_id": "4",
+            "ray_sfx_match_id": "",
+            "target_name": "rotation_4",
+            "target_type": 1,
+            "total_time": 8
+          },
+          "type": "NodeDurativeAttackBox"
+        },
+        "event_action": {
+          "hit": [],
+          "process": [
+            56
+          ],
+          "process_building": []
+        },
+        "in_data_pin": {
+          "center_pos": [
+            57,
+            "utility",
+            "output_pos"
+          ],
+          "damage_pos": [
+            57,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {
+          "hit": [
+            "hit_list"
+          ],
+          "process": [
+            "hit_info"
+          ],
+          "process_building": [
+            "hit_building_info_lst"
+          ]
+        }
+      },
+      "56": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "damage_data": {
+              "attack_level": 1,
+              "be_hit_type": 0,
+              "box_damage_rate": 1,
+              "damage_feature_type": 0,
+              "death_cause": 0,
+              "direct_damage_ignore_field": true,
+              "element_type": 0,
+              "extra_toughness_dam_rate": 1,
+              "force_jump_word": false,
+              "formula_attack_type": 0,
+              "ignore_field": false,
+              "ignore_structure_field": false,
+              "invincible_tag": [],
+              "knock_back_dis": 0,
+              "need_knock_back": false,
+              "recycle_weapon": false,
+              "rm_sync_point_name": "",
+              "sub_melee_attack_type": 0
+            },
+            "damage_select_arg": {
+              "hard_hit_type": 0,
+              "hard_hit_units": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "ignore_hard_hit_cd": false,
+              "is_select_entity": false
+            },
+            "effect_index": 56,
+            "need_disable": false,
+            "source_behavior": ""
+          },
+          "type": "NodeDamage"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "hit_info": [
+            55,
+            "process",
+            "hit_info"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "57": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 57
+          },
+          "type": "NodeGetCasterPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "58": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 58
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            45,
+            50,
+            52,
+            55
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "59": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 59,
+            "loop_time": 8.1,
+            "start_trigger": true,
+            "total_time": 49
+          },
+          "type": "NodeLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            58
+          ],
+          "time_out": []
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": [],
+          "time_out": []
+        }
+      },
+      "60": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 60
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            59
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "63": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_path": "character/empty/animation/flower_rotation_left.animation",
+            "effect_index": 63,
+            "loop": false,
+            "model_name": "ball",
+            "need_disable": false
+          },
+          "type": "NodePrefabPlayModelAnim"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "behavior_tongyong_lighthouse_flower_rotation_left_rotation",
+      "preload_res_list": [
+        "effect/boss/lighthouse/light_flower_energywall_warning.pse",
+        "effect/boss/lighthouse/light_flower_energywall_switch.pse",
+        "effect/boss/lighthouse/light_flower_energywall_attack.pse",
+        "effect/boss/lighthouse/light_flower_energywall_attack.pse",
+        "effect/boss/lighthouse/light_flower_energywall_attack.pse",
+        "effect/boss/lighthouse/light_flower_energywall_attack.pse",
+        "effect/boss/lighthouse/light_flower_energywall_switch.pse",
+        "effect/boss/lighthouse/light_flower_energywall_switch.pse",
+        "effect/boss/lighthouse/light_flower_energywall_switch.pse",
+        "effect/boss/lighthouse/light_flower_energywall_warning.pse",
+        "effect/boss/lighthouse/light_flower_energywall_warning.pse",
+        "effect/boss/lighthouse/light_flower_energywall_warning.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "tongyong",
+        "lighthouse_flower_rotation_left",
+        ""
+      ],
+      "tid": 16222
+    }
+  ]
+}

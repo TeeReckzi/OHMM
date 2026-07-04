@@ -1,0 +1,366 @@
+{
+  "_meta": {
+    "sourceFile": "05333_b628edb5.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05333_b628edb5.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:53.794Z",
+    "recordCount": 2,
+    "sourceHash": "f8a910ad60989ee32e6ee79c7cd11d62dcf35f2374e79f6b46d88cd701e5931a",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            20,
+            17,
+            2,
+            13
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 2,
+            "headbar_rule_list": [
+              2
+            ],
+            "need_disable": true,
+            "reset": true
+          },
+          "type": "NodeChangeHearBarRuleList"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "12": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 12,
+            "headbar_rule_list": [
+              4
+            ],
+            "need_disable": true,
+            "reset": true
+          },
+          "type": "NodeChangeHearBarRuleList"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "13": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 13,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 14636698830008320,
+                "params": {
+                  "check_args": {
+                    "attack_negate": false,
+                    "attack_type": [],
+                    "bullet_hit_source": false,
+                    "check_all_bullet": false,
+                    "check_all_hit": false,
+                    "check_all_hit_same_one": true,
+                    "check_detect_mark": false,
+                    "check_hit_source": false,
+                    "check_node": false,
+                    "check_weapon_no": false,
+                    "crit_attack": false,
+                    "damage_feature_negate": false,
+                    "damage_feature_type": [],
+                    "element_negate": false,
+                    "element_type": [],
+                    "formula_attack_type": [],
+                    "formula_negate": false,
+                    "hit_part": [],
+                    "hit_part_negate": false,
+                    "in_weapon_range": false,
+                    "keyword": [],
+                    "keyword_negate": false,
+                    "keyword_tag": [],
+                    "keyword_tag_negate": false,
+                    "multi_bullet_one_attack": true,
+                    "node_index": -1,
+                    "sub_melee_attack_negate": false,
+                    "sub_melee_attack_type": [],
+                    "target_negate": false,
+                    "target_type": [],
+                    "unit_species": [],
+                    "unit_species_negate": false,
+                    "weak_attack": false,
+                    "weapon_no": []
+                  },
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_attacked"
+                  ],
+                  "role": 0
+                },
+                "type": "attacked_checker"
+              },
+              {
+                "checker_sid": 14636699903750144,
+                "params": {
+                  "add_buff": false,
+                  "buff_id": 500002073,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "mapping_buff": true,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::500002073"
+                  ],
+                  "role": 0
+                },
+                "type": "change_buff_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 0
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            21,
+            12,
+            23
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "16": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "delay_remove": true,
+            "delay_remove_time": 3,
+            "effect_index": 16,
+            "need_disable": false,
+            "sfx_budget_rule_id": 500,
+            "sfx_loop": false,
+            "sfx_path": "effect/task/endlessdream/sight/effect_dreambox_footprints_start.pse",
+            "sfx_scale": [
+              2,
+              2,
+              2
+            ],
+            "use_radius_offset": false,
+            "visual_selection": -1
+          },
+          "type": "NodeCreateSfx"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "dir": [
+            19,
+            "utility",
+            "output_dir"
+          ],
+          "pos": [
+            19,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "17": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 17,
+            "loop_max_times": 0,
+            "loop_time": 1,
+            "reset_last_effect": false,
+            "start_trigger": false
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            16
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "18": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 18
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "19": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 19,
+            "include_fly_height": false
+          },
+          "type": "NodeGetTargetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            18,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "20": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_tag": false,
+            "effect_index": 20,
+            "need_disable": true,
+            "reset": true,
+            "val": "dreambox"
+          },
+          "type": "NodeSetUnitInvisibleTag"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "21": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_tag": true,
+            "effect_index": 21,
+            "need_disable": true,
+            "reset": true,
+            "val": "dreambox"
+          },
+          "type": "NodeSetUnitInvisibleTag"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "23": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 23,
+            "loop_max_times": 0,
+            "loop_time": 30,
+            "reset_last_effect": true,
+            "start_trigger": false
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            25,
+            24
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "24": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "del_tag": false,
+            "effect_index": 24,
+            "need_disable": true,
+            "reset": true,
+            "val": "dreambox"
+          },
+          "type": "NodeSetUnitInvisibleTag"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "25": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 25,
+            "headbar_rule_list": [
+              2
+            ],
+            "need_disable": true,
+            "reset": true
+          },
+          "type": "NodeChangeHearBarRuleList"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_500002073_1",
+      "preload_res_list": [
+        "effect/task/endlessdream/sight/effect_dreambox_footprints_start.pse"
+      ],
+      "source_info": [
+        "buff",
+        500002073,
+        1
+      ],
+      "tid": 10023
+    }
+  ]
+}

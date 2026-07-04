@@ -147,17 +147,20 @@ export function buildExpectedDamageFromCalculationInput(
     playerStats.weaponDMGBonus = (playerStats.weaponDMGBonus ?? 0) + aggregatedWeaponDmg;
   }
 
-  // Inject weapon base crit rate if not overridden by modifiers
-  if (input.baseCritRate !== undefined && (playerStats.critRate === undefined || playerStats.critRate === 0)) {
-    playerStats.critRate = input.baseCritRate;
+  // Inject weapon base crit rate (additive with any modifier bonuses)
+  if (input.baseCritRate !== undefined) {
+    playerStats.critRate = (playerStats.critRate ?? 0) + input.baseCritRate;
   }
-  // Inject weapon base crit damage if not overridden
-  if (input.baseCritDamage !== undefined && (playerStats.critDMG === undefined || playerStats.critDMG === 0)) {
-    playerStats.critDMG = input.baseCritDamage;
+  // Inject weapon base crit damage (additive with any modifier bonuses)
+  if (input.baseCritDamage !== undefined) {
+    // baseCritDamage is already a multiplier (e.g., 1.30 for +30%)
+    // Formula expects critDMG as a multiplier where 1.0 = no bonus
+    // If modifiers add fractional crit damage (e.g., +0.06 from a mod), add to the multiplier
+    playerStats.critDMG = input.baseCritDamage + (playerStats.critDMG ?? 0);
   }
-  // Inject weapon base weakspot damage if not overridden
-  if (input.baseWeakspotDamage !== undefined && (playerStats.weakspotDMG === undefined || playerStats.weakspotDMG === 0)) {
-    playerStats.weakspotDMG = input.baseWeakspotDamage;
+  // Inject weapon base weakspot damage (additive with any modifier bonuses)
+  if (input.baseWeakspotDamage !== undefined) {
+    playerStats.weakspotDMG = (playerStats.weakspotDMG ?? 0) + input.baseWeakspotDamage;
   }
 
   // Determine mechanics to compute

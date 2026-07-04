@@ -1,0 +1,502 @@
+{
+  "_meta": {
+    "sourceFile": "06933_efe5e5e0.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06933_efe5e5e0.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.035Z",
+    "recordCount": 2,
+    "sourceHash": "b9c9215fa47f6d687e2a7715210877345a83af9f58008cac95211091cf6720a6",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            32,
+            57,
+            60
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "sprint_sp_cost_speed",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -25,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 2,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "24": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 24,
+            "value": 0
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "25": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "water",
+            "effect_index": 25,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "26": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 26
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            35
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            27,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "27": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 27,
+            "operation": 0
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 100
+        },
+        "in_data_pin": {
+          "data1": [
+            25,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "28": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "aoi_radius": 10,
+            "describe_text": {
+              "lan_translate": [
+                "你喝得非常足_$S@TIDS$_24uv|0"
+              ]
+            },
+            "effect_index": 28,
+            "explain_text": {
+              "lan_translate": [
+                "20分钟内饮水度不会自然降低，冲刺耐力消耗降低_$S@TIDS$_24uv|0"
+              ]
+            },
+            "is_aoi_tip": false,
+            "is_single_tip": false,
+            "match_id": "",
+            "need_disable": false,
+            "notify_main_client": true,
+            "reset": true,
+            "show_time": 3,
+            "ui_state_up": 1
+          },
+          "type": "NodeShowMechanismTip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "29": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 408001401,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 29,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            51,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "30": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "overflow",
+            "effect_index": 30,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "31": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "overflow",
+            "effect_index": 31,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            32,
+            "trigger",
+            "overflow"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "32": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "attr_name": "water",
+            "effect_index": 32
+          },
+          "type": "NodeAttrChangeTask"
+        },
+        "event_action": {
+          "trigger": [
+            37,
+            31,
+            26
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": [
+            "old_value",
+            "attr_value",
+            "overflow",
+            "delta_value",
+            "delta_percent"
+          ]
+        }
+      },
+      "33": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 33,
+            "operation": 0
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 0
+        },
+        "in_data_pin": {
+          "data1": [
+            30,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "35": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 35
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            28,
+            29
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            33,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "36": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 36,
+            "value": 100
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "37": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "water",
+            "effect_index": 37,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            32,
+            "trigger",
+            "attr_value"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "51": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 51
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "57": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "sprint_speed_add_rate",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 0.1,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 57,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "60": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 60,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [
+              {
+                "checker_sid": 67553994449928190,
+                "params": {
+                  "attribute": "water",
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_attr_changed::water"
+                  ],
+                  "op": 3,
+                  "role": 0,
+                  "value": 100
+                },
+                "type": "attr_value_checker"
+              }
+            ],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 67553994449928190,
+                "params": {
+                  "attribute": "water",
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_attr_changed::water"
+                  ],
+                  "op": 4,
+                  "role": 0,
+                  "value": 100
+                },
+                "type": "attr_value_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {
+        "2": [
+          [
+            [
+              "effect_params",
+              "params",
+              "change_attr",
+              0,
+              "value"
+            ],
+            1
+          ]
+        ],
+        "57": [
+          [
+            [
+              "effect_params",
+              "params",
+              "change_attr",
+              0,
+              "value"
+            ],
+            0
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_408001499_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        408001499,
+        1
+      ],
+      "tid": 9612
+    }
+  ]
+}

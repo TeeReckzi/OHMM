@@ -1,0 +1,112 @@
+{
+  "_meta": {
+    "sourceFile": "07332_fe0afc3c.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07332_fe0afc3c.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.969Z",
+    "recordCount": 2,
+    "sourceHash": "62cc084d23e796243e6e92c89505c2aa91de1307fbb29b04c98f8e6f7d8ffe51",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "8": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 8
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            17,
+            27
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "17": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "ignore_dam_rate",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 0.5,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 17,
+            "max_level": 1,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "27": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 27,
+            "is_active": true,
+            "match_id": "tree_",
+            "material_params": {
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "effect_speed": 1,
+              "is_fade_in": true,
+              "mtl_type": "buff_stone",
+              "need_dynamic_priority": true,
+              "need_keep": true,
+              "need_revert": true,
+              "offset_y": 0,
+              "priority": 9999,
+              "revert_speed": 1,
+              "slot_type": 0,
+              "steal_type": 1,
+              "target_slot": [],
+              "traits_direction": [
+                0,
+                0,
+                0
+              ],
+              "traits_pos": [
+                0,
+                0,
+                0
+              ],
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "reset": true
+          },
+          "type": "NodeMaterial"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 8,
+      "name": "buff_60143010_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        60143010,
+        1
+      ],
+      "tid": 13952
+    }
+  ]
+}

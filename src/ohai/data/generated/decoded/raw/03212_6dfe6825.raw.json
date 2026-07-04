@@ -1,0 +1,585 @@
+{
+  "_meta": {
+    "sourceFile": "03212_6dfe6825.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03212_6dfe6825.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:47.548Z",
+    "recordCount": 2,
+    "sourceHash": "109241bc938ff1ee815b28254fc2e81e4d1d6ed85b75a3ff403af20fef89bc96",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "36": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 36
+          },
+          "type": "NodeGetCasterID"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "caster_uid"
+          ]
+        }
+      },
+      "37": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 37,
+            "need_disable": false,
+            "same_source": false
+          },
+          "type": "NodeSaveTargetSnapshot"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            36,
+            "utility",
+            "caster_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "38": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "behavior_name": "",
+            "buff_id": "",
+            "effect_index": 38,
+            "logic_tree_name": "",
+            "same_source": false,
+            "source_type": "buff"
+          },
+          "type": "NodeGetTargetSnapshot"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            36,
+            "utility",
+            "caster_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "snapshot"
+          ]
+        }
+      },
+      "48": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "attack",
+            "effect_index": 48,
+            "extra_rate": 1,
+            "extra_value": 0,
+            "max_level": 0
+          },
+          "type": "NodeGetAttackStrength"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_snapshot": [
+            38,
+            "utility",
+            "snapshot"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "100": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 100
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            108,
+            101,
+            129,
+            37
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "101": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 101,
+            "info": {
+              "aim_target_type": 0,
+              "attack_duration": 0.5,
+              "attack_type": 0,
+              "axis_angle_off": 0,
+              "be_hit_hp_base": "hp",
+              "be_hit_hp_type": 1,
+              "be_hit_value": 1,
+              "bullet_speed": 50,
+              "can_be_hit": false,
+              "collision_box_size": [
+                0.1,
+                0.1,
+                0.1
+              ],
+              "collision_box_size_be_hit_check": [
+                1,
+                1,
+                1
+              ],
+              "collision_sfx_path": "",
+              "collision_sfx_scale": 1,
+              "collision_shape": 2,
+              "collision_shape_be_hit_check": -1,
+              "collision_type": 3,
+              "create_fly_3d_ui": false,
+              "custom_max_fly_time": 5,
+              "disregard_shield": false,
+              "enable_water_penetration": true,
+              "explose_on_destroy": false,
+              "fixed_fly_height": 7,
+              "flx_sfx_update_rotation": true,
+              "fly_effect_water": "effect/weapon/gun/harpoon/arrow_fly_underwater.pse",
+              "fly_model_path": "",
+              "fly_model_scale": 1,
+              "fly_sfx_bind_socket": "",
+              "fly_sfx_path": "effect/weapon/gun/harpoon/arrow_fly_01.pse",
+              "fly_sfx_scale": 1,
+              "fly_visual_type": 0,
+              "flyer_count": 1,
+              "gravity": 0,
+              "higher_normal_threshold_sfx_path": "effect/environment/dynamic_objects/buildingsystem/weapon/mounted_grenade/mounted_grenade_hit_01.pse",
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "is_aim_socket": false,
+              "is_random_speed": false,
+              "max_dis": 50,
+              "max_rate": 2,
+              "max_time_rate": 1,
+              "max_underwater_fly_distance": 0,
+              "min_dis": 0.5,
+              "min_rate": 1.5,
+              "min_time_rate": 1,
+              "missed_sfx_path": "",
+              "need_ignore_friend": true,
+              "normal_threshold": 10,
+              "offset_list": [],
+              "only_sight_block": false,
+              "random_round": 0.5,
+              "range_angle_off": 0,
+              "range_radius": 30,
+              "range_src_offset": [
+                0,
+                0,
+                0
+              ],
+              "range_target_num": 1,
+              "scatter_angle": 5,
+              "sfx_budget_rule_id": 400,
+              "socket_fail_use_table": false,
+              "socket_name": "socket_gun_out",
+              "socket_offset": [
+                0,
+                0,
+                0
+              ],
+              "sound_fly_end": "Harpoon_Fly_Air",
+              "sound_fly_start": "",
+              "sound_fly_water_rtpc": "Harpoon_Fly_Water",
+              "spread_type": 3,
+              "stop_time": 0,
+              "target_height": 2,
+              "target_socket_name": "",
+              "throw_aim_bone_type": 0,
+              "throw_bullet_type": 0,
+              "throw_fly_time": 5,
+              "throw_target_offset": [
+                10,
+                0,
+                0
+              ],
+              "throw_target_type": 4,
+              "underwater_fall_effect": "",
+              "underwater_fall_gravity_scale": 2,
+              "warn_sfx_delay_time": 1,
+              "warn_sfx_life_time": 3,
+              "warn_sfx_path": "",
+              "warn_sfx_scale": 4,
+              "warn_sfx_show_time_base_on_hit": false,
+              "water_damage_decay_rate": 0,
+              "water_drag_coefficient": 0,
+              "water_enter_effect": "effect/weapon/gun/harpoon/watersplash_arrow.pse",
+              "water_gravity_scale": 1,
+              "water_speed_decay_rate": 0,
+              "will_use_normal": false
+            }
+          },
+          "type": "NodeMonsterThrow"
+        },
+        "event_action": {
+          "init": [],
+          "trigger": [
+            124,
+            117
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "init": [
+            "fly_pid"
+          ],
+          "trigger": [
+            "trigger_type",
+            "trigger_pos",
+            "ground_pos",
+            "hit_normal",
+            "bone_name",
+            "hit_dir",
+            "target_uid",
+            "water_damage_factor",
+            "water_enter_pos"
+          ]
+        }
+      },
+      "108": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bullet_item_no": 30150047,
+            "bullet_num": 1,
+            "effect_index": 108,
+            "need_disable": false
+          },
+          "type": "NodeConsumeAmmunition"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "117": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attack_level": 1,
+            "be_hit_type": 0,
+            "can_jump_word": true,
+            "damage_cause_type": 0,
+            "damage_feature_type": 0,
+            "damage_select_arg": {
+              "hard_hit_type": "strike3",
+              "hard_hit_units": [
+                1,
+                2
+              ],
+              "ignore_hard_hit_cd": false,
+              "is_select_entity": true
+            },
+            "death_cause": 0,
+            "death_cause_label": {
+              "ldcc_default": false,
+              "ldcc_ori_source_id": false
+            },
+            "direct_damage_ignore_field": true,
+            "dmg_src": "",
+            "effect_index": 117,
+            "element_type": 6,
+            "extra_toughness_dam_rate": 1,
+            "force_jump_word": false,
+            "formula_attack_type": 6,
+            "ignore_field": false,
+            "ignore_structure_field": false,
+            "ignore_weak_part_rate": false,
+            "invincible_tag": [],
+            "is_anesthesia": false,
+            "is_buff_damage": false,
+            "is_keyword_damage": false,
+            "is_keyword_sfx_use": false,
+            "jump_word_element_type": false,
+            "keyword": 0,
+            "keyword_event_id": 0,
+            "keyword_sfx_path": "",
+            "keyword_tag": 0,
+            "knock_back_dis": 0,
+            "need_disable": false,
+            "need_knock_back": false,
+            "pvp_damage_rate": 1,
+            "recycle_weapon": false,
+            "rm_sync_point_name": "",
+            "source_behavior": "",
+            "sub_melee_attack_type": 0,
+            "use_final_dam_add_rate": true,
+            "use_final_ignore_dam_rate": true
+          },
+          "type": "NodeAttack"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "attack_value": [
+            126,
+            "utility",
+            "result"
+          ],
+          "attacker_snapshot": [
+            38,
+            "utility",
+            "snapshot"
+          ],
+          "attacker_uid": [
+            121,
+            "utility",
+            "controller_uid"
+          ],
+          "target_uid": [
+            101,
+            "trigger",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "121": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 121
+          },
+          "type": "NodeGetControllerUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "controller_uid"
+          ]
+        }
+      },
+      "124": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 124,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": true,
+              "bind_name": "123",
+              "bind_type": 2,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": true,
+              "delay_remove_time": 5,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": false,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "1122",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                2,
+                0
+              ],
+              "res_path": "effect/monster/tujiu/yuancheng/tujiu_sniper_phlogiston01_hit.pse",
+              "rot_off": [
+                30,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                5,
+                5
+              ],
+              "sfx_budget_rule_id": 100,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "reset": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": true
+          },
+          "type": "NodeCreateMountToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "bind_dir": [
+            101,
+            "trigger",
+            "hit_dir"
+          ],
+          "bind_name": [
+            101,
+            "trigger",
+            "bone_name"
+          ],
+          "target_id": [
+            101,
+            "trigger",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "126": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 126,
+            "operation": 1
+          },
+          "type": "NodeBBFloatCalculation"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 0.1
+        },
+        "in_data_pin": {
+          "data1": [
+            48,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "127": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 127,
+            "value": 0.1
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "129": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "camera_noise_args": {
+              "ads_track_name": "",
+              "amp": 0.6,
+              "max_limit": 3,
+              "min_limit": 0.5,
+              "speed": 1,
+              "template_no": 2,
+              "tps_track_name": "camtrack_boom_oildrum"
+            },
+            "effect_index": 129,
+            "need_disable": false
+          },
+          "type": "NodeCameraNoise"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            130,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "130": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 130,
+            "include_fly_height": false
+          },
+          "type": "NodeGetTargetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            36,
+            "utility",
+            "caster_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 100,
+      "name": "behavior_manned_turret_1_fire_turret_fish01_throw",
+      "preload_res_list": [
+        "effect/weapon/gun/harpoon/watersplash_arrow.pse",
+        "effect/weapon/gun/harpoon/arrow_fly_01.pse",
+        "effect/weapon/gun/harpoon/arrow_fly_underwater.pse",
+        "effect/monster/tujiu/yuancheng/tujiu_sniper_phlogiston01_hit.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "manned_turret_1",
+        "fire_turret_fish01",
+        ""
+      ],
+      "tid": 13564
+    }
+  ]
+}

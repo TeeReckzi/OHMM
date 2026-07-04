@@ -1,0 +1,361 @@
+{
+  "_meta": {
+    "sourceFile": "00074_02beda6b.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00074_02beda6b.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.391Z",
+    "recordCount": 2,
+    "sourceHash": "00e4782ad0c4244399ba92c898cb9e8975a7ce07836423a9d4ed065c3d858ea7",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "10": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 10
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            56,
+            57
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "56": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 56
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            70,
+            64,
+            71
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "57": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 57
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            76,
+            79
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "64": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "delay_time": 0,
+            "effect_index": 64,
+            "item_no": 84100156,
+            "need_disable": false,
+            "priority": 2,
+            "reason": "buff",
+            "reset": true
+          },
+          "type": "NodeSwitchPartEquip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "70": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "weapon_reload_speed_add_rate",
+            "behavior_name": "player_wear_clothes01",
+            "effect_index": 70,
+            "is_need_speed_rate": false,
+            "need_disable": false,
+            "unit_name": "player"
+          },
+          "type": "NodeCastBehavior"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "71": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 71,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 79938893449334780,
+                "params": {
+                  "add_buff": false,
+                  "buff_id": 205114600,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::205114600"
+                  ],
+                  "mapping_buff": true,
+                  "role": 0,
+                  "effect_index": 72
+                },
+                "type": "change_buff_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            73
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "73": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "weapon_reload_speed_add_rate",
+            "behavior_name": "player_wear_clothes01",
+            "effect_index": 73,
+            "is_need_speed_rate": false,
+            "need_disable": false,
+            "unit_name": "player"
+          },
+          "type": "NodeCastBehavior"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "74": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attach_to_camera": true,
+            "dissipation_name": "fog_headlight",
+            "edge_softness": 0.1,
+            "effect_index": 74,
+            "height": 50,
+            "is_cone": true,
+            "local_offset": [
+              0,
+              0,
+              0
+            ],
+            "need_disable": false,
+            "radius": 5,
+            "radius_end": 30,
+            "radius_start": 2.5,
+            "strength": 1
+          },
+          "type": "NodeFogDissipation"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "76": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": true,
+            "cd": 0,
+            "effect_index": 76,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 85568392983547900,
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1047,
+                  "effect_index": 75
+                },
+                "type": "check_weather__v2"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            74,
+            77
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "77": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 77,
+            "need_disable": true,
+            "need_reset": true,
+            "pause_or_resume": false,
+            "reason": "buff_miner_hat"
+          },
+          "type": "NodePauseCommonSwitchItemDurCost"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "item_id": [
+            78,
+            "utility",
+            "item_id"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "78": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 78
+          },
+          "type": "NodeGetBuffOwnerItemId"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "item_id"
+          ]
+        }
+      },
+      "79": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": true,
+            "cd": 0,
+            "effect_index": 79,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 88946092704075780,
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": true,
+                  "weather_id": 1047,
+                  "effect_index": 80
+                },
+                "type": "check_weather__v2"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            82
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "82": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 82,
+            "need_disable": true,
+            "need_reset": true,
+            "pause_or_resume": true,
+            "reason": "buff_miner_hat"
+          },
+          "type": "NodePauseCommonSwitchItemDurCost"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "item_id": [
+            78,
+            "utility",
+            "item_id"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 10,
+      "name": "buff_205114600_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        205114600,
+        1
+      ],
+      "tid": 15505
+    }
+  ]
+}

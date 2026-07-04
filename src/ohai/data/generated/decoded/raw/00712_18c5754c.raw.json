@@ -1,0 +1,1003 @@
+{
+  "_meta": {
+    "sourceFile": "00712_18c5754c.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00712_18c5754c.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.422Z",
+    "recordCount": 34,
+    "sourceHash": "7aad791c9ef46189ffc287d2643254318fee1fb959dc8d328c5c29139f89f306",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "cw_gm_type_lst": [
+        10001
+      ],
+      "option_desc": {
+        "lan_translate": [
+          "单程赛：从起点出发，到达终点为止的游戏模式_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_key": "cw_gm_rule",
+      "option_name": {
+        "lan_translate": [
+          "游戏模式_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 1011,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "单程_$S@TIDS$_3af8|0"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10001
+      ],
+      "option_desc": {
+        "lan_translate": [
+          "冲线：达到终点视为胜利；比分：积分最高视为胜利_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_key": "cw_gm_win_type",
+      "option_name": {
+        "lan_translate": [
+          "胜利规则_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 1021,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "冲线_$S@TIDS$_3af8|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "比分_$S@TIDS$_3af8|0"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1,
+        2
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10001
+      ],
+      "max_time": 3600,
+      "min_time": 1,
+      "option_desc": "",
+      "option_key": "match_max_time",
+      "option_name": {
+        "lan_translate": [
+          "比赛限时_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 1041,
+      "param_type": 2
+    },
+    {
+      "cw_gm_type_lst": [
+        10001
+      ],
+      "option_desc": {
+        "lan_translate": [
+          "如开启关门倒计时，首名游客到达终点10s后视为比赛结束_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_key": "match_close_timer_enable",
+      "option_name": {
+        "lan_translate": [
+          "是否开启关门倒计时_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 1051,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_3af8|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_3af8|0"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        false,
+        true
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10001
+      ],
+      "option_desc": "",
+      "option_key": "activity_vehicle_id",
+      "option_name": {
+        "lan_translate": [
+          "使用载具_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 1061,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "自行车_$S@TIDS$_3af8|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "摩托车_$S@TIDS$_3af8|0"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1010101,
+        1020101
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10001
+      ],
+      "desc": {
+        "lan_translate": [
+          "请配置赛前提示文本_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_desc": "",
+      "option_key": "cw_game_start_tip",
+      "option_name": {
+        "lan_translate": [
+          "赛前提示文本_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 1081,
+      "param_type": 3
+    },
+    {
+      "cw_gm_type_lst": [
+        10001
+      ],
+      "option_desc": "",
+      "option_key": "can_get_off_vehicle",
+      "option_name": {
+        "lan_translate": [
+          "是否允许上下车_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 1071,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_3af8|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_3af8|1"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        false,
+        true
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10001
+      ],
+      "option_desc": "",
+      "option_key": "need_invincible",
+      "option_name": {
+        "lan_translate": [
+          "玩家是否无敌_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 1072,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_3af8|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_3af8|2"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        false,
+        true
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10002
+      ],
+      "option_desc": "",
+      "option_key": "cw_gm_rule",
+      "option_name": {
+        "lan_translate": [
+          "游戏模式_$S@TIDS$_3af8|1"
+        ]
+      },
+      "order": 1,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "单程_$S@TIDS$_3af8|1"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10002
+      ],
+      "option_desc": {
+        "lan_translate": [
+          "单程赛：从起点出发，到达终点为止的游戏模式_$S@TIDS$_3af8|1"
+        ]
+      },
+      "option_key": "cw_gm_win_type",
+      "option_name": {
+        "lan_translate": [
+          "胜利规则_$S@TIDS$_3af8|1"
+        ]
+      },
+      "order": 2,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "冲线_$S@TIDS$_3af8|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "比分_$S@TIDS$_3af8|1"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1,
+        2
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10002
+      ],
+      "max_time": 3600,
+      "min_time": 1,
+      "option_desc": "",
+      "option_key": "match_max_time",
+      "option_name": {
+        "lan_translate": [
+          "比赛限时_$S@TIDS$_3af8|1"
+        ]
+      },
+      "order": 4,
+      "param_type": 2
+    },
+    {
+      "cw_gm_type_lst": [
+        10002
+      ],
+      "option_desc": "",
+      "option_key": "match_close_timer_enable",
+      "option_name": {
+        "lan_translate": [
+          "是否开启关门倒计时_$S@TIDS$_3af8|1"
+        ]
+      },
+      "order": 5,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_3af8|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_3af8|3"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        false,
+        true
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10002
+      ],
+      "desc": {
+        "lan_translate": [
+          "请配置赛前提示文本_$S@TIDS$_3af8|1"
+        ]
+      },
+      "option_desc": {
+        "lan_translate": [
+          "如开启关门倒计时，首名游客到达终点10s后视为比赛结束_$S@TIDS$_3af8|1"
+        ]
+      },
+      "option_key": "cw_game_start_tip",
+      "option_name": {
+        "lan_translate": [
+          "赛前提示文本_$S@TIDS$_3af8|1"
+        ]
+      },
+      "order": 6,
+      "param_type": 3
+    },
+    {
+      "cw_gm_type_lst": [
+        10002
+      ],
+      "option_desc": "",
+      "option_key": "need_invincible",
+      "option_name": {
+        "lan_translate": [
+          "玩家是否无敌_$S@TIDS$_3af8|1"
+        ]
+      },
+      "order": 1071,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_3af8|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_3af8|4"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        false,
+        true
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10003
+      ],
+      "option_desc": {
+        "lan_translate": [
+          "单程赛：从起点出发，到达终点为止的游戏模式_$S@TIDS$_3af8|2"
+        ]
+      },
+      "option_key": "cw_gm_rule",
+      "option_name": {
+        "lan_translate": [
+          "游戏模式_$S@TIDS$_3af8|2"
+        ]
+      },
+      "order": 1,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "单程_$S@TIDS$_3af8|2"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10003
+      ],
+      "option_desc": {
+        "lan_translate": [
+          "冲线：达到终点视为胜利；比分：积分最高视为胜利; 计分:达到规定比赛分数线视为胜利_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_key": "cw_gm_win_type",
+      "option_name": {
+        "lan_translate": [
+          "胜利规则_$S@TIDS$_3af8|2"
+        ]
+      },
+      "order": 2,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "冲线_$S@TIDS$_3af8|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "比分_$S@TIDS$_3af8|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "计分_$S@TIDS$_3af8|0"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10003
+      ],
+      "max_time": 3600,
+      "min_time": 1,
+      "option_desc": "",
+      "option_key": "match_max_time",
+      "option_name": {
+        "lan_translate": [
+          "比赛限时_$S@TIDS$_3af8|2"
+        ]
+      },
+      "order": 3,
+      "param_type": 2
+    },
+    {
+      "cw_gm_type_lst": [
+        10003
+      ],
+      "desc": {
+        "lan_translate": [
+          "请配置赛前提示文本_$S@TIDS$_3af8|2"
+        ]
+      },
+      "option_desc": "",
+      "option_key": "cw_game_start_tip",
+      "option_name": {
+        "lan_translate": [
+          "赛前提示文本_$S@TIDS$_3af8|2"
+        ]
+      },
+      "order": 4,
+      "param_type": 3
+    },
+    {
+      "cw_gm_type_lst": [
+        10003
+      ],
+      "option_desc": "",
+      "option_key": "need_invincible",
+      "option_name": {
+        "lan_translate": [
+          "玩家是否无敌_$S@TIDS$_3af8|2"
+        ]
+      },
+      "order": 1071,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_3af8|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_3af8|5"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        false,
+        true
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10003
+      ],
+      "desc": {
+        "lan_translate": [
+          "请配置分数线分数_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_desc": {
+        "lan_translate": [
+          "请配置整数分数_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_key": "target_score",
+      "option_name": {
+        "lan_translate": [
+          "计分规则分数线_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 4,
+      "param_type": 4,
+      "show_rule": [
+        "cw_gm_win_type",
+        "==",
+        "3"
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10004
+      ],
+      "option_desc": {
+        "lan_translate": [
+          "单程赛：从起点出发，到达终点为止的游戏模式_$S@TIDS$_3af8|3"
+        ]
+      },
+      "option_key": "cw_gm_rule",
+      "option_name": {
+        "lan_translate": [
+          "游戏模式_$S@TIDS$_3af8|3"
+        ]
+      },
+      "order": 1,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "单程_$S@TIDS$_3af8|3"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10004
+      ],
+      "option_desc": {
+        "lan_translate": [
+          "冲线：达到终点视为胜利；比分：积分最高视为胜利; 计分:达到规定比赛分数线视为胜利；最后生存者：最后活下来的视为胜利_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_key": "cw_gm_win_type",
+      "option_name": {
+        "lan_translate": [
+          "胜利规则_$S@TIDS$_3af8|3"
+        ]
+      },
+      "order": 2,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "冲线_$S@TIDS$_3af8|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "比分_$S@TIDS$_3af8|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "计分_$S@TIDS$_3af8|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "最后生存者_$S@TIDS$_3af8|0"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10004
+      ],
+      "max_time": 3600,
+      "min_time": 1,
+      "option_desc": "",
+      "option_key": "match_max_time",
+      "option_name": {
+        "lan_translate": [
+          "比赛限时_$S@TIDS$_3af8|3"
+        ]
+      },
+      "order": 4,
+      "param_type": 2
+    },
+    {
+      "cw_gm_type_lst": [
+        10004
+      ],
+      "desc": {
+        "lan_translate": [
+          "请配置赛前提示文本_$S@TIDS$_3af8|3"
+        ]
+      },
+      "option_desc": "",
+      "option_key": "cw_game_start_tip",
+      "option_name": {
+        "lan_translate": [
+          "赛前提示文本_$S@TIDS$_3af8|3"
+        ]
+      },
+      "order": 5,
+      "param_type": 3
+    },
+    {
+      "cw_gm_type_lst": [
+        10004
+      ],
+      "option_desc": "",
+      "option_key": "need_invincible",
+      "option_name": {
+        "lan_translate": [
+          "玩家是否无敌_$S@TIDS$_3af8|3"
+        ]
+      },
+      "order": 1071,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_3af8|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_3af8|6"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        false,
+        true
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10004
+      ],
+      "desc": {
+        "lan_translate": [
+          "请配置分数线分数_$S@TIDS$_3af8|1"
+        ]
+      },
+      "option_desc": {
+        "lan_translate": [
+          "请配置整数分数_$S@TIDS$_3af8|1"
+        ]
+      },
+      "option_key": "target_score",
+      "option_name": {
+        "lan_translate": [
+          "计分规则分数线_$S@TIDS$_3af8|1"
+        ]
+      },
+      "order": 3,
+      "param_type": 4,
+      "show_rule": [
+        "cw_gm_win_type",
+        "==",
+        "3"
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10005
+      ],
+      "option_desc": {
+        "lan_translate": [
+          "冲线：达到终点视为胜利；比分：积分最高视为胜利; 计分:达到规定比赛分数线视为胜利；最后生存者：最后活下来的视为胜利；捉迷藏：倒计时结束生存方存活则生存方胜利，反之捕捉方胜利_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_key": "cw_gm_win_type",
+      "option_name": {
+        "lan_translate": [
+          "胜利规则_$S@TIDS$_3af8|4"
+        ]
+      },
+      "order": 1010,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "冲线_$S@TIDS$_3af8|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "比分_$S@TIDS$_3af8|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "计分_$S@TIDS$_3af8|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "最后生存者_$S@TIDS$_3af8|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "捉迷藏_$S@TIDS$_3af8|0"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10005
+      ],
+      "desc": {
+        "lan_translate": [
+          "请配置分数线分数_$S@TIDS$_3af8|2"
+        ]
+      },
+      "option_desc": {
+        "lan_translate": [
+          "请配置为整数_$S@TIDS$_3af8|0"
+        ]
+      },
+      "option_key": "target_score",
+      "option_name": {
+        "lan_translate": [
+          "计分规则分数线_$S@TIDS$_3af8|2"
+        ]
+      },
+      "order": 1020,
+      "param_type": 4,
+      "show_rule": [
+        "cw_gm_win_type",
+        "==",
+        "3"
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10005
+      ],
+      "max_time": 3600,
+      "min_time": 1,
+      "option_desc": "",
+      "option_key": "match_max_time",
+      "option_name": {
+        "lan_translate": [
+          "比赛限时_$S@TIDS$_3af8|4"
+        ]
+      },
+      "order": 1030,
+      "param_type": 2
+    },
+    {
+      "cw_gm_type_lst": [
+        10005
+      ],
+      "option_desc": "",
+      "option_key": "need_invincible",
+      "option_name": {
+        "lan_translate": [
+          "玩家是否无敌_$S@TIDS$_3af8|4"
+        ]
+      },
+      "order": 1071,
+      "param_type": 1,
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_3af8|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_3af8|7"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        false,
+        true
+      ]
+    },
+    {
+      "cw_gm_type_lst": [
+        10005
+      ],
+      "desc": {
+        "lan_translate": [
+          "请配置赛前提示文本_$S@TIDS$_3af8|4"
+        ]
+      },
+      "option_desc": "",
+      "option_key": "cw_game_start_tip",
+      "option_name": {
+        "lan_translate": [
+          "赛前提示文本_$S@TIDS$_3af8|4"
+        ]
+      },
+      "order": 1040,
+      "param_type": 3
+    },
+    {
+      "cw_gm_type_lst": [
+        10005
+      ],
+      "option_desc": "",
+      "option_key": "seeker_camp",
+      "option_name": {
+        "lan_translate": [
+          "捉迷藏捕捉方_$S@TIDS$_3af8|0"
+        ]
+      },
+      "order": 1021,
+      "param_type": 1,
+      "show_rule": [
+        "cw_gm_win_type",
+        "==",
+        "5"
+      ],
+      "tab_des_lst": [
+        {
+          "lan_translate": [
+            "阵营1_$S@TIDS$_3af8|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "阵营2_$S@TIDS$_3af8|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "阵营3_$S@TIDS$_3af8|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "阵营4_$S@TIDS$_3af8|0"
+          ]
+        }
+      ],
+      "tab_value_lst": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "cw_options_detail": {
+        "10001": [
+          100001,
+          100002,
+          100004,
+          100005,
+          100006,
+          100009,
+          100010,
+          100007
+        ],
+        "10002": [
+          100101,
+          100102,
+          100104,
+          100105,
+          100106,
+          100108
+        ],
+        "10003": [
+          100301,
+          100302,
+          100303,
+          100304,
+          100307,
+          100306
+        ],
+        "10004": [
+          100401,
+          100402,
+          100407,
+          100403,
+          100404,
+          100406
+        ],
+        "10005": [
+          100502,
+          100503,
+          100507,
+          100504,
+          100506,
+          100505
+        ]
+      }
+    },
+    {
+      "exist_option_set": {
+        "10001": [
+          "activity_vehicle_id",
+          "can_get_off_vehicle",
+          "cw_game_start_tip",
+          "cw_gm_rule",
+          "cw_gm_win_type",
+          "match_close_timer_enable",
+          "match_max_time",
+          "need_invincible"
+        ],
+        "10002": [
+          "cw_game_start_tip",
+          "cw_gm_rule",
+          "cw_gm_win_type",
+          "match_close_timer_enable",
+          "match_max_time",
+          "need_invincible"
+        ],
+        "10003": [
+          "cw_game_start_tip",
+          "cw_gm_rule",
+          "cw_gm_win_type",
+          "match_max_time",
+          "need_invincible",
+          "target_score"
+        ],
+        "10004": [
+          "cw_game_start_tip",
+          "cw_gm_rule",
+          "cw_gm_win_type",
+          "match_max_time",
+          "need_invincible",
+          "target_score"
+        ],
+        "10005": [
+          "cw_game_start_tip",
+          "cw_gm_win_type",
+          "match_max_time",
+          "need_invincible",
+          "seeker_camp",
+          "target_score"
+        ]
+      }
+    }
+  ]
+}

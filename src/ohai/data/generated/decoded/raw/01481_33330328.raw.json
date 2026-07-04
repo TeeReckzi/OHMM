@@ -1,0 +1,196 @@
+{
+  "_meta": {
+    "sourceFile": "01481_33330328.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01481_33330328.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:42.933Z",
+    "recordCount": 2,
+    "sourceHash": "4b1a5d9fbb143a648d2c0836ad6a210996ace943f95324b9381870735b13120f",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            76
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "76": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 76,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 85568392941457400,
+                "params": {
+                  "check_gid_list": [
+                    10100151,
+                    10100152
+                  ],
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_gain_endow_reward"
+                  ]
+                },
+                "type": "gain_endow_reward_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            79
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "78": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 78,
+            "is_money_type": false,
+            "item_no": 30100011,
+            "item_num": 1,
+            "need_disable": false,
+            "show_toast": false
+          },
+          "type": "NodeCommonAddItem"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "79": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 79,
+            "input_factor": 100,
+            "probability": 30,
+            "speed_factor": 0.8,
+            "use_expect_rate": false,
+            "use_input": false
+          },
+          "type": "NodeBuffProbabilityTask"
+        },
+        "event_action": {
+          "process": [
+            80
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": []
+        }
+      },
+      "80": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 80,
+            "need_disable": false,
+            "probability_dict": {
+              "1": 10,
+              "2": 10,
+              "3": 10
+            }
+          },
+          "type": "NodeBuffRandomTask"
+        },
+        "event_action": {
+          "process_1": [
+            78
+          ],
+          "process_2": [
+            81
+          ],
+          "process_3": [
+            82
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process_1": [],
+          "process_2": [],
+          "process_3": []
+        }
+      },
+      "81": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 81,
+            "is_money_type": false,
+            "item_no": 30100011,
+            "item_num": 1,
+            "need_disable": false,
+            "show_toast": false
+          },
+          "type": "NodeCommonAddItem"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "82": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 82,
+            "is_money_type": false,
+            "item_no": 30100012,
+            "item_num": 1,
+            "need_disable": false,
+            "show_toast": false
+          },
+          "type": "NodeCommonAddItem"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_499003900_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        499003900,
+        1
+      ],
+      "tid": 5229
+    }
+  ]
+}

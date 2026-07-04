@@ -1,0 +1,356 @@
+{
+  "_meta": {
+    "sourceFile": "01578_369cebf3.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01578_369cebf3.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:43.234Z",
+    "recordCount": 2,
+    "sourceHash": "5a3dec332c097cfcfbfe39f6842ada00d48cf7f715adcf0b652256a41cc86bf2",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "40": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "combat_unit_no": "",
+            "duration": 7,
+            "effect_index": 40,
+            "logic_tree_name": "trap",
+            "need_disable": false,
+            "summon_key": "1",
+            "summon_use_skill_config": false,
+            "trap_type": 0
+          },
+          "type": "NodeCreateTrap"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "normal": [
+            45,
+            "trigger",
+            "hit_normal"
+          ],
+          "pos": [
+            45,
+            "trigger",
+            "ground_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "41": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 1,
+            "effect_index": 41
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            44
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "42": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 42
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            45
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "44": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 44,
+            "logic_tree_name": "",
+            "need_disable": false,
+            "summon_data": {
+              "ai_can_hatred": true,
+              "aoi_radius": 300,
+              "aoi_radius2": 0,
+              "can_mod_pos_y": false,
+              "cost_summer_percent_hp": 0,
+              "die_with_summoner": true,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": true,
+              "duration": -1,
+              "enable_damage_sync": false,
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_ignore_player_owner": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "pos_off": [
+                0,
+                3,
+                0
+              ],
+              "pos_off_base": 0,
+              "pos_off_circle": false,
+              "pulse_detect_effects": [],
+              "radius_angle": [
+                0,
+                0
+              ],
+              "removed_no_drop": true,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|2101011113",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": true,
+              "unit_trigger_file": "",
+              "use_world_area_level": false
+            },
+            "unit_physics_control_data": {
+              "bounding_offset": [
+                0,
+                0,
+                0
+              ],
+              "bullet_num": 0,
+              "item_no": 0,
+              "override_physics_control": false,
+              "physical_control_enabled": false,
+              "physical_summer_control": false,
+              "physical_unit_no": "",
+              "physics_control_type": 1,
+              "show_interact_btn": true
+            }
+          },
+          "type": "NodeSummonUnit"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            45,
+            "trigger",
+            "trigger_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "45": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 45,
+            "info": {
+              "aim_target_type": 0,
+              "attack_duration": 0.5,
+              "attack_type": 0,
+              "axis_angle_off": 0,
+              "be_hit_hp_base": "hp",
+              "be_hit_hp_type": 1,
+              "be_hit_value": 1,
+              "bullet_speed": 30,
+              "can_be_hit": false,
+              "collision_box_size": [
+                1,
+                1,
+                1
+              ],
+              "collision_box_size_be_hit_check": [
+                1,
+                1,
+                1
+              ],
+              "collision_sfx_path": "effect/boss/lighthouse/lighthouse_tentacle_jellyfish_summon.pse",
+              "collision_sfx_scale": 1,
+              "collision_shape": 2,
+              "collision_shape_be_hit_check": -1,
+              "collision_type": 1,
+              "create_fly_3d_ui": false,
+              "custom_max_fly_time": 10,
+              "disregard_shield": false,
+              "enable_water_penetration": false,
+              "explose_on_destroy": false,
+              "fixed_fly_height": 30,
+              "flx_sfx_update_rotation": true,
+              "fly_effect_water": "",
+              "fly_model_path": "",
+              "fly_model_scale": 1,
+              "fly_sfx_bind_socket": "",
+              "fly_sfx_path": "effect/boss/lighthouse/lighthouse_tentacle_jellyfish_skill.pse",
+              "fly_sfx_scale": 1,
+              "fly_visual_type": 0,
+              "flyer_count": 3,
+              "gravity": -9.8,
+              "higher_normal_threshold_sfx_path": "",
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "is_aim_socket": false,
+              "is_random_speed": false,
+              "max_dis": 60,
+              "max_rate": 2,
+              "max_time_rate": 1,
+              "max_underwater_fly_distance": 0,
+              "min_dis": 30,
+              "min_rate": 1,
+              "min_time_rate": 1,
+              "missed_sfx_path": "",
+              "need_ignore_friend": false,
+              "normal_threshold": 5,
+              "offset_list": [],
+              "only_sight_block": true,
+              "random_round": 60,
+              "range_angle_off": 360,
+              "range_radius": 30,
+              "range_src_offset": [
+                0,
+                0,
+                0
+              ],
+              "range_target_num": 1,
+              "scatter_angle": 20,
+              "sfx_budget_rule_id": 500,
+              "socket_fail_use_table": false,
+              "socket_name": "fx_lightning_glow",
+              "socket_offset": [
+                0,
+                0,
+                0
+              ],
+              "sound_fly_end": "",
+              "sound_fly_start": "",
+              "sound_fly_water_rtpc": "",
+              "spread_type": 2,
+              "stop_time": 0,
+              "target_height": 1,
+              "target_socket_name": "",
+              "throw_aim_bone_type": 0,
+              "throw_bullet_type": 1,
+              "throw_fly_time": 3,
+              "throw_target_offset": [
+                0,
+                0,
+                0
+              ],
+              "throw_target_type": 1,
+              "underwater_fall_effect": "",
+              "underwater_fall_gravity_scale": 2,
+              "warn_sfx_delay_time": 0,
+              "warn_sfx_life_time": 2,
+              "warn_sfx_path": "",
+              "warn_sfx_scale": 1,
+              "warn_sfx_show_time_base_on_hit": false,
+              "water_damage_decay_rate": 0,
+              "water_drag_coefficient": 0,
+              "water_enter_effect": "",
+              "water_gravity_scale": 1,
+              "water_speed_decay_rate": 0,
+              "will_use_normal": false
+            }
+          },
+          "type": "NodeMonsterThrow"
+        },
+        "event_action": {
+          "init": [],
+          "trigger": [
+            40,
+            41
+          ]
+        },
+        "in_data_pin": {
+          "target_uid": [
+            46,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "init": [
+            "fly_pid"
+          ],
+          "trigger": [
+            "trigger_type",
+            "trigger_pos",
+            "ground_pos",
+            "hit_normal",
+            "bone_name",
+            "hit_dir",
+            "target_uid",
+            "water_damage_factor",
+            "water_enter_pos"
+          ]
+        }
+      },
+      "46": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 46
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 42,
+      "name": "behavior_lighthouse_dcs_lighthouse_summon_skill2_target_sy_self",
+      "preload_res_list": [
+        "effect/boss/lighthouse/lighthouse_tentacle_jellyfish_summon.pse",
+        "effect/boss/lighthouse/lighthouse_tentacle_jellyfish_skill.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "lighthouse_dcs",
+        "lighthouse_summon_skill2_target_sy",
+        ""
+      ],
+      "tid": 16146
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "_meta": {
+    "sourceFile": "05206_b125b44b.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05206_b125b44b.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:53.274Z",
+    "recordCount": 2,
+    "sourceHash": "7fc25af59b4794837b158c54d16065224581b578d2d4aed9c4331f34fa85b283",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "34": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [],
+                  "event_type": 2,
+                  "negate": false
+                },
+                "type": "soc_event_active_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 34
+          },
+          "type": "NodeCheckerTask"
+        },
+        "event_action": {
+          "False": [
+            40
+          ],
+          "True": [
+            37
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "36": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 36,
+            "value": 0
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "37": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "check",
+            "effect_index": 37,
+            "need_disable": false,
+            "persist": false,
+            "scope": 1
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 1
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "38": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 38
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            34
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "39": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 39,
+            "value": 1
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "40": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "check",
+            "effect_index": 40,
+            "need_disable": false,
+            "persist": false,
+            "scope": 1
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 0
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 38,
+      "name": "behavior_player_item_floating_platform_check",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "item_floating_platform",
+        ""
+      ],
+      "tid": 16445
+    }
+  ]
+}

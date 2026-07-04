@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "sourceFile": "03426_75815bdf.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03426_75815bdf.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:48.605Z",
+    "recordCount": 2,
+    "sourceHash": "c855624c76fb9d28ba4cafaff04e0ecc5e809e07a3480e884b02c251a6bf9bcf",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "weapon_reload_speed_add_rate",
+            "behavior_name": "lighthouse_flower_stop",
+            "effect_index": 2,
+            "is_need_speed_rate": false,
+            "need_disable": false,
+            "unit_name": "light_flower"
+          },
+          "type": "NodeCastBehavior"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_60143063_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        60143063,
+        1
+      ],
+      "tid": 16241
+    }
+  ]
+}

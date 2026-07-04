@@ -5,6 +5,7 @@ import { ModalShell, EmptySlate, StarRating, RarityBadge } from "../ui/Primitive
 import type { Rarity, EquippedItem } from "../../types";
 import { R_COLOR, CYAN, WEAPON_CATS, isWeaponItem } from "../../types";
 import { weaponRegistry } from "../../../ohai/src/ui/registries/weaponRegistry";
+import { formatEffectForDisplay } from "../../../lib/ohmm/effectDisplayFormatter";
 
 function WeaponDetail({ weapon, onEquip }: { weapon: EquippedItem; onEquip: () => void }) {
   return (
@@ -33,7 +34,7 @@ function WeaponDetail({ weapon, onEquip }: { weapon: EquippedItem; onEquip: () =
         <div className="p-2 rounded-[3px] text-[11px] leading-snug"
           style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
           <div className="uppercase tracking-[0.1em] text-[8px] mb-0.5" style={{ color: '#7ab8cc' }}>EFFECTS</div>
-          <div style={{ color: '#c0dde8' }}>{weapon.effectSummary || weapon.description}</div>
+          <div style={{ color: '#c0dde8' }}>{formatEffectForDisplay(weapon.effectSummary || weapon.description, weapon.confidence)}</div>
         </div>
       )}
 
@@ -51,7 +52,9 @@ function WeaponDetail({ weapon, onEquip }: { weapon: EquippedItem; onEquip: () =
       {/* Meta grid */}
       {weapon.meta && (
         <div className="grid grid-cols-2 gap-1.5">
-          {Object.entries(weapon.meta).map(([k, v]) => (
+          {Object.entries(weapon.meta)
+            .filter(([_k, v]) => v != null && String(v) !== 'undefined' && String(v) !== 'null' && String(v) !== '')
+            .map(([k, v]) => (
             <div key={k} className="p-2 rounded-[3px]"
               style={{ background: `${CYAN}06`, border: `1px solid ${CYAN}14` }}>
               <div className="text-[8px] uppercase tracking-wider mb-0.5" style={{ color: "#7ab8cc" }}>{k}</div>
@@ -85,6 +88,15 @@ export function WeaponModal({ onClose, onSelect, items }: {
   const [query, setQuery] = useState("");
   const [cat, setCat] = useState<string>("All");
   const [selected, setSelected] = useState<EquippedItem | null>(null);
+
+  // Clear selection when category changes if selected item doesn't match new filter
+  React.useEffect(() => {
+    if (selected && cat !== "All") {
+      if (selected.category !== cat) {
+        setSelected(null);
+      }
+    }
+  }, [cat]);
 
   const weapons: EquippedItem[] = items && items.length ? items : (weaponRegistry || []).map((w: any) => ({
     id: w.id,
@@ -166,7 +178,7 @@ export function WeaponModal({ onClose, onSelect, items }: {
                     </div>
                     {w.effectSummary && (
                       <div className="text-[9px] mt-0.5 truncate" style={{ color: '#6aa8c0' }}>
-                        {w.effectSummary}
+                        {formatEffectForDisplay(w.effectSummary, w.confidence)}
                       </div>
                     )}
                   </div>

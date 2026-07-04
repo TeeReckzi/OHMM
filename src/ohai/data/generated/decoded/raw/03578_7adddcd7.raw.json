@@ -1,0 +1,6353 @@
+{
+  "_meta": {
+    "sourceFile": "03578_7adddcd7.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03578_7adddcd7.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:48.919Z",
+    "recordCount": 183,
+    "sourceHash": "cbc6d86b382d936119e2ee31933efed4186e9dcc72c74f2adc3f98fc0077b0ae",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "切换当前应用的引导模式\n强引导模式：启动大部分操作性引导和智能引导，显示生存手册入口指引，接近任务目标附近时将显示寻路引导特效\n弱引导模式：屏蔽大部分操作性引导和智能引导，关闭生存手册入口指引，屏蔽追踪任务时的引导特效，更沉浸地体验游戏_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "Guide Mode",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "引导模式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 11,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "强引导_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "弱引导_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "调整键位指引的显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "Key Guide",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "键位指引_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 11,
+      "platform": 0,
+      "range": [
+        2,
+        1
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|m"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|n"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "全体玩家：你的邀约所有玩家均可见且可交互\n仅队友与好友：你的邀约仅队友与好友可见且可交互_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "pairs_action_invite_group",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "双人动作邀请权限_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 11,
+      "platform": 0,
+      "range": [
+        0,
+        1
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "全体玩家_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "仅队友与好友_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：获取到更高品阶和等级的装备会弹出快捷装配提醒\n否：不弹出快捷装配提醒_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "quick_assembly",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "快捷装配_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 11,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|n"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|o"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：心愿任务自动统计已有垃圾拆解后的素材。\n否：心愿任务不会自动统计已有垃圾拆解后的素材。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "wish_count_garbage",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "配方追踪计算垃圾_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 11,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|o"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|p"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：心愿任务自动统计领地内的储物箱仓储物品。\n否：心愿任务不会自动统计领地内的储物箱仓储物品。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "wish_count_storage",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "配方追踪计算储物箱_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 11,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|p"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|q"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "控制性能负载提示功能的开启/关闭_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "performance_load_setting_pc",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "性能负载提示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 11,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|q"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|r"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "大世界3D导航指引模式_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "visual_navigation_mode",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "导航模式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 11,
+      "platform": 0,
+      "range": [
+        0,
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "沉浸_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "半指引_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "全指引_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "用于切换并常驻第一人称模式_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "tps_fpp_switch",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称模式切换_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "第一人称_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "第三人称_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 90,
+      "desc": {
+        "lan_translate": [
+          "屏幕受到特定效果影响后震动的幅度。数值越大幅度越大。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "cam_shake",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "屏幕震动幅度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 12,
+      "desc": {
+        "lan_translate": [
+          "第三人称视角下相机相对角色的距离。\n数值越大，相机离角色越远，角色在画面中占比越小。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "cam_dis",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "相机距离_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "第三人称视角下的相机高度。\n数值越大，相机位置越高，角色在画面中的高度位置越低。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "cam_height",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "相机高度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：移动时相机会跟随角色移动的方向\n否：相机朝向与角色移动方向无关_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "cam_auto_follow",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "相机自动跟随_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：手电筒打开后的光照方向会始终朝向相机方向。\n否：手电筒打开后的光照方向会被限制在角色的正面。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "light_follow_cam",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "手电筒光照跟随相机_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|1"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：近战挥砍时，镜头会自动尝试转向攻击目标\n否：近战挥砍时，镜头不会有额外自动操作。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "cam_melee_follow",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "近战挥砍相机自动跟随_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：退出肩射时常规视角相机位置跟随肩射时的相机位置\n否：退出肩射时常规视角相机位置基于进入肩射前的相机位置_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "cam_switch_remember",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "退出肩射相机位置是否跟随_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|2"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：长时间空闲后相机会缓慢自由律动\n否：长时间空闲后相机依然保持不变_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "cam_auto_move",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "相机随环境律动_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|3"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 9,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：手电筒会根据场景亮度自动调节开关。\n否：手电筒不会自动开启或关闭。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "light_auto_open",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "是否允许自动开关手电筒_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|4"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 10,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：驾驶载具时，镜头会自动跟随驾驶方向。\n否：镜头不会自动跟随驾驶方向。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "vehicle_camere_restore",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "载具镜头自动回正_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|1"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 11,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：驾驶载具时，镜头FOV会随着速度发生变化。\n否：镜头FOV不会随着速度发生变化。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "vehicle_camere_speedtofov",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "载具镜头FOV速度匹配_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 12,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|2"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 12,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：对部分战术道具来说，点击相应快捷键时，直接使用道具，而不是将其取出到手中\n否：不会自动使用，而是将其取出拿在手中，随后点击左键使用。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "fast_cast_item",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "快捷使用道具_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 1,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|3"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "部分：通过滚轮切换武器时只在武器栏位1和2之间循环。\n全部：通过滚轮切换武器时会在武器栏位1、2和3之间循环。\n关闭：关闭滚轮切枪功能_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "quick_switch_scroll",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "滚轮快捷切换武器_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 1,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "部分_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "全部_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：手持1或2号栏位的武器时，切换武器按键1/2均代表切换至1/2号栏位的另一把武器。\n否：切换武器按键只代表对应栏位武器的收取与切换。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "quick_switch_keyboard",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "按键快捷切换武器_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 1,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|5"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：子弹打空后会自动切换到其他可用子弹（优先选取数量最多）。\n否：子弹打空后仍保持当前类型子弹。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "noammo_switch_type",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "子弹打空后自动切换类型_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|6"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：子弹全部打空后会自动切换到其他武器（优先选取1或2号栏位仍有子弹的武器）。\n否：子弹全部打空后仍保持当前武器。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "noammo_switch_weapon",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "子弹打空后自动切换武器_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|7"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：疾跑时打断换弹且无法进入换弹。\n否：疾跑与换弹可以共存。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "sprint_break_reload",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "疾跑打断换弹_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|8"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：疾跑时打断拉栓且无法进入拉栓。\n否：疾跑与拉栓可以共存。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "sprint_break_plug",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "疾跑打断拉栓_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|9"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：下蹲后会打断通过按下输入触发的疾跑。\n否：下蹲后不会打断通过按下输入触发的疾跑。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "crouch_intrpt_sprint_press",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "下蹲打断按下疾跑_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|a"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|a"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：肩射下响应近战攻击输入\n否：肩射下不响应近战攻击输入_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "shoulder_enable_melee",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "肩射下能否近战_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|b"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|b"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 9,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：移动时只要满足条件就会自动触发翻越或攀爬\n否：需要“跳跃”输入才会触发翻越或攀爬_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "climb_enable_auto",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "自动攀爬翻越_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|4"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 10,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 3,
+      "desc": {
+        "lan_translate": [
+          "触发采集、拾取、背刺等交互行为的判定响应速度\n更快的响应速度可能造成性能下降[优化中]_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "interaction_response_time",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "交互响应速度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "中等_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "较快_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "快_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 13,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：快捷栏物品使用完后自动从其他背包格中进行填充。\n否：快捷栏物品使用完后空置对应栏位不再进行填充_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "auto_add_shortcut",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "自动填充快捷栏_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|c"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|c"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 16,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：看到素材和掉落物后自动拾取\n否：手动点击拾取_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "auto_pick_up",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "自动拾取_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|d"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|d"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 17,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：开启后攀爬优先跳跃。\n否：原有默认攀爬优先级。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "climb_traditional_mode",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "快速攀爬_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|e"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|e"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 18,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：无操作待机一定时长后会进行套装表演。\n否：不会主动进入套装表演。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "Auto_Swto_NL_Stdby",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "待机自动收枪_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|f"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|f"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 19,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "调整异常物绝技的使用方式：\n轮盘：短按快捷释放和快捷收回；长按呼出轮盘。\n按键：短按快捷释放，长按快捷收回；绝技期间短按释放念控效果。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gamepad_sco_bigskill_mode",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "异常物操作模式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "轮盘_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "按键_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 20,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：开启后攀爬中可打断功能。\n否：不开启攀爬中打断功能。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "climb_break_mode",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "攀爬打断_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|g"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|g"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 22,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：开启后玩家开启的门将会在3秒后自动关闭。\n否：不开启自动关门设置。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "enable_auto_close_door",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "开启自动关门_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 13,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|h"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|h"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 23,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "永远：第一人称开镜下所有HUD信息永远显示\n动态：第一人称开镜下不显示聊天信息、小地图和任务信息\n从不：第一人称开镜下不显示聊天信息、小地图、任务信息和中心提示_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_hud_display",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜下的HUD显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "永远_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "动态_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "从不_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "永远：准星组件永远显示\n动态：准星组件根据玩家行为和游戏内容动态显示\n从不：准星组件从不显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "crosshair_display",
+      "extend_group_name": "cross_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "准星显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "永远_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "动态_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "从不_$S@TIDS$_cm|1"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "调整十字准星的粗细。非十字准星时则影响准星中心点_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "crosshair_thickness",
+      "extend_group_name": "cross_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "十字准星粗细_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        2,
+        12
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 100,
+      "desc": {
+        "lan_translate": [
+          "调整准星的透明度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "crosshair_alpha",
+      "extend_group_name": "cross_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "准星透明度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        50,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": "",
+      "english_name": "hp_hud_setting",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "姓名板及血条显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|5"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "开：会显示无人机、机械炮台等召唤物的生命值等信息；\n关：不显示这些召唤物的血条。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "hp_summon_display",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "战斗召唤物血条显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|6"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": "",
+      "english_name": "damage_hud_setting",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "伤害跳字显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|7"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "传统式：在命中点侧面显示伤害数字; \n迸发式：伤害数字随攻击方向在命中点跳出；\n叠加式：连续造成伤害时跳字会叠加到1个数字上并显示在目标生命值条上方，更适合PVP对抗（对部分大体型单位时会变成默认的迸发式）。_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "old_damage_hud_setting",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "跳字模式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "传统式_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "迸发式_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "叠加式_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "总是：每当天气变化时，均在屏幕上方提醒新天气；\n异常：仅在灭绝者等异常因素导致的天气变化时提醒；\n关闭：不会提醒天气变化_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "weather_change_toast_show_setting",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "天气变化提醒_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "总是_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "异常因素_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|1"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 9,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "2D：使用2DUI的圆弧和箭头提示敌人攻击。\n3D：使用三维空间箭头指向攻击、威胁方_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "danger_tips",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "威胁提示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        "2D",
+        "3D"
+      ],
+      "standard_value": 0,
+      "sub_idx": 10,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "开启:隐藏界面内的ui展示  \n关闭：ui正常展示_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "hud_hide",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "纯净模式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|2"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 12,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "控制角色低血量时屏幕效果显示功能的开启/关闭_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "show_near_death_screen_effect",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "低血量屏幕效果显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|3"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 13,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "完整版：显示具体声纹种类；\n精简版：显示声纹大类；\n关闭：不显示声纹；\n注：PVP剧本专用，PVE剧本未开放；_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "voiceprint_display_settings",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "声纹显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 14,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "完整版_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "精简版_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "无声纹_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 13,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "小地图显示的范围\n小：100米\n中：150米\n大：200米_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "map_mini_range",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "小地图显示范围_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 15,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "小_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "中_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "大_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "小地图的固定形式\n地图方向固定：东西南北固定，小地图不会跟随镜头移动而旋转\n镜头朝向固定：小地图会跟随镜头移动同步旋转_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "map_mini_fix_type",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "小地图固定形式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 15,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "地图方向固定_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "镜头朝向固定_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "开启或关闭地图中的导航线_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "map_navi_switch",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "地图导航开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 15,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cm|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|4"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "开：场景中始终显示留言模型\n动态：部分区域内留言模型动态显示\n关：场景中不再显示留言模型，仍可通过“余音”界面查看及搜索留言，但无法使用追踪定位功能_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ugc_setting",
+      "extend_group_name": "ugc_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "留言模型显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 16,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "动态_$S@TIDS$_cm|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|8"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "关闭后领地内将不再显示留言模型，仍可通过“余音”界面查看及搜索留言，但无法使用追踪定位功能_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ugc_territory_setting",
+      "extend_group_name": "ugc_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "个人领地内留言模型显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 16,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|9"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "关闭后据点内将不再显示留言模型，仍可通过“余音”界面查看及搜索留言，但无法使用追踪定位功能_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ugc_prefab_setting",
+      "extend_group_name": "ugc_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "据点内留言模型显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 16,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|a"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|a"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "少：1条\n适中：2条\n多：4条_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ugc_amount_setting",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "范围内留言数量显示_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 16,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        4
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "少_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "适中_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "多_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置谁可以评论我的留言_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ugc_msg_comment_permission",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "留言评论权限_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 16,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "所有人_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "好友_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "无_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置谁可以回复我的评论_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ugc_comment_reply_permission",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "评论回复权限_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 16,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "所有人_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "好友_$S@TIDS$_cm|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "无_$S@TIDS$_cm|1"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置是否接收点赞收藏通知_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ugc_notice_like_collect",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "点赞收藏通知_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 16,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|b"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|b"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置是否接受评论和回复通知_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ugc_notice_comment_reply",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "评论回复通知_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 16,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|c"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|c"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置是否接受系统消息通知_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ugc_notice_system",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "系统消息通知_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 16,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|d"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|d"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 9,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "调整冲刺的按键方式_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "Sprint",
+      "extend_group_name": "",
+      "key_id": 10105,
+      "name": {
+        "lan_translate": [
+          "冲刺_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 21,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "调整蹲伏的按键方式_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "Crough",
+      "extend_group_name": "",
+      "key_id": 10106,
+      "name": {
+        "lan_translate": [
+          "蹲伏_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 21,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|1"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "调整打开战术地图的按键方式_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "Map",
+      "extend_group_name": "",
+      "key_id": 10401,
+      "name": {
+        "lan_translate": [
+          "战术地图_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 21,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|2"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "调整进入第一人称开镜开镜状态的按键方式_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "Aim",
+      "extend_group_name": "",
+      "key_id": 11102,
+      "name": {
+        "lan_translate": [
+          "瞄准_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 21,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|3"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "调整进入第三人称越肩视角状态的按键方式_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ADS",
+      "extend_group_name": "",
+      "key_id": 11104,
+      "name": {
+        "lan_translate": [
+          "肩射_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 21,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|4"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "按下：按下时开火\n长按：长按时持续开火\n适用于沙鹰、左轮、Glock系列_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "handgun_fire_mode",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "手枪射击操作方式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 22,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|5"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "按下：按下时开火\n长按：长按时持续开火\n适用于双管猎枪、DP12、M870系列_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "shotgun_fire_mode_pa",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "霰弹枪射击操作方式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 22,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|6"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "按下：按下时开火\n长按：长按时持续开火\n适用于连发狙击枪_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "semi_sniper_fire_mode",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "连发狙击枪射击操作方式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 22,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|7"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "按下：按下时开火\n长按：长按时持续开火_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "crossbow_fire_mode_pa",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "弩射击操作方式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 22,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|8"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 100,
+      "desc": {
+        "lan_translate": [
+          "整体的灵敏度系数，数字越大越灵敏度越高_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "base_sensitivity",
+      "extend_group_name": "cam_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "灵敏度系数_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        50,
+        300
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 0,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第三人称常规视角的相机灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "hip",
+      "extend_group_name": "cam_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第三人称 - 常规_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.18538,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第三人称越肩视角下的相机灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "hip_shoulder",
+      "extend_group_name": "cam_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第三人称 - 越肩视角_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.12431,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜机械瞄具下的相机灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_iron_sight",
+      "extend_group_name": "cam_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 机械瞄具_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.10177,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率2.0x下的相机灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_type_1",
+      "extend_group_name": "cam_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率2.0x_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.09188,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率3.0x下的相机灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_type_2",
+      "extend_group_name": "cam_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率3.0x_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.06083,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率4.0x下的相机灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_type_3",
+      "extend_group_name": "cam_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率4.0x_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.04588,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率6.0x下的相机灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_type_4",
+      "extend_group_name": "cam_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率6.0x_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.02978,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率8.0x下的相机灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_type_5",
+      "extend_group_name": "cam_expand_01",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率8.0x_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.02231,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "用于控制对鼠标输入进行平滑处理的幅度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "mouse_smoothing",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "鼠标平滑_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 23,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.25,
+      "sub_idx": 9,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：任何水平方向的输入均被反转\n否：水平方向的输入与默认一致_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "x_inversion",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "X轴输入反转_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 24,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|i"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|i"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：任何垂直方向的输入均被反转\n否：垂直方向的输入与默认一致_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "y_inversion",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "Y轴输入反转_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 24,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|j"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|j"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "控制器具体按键配置_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_bt_jump",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "按键详情_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [],
+      "range_name": [],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "PanelGamepadSetting",
+      "ui_type": 3
+    },
+    {
+      "click_cb_name": "",
+      "default": 4,
+      "desc": {
+        "lan_translate": [
+          "控制器辅助瞄准的强度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_aim_assist",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "控制器辅助瞄准_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|g"
+          ]
+        },
+        {
+          "lan_translate": [
+            "弱_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "中_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "强_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是否开启控制器震动_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_shake",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "控制器震动_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|g"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|h"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是否开启武器轮盘_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "weapon_roulette",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "武器轮盘_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cm|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|5"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "调整冲刺的按键方式（对预设为ACT时无效）_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "Sprint_joystick",
+      "extend_group_name": "",
+      "key_id": 10118,
+      "name": {
+        "lan_translate": [
+          "冲刺_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|9"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "开启后操作杆推至极限时会自动进入冲刺_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gamepad_auto_sprint",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "自动进入冲刺_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|h"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|i"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "调整进入第一人称开镜开镜状态的按键方式_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "Aim_joystick",
+      "extend_group_name": "",
+      "key_id": 11102,
+      "name": {
+        "lan_translate": [
+          "瞄准_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|a"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|a"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "调整进入第三人称越肩视角状态的按键方式_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "ADS_joystick",
+      "extend_group_name": "",
+      "key_id": 11104,
+      "name": {
+        "lan_translate": [
+          "肩射_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|b"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|b"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 9,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "调整翻滚触发的方式。采用连续按下时需要短时间按下2次才能触发_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "char_roll_press_type",
+      "extend_group_name": "",
+      "key_id": 10114,
+      "name": {
+        "lan_translate": [
+          "翻滚_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|c"
+          ]
+        },
+        {
+          "lan_translate": [
+            "连续按下_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 10,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "当交互与换弹共用按键且能同时触发时，根据选项的优先级处理长按交互与换弹之间的优先级。\n换弹优先：优先执行换弹，且换弹过程中无法长按交互\n交互优先：优先执行交互，且交互过程中无法执行换弹_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gamepad_reload_interact_priority",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "交互与换弹优先级_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        0,
+        1
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "换弹优先_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "交互优先_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 11,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "按下：按下时开火\n长按：长按时持续开火\n适用于沙鹰、左轮、Glock系列_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "handgun_fire_mode_joystick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "手枪射击操作方式_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|d"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|c"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 12,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "按下：按下时开火\n长按：长按时持续开火\n适用于双管猎枪、DP12、M870系列_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "shotgun_fire_mode_pa_joystick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "霰弹枪射击操作方式_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|e"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|d"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 13,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "按下：按下时开火\n长按：长按时持续开火\n适用于连发狙击枪_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "semi_sniper_fire_mode_joystick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "连发狙击枪射击操作方式_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|f"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|e"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 14,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "按下：按下时开火\n长按：长按时持续开火_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "crossbow_fire_mode_pa_joystick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "弩射击操作方式_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "按下_$S@TIDS$_cm|g"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_cm|f"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 15,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "是：开启后控制器光标会自动吸附靠近的可交互组件，且在可交互组件附近会减速。\n否：关闭后控制器光标只有统一移动速度，不再有减速和吸附_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gamepad_enable_auto_pick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "是否开启控制器自动吸附/减速_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|k"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|k"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 16,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：开启后会自动记忆之前选择的轮盘\n否：关闭后默认优先显示异常物操控轮盘_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gamepad_circle_memory",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "轮盘组记忆上次选择轮盘_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|l"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|l"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 17,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "经典：使用操作杆控制载具的油门加减速\n赛车：使用L2/R2控制载具的油门加减速_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gamepad_vehicle_mode",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "载具加速操作模式_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 25,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "经典_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "赛车_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 18,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：任何水平方向的输入均被反转\n否：水平方向的输入与默认一致_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "ctr_x_inversion",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "控制器水平输入反转_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|m"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|m"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "是：任何垂直方向的输入均被反转\n否：垂直方向的输入与默认一致_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "ctr_y_inversion",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "控制器垂直输入反转_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_cm|n"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_cm|n"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "标准：初始较慢，平衡精准和快速瞄准需求\n线性：操作直接对应瞄准速率\n动态：初始较快然后减慢，曲线为反S形_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_sensitive_curve_type",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "灵敏度曲线_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "标准_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "线性_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "动态_$S@TIDS$_cm|3"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 100,
+      "desc": {
+        "lan_translate": [
+          "操作杆水平视角的相机灵敏度，灵敏度越高，水平方向的基础旋转速度越快_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_base_horsensitivity",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "水平灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        20,
+        300
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 100,
+      "desc": {
+        "lan_translate": [
+          "操作杆垂直视角的相机灵敏度，灵敏度越高，垂直方向的基础旋转速度越快_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_base_vertsensitivity",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "垂直灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        20,
+        300
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 60,
+      "desc": {
+        "lan_translate": [
+          "操作杆水平视角的相机叠加灵敏度，灵敏度越高，水平方向的旋转加速度越快_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_additive_horsensitivity",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "水平叠加灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 2,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 60,
+      "desc": {
+        "lan_translate": [
+          "操作杆垂直视角的相机叠加灵敏度，灵敏度越高，垂直方向的旋转加速度越快_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_additive_vertsensitivity",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "垂直叠加灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 2,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 80,
+      "desc": {
+        "lan_translate": [
+          "操作杆水平视角的相机灵敏度，灵敏度越高，瞄准时水平方向的基础旋转速度越快_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_baseaim_horsensitivity",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "水平瞄准灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        20,
+        300
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 80,
+      "desc": {
+        "lan_translate": [
+          "操作杆垂直视角的相机灵敏度，灵敏度越高，瞄准时垂直方向的基础旋转速度越快_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_baseaim_vertsensitivity",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "垂直瞄准灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        20,
+        300
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 9,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 20,
+      "desc": {
+        "lan_translate": [
+          "操作杆水平视角的相机叠加灵敏度，灵敏度越高，瞄准时水平方向的旋转加速度越快_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_additiveaim_horsensitivity",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "水平叠加瞄准灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 2,
+      "sub_idx": 10,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 20,
+      "desc": {
+        "lan_translate": [
+          "操作杆垂直视角的相机叠加灵敏度，灵敏度越高，瞄准时垂直方向的旋转加速度越快_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_additiveaim_vertsensitivity",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "垂直叠加瞄准灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 2,
+      "sub_idx": 11,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 20,
+      "desc": {
+        "lan_translate": [
+          "左操作杆的死区大小_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_deadzone_l",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "左操作杆死区_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 12,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 5,
+      "desc": {
+        "lan_translate": [
+          "右操作杆的死区大小_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_deadzone_r",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "右操作杆死区_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 13,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "左操作杆外边界限制区域的大小_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_boundary_l",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "左操作杆边界_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        30
+      ],
+      "range_name": [],
+      "standard_value": 100,
+      "sub_idx": 14,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "右操作杆外边界限制区域的大小_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_boundary_r",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "右操作杆边界_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        30
+      ],
+      "range_name": [],
+      "standard_value": 100,
+      "sub_idx": 15,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "@11102@的死区大小_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_trigger_deadzone_l",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "@11102@死区_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 16,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 15,
+      "desc": {
+        "lan_translate": [
+          "@11101@的死区大小_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_trigger_deadzone_r",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "@11101@死区_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 17,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "界面光标的最大移动速度，初始速度为5_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ctr_cursor_speed",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "界面光标灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 26,
+      "platform": 0,
+      "range": [
+        5,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 100,
+      "sub_idx": 18,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 100,
+      "desc": {
+        "lan_translate": [
+          "整体的灵敏度系数，数字越大越灵敏度越高_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "base_sensitivity_joystick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "灵敏度系数_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 30,
+      "platform": 0,
+      "range": [
+        50,
+        300
+      ],
+      "range_name": [],
+      "standard_value": 5.8,
+      "sub_idx": 0,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第三人称常规视角的相机灵敏度_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "hip_joystick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第三人称 - 常规_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 30,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第三人称越肩视角下的相机灵敏度_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "hip_shoulder_joystick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第三人称 - 越肩视角_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 30,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.6706,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜机械瞄具下的相机灵敏度_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "ads_iron_sight_joystick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 机械瞄具_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 30,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.549,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率2.0x下的相机灵敏度_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "ads_optics_joystick_type_1",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率2.0x_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 30,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.4956,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率3.0x下的相机灵敏度_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "ads_optics_joystick_type_2",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率3.0x_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 30,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.3281,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率4.0x下的相机灵敏度_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "ads_optics_joystick_type_3",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率4.0x_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 30,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.2475,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率6.0x下的相机灵敏度_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "ads_optics_joystick_type_4",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率6.0x_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 30,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.1606,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率8.0x下的相机灵敏度_$S@TIDS$_cm|1"
+        ]
+      },
+      "english_name": "ads_optics_joystick_type_5",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率8.0x_$S@TIDS$_cm|1"
+        ]
+      },
+      "parent_idx": 30,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.1203,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "陀螺仪的总开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_mode_all",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "总开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 50,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|i"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|j"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "开启时，长按对应按键会临时关闭陀螺仪，直到松开按键_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_mode_dynamic",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "动态开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 50,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按换弹按键_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按冲刺按键_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按触摸板_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "当触发动态开关时，陀螺仪水平轴实际的响应效果_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_mode_dynamic_hor",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "动态开关水平响应_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 50,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "正常_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "反转_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "当触发动态开关时，陀螺仪垂直轴实际的响应效果_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_mode_dynamic_ver",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "动态开关垂直响应_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 50,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "正常_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "反转_$S@TIDS$_cm|1"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "常规视角下陀螺仪开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_mode_nml",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "常规视角开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 50,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|j"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|k"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "开镜视角下陀螺仪开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_mode_ads",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "开镜视角开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 50,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|k"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|l"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "肩射视角下陀螺仪开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_mode_shoulder",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "肩射视角开关_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 50,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|l"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|m"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 100,
+      "desc": {
+        "lan_translate": [
+          "相机运动时陀螺仪运动叠加的效果，为0时则完全不叠加_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_cam_input",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "相机运动时陀螺仪效果_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 50,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "陀螺仪水平方向灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_sensitivity_hor",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "水平灵敏度系数_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        0,
+        2
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "陀螺仪垂直方向灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_sensitivity_ver",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "垂直灵敏度系数_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        0,
+        2
+      ],
+      "range_name": [],
+      "standard_value": 1,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "陀螺仪水平方向控制_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_mode_hor",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "水平轴控制_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "正常_$S@TIDS$_cm|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "反转_$S@TIDS$_cm|2"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "陀螺仪垂直方向控制_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_mode_ver",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "垂直轴控制_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "正常_$S@TIDS$_cm|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cm|a"
+          ]
+        },
+        {
+          "lan_translate": [
+            "反转_$S@TIDS$_cm|3"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第三人称常规视角的灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_joystick",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第三人称 - 常规_$S@TIDS$_cm|2"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 3,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第三人称越肩视角下的灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "hip_shoulder_gyro",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第三人称 - 越肩视角_$S@TIDS$_cm|2"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 2.0118,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜机械瞄具下的灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_iron_sight_gyro",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 机械瞄具_$S@TIDS$_cm|2"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1.647,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率2.0x下的灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_gyro_type_1",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率2.0x_$S@TIDS$_cm|2"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1.4868,
+      "sub_idx": 9,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率3.0x下的灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_gyro_type_2",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率3.0x_$S@TIDS$_cm|2"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.9843,
+      "sub_idx": 10,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率4.0x下的灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_gyro_type_3",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率4.0x_$S@TIDS$_cm|2"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.7425,
+      "sub_idx": 11,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率6.0x下的灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_gyro_type_4",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率6.0x_$S@TIDS$_cm|2"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.4818,
+      "sub_idx": 12,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "第一人称开镜开镜倍率8.0x下的灵敏度_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "ads_optics_gyro_type_5",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "第一人称开镜 - 开镜倍率8.0x_$S@TIDS$_cm|2"
+        ]
+      },
+      "parent_idx": 51,
+      "platform": 0,
+      "range": [
+        1,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.3609,
+      "sub_idx": 13,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 3,
+      "desc": {
+        "lan_translate": [
+          "陀螺仪的实际重力计算方向_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_space",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "感应空间_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 52,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "控制器_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "重力_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "玩家_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "低于阈值时不会触发运动_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_threshold",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "响应阈值_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 52,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 1.2,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 30,
+      "desc": {
+        "lan_translate": [
+          "低于该阈值的运动会被平滑处理_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_smooth",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "平滑阈值_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 52,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 6,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 50,
+      "desc": {
+        "lan_translate": [
+          "平滑处理时的时间窗口_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_smooth_window",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "平滑窗口_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 52,
+      "platform": 0,
+      "range": [
+        0,
+        100
+      ],
+      "range_name": [],
+      "standard_value": 0.5,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 2
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "运动超过特定阈值时画面运动会加速_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_move_acc",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "运动加速_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 52,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|r"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|s"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "决定何时传感器校准其零点。光标出现后等待3秒开始校准_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "gyro_calibration",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "自动校准_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 52,
+      "platform": 0,
+      "range": [
+        1,
+        2,
+        3
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "随时_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "光标出现_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "锁定_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "npc_chat_victor",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "召唤威_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 101,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "npc_chat_victor"
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "camera_mode",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "照相机_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 101,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "camera_mode"
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "flash_light_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "手电筒_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 101,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "flash_light_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "build_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "建造_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 101,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "build_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "camp_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "营帐_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 101,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "camp_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "vehicle_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "载具_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 101,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "vehicle_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 6,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "whispers_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "余音_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 101,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "whispers_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 7,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "report_mian_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "举报_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 101,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "report_mian_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 8,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "cradle_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "模因 · 摇篮_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 102,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "cradle_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "survival_book",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "生存手册_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 102,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "survival_book"
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "package_ui_menu",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "背包_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 102,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "package_ui_menu"
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "card_list_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "装备蓝图_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 102,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "card_list_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "equip_mod_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "装备模组_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 102,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "equip_mod_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 5,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "bigmap_task_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "任务_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 103,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "bigmap_task_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "journey_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "旅途_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 103,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "journey_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "play_guide_mix_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "玩法推荐_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 103,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "play_guide_mix_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "frat_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "求生小队_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 104,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "frat_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "hive_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "战群_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 104,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "hive_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "friend_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "好友_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 104,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "friend_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "eternal_island_ui",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "永恒岛_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 104,
+      "platform": 0,
+      "range": [
+        0
+      ],
+      "range_name": [
+        "eternal_island_ui"
+      ],
+      "standard_value": 0,
+      "sub_idx": 4,
+      "ui_jump_pop": "",
+      "ui_type": 6
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "account_and_other_management",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "用户账号和其他内容管理_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 27,
+      "platform": 0,
+      "range": [],
+      "range_name": [
+        {
+          "lan_translate": [
+            "查看_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 7
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "servicer",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "客服_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 27,
+      "platform": 0,
+      "range": [],
+      "range_name": [
+        {
+          "lan_translate": [
+            "查看_$S@TIDS$_cm|1"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 7
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "user_agreement",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "用户协议_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 28,
+      "platform": 0,
+      "range": [],
+      "range_name": [
+        {
+          "lan_translate": [
+            "协议内容_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 7
+    },
+    {
+      "click_cb_name": "",
+      "default": 0,
+      "desc": "",
+      "english_name": "client_error_fix",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "客户端问题修复_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 29,
+      "platform": 0,
+      "range": [],
+      "range_name": [
+        {
+          "lan_translate": [
+            "修复_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 7
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "用于控制水管，电线的显示或隐藏_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "wire_visible",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "水电线显隐_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 10,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "显示_$S@TIDS$_cm|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "隐藏_$S@TIDS$_cm|0"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "用于控制各种功能设施作用范围的显示或隐藏_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "build_fac_range",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "设施作用范围显隐_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 10,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "显示_$S@TIDS$_cm|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "隐藏_$S@TIDS$_cm|1"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 2,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "用于控制可建造区域的显示范围或隐藏_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "show_build_area",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "可建造区域显隐_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 10,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "显示_$S@TIDS$_cm|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "隐藏_$S@TIDS$_cm|2"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 3,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "开启：使用捏脸时塑造的体型，外观不再受体重影响，属性数值加成仍会生效\n关闭：体型会随着体重大小变化\n需要拥有捏脸数据才能生效，可通过重塑功能捏脸_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "use_default_body_type",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "使用默认体型_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 17,
+      "platform": 0,
+      "range": [
+        1,
+        2
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|e"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|e"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    },
+    {
+      "click_cb_name": "",
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "开启时将通过您的行为数据为您推荐活动内容_$S@TIDS$_cm|0"
+        ]
+      },
+      "english_name": "personalized_recommendation",
+      "extend_group_name": "",
+      "key_id": 0,
+      "name": {
+        "lan_translate": [
+          "个性化推荐_$S@TIDS$_cm|0"
+        ]
+      },
+      "parent_idx": 36,
+      "platform": 0,
+      "range": [
+        0,
+        1
+      ],
+      "range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_cm|f"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_cm|f"
+          ]
+        }
+      ],
+      "standard_value": 0,
+      "sub_idx": 1,
+      "ui_jump_pop": "",
+      "ui_type": 1
+    }
+  ]
+}

@@ -1,0 +1,934 @@
+{
+  "_meta": {
+    "sourceFile": "00257_09540a7d.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00257_09540a7d.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.822Z",
+    "recordCount": 2,
+    "sourceHash": "670c025320c61c7ee8eea9ccc3dbba6e22ebcbda3f5cd98c355cdfdb8adedc4d",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "1": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "attacker",
+            "effect_index": 1,
+            "scope": 0
+          },
+          "type": "NodeBBLoadIntData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 5300320218,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 3,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            25,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "4": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 4,
+            "value": 1
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "5": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 5
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            9,
+            26,
+            27
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "6": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 5300320215,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 6,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            23,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "7": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 7,
+            "operation": 0
+          },
+          "type": "NodeCompareInt"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data1": [
+            21,
+            "utility",
+            "buff_stack"
+          ],
+          "data2": [
+            1,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "8": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 5300320216,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 8,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            25,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attach_damp_lerp_halflife": 0,
+            "attach_disable_follow_rotation": false,
+            "attach_need_sync_pos": false,
+            "attach_need_update_move_direction": false,
+            "buff_id": 5300320213,
+            "buff_lv": 1,
+            "constraint_bone_name": "",
+            "duration_with_buff": false,
+            "effect_index": 9,
+            "is_use_target_rotation": true,
+            "keep_attach_on_death": false,
+            "mapping_buff": true,
+            "need_disable": false,
+            "socket_name": "Socket_damage",
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": "bt_shootgun_justshoot_sniper",
+              "anim_graph_path": "character/monster/mob/anim_graph/mob.animgraph",
+              "aoi_radius": 60,
+              "aoi_radius2": 60,
+              "can_mod_pos_y": false,
+              "combat_prototype_no": "110414",
+              "combat_unit_no": "11041400101",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": false,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": -1,
+              "dynamic_mask_level": 0,
+              "head_bar_rule_list": [
+                30
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "model_path": "character/player/npc/vulture/vulture_hunter/vulture_hunter.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 0,
+              "pos_off_circle": false,
+              "pulse_detect_effects": [],
+              "radius_angle": [
+                0,
+                0
+              ],
+              "removed_no_drop": false,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|1401031106",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": false,
+              "unit_camp_template_no": "304",
+              "unit_entity_type": "Enemy",
+              "unit_hold_item": "12300020",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "summon_ragdoll_data": {
+              "enable_global_matching": false,
+              "enable_local_matching": false,
+              "global_damping_ratio": 0,
+              "global_match_coefficent": 0,
+              "global_matching_time": 0,
+              "local_damping_ratio": 0,
+              "local_match_coefficent": 0,
+              "local_matching_time": 0,
+              "ragdoll_config_name": "",
+              "use_summon_ragdoll": false
+            },
+            "tar_offpos": [
+              0,
+              0,
+              -1
+            ],
+            "tar_offrot": [
+              0,
+              0,
+              0
+            ]
+          },
+          "type": "NodeSummonMountNpcBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_id": [
+            17,
+            "utility",
+            "holder_uid"
+          ],
+          "target_id": [
+            17,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "10": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 10
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            14,
+            20
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "11": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 11
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            10,
+            24,
+            5,
+            3,
+            8
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "14": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "attacker",
+            "effect_index": 14,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 1
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "16": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 16
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "17": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 17
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "18": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 18
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            6
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            7,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "20": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 20,
+            "loop_max_times": 0,
+            "loop_time": 1,
+            "reset_last_effect": true,
+            "start_trigger": false
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            18
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "21": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "buff_id": 5300320214,
+            "buff_lv": 1,
+            "buff_owner": 0,
+            "effect_index": 21,
+            "mapping_buff": false,
+            "use_template": false
+          },
+          "type": "NodeGetTargetBuffStack"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            16,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "buff_stack"
+          ]
+        }
+      },
+      "22": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 22
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "23": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 23
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "24": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attach_damp_lerp_halflife": 0,
+            "attach_disable_follow_rotation": false,
+            "attach_need_sync_pos": false,
+            "attach_need_update_move_direction": false,
+            "buff_id": 5300320230,
+            "buff_lv": 1,
+            "constraint_bone_name": "",
+            "duration_with_buff": false,
+            "effect_index": 24,
+            "is_use_target_rotation": false,
+            "keep_attach_on_death": false,
+            "mapping_buff": true,
+            "need_disable": false,
+            "socket_name": "Socket_damage",
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": "bt_shootgun_justshoot",
+              "anim_graph_path": "character/monster/mob/anim_graph/mob.animgraph",
+              "aoi_radius": 60,
+              "aoi_radius2": 60,
+              "can_mod_pos_y": false,
+              "combat_prototype_no": "110411",
+              "combat_unit_no": "11041100101",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": false,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": -1,
+              "dynamic_mask_level": 0,
+              "head_bar_rule_list": [
+                30
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "model_path": "character/player/npc/vulture/vulture_sentinel/vulture_sentinel.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 0,
+              "pos_off_circle": false,
+              "pulse_detect_effects": [],
+              "radius_angle": [
+                0,
+                0
+              ],
+              "removed_no_drop": false,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|1401101055",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": false,
+              "unit_camp_template_no": "208",
+              "unit_entity_type": "Enemy",
+              "unit_hold_item": "12100028",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "summon_ragdoll_data": {
+              "enable_global_matching": false,
+              "enable_local_matching": false,
+              "global_damping_ratio": 0,
+              "global_match_coefficent": 0,
+              "global_matching_time": 0,
+              "local_damping_ratio": 0,
+              "local_match_coefficent": 0,
+              "local_matching_time": 0,
+              "ragdoll_config_name": "",
+              "use_summon_ragdoll": false
+            },
+            "tar_offpos": [
+              0,
+              0,
+              0
+            ],
+            "tar_offrot": [
+              0,
+              0,
+              0
+            ]
+          },
+          "type": "NodeSummonMountNpcBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_id": [
+            22,
+            "utility",
+            "holder_uid"
+          ],
+          "target_id": [
+            22,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "25": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 25
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "26": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attach_damp_lerp_halflife": 0,
+            "attach_disable_follow_rotation": false,
+            "attach_need_sync_pos": false,
+            "attach_need_update_move_direction": false,
+            "buff_id": 5300320213,
+            "buff_lv": 1,
+            "constraint_bone_name": "",
+            "duration_with_buff": false,
+            "effect_index": 26,
+            "is_use_target_rotation": true,
+            "keep_attach_on_death": false,
+            "mapping_buff": true,
+            "need_disable": false,
+            "socket_name": "Socket_damage",
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": "bt_shootgun_justshoot_sniper",
+              "anim_graph_path": "character/monster/mob/anim_graph/mob.animgraph",
+              "aoi_radius": 60,
+              "aoi_radius2": 60,
+              "can_mod_pos_y": false,
+              "combat_prototype_no": "110414",
+              "combat_unit_no": "11041400101",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": false,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": -1,
+              "dynamic_mask_level": 0,
+              "head_bar_rule_list": [
+                30
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "model_path": "character/player/npc/vulture/vulture_hunter/vulture_hunter.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 0,
+              "pos_off_circle": false,
+              "pulse_detect_effects": [],
+              "radius_angle": [
+                0,
+                0
+              ],
+              "removed_no_drop": false,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|1401031106",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": false,
+              "unit_camp_template_no": "304",
+              "unit_entity_type": "Enemy",
+              "unit_hold_item": "12300020",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "summon_ragdoll_data": {
+              "enable_global_matching": false,
+              "enable_local_matching": false,
+              "global_damping_ratio": 0,
+              "global_match_coefficent": 0,
+              "global_matching_time": 0,
+              "local_damping_ratio": 0,
+              "local_match_coefficent": 0,
+              "local_matching_time": 0,
+              "ragdoll_config_name": "",
+              "use_summon_ragdoll": false
+            },
+            "tar_offpos": [
+              0,
+              0,
+              -1
+            ],
+            "tar_offrot": [
+              0,
+              0,
+              0
+            ]
+          },
+          "type": "NodeSummonMountNpcBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_id": [
+            17,
+            "utility",
+            "holder_uid"
+          ],
+          "target_id": [
+            17,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "27": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attach_damp_lerp_halflife": 0,
+            "attach_disable_follow_rotation": false,
+            "attach_need_sync_pos": false,
+            "attach_need_update_move_direction": false,
+            "buff_id": 5300320213,
+            "buff_lv": 1,
+            "constraint_bone_name": "",
+            "duration_with_buff": false,
+            "effect_index": 27,
+            "is_use_target_rotation": true,
+            "keep_attach_on_death": false,
+            "mapping_buff": true,
+            "need_disable": false,
+            "socket_name": "Socket_damage",
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": "bt_shootgun_justshoot",
+              "anim_graph_path": "character/monster/mob/anim_graph/mob.animgraph",
+              "aoi_radius": 60,
+              "aoi_radius2": 60,
+              "can_mod_pos_y": false,
+              "combat_prototype_no": "110411",
+              "combat_unit_no": "11041100101",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": false,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": -1,
+              "dynamic_mask_level": 0,
+              "head_bar_rule_list": [
+                30
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "model_path": "character/player/npc/vulture/vulture_sentinel/vulture_sentinel.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 0,
+              "pos_off_circle": false,
+              "pulse_detect_effects": [],
+              "radius_angle": [
+                0,
+                0
+              ],
+              "removed_no_drop": false,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|1401101055",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": false,
+              "unit_camp_template_no": "208",
+              "unit_entity_type": "Enemy",
+              "unit_hold_item": "12100028",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "summon_ragdoll_data": {
+              "enable_global_matching": false,
+              "enable_local_matching": false,
+              "global_damping_ratio": 0,
+              "global_match_coefficent": 0,
+              "global_matching_time": 0,
+              "local_damping_ratio": 0,
+              "local_match_coefficent": 0,
+              "local_matching_time": 0,
+              "ragdoll_config_name": "",
+              "use_summon_ragdoll": false
+            },
+            "tar_offpos": [
+              0,
+              0,
+              -1
+            ],
+            "tar_offrot": [
+              0,
+              0,
+              0
+            ]
+          },
+          "type": "NodeSummonMountNpcBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_id": [
+            17,
+            "utility",
+            "holder_uid"
+          ],
+          "target_id": [
+            17,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 11,
+      "name": "buff_5300320232_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        5300320232,
+        1
+      ],
+      "tid": 16301
+    }
+  ]
+}

@@ -1,0 +1,1299 @@
+{
+  "_meta": {
+    "sourceFile": "02440_5513cacb.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02440_5513cacb.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:45.252Z",
+    "recordCount": 2,
+    "sourceHash": "8dc5a197c3dc42fbafdd7f6cbaaf358f35467d33491a3e5b97484d2c2556c19b",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "1": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 1,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 1125899925458945,
+                "params": {
+                  "dynamic_event": [],
+                  "effect_index": 5,
+                  "event_names": [
+                    "on_shoot_once"
+                  ],
+                  "is_fire": true,
+                  "role": 0
+                },
+                "type": "shoot_once_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            41,
+            42,
+            60
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 2
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            84,
+            68,
+            48,
+            1,
+            67,
+            15,
+            72,
+            52
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "4": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 4,
+            "ignore_magazine_limit": false,
+            "need_disable": false,
+            "need_reload_suc_event": false,
+            "type": false,
+            "value": -1,
+            "value_type": 1
+          },
+          "type": "NodeAddAmmunition"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "gun_id": [
+            6,
+            "utility",
+            "item_id"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "6": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 6,
+            "hand_hold_type": 0
+          },
+          "type": "NodeGetHoldItemAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "item_id",
+            "item_no",
+            "type",
+            "sub_type"
+          ]
+        }
+      },
+      "8": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 110900000,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 8,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": false,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            15,
+            "trigger",
+            "attacker"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 9,
+            "operation": 0
+          },
+          "type": "NodeBBFloatCalculation"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data1": 1
+        },
+        "in_data_pin": {
+          "data2": [
+            11,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "11": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "keyword_proc_chance_add_rate_quick_draw",
+            "effect_index": 11,
+            "percent": 100
+          },
+          "type": "NodeGetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "13": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 13,
+            "value": 1
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "15": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "cd": 0,
+            "check_args": {
+              "attack_negate": false,
+              "attack_type": [
+                1
+              ],
+              "bullet_hit_source": false,
+              "check_all_bullet": false,
+              "check_all_hit": false,
+              "check_all_hit_same_one": true,
+              "check_detect_mark": false,
+              "check_hit_source": false,
+              "check_node": false,
+              "check_weapon_no": false,
+              "crit_attack": false,
+              "damage_feature_negate": false,
+              "damage_feature_type": [],
+              "element_negate": false,
+              "element_type": [],
+              "formula_attack_type": [
+                2
+              ],
+              "formula_negate": false,
+              "hit_part": [],
+              "hit_part_negate": false,
+              "in_weapon_range": false,
+              "keyword": [
+                311,
+                312
+              ],
+              "keyword_negate": true,
+              "keyword_tag": [],
+              "keyword_tag_negate": false,
+              "multi_bullet_one_attack": true,
+              "node_index": -1,
+              "sub_melee_attack_negate": false,
+              "sub_melee_attack_type": [],
+              "target_negate": true,
+              "target_type": [
+                98
+              ],
+              "unit_species": [],
+              "unit_species_negate": false,
+              "weak_attack": false,
+              "weapon_no": []
+            },
+            "checker_sid": 16888498621255680,
+            "dynamic_event": [],
+            "effect_index": 15,
+            "event_names": [
+              "on_attacked"
+            ],
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "reset_last_effect": true,
+            "task_checker": "attack_checker",
+            "trigger_checker": []
+          },
+          "type": "NodeAttackEvent"
+        },
+        "event_action": {
+          "trigger": [
+            16
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": [
+            "damage",
+            "attacker",
+            "victim",
+            "hit_pos",
+            "dis_dam_rate",
+            "part_name",
+            "bone_name",
+            "fire_pos",
+            "pre_buff_effect"
+          ]
+        }
+      },
+      "16": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 16,
+            "input_factor": 100,
+            "probability": 100,
+            "speed_factor": 0.8,
+            "use_expect_rate": false,
+            "use_input": true
+          },
+          "type": "NodeBuffProbabilityTask"
+        },
+        "event_action": {
+          "process": [
+            8
+          ]
+        },
+        "in_data_pin": {
+          "input_rate": [
+            9,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "process": []
+        }
+      },
+      "27": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 27,
+            "input_factor": 50,
+            "probability": 50,
+            "speed_factor": 0.8,
+            "use_expect_rate": true,
+            "use_input": false
+          },
+          "type": "NodeBuffProbabilityTask"
+        },
+        "event_action": {
+          "process": [
+            38,
+            46
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": []
+        }
+      },
+      "38": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "qwe",
+            "effect_index": 38,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 1
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "39": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 39,
+            "value": 1
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "41": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "attribute": "hp",
+                  "dynamic_event": [
+                    "on_save_data_to_bb::@key"
+                  ],
+                  "effect_index": 37,
+                  "event_names": [
+                    "on_save_data_to_bb"
+                  ],
+                  "key": "qwe",
+                  "op": 4,
+                  "scope": 0,
+                  "value": 1,
+                  "value_type": 1
+                },
+                "type": "bb_data_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 41
+          },
+          "type": "NodeBuffCheckerTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            4,
+            66
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "42": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "qwe",
+            "effect_index": 42,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 0
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "43": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 43,
+            "value": 0
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "46": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute_list": [
+              {
+                "attribute": "attack",
+                "extra_value": 0,
+                "value": 100,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 46,
+            "element_type": 0,
+            "formula_attack_type": 0,
+            "ignore_field": false,
+            "item_id": 1,
+            "jump_word_element_type": false,
+            "keyword_type": 0,
+            "max_level": 0,
+            "need_disable": false,
+            "override_attack_type": false,
+            "override_buff_use_weak": false,
+            "override_element_type": false,
+            "override_keyword_type": false,
+            "reset": true,
+            "throw_max_times": 0,
+            "times_type": 1,
+            "trigger_checker": [],
+            "trigger_op": 1,
+            "weapon_max_times": {
+              "0": 1,
+              "2": 0,
+              "5": 0
+            }
+          },
+          "type": "NodeWeaponEffect"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "48": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 48,
+            "need_disable": false,
+            "probability_dict": {
+              "1": 50,
+              "2": 50
+            }
+          },
+          "type": "NodeBuffRandomTask"
+        },
+        "event_action": {
+          "process_1": [
+            49,
+            58
+          ],
+          "process_2": []
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process_1": [],
+          "process_2": []
+        }
+      },
+      "49": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "qwe",
+            "effect_index": 49,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 1
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "50": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 50,
+            "value": 1
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "52": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "cd": 0,
+            "check_args": {
+              "attack_negate": true,
+              "attack_type": [
+                1
+              ],
+              "bullet_hit_source": false,
+              "check_all_bullet": false,
+              "check_all_hit": false,
+              "check_all_hit_same_one": true,
+              "check_detect_mark": false,
+              "check_hit_source": false,
+              "check_node": false,
+              "check_weapon_no": false,
+              "crit_attack": false,
+              "damage_feature_negate": false,
+              "damage_feature_type": [],
+              "element_negate": false,
+              "element_type": [],
+              "formula_attack_type": [
+                2
+              ],
+              "formula_negate": false,
+              "hit_part": [],
+              "hit_part_negate": false,
+              "in_weapon_range": false,
+              "keyword": [
+                311,
+                312
+              ],
+              "keyword_negate": true,
+              "keyword_tag": [],
+              "keyword_tag_negate": false,
+              "multi_bullet_one_attack": true,
+              "node_index": -1,
+              "sub_melee_attack_negate": false,
+              "sub_melee_attack_type": [],
+              "target_negate": true,
+              "target_type": [
+                98
+              ],
+              "unit_species": [],
+              "unit_species_negate": false,
+              "weak_attack": false,
+              "weapon_no": []
+            },
+            "checker_sid": 58546795174432770,
+            "dynamic_event": [],
+            "effect_index": 52,
+            "event_names": [
+              "on_attacked"
+            ],
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "reset_last_effect": true,
+            "task_checker": "attack_checker",
+            "trigger_checker": []
+          },
+          "type": "NodeAttackEvent"
+        },
+        "event_action": {
+          "trigger": [
+            56
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": [
+            "damage",
+            "attacker",
+            "victim",
+            "hit_pos",
+            "dis_dam_rate",
+            "part_name",
+            "bone_name",
+            "fire_pos",
+            "pre_buff_effect"
+          ]
+        }
+      },
+      "53": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 110900000,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 53,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": false,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            52,
+            "trigger",
+            "attacker"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "54": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 54,
+            "operation": 0
+          },
+          "type": "NodeBBFloatCalculation"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data1": 1
+        },
+        "in_data_pin": {
+          "data2": [
+            57,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "55": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 55,
+            "value": 1
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "56": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 56,
+            "input_factor": 45,
+            "probability": 45,
+            "speed_factor": 0.8,
+            "use_expect_rate": false,
+            "use_input": true
+          },
+          "type": "NodeBuffProbabilityTask"
+        },
+        "event_action": {
+          "process": [
+            53
+          ]
+        },
+        "in_data_pin": {
+          "input_rate": [
+            54,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "process": []
+        }
+      },
+      "57": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "keyword_proc_chance_add_rate_quick_draw",
+            "effect_index": 57,
+            "percent": 100
+          },
+          "type": "NodeGetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "58": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute_list": [
+              {
+                "attribute": "attack",
+                "extra_value": 0,
+                "value": 80,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 58,
+            "element_type": 0,
+            "formula_attack_type": 0,
+            "ignore_field": false,
+            "item_id": 1,
+            "jump_word_element_type": false,
+            "keyword_type": 0,
+            "max_level": 0,
+            "need_disable": false,
+            "override_attack_type": false,
+            "override_buff_use_weak": false,
+            "override_element_type": false,
+            "override_keyword_type": false,
+            "reset": true,
+            "throw_max_times": 0,
+            "times_type": 1,
+            "trigger_checker": [],
+            "trigger_op": 1,
+            "weapon_max_times": {
+              "0": 1,
+              "2": 0,
+              "5": 0
+            }
+          },
+          "type": "NodeWeaponEffect"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "60": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 60
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            61
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "61": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "check_delta": false,
+                  "check_property": "cur_clip_left",
+                  "dynamic_event": [],
+                  "effect_index": 59,
+                  "event_names": [
+                    "on_define_property_changed::cur_clip_left"
+                  ],
+                  "op": 4,
+                  "value": 1
+                },
+                "type": "define_property_value_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 61
+          },
+          "type": "NodeBuffCheckerTask"
+        },
+        "event_action": {
+          "False": [
+            27
+          ],
+          "True": []
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "66": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "count": 1,
+            "effect_index": 66,
+            "need_disable": false,
+            "weapon_plaque_no": 306
+          },
+          "type": "NodeAddWeaponPlaqueCount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "67": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "cd": 0,
+            "check_args": {
+              "check_all_bullet": false,
+              "check_all_hit": false,
+              "check_all_hit_same_one": true,
+              "check_detect_mark": false,
+              "check_node": false,
+              "check_weapon_no": false,
+              "hit_obj_group": [],
+              "hit_obj_group_negate": false,
+              "in_weapon_range": false,
+              "multi_bullet_one_attack": true,
+              "node_index": -1,
+              "weapon_no": []
+            },
+            "checker_sid": 75435293777072130,
+            "dynamic_event": [],
+            "effect_index": 67,
+            "event_names": [
+              "on_bullet_miss"
+            ],
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "reset_last_effect": true,
+            "task_checker": "attack_empty_checker",
+            "trigger_checker": []
+          },
+          "type": "NodeAttackEmptyEvent"
+        },
+        "event_action": {
+          "trigger": [
+            79
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": [
+            "damage",
+            "attacker",
+            "victim",
+            "hit_pos",
+            "dis_dam_rate",
+            "part_name",
+            "bone_name",
+            "fire_pos"
+          ]
+        }
+      },
+      "68": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "load",
+            "effect_index": 68,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 0
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "69": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 69,
+            "value": 0
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "70": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "load",
+            "effect_index": 70,
+            "need_disable": false,
+            "operation": 0,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBChangeIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 1
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "71": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 71,
+            "value": 1
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "72": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "cd": 0,
+            "checker_sid": 81064793311285250,
+            "dynamic_event": [],
+            "effect_index": 72,
+            "event_names": [
+              "on_reload_once_suc"
+            ],
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "reset_last_effect": true,
+            "task_checker": "reload_once_suc_checker",
+            "trigger_checker": []
+          },
+          "type": "NodeReloadSucEvent"
+        },
+        "event_action": {
+          "trigger": [
+            73,
+            78
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": [
+            "cur_clip_left"
+          ]
+        }
+      },
+      "73": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 73,
+            "ignore_magazine_limit": true,
+            "need_disable": false,
+            "need_reload_suc_event": false,
+            "type": true,
+            "value": 0,
+            "value_type": 1
+          },
+          "type": "NodeAddAmmunition"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "gun_id": [
+            74,
+            "utility",
+            "item_id"
+          ],
+          "value": [
+            76,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "74": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 74,
+            "hand_hold_type": 0
+          },
+          "type": "NodeGetHoldItemAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "item_id",
+            "item_no",
+            "type",
+            "sub_type"
+          ]
+        }
+      },
+      "75": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "load",
+            "effect_index": 75,
+            "scope": 0
+          },
+          "type": "NodeBBLoadIntData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "76": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 76
+          },
+          "type": "NodeIntToFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            75,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "77": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 77,
+            "value": 0
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "78": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "load",
+            "effect_index": 78,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 0
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "79": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 79
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            70
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            82,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "81": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "load",
+            "effect_index": 81,
+            "scope": 0
+          },
+          "type": "NodeBBLoadIntData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "82": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 82,
+            "operation": 1
+          },
+          "type": "NodeCompareInt"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 4
+        },
+        "in_data_pin": {
+          "data1": [
+            81,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "83": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 83,
+            "value": 4
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "84": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "weak_dam_rate",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 0.4,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 84,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 2,
+      "name": "buff_354101000_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        354101000,
+        1
+      ],
+      "tid": 4545
+    }
+  ]
+}

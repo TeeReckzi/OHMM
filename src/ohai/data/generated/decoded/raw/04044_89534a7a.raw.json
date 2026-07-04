@@ -1,0 +1,190 @@
+{
+  "_meta": {
+    "sourceFile": "04044_89534a7a.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04044_89534a7a.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.028Z",
+    "recordCount": 2,
+    "sourceHash": "f418d0065b47a5a28969c2d3a3f2999ee7b0622841d730efeb9f061ea27df02f",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 2,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [
+              {
+                "checker_sid": 2251799872835586,
+                "params": {
+                  "add_buff": false,
+                  "buff_id": 501100011,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::501100011"
+                  ],
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "change_buff_checker"
+              }
+            ],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 2251799872835585,
+                "params": {
+                  "add_buff": true,
+                  "buff_id": 501100011,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::501100011"
+                  ],
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "change_buff_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            12,
+            20
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "12": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "hurt_deepen_rate",
+            "effect_index": 12,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": 1
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "19": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 19,
+            "value": 1
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "20": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "buff_id_list": [
+              501100011
+            ],
+            "buff_sub_tag_list": [],
+            "buff_tag_list": [],
+            "effect_index": 20,
+            "extend_percent": 0,
+            "extend_time": 15,
+            "extend_type": 1,
+            "need_disable": false,
+            "skill_tag_list": [],
+            "unique_tag": ""
+          },
+          "type": "NodeExtendBuffTime"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            21,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "21": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 21
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_501100011_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        501100011,
+        1
+      ],
+      "tid": 14441
+    }
+  ]
+}

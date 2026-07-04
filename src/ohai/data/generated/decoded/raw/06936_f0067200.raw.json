@@ -1,0 +1,118 @@
+{
+  "_meta": {
+    "sourceFile": "06936_f0067200.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06936_f0067200.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.041Z",
+    "recordCount": 2,
+    "sourceHash": "9ac409da1d37965354139c3bc92e5e60b26dac8b76b719554f8a2aea685e663d",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "91": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "swim_speed_rate",
+            "effect_index": 91,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "93": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 93,
+            "value": 0.3
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "94": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "max_vital_capacity",
+            "effect_index": 94,
+            "need_disable": false,
+            "value_type": 2
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": 70
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "95": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 95,
+            "value": 70
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {
+        "93": [
+          [
+            [
+              "effect_params",
+              "params",
+              "value"
+            ],
+            0
+          ]
+        ],
+        "95": [
+          [
+            [
+              "effect_params",
+              "params",
+              "value"
+            ],
+            1
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_49900410200_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        49900410200,
+        1
+      ],
+      "tid": 503
+    }
+  ]
+}

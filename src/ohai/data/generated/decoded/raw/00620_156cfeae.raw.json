@@ -1,0 +1,233 @@
+{
+  "_meta": {
+    "sourceFile": "00620_156cfeae.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00620_156cfeae.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.342Z",
+    "recordCount": 2,
+    "sourceHash": "3205763a4dacb901bbf4e634850091237191ed57a88a6116dbec09524741fee8",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bezier_dis": 0,
+            "bezier_dis_change": true,
+            "bezier_fov": 60,
+            "bezier_fov_change": true,
+            "bezier_height": 0,
+            "bezier_height_change": true,
+            "bezier_hori": 0,
+            "bezier_hori_change": true,
+            "crouch_blend_time": 0,
+            "crouch_height": 0,
+            "damping": 0.8,
+            "damping_change": false,
+            "dis": 3,
+            "dis_change": true,
+            "dur_time": 0.3,
+            "effect_index": 1,
+            "enable": false,
+            "fov": 60,
+            "fov_change": false,
+            "height": 1,
+            "height_change": true,
+            "hori": 0,
+            "hori_change": false,
+            "need_disable": false,
+            "reason": "",
+            "template": 1,
+            "use_bezier": false
+          },
+          "type": "NodeCameraTempState"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "degrade": false,
+            "dispel_buff_sub_tag_list": [],
+            "dispel_buff_tag_list": [],
+            "dispel_debuff_num": 1,
+            "dispel_id_list": [],
+            "dispel_tag_list": [],
+            "dispel_type": 2,
+            "effect_index": 2,
+            "match_caster_id": false,
+            "need_disable": false
+          },
+          "type": "NodeDispelBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            3,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "3": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 3
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "5": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 5
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            8,
+            7
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "6": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 6
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "7": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 7,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 7881299415273473,
+                "params": {
+                  "add_buff": false,
+                  "buff_id": 501100021,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::501100021"
+                  ],
+                  "mapping_buff": true,
+                  "role": 0,
+                  "effect_index": 4
+                },
+                "type": "change_buff_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            1,
+            6
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "8": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bezier_dis": 0,
+            "bezier_dis_change": true,
+            "bezier_fov": 60,
+            "bezier_fov_change": true,
+            "bezier_height": 0,
+            "bezier_height_change": true,
+            "bezier_hori": 0,
+            "bezier_hori_change": true,
+            "crouch_blend_time": 0,
+            "crouch_height": 0,
+            "damping": 0.8,
+            "damping_change": false,
+            "dis": 3,
+            "dis_change": true,
+            "dur_time": 0.3,
+            "effect_index": 8,
+            "enable": true,
+            "fov": 60,
+            "fov_change": false,
+            "height": 0.8,
+            "height_change": true,
+            "hori": 0,
+            "hori_change": false,
+            "need_disable": false,
+            "reason": "",
+            "template": 1,
+            "use_bezier": false
+          },
+          "type": "NodeCameraTempState"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 5,
+      "name": "buff_5011000211_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        5011000211,
+        1
+      ],
+      "tid": 16449
+    }
+  ]
+}

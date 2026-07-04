@@ -1,0 +1,173 @@
+{
+  "_meta": {
+    "sourceFile": "04223_8fb60307.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04223_8fb60307.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.491Z",
+    "recordCount": 2,
+    "sourceHash": "acc620d028fa7c927f39ecda543deaf70de773e95d0481aad464099d545ace85",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 1,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 1125899972755457,
+                "params": {
+                  "add_buff": false,
+                  "buff_id": 60143033,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::60143033"
+                  ],
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "change_buff_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            2,
+            4
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bgm_state": "",
+            "effect_index": 2,
+            "is_switch": false,
+            "need_disable": true,
+            "sound_event": "Stop_mus_boss_Lighthouse_battle",
+            "state_name": "",
+            "stop_sound_event": "Stop_mus_boss_Lighthouse_battle"
+          },
+          "type": "NodeSwitchBgm"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "4": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.5,
+            "effect_index": 4
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            6
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "5": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 5
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "6": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "degrade": false,
+            "dispel_buff_sub_tag_list": [],
+            "dispel_buff_tag_list": [],
+            "dispel_debuff_num": 1,
+            "dispel_id_list": [],
+            "dispel_tag_list": [],
+            "dispel_type": 2,
+            "effect_index": 6,
+            "match_caster_id": false,
+            "need_disable": false
+          },
+          "type": "NodeDispelBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            5,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_601430331_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        601430331,
+        1
+      ],
+      "tid": 16092
+    }
+  ]
+}

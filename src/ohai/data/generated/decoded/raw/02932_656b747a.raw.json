@@ -1,0 +1,84 @@
+{
+  "_meta": {
+    "sourceFile": "02932_656b747a.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02932_656b747a.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:46.752Z",
+    "recordCount": 2,
+    "sourceHash": "1ba1eadc614483078d9bbad34a87730c1356e36ca465c129bcd9c95ab8f1c2bc",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 0,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": false,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 65863681,
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_building_interact_stop"
+                  ],
+                  "effect_index": 1
+                },
+                "type": "on_building_interact_stop_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 2,
+            "need_disable": false,
+            "transit_number": 999
+          },
+          "type": "NodeCustomTransitEvent"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "behavior_player_interaction_swimmingchair_on_interact_end",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "interaction_swimmingchair",
+        ""
+      ],
+      "tid": 16080
+    }
+  ]
+}

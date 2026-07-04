@@ -1,0 +1,566 @@
+{
+  "_meta": {
+    "sourceFile": "04266_910b2852.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04266_910b2852.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.551Z",
+    "recordCount": 2,
+    "sourceHash": "cc8714dd58d8db70388cb66d82b9aea34ccb9c4eaa946f77fd2720f7fd368e13",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            64,
+            2,
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "max_hp",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 400,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 1,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "attack_type_dam_add_rate_melee",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 0.1,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 2,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "38": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 408000401,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 38,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            39,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "39": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 39
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "40": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "aoi_radius": 10,
+            "describe_text": {
+              "lan_translate": [
+                "你吃得非常饱_$S@TIDS$_koe|0"
+              ]
+            },
+            "effect_index": 40,
+            "explain_text": {
+              "lan_translate": [
+                "10分钟内饱食度不会自然降低_$S@TIDS$_koe|0"
+              ]
+            },
+            "is_aoi_tip": false,
+            "is_single_tip": false,
+            "match_id": "",
+            "need_disable": false,
+            "notify_main_client": true,
+            "reset": true,
+            "show_time": 3,
+            "ui_state_up": 1
+          },
+          "type": "NodeShowMechanismTip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "45": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "buff_id_list": [
+              408000401
+            ],
+            "buff_sub_tag_list": [],
+            "buff_tag_list": [],
+            "effect_index": 45,
+            "extend_percent": 0,
+            "extend_time": 600,
+            "extend_type": 1,
+            "need_disable": false,
+            "skill_tag_list": [],
+            "unique_tag": ""
+          },
+          "type": "NodeExtendBuffTime"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            39,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "47": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "buff_id_list": [
+              408000401
+            ],
+            "buff_sub_tag_list": [],
+            "buff_tag_list": [],
+            "effect_index": 47,
+            "extend_percent": 0,
+            "extend_time": 600,
+            "extend_type": 1,
+            "need_disable": false,
+            "skill_tag_list": [],
+            "unique_tag": ""
+          },
+          "type": "NodeExtendBuffTime"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            39,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "49": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 49
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            47
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "50": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "food",
+            "effect_index": 50,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            64,
+            "trigger",
+            "attr_value"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "52": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 52
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            60
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            53,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "53": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 53,
+            "operation": 0
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 100
+        },
+        "in_data_pin": {
+          "data1": [
+            61,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "54": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "overflow",
+            "effect_index": 54,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "56": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "overflow",
+            "effect_index": 56,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            64,
+            "trigger",
+            "overflow"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "57": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 57,
+            "value": 0
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "59": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 59,
+            "value": 100
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "60": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 60
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            40,
+            66
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            62,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "61": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "food",
+            "effect_index": 61,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "62": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 62,
+            "operation": 0
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 0
+        },
+        "in_data_pin": {
+          "data1": [
+            54,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "64": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "attr_name": "food",
+            "effect_index": 64
+          },
+          "type": "NodeAttrChangeTask"
+        },
+        "event_action": {
+          "trigger": [
+            50,
+            56,
+            52
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": [
+            "old_value",
+            "attr_value",
+            "overflow",
+            "delta_value",
+            "delta_percent"
+          ]
+        }
+      },
+      "66": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "buff_id": 408000401,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::408000401"
+                  ],
+                  "exist": false,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 66
+          },
+          "type": "NodeBuffCheckerTask"
+        },
+        "event_action": {
+          "False": [
+            45
+          ],
+          "True": [
+            38,
+            49
+          ]
+        },
+        "in_data_pin": {
+          "target_id": [
+            39,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {
+        "1": [
+          [
+            [
+              "effect_params",
+              "params",
+              "change_attr",
+              0,
+              "value"
+            ],
+            0
+          ]
+        ],
+        "2": [
+          [
+            [
+              "effect_params",
+              "params",
+              "change_attr",
+              0,
+              "value"
+            ],
+            1
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_408000402_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        408000402,
+        1
+      ],
+      "tid": 6441
+    }
+  ]
+}

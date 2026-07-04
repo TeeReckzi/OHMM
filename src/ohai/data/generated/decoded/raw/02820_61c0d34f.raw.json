@@ -1,0 +1,1011 @@
+{
+  "_meta": {
+    "sourceFile": "02820_61c0d34f.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02820_61c0d34f.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:46.323Z",
+    "recordCount": 31,
+    "sourceHash": "91af2602008041466cde34f7eaeb796b4d03c0f423b01c5c9e32ed919f57a0e4",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "default": 100,
+      "desc": {
+        "lan_translate": [
+          "游戏内语音麦克风音量大小_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "microphone",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "麦克风_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range_name": [],
+      "sort": 1,
+      "ui_type": 2,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default": 100,
+      "desc": {
+        "lan_translate": [
+          "游戏内语音听筒音量大小_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "headphone",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "听筒_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range_name": [],
+      "sort": 2,
+      "ui_type": 2,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "开启/关闭收听发言_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "listen_to_voice",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "收听发言_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|1"
+          ]
+        }
+      ],
+      "sort": 5,
+      "ui_type": 1,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "当前收听和发言频道_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "voice_channel",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "语音频道_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 1,
+      "range_name": [
+        {
+          "lan_translate": [
+            "附近_$S@TIDS$_cf5|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "组队_$S@TIDS$_cf5|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "事件_$S@TIDS$_cf5|0"
+          ]
+        }
+      ],
+      "sort": 6,
+      "ui_type": 1,
+      "value_range": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "开启/关闭实时收听功能_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "listen_to_voice",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "实时收听_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 2,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|a"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|a"
+          ]
+        }
+      ],
+      "sort": 1,
+      "ui_type": 1,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "开启/关闭实时语音功能_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "talk_mode",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "实时语音_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 3,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|b"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|b"
+          ]
+        }
+      ],
+      "sort": 1,
+      "ui_type": 1,
+      "value_range": [
+        2,
+        0
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "系统频道信息是否在hud上展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "system_channel_display",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "系统_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|c"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|c"
+          ]
+        }
+      ],
+      "sort": 1,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "区域频道信息是否在hud上展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "area_channel_display",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "区域_$S@TIDS$_cf5|1"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|d"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|d"
+          ]
+        }
+      ],
+      "sort": 2,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "世界频道信息是否在hud上展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "world_channel_display",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "世界_$S@TIDS$_cf5|1"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|e"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|e"
+          ]
+        }
+      ],
+      "sort": 3,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "小队频道信息是否在hud上展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "group_channel_display",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "组队_$S@TIDS$_cf5|2"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|f"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|f"
+          ]
+        }
+      ],
+      "sort": 4,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "hive频道信息是否在hud上展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "hive_channel_display",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "求生小队_$S@TIDS$_cf5|1"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|g"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|g"
+          ]
+        }
+      ],
+      "sort": 5,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "战群频道信息是否在hud上展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "association_channel_display",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "战群_$S@TIDS$_cf5|1"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|h"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|h"
+          ]
+        }
+      ],
+      "sort": 6,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": "",
+      "english_name": "channel_display",
+      "has_desc": 0,
+      "name": {
+        "lan_translate": [
+          "显示频道_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|i"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|i"
+          ]
+        }
+      ],
+      "sort": 7,
+      "ui_type": 5,
+      "value_range": [
+        501,
+        502,
+        503,
+        504,
+        505,
+        506
+      ]
+    },
+    {
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "设置HUD聊天底板透明度_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "hud_chat_opacity",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "底板透明度_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [],
+      "sort": 9,
+      "ui_type": 2,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "当此设置开启时，将过滤世界聊天中的交易信息。折叠：将交易信息收起；完全过滤：完全不显示；不过滤：关闭此功能，所有信息正常显示。_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "trade_info_filter",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "交易信息过滤_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "折叠_$S@TIDS$_cf5|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "完全过滤_$S@TIDS$_cf5|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "不过滤_$S@TIDS$_cf5|0"
+          ]
+        }
+      ],
+      "sort": 10,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "跨服频道信息是否在综合频道上展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "script_channel_display",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "跨服频道_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|j"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|j"
+          ]
+        }
+      ],
+      "sort": 11,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "岛群频道信息是否在综合频道上展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "neverland_group_channel_display",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "岛群频道_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|k"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|k"
+          ]
+        }
+      ],
+      "sort": 12,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "招募频道信息是否在综合频道上展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "recruit_channel_display",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "招募频道_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 5,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|l"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|l"
+          ]
+        }
+      ],
+      "sort": 13,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": "",
+      "english_name": "group_application",
+      "has_desc": 0,
+      "name": {
+        "lan_translate": [
+          "组队申请提醒_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 9,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|m"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|m"
+          ]
+        }
+      ],
+      "sort": 1,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": "",
+      "english_name": "friend_application",
+      "has_desc": 0,
+      "name": {
+        "lan_translate": [
+          "好友申请提醒_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 8,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|n"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|n"
+          ]
+        }
+      ],
+      "sort": 1,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "有未读的好友消息时是否展示_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "friend_unread_msg",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "好友未读信息提醒_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 8,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|o"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|o"
+          ]
+        }
+      ],
+      "sort": 2,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": "",
+      "english_name": "hive_task",
+      "has_desc": 0,
+      "name": {
+        "lan_translate": [
+          "求生小队提醒_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 10,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|0"
+          ]
+        }
+      ],
+      "sort": 1,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "设置聊天翻译的目标语言_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "language_code",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "聊天翻译目标语言设置_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 11,
+      "range_name": [],
+      "sort": 1,
+      "ui_type": 3,
+      "value_range": []
+    },
+    {
+      "default": 1,
+      "desc": "",
+      "english_name": "territory_windows",
+      "has_desc": 0,
+      "name": {
+        "lan_translate": [
+          "领地社交弹窗提醒_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 12,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|2"
+          ]
+        }
+      ],
+      "sort": 1,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": "",
+      "english_name": "recommend_function",
+      "has_desc": 0,
+      "name": {
+        "lan_translate": [
+          "好友推荐开启_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 13,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|3"
+          ]
+        }
+      ],
+      "sort": 1,
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "世界频道语音信息是否自动播放_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "world_channel_auto_play_voice",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "世界_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 15,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|4"
+          ]
+        }
+      ],
+      "sort": 1,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "区域频道语音信息是否自动播放_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "area_channel_auto_play_voice",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "区域_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 15,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|5"
+          ]
+        }
+      ],
+      "sort": 2,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "求生小队频道语音信息是否自动播放_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "fart_channel_auto_play_voice",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "求生小队_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 15,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|6"
+          ]
+        }
+      ],
+      "sort": 3,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "组队频道语音信息是否自动播放_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "group_channel_auto_play_voice",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "组队_$S@TIDS$_cf5|1"
+        ]
+      },
+      "parent_idx": 15,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|7"
+          ]
+        }
+      ],
+      "sort": 4,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "战群频道语音信息是否自动播放_$S@TIDS$_cf5|0"
+        ]
+      },
+      "english_name": "hive_channel_auto_play_voice",
+      "has_desc": 1,
+      "name": {
+        "lan_translate": [
+          "战群_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 15,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|8"
+          ]
+        }
+      ],
+      "sort": 5,
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ]
+    },
+    {
+      "default": 1,
+      "desc": "",
+      "english_name": "channel_auto_play_voice",
+      "has_desc": 0,
+      "name": {
+        "lan_translate": [
+          "自动播放语音_$S@TIDS$_cf5|0"
+        ]
+      },
+      "parent_idx": 15,
+      "range_name": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_cf5|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_cf5|9"
+          ]
+        }
+      ],
+      "sort": 6,
+      "ui_type": 5,
+      "value_range": [
+        1501,
+        1502,
+        1503,
+        1504,
+        1505
+      ]
+    }
+  ]
+}

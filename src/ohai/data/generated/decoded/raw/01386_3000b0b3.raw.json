@@ -1,0 +1,106 @@
+{
+  "_meta": {
+    "sourceFile": "01386_3000b0b3.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01386_3000b0b3.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:42.643Z",
+    "recordCount": 2,
+    "sourceHash": "19cdeef30283e85eeb28f506624ab2a467cdea91345304f4e2f87446f9753375",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            3,
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "field_type_1",
+            "effect_index": 1,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "value": [
+            2,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "max_hp",
+            "effect_index": 2,
+            "percent": 100
+          },
+          "type": "NodeGetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "max_field_type_1",
+            "effect_index": 3,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "value": [
+            2,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_601430311_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        601430311,
+        1
+      ],
+      "tid": 16118
+    }
+  ]
+}

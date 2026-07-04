@@ -1,0 +1,3036 @@
+{
+  "_meta": {
+    "sourceFile": "07020_f3350cdd.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07020_f3350cdd.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.227Z",
+    "recordCount": 22,
+    "sourceHash": "4fb5085e8278f8d86aeadafc61702b5d6984653dcf1f02283e1efa77ae5f5c9a",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "data": [
+        {
+          "attrs": {
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s2054",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                -0.2485,
+                -0.0018,
+                0.1918,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              "name": "s2054",
+              "node_uuid": "6a0c0b6c91e5809f5c45909c",
+              "world_trans": [
+                -0.2485,
+                -0.0018,
+                0.1918,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": false,
+              "enable_static_collision": true,
+              "enable_vertical_occluder": true,
+              "init_model_path": "character/boss/lighthouse/foundation/lighthouse_foundation.prefab",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        }
+      ],
+      "meta": {}
+    },
+    {
+      "s2051": ""
+    },
+    {},
+    {},
+    {
+      "Type": "BasicConfigNode",
+      "auto_adjust_unit_property": false,
+      "can_revive_when_die": false,
+      "changed_model_scale": 1,
+      "die_drop_configs": "",
+      "die_not_cost_durability": false,
+      "disable_hear_params": false,
+      "disable_small_map_ui": false,
+      "dun_member": 1,
+      "dun_no": 6014202,
+      "dun_subtype": 0,
+      "dun_type": "pve",
+      "enable_monster_area_level": false,
+      "exit_dungeon_radius": 300,
+      "exit_dungeon_radius_countdown": 10,
+      "hide_btn_exit": false,
+      "is_consume_item_revive": false,
+      "is_display_death_ui": false,
+      "is_forbidden_litter_in_dungeon": false,
+      "is_migrate_leave": false,
+      "is_persist_dungeon": false,
+      "is_reset_dun_in_wipe": false,
+      "is_show_toast_ui": false,
+      "item_revive_num": 0,
+      "medium_stronghold_no": 0,
+      "modify_npc_level": -1,
+      "modify_npc_strength": -1,
+      "need_remove_hold_hand_tags": [],
+      "need_remove_item_no_list": [],
+      "no_fail_on_die": true,
+      "no_leave_effect": false,
+      "node_type": "trigger",
+      "public_event_destroy_delay_time": 0,
+      "public_event_duration": 0,
+      "public_event_radius": 60,
+      "remain_weather": false,
+      "restart_on_lose_connect": false,
+      "scense_file": "scene/scene_openworld/scene_openworld.scn",
+      "use_prefab": true
+    },
+    {
+      "0": [
+        [
+          39.5298,
+          6.01,
+          -27.25,
+          0
+        ]
+      ]
+    },
+    {},
+    {},
+    {},
+    {
+      "s1000,OutputStageStart": [
+        [
+          "s1050",
+          "InputStart"
+        ],
+        [
+          "s1100",
+          "InputStart"
+        ],
+        [
+          "s2051",
+          "InputBuffOn"
+        ]
+      ],
+      "s1001,OutputStageCreate": [
+        [
+          "s1020",
+          "InputStart"
+        ],
+        [
+          "s1021",
+          "InputStart"
+        ],
+        [
+          "s2010",
+          "InputStart"
+        ],
+        [
+          "s2019",
+          "InputStart"
+        ],
+        [
+          "s2054",
+          "InputStart"
+        ]
+      ],
+      "s1100,OutputNormal": [
+        [
+          "s1130",
+          "InputStart"
+        ]
+      ],
+      "s1110,OutputDeath": [
+        [
+          "s1022",
+          "InputStart"
+        ],
+        [
+          "s2024",
+          "InputStart"
+        ],
+        [
+          "s1130",
+          "InputStart"
+        ]
+      ],
+      "s1111,OutputDeath": [
+        [
+          "s1022",
+          "InputStart"
+        ],
+        [
+          "s2024",
+          "InputStart"
+        ],
+        [
+          "s1130",
+          "InputStart"
+        ]
+      ],
+      "s1130,OutputWin": [
+        [
+          "s1200",
+          "InputStart"
+        ],
+        [
+          "s1024",
+          "InputStart"
+        ]
+      ],
+      "s1200,OutputNormal": [
+        [
+          "s1230",
+          "InputStart"
+        ],
+        [
+          "s1210",
+          "InputStart"
+        ],
+        [
+          "s1211",
+          "InputStart"
+        ],
+        [
+          "s1062",
+          "InputStart"
+        ]
+      ],
+      "s1210,OutputDeath": [
+        [
+          "s1025",
+          "InputStart"
+        ],
+        [
+          "s2024",
+          "InputStart"
+        ],
+        [
+          "s1230",
+          "InputStart"
+        ]
+      ],
+      "s1211,OutputDeath": [
+        [
+          "s1025",
+          "InputStart"
+        ],
+        [
+          "s2024",
+          "InputStart"
+        ],
+        [
+          "s1230",
+          "InputStart"
+        ]
+      ],
+      "s1230,OutputWin": [
+        [
+          "s1300",
+          "InputStart"
+        ]
+      ],
+      "s1300,OutputNormal": [
+        [
+          "s1310",
+          "InputStart"
+        ]
+      ],
+      "s1310,OutputDeath": [
+        [
+          "s2026",
+          "InputSchedulePlus"
+        ],
+        [
+          "s2041",
+          "InputStart"
+        ]
+      ],
+      "s2008,OutputDeath": [
+        [
+          "s2028",
+          "InputWin"
+        ],
+        [
+          "s2034",
+          "InputStart"
+        ],
+        [
+          "s2048",
+          "InputStart"
+        ],
+        [
+          "s2052",
+          "InputStart"
+        ]
+      ],
+      "s2009,IncludeSubTask": [
+        [
+          "s2012",
+          "InputStart"
+        ],
+        [
+          "s2013",
+          "InputStart"
+        ],
+        [
+          "s2014",
+          "InputStart"
+        ]
+      ],
+      "s2010,OutputNormal": [
+        [
+          "s2009",
+          "InputStart"
+        ]
+      ],
+      "s2012,OutputLost": [
+        [
+          "s2053",
+          "InputStart"
+        ]
+      ],
+      "s2012,OutputWin": [
+        [
+          "s2043",
+          "InputStart"
+        ]
+      ],
+      "s2013,OutputNormal": [
+        [
+          "s2012",
+          "InputSchedulePlus"
+        ]
+      ],
+      "s2014,OutputWin": [
+        [
+          "s2039",
+          "InputStart"
+        ],
+        [
+          "s2026",
+          "InputStart"
+        ]
+      ],
+      "s2019,OutputNormal": [
+        [
+          "s2021",
+          "InputStart"
+        ],
+        [
+          "s2008",
+          "InputStart"
+        ]
+      ],
+      "s2021,OutputNormal": [
+        [
+          "s2022",
+          "InputStart"
+        ],
+        [
+          "s1061",
+          "InputStart"
+        ],
+        [
+          "s2050",
+          "InputStart"
+        ]
+      ],
+      "s2022,OutputNormal": [
+        [
+          "s1110",
+          "InputStart"
+        ],
+        [
+          "s2032",
+          "InputStart"
+        ],
+        [
+          "s1111",
+          "InputStart"
+        ]
+      ],
+      "s2024,OutputNormal": [
+        [
+          "s2014",
+          "InputSchedulePlus"
+        ],
+        [
+          "s2042",
+          "InputStart"
+        ]
+      ],
+      "s2035,OutputNormal": [
+        [
+          "s2008",
+          "InputSetBuff"
+        ]
+      ],
+      "s2039,OutputNormal": [
+        [
+          "s2033",
+          "InputStart"
+        ]
+      ],
+      "s2041,OutputNormal": [
+        [
+          "s2035",
+          "InputStart"
+        ]
+      ],
+      "s2042,OutputNormal": [
+        [
+          "s2008",
+          "InputSetBuff"
+        ]
+      ],
+      "s2043,OutputNormal": [
+        [
+          "s2028",
+          "InputLost"
+        ],
+        [
+          "s2044",
+          "InputBattleLost"
+        ]
+      ],
+      "s2048,OutputNormal": [
+        [
+          "s2046",
+          "InputStart"
+        ]
+      ],
+      "s2049,OutputNormal": [
+        [
+          "s2047",
+          "InputStart"
+        ]
+      ],
+      "s2050,OutputNormal": [
+        [
+          "s2051",
+          "InputBuffOff"
+        ],
+        [
+          "s2049",
+          "InputStart"
+        ]
+      ],
+      "s2052,OutputNormal": [
+        [
+          "s2012",
+          "InputBattleLost"
+        ],
+        [
+          "s2056",
+          "InputStart"
+        ]
+      ],
+      "s2056,OutputNormal": [
+        [
+          "s2057",
+          "InputAllCreate"
+        ]
+      ],
+      "s2057,OutputInteract": [
+        [
+          "s1006",
+          "InputBattleWin"
+        ]
+      ]
+    },
+    {
+      "s1000": {
+        "Type": "TriggerStartEvent",
+        "node_type": "trigger"
+      },
+      "s1001": {
+        "Type": "TriggerStageCreate",
+        "node_type": "trigger"
+      },
+      "s1006": {
+        "Type": "TriggerEndEvent",
+        "leave_countdown": 600,
+        "nid": "s1006",
+        "node_type": "trigger"
+      },
+      "s1020": {
+        "Type": "TriggerCacheCounter",
+        "init_value": 0,
+        "nid": "s1020",
+        "node_type": "trigger",
+        "param_name": "phase"
+      },
+      "s1021": {
+        "Type": "TriggerCacheCounter",
+        "init_value": 0,
+        "nid": "s1021",
+        "node_type": "trigger",
+        "param_name": "killCount_p1"
+      },
+      "s1022": {
+        "Type": "TriggerChangeCacheCounter",
+        "nid": "s1022",
+        "node_type": "trigger",
+        "param_name": "killCount_p1",
+        "value": 1
+      },
+      "s1024": {
+        "Type": "TriggerCacheCounter",
+        "init_value": 0,
+        "nid": "s1024",
+        "node_type": "trigger",
+        "param_name": "killCount_p2"
+      },
+      "s1025": {
+        "Type": "TriggerChangeCacheCounter",
+        "nid": "s1025",
+        "node_type": "trigger",
+        "param_name": "killCount_p2",
+        "value": 1
+      },
+      "s1050": {
+        "Type": "TriggerBgmAudio",
+        "anim_name": "",
+        "bgm_state": "",
+        "is_switch": false,
+        "nid": "s1050",
+        "node_type": "trigger",
+        "sound_event": "",
+        "state_name": ""
+      },
+      "s1061": {
+        "Type": "TriggerDialogSubtitleNew",
+        "audio_key": "",
+        "duration": 10,
+        "left_desc": {
+          "lan_translate": [
+            "苦修触手正在为其它触手分摊伤害，优先消灭苦修触手！_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "nid": "s1061",
+        "node_type": "trigger",
+        "npc_icon_path": "",
+        "talker_name": {
+          "lan_translate": [
+            "威_$S@TIDS$_5mcf|0"
+          ]
+        }
+      },
+      "s1062": {
+        "Type": "TriggerDialogSubtitleNew",
+        "audio_key": "",
+        "duration": 10,
+        "left_desc": {
+          "lan_translate": [
+            "治愈触手正在修复其它触手，优先消灭治愈触手！_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "nid": "s1062",
+        "node_type": "trigger",
+        "npc_icon_path": "",
+        "talker_name": {
+          "lan_translate": [
+            "威_$S@TIDS$_5mcf|1"
+          ]
+        }
+      },
+      "s1100": {
+        "Time": 3,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 1,
+        "nid": "s1100",
+        "node_type": "trigger"
+      },
+      "s1110": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_main_share_1",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_dcs.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911543",
+        "combat_unit_no": "91154205001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 3003,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -20.002,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_hit_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1110",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          6.3721,
+          14.1233,
+          2.6768
+        ],
+        "prefab_id": "base|5101010229",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_分摊头_主_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1110",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|1"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1111": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_main_claw_1",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_dcs.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911535",
+        "combat_unit_no": "91153405001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 3003,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -145.8751,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|2"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1111",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          0.9561,
+          14.1233,
+          -2.3659
+        ],
+        "prefab_id": "base|5101010226",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_爪子头_主_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1111",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|3"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1130": {
+        "Type": "TriggerCheckCacheCounter",
+        "cmp": 2,
+        "nid": "s1130",
+        "node_type": "trigger",
+        "param_name": "killCount_p1",
+        "value": 2
+      },
+      "s1200": {
+        "Time": 3,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 1,
+        "nid": "s1200",
+        "node_type": "trigger"
+      },
+      "s1210": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_main_heal_1",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_dcs.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911541",
+        "combat_unit_no": "91154005001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 3003,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -20.002,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_bulb_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|4"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1210",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          6.3721,
+          14.1233,
+          2.6768
+        ],
+        "prefab_id": "base|5101010228",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_治疗头_主_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1210",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|5"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1211": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_main_claw_1",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_dcs.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911535",
+        "combat_unit_no": "91153405001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 3003,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -145.8751,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|6"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1211",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          0.9561,
+          14.1233,
+          -2.3659
+        ],
+        "prefab_id": "base|5101010226",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_爪子头_主_$S@TIDS$_5mcf|1"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1211",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|7"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1230": {
+        "Type": "TriggerCheckCacheCounter",
+        "cmp": 2,
+        "nid": "s1230",
+        "node_type": "trigger",
+        "param_name": "killCount_p2",
+        "value": 2
+      },
+      "s1300": {
+        "Time": 2,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 1,
+        "nid": "s1300",
+        "node_type": "trigger"
+      },
+      "s1310": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_weak",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_weakness.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911539",
+        "combat_unit_no": "91153905001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -20.002,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_heart_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|8"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1310",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          6.3721,
+          14.1233,
+          2.6768
+        ],
+        "prefab_id": "base|5101010230",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_弱点头_主_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1310",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|9"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s2008": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_boss",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_body.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_scale",
+          "unit_prototype",
+          "ai_file",
+          "unit_alias",
+          "use_alias"
+        ],
+        "combat_prototype_no": "911546",
+        "combat_unit_no": "91154605001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -89.8512,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_body.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-本体-新手副本_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s2008",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          4.6997,
+          9.856,
+          -1.6812
+        ],
+        "prefab_id": "base|5101010238",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灾厄之塔_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Monster",
+        "unit_id": "dungeon_6014202_s2008",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-本体-新手副本_$S@TIDS$_5mcf|1"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s2009": {
+        "Type": "TriggerTaskTarget",
+        "associate_unit": "",
+        "associate_unit_attr": "hp",
+        "description": "",
+        "duration_time": 0,
+        "enable_target_filter": false,
+        "hide_schedule_value": true,
+        "hide_time_show": true,
+        "init_schedule": 0,
+        "mark_dict": {
+          "mark_t1": []
+        },
+        "mark_npcs": [],
+        "nid": "s2009",
+        "node_type": "trigger",
+        "remove_when_finish": false,
+        "schedule_description": "",
+        "schedule_format": "desc_curr_target",
+        "schedule_show_float": false,
+        "show_time_after_name": true,
+        "source_node_id": "",
+        "target_name": {
+          "lan_translate": [
+            "净化灾厄 II_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "target_schedule": 1,
+        "trig_priority": 0,
+        "win_on_complete_target": true
+      },
+      "s2010": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2010",
+        "node_type": "trigger"
+      },
+      "s2012": {
+        "Type": "TriggerSubTask",
+        "associate_unit": "",
+        "associate_unit_attr": "hp",
+        "duration_time": 1800,
+        "hide_schedule_value": true,
+        "hide_time_show": false,
+        "init_schedule": 0,
+        "is_repeat_active": false,
+        "is_show_process_bar": true,
+        "mark_dict": {
+          "mark_t1": []
+        },
+        "mark_npcs": [],
+        "need_process_bar_effect": true,
+        "nid": "s2012",
+        "node_type": "trigger",
+        "parent_node": "s2009",
+        "reserve_when_finish": false,
+        "schedule_description": {
+          "lan_translate": [
+            "距离灾厄吞噬世界还有：_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "schedule_format": "desc_curr_target",
+        "schedule_show_float": false,
+        "sort_index": 1,
+        "source_node_id": "",
+        "target_schedule": 1800,
+        "use_intrusion_duration_time": false,
+        "win_on_complete_target": true,
+        "win_on_timeout": true
+      },
+      "s2013": {
+        "Time": 1,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 1800,
+        "nid": "s2013",
+        "node_type": "trigger"
+      },
+      "s2014": {
+        "Type": "TriggerSubTask",
+        "associate_unit": "",
+        "associate_unit_attr": "hp",
+        "duration_time": 0,
+        "hide_schedule_value": false,
+        "hide_time_show": false,
+        "init_schedule": 0,
+        "is_repeat_active": false,
+        "is_show_process_bar": false,
+        "mark_dict": {
+          "mark_t1": []
+        },
+        "mark_npcs": [],
+        "need_process_bar_effect": false,
+        "nid": "s2014",
+        "node_type": "trigger",
+        "parent_node": "s2009",
+        "reserve_when_finish": false,
+        "schedule_description": {
+          "lan_translate": [
+            "击败灾厄之塔露出的触手_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "schedule_format": "desc_curr_target",
+        "schedule_show_float": false,
+        "sort_index": 2,
+        "source_node_id": "",
+        "target_schedule": 4,
+        "use_intrusion_duration_time": false,
+        "win_on_complete_target": true,
+        "win_on_timeout": false
+      },
+      "s2019": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2019",
+        "node_type": "trigger"
+      },
+      "s2021": {
+        "Type": "TriggerDungeonEventListener",
+        "can_repeat": true,
+        "listen_event": "combat",
+        "nid": "s2021",
+        "node_type": "trigger"
+      },
+      "s2022": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2022",
+        "node_type": "trigger"
+      },
+      "s2024": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2024",
+        "node_type": "trigger"
+      },
+      "s2026": {
+        "Type": "TriggerSubTask",
+        "associate_unit": "",
+        "associate_unit_attr": "hp",
+        "duration_time": 0,
+        "hide_schedule_value": false,
+        "hide_time_show": false,
+        "init_schedule": 0,
+        "is_repeat_active": false,
+        "is_show_process_bar": false,
+        "mark_dict": {
+          "mark_t1": []
+        },
+        "mark_npcs": [],
+        "need_process_bar_effect": false,
+        "nid": "s2026",
+        "node_type": "trigger",
+        "parent_node": "s2014",
+        "reserve_when_finish": false,
+        "schedule_description": {
+          "lan_translate": [
+            "击败灾厄之塔露出的弱点心脏_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "schedule_format": "desc_curr_target",
+        "schedule_show_float": false,
+        "sort_index": 2,
+        "source_node_id": "",
+        "target_schedule": 1,
+        "use_intrusion_duration_time": false,
+        "win_on_complete_target": true,
+        "win_on_timeout": false
+      },
+      "s2028": {
+        "Type": "TriggerDungeonResultUI",
+        "lost_text": {
+          "lan_translate": [
+            "灾厄侵蚀_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "nid": "s2028",
+        "node_type": "trigger",
+        "win_text": {
+          "lan_translate": [
+            "灾厄消散_$S@TIDS$_5mcf|0"
+          ]
+        }
+      },
+      "s2032": {
+        "Type": "TriggerDialogSubtitleNew",
+        "audio_key": "",
+        "duration": 10,
+        "left_desc": {
+          "lan_translate": [
+            "灾厄之塔的本体防御极高，先击败它的触手_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "nid": "s2032",
+        "node_type": "trigger",
+        "npc_icon_path": "",
+        "talker_name": {
+          "lan_translate": [
+            "威_$S@TIDS$_5mcf|2"
+          ]
+        }
+      },
+      "s2033": {
+        "Type": "TriggerDialogSubtitleNew",
+        "audio_key": "",
+        "duration": 10,
+        "left_desc": {
+          "lan_translate": [
+            "灾厄之塔的弱点暴露出来了，击败它来重创灾厄之塔！_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "nid": "s2033",
+        "node_type": "trigger",
+        "npc_icon_path": "",
+        "talker_name": {
+          "lan_translate": [
+            "威_$S@TIDS$_5mcf|3"
+          ]
+        }
+      },
+      "s2034": {
+        "Type": "TriggerDialogSubtitleNew",
+        "audio_key": "",
+        "duration": 10,
+        "left_desc": {
+          "lan_translate": [
+            "感谢你超越者，我们又一次击退了灾厄_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "nid": "s2034",
+        "node_type": "trigger",
+        "npc_icon_path": "",
+        "talker_name": {
+          "lan_translate": [
+            "威_$S@TIDS$_5mcf|4"
+          ]
+        }
+      },
+      "s2035": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          60143025
+        ],
+        "change_stack": 0,
+        "nid": "s2035",
+        "node_type": "trigger",
+        "set_type": "add_buff",
+        "snapshot_start_buff": false
+      },
+      "s2039": {
+        "Time": 5,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2039",
+        "node_type": "trigger"
+      },
+      "s2041": {
+        "Time": 2,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2041",
+        "node_type": "trigger"
+      },
+      "s2042": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          601430251
+        ],
+        "change_stack": 0,
+        "nid": "s2042",
+        "node_type": "trigger",
+        "set_type": "add_buff",
+        "snapshot_start_buff": false
+      },
+      "s2043": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2043",
+        "node_type": "trigger"
+      },
+      "s2044": {
+        "Type": "TriggerEndEvent",
+        "leave_countdown": 10,
+        "nid": "s2044",
+        "node_type": "trigger"
+      },
+      "s2046": {
+        "Type": "TriggerAddBuff",
+        "buff_id": 60143033,
+        "buff_lv": 1,
+        "can_repeat": true,
+        "destroy_buff_on_leave": false,
+        "nid": "s2046",
+        "node_type": "trigger",
+        "result_type": "del_buff",
+        "subject": "player"
+      },
+      "s2047": {
+        "Type": "TriggerAddBuff",
+        "buff_id": 60143033,
+        "buff_lv": 1,
+        "can_repeat": true,
+        "destroy_buff_on_leave": false,
+        "nid": "s2047",
+        "node_type": "trigger",
+        "result_type": "add_buff",
+        "subject": "player"
+      },
+      "s2048": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2048",
+        "node_type": "trigger"
+      },
+      "s2049": {
+        "Time": 0.5,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2049",
+        "node_type": "trigger"
+      },
+      "s2050": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2050",
+        "node_type": "trigger"
+      },
+      "s2051": {
+        "Type": "TriggerAddBuffOnEnter",
+        "buffs": [
+          {
+            "buff_id": 60143032,
+            "buff_lv": 1,
+            "degrade_time": 0,
+            "rebirth_add_buff": true
+          }
+        ],
+        "leave_remove": true,
+        "nid": "s2051",
+        "node_type": "trigger",
+        "tip": {
+          "lan_translate": [
+            "该节点需要和战场创建相连且只能存在一个_$S@TIDS$_5mcf|0"
+          ]
+        }
+      },
+      "s2052": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2052",
+        "node_type": "trigger"
+      },
+      "s2053": {
+        "Type": "TriggerSubTask",
+        "associate_unit": "",
+        "associate_unit_attr": "hp",
+        "duration_time": 0,
+        "hide_schedule_value": true,
+        "hide_time_show": false,
+        "init_schedule": 0,
+        "is_repeat_active": false,
+        "is_show_process_bar": false,
+        "mark_dict": {
+          "mark_t1": []
+        },
+        "mark_npcs": [],
+        "need_process_bar_effect": false,
+        "nid": "s2053",
+        "node_type": "trigger",
+        "parent_node": "s2012",
+        "reserve_when_finish": false,
+        "schedule_description": {
+          "lan_translate": [
+            "成功击退灾厄，请登陆岛屿领取奖励后再离开此地！_$S@TIDS$_5mcf|0"
+          ]
+        },
+        "schedule_format": "desc_curr_target",
+        "schedule_show_float": false,
+        "sort_index": 3,
+        "source_node_id": "",
+        "target_schedule": 1,
+        "use_intrusion_duration_time": false,
+        "win_on_complete_target": true,
+        "win_on_timeout": true
+      },
+      "s2054": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s2054",
+        "node_type": "trigger"
+      },
+      "s2056": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s2056",
+        "node_type": "trigger"
+      },
+      "s2057": {
+        "Type": "TriggerPrivateDrop",
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "custom_model_path": "",
+        "drop_gift_no": 28320100,
+        "drop_show_no": 1400012,
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "is_stealth": false,
+        "nid": "s2057",
+        "node_type": "trigger",
+        "pos3": [
+          2.5449,
+          8.3517,
+          -44.8066
+        ],
+        "stealth_type": 1001,
+        "use_input_pos3": false,
+        "with_col": true
+      }
+    },
+    {
+      "Type": "PrefabNode",
+      "euler": [
+        0,
+        0,
+        0
+      ],
+      "nid": "s6",
+      "node_type": "entity",
+      "pos3": [
+        -5082,
+        44,
+        -882
+      ],
+      "prefab_id": "",
+      "prefab_instance_name": "6014202",
+      "prefab_path": "",
+      "query_nearby_prefab": null,
+      "show_prefab_center_cross": null,
+      "transform_matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transport_to_prefab_center": null,
+      "use_manual_prs": false
+    },
+    {},
+    {},
+    {},
+    {
+      "s1004": {
+        "Type": "BirthPointNode",
+        "camp_no": 0,
+        "is_init_birth_point": true,
+        "is_rebirth_point": true,
+        "nid": "s1004",
+        "node_type": "trigger",
+        "pos4": [
+          39.5298,
+          6.01,
+          -27.25,
+          0
+        ]
+      }
+    },
+    {
+      "rune_dead_seq_receive_dict": {},
+      "rune_dead_seq_send_dict": {}
+    },
+    {},
+    {},
+    {
+      "left_top": [
+        -8192,
+        8192
+      ],
+      "min_zone_radius": 50,
+      "right_bottom": [
+        8192,
+        -8192
+      ],
+      "space_life_type": "once",
+      "zone_tree": 1,
+      "zones": {
+        "1": {
+          "fixed_bound": true,
+          "left_top": [
+            -8192,
+            8192
+          ],
+          "right_bottom": [
+            8192,
+            -8192
+          ]
+        }
+      }
+    },
+    {
+      "dungeon_6014202_s1110": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_main_share_1",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_dcs.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911543",
+        "combat_unit_no": "91154205001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 3003,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -20.002,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_hit_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|a"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1110",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          6.3721,
+          14.1233,
+          2.6768
+        ],
+        "prefab_id": "base|5101010229",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_分摊头_主_$S@TIDS$_5mcf|1"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1110",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|b"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_6014202_s1111": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_main_claw_1",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_dcs.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911535",
+        "combat_unit_no": "91153405001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 3003,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -145.8751,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|c"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1111",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          0.9561,
+          14.1233,
+          -2.3659
+        ],
+        "prefab_id": "base|5101010226",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_爪子头_主_$S@TIDS$_5mcf|2"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1111",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|d"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_6014202_s1210": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_main_heal_1",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_dcs.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911541",
+        "combat_unit_no": "91154005001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 3003,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -20.002,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_bulb_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|e"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1210",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          6.3721,
+          14.1233,
+          2.6768
+        ],
+        "prefab_id": "base|5101010228",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_治疗头_主_$S@TIDS$_5mcf|1"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1210",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|f"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_6014202_s1211": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_main_claw_1",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_dcs.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911535",
+        "combat_unit_no": "91153405001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 3003,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -145.8751,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|g"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1211",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          0.9561,
+          14.1233,
+          -2.3659
+        ],
+        "prefab_id": "base|5101010226",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_爪子头_主_$S@TIDS$_5mcf|3"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1211",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|h"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_6014202_s1310": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_tentacle_weak",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_weakness.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [],
+        "combat_prototype_no": "911539",
+        "combat_unit_no": "91153905001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -20.002,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          30,
+          31
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_heart_dcs.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|i"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1310",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          6.3721,
+          14.1233,
+          2.6768
+        ],
+        "prefab_id": "base|5101010230",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灯塔_触手_弱点头_主_$S@TIDS$_5mcf|1"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_6014202_s1310",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-触手_$S@TIDS$_5mcf|j"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_6014202_s2008": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_boss",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_body.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_scale",
+          "unit_prototype",
+          "ai_file",
+          "unit_alias",
+          "use_alias"
+        ],
+        "combat_prototype_no": "911546",
+        "combat_unit_no": "91154605001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          -89.8512,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_body.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灯塔-本体-新手副本_$S@TIDS$_5mcf|2"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s2008",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          4.6997,
+          9.856,
+          -1.6812
+        ],
+        "prefab_id": "base|5101010238",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灾厄之塔_$S@TIDS$_5mcf|1"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Monster",
+        "unit_id": "dungeon_6014202_s2008",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灯塔-本体-新手副本_$S@TIDS$_5mcf|3"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      }
+    },
+    {}
+  ]
+}

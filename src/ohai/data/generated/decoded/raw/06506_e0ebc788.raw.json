@@ -1,0 +1,846 @@
+{
+  "_meta": {
+    "sourceFile": "06506_e0ebc788.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06506_e0ebc788.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:55.958Z",
+    "recordCount": 22,
+    "sourceHash": "15126da0a5921eda00bee8a3f27222281bed3ca6155fc07a02c0b4246a074378",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "data": [
+        {
+          "children": [
+            "elevator_car",
+            "elevator_park1",
+            "elevator_park2"
+          ],
+          "group_master_type": 1,
+          "name": "s21",
+          "parent": "",
+          "trans": [
+            -44.626,
+            -16.5936,
+            8.8193,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "cls_type": "GroupProto"
+        },
+        {
+          "attrs": {
+            "RuntimeAttrLiftCar": {
+              "arrive_sound": "Play_obj_elevator_end",
+              "auto_close_time": 0,
+              "close_block_col": "environment/dynamic_objects/interaction/elevator/elev_dynamic_close.gim",
+              "close_block_hf": "compdevice/elev_dynamic_close.mesh",
+              "close_sound": "",
+              "close_timeline": "",
+              "cycle_running": false,
+              "open_block_col": "environment/dynamic_objects/interaction/elevator/elev_dynamic_open.gim",
+              "open_block_hf": "compdevice/elev_dynamic_open.mesh",
+              "open_close_duration": 0,
+              "open_delay": 0,
+              "open_sound": "",
+              "open_timeline": "",
+              "running_loop_sound": "Play_obj_elevator_lp",
+              "running_sound": "Play_obj_elevator_start",
+              "speed": 2,
+              "stop_running_sound": "Stop_obj_elevator_lp",
+              "cls_type": "RuntimeAttrLiftCar"
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "enable_hit_box": false,
+              "enable_static_collision": true,
+              "enable_vertical_occluder": true,
+              "init_model_path": "environment/static_objects/ancient_relic_module/building/relic_25.gim",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                17179869184
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false,
+              "cls_type": "RuntimeAttrNormalVisual"
+            },
+            "RuntimeAttrBasis": {
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "elevator_car",
+              "parent_global_name": "s21",
+              "prefab_instance_id": "",
+              "season_config": {},
+              "cls_type": "RuntimeAttrBasis"
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                810020024,
+                800000301,
+                800000302
+              ],
+              "can_revive": false,
+              "revive_gap": 10,
+              "use_private_unit": false,
+              "cls_type": "RuntimeAttrIndicatorUnit"
+            },
+            "RuntimeAttrInteract": {
+              "buff_list": [
+                810020024
+              ],
+              "cur_state": "",
+              "enable_exec_state": false,
+              "interact_configs": [
+                {
+                  "enable_culling": true,
+                  "exec_state": "",
+                  "forbidden_interact_tips": "",
+                  "interact_behavior": "",
+                  "interact_condition": [
+                    {
+                      "interact_text_no_satisfied": "1004",
+                      "interact_text_no_unsatisfied": "",
+                      "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                    }
+                  ],
+                  "interact_cooldown": 3,
+                  "interact_detail_ui_type": "",
+                  "interact_icon_path": "",
+                  "interact_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "interact_sense_range": 8,
+                  "interact_time": 0,
+                  "interact_ui_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "need_auto_move": true,
+                  "tag": "2",
+                  "cls_type": "RuntimeInteractItemBase"
+                }
+              ],
+              "state_list": [
+                ""
+              ],
+              "cls_type": "RuntimeAttrInteract"
+            },
+            "RuntimeAttrNodeBase": {
+              "indicator_entity_type": "",
+              "local_trans": [
+                68.4889,
+                61.8492,
+                60.8164,
+                0,
+                3.1371,
+                0,
+                1.5,
+                0.3,
+                1
+              ],
+              "name": "elevator_car",
+              "node_uuid": "695e25f24633392e10a0e619",
+              "world_trans": [
+                23.8629,
+                45.2556,
+                69.6357,
+                0,
+                3.1371,
+                0,
+                1.5,
+                0.3,
+                1
+              ],
+              "cls_type": "RuntimeAttrNodeBase"
+            },
+            "RuntimeAttrPerceive": {
+              "perceives": [
+                {
+                  "group": "SceneUnit",
+                  "pos": [
+                    -0.0289,
+                    3.0515,
+                    -0.0454
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    1.5,
+                    2,
+                    2
+                  ],
+                  "shape": "box",
+                  "tag": "1",
+                  "type": "trigger_query",
+                  "cls_type": "RuntimePerceiveItemNormal"
+                },
+                {
+                  "group": "SceneUnit",
+                  "pos": [
+                    -0.0289,
+                    3.0515,
+                    -0.0454
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    1.5,
+                    2,
+                    2
+                  ],
+                  "shape": "box",
+                  "tag": "2",
+                  "type": "trigger_query",
+                  "cls_type": "RuntimePerceiveItemNormal"
+                },
+                {
+                  "group": "SceneUnit",
+                  "pos": [
+                    -0.0483,
+                    0.4449,
+                    0.2085
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    5.1276,
+                    0.7245,
+                    9.1491
+                  ],
+                  "shape": "box",
+                  "tag": "elevator",
+                  "type": "trigger_query",
+                  "cls_type": "RuntimePerceiveItemNormal"
+                },
+                {
+                  "group": "SceneUnit",
+                  "pos": [
+                    0,
+                    -0.2302,
+                    0
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    6,
+                    0.5,
+                    10
+                  ],
+                  "shape": "box",
+                  "tag": "elevator_bottom",
+                  "type": "trigger_query",
+                  "cls_type": "RuntimePerceiveItemNormal"
+                }
+              ],
+              "cls_type": "RuntimeAttrPerceive"
+            },
+            "RuntimeAttrTrigger": {
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "send_event_to_bf": false,
+                  "send_event_to_buff": true,
+                  "tag": "1",
+                  "cls_type": "RuntimeTriggerItemInteract"
+                },
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "send_event_to_bf": false,
+                  "send_event_to_buff": true,
+                  "tag": "2",
+                  "cls_type": "RuntimeTriggerItemInteract"
+                }
+              ],
+              "cls_type": "RuntimeAttrTrigger"
+            }
+          },
+          "parent": "s21",
+          "cls_type": "EPEntityProto"
+        },
+        {
+          "attrs": {
+            "RuntimeAttrLiftPark": {
+              "close_timeline": "",
+              "is_init_park": true,
+              "open_timeline": "",
+              "cls_type": "RuntimeAttrLiftPark"
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "enable_hit_box": false,
+              "enable_static_collision": true,
+              "enable_vertical_occluder": true,
+              "init_model_path": "",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false,
+              "cls_type": "RuntimeAttrNormalVisual"
+            },
+            "RuntimeAttrBasis": {
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "elevator_park1",
+              "parent_global_name": "s21",
+              "prefab_instance_id": "",
+              "season_config": {},
+              "cls_type": "RuntimeAttrBasis"
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                810020024,
+                800000300,
+                800000302
+              ],
+              "can_revive": false,
+              "revive_gap": 10,
+              "use_private_unit": false,
+              "cls_type": "RuntimeAttrIndicatorUnit"
+            },
+            "RuntimeAttrInteract": {
+              "buff_list": [
+                810020024
+              ],
+              "cur_state": "",
+              "enable_exec_state": false,
+              "interact_configs": [
+                {
+                  "enable_culling": true,
+                  "exec_state": "",
+                  "forbidden_interact_tips": "",
+                  "interact_behavior": "",
+                  "interact_condition": [
+                    {
+                      "interact_text_no_satisfied": "1003",
+                      "interact_text_no_unsatisfied": "",
+                      "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                    }
+                  ],
+                  "interact_cooldown": 2,
+                  "interact_detail_ui_type": "",
+                  "interact_icon_path": "",
+                  "interact_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "interact_sense_range": 8,
+                  "interact_time": 0,
+                  "interact_ui_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "need_auto_move": true,
+                  "tag": "1",
+                  "cls_type": "RuntimeInteractItemBase"
+                }
+              ],
+              "state_list": [
+                ""
+              ],
+              "cls_type": "RuntimeAttrInteract"
+            },
+            "RuntimeAttrNodeBase": {
+              "indicator_entity_type": "",
+              "local_trans": [
+                68.4889,
+                61.8492,
+                60.8164,
+                0,
+                3.1371,
+                0,
+                1.5,
+                0.3,
+                1
+              ],
+              "name": "elevator_park1",
+              "node_uuid": "695e25f24633392e10a0e61b",
+              "world_trans": [
+                23.8629,
+                45.2556,
+                69.6357,
+                0,
+                3.1371,
+                0,
+                1.5,
+                0.3,
+                1
+              ],
+              "cls_type": "RuntimeAttrNodeBase"
+            },
+            "RuntimeAttrPerceive": {
+              "perceives": [
+                {
+                  "group": "SceneUnit",
+                  "pos": [
+                    -0.9915,
+                    6.1148,
+                    2.6812
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    1.1215,
+                    1.3678,
+                    1.2065
+                  ],
+                  "shape": "box",
+                  "tag": "1",
+                  "type": "trigger_query",
+                  "cls_type": "RuntimePerceiveItemNormal"
+                }
+              ],
+              "cls_type": "RuntimeAttrPerceive"
+            },
+            "RuntimeAttrTrigger": {
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "send_event_to_bf": false,
+                  "send_event_to_buff": true,
+                  "tag": "1",
+                  "cls_type": "RuntimeTriggerItemInteract"
+                }
+              ],
+              "cls_type": "RuntimeAttrTrigger"
+            }
+          },
+          "parent": "s21",
+          "cls_type": "EPEntityProto"
+        },
+        {
+          "attrs": {
+            "RuntimeAttrLiftPark": {
+              "close_timeline": "",
+              "is_init_park": false,
+              "open_timeline": "",
+              "cls_type": "RuntimeAttrLiftPark"
+            },
+            "RuntimeAttrBasis": {
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "elevator_park2",
+              "parent_global_name": "s21",
+              "prefab_instance_id": "",
+              "season_config": {},
+              "cls_type": "RuntimeAttrBasis"
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                810020024,
+                800000300
+              ],
+              "can_revive": false,
+              "revive_gap": 10,
+              "use_private_unit": false,
+              "cls_type": "RuntimeAttrIndicatorUnit"
+            },
+            "RuntimeAttrInteract": {
+              "buff_list": [
+                810020024
+              ],
+              "cur_state": "",
+              "enable_exec_state": false,
+              "interact_configs": [
+                {
+                  "enable_culling": true,
+                  "exec_state": "",
+                  "forbidden_interact_tips": "",
+                  "interact_behavior": "",
+                  "interact_condition": [
+                    {
+                      "interact_text_no_satisfied": "1003",
+                      "interact_text_no_unsatisfied": "",
+                      "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                    }
+                  ],
+                  "interact_cooldown": 2,
+                  "interact_detail_ui_type": "",
+                  "interact_icon_path": "",
+                  "interact_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "interact_sense_range": 8,
+                  "interact_time": 0,
+                  "interact_ui_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "need_auto_move": true,
+                  "tag": "1",
+                  "cls_type": "RuntimeInteractItemBase"
+                }
+              ],
+              "state_list": [
+                ""
+              ],
+              "cls_type": "RuntimeAttrInteract"
+            },
+            "RuntimeAttrNodeBase": {
+              "indicator_entity_type": "",
+              "local_trans": [
+                68.4896,
+                83.1365,
+                60.8154,
+                0,
+                3.1371,
+                0,
+                1.5,
+                0.3,
+                1
+              ],
+              "name": "elevator_park2",
+              "node_uuid": "695e25f24633392e10a0e61c",
+              "world_trans": [
+                23.8636,
+                66.5429,
+                69.6347,
+                0,
+                3.1371,
+                0,
+                1.5,
+                0.3,
+                1
+              ],
+              "cls_type": "RuntimeAttrNodeBase"
+            },
+            "RuntimeAttrPerceive": {
+              "perceives": [
+                {
+                  "group": "SceneUnit",
+                  "pos": [
+                    -0.9465,
+                    6.5462,
+                    2.8608
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    1,
+                    3,
+                    1
+                  ],
+                  "shape": "box",
+                  "tag": "1",
+                  "type": "trigger_query",
+                  "cls_type": "RuntimePerceiveItemNormal"
+                }
+              ],
+              "cls_type": "RuntimeAttrPerceive"
+            },
+            "RuntimeAttrTrigger": {
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "send_event_to_bf": false,
+                  "send_event_to_buff": true,
+                  "tag": "1",
+                  "cls_type": "RuntimeTriggerItemInteract"
+                }
+              ],
+              "cls_type": "RuntimeAttrTrigger"
+            }
+          },
+          "parent": "s21",
+          "cls_type": "EPEntityProto"
+        }
+      ],
+      "meta": {}
+    },
+    {},
+    {},
+    {},
+    {
+      "Type": "BasicConfigNode",
+      "auto_adjust_unit_property": false,
+      "can_revive_when_die": false,
+      "changed_model_scale": 1,
+      "die_drop_configs": "",
+      "die_not_cost_durability": true,
+      "disable_hear_params": false,
+      "disable_small_map_ui": true,
+      "dun_member": 999,
+      "dun_no": 114141001,
+      "dun_subtype": 8,
+      "dun_type": "public_event",
+      "enable_monster_area_level": false,
+      "exit_dungeon_radius": -1,
+      "exit_dungeon_radius_countdown": 0,
+      "hide_btn_exit": false,
+      "is_consume_item_revive": false,
+      "is_display_death_ui": false,
+      "is_forbidden_litter_in_dungeon": false,
+      "is_migrate_leave": false,
+      "is_persist_dungeon": true,
+      "is_reset_dun_in_wipe": false,
+      "is_show_toast_ui": false,
+      "item_revive_num": 0,
+      "medium_stronghold_no": 0,
+      "modify_npc_level": -1,
+      "modify_npc_strength": -1,
+      "need_remove_hold_hand_tags": [],
+      "need_remove_item_no_list": [],
+      "no_fail_on_die": false,
+      "no_leave_effect": false,
+      "node_type": "trigger",
+      "public_event_destroy_delay_time": 0,
+      "public_event_duration": 0,
+      "public_event_radius": 120,
+      "remain_weather": false,
+      "restart_on_lose_connect": true,
+      "scense_file": "scene/scene_openworld/scene_openworld.scn",
+      "use_prefab": true
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "s14,OutputNormal": [
+        [
+          "s18",
+          "InputStart"
+        ]
+      ],
+      "s16,OutputStageCreate": [
+        [
+          "s14",
+          "InputStart"
+        ],
+        [
+          "s21",
+          "InputStart"
+        ]
+      ]
+    },
+    {
+      "s1": {
+        "Type": "TriggerStartEvent",
+        "node_type": "trigger"
+      },
+      "s14": {
+        "Type": "RangeCheckListener",
+        "create_by_start_port": true,
+        "euler": [
+          0,
+          -85.8004,
+          0
+        ],
+        "nid": "s14",
+        "node_type": "entity",
+        "pos3": [
+          2.3109,
+          35.3035,
+          5.0088
+        ],
+        "response_type": 0,
+        "response_type_list": [],
+        "sfx_path": "effect/boss/treemonster/jup_2.pse",
+        "sfx_scale": [
+          2,
+          2,
+          2
+        ],
+        "shape": 1,
+        "size": [
+          2,
+          2,
+          2
+        ],
+        "trigger_mode": 1
+      },
+      "s16": {
+        "Type": "TriggerStageCreate",
+        "node_type": "trigger"
+      },
+      "s18": {
+        "Type": "TriggerAddBuff",
+        "buff_id": 499001320,
+        "buff_lv": 1,
+        "can_repeat": true,
+        "destroy_buff_on_leave": true,
+        "nid": "s18",
+        "node_type": "trigger",
+        "result_type": "add_buff",
+        "subject": "player"
+      },
+      "s21": {
+        "Type": "NewTriggerIndicatorComplexElevator",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s21",
+        "node_type": "trigger"
+      }
+    },
+    {
+      "Type": "PrefabNode",
+      "euler": [
+        0,
+        30,
+        0
+      ],
+      "nid": "s19",
+      "node_type": "entity",
+      "pos3": [
+        -1682.6342,
+        25.707,
+        -6673.1953
+      ],
+      "prefab_id": "",
+      "prefab_instance_name": "prefab_poi_t14_d2",
+      "prefab_path": "environment\\prefab\\need_proxy\\poi\\prefab_poi_t14_d2.prefab",
+      "query_nearby_prefab": null,
+      "show_prefab_center_cross": null,
+      "transform_matrix": [
+        [
+          0.866,
+          0,
+          -0.5,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0.5,
+          0,
+          0.866,
+          0
+        ],
+        [
+          -1682.6342,
+          25.707,
+          -6673.1953,
+          1
+        ]
+      ],
+      "transport_to_prefab_center": null,
+      "use_manual_prs": false
+    },
+    {},
+    {
+      "Type": "PublicEventBasicConfigNode",
+      "bigworld_monster_refresh_time": 0,
+      "core_npc_lst": [],
+      "distance_show_in_big_map": 0,
+      "drop_gift_id": 0,
+      "dun_adaptive_gameplay_id": 0,
+      "dynamic_combat_unit_no_type": 1,
+      "enable_random_reborn": false,
+      "enable_response_support": false,
+      "event_outer_radius": 0,
+      "is_forbidden_big_map_icon": false,
+      "is_forbidden_leave_tips": true,
+      "is_show_in_big_map": false,
+      "is_show_in_small_map": false,
+      "move_event_soul_nid": "",
+      "nid": "s6",
+      "node_type": "trigger",
+      "not_show_event_result": true,
+      "public_event_describe": "",
+      "public_event_name": "",
+      "pvp_vehicle_ancestor_nid": "",
+      "recommd_grade": 0,
+      "refresh_destroy_time": 0,
+      "reward_describe": "",
+      "reward_mail_template": 0
+    },
+    {},
+    {},
+    {
+      "rune_dead_seq_receive_dict": {},
+      "rune_dead_seq_send_dict": {}
+    },
+    {},
+    {},
+    {
+      "left_top": [
+        -8192,
+        8192
+      ],
+      "min_zone_radius": 50,
+      "right_bottom": [
+        8192,
+        -8192
+      ],
+      "space_life_type": "once",
+      "zone_tree": 1,
+      "zones": {
+        "1": {
+          "fixed_bound": true,
+          "left_top": [
+            -8192,
+            8192
+          ],
+          "right_bottom": [
+            8192,
+            -8192
+          ]
+        }
+      }
+    },
+    {},
+    {}
+  ]
+}

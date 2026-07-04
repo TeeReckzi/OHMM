@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "sourceFile": "03777_81175bf4.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03777_81175bf4.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:49.455Z",
+    "recordCount": 2,
+    "sourceHash": "d85f3c675053c9907043d17316ac1eeae1df76db13bf7278eaa45a6dde0cb75e",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 1,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "fx_surfboard_loop",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/ancientones/ancientones_gravity_burst.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                0.2,
+                0.2,
+                0.2
+              ],
+              "sfx_budget_rule_id": 400,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "reset": true,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMountToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            2,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 2
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_501100041_1",
+      "preload_res_list": [
+        "effect/boss/ancientones/ancientones_gravity_burst.pse"
+      ],
+      "source_info": [
+        "buff",
+        501100041,
+        1
+      ],
+      "tid": 16109
+    }
+  ]
+}

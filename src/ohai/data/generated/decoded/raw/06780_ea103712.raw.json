@@ -1,0 +1,140 @@
+{
+  "_meta": {
+    "sourceFile": "06780_ea103712.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06780_ea103712.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:56.588Z",
+    "recordCount": 2,
+    "sourceHash": "1e8cfb42582d0d3a81dfe3ff00497723b31d3fcfcfb6789e5bbb779068fee878",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "73": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 73,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "",
+              "bind_type": 3,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": true,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 1,
+              "model_type_for_scene": 0,
+              "mount_uid": "",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/skill/close_combat_skill/machete/machete_skill.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 400,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "74": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 74
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            73,
+            75
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "75": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "mp",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -30,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 75,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 74,
+      "name": "behavior_player_melee_short_stick_attack_sp_effect",
+      "preload_res_list": [
+        "effect/skill/close_combat_skill/machete/machete_skill.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "player",
+        "melee_short_stick_attack",
+        ""
+      ],
+      "tid": 208
+    }
+  ]
+}

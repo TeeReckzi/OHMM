@@ -1,0 +1,1256 @@
+{
+  "_meta": {
+    "sourceFile": "05320_b571ae7a.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05320_b571ae7a.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:53.770Z",
+    "recordCount": 2,
+    "sourceHash": "daea5f05418aba0b9a8a75172f405750f19fce13f214422052c783caf1bf910f",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "41": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 551004082,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 41,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_uid": [
+            58,
+            "utility",
+            "attacker_uid"
+          ],
+          "target_uid": [
+            58,
+            "utility",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "46": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 46,
+            "include_fly_height": true
+          },
+          "type": "NodeGetTargetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            49,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "49": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 49
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "57": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attack_level": 1,
+            "be_hit_type": 0,
+            "can_jump_word": true,
+            "damage_cause_type": 0,
+            "damage_feature_type": 0,
+            "damage_select_arg": {
+              "hard_hit_type": 0,
+              "hard_hit_units": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "ignore_hard_hit_cd": false,
+              "is_select_entity": false
+            },
+            "death_cause": 0,
+            "death_cause_label": {
+              "ldcc_default": false,
+              "ldcc_ori_source_id": false
+            },
+            "direct_damage_ignore_field": true,
+            "dmg_src": "",
+            "effect_index": 57,
+            "element_type": 0,
+            "extra_toughness_dam_rate": 1,
+            "force_jump_word": false,
+            "formula_attack_type": 2,
+            "ignore_field": false,
+            "ignore_structure_field": false,
+            "ignore_weak_part_rate": false,
+            "invincible_tag": [],
+            "is_anesthesia": false,
+            "is_buff_damage": false,
+            "is_keyword_damage": false,
+            "is_keyword_sfx_use": false,
+            "jump_word_element_type": false,
+            "keyword": 0,
+            "keyword_event_id": 0,
+            "keyword_sfx_path": "",
+            "keyword_tag": 0,
+            "knock_back_dis": 0,
+            "need_disable": false,
+            "need_knock_back": false,
+            "pvp_damage_rate": 1,
+            "recycle_weapon": false,
+            "rm_sync_point_name": "",
+            "source_behavior": "me40_skill01",
+            "sub_melee_attack_type": 0,
+            "use_final_dam_add_rate": true,
+            "use_final_ignore_dam_rate": true
+          },
+          "type": "NodeAttack"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "attack_value": [
+            86,
+            "utility",
+            "data"
+          ],
+          "attacker_snapshot": [
+            59,
+            "utility",
+            "snapshot"
+          ],
+          "attacker_uid": [
+            58,
+            "utility",
+            "attacker_uid"
+          ],
+          "hit_info": [
+            62,
+            "OnMissileHit",
+            "missile_hit_info"
+          ],
+          "target_uid": [
+            58,
+            "utility",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "58": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 58
+          },
+          "type": "NodeBreakHitInfo"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "hit_info": [
+            62,
+            "OnMissileHit",
+            "missile_hit_info"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "attacker_uid",
+            "target_uid",
+            "target_pos",
+            "target_dir",
+            "delay_time",
+            "bone_name"
+          ]
+        }
+      },
+      "59": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 59
+          },
+          "type": "NodeGetTargetInfo"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            49,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "snapshot"
+          ]
+        }
+      },
+      "62": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 62,
+            "info": {
+              "aim_dis_max": 20,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_enemy_only_editor0": true,
+                  "label_enemy_only_editor1": false,
+                  "label_friend": false,
+                  "label_friend_only_editor0": true,
+                  "label_friend_only_editor1": false,
+                  "label_neutral": false,
+                  "label_neutral_only_editor0": true,
+                  "label_neutral_only_editor1": false,
+                  "label_self": false
+                }
+              },
+              "auto_relative_vehicle": false,
+              "bb_key": "",
+              "bb_scope": 0,
+              "block_filter": false,
+              "block_filter_size": 0.5,
+              "bullet_speed": 0.01,
+              "collision_be_hit": {
+                "collision_box_size_be_hit_check": [
+                  1,
+                  1,
+                  1
+                ],
+                "collision_shape_be_hit_check": -1
+              },
+              "collision_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "collision_check_box": {
+                "angle": 90,
+                "height": 3,
+                "inner_radius": 0,
+                "offset": [
+                  0,
+                  0.5,
+                  0
+                ],
+                "rot": [
+                  0,
+                  0,
+                  0
+                ],
+                "size": [
+                  1,
+                  1,
+                  1
+                ],
+                "thickness": 25
+              },
+              "collision_check_interval": 2,
+              "collision_check_on_init": true,
+              "collision_check_shape": 4,
+              "collision_param": {
+                "is_block_destroy": false,
+                "max_apply_count": 0
+              },
+              "collision_scene": {
+                "collision_box_size": [
+                  1,
+                  1,
+                  1
+                ],
+                "collision_shape": 1
+              },
+              "collision_type": 3,
+              "delay_ignore_collision_args": {
+                "delay_dis": 0,
+                "delay_ignore_collision": 0,
+                "delay_time": 0
+              },
+              "des_pos_type": 0,
+              "destroy_without_follow_target": false,
+              "dir_param": {
+                "dir_type": 6,
+                "ignore_pitch": true,
+                "rot_offset": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "disregard_environment": true,
+              "enable_follow_logic_pos": true,
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "follow_target_bone_surface": true,
+              "height_param": {
+                "attach_ground_offset": 0.2,
+                "attach_ground_speed": 0
+              },
+              "ignore_collision": true,
+              "init_transform": {
+                "fire_socket_name": "",
+                "is_pos_follow_rot": true,
+                "offset": [
+                  1.2,
+                  0,
+                  1.6
+                ],
+                "socket_name": "root"
+              },
+              "is_trajectory": false,
+              "max_count_once_check": 5,
+              "max_fly_time": 1.5,
+              "multi_hit_target": true,
+              "need_ignore_friend": false,
+              "only_sight_block": false,
+              "perceive_animation_hit_interval": 0,
+              "perceive_animation_interval": 0,
+              "perceive_animation_path": "",
+              "perceive_by_dir": false,
+              "perceive_check_box": {
+                "angle": 60,
+                "height": 0.5,
+                "inner_radius": 0,
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "rot": [
+                  0,
+                  0,
+                  0
+                ],
+                "size": [
+                  1,
+                  1,
+                  1
+                ],
+                "thickness": 0.5
+              },
+              "perceive_check_model": {
+                "anim_graph_path": "",
+                "animation_interval": false,
+                "animation_loop": false,
+                "animation_path": "",
+                "block_change": false,
+                "block_change_anim_args": {
+                  "animation_loop": false,
+                  "animation_path": ""
+                },
+                "hide_state_list": [],
+                "model_path": "",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "rot": [
+                  0,
+                  0,
+                  0
+                ],
+                "size": [
+                  1,
+                  1,
+                  1
+                ],
+                "update_pos": true,
+                "update_rotation": false,
+                "use_hold_model": false,
+                "use_model_col_data": false,
+                "visual_selection": -1
+              },
+              "perceive_check_shape": 1,
+              "perceive_dir_angle": 0,
+              "perceive_dir_speed": 0,
+              "perf_param_list": [],
+              "sfx_budget_rule_id": 400,
+              "sfx_param": {
+                "collision_sfx_param": {
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sfx_path": "",
+                  "size": [
+                    1,
+                    1,
+                    1
+                  ]
+                },
+                "fly_sfx_param": {
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sfx_path": "",
+                  "size": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "update_pos": true,
+                  "update_rotation": false
+                },
+                "visual_selection": -1
+              },
+              "spell_field_can_destroy_args": {
+                "be_hit_hp_base": "hp",
+                "be_hit_hp_type": 1,
+                "be_hit_value": 1,
+                "can_be_hit": false,
+                "hit_box_label_camp": {
+                  "label_camp_rule": 4,
+                  "label_enemy": true,
+                  "label_friend": false,
+                  "label_neutral": true,
+                  "label_self": false
+                },
+                "hit_box_pos_off": [
+                  0,
+                  0,
+                  0
+                ],
+                "hit_box_rot_off": [
+                  0,
+                  0,
+                  0
+                ],
+                "hit_box_shape": 2,
+                "hit_box_size": [
+                  1,
+                  1,
+                  1
+                ],
+                "use_model_col_data": false
+              },
+              "spell_field_gravity": 0,
+              "spell_fly_type": 5,
+              "trajectory_interval": 999,
+              "trajectory_max_time": 1,
+              "use_perceive_check": false
+            },
+            "reset": false
+          },
+          "type": "NodeSpellFieldMissile"
+        },
+        "event_action": {
+          "OnMissileBlock": [],
+          "OnMissileFinish": [],
+          "OnMissileHit": [
+            57,
+            66
+          ],
+          "OnMissileHitBuilding": [],
+          "OnMissileInit": [],
+          "OnMissileInterval": [],
+          "destroy": []
+        },
+        "in_data_pin": {
+          "init_pos": [
+            69,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {
+          "OnMissileBlock": [
+            "block_pos"
+          ],
+          "OnMissileFinish": [
+            "finish_pid",
+            "finish_pos",
+            "finish_dir",
+            "finish_type"
+          ],
+          "OnMissileHit": [
+            "missile_hit_info",
+            "spell_field_pos"
+          ],
+          "OnMissileHitBuilding": [
+            "missile_hit_building_info"
+          ],
+          "OnMissileInit": [
+            "fly_pid",
+            "missile_init_pos"
+          ],
+          "OnMissileInterval": [],
+          "destroy": []
+        }
+      },
+      "64": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 110500000,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 64,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_uid": [
+            58,
+            "utility",
+            "attacker_uid"
+          ],
+          "target_uid": [
+            58,
+            "utility",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "66": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "effect_index": 67,
+                  "event_names": [],
+                  "target_negate": false,
+                  "target_type": [
+                    0
+                  ]
+                },
+                "type": "unit_prototype_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 66
+          },
+          "type": "NodeCheckerTask"
+        },
+        "event_action": {
+          "False": [
+            64
+          ],
+          "True": [
+            41,
+            98
+          ]
+        },
+        "in_data_pin": {
+          "target_id": [
+            58,
+            "utility",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "69": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 69,
+            "independent": false,
+            "max_radius": 0,
+            "min_radius": 0,
+            "up_distance": 0
+          },
+          "type": "NodeRandomPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "in_pos": [
+            46,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos"
+          ]
+        }
+      },
+      "70": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 70,
+            "keyword_event_id": 2040010,
+            "need_disable": false
+          },
+          "type": "NodeTriggerKeywordEvent"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "receiver": [
+            72,
+            "utility",
+            "holder_uid"
+          ],
+          "sender": [
+            72,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "71": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 71
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            79,
+            73,
+            75,
+            70,
+            62,
+            104
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "72": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 72
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "73": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "pvp_rate",
+            "effect_index": 73,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            76,
+            "utility",
+            "pvp_data"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "74": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 74,
+            "value": 10
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "75": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "deviation_degree",
+            "effect_index": 75,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            81,
+            "utility",
+            "value"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "76": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 76
+          },
+          "type": "NodeGetCombat20FloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "pve_data",
+            "pvp_data"
+          ]
+        }
+      },
+      "77": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 77
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "78": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 78,
+            "value": 8
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "79": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "pve_rate",
+            "effect_index": 79,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            76,
+            "utility",
+            "pve_data"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "80": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 80
+          },
+          "type": "NodeGetTargetInfo"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            87,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "snapshot"
+          ]
+        }
+      },
+      "81": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_type": 1,
+            "effect_index": 81
+          },
+          "type": "NodeGetDeviationAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            77,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "value"
+          ]
+        }
+      },
+      "82": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "pvp_rate",
+            "effect_index": 82,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "83": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 83,
+            "value": 5
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "84": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "skill_power",
+            "effect_index": 84
+          },
+          "type": "NodeGetSnapshotProperty"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "snapshot": [
+            80,
+            "utility",
+            "snapshot"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "85": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "pve_rate",
+            "effect_index": 85,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "86": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 86,
+            "float_param_dict": {
+              "deviation_degree": 0,
+              "deviation_degree_corr": 0,
+              "pve_damage_mult": 0,
+              "pve_rate": 0,
+              "pvp_damage": 0,
+              "pvp_rate": 0,
+              "skill_power": 0
+            },
+            "formula": "pve_rate*(deviation_degree+deviation_degree_corr)/10*skill_power*pve_damage_mult+pvp_rate*pvp_damage",
+            "id_param_dict": {},
+            "need_disable": false
+          },
+          "type": "NodeCustomCalculate"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "arg_pvp_damage": 10
+        },
+        "in_data_pin": {
+          "arg_deviation_degree": [
+            83,
+            "utility",
+            "data"
+          ],
+          "arg_deviation_degree_corr": [
+            83,
+            "utility",
+            "data"
+          ],
+          "arg_pve_damage_mult": [
+            78,
+            "utility",
+            "data"
+          ],
+          "arg_pve_rate": [
+            85,
+            "utility",
+            "data"
+          ],
+          "arg_pvp_rate": [
+            82,
+            "utility",
+            "data"
+          ],
+          "arg_skill_power": [
+            84,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "87": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 87
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "96": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 551004092,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 96,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_uid": [
+            58,
+            "utility",
+            "attacker_uid"
+          ],
+          "target_uid": [
+            58,
+            "utility",
+            "attacker_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "98": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.4,
+            "effect_index": 98
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            96
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "102": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 102,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": true,
+              "bind_name": "",
+              "bind_type": 0,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 2,
+              "delay_remove": true,
+              "delay_remove_time": 1.2,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/yaolan/container_02/sco_me40/player_me40_skill01_edge.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                0.15,
+                0.3,
+                0.45
+              ],
+              "sfx_budget_rule_id": 400,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            103,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "103": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attach_ground": false,
+            "base_dir": false,
+            "effect_index": 103,
+            "offset_angle": 0,
+            "offset_angle_xz": [
+              0,
+              0
+            ],
+            "offset_length": 0,
+            "offset_pos": [
+              1.2,
+              0,
+              14
+            ]
+          },
+          "type": "NodeCalculateOffsetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "input_dir": [
+            46,
+            "utility",
+            "output_dir"
+          ],
+          "input_pos": [
+            46,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "104": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 104
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            102
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 71,
+      "name": "behavior_player_me40_skill01_pve_spawnmissile",
+      "preload_res_list": [
+        "effect/yaolan/container_02/sco_me40/player_me40_skill01_edge.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "player",
+        "me40_skill01_pve",
+        ""
+      ],
+      "tid": 15231
+    }
+  ]
+}

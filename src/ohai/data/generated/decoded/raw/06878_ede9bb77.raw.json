@@ -1,0 +1,3785 @@
+{
+  "_meta": {
+    "sourceFile": "06878_ede9bb77.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06878_ede9bb77.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:56.870Z",
+    "recordCount": 293,
+    "sourceHash": "afe7ea96470dec3e69531eb4d755a7f8546061e43f5eb677c62802f54042e9f3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "args": "((uid,int),(frat_id,str),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "同意加入小队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(task_id,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "接受任务 强制进行 无视条件 前提是身上未接受该任务_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(trigger_id,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "接受Trigger 前提是trigger所属任务存在_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(group_id,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "激活指定模因组_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((vehicle_id,int),(uid,int),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "激活载具_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((value,int,lan_translate(增加值)),(uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(增加元宝)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(add_value,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加活跃度_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(affix_info_str,str),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加词缀条目_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'guozhiqiang@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "图鉴添加所有收集数据_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(rob_num,int),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "增加资源点掠夺次数_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(item_no,int),(add_dur,float),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加耐久度_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(collect_type,str),(collect_key,str),)",
+      "author": [
+        "u'guozhiqiang@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加指定图鉴数据_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((start,str,lan_translate(开始展示时间, 格式:%Y:%m:%d %H:%M:%S)),(interval,int,lan_translate(循环间隔, 非负整数)),(end,str,lan_translate(结束展示时间, 格式:%Y:%m:%d %H:%M:%S)),(content,str,lan_translate(公告内容，长度不超过30个中文)),(business_channel,str,lan_translate(保留参数)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'",
+        " u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(新增系统公告，定时发送)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((value,int,lan_translate(增加值)),(uid,int,lan_translate(玩家uid)),(money_no,int,lan_translate(货币编号)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(增加货币)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int),(item_num,int),(item_no,int),(detail,dict,lan_translate(物品详情，可以设置属性相关信息)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(添加装备，可以指定装备属性)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(limited,int),(exp_val,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "增加经验_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(add_exp,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "加小队经验_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((value,int),(uid,int),(period,int),(game,str),)",
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "增加进程的负载，其实就是控制空跑循环的次数_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((server_list,str,服务器列表),(required_lv,int,可以领取的最低等级),(platform,str,平台),(mail_title,str,邮件标题),(mail_content,str,邮件内容),(mail_award,str,邮件奖励),(expired_time,int,补偿邮件的保留时间),(channel,str,渠道),(avatar_create_time,str,账号创建时间),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_OP_NORMAL",
+      "des": {
+        "lan_translate": [
+          "发送全服邮件（自主配置）_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((server_list,str,服务器列表),(required_lv,int,可以领取的最低等级),(platform,str,平台),(mail_template_no,int,邮件编号),(expired_time,int,补偿邮件的保留时间),(channel,str,渠道),(avatar_create_time,str,账号创建时间),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_OP_NORMAL",
+      "des": {
+        "lan_translate": [
+          "发送全服邮件（发送现有邮件编号内容）_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(perk_code,int),(num,int),(cost,int),)",
+      "author": [
+        "u'fujunkai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "添加枪械潜能_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(star,int),(item_no,int),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'",
+        " u'jinjingjing01@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "增加枪械核心_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((val,int),(uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'xiangyanbo@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "增加战群个人贡献_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((val,int),(uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'xiangyanbo@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "增加战群物资_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((val,int),(uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'xiangyanbo@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "增加战群声望_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(skill_id,str),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加战群技能_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),(item_num,int,lan_translate(物品数量)),(item_no,int,lan_translate(物品编号)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(增加物品)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(item_num,int),(item_no,int),(is_bind,bool),)",
+      "author": [
+        "u'liangsirui@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加绑定物品_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(rf_lv,int),(item_num,int),(item_no,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加指定等级物品_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(model_id,int),(item_no,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加装备-代码装备模型属性_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(num,int),(money_no,int),)",
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "增加代币_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(exp_type,int),(add_exp,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加天赋点_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(talent_point,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "添加天赋点（好像现在没这个功能了）_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(target_uid,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "同意玩家加入小队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,玩家uid),)_$S@TIDS$_7b|1"
+        ]
+      },
+      "author": [
+        "u'habn1464@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "运营sdk外挂检查_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,玩家uid),)_$S@TIDS$_7b|2"
+        ]
+      },
+      "author": [
+        "u'habn1464@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "运营sdk外挂检查带截图_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(frat_id,str),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "玩家申请加入战术小队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(hive_id,str),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "玩家申请加入hive_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(op,str),(args_json,str),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "通过gm指令增删条目_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((value,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "禁止/解禁修改小队宣言_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((owner_id,int,lan_translate(战群领袖ID)),(is_ban,int,lan_translate(是否禁止)),(hive_id,str,lan_translate(战群ID)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(禁止修改战群对内公告)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((owner_id,int,lan_translate(战群领袖ID)),(is_ban,int,lan_translate(是否禁止)),(hive_id,str,lan_translate(战群ID)),)_$S@TIDS$_7b|1"
+        ]
+      },
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(禁止修改战群对外宣言)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((owner_id,int,lan_translate(战群领袖ID)),(op,int,lan_translate(是否禁止 1禁止，0解禁)),(hive_id,str,lan_translate(战群ID)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(禁止修改战群名称)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "开关技能cd_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(is_create,bool),(dcs_uid,str),(buff_lv,int),(buff_id,int),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建buff_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((business_channel,str,lan_translate(保留参数)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'",
+        " u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(查询已发布的系统公告)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(method,str),(args,list),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "集群测试方法？_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(frat_id,str),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "取消加入小队申请_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((frat_name,str),(frat_id,str),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "更改小队名字_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((owner_id,int,lan_translate(战群领袖ID)),(hive_name,str,lan_translate(战群名称)),(hive_id,str,lan_translate(战群ID)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(战群强制改名)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(ttl,int),(member,str),(group_id,str),)",
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "聊天加入组_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "查询账号封禁状态_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),(typ,int,CHAT_TYPE_DES),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "查询玩家禁言状态_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(item_no,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "修改物品存储位置后，调整旧位置的物品_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "检查是否有新配方可以激活_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "清楚预创建公共分线建筑_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "lan_translate(清除指定区域的资源点占领状态)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'guozhiqiang@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "清空所有图鉴数据_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wuyang3@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "清空已采集记录_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "清空废止trigger_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((frat_id,str),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "清空小队宣言_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "初始化保险库_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "清除传送cd_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((owner_id,int,lan_translate(战群领袖ID)),(hive_id,str,lan_translate(战群ID)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(战群对内公告强制清空)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((owner_id,int,lan_translate(战群领袖ID)),(hive_id,str,lan_translate(战群ID)),)_$S@TIDS$_7b|2"
+        ]
+      },
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(战群对外宣言强制清空)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(match_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "开始未满的匹配副本_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(team_num,int),(member_num,int),(match_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "动态修改匹配人数_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(match_time,tuple),(match_id,int),)",
+      "author": [
+        "u'wangchenchen01@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "动态修改匹配时间_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "结束PVP_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(match_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "获取当前 测试本 匹配人数_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "一键加入 小队冲突_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(match_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "请求开始Test匹配_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "一键加入据点战_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "一键完成所有成就_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "一键完成所有任务，不走trigger输出，不包含成就任务_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(rule_no,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建空投_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "预创建公共分线区域建筑_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(pos3,list),)",
+      "author": [
+        "u'guozhiqiang@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建空气墙（据点战）_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((z,float),(y,float),(x,float),(uid,int),(entity_name,str),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建绝境中的Entity_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(info,dict),)",
+      "author": [
+        "u'zhaohao02@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "用于调试_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((z,float),(y,float),(x,float),(volume_name,str),(uid,int),(area_id,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建动态绝境_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(frat_name,str),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建战术小队（hive）_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(hive_name,str),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建hive_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(info,dict),)",
+      "author": [
+        "u'wuyang3@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建indicator_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((world_pos,list),(world_euler,list),(uuid,str),(uid,int),(prefab_path,str),(control_units,list),(be_control_units,list),(anim_path,str),)",
+      "author": [
+        "u'fujunkai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建可交互单位_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((unit_num,int),(unit_id,str),(uid,int),)",
+      "author": [
+        "u'ljn4062@CORP.NETEASE.COM'",
+        " u'lhmn2270@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建npc_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((unit_num,int),(unit_id,str),(uid,int),(battle,bool),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建N个指定的npc或者小队, battle:是否入战_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(dun_no,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建公共事件_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(rotation,list),(pos3,list),(dun_no,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'",
+        " u'grp.h73programer@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "带坐标和朝向创建公共事件_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((world_pos,list),(world_euler,list),(uid,int),(model_scale,list),(model_path,str),(anim_path,str),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'chenmingtao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建spaceNone_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建动态绝境里boss_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'guozhiqiang@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建据点战_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(server_num,int),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(公共分线资源点强制放怪)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),(start_idx,int,lan_translate(开始index)),(count,int,lan_translate(数量)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "创建跨集群的entity_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((unit_id,str),(uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建训练用的npc_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((vehicle_id,int),(uid,int),(rot,list),(pos,list),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "创建载具_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "日刷_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((value,int,lan_translate(扣除值)),(uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(扣除元宝)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((notice_id,int,lan_translate(公告ID)),(business_channel,str,lan_translate(保留参数)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'",
+        " u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(删除系统公告)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((value,int,lan_translate(扣除值)),(uid,int,lan_translate(玩家uid)),(money_no,int,lan_translate(货币编号)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(扣除货币)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(id_str,str),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "删除绝境中的Entity_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((volume_name,str),(uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "删除动态绝境_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(item_num,int),(item_no,int),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "删除物品_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(item_num,int),(item_id,str),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "删除指定id物品_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,玩家uid),(mail_id_str,str,邮件的编号,24位字符串),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "删除邮件_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(period_id,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "清空周期使用数据_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'guozhiqiang@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "销毁据点战_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "销毁载具_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(pos,list),(entity_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|e"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(obstacle_id,str),(bmin,list),(bmax,list),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|b"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(rot,list),(pos,list),(is_base,bool),(building_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|a"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(radius,int),(pos,list),(obstacle_id,str),(height,int),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|f"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(radius,int),(pos,list),(obstacle_id,str),(inside_radius,int),(height,int),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|8"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(entity_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|1"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(pos,list),(entity_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|5"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(entity_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|2"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(pos,list),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|d"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(pos,list),(extend,list),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|h"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(to_pos,list),(from_pos,list),(extend,list),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|7"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(to_pos,list),(from_pos,list),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|9"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(entity_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|g"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(is_base,bool),(building_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(obstacle_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|6"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(entity_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|4"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(to_pos,list),(from_pos,list),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|3"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(pos,list),(entity_id,str),)",
+      "author": [
+        "u'xiewenxiu@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "寻路相关接口测试_$S@TIDS$_7b|c"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'",
+        " u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "解散战术小队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((frat_id,str),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "强制解散小队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((owner_id,int,lan_translate(战群领袖ID)),(hive_id,str,lan_translate(战群ID)),)_$S@TIDS$_7b|1"
+        ]
+      },
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(战群强制解散)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(gid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "根据投放编号进行投放_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(monitor_type,int),(monitor_param,str),(endow_num,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "投放监控类型的GM指令_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(task_id,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "完成任务_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(trigger_id,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "完成Trigger_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(trigger_id,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "废止trigger_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(recipe_no,int),(queue_id,int),(num,int),(model_id,int),(equip_rule_idx,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "开始制造（已注释）_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(property_name,str),(indicator_name,str),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "lan_translate(获取资源点的属性)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|3"
+        ]
+      },
+      "author": [
+        "u'dongyizhe@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "获取服务器上玩家AOI范围内的单位_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(talent_type,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "获取天赋经验数据_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(talent_type,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "获取天赋等级_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "获取天赋点数_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "获取天赋树节点信息_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((value,int),(uid,int),(event_name,str),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'chenmingtao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "设置角色属性数值_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(target_uid,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "邀请加入小队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(target_uids,list),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "邀请入队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|2"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(查询玩家是否在线)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),(typ,int,CHAT_TYPE_DES),(ttl,float,lan_translate(禁言时间,单位s)),)_$S@TIDS$_7b|1"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(静默)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),(typ,int,CHAT_TYPE_DES),(ttl,float,lan_translate(禁言时间,单位s)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(禁言)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(space_no,int),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "加入pve副本（好像没写）_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(space_no,int),(space_lid,str),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "加入pvp副本（好像没写）_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(space_no,int),(space_logic_uuid,int),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "进入副本位面_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(desc,str),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "跳到附近资源点_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|8"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(踢玩家下线)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(target_uid,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "踢出战术小队内玩家_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(monster_uids,list),)",
+      "author": [
+        "u'lgfn1473@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "杀死怪物并且让怪物的尸体消失_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "通知离开副本_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "离开pvp副本_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "距离下一个阶段的受限经验差值_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "获取背包物品id、物品名称、主类型、子类型、数量、品级、是否绑定_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "查询用户领地范围内仓储设施里存储的物品数据_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|7"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(封禁玩家账号)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "一键锁定所有的配方组_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((vehicle_id,int),(uid,int),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "解锁载具_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),(udid,str,lan_translate(设备udid)),(time,int,lan_translate(封禁时间(秒))),(reason,str,lan_translate(原因)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "锁住udid_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(num,int),(money_no,int),)",
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "减少代币_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "副本失败_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "自动组队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((value,float),(uid,int),(item_id,str),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "修改物品耐久_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(new_announce,str),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "更改小队宣言_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(new_tag,list),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "更改小队标签_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "月刷新_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "重置新赛季等级_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "重置新赛季天赋_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "下一个阶段经验衰减系数_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "当前阶段经验衰减系数_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "当前获得的经验，当前阶段整体能获得的受限经验_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(passive_lv,int),(passive_id,str),(dcs_uid,str),(add,bool),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "添加被动技能_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(goodsid,str),)",
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "模拟充值发货_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(operate_name,str),(num,int),(model_path,str),)",
+      "author": [
+        "u'hjpn6778@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "测试add模型body_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(shape,str),(operate_name,str),(num,int),)",
+      "author": [
+        "u'hjpn6778@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "测试add shape body_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(pos,list),)",
+      "author": [
+        "u'mqzn1469@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "获取潜水深度_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(pos,list),)",
+      "author": [
+        "u'mqzn1469@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "获取水体深度_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(half_size,list),(center,list),)",
+      "author": [
+        "u'mqzn1469@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "overlap接口测试接口测试_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(radius,float),(center,list),)",
+      "author": [
+        "u'mqzn1469@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "overlap接口测试_$S@TIDS$_7b|1"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(max_touch,int),(end,list),(begin,list),)",
+      "author": [
+        "u'mqzn1469@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "overlap接口测试_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(operate_name,str),)",
+      "author": [
+        "u'hjpn6778@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": "remove body"
+    },
+    {
+      "args": "((uid,int),(to_pos,list),(half_size,list),(from_pos,list),)",
+      "author": [
+        "u'mqzn1469@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "sweep接口测试_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(to_pos,list),(radius,float),(half_height,float),(from_pos,list),)",
+      "author": [
+        "u'mqzn1469@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "sweep接口测试_$S@TIDS$_7b|2"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(to_pos,list),(radius,float),(from_pos,list),)",
+      "author": [
+        "u'mqzn1469@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "sweep接口测试_$S@TIDS$_7b|1"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(prefab_path,str),(client_editor_data_path,str),)",
+      "author": [
+        "u'wuyang3@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "server_const.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "进入prefab副本_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(prefab_path,str),(client_editor_data_path,str),)",
+      "author": [
+        "u'wuyang3@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "server_const.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "加载刷新副本_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wuyang3@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "server_const.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "重刷副本_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "打印昼夜系统时间_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "账号uid_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,玩家uid),(title,str,标题),(save_time,float,邮件存在时间,单位h),(item_str,str,物品编号1:数量1|物品编号2:数量2),(content,str,正文),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "个人邮件(带附件)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,玩家uid),(title,str,标题),(save_time,float,邮件存在时间,单位h),(content,str,正文),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "个人邮件(不带附件)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),(title,str,lan_translate(推送标题)),(content,str,lan_translate(推送正文)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(指定玩家发送App推送消息)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((title,str,lan_translate(推送标题)),(content,str,lan_translate(推送正文)),(channel,str,lan_translate(渠道号)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(按渠道发送App推送消息)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(item_info,tuple),)",
+      "author": [
+        "u'liangsirui@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "穿戴指定装备_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "查询占领区域的hive_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((user_lv,int),(uid,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "背包刷新_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "退出战术小队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangyuhan02@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "退出战群_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(trigger_id,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "重新接取trigger_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "刷新附近资源_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(ftype,str),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "抽奖周期刷新_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(rule_no,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "刷新公共事件_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(ftype,str),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "刷新商店购买周期_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "刷新悬赏列表_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(task_tuple,tuple),(reward_key,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "刷新单个悬赏列表_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(target_uid,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "拒绝玩家加入小队_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "任务热更_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(trigger_id,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "取消废止trigger_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(skill_id,str),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "移除战群技能_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,玩家uid),(name,str,昵称),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "修改玩家昵称_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(indicator_name,str),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "lan_translate(修复资源点)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "请求删除区域所有数据_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "根据玩家每日存活时长发放奖励_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "请求申请列表_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(train_type,int),(area_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "获取AI训练信息_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(time_check,bool),)",
+      "author": [
+        "u'fujunkai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "开闭主权装置领取检查_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(hive_id,str),(area_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "请求占领区域_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "GM Request 开/关 宣战时间校检_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "刷新当前定时器时间_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(train_type,int),(def_bt,int),(def_ai,int),(atk_bt,int),(atk_ai,int),(area_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "开始ai训练_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "开始据点争夺_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "开始宣战_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(area_id,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "请求进入备战_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(dun_no,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'",
+        " u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "获取公共事件奖励_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(times,int),(pool_no,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "愿望机抽奖_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((z,float),(x,float),(uid,int),)",
+      "author": [
+        "u'yangwenhui01@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "查询世界区域ID_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|1"
+        ]
+      },
+      "author": [
+        "u'dongyizhe@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "重置玩家的激活奖励领取状态_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(group_type,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "重置模因组_$S@TIDS$_7b|1"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "重置抽奖_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "重置模因组_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "()",
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "重置本地的赛季阶段_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "重置商店购买记录_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lycn2463@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "重置领地回收时间戳_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "重置更新的时间_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "重置载具属性_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(task_id,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "清理指定任务的痕迹，相当于没做过，重新接取!!!不能用于线上!!!_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "清理所有任务的痕迹，相当于新号上线!!!不能用于线上!!!_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lgfn1473@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "原地复活_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|6"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(回滚言论)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|4"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "从spacemanager发送全局广播消息_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((enable_active_auth,bool,lan_translate(是否开启登录时账号激活验证)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'",
+        " u'dongyizhe@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "设置登录微服务是否校验账号已激活_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(power,float),(indicator_name,str),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "lan_translate(设置资源点的额外电力供应)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(level,int),(indicator_name,str),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "lan_translate(设置资源点等级)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(indicator_name,str),(area_id,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "lan_translate(设置资源点瘫痪)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(item_no,int),(dur,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "设置背包物品耐久度_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(state,bool),(debuff,int),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "设置异常状态_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(state,int),(holder_uid,str),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "开关debug_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(dur,int),)",
+      "author": [
+        "u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "所有防具扣除耐久度_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(state,bool),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "倒地持枪_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(source_type,str),(holder_uid,str),(editor_data,dict),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "发送行为编辑器数据_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(period_id,int),(num,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "设置周期使用次数_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((weather_id,int),(uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "设置全局天气_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(avoidance_type,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "设置避障模式_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((stage_no,int),)",
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "设置本地的赛季阶段_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(score,int),(hit_num,int),(dun_no,int),(combo_num,int),)",
+      "author": [
+        "u'wangchenchen01@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "客户端显示打靶副本结算界面_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(dun_no,int),)",
+      "author": [
+        "u'wangchenchen01@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "服务器清除打靶副本历史分数_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "显示可接的任务_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,玩家uid),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "根据玩家ID查询玩家已经收到的邮件_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((aid,str,lan_translate(玩家aid)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(查询玩家信息(aid))_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|9"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(查询玩家信息(gid))_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((char_name,str,lan_translate(玩家昵称)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(查询玩家信息(昵称))_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(speed,float),(is_limit,bool),)",
+      "author": [
+        "u'zhaohao02@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "限制速度最大值_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(rate,float),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'guoweiming@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "加速_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(trigger_id,int),)",
+      "author": [
+        "u'hubingbing@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "从指定trigger开始当前任务_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(dun_no,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'",
+        " u'grp.h73programer@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "开始一个公共事件事件线_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(score,int),(monster_level,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "愿望机抽奖测试_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(dcs_uid,str),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "无敌_$S@TIDS$_7b|1"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(state,bool),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "开关资源点掠夺次数检查_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((content,str,lan_translate(公告内容，长度不超过30个中文)),(business_channel,str,lan_translate(保留参数)),)_$S@TIDS$_7b|0"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'",
+        " u'songfeilong@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(新增系统公告，立刻发送)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(talent_type,int),(talent_id,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "升级某个天赋节点_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(target_uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "测试可靠消息_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(text_args,dict),(mail_template_no,int),(count,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": null
+    },
+    {
+      "args": "((uid,int),(target_uid,int),)",
+      "author": [
+        "u'yangchengshuai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "禅让小队队长_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'fujunkai@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "转化旧潜能_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((z,float),(y,float),(x,float),(uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'",
+        " u'yangyuhao@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "传送位置_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(part_type,str),(part_id,int),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "调整载具配件_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),(typ,int,CHAT_TYPE_DES),)_$S@TIDS$_7b|1"
+        ]
+      },
+      "author": [
+        "u'grp.h73programer@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(解除禁言)_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": {
+        "lan_translate": [
+          "((uid,int,lan_translate(玩家uid)),)_$S@TIDS$_7b|5"
+        ]
+      },
+      "author": [
+        "u'zbqn2221@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "lan_translate(解封玩家账号(gid))_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((unlock_type,int),(uid,int),(arge,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "通过解锁类型解锁模因组_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((unlock_type,int),(uid,int),(group_id,int),(arg2,int),(arg1,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "解锁模因组_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "解锁所有模因组_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'wangminna@CORP.NETEASE.COM'",
+        " u'cbcn2220@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "解锁所有模因_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((udid,str),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_NORMAL",
+      "des": {
+        "lan_translate": [
+          "解锁udid_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),(enable,bool),)",
+      "author": [
+        "u'yangyuhao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "载具撞击杀死_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'chenmingtao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "无敌_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'lhmn2270@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "周刷_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'cbcn2220@CORP.NETEASE.COM'",
+        " u'chenmingtao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "无敌_$S@TIDS$_7b|2"
+        ]
+      }
+    },
+    {
+      "args": "((uid,int),)",
+      "author": [
+        "u'nongtanggao@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": {
+        "lan_translate": [
+          "副本胜利_$S@TIDS$_7b|0"
+        ]
+      }
+    },
+    {
+      "args": null,
+      "author": [
+        "u'mqzn1469@CORP.NETEASE.COM'"
+      ],
+      "authority_need": "sconst.GM_DEVELOPER",
+      "des": null
+    }
+  ]
+}

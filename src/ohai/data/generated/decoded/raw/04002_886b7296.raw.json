@@ -1,0 +1,195 @@
+{
+  "_meta": {
+    "sourceFile": "04002_886b7296.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04002_886b7296.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:49.982Z",
+    "recordCount": 2,
+    "sourceHash": "ac884b38d45c5deedf8b71835e7415261ec1410e89ff2d093b4a435b324858a2",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "7": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 7,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 7881299411791873,
+                "params": {
+                  "check_gid_list": [
+                    10100051,
+                    10100151,
+                    10100052,
+                    10100152
+                  ],
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_gain_endow_reward"
+                  ]
+                },
+                "type": "gain_endow_reward_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            12
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "8": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "aoi_radius": 10,
+            "describe_text": {
+              "lan_translate": [
+                "你用锅捞到了一条鱼_$S@TIDS$_3gc5|0"
+              ]
+            },
+            "effect_index": 8,
+            "explain_text": "",
+            "is_aoi_tip": false,
+            "is_single_tip": false,
+            "match_id": "499006260",
+            "need_disable": false,
+            "notify_main_client": true,
+            "reset": false,
+            "show_time": 3,
+            "ui_state_up": 1
+          },
+          "type": "NodeShowMechanismTip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 9
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            14,
+            7
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "12": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 12,
+            "input_factor": 25,
+            "probability": 2,
+            "speed_factor": 0.8,
+            "use_expect_rate": false,
+            "use_input": false
+          },
+          "type": "NodeBuffProbabilityTask"
+        },
+        "event_action": {
+          "process": [
+            8,
+            13
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": []
+        }
+      },
+      "13": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 13,
+            "full_send_mail": true,
+            "gid_list": [
+              15003099
+            ],
+            "need_disable": false
+          },
+          "type": "NodeEndowReward"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "14": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "drop_rate": [
+              {
+                "drop_type": "1",
+                "extra_value": 0,
+                "item_no": 30100001,
+                "item_sub_type": 0,
+                "item_type": 0,
+                "rate": 0.1,
+                "rate_effect_type": "item_no"
+              },
+              {
+                "drop_type": "1",
+                "extra_value": 0,
+                "item_no": 30100002,
+                "item_sub_type": 0,
+                "item_type": 0,
+                "rate": 0.1,
+                "rate_effect_type": "item_no"
+              }
+            ],
+            "effect_index": 14,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeSetDropRate"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 9,
+      "name": "buff_499006260_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        499006260,
+        1
+      ],
+      "tid": 15599
+    }
+  ]
+}

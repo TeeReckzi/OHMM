@@ -1,0 +1,228 @@
+{
+  "_meta": {
+    "sourceFile": "02794_60e4cc05.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02794_60e4cc05.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:46.261Z",
+    "recordCount": 2,
+    "sourceHash": "d4246a5cf42e3940c32eaa2a5737f28e28748b98167240353c07644a60b0e13b",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            14
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "6": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 6,
+            "value": -0.05
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "7": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "hp",
+            "effect_index": 7,
+            "need_disable": false,
+            "percent_base": 0,
+            "value_type": 1
+          },
+          "type": "NodeCostAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "value": [
+            12,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 9
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "10": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 10,
+            "operation": 2
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data1": [
+            11,
+            "utility",
+            "data"
+          ],
+          "data2": [
+            13,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "11": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "hp",
+            "effect_index": 11,
+            "percent": 100
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            9,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "12": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 12,
+            "operation": 1
+          },
+          "type": "NodeBBFloatCalculation"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": -0.05
+        },
+        "in_data_pin": {
+          "data1": [
+            13,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "13": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "max_hp",
+            "effect_index": 13,
+            "percent": 5
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            9,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "14": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 14
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            7
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            10,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_530032009_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        530032009,
+        1
+      ],
+      "tid": 16308
+    }
+  ]
+}

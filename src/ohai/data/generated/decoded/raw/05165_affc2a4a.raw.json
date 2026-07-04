@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "sourceFile": "05165_affc2a4a.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05165_affc2a4a.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:53.185Z",
+    "recordCount": 2,
+    "sourceHash": "3735254281a7843f288694a528c15e32e1188853e364d2af19ddb9f4ddaccdb9",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "44": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 44
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            45
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "45": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 45,
+            "need_disable": false,
+            "signal": "dead"
+          },
+          "type": "NodeBFZoneEvent"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 44,
+      "name": "behavior_ancientones_plane_die_s4_1to2_signal",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "ancientones_plane",
+        "die_s4_1to2",
+        ""
+      ],
+      "tid": 16392
+    }
+  ]
+}

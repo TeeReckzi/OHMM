@@ -118,6 +118,21 @@ export interface ModSelections {
  bootsSuffix?: string;
 }
 
+/**
+ * Mod suffix tier levels (1-6) per slot.
+ * Tier determines the stat magnitude from tierValues arrays.
+ * Default: 5 (common endgame target) if not specified.
+ */
+export interface ModSuffixTiers {
+ weapon?: number;
+ head?: number;
+ mask?: number;
+ chest?: number;
+ gloves?: number;
+ pants?: number;
+ boots?: number;
+}
+
 export interface CradleSelection {
  perks: string[];
 }
@@ -153,6 +168,8 @@ export interface BuildSelection {
  mods: ModSelection;
  /** Explicit core + suffix selections — UI source of truth (optional during migration). */
  modSelections?: ModSelections;
+ /** Suffix tier levels (1-6) per slot. Determines stat magnitude from decoded tier values. */
+ modSuffixTiers?: ModSuffixTiers;
  cradle: CradleSelection;
  deviant: DeviantSelection;
  food: FoodBuffSelection;

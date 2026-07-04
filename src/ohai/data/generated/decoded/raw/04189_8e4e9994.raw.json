@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "sourceFile": "04189_8e4e9994.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04189_8e4e9994.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.293Z",
+    "recordCount": 2,
+    "sourceHash": "9b1e56789c7feef2a49ddcb368e2aa645cd7a643ad3454648a91013ffe114ded",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            5
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "5": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "cd": 1,
+            "check_args": {
+              "attack_negate": false,
+              "attack_type": [],
+              "bullet_hit_source": false,
+              "check_all_bullet": false,
+              "check_all_hit": false,
+              "check_all_hit_same_one": true,
+              "check_detect_mark": false,
+              "check_hit_source": false,
+              "check_node": false,
+              "check_weapon_no": false,
+              "crit_attack": false,
+              "damage_feature_negate": false,
+              "damage_feature_type": [],
+              "element_negate": false,
+              "element_type": [],
+              "formula_attack_type": [
+                2
+              ],
+              "formula_negate": false,
+              "hit_part": [],
+              "hit_part_negate": false,
+              "in_weapon_range": false,
+              "keyword": [],
+              "keyword_negate": false,
+              "keyword_tag": [],
+              "keyword_tag_negate": false,
+              "multi_bullet_one_attack": false,
+              "node_index": -1,
+              "sub_melee_attack_negate": false,
+              "sub_melee_attack_type": [],
+              "target_negate": false,
+              "target_type": [],
+              "unit_species": [],
+              "unit_species_negate": false,
+              "weak_attack": false,
+              "weapon_no": []
+            },
+            "checker_sid": 5629499600748544,
+            "dynamic_event": [],
+            "effect_index": 5,
+            "event_names": [
+              "on_attacked"
+            ],
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "reset_last_effect": true,
+            "task_checker": "attacked_checker",
+            "trigger_checker": []
+          },
+          "type": "NodeBeHitEvent"
+        },
+        "event_action": {
+          "trigger": [
+            6
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": [
+            "damage",
+            "attacker",
+            "victim",
+            "hit_pos",
+            "fire_pos"
+          ]
+        }
+      },
+      "6": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "delay_remove": false,
+            "delay_remove_time": 1,
+            "effect_index": 6,
+            "need_disable": false,
+            "sfx_budget_rule_id": 500,
+            "sfx_loop": false,
+            "sfx_path": "effect/yaolan/gacha/deviball_hit_success.pse",
+            "sfx_scale": [
+              1,
+              1,
+              1
+            ],
+            "use_radius_offset": false,
+            "visual_selection": -1
+          },
+          "type": "NodeCreateSfx"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "dir": [
+            8,
+            "utility",
+            "result"
+          ],
+          "pos": [
+            5,
+            "trigger",
+            "hit_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "7": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 7,
+            "operation": 2
+          },
+          "type": "NodeBBVectorCalculation"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data1": [
+            5,
+            "trigger",
+            "fire_pos"
+          ],
+          "data2": [
+            5,
+            "trigger",
+            "hit_pos"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "8": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 8,
+            "index_2_float_val": [
+              {
+                "index": 1,
+                "val": 0
+              }
+            ],
+            "need_normalize": true
+          },
+          "type": "NodeSetVectorFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "vector": [
+            7,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_501100046_1",
+      "preload_res_list": [
+        "effect/yaolan/gacha/deviball_hit_success.pse"
+      ],
+      "source_info": [
+        "buff",
+        501100046,
+        1
+      ],
+      "tid": 16244
+    }
+  ]
+}

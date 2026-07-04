@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "sourceFile": "03517_78814871.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03517_78814871.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:48.841Z",
+    "recordCount": 2,
+    "sourceHash": "967b52b600b7850b0c64b5f2050943548868c26f3c94252df448642fdd255078",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 2,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": false,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 2251799879557121,
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_building_interact_stop"
+                  ]
+                },
+                "type": "on_building_interact_stop_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            3
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 3,
+            "need_disable": false,
+            "transit_number": 999
+          },
+          "type": "NodeCustomTransitEvent"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 2,
+      "name": "behavior_player_interaction_roseharp_on_interact_end",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "interaction_roseharp",
+        ""
+      ],
+      "tid": 16082
+    }
+  ]
+}

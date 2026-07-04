@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "sourceFile": "07208_f9ac05e1.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07208_f9ac05e1.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.638Z",
+    "recordCount": 2,
+    "sourceHash": "c51e7a6268bcd51a0c4660dad2b047cac3b21878b5a82693b72f94194a28b97d",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            411
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "394": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "degrade": false,
+            "dispel_buff_sub_tag_list": [],
+            "dispel_buff_tag_list": [],
+            "dispel_debuff_num": 1,
+            "dispel_id_list": [
+              442010101
+            ],
+            "dispel_tag_list": [],
+            "dispel_type": 0,
+            "effect_index": 394,
+            "match_caster_id": false,
+            "need_disable": false
+          },
+          "type": "NodeDispelBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            400,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "400": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 400
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "411": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.3,
+            "effect_index": 411
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            394
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_442010571_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        442010571,
+        1
+      ],
+      "tid": 16032
+    }
+  ]
+}

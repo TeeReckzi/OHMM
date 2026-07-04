@@ -1,0 +1,558 @@
+{
+  "_meta": {
+    "sourceFile": "00559_137c8008.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00559_137c8008.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.287Z",
+    "recordCount": 2,
+    "sourceHash": "feb4c2ad2e7cc7bc34890c18291535a5f8b91d3134d7bbfe474c946a987878b9",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            87,
+            84
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "78": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 78,
+            "is_money_type": false,
+            "item_no": 30100001,
+            "item_num": 1,
+            "need_disable": false,
+            "show_toast": false
+          },
+          "type": "NodeCommonAddItem"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "79": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 79,
+            "input_factor": 100,
+            "probability": 30,
+            "speed_factor": 0.8,
+            "use_expect_rate": false,
+            "use_input": true
+          },
+          "type": "NodeBuffProbabilityTask"
+        },
+        "event_action": {
+          "process": [
+            80
+          ]
+        },
+        "in_data_args": {
+          "input_rate": 30
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": []
+        }
+      },
+      "80": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 80,
+            "need_disable": false,
+            "probability_dict": {
+              "1": 50,
+              "2": 30,
+              "3": 20
+            }
+          },
+          "type": "NodeBuffRandomTask"
+        },
+        "event_action": {
+          "process_1": [
+            78
+          ],
+          "process_2": [
+            81
+          ],
+          "process_3": [
+            82
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process_1": [],
+          "process_2": [],
+          "process_3": []
+        }
+      },
+      "81": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 81,
+            "is_money_type": false,
+            "item_no": 30311001,
+            "item_num": 1,
+            "need_disable": false,
+            "show_toast": false
+          },
+          "type": "NodeCommonAddItem"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "82": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 82,
+            "is_money_type": false,
+            "item_no": 30100012,
+            "item_num": 1,
+            "need_disable": false,
+            "show_toast": false
+          },
+          "type": "NodeCommonAddItem"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "83": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 83,
+            "value": 30
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "84": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 84,
+            "loop_max_times": 0,
+            "loop_time": 60,
+            "reset_last_effect": true,
+            "start_trigger": false
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            102
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "87": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 87,
+            "loop_max_times": 0,
+            "loop_time": 10,
+            "reset_last_effect": true,
+            "start_trigger": false
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            101
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "89": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "cost_attr": [
+              {
+                "attribute": "water",
+                "extra_value": 0,
+                "percent_base": 0,
+                "value": 5,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 89,
+            "need_disable": false
+          },
+          "type": "NodeCostAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "92": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "water",
+            "effect_index": 92,
+            "percent": 100
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            93,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "93": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 93
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "94": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 94,
+            "operation": 0
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 99.1
+        },
+        "in_data_pin": {
+          "data1": [
+            92,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "95": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 95,
+            "value": 99.1
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "96": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 96
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [
+            89
+          ],
+          "True": []
+        },
+        "in_data_pin": {
+          "Condition": [
+            94,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "101": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1002
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1003
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1004
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1007
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1008
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1009
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1025
+                },
+                "type": "check_weather__v2"
+              }
+            ],
+            "condition_op": 0,
+            "effect_index": 101
+          },
+          "type": "NodeBuffCheckerTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            96
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "102": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1002
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1003
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1004
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1007
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1008
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1009
+                },
+                "type": "check_weather__v2"
+              },
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_weather_changed"
+                  ],
+                  "negate": false,
+                  "weather_id": 1025
+                },
+                "type": "check_weather__v2"
+              }
+            ],
+            "condition_op": 0,
+            "effect_index": 102
+          },
+          "type": "NodeBuffCheckerTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            79
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {
+        "83": [
+          [
+            [
+              "effect_params",
+              "params",
+              "value"
+            ],
+            0
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_499004000_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        499004000,
+        1
+      ],
+      "tid": 5230
+    }
+  ]
+}

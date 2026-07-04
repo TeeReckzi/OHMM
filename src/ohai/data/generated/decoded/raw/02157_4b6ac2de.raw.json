@@ -1,0 +1,137 @@
+{
+  "_meta": {
+    "sourceFile": "02157_4b6ac2de.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02157_4b6ac2de.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:44.536Z",
+    "recordCount": 2,
+    "sourceHash": "c3b6ad7c05248f8fb88e316a84a6b8129bf917cc1a03fe5d2f5a975501e8efb5",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 1,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "center",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "ball",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/light_flower_energyball.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                5,
+                5
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "center",
+              "state_conflict_hide": false,
+              "times_in_sec": 5,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.5,
+            "effect_index": 2
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_60143061_1",
+      "preload_res_list": [
+        "effect/boss/lighthouse/light_flower_energyball.pse"
+      ],
+      "source_info": [
+        "buff",
+        60143061,
+        1
+      ],
+      "tid": 16225
+    }
+  ]
+}

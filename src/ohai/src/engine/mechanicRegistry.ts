@@ -49,6 +49,26 @@ function cloneOverride(o: GearMechanicOverride): GearMechanicOverride {
 }
 
 register({
+  mechanicId: "physicalWeapon",
+  displayName: "Physical Weapon Hit",
+  damageScalingBucket: "weapon",
+  scalingStat: "weaponDMG",
+  vulnerabilityType: "weapon",
+  critWeakspotBucket: "additive_when_both_apply",
+  displayBehavior: "direct_hit",
+  canCrit: true,
+  canWeakspot: true,
+  distanceDecay: false,
+  baseFactor: 1.0,
+  formulaTemplateId: "physical_weapon_damage_current_patch",
+  source: { kind: "in_game_observation", note: "Physical weapon damage: base × (1 + atk%) × multipliers. Crit and weakspot additive in same bucket." },
+  confidence: "observed_in_game_needs_testing",
+  patchContext: "Version 2.3.8",
+  needsRetest: false,
+  notes: "Standard physical weapon hit. Base damage = baseWeaponDMG × (1 + attackPercent). Crit and weakspot are additive within their shared bucket, multiplicative with other bonuses."
+});
+
+register({
   mechanicId: "burn",
   displayName: "Burn",
   damageScalingBucket: "status",

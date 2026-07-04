@@ -1,0 +1,1401 @@
+{
+  "_meta": {
+    "sourceFile": "01775_3dd8faed.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01775_3dd8faed.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:43.609Z",
+    "recordCount": 18,
+    "sourceHash": "c7283f58f6a3e75c3fe181a2aca900b1329b9528b9de3726c870af64bdef4ed1",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 1,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_BossSpider_prefab_boss_energy_ball2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "blacklist": "e_jzhy#ne_frac"
+          }
+        },
+        "RuntimeAttrClientDungeonEntry": {
+          "boss_entry_tag": "boss_entrance03",
+          "cls_type": "RuntimeAttrClientDungeonEntry",
+          "shoot_dungeon_id": "114514",
+          "trig_group": "dungeon_ui",
+          "trig_radius": "9",
+          "type": "boss"
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            4.47,
+            1.46,
+            -0.69,
+            0,
+            1.57,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "prefab_boss_energy_ball2",
+          "node_uuid": "69366a0d03ca0a55ac02b272",
+          "world_trans": [
+            6431.6738,
+            220.5962,
+            -2744.7424,
+            0,
+            1.57,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_close_gate_monolith_door_close",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "whitelist": "e_jzhy"
+          }
+        },
+        "RuntimeAttrFeaturePrefabDoor": {
+          "buff_list": [
+            820001000
+          ],
+          "close_block_hf": "compdevice/silo02_door_close.mesh",
+          "close_sound_event": "",
+          "close_timeline": "",
+          "cls_type": "RuntimeAttrFeaturePrefabDoor",
+          "open_block_hf": "",
+          "open_sound_event": "",
+          "open_timeline": "",
+          "timeline_play_rate": 1
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            820001000,
+            810020024,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "",
+          "enable_exec_state": false,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "",
+              "forbidden_interact_tips": {
+                "lan_translate": [
+                  "当前巨楔已封锁_$S@TIDS$_fba|0"
+                ]
+              },
+              "interact_behavior": "",
+              "interact_condition": [
+                {
+                  "interact_text_no_satisfied": "1000",
+                  "interact_text_no_unsatisfied": "",
+                  "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                }
+              ],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                1.26,
+                0
+              ],
+              "interact_sense_range": 8,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "111",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            ""
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            15.157,
+            -0.0696,
+            -20.9614,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "monolith_door_close",
+          "node_uuid": "69366a0d03ca0a55ac02b3d1",
+          "world_trans": [
+            6469.7305,
+            219.1892,
+            -2744.8655,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/prefab/not_proxy/anim/monolith_door_close.prefab",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0.1035,
+                1.1931,
+                0.0149
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.9694,
+                2.0005,
+                3.3004
+              ],
+              "shape": "box",
+              "tag": "111",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "111",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_default_acoustic_bake_0",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "blacklist": "e_jzhy#ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -19.3443,
+            48.9336,
+            9.3498,
+            0,
+            0.251,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_0",
+          "node_uuid": "69366a0d03ca0a55ac02b3db",
+          "world_trans": [
+            6407.8594,
+            268.0698,
+            -2734.7026,
+            0,
+            0.251,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                58.5699,
+                166.9481,
+                63.3568
+              ],
+              "shape": "box",
+              "tag": "prefab_landmark_wedge_havoc_a_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_default_acoustic_bake_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "blacklist": "e_jzhy#ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            71.8671,
+            -6.7596,
+            -11.705,
+            0,
+            0.3805,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_1",
+          "node_uuid": "69366a0d03ca0a55ac02b3d5",
+          "world_trans": [
+            6499.0708,
+            212.3766,
+            -2755.7576,
+            0,
+            0.3805,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                25.3852,
+                20.2812,
+                26.5005
+              ],
+              "shape": "box",
+              "tag": "prefab_landmark_wedge_havoc_a_1",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_default_equipmentroom",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "blacklist": "e_jzhy#ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            15.6772,
+            -0.2147,
+            42.644,
+            0,
+            -0.5438,
+            0,
+            8.1822,
+            4.3042,
+            6.4258
+          ],
+          "name": "equipmentroom",
+          "node_uuid": "69366a0d03ca0a55ac02b3d3",
+          "world_trans": [
+            6456.7236,
+            221.2889,
+            -2723.667,
+            0,
+            -0.9518,
+            0,
+            8.1822,
+            4.3042,
+            6.4258
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_default_meetingroom",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "blacklist": "e_jzhy#ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            7.8892,
+            0.7874,
+            12.6168,
+            0,
+            0.4076,
+            0,
+            8.6552,
+            6.3432,
+            11.8881
+          ],
+          "name": "meetingroom",
+          "node_uuid": "69366a0d03ca0a55ac02b3e7",
+          "world_trans": [
+            6461.4893,
+            222.291,
+            -2754.3193,
+            0,
+            -0.0004,
+            0,
+            8.6552,
+            6.3432,
+            11.8881
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_default_officeroom",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "blacklist": "e_jzhy#ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            15.5874,
+            0.7674,
+            30.1523,
+            0,
+            0.4052,
+            0,
+            8.8485,
+            6.3333,
+            10.3615
+          ],
+          "name": "officeroom",
+          "node_uuid": "69366a0d03ca0a55ac02b3d8",
+          "world_trans": [
+            6461.5977,
+            222.271,
+            -2735.1689,
+            0,
+            -0.0028,
+            0,
+            8.8485,
+            6.3333,
+            10.3615
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_default_room1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "blacklist": "e_jzhy#ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -15.561,
+            1.5525,
+            34.1162,
+            0,
+            0.4147,
+            0,
+            20.5956,
+            24.2333,
+            60.9258
+          ],
+          "name": "room1",
+          "node_uuid": "69366a0d03ca0a55ac02b3ea",
+          "world_trans": [
+            6431.4331,
+            223.0561,
+            -2743.8892,
+            0,
+            0.0067,
+            0,
+            20.5956,
+            24.2333,
+            60.9258
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_default_room2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "blacklist": "e_jzhy#ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            10.9912,
+            -11.6111,
+            14.2671,
+            0,
+            0.3643,
+            0,
+            87.3079,
+            13.5944,
+            79.0012
+          ],
+          "name": "room2",
+          "node_uuid": "69366a0d03ca0a55ac02b3d6",
+          "world_trans": [
+            6463.6816,
+            209.8925,
+            -2751.5737,
+            0,
+            -0.0437,
+            0,
+            87.3079,
+            13.5944,
+            79.0012
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_default_storageroom",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "blacklist": "e_jzhy#ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -0.6665,
+            -0.3621,
+            4.2026,
+            -0.0076,
+            -0.2884,
+            0.02,
+            6.8764,
+            4.1756,
+            8.7493
+          ],
+          "name": "storageroom",
+          "node_uuid": "69366a0d03ca0a55ac02b3ec",
+          "world_trans": [
+            6456.9741,
+            221.1415,
+            -2765.4377,
+            -0.0149,
+            -0.6964,
+            0.0153,
+            6.8764,
+            4.1756,
+            8.7493
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_rustlike_acoustic_bake_0",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -19.3443,
+            48.9336,
+            9.3498,
+            0,
+            0.251,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_0",
+          "node_uuid": "69366a0d03ca0a55ac02b45e",
+          "world_trans": [
+            6407.8594,
+            268.0698,
+            -2734.7026,
+            0,
+            0.251,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                58.5699,
+                166.9481,
+                63.3568
+              ],
+              "shape": "box",
+              "tag": "prefab_landmark_wedge_havoc_a_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_rustlike_acoustic_bake_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            71.8671,
+            -6.7596,
+            -11.705,
+            0,
+            0.3805,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_1",
+          "node_uuid": "69366a0d03ca0a55ac02b45f",
+          "world_trans": [
+            6499.0708,
+            212.3766,
+            -2755.7576,
+            0,
+            0.3805,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                25.3852,
+                20.2812,
+                26.5005
+              ],
+              "shape": "box",
+              "tag": "prefab_landmark_wedge_havoc_a_1",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_rustlike_equipmentroom",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            15.6772,
+            -0.2147,
+            42.644,
+            0,
+            -0.5438,
+            0,
+            8.1822,
+            4.3042,
+            6.4258
+          ],
+          "name": "equipmentroom",
+          "node_uuid": "69366a0d03ca0a55ac02b462",
+          "world_trans": [
+            6456.7236,
+            221.2889,
+            -2723.667,
+            0,
+            -0.9518,
+            0,
+            8.1822,
+            4.3042,
+            6.4258
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_rustlike_meetingroom",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            7.8892,
+            0.7874,
+            12.6167,
+            0,
+            0.4076,
+            0,
+            8.6552,
+            6.3432,
+            11.8881
+          ],
+          "name": "meetingroom",
+          "node_uuid": "69366a0d03ca0a55ac02b463",
+          "world_trans": [
+            6461.4893,
+            222.291,
+            -2754.3196,
+            0,
+            -0.0004,
+            0,
+            8.6552,
+            6.3432,
+            11.8881
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_rustlike_officeroom",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            15.5874,
+            0.7674,
+            30.1523,
+            0,
+            0.4052,
+            0,
+            8.8485,
+            6.3333,
+            10.3615
+          ],
+          "name": "officeroom",
+          "node_uuid": "69366a0d03ca0a55ac02b464",
+          "world_trans": [
+            6461.5977,
+            222.271,
+            -2735.1689,
+            0,
+            -0.0028,
+            0,
+            8.8485,
+            6.3333,
+            10.3615
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_rustlike_room1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -15.561,
+            1.5525,
+            34.1162,
+            0,
+            0.4147,
+            0,
+            20.5956,
+            24.2333,
+            60.9258
+          ],
+          "name": "room1",
+          "node_uuid": "69366a0d03ca0a55ac02b465",
+          "world_trans": [
+            6431.4331,
+            223.0561,
+            -2743.8892,
+            0,
+            0.0067,
+            0,
+            20.5956,
+            24.2333,
+            60.9258
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_rustlike_room2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            10.9912,
+            -11.6111,
+            14.2671,
+            0,
+            0.3643,
+            0,
+            87.3079,
+            13.5944,
+            79.0012
+          ],
+          "name": "room2",
+          "node_uuid": "69366a0d03ca0a55ac02b466",
+          "world_trans": [
+            6463.6816,
+            209.8925,
+            -2751.5737,
+            0,
+            -0.0437,
+            0,
+            87.3079,
+            13.5944,
+            79.0012
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E60A0C-0F2E003A-42B77984-46527A2A_rustlike_storageroom",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_landmark_wedge_havoc_a_4943",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -0.6665,
+            -0.3621,
+            4.2026,
+            -0.0076,
+            -0.2884,
+            0.02,
+            6.8764,
+            4.1756,
+            8.7493
+          ],
+          "name": "storageroom",
+          "node_uuid": "69366a0d03ca0a55ac02b467",
+          "world_trans": [
+            6456.9741,
+            221.1415,
+            -2765.4377,
+            -0.0149,
+            -0.6964,
+            0.0153,
+            6.8764,
+            4.1756,
+            8.7493
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

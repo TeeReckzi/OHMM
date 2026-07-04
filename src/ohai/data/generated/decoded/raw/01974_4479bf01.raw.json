@@ -1,0 +1,507 @@
+{
+  "_meta": {
+    "sourceFile": "01974_4479bf01.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01974_4479bf01.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:44.088Z",
+    "recordCount": 2,
+    "sourceHash": "031aba56075a7ac200e89a75e63aedcb2f1b4a7f04cd3b6fd728f6d4ec3774f5",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            9,
+            8
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 1
+          },
+          "type": "NodeGetGuideTargetUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_ai_target_uid",
+            "output_ai_friend_target_uid"
+          ]
+        }
+      },
+      "2": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 2,
+            "include_fly_height": false
+          },
+          "type": "NodeGetTargetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            1,
+            "utility",
+            "output_ai_target_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 3,
+            "logic_tree_name": "",
+            "need_disable": false,
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": null,
+              "anim_graph_path": "",
+              "aoi_radius": -1,
+              "aoi_radius2": 0,
+              "can_mod_pos_y": false,
+              "combat_prototype_no": "911562",
+              "combat_unit_no": "91161401001",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": true,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": 60,
+              "dynamic_mask_level": 0,
+              "enable_damage_sync": false,
+              "head_bar_rule_list": [
+                30,
+                2
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "model_path": "character/empty/kongmoxing_sphere.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 0,
+              "pulse_detect_effects": [],
+              "removed_no_drop": false,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|5101010305",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": true,
+              "unit_camp_template_no": "201",
+              "unit_entity_type": "StaticGunless",
+              "unit_hold_item": "",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "unit_physics_control_data": {
+              "bounding_offset": [
+                0,
+                0,
+                0
+              ],
+              "bullet_num": 0,
+              "item_no": 0,
+              "override_physics_control": false,
+              "physical_control_enabled": false,
+              "physical_summer_control": false,
+              "physical_unit_no": "",
+              "physics_control_type": 1,
+              "show_interact_btn": true
+            }
+          },
+          "type": "NodeSummon"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            7,
+            "process",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "7": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "angle_range": 180,
+            "avoid_territory": false,
+            "effect_index": 7,
+            "grid_dis": 0,
+            "max_dis": 50,
+            "min_dis": 1,
+            "num": 4,
+            "update_plane_toward": false
+          },
+          "type": "NodeGenRandomPosInAreaTask"
+        },
+        "event_action": {
+          "process": [
+            3
+          ]
+        },
+        "in_data_pin": {
+          "center_position": [
+            2,
+            "utility",
+            "output_pos"
+          ],
+          "toward_position": [
+            2,
+            "utility",
+            "output_dir"
+          ]
+        },
+        "out_data_pin": {
+          "process": [
+            "output_pos"
+          ]
+        }
+      },
+      "8": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 8,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": true,
+              "bind_name": "",
+              "bind_type": 0,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": true,
+              "delay_remove_time": 8,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/gmsz/skill_scope_red_gmsz.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                50,
+                1,
+                50
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            2,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 8,
+            "effect_index": 9
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            7,
+            10
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "10": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "angle_range": 180,
+            "avoid_territory": false,
+            "effect_index": 10,
+            "grid_dis": 0,
+            "max_dis": 50,
+            "min_dis": 1,
+            "num": 4,
+            "update_plane_toward": false
+          },
+          "type": "NodeGenRandomPosInAreaTask"
+        },
+        "event_action": {
+          "process": [
+            12
+          ]
+        },
+        "in_data_pin": {
+          "center_position": [
+            11,
+            "utility",
+            "output_pos"
+          ],
+          "toward_position": [
+            11,
+            "utility",
+            "output_dir"
+          ]
+        },
+        "out_data_pin": {
+          "process": [
+            "output_pos"
+          ]
+        }
+      },
+      "11": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attach_ground": false,
+            "base_dir": false,
+            "effect_index": 11,
+            "offset_angle": 180,
+            "offset_angle_xz": [
+              0,
+              0
+            ],
+            "offset_length": 0,
+            "offset_pos": [
+              0,
+              0,
+              0
+            ]
+          },
+          "type": "NodeCalculateOffsetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "input_dir": [
+            2,
+            "utility",
+            "output_dir"
+          ],
+          "input_pos": [
+            2,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "12": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 12,
+            "logic_tree_name": "",
+            "need_disable": false,
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": null,
+              "anim_graph_path": "",
+              "aoi_radius": -1,
+              "aoi_radius2": 0,
+              "can_mod_pos_y": false,
+              "combat_prototype_no": "911562",
+              "combat_unit_no": "91161401001",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": true,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": 60,
+              "dynamic_mask_level": 0,
+              "enable_damage_sync": false,
+              "head_bar_rule_list": [
+                30,
+                2
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "model_path": "character/empty/kongmoxing_sphere.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 0,
+              "pulse_detect_effects": [],
+              "removed_no_drop": false,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|5101010305",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": true,
+              "unit_camp_template_no": "201",
+              "unit_entity_type": "StaticGunless",
+              "unit_hold_item": "",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "unit_physics_control_data": {
+              "bounding_offset": [
+                0,
+                0,
+                0
+              ],
+              "bullet_num": 0,
+              "item_no": 0,
+              "override_physics_control": false,
+              "physical_control_enabled": false,
+              "physical_summer_control": false,
+              "physical_unit_no": "",
+              "physics_control_type": 1,
+              "show_interact_btn": true
+            }
+          },
+          "type": "NodeSummon"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            10,
+            "process",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "behavior_tongyong_crab_heart_trap_summon",
+      "preload_res_list": [
+        "effect/boss/gmsz/skill_scope_red_gmsz.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "tongyong",
+        "crab_heart_trap",
+        ""
+      ],
+      "tid": 16260
+    }
+  ]
+}

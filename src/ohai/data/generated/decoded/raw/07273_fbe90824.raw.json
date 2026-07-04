@@ -1,0 +1,6844 @@
+{
+  "_meta": {
+    "sourceFile": "07273_fbe90824.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07273_fbe90824.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.865Z",
+    "recordCount": 72,
+    "sourceHash": "a5bb59721f96c81616b5390ea01cda7f828c4448622a607b39a1cd97b4968579",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_anchor_worldstone01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "102",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "WORLD_STONE",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrGameplayWorldStone": {
+          "cls_type": "RuntimeAttrGameplayWorldStone",
+          "init_state": "001",
+          "reward_no": "",
+          "submit_item_no_list": [],
+          "unlock_state_infos": [
+            {
+              "state_name": "001",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "002",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01_to_02.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_02.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "003",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_02_to_03.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_03.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020024,
+            810020059,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "001",
+          "enable_exec_state": true,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "001",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": false,
+              "tag": "001",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "002",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "003",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            "001",
+            "002",
+            "003"
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            126.603,
+            8.5667,
+            122.2456,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "worldstone01",
+          "node_uuid": "69312b3a03ca0a42dc1958f6",
+          "world_trans": [
+            5303.4585,
+            80.3675,
+            4790.5088,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": false,
+          "enable_vertical_occluder": false,
+          "init_model_path": "environment/dynamic_objects/world_stone/world_stone_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                20,
+                4,
+                20
+              ],
+              "shape": "box",
+              "tag": "001",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            },
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                4,
+                5
+              ],
+              "shape": "box",
+              "tag": "002",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "first_meet_world_stone",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "001",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "002",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_acoustic_bake_0",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            88.6385,
+            4.4309,
+            110.018,
+            0,
+            1.4969,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_0",
+          "node_uuid": "69312a5203ca0a42dc194a9c",
+          "world_trans": [
+            5212.1602,
+            72.3181,
+            4489.6514,
+            0,
+            -1.6447,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                34.9512,
+                29.6939,
+                56.5
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_b_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_acoustic_bake_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -127.8921,
+            0.1553,
+            81.4897,
+            0,
+            -0.7854,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_1",
+          "node_uuid": "69312a5203ca0a42dc194b24",
+          "world_trans": [
+            5428.6909,
+            68.0425,
+            4518.1797,
+            0,
+            2.3562,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                33.7979,
+                20.0581,
+                38.7449
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_b_1",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_acoustic_bake_2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            19.4505,
+            7.2751,
+            -65.457,
+            0,
+            1.1373,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_2",
+          "node_uuid": "69312a5203ca0a42dc194b31",
+          "world_trans": [
+            5281.3481,
+            75.1623,
+            4665.1265,
+            0,
+            -2.0043,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                94.5709,
+                50.1755,
+                263.7214
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_b_2",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_acoustic_bake_3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -122.4079,
+            2.0986,
+            -56.0878,
+            0,
+            1.4365,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_3",
+          "node_uuid": "69312a5203ca0a42dc194b3b",
+          "world_trans": [
+            5423.2065,
+            69.9858,
+            4655.7573,
+            0,
+            -1.7051,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                64.4426,
+                43.1336,
+                101.5057
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_b_3",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            11.3999,
+            -1.326,
+            6.6167,
+            -0.6402,
+            -0.8958,
+            0.6504,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "name": "cake_ladder_fake",
+          "node_uuid": "69312a5203ca0a42dc194ac0",
+          "world_trans": [
+            5310.6958,
+            80.9624,
+            4683.6748,
+            -0.6402,
+            -0.8958,
+            0.6504,
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\poi\\t7_b\\cake_candle_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            10.3374,
+            -2.6529,
+            6.5278,
+            0,
+            0.1854,
+            0,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "name": "cake_ladder_fake1",
+          "node_uuid": "69312a5203ca0a42dc194ba6",
+          "world_trans": [
+            5309.6333,
+            79.6355,
+            4683.5859,
+            0,
+            0.1854,
+            0,
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\poi\\t7_b\\cake_cream_04.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake10",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0.6772,
+            -2.216,
+            -8.9355,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake10",
+          "node_uuid": "69312a5203ca0a42dc194afd",
+          "world_trans": [
+            5299.9727,
+            80.0724,
+            4668.1226,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake11",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -9.1733,
+            -2.5259,
+            7.1968,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake11",
+          "node_uuid": "69312a5203ca0a42dc194b08",
+          "world_trans": [
+            5290.1226,
+            79.7625,
+            4684.2549,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake12",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -8.4009,
+            -2.7511,
+            8.4604,
+            0.5211,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake12",
+          "node_uuid": "69312a5203ca0a42dc194b0f",
+          "world_trans": [
+            5290.895,
+            79.5373,
+            4685.5186,
+            0.5211,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake13",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            3.5239,
+            -2.2168,
+            9.4854,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake13",
+          "node_uuid": "69312a5203ca0a42dc194b29",
+          "world_trans": [
+            5302.8198,
+            80.0716,
+            4686.5435,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake14",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            6.8354,
+            -2.3891,
+            7.4971,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake14",
+          "node_uuid": "69312a5203ca0a42dc194b2f",
+          "world_trans": [
+            5306.1313,
+            79.8993,
+            4684.5552,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake15",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0.54,
+            -2.216,
+            12.0498,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake15",
+          "node_uuid": "69312a5203ca0a42dc194b4d",
+          "world_trans": [
+            5299.8359,
+            80.0724,
+            4689.1079,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake16",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            13.6016,
+            -2.6987,
+            0.8008,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake16",
+          "node_uuid": "69312a5203ca0a42dc194b65",
+          "world_trans": [
+            5312.8975,
+            79.5897,
+            4677.8589,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake17",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            7.873,
+            2.3186,
+            -0.9761,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake17",
+          "node_uuid": "69312a5203ca0a42dc194b72",
+          "world_trans": [
+            5307.1685,
+            84.607,
+            4676.082,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake18",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.5767,
+            -2.3571,
+            -7.458,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake18",
+          "node_uuid": "69312a5203ca0a42dc194b96",
+          "world_trans": [
+            5296.7188,
+            79.9313,
+            4669.6001,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake19",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -6.2837,
+            -2.4873,
+            -6.981,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake19",
+          "node_uuid": "69312a5203ca0a42dc194bab",
+          "world_trans": [
+            5293.0117,
+            79.8011,
+            4670.0771,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.4761,
+            3.7725,
+            -4.5098,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake2",
+          "node_uuid": "69312a5203ca0a42dc194ba2",
+          "world_trans": [
+            5296.8193,
+            86.0609,
+            4672.5483,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake20",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -9.8442,
+            -8.8634,
+            -8.2246,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake20",
+          "node_uuid": "69312a5203ca0a42dc194bdf",
+          "world_trans": [
+            5289.4517,
+            73.425,
+            4668.8335,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake21",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -8.8687,
+            -2.6438,
+            5.8374,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake21",
+          "node_uuid": "69312a5203ca0a42dc194bed",
+          "world_trans": [
+            5290.4272,
+            79.6446,
+            4682.8955,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake22",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.7578,
+            2.1347,
+            -5.5176,
+            0,
+            0.1854,
+            0,
+            50,
+            50,
+            40
+          ],
+          "name": "cake_ladder_fake22",
+          "node_uuid": "69312a5203ca0a42dc194b61",
+          "world_trans": [
+            5296.5381,
+            84.4231,
+            4671.5405,
+            0,
+            0.1854,
+            0,
+            50,
+            50,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake23",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -8.8687,
+            -2.6438,
+            5.8374,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake23",
+          "node_uuid": "69312a5203ca0a42dc194bef",
+          "world_trans": [
+            5290.4272,
+            79.6446,
+            4682.8955,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -1.7417,
+            3.2228,
+            -4.9282,
+            -0.2753,
+            2.9165,
+            -0.3019,
+            80,
+            50,
+            80
+          ],
+          "name": "cake_ladder_fake3",
+          "node_uuid": "69312a5203ca0a42dc194be8",
+          "world_trans": [
+            5297.5542,
+            85.5112,
+            4672.1299,
+            -0.2753,
+            2.9165,
+            -0.3019,
+            80,
+            50,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake5",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -3.645,
+            2.8256,
+            -4.5981,
+            0,
+            0.1854,
+            0.6329,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake5",
+          "node_uuid": "69312a5203ca0a42dc194c06",
+          "world_trans": [
+            5295.6509,
+            85.114,
+            4672.46,
+            0,
+            0.1854,
+            0.6329,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake6",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -5.4092,
+            2.3755,
+            -3.0547,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake6",
+          "node_uuid": "69312a5203ca0a42dc194aa0",
+          "world_trans": [
+            5293.8867,
+            84.6639,
+            4674.0034,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake7",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.3774,
+            4.4052,
+            -4.814,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake7",
+          "node_uuid": "69312a5203ca0a42dc194ab2",
+          "world_trans": [
+            5296.9185,
+            86.6936,
+            4672.2441,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake8",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.2617,
+            4.7016,
+            -4.4102,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake8",
+          "node_uuid": "69312a5203ca0a42dc194abf",
+          "world_trans": [
+            5297.0342,
+            86.99,
+            4672.6479,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_cake_ladder_fake9",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -7.4946,
+            -2.567,
+            -2.6733,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake9",
+          "node_uuid": "69312a5203ca0a42dc194aeb",
+          "world_trans": [
+            5291.8013,
+            79.7214,
+            4674.3848,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_ladder_01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -1.8,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            94.124,
+            0.9227,
+            -47.0513,
+            0,
+            1.57,
+            0.0724,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_01",
+          "node_uuid": "69312a5203ca0a42dc194c03",
+          "world_trans": [
+            5311.0942,
+            75.3819,
+            4660.6655,
+            0,
+            1.57,
+            0.0724,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_default_node259",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0005,
+            -5.2126,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            123.4487,
+            -6.078,
+            27.644,
+            0,
+            1.5699,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node259",
+          "node_uuid": "69312a5203ca0a42dc194bc8",
+          "world_trans": [
+            5340.4194,
+            68.3812,
+            4735.3604,
+            0,
+            1.5699,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_acoustic_bake_0",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            88.6385,
+            4.4309,
+            110.018,
+            0,
+            1.4969,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_0",
+          "node_uuid": "69312a5203ca0a42dc194c19",
+          "world_trans": [
+            5212.1602,
+            72.3181,
+            4489.6514,
+            0,
+            -1.6447,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                34.9512,
+                29.6939,
+                56.5
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_b_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_acoustic_bake_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -127.8921,
+            0.1553,
+            81.4897,
+            0,
+            -0.7854,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_1",
+          "node_uuid": "69312a5203ca0a42dc194c1a",
+          "world_trans": [
+            5428.6909,
+            68.0425,
+            4518.1797,
+            0,
+            2.3562,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                33.7979,
+                20.0581,
+                38.7449
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_b_1",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_acoustic_bake_2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            19.4505,
+            7.2751,
+            -65.457,
+            0,
+            1.1373,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_2",
+          "node_uuid": "69312a5203ca0a42dc194c1b",
+          "world_trans": [
+            5281.3481,
+            75.1623,
+            4665.1265,
+            0,
+            -2.0043,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                94.5709,
+                50.1755,
+                263.7214
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_b_2",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_acoustic_bake_3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -122.4079,
+            2.0986,
+            -56.0878,
+            0,
+            1.4365,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_3",
+          "node_uuid": "69312a5203ca0a42dc194c1c",
+          "world_trans": [
+            5423.2065,
+            69.9858,
+            4655.7573,
+            0,
+            -1.7051,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                64.4426,
+                43.1336,
+                101.5057
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_b_3",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            11.3999,
+            -1.326,
+            6.6167,
+            -0.6402,
+            -0.8958,
+            0.6504,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "name": "cake_ladder_fake",
+          "node_uuid": "69312a5203ca0a42dc194c48",
+          "world_trans": [
+            5310.6958,
+            80.9624,
+            4683.6748,
+            -0.6402,
+            -0.8958,
+            0.6504,
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\poi\\t7_b\\cake_candle_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            10.3374,
+            -2.6529,
+            6.5278,
+            0,
+            0.1854,
+            0,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "name": "cake_ladder_fake1",
+          "node_uuid": "69312a5203ca0a42dc194c49",
+          "world_trans": [
+            5309.6333,
+            79.6355,
+            4683.5859,
+            0,
+            0.1854,
+            0,
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\poi\\t7_b\\cake_cream_04.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake10",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0.6772,
+            -2.216,
+            -8.9355,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake10",
+          "node_uuid": "69312a5203ca0a42dc194c4a",
+          "world_trans": [
+            5299.9727,
+            80.0724,
+            4668.1226,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake11",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -9.1733,
+            -2.5259,
+            7.1968,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake11",
+          "node_uuid": "69312a5203ca0a42dc194c4b",
+          "world_trans": [
+            5290.1226,
+            79.7625,
+            4684.2549,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake12",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -8.4009,
+            -2.7511,
+            8.4604,
+            0.5211,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake12",
+          "node_uuid": "69312a5203ca0a42dc194c4c",
+          "world_trans": [
+            5290.895,
+            79.5373,
+            4685.5186,
+            0.5211,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake13",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            3.5239,
+            -2.2168,
+            9.4854,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake13",
+          "node_uuid": "69312a5203ca0a42dc194c4d",
+          "world_trans": [
+            5302.8198,
+            80.0716,
+            4686.5435,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake14",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            6.8354,
+            -2.3891,
+            7.4971,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake14",
+          "node_uuid": "69312a5203ca0a42dc194c4e",
+          "world_trans": [
+            5306.1313,
+            79.8993,
+            4684.5552,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake15",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0.54,
+            -2.216,
+            12.0498,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake15",
+          "node_uuid": "69312a5203ca0a42dc194c4f",
+          "world_trans": [
+            5299.8359,
+            80.0724,
+            4689.1079,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake16",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            13.6016,
+            -2.6987,
+            0.8008,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake16",
+          "node_uuid": "69312a5203ca0a42dc194c50",
+          "world_trans": [
+            5312.8975,
+            79.5897,
+            4677.8589,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake17",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            7.873,
+            2.3186,
+            -0.9761,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake17",
+          "node_uuid": "69312a5203ca0a42dc194c51",
+          "world_trans": [
+            5307.1685,
+            84.607,
+            4676.082,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake18",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.5767,
+            -2.3571,
+            -7.458,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake18",
+          "node_uuid": "69312a5203ca0a42dc194c52",
+          "world_trans": [
+            5296.7188,
+            79.9313,
+            4669.6001,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake19",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -6.2837,
+            -2.4873,
+            -6.981,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake19",
+          "node_uuid": "69312a5203ca0a42dc194c53",
+          "world_trans": [
+            5293.0117,
+            79.8011,
+            4670.0771,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.4761,
+            3.7725,
+            -4.5098,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake2",
+          "node_uuid": "69312a5203ca0a42dc194c54",
+          "world_trans": [
+            5296.8193,
+            86.0609,
+            4672.5483,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake20",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -9.8442,
+            -8.8634,
+            -8.2246,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake20",
+          "node_uuid": "69312a5203ca0a42dc194c55",
+          "world_trans": [
+            5289.4517,
+            73.425,
+            4668.8335,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake21",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -8.8687,
+            -2.6438,
+            5.8374,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake21",
+          "node_uuid": "69312a5203ca0a42dc194c56",
+          "world_trans": [
+            5290.4272,
+            79.6446,
+            4682.8955,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake22",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.7578,
+            2.1347,
+            -5.5176,
+            0,
+            0.1854,
+            0,
+            50,
+            50,
+            40
+          ],
+          "name": "cake_ladder_fake22",
+          "node_uuid": "69312a5203ca0a42dc194c57",
+          "world_trans": [
+            5296.5381,
+            84.4231,
+            4671.5405,
+            0,
+            0.1854,
+            0,
+            50,
+            50,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake23",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -8.8687,
+            -2.6438,
+            5.8374,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ],
+          "name": "cake_ladder_fake23",
+          "node_uuid": "69312a5203ca0a42dc194c58",
+          "world_trans": [
+            5290.4272,
+            79.6446,
+            4682.8955,
+            0,
+            0.1854,
+            0,
+            30,
+            30,
+            30
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -1.7417,
+            3.2228,
+            -4.9282,
+            -0.2753,
+            2.9165,
+            -0.3019,
+            80,
+            50,
+            80
+          ],
+          "name": "cake_ladder_fake3",
+          "node_uuid": "69312a5203ca0a42dc194c59",
+          "world_trans": [
+            5297.5542,
+            85.5112,
+            4672.1299,
+            -0.2753,
+            2.9165,
+            -0.3019,
+            80,
+            50,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake5",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -3.645,
+            2.8256,
+            -4.5981,
+            0,
+            0.1854,
+            0.6329,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake5",
+          "node_uuid": "69312a5203ca0a42dc194c5a",
+          "world_trans": [
+            5295.6509,
+            85.114,
+            4672.46,
+            0,
+            0.1854,
+            0.6329,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake6",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -5.4092,
+            2.3755,
+            -3.0547,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake6",
+          "node_uuid": "69312a5203ca0a42dc194c5b",
+          "world_trans": [
+            5293.8867,
+            84.6639,
+            4674.0034,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake7",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.3774,
+            4.4052,
+            -4.814,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake7",
+          "node_uuid": "69312a5203ca0a42dc194c5c",
+          "world_trans": [
+            5296.9185,
+            86.6936,
+            4672.2441,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake8",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.2617,
+            4.7016,
+            -4.4102,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ],
+          "name": "cake_ladder_fake8",
+          "node_uuid": "69312a5203ca0a42dc194c5d",
+          "world_trans": [
+            5297.0342,
+            86.99,
+            4672.6479,
+            0,
+            0.1854,
+            0,
+            40,
+            40,
+            40
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_cake_ladder_fake9",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -7.4946,
+            -2.567,
+            -2.6733,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ],
+          "name": "cake_ladder_fake9",
+          "node_uuid": "69312a5203ca0a42dc194c5e",
+          "world_trans": [
+            5291.8013,
+            79.7214,
+            4674.3848,
+            0,
+            0.1854,
+            0,
+            80,
+            80,
+            80
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment\\static_objects\\ue_asset\\dessert_factory\\small_candy_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_ladder_01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -1.8,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            94.124,
+            0.9227,
+            -47.0513,
+            0,
+            1.57,
+            0.0724,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_01",
+          "node_uuid": "69312a5203ca0a42dc194c5f",
+          "world_trans": [
+            5311.0942,
+            75.3819,
+            4660.6655,
+            0,
+            1.57,
+            0.0724,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_dv_node259",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0005,
+            -5.2126,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            123.4487,
+            -6.078,
+            27.644,
+            0,
+            1.5699,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node259",
+          "node_uuid": "69312a5203ca0a42dc194c7d",
+          "world_trans": [
+            5340.4194,
+            68.3812,
+            4735.3604,
+            0,
+            1.5699,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1011",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            3.6909,
+            0.0785,
+            75.8413,
+            0,
+            3.1053,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1011",
+          "node_uuid": "69312a5203ca0a42dc194da5",
+          "world_trans": [
+            5304.7168,
+            73.8324,
+            4787.2588,
+            0,
+            3.1053,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_4.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1012",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            55.521,
+            -10.5938,
+            26.7539,
+            0,
+            1.5193,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1012",
+          "node_uuid": "69312a5203ca0a42dc194da9",
+          "world_trans": [
+            5356.5464,
+            63.1601,
+            4738.1709,
+            0,
+            1.5193,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_4.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1013",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            34.2495,
+            -10.6343,
+            -16.0288,
+            0,
+            -3.1397,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1013",
+          "node_uuid": "69312a5203ca0a42dc194daa",
+          "world_trans": [
+            5335.2749,
+            63.1196,
+            4695.3882,
+            0,
+            -3.1397,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_5.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1016",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            49.8423,
+            -10.5818,
+            -125.2617,
+            0,
+            -0.84,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1016",
+          "node_uuid": "69312a5203ca0a42dc194dab",
+          "world_trans": [
+            5350.8667,
+            63.1721,
+            4586.1553,
+            0,
+            -0.84,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_5.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1017",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            65.9131,
+            -10.2417,
+            -145.2852,
+            0,
+            -1.8288,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1017",
+          "node_uuid": "69312a5203ca0a42dc194da6",
+          "world_trans": [
+            5366.9375,
+            63.5122,
+            4566.1318,
+            0,
+            -1.8288,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_3.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1018",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            40.5742,
+            -10.1172,
+            -157.23,
+            0,
+            1.7637,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1018",
+          "node_uuid": "69312a5203ca0a42dc194da7",
+          "world_trans": [
+            5341.5986,
+            63.6367,
+            4554.187,
+            0,
+            1.7637,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_2.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1019",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            33.1919,
+            -10.4608,
+            -122.332,
+            0,
+            1.2642,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1019",
+          "node_uuid": "69312a5203ca0a42dc194da8",
+          "world_trans": [
+            5334.2163,
+            63.2931,
+            4589.085,
+            0,
+            1.2642,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_3.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1020",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            42.2119,
+            -9.7788,
+            -163.1128,
+            0,
+            0.5761,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1020",
+          "node_uuid": "69312a5203ca0a42dc194dac",
+          "world_trans": [
+            5343.2363,
+            63.9751,
+            4548.3042,
+            0,
+            0.5761,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_3.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1021",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            23.2979,
+            -10.4832,
+            -133.6479,
+            0,
+            2.9473,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1021",
+          "node_uuid": "69312a5203ca0a42dc194dad",
+          "world_trans": [
+            5324.3223,
+            63.2707,
+            4577.7695,
+            0,
+            2.9473,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_3.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1022",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            66.5557,
+            -10.5818,
+            -125.8872,
+            0,
+            -1.7802,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1022",
+          "node_uuid": "69312a5203ca0a42dc194daf",
+          "world_trans": [
+            5367.5801,
+            63.1721,
+            4585.5298,
+            0,
+            -1.7802,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_3.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1023",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            92.8198,
+            -10.2434,
+            -104.3384,
+            0,
+            1.1669,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1023",
+          "node_uuid": "69312a5203ca0a42dc194db0",
+          "world_trans": [
+            5393.8442,
+            63.5105,
+            4607.0781,
+            0,
+            1.1669,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_3.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_layer_s1024",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "201",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": -9999,
+              "scale_change_velocity": 0,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 50,
+              "min_temperature": 20,
+              "scale_change_velocity": -0.08,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 2,
+              "max_temperature": 9999,
+              "min_temperature": 50,
+              "scale_change_velocity": -0.15,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.4
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            85.5469,
+            -10.2434,
+            -76.3379,
+            0.0004,
+            0.4531,
+            -0.0209,
+            1,
+            1,
+            1
+          ],
+          "name": "s1024",
+          "node_uuid": "69312a5203ca0a42dc194db1",
+          "world_trans": [
+            5386.5718,
+            63.5105,
+            4635.0791,
+            0.0004,
+            0.4531,
+            -0.0209,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_5.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": true,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C021C-0F25002C-7FFFFFFF-589A7E3F_chief_chief_kitchen",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_b",
+          "season_config": {}
+        },
+        "RuntimeAttrGameplayPortableKitchen": {
+          "cls_type": "RuntimeAttrGameplayPortableKitchen",
+          "pk_uid": "1"
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            67.1113,
+            5.5395,
+            -124.7334,
+            0,
+            1.5771,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "chief_kitchen",
+          "node_uuid": "71fcadd4acb74646a1c789c9",
+          "world_trans": [
+            5233.6875,
+            73.4267,
+            4724.4028,
+            0,
+            -1.5645,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/interaction/chef_food_counter/chef_food_counter.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

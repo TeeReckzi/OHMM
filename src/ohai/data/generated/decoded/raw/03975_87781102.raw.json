@@ -1,0 +1,349 @@
+{
+  "_meta": {
+    "sourceFile": "03975_87781102.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03975_87781102.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:49.862Z",
+    "recordCount": 2,
+    "sourceHash": "5cdf476fe253df0811df8b79e8697bc1a9b0db8d65a900413e0bec53552cd14b",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "14": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 14,
+            "need_disable": false,
+            "state_type": 2
+          },
+          "type": "NodeExitState"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "16": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 16,
+            "need_disable": false,
+            "value": 0.01
+          },
+          "type": "NodeSetVerticalSpeed"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "17": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 17
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            28,
+            20,
+            14,
+            18,
+            19,
+            21
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "18": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 18,
+            "need_disable": false,
+            "state_type": 1
+          },
+          "type": "NodeExitState"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "19": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 19,
+            "need_disable": false,
+            "state_type": 2
+          },
+          "type": "NodeExitState"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "20": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 20
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            16,
+            90,
+            89
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "21": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 24400011,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 21,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_uid": [
+            22,
+            "utility",
+            "holder_uid"
+          ],
+          "target_uid": [
+            22,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "22": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 22
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "27": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "dur_time": 0.5,
+            "effect_index": 27,
+            "need_disable": false
+          },
+          "type": "NodeCameraLookToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            31,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "28": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "aoi_height": 4,
+            "aoi_range": 3,
+            "camp_type": [
+              8,
+              4
+            ],
+            "condition": [
+              {
+                "params": {
+                  "buff_id": 24400010,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::24400010"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0,
+                  "effect_index": 29
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 28,
+            "max_entity_num": 1,
+            "order_by_distance": false,
+            "persist": false,
+            "save_to_bb": false,
+            "save_to_bb_key": "",
+            "scope": 0
+          },
+          "type": "NodeGetAoiEntity"
+        },
+        "event_action": {
+          "process": [
+            30
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": [
+            "entity_list",
+            "entity_count"
+          ]
+        }
+      },
+      "30": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 30
+          },
+          "type": "NodeForeachIdList"
+        },
+        "event_action": {
+          "process": [
+            27
+          ]
+        },
+        "in_data_pin": {
+          "id_list": [
+            28,
+            "process",
+            "entity_list"
+          ]
+        },
+        "out_data_pin": {
+          "process": [
+            "target_uid"
+          ]
+        }
+      },
+      "31": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 31,
+            "include_fly_height": false
+          },
+          "type": "NodeGetTargetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            30,
+            "process",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "88": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 88,
+            "lock": false,
+            "need_disable": false
+          },
+          "type": "NodeCameraLockInput"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "89": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.5,
+            "effect_index": 89
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            88
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "90": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 90,
+            "lock": false,
+            "need_disable": false
+          },
+          "type": "NodeCameraLockInput"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 17,
+      "name": "behavior_player_investigate_older_drop_chest_float",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "investigate_older_drop_chest",
+        ""
+      ],
+      "tid": 15966
+    }
+  ]
+}

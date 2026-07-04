@@ -1,0 +1,723 @@
+{
+  "_meta": {
+    "sourceFile": "06935_f00194d1.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06935_f00194d1.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.038Z",
+    "recordCount": 2,
+    "sourceHash": "334652f4a12ce2eebeb47df1b6b109b71aac13c709066a113a0af31ec2ffcdfd",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            46,
+            25,
+            57,
+            8
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "accompanying_sfx_path": "",
+            "ai_target_bone": "fx_root",
+            "angle_speed": 5,
+            "beam_width": 2,
+            "col_size": [
+              0.7,
+              0.7,
+              0.7
+            ],
+            "dir_type": 6,
+            "dissipate_sfx_path": "",
+            "dissipate_time": 1,
+            "effect_index": 1,
+            "first_create_at_record_pos": false,
+            "fixed_dir": [
+              0.01,
+              -3,
+              0.01
+            ],
+            "fixed_pos": [
+              0,
+              0,
+              0
+            ],
+            "hit_sfx_path": "effect/boss/lighthouse/lighthouse_tentacle_main_skill02_end.pse",
+            "is_follow_socket": true,
+            "is_not_follow_ai_target": false,
+            "match_id": "",
+            "need_disable": false,
+            "ray_sfx_trap_args": {
+              "combat_unit_no": "",
+              "create_locus_trap": false,
+              "duration": 1,
+              "summon_key": "",
+              "summon_use_skill_config": false,
+              "trap_logic_tree_list": []
+            },
+            "sfx_path": "effect/boss/lighthouse/lighthouse_skill03_line.pse",
+            "shape": 1,
+            "size": [
+              1,
+              1,
+              300
+            ],
+            "socket_name": "fx_lighthouse_coreline"
+          },
+          "type": "NodeCreateRaySfx"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "fixed_pos": [
+            40,
+            "utility",
+            "output_pos"
+          ],
+          "target_uid": [
+            2,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 2
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "8": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 7,
+            "effect_index": 8
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            39
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "9": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 9,
+            "include_fly_height": false
+          },
+          "type": "NodeGetTargetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            10,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "10": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 10
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "13": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "building_data": {
+              "attached_building_extra_damage_factor": 1,
+              "damage_value": 60,
+              "element_type": 0,
+              "ignore_camp": true,
+              "is_formula": false,
+              "is_from_player": true,
+              "is_value": true,
+              "skill_rate": 1,
+              "structure_attack_rate": 0,
+              "structure_attack_trans_factor": 0,
+              "weapon_deepen_rate": 0
+            },
+            "effect_index": 13,
+            "force_self_damage": false,
+            "need_disable": false,
+            "self_damage_ratio": 1,
+            "use_input_damage": false
+          },
+          "type": "NodeBuildingListDamage"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "building_hit_list": [
+            39,
+            "process_building",
+            "hit_building_info_lst"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "25": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 7,
+            "effect_index": 25
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "39": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "box_data": {
+              "angle": 60,
+              "atk_lose_color_tags": [],
+              "attack_box_hit_dir_type": 0,
+              "attack_box_type": 0,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 1,
+                  "label_enemy": false,
+                  "label_friend": false,
+                  "label_neutral": false,
+                  "label_self": true
+                }
+              },
+              "attenuation_factor": 0,
+              "be_hit_sfx_no": "",
+              "block_filter": true,
+              "block_filter_size": 2,
+              "can_destroy_tree": false,
+              "can_swing_tree": false,
+              "config_be_hit_dir": [
+                0,
+                0,
+                0
+              ],
+              "config_hit_sfx_dir": false,
+              "disregard_block_normal": false,
+              "disregard_building": false,
+              "disregard_collection": false,
+              "disregard_environment": false,
+              "disregard_shield": false,
+              "disregard_terrain": false,
+              "enable_cost_durability": false,
+              "env_col_box_size": [
+                1,
+                1,
+                1
+              ],
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 2,
+              "env_collision_shape": 2,
+              "env_collision_type": 1,
+              "filter_num": 0,
+              "filter_rule": 0,
+              "group_id": 1,
+              "group_id_behavior_range": false,
+              "height": 0.5,
+              "hit_sfx_dir": [
+                0,
+                0,
+                0
+              ],
+              "hit_sound_event": "",
+              "ignore_scale": false,
+              "inner_radius": 0,
+              "mute_entity_hit_sound": false,
+              "mute_env_hit_sound": false,
+              "mute_hit_sound": false,
+              "need_group": false,
+              "pos_off": [
+                -19,
+                -0.01,
+                -0.5
+              ],
+              "preferentially_select_destroy_part": false,
+              "rot_off": [
+                0,
+                300,
+                0
+              ],
+              "scale": [
+                0.05,
+                0.05,
+                20
+              ],
+              "select_hit_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "select_owned_summon": true,
+              "shape": 1,
+              "simple_check": {
+                "angle_data": {
+                  "local_angle": 0,
+                  "offset_angle": 3.1416
+                },
+                "distance_data": {
+                  "max_distance": 39.0067,
+                  "min_distance": -0.9935
+                }
+              },
+              "strike_death": false,
+              "swing_size": [
+                1,
+                1,
+                1
+              ],
+              "thickness": 0.5,
+              "with_building_attack": true
+            },
+            "detect_interval_time": 0.2,
+            "dir_type": 1,
+            "effect_index": 39,
+            "in_behavior_range": false,
+            "large_range_flag": false,
+            "match_id": "",
+            "ray_sfx_match_id": "laser",
+            "target_name": "name_player",
+            "target_type": 1,
+            "total_time": 8
+          },
+          "type": "NodeDurativeAttackBox"
+        },
+        "event_action": {
+          "hit": [],
+          "process": [
+            48,
+            58
+          ],
+          "process_building": [
+            13
+          ]
+        },
+        "in_data_pin": {
+          "center_pos": [
+            9,
+            "utility",
+            "output_pos"
+          ],
+          "damage_pos": [
+            9,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {
+          "hit": [
+            "hit_list"
+          ],
+          "process": [
+            "hit_info"
+          ],
+          "process_building": [
+            "hit_building_info_lst"
+          ]
+        }
+      },
+      "40": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 40,
+            "include_fly_height": false
+          },
+          "type": "NodeGetTargetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            2,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "46": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 46,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "name_player",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": false,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                -5,
+                0
+              ],
+              "res_path": "effect/boss/lighthouse/lighthouse_skill03_line_1.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "reset": true,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMountToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            47,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "47": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 47
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "48": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attack_level": 1,
+            "be_hit_type": 0,
+            "can_jump_word": true,
+            "damage_cause_type": 0,
+            "damage_feature_type": 0,
+            "damage_select_arg": {
+              "hard_hit_type": 0,
+              "hard_hit_units": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "ignore_hard_hit_cd": false,
+              "is_select_entity": false
+            },
+            "death_cause": 0,
+            "death_cause_label": {
+              "ldcc_default": false,
+              "ldcc_ori_source_id": false
+            },
+            "direct_damage_ignore_field": true,
+            "dmg_src": "",
+            "effect_index": 48,
+            "element_type": 0,
+            "extra_toughness_dam_rate": 1,
+            "force_jump_word": false,
+            "formula_attack_type": 0,
+            "ignore_field": false,
+            "ignore_structure_field": false,
+            "ignore_weak_part_rate": false,
+            "invincible_tag": [],
+            "is_anesthesia": false,
+            "is_buff_damage": false,
+            "is_keyword_damage": false,
+            "is_keyword_sfx_use": false,
+            "jump_word_element_type": false,
+            "keyword": 0,
+            "keyword_event_id": 0,
+            "keyword_sfx_path": "",
+            "keyword_tag": 0,
+            "knock_back_dis": 0,
+            "need_disable": false,
+            "need_knock_back": false,
+            "pvp_damage_rate": 1,
+            "recycle_weapon": false,
+            "rm_sync_point_name": "",
+            "source_behavior": "",
+            "sub_melee_attack_type": 0,
+            "use_final_dam_add_rate": true,
+            "use_final_ignore_dam_rate": true
+          },
+          "type": "NodeAttack"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "attack_value": 400
+        },
+        "in_data_pin": {
+          "attacker_snapshot": [
+            56,
+            "utility",
+            "snapshot"
+          ],
+          "attacker_uid": [
+            49,
+            "utility",
+            "holder_uid"
+          ],
+          "hit_info": [
+            39,
+            "process",
+            "hit_info"
+          ],
+          "target_uid": [
+            49,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "49": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 49
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "52": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 52,
+            "value": 400
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "56": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "behavior_name": "",
+            "buff_id": "",
+            "effect_index": 56,
+            "logic_tree_name": "",
+            "same_source": false,
+            "source_type": "buff"
+          },
+          "type": "NodeGetTargetSnapshot"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            49,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "snapshot"
+          ]
+        }
+      },
+      "57": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 57,
+            "need_disable": false,
+            "same_source": false
+          },
+          "type": "NodeSaveTargetSnapshot"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            49,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "58": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 60143029,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 58,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            49,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_60143028_1",
+      "preload_res_list": [
+        "effect/boss/lighthouse/lighthouse_tentacle_main_skill02_end.pse",
+        "effect/boss/lighthouse/lighthouse_skill03_line.pse",
+        "effect/boss/lighthouse/lighthouse_skill03_line_1.pse"
+      ],
+      "source_info": [
+        "buff",
+        60143028,
+        1
+      ],
+      "tid": 15985
+    }
+  ]
+}

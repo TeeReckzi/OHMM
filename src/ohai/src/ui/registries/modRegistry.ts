@@ -3,6 +3,49 @@ import { mod_suffixes as generatedModSuffixes } from "./generated/mod-suffixes.g
 import { effectSummaryToStatModifiers } from "../../utils/statKeyMapper";
 import { getVerifiedStatModifiers } from "../../utils/verifiedModifierLoader";
 import { verifiedModFamilies } from "./verifiedModFamilies";
+import { bindictAffixStats } from "./generated/modSuffixStats.bindict.generated";
+
+/**
+ * Look up bindict-decoded stat modifiers for a suffix by matching its
+ * effectSummary or name to known affix stat entries.
+ * Returns the tier-1 value (lowest) with full tierValues for scaling.
+ */
+function getBindictSuffixStats(mod: { id: string; name: string; effectSummary: string }) {
+  // Map suffix names/effectSummary to known affix IDs
+  const SUFFIX_TO_AFFIX: Record<string, number[]> = {
+    'Crit Rate': [1101],
+    'Crit DMG': [1102],
+    'Weakspot DMG': [1103],
+    'Magazine Capacity': [1104],
+    'Fire Rate': [1105],
+    'Reload Speed': [1106],
+    'Psi Intensity': [1107],
+    'Weapon DMG': [1108],
+    'Status DMG': [1109],
+    'Melee DMG': [1409],
+    'Max HP': [5101],
+    'Crit DMG Reduction': [5102],
+    'Weakspot DMG Reduction': [5103],
+    'Healing Received': [5104],
+    'Medicine Effect': [5105],
+  };
+
+  // Try matching effectSummary to known stat names
+  for (const [statName, affixIds] of Object.entries(SUFFIX_TO_AFFIX)) {
+    if (mod.effectSummary.includes(statName) || mod.name === statName) {
+      const stats = bindictAffixStats.filter(s => affixIds.includes(s.affixId));
+      if (stats.length > 0) {
+        return stats.map(s => ({
+          stat: s.statKey,
+          value: s.tierValues[0],
+          unit: 'percent' as const,
+          tierValues: s.tierValues,
+        }));
+      }
+    }
+  }
+  return null;
+}
 
 // These 9 entries are synthetic fixtures wired into the formula-engine smoke
 // tests (formulaBridgeSmokeTest.ts, modifierSmokeTest.ts, buildComparisonSmokeTest.ts,
@@ -158,8 +201,11 @@ export const modRegistry: CanonicalMod[] = [
    const verified = getVerifiedStatModifiers("mod-suffix", item.id);
    if (verified && verified.length > 0) return { ...item, statModifiers: verified };
    const parsed = effectSummaryToStatModifiers(item.effectSummary ?? "");
-   if (parsed.length === 0) return item;
-   return { ...item, statModifiers: parsed };
+   if (parsed.length > 0) return { ...item, statModifiers: parsed };
+   // Fallback: bindict-decoded affix stat values
+   const bindict = getBindictSuffixStats(item);
+   if (bindict && bindict.length > 0) return { ...item, statModifiers: bindict };
+   return item;
   });
  })(),
 ];

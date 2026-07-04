@@ -1,0 +1,310 @@
+{
+  "_meta": {
+    "sourceFile": "04672_9fde3021.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04672_9fde3021.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:51.480Z",
+    "recordCount": 22,
+    "sourceHash": "4f58f592339f099445752ea7f3954235425b333695f25ceed95206bc19861848",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "data": [],
+      "meta": {}
+    },
+    {},
+    {},
+    {},
+    {
+      "Type": "BasicConfigNode",
+      "auto_adjust_unit_property": false,
+      "can_revive_when_die": false,
+      "changed_model_scale": 1,
+      "die_drop_configs": "",
+      "die_not_cost_durability": false,
+      "disable_hear_params": false,
+      "disable_small_map_ui": false,
+      "dun_member": 4,
+      "dun_no": 431116,
+      "dun_subtype": 29,
+      "dun_type": "public_event",
+      "enable_monster_area_level": false,
+      "exit_dungeon_radius": -1,
+      "exit_dungeon_radius_countdown": 0,
+      "hide_btn_exit": false,
+      "is_consume_item_revive": false,
+      "is_display_death_ui": false,
+      "is_forbidden_litter_in_dungeon": false,
+      "is_migrate_leave": false,
+      "is_persist_dungeon": false,
+      "is_reset_dun_in_wipe": false,
+      "is_show_toast_ui": false,
+      "item_revive_num": 0,
+      "medium_stronghold_no": 0,
+      "modify_npc_level": -1,
+      "modify_npc_strength": -1,
+      "need_remove_hold_hand_tags": [],
+      "need_remove_item_no_list": [],
+      "no_fail_on_die": false,
+      "no_leave_effect": false,
+      "node_type": "trigger",
+      "public_event_destroy_delay_time": 0,
+      "public_event_duration": 0,
+      "public_event_radius": 300,
+      "remain_weather": false,
+      "restart_on_lose_connect": false,
+      "scense_file": "scene/scene_openworld/scene_openworld.scn",
+      "use_prefab": true
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "s11,OutputNormal": [
+        [
+          "s6",
+          "InputSetAiCustomParamValue"
+        ]
+      ],
+      "s15,OutputNormal": [
+        [
+          "s12",
+          "InputStart"
+        ]
+      ],
+      "s2,OutputStageCreate": [
+        [
+          "s6",
+          "InputStart"
+        ],
+        [
+          "s11",
+          "InputStart"
+        ]
+      ],
+      "s6,OutputDeath": [
+        [
+          "s15",
+          "InputStart"
+        ],
+        [
+          "s16",
+          "InputStart"
+        ]
+      ]
+    },
+    {
+      "s1": {
+        "Type": "TriggerStartEvent",
+        "node_type": "trigger"
+      },
+      "s11": {
+        "Type": "TriggerSetAICustomParamValue",
+        "bool_list_value": [],
+        "bool_value": 0,
+        "enum_value": 2,
+        "float_list_value": [],
+        "float_value": 50,
+        "int_list_value": [],
+        "int_value": 0,
+        "nid": "s11",
+        "node_type": "trigger",
+        "param_key": "mJmbifPnGvndDN2eviSQ7T",
+        "param_type": "1",
+        "str_list_value": [],
+        "str_value": 0,
+        "use_pos3": false,
+        "use_trail": false
+      },
+      "s12": {
+        "Type": "TriggerPublicEventFinish",
+        "nid": "s12",
+        "node_type": "trigger"
+      },
+      "s15": {
+        "Time": 20,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s15",
+        "node_type": "trigger"
+      },
+      "s16": {
+        "Type": "TriggerCommonDrop",
+        "abnormal_season_logic_id": "",
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "custom_model_path": "",
+        "drop_gift_no": 28270500,
+        "drop_show_no": 1400023,
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "is_stealth": false,
+        "logic_single_id": 0,
+        "nid": "s16",
+        "node_type": "trigger",
+        "pos3": [
+          0,
+          0,
+          0
+        ],
+        "stealth_type": 1001,
+        "use_input_pos3": true,
+        "use_single_point_holder": false,
+        "use_static_pos3": false,
+        "with_col": true
+      },
+      "s2": {
+        "Type": "TriggerStageCreate",
+        "node_type": "trigger"
+      },
+      "s6": {
+        "Type": "GhostVehicle",
+        "ai_file": "bt_ghost_boat_2",
+        "camp_type": 304,
+        "combat_prototype_no": "431101",
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "init_buff_list": [
+          {
+            "buff_id": 530032005,
+            "buff_lv": 1
+          }
+        ],
+        "monster_group_id": "",
+        "nid": "s6",
+        "node_type": "trigger",
+        "pos3": [
+          0,
+          0,
+          0
+        ],
+        "pvp_vehicle_radius": 300,
+        "template_file_name": "ghost_boat_0327_1",
+        "treasure_box_gift_no": 28270500,
+        "treasure_box_logic_key": 14301,
+        "treasure_box_show_no": 1400010
+      }
+    },
+    {
+      "Type": "PrefabNode",
+      "euler": [
+        0,
+        0,
+        0
+      ],
+      "nid": "s7",
+      "node_type": "entity",
+      "pos3": [
+        -5880,
+        48.73,
+        -2326
+      ],
+      "prefab_id": "",
+      "prefab_instance_name": "",
+      "prefab_path": "",
+      "query_nearby_prefab": null,
+      "show_prefab_center_cross": null,
+      "transform_matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transport_to_prefab_center": null,
+      "use_manual_prs": false
+    },
+    {},
+    {
+      "Type": "PublicEventBasicConfigNode",
+      "bigworld_monster_refresh_time": 600,
+      "core_npc_lst": [],
+      "distance_show_in_big_map": 0,
+      "drop_gift_id": 0,
+      "dun_adaptive_gameplay_id": 0,
+      "dynamic_combat_unit_no_type": 1,
+      "enable_random_reborn": false,
+      "enable_response_support": false,
+      "event_outer_radius": 0,
+      "is_forbidden_big_map_icon": true,
+      "is_forbidden_leave_tips": true,
+      "is_show_in_big_map": false,
+      "is_show_in_small_map": false,
+      "move_event_soul_nid": "s6",
+      "nid": "s10",
+      "node_type": "trigger",
+      "not_show_event_result": false,
+      "public_event_describe": "",
+      "public_event_name": "",
+      "pvp_vehicle_ancestor_nid": "",
+      "recommd_grade": 0,
+      "refresh_destroy_time": 0,
+      "reward_describe": "",
+      "reward_mail_template": 0
+    },
+    {},
+    {},
+    {
+      "rune_dead_seq_receive_dict": {},
+      "rune_dead_seq_send_dict": {}
+    },
+    {},
+    {},
+    {
+      "left_top": [
+        -8192,
+        8192
+      ],
+      "min_zone_radius": 50,
+      "right_bottom": [
+        8192,
+        -8192
+      ],
+      "space_life_type": "once",
+      "zone_tree": 1,
+      "zones": {
+        "1": {
+          "fixed_bound": true,
+          "left_top": [
+            -8192,
+            8192
+          ],
+          "right_bottom": [
+            8192,
+            -8192
+          ]
+        }
+      }
+    },
+    {},
+    {}
+  ]
+}

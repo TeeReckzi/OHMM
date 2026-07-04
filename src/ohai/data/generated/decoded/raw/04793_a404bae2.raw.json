@@ -1,0 +1,6193 @@
+{
+  "_meta": {
+    "sourceFile": "04793_a404bae2.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04793_a404bae2.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:51.910Z",
+    "recordCount": 412,
+    "sourceHash": "ed2078df0736a895ba8fe19f268fc07197694047591dc0602c61eef7ce5269f6",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "affix_name": {
+        "lan_translate": [
+          "生命值_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A02",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "生命值+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "当前装备生命值加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A02",
+      "effect_range": 2,
+      "format": {
+        "lan_translate": [
+          "当前装备生命值+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "生命值加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A02",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "最大生命值+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "自然生命恢复_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A03",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "自然生命恢复+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "力场值_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A08",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "力场值+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "最大耐力_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "最大耐力值+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "最大耐力_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "A11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "最大耐力值+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "耐力恢复速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "耐力恢复速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "翻滚耐力消耗减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A13",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "翻滚耐力消耗+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冲刺跑耐力消耗减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A14",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冲刺跑耐力消耗+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "治疗增益_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A20",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "治疗增益+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受治疗增益_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A21",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受治疗增益+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "药物治疗增益_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A23",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "药物治疗增益+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "高饱食度下的自然生命恢复增益_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A25",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "高饱食度生命恢复+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "驾驶载具时的载具耐久自然恢复_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A26",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "载具耐久自动修复+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "吃生肉不再降低生命值_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "A27",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "吃生肉不再降低生命值_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "每有一个生存属性高于80%，角色移动速度都会得到提高_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "A28",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "每有一个生存属性高于80%，角色移动速度都会得到提高_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "药品冷却缩减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A29",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "药品冷却缩减+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "采集耐力消耗_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A36",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采集耐力消耗+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "近战耐力消耗_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A37",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "近战耐力消耗+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "近战攻击速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "A50",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "近战攻击速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "最大肺活量_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B02",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "最大肺活量+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "最大饱食度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B04",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "最大饱食度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "饱食度流失速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B05",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "饱食度流失速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "最大饮水度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B08",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "最大饮水度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "饮水度流失速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B09",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "饮水度流失速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "领地范围等级_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B102",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "领地范围等级{:.0f}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "发电机数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B103",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "发电机数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "枪械制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "枪械制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "制造类数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B118",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "制造类数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "生产类数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B119",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "生产类数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "防具制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "防具制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "战斗类数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B120",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "战斗类数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "仓储类数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B121",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "仓储类数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "作物数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B122",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "作物数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "种植类数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B123",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "种植类数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "其他设施数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B124",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "其他设施数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "独立收容单元数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B125",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "独立收容单元数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘谐振转换器数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B126",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "星尘谐振转换器数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "发电机数量上限_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "B127",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "发电机数量上限{:.0f}个_$S@TIDS$_c17|1"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "接电设施数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B128",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "接电设施数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "照明类数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B129",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "照明类数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "娱乐类数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B130",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "娱乐类数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "交易类数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B131",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "交易类数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "控温类数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B132",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "控温类数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "特殊设施数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B133",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "特殊设施数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "车库数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B134",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "车库数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "系统生成数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B135",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "系统生成数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "养殖设施数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B136",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "养殖设施数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "留言相框数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B137",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "留言相框数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "建筑结构数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B138",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "建筑结构数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "传送门数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B139",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "传送门数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "寒冷抗性_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B153",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "寒冷抗性+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "炎热抗性_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B154",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "炎热抗性+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "霜冻抗性_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B155",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "霜冻抗性+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "燃烧抗性_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B156",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "燃烧抗性+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "领地数量上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B166",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "领地数量上限{:.0f}个_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "水面领地等级_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B170",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "水面领地等级{:.0f}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "资源产出倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B19",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采集倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "制作武器时耐久加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B28",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "制作武器时耐久加成+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "制作防具时耐久加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B29",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "制作防具时耐久加成+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "徒手制作队列时间衰减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B30",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "徒手制作队列时间衰减+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "工匠台制作队列时间衰减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B31",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "工匠台制作时间缩短+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "军械台制作队列时间衰减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B32",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "军械台制作时间缩短+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "装备台制作队列时间衰减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B33",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "装备台制作时间缩短+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "物质分析台制作队列时间衰减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B36",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "物质分析台制作时间缩短+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "素材背包格数加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B40",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "素材背包格数增加{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "消耗品背包格数加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B41",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "消耗品背包格数增加{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "废品背包格数加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B42",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "废品背包格数增加{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "特殊背包格数加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B43",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "特殊背包格数增加{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "减少食物的理智度扣除_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B44",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "食物的理智度扣除减少{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "进食不消耗的概率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B45",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "使用食物有{:.1%}概率获得返还_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "进食效果小队共享比例_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B46",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "进食效果的{:.1%}会共享给队友_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "背包中食物类道具的腐败速度减缓_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B47",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "背包中食物的腐败速度减缓{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "解剖时的肉类产量加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B48",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "解剖肉类时额外获得+{:.0f}块_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "采集药草时的产量加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B50",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采集药草时额外获得+{:.0f}块_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "采集木材的最后一斧加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B51",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采集木材的最后一斧产出加成{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "采集矿石的最后一斧加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B52",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采集矿石的最后一斧产出加成{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "采集工具耐久度消耗速率减缓_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B53",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采集工具耐久度消耗速率减缓{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "枪械耐久度消耗速率减缓_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B54",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "枪械耐久度消耗速率减缓{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "防具耐久度消耗速率减缓_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B55",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "防具耐久度消耗速率减缓{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "拆解额外产出物品加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B56",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "拆解额外产出物品加成{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "熔炉制作队列时间衰减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B61",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "熔炉制作时间缩短{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "炉灶制作队列时间衰减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B62",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "炉灶制作时间缩短{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "素材背包单格堆叠上限加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B63",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "素材背包单格堆叠上限加成{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "消耗背包单格堆叠上限加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B64",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "素材背包单格堆叠上限加成{:.1%}_$S@TIDS$_c17|1"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "废品背包单格堆叠上限加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B65",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "素材背包单格堆叠上限加成{:.1%}_$S@TIDS$_c17|2"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "特殊背包单格堆叠上限加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B66",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "素材背包单格堆叠上限加成{:.1%}_$S@TIDS$_c17|3"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "伐木猛击率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B67",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "伐木猛击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "采矿猛击率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B68",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采矿猛击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "手枪制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B71",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "手枪制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "霰弹枪制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B72",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "霰弹枪制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "步枪制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B73",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "步枪制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "狙击枪制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B74",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "狙击枪制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "轻机枪制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B75",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "轻机枪制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冲锋枪制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B76",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "冲锋枪制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "近战武器制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B77",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "近战武器制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "轻甲制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B78",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "轻甲制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "中甲制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B79",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "中甲制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "重甲制造工艺_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "B80",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "重甲制造工艺{:.1%}级_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "最大理智值加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "C02",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "最大理智值+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "当前污染物总和_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "C03",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "污染负荷+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "最大净化额度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "C05",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "净化额度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "当前污染物损耗总和_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "C10",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "污染损耗+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "理智度衰减数值改变_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "C12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "理智度衰减倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受到伤害时的理智度转化比_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "C14",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "所受伤害的{:.1%}转化为理智度_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "靠近星尘生物理智度下降速度减缓_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "C15",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "靠近星尘生物理智度下降速度减缓_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "非位面中击杀行为的理智度恢复_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "C16",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "非位面中的击杀行为将恢复{:.0f}点理智度_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "理智度越低，冲刺速度越快_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "C17",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "理智度越低，冲刺速度越快_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "攻击力_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "攻击力+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "攻击力加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "攻击力+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "当前武器攻击力加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D01",
+      "effect_range": 2,
+      "format": {
+        "lan_translate": [
+          "当前武器攻击力+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "结构攻击力_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "结构攻击力+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "结构攻击力加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "结构攻击力+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "结构攻击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D13",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "结构攻击伤害加成+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "破坏力_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D14",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "破坏力类型_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "元素类型_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "D21",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "元素类型_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "护甲类型_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "D22",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "护甲类型_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "枪械元素类型_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "D23",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "枪械元素类型_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "技能强度系数_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "D31",
+      "effect_range": 3,
+      "format": {
+        "lan_translate": [
+          "技能强度系数_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 3
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异能冷却缩减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D32",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异能冷却缩减+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "超感强度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D41",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "超感强度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "超感强度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D41",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "超感强度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "当前装备超感强度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D41",
+      "effect_range": 2,
+      "format": {
+        "lan_translate": [
+          "当前装备超感强度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对载具攻击力_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D51",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对载具攻击力+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对载具伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "D52",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对载具攻击力+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "暴击率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "暴击率_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "E01",
+      "effect_range": 2,
+      "format": {
+        "lan_translate": [
+          "相对暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "暴击伤害_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E02",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "暴击伤害_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "E02",
+      "effect_range": 2,
+      "format": {
+        "lan_translate": [
+          "暴击伤害提升{:.0f}倍_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弱点伤害_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E03",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弱点伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弱点伤害_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "E03",
+      "effect_range": 2,
+      "format": {
+        "lan_translate": [
+          "弱点伤害提升{:.0f}倍_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "免暴率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E04",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "免暴率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "暴击伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E05",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "暴击伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弱点伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E06",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弱点伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对boss伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E100",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对boss伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对小怪伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E101",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对普通敌人伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对首领伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E102",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对首领伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "灼烧伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E111",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "灼烧伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "电涌伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E121",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "电涌伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冰霜漩涡伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E122",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冰霜漩涡伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "不稳定爆弹伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E123",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "不稳定爆弹伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "物理伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E31",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "物理伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "炽能伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E32",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "炽能伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "霜寒伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E33",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "霜寒伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "电离伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E34",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "电离伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "爆炸伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E38",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "爆炸伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "近战伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E41",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "近战伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "枪械伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E42",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "枪械伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异常伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E43",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异常伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对超越者护盾伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E46",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对超越者护盾伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对畸变怪护盾伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E47",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对畸变怪护盾伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对罗塞塔护盾伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E48",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对罗塞塔护盾伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对秃鹫护盾伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E49",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对秃鹫护盾伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对动物护盾伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E50",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对动物护盾伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对机械护盾伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E51",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对机械护盾伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对上位者护盾伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E52",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对上位者护盾伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对异常物护盾伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E53",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对异常物护盾伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对超越者伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E54",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对超越者伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对畸变怪物伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E55",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对畸变怪物伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对罗塞塔伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E56",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对罗塞塔伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对秃鹫伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E57",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对秃鹫伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对动物伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E58",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对动物伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对机械伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E59",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对机械伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对上位者伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E60",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对上位者伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对异常物伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E61",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对异常物伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "命中头部伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E71",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "命中头部伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "命中躯干伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E72",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "命中躯干伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "命中四肢伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E73",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "命中四肢伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "战术道具伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E74",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "战术道具伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对超越者暴击率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E80",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对超越者暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对畸变怪暴击率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E81",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对畸变怪暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对罗塞塔暴击率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E82",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对罗塞塔暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对秃鹫暴击率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E83",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对秃鹫暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对动物暴击率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E84",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对动物暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对机械暴击率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E85",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对机械暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对上位者暴击率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E86",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对上位者暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对异常物暴击率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E87",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对异常物暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对超越者暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E88",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对超越者暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对畸变怪暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E89",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对畸变怪暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对罗塞塔暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E90",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对罗塞塔暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对秃鹫暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E91",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对秃鹫暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对动物暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E92",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对动物暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对机械暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E93",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对机械暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对上位者暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E94",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对上位者暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对异常物暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E95",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对异常物暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对精英伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "E99",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对精英伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对受猎人标记效果目标弱点伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F103",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对猎人标记目标弱点伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "遭受异常时间缩减_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F41",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "遭受异常时间缩减+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异常触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F51",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异常触发时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "灼烧触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F52",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "灼烧触发时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冰冻触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F53",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冰冻触发时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "电击触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F54",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "电击触发时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异常状态触发几率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F61",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异常状态触发几率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异常状态触发几率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F61",
+      "effect_range": 2,
+      "format": {
+        "lan_translate": [
+          "异常状态触发几率提升{:.0f}倍_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "灼烧触发几率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F62",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "灼烧触发几率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冰冻触发几率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F63",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冰冻触发几率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "电击触发几率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F64",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "电击触发几率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "战术道具持续时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F66",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "战术道具持续时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对受猎人标记效果目标伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F73",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对猎人标记目标伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对受电涌效果目标伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F76",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对电涌异常目标伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对受猎人标记效果目标暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "F93",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对猎人标记目标暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "伐木暴击率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "FQ0",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "伐木暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "采矿暴击率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "FQ1",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采矿暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "采集暴击率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "FQ1",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采集植株暴击率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "免伤_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "免伤+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "免伤穿透_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "免伤穿透+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "物理伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G41",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "物理伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "炽能伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G42",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "炽能伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "霜寒伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G43",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "霜寒伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "电离伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G44",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "电离伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "近战伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G51",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "近战伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "枪械伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G52",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "枪械伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异常伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G53",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异常伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受超越者伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G61",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受超越者伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受畸变怪物伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G62",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受畸变怪物伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受罗塞塔伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G63",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受罗塞塔伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受秃鹫伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G64",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受秃鹫伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受动物伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G65",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受动物伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受机械伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G66",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受机械伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受上位者伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G67",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受上位者伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受异常物伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G68",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受异常物伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "头部受伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G81",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "头部受伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "躯干受伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G82",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "躯干受伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "四肢受伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G83",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "四肢受伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "驾驶状态伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G91",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "驾驶载具时受伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "受爆破伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "G92",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "受爆破伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "车辆改装图纸-动力强化_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "G93",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "车辆改装图纸-动力强化_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "车辆改装图纸-开路者_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "G94",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "车辆改装图纸-开路者_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "车辆改装图纸-冲锋手_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "G95",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "车辆改装图纸-冲锋手_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "对被探测目标伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "H01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "对被探测目标伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "特殊子弹伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "J11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "特殊子弹伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "碎弹伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "J12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "碎弹伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弹射伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "J13",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弹射伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "碎弹暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "J61",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "碎弹暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弹射暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "J62",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弹射暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "碎弹弱点伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "J81",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "碎弹弱点伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弹射弱点伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "J82",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弹射弱点伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "负重上限_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "K01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "最大负重+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "材料背包_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "KK01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "材料背包数量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "消耗背包_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "KK02",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "消耗背包数量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "工具背包_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "KK03",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "工具背包数量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "特殊背包_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "KK04",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "特殊背包数量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "建筑背包_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "KK05",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "建筑背包数量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异常物背包_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "KK06",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异常物背包数量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "武器背包_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "KK07",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "武器背包数量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "防具背包_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "KK08",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "防具背包数量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "持续性负面效果触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L00",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "持续性负面效果触发时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "灼烧触发时间加成_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "L01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "灼烧触发时间+{:.1%}_$S@TIDS$_c17|1"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冰霜漩涡触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L02",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冰霜漩涡触发时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "猎人标记触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L03",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "猎人标记触发时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "持续性负面效果遭受时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L10",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "持续性负面效果遭受时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "流血伤害基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L100",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "流血伤害基础倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "灼烧遭受时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "灼烧遭受时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冰霜漩涡遭受时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冰霜漩涡遭受时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "电涌伤害暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L122",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "电涌暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "不稳定爆弹伤害暴击伤害加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L124",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "不稳定爆弹暴击伤害+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "猎人标记遭受时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L13",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "猎人标记遭受时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "持续增益效果触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L20",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "持续增益效果触发时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "重装阵地触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L21",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "持续增益效果触发时间+{:.1%}_$S@TIDS$_c17|1"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "快枪手触发时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L22",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "持续增益效果触发时间+{:.1%}_$S@TIDS$_c17|2"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "范围效果触发范围加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L30",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "范围效果触发范围+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冰霜漩涡触发范围加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L31",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冰霜漩涡触发范围+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "不稳定爆弹触发范围加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L32",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "不稳定爆弹触发范围+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "重装阵地触发范围加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L33",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "重装阵地触发范围+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "关键词触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L40",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "关键词触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "碎弹触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L41",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "碎弹触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弹射触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L42",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弹射触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "灼烧触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L43",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "灼烧触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "电涌触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L44",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "电涌触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冰霜旋涡触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L45",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冰霜旋涡触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "猎人标记触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L46",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "猎人标记触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "重装阵地触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L47",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "重装阵地触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "不稳定爆弹触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L48",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "不稳定爆弹触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "快枪手触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L49",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "快枪手触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "流血触发概率加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L50",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "流血触发概率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "灼烧伤害基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L91",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "灼烧伤害基础倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "电涌伤害基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L92",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "电涌伤害基础倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冰霜漩涡伤害基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L93",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冰霜漩涡伤害基础倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "不稳定爆弹伤害基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L94",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "不稳定爆弹伤害基础倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "碎弹伤害基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L95",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "碎弹伤害基础倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弹射伤害基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L96",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弹射伤害基础倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "猎人标记易伤基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L97",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "猎人标记易伤额外+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "重装阵地增伤基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L98",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "重装阵地内伤害加成+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "快枪手射速提升基础倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "L99",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "快枪手状态下射速提升+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "立体飞行建造开关_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "M11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "立体飞行建造开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "炮塔超频开关_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "M12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "炮塔超频开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "炮塔骇入开关_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "M13",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "炮塔骇入开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "爆破雷管能力开关_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "M14",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "爆破雷管能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "感应地雷能力开关_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "M15",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "感应地雷能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "隐匿伏击能力开关_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "M16",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "隐匿伏击能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "直接开锁能力开关_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "M19",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "直接开锁能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "危机感知范围_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "M30",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "危机感知范围{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "危机感知范围加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "M31",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "危机感知范围+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "开锁玩法的判定范围增幅_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "M32",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "开锁玩法的判定范围增幅+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "击杀人型敌人额外产出几率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "M33",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "击杀人型敌人额外产出几率{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "削韧倍率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "O05",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "削韧倍率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弱点削韧乘数_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "O10",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弱点削韧乘数+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "近程削韧乘数_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "O11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "近程削韧乘数+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "后坐力控制_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "后坐力控制+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "后坐力控制加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "后坐力控制+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "射击精准度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q03",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "射击精准度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "射击精准度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q03",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "射击精准度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "伤害射程_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q05",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "伤害射程+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "伤害射程加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q06",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "伤害射程+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "射速_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q08",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "射速+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "射速加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q09",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "射速+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弹匣容量_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弹匣容量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弹匣容量加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弹匣容量+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "换弹速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "换弹速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "开镜速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q13",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "开镜速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "收枪速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q14",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "收枪速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "拔枪速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q15",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "拔枪速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "瞄准时移速_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q16",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "瞄准时移速+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "换弹速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q19",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "换弹速度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "换弹速度_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "Q19",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "换弹速度+{:.1%}_$S@TIDS$_c17|1"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "抬枪速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q20",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "抬枪速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "开镜瞄准稳定性加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q21",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "ADS后坐力控制+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "拉栓速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q22",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "拉栓速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "开火后摇缩减(栓动）_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q23",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "开火后摇缩减+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "换弹效率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q24",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "换弹效率+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "子弹初速_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q25",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "子弹初速+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "子弹初速加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q26",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "子弹初速+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "手枪后坐力控制_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q81",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "手枪后坐力控制+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "霰弹枪后坐力控制_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q82",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "霰弹枪后坐力控制+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "步枪后坐力控制_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q83",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "步枪后坐力控制+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "狙击枪后坐力控制_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q84",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "狙击枪后坐力控制+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "轻机枪后坐力控制_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q85",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "轻机枪后坐力控制+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冲锋枪后坐力控制_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q86",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冲锋枪后坐力控制+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弓弩后坐力控制_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q87",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弓弩后坐力控制+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "重武器后坐力控制_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q88",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "重武器后坐力控制+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "手枪射击精准度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q91",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "手枪射击精准度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "霰弹枪射击精准度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q92",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "霰弹枪射击精准度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "步枪射击精准度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q93",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "步枪射击精准度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "狙击枪射击精准度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q94",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "狙击枪射击精准度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "轻机枪射击精准度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q95",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "轻机枪射击精准度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冲锋枪射击精准度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q96",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冲锋枪射击精准度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弓弩射击精准度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q97",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弓弩射击精准度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "重武器射击精准度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Q98",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "重武器射击精准度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "疾病抗性_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "R01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "疾病抗性+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "水中疾病免疫_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "R05",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "涉水时不会得病_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "涉水时的疾病积累速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "R07",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "涉水时的疾病积累速度减慢+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "当角色身上存在疾病时，提高冲刺速度与生命恢复速度_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "R08",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "当角色身上存在疾病时，提高冲刺速度与生命恢复速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异想负面效果削弱_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "R34",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异想负面效果削弱+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异想正面效果增强_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "R35",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异想正面效果增强+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "污染抗性_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "R36",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "污染抗性+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异想持续时间加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "R37",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异想持续时间+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "移动速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "移动速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "冲刺速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S04",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "冲刺速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 2
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "蹲伏速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S07",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "蹲伏速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "游泳速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S18",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "游泳速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "使用药物的动作速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S23",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "使用药物的动作速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "救助玩家的动作速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S24",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "救助玩家的动作速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "跳跃高度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S25",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "跳跃高度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "摔伤免疫开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S26",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "免疫摔落伤害_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "摔落动作开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S27",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "高处落地姿势变为前滚翻_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "滑翔水平速度加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "S35",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "滑翔水平速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "雷达检索范围_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "T11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "雷达检索范围{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "宝箱雷达-可检索据点等级_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "T12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "宝箱雷达检索等级{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "动物雷达-可检索动物等级_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "T13",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "动物雷达检索等级{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "矿物雷达-可检索矿物梯度等级_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "T14",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "矿物雷达检索等级{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "击杀敌人后额外掉落食品_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "T21",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "击杀敌人后额外掉落食品概率 +{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "开箱子时额外获得子弹_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "T22",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "开箱子时额外获得子弹概率 +{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "熔炼金属所需矿石材料减少n块_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "T23",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "熔炼金属所需矿石材料减少{:.0f}块_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "帐篷处可以制作药品_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "T24",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "帐篷处可以制作药品_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "帐篷处可以制作子弹_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "T25",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "帐篷处可以制作子弹_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "搜刮废品箱时概率获得少量废品_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "T26",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "搜刮废品箱时概率获得少量废品_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "帐篷处可以进行拆解_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "T27",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "帐篷处可以进行拆解_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "弹药制作产量_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "T28",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "弹药制作产量增加{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "采集植株时概率获得产物_$S@TIDS$_c17|1"
+        ]
+      },
+      "attr_id": "T29",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "采集植株时概率获得产物_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "帐篷处允许传送_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "T30",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "帐篷处可以作为传送点_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "摩托系载具最大储油量_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V04",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "摩托系载具最大储油量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "摩托系载具加速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V05",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "摩托系载具加速度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "摩托系载具最大速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V06",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "摩托系载具最大速度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "摩托系载具转弯速率_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V07",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "摩托系载具转弯速率+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "摩托系载具最大耐久度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V08",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "摩托系载具最大耐久度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "四轮载具最大储油量_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V09",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "四轮载具最大储油量+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "四轮载具加速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V10",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "四轮载具加速度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "四轮载具最大速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "四轮载具最大速度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "四轮载具操作性_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "四轮载具操作性+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "四轮载具最大耐久度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V13",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "四轮载具最大耐久度+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "驾驶载具时载具减伤_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V14",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "驾驶载具时载具减伤+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "载具防弹系数_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V15",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "载具防弹系数+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "载具伤害减免_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "V16",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "载具受伤害减免+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "武器常规命中根源能量恢复_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "W07",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "武器常规命中根源能量恢复+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "武器弱点命中根源能量恢复_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "W08",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "武器弱点命中根源能量恢复+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "武器活性化消耗_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "W09",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "武器活性化消耗+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "武器活性化消耗加成_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "W10",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "武器活性化消耗加成+{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "异常物捕获值_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "Y01",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "异常物捕获值：{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "兽王-属性查看开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY03",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "可以直接查看野外动物的属性与特性_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "兽王-对话查看开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY04",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "能够看到动物之间的对话_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "兽王-特性替换开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY05",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "可以使用道具修改动物的特性_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "兽王-召唤动物开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY06",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "能够在野外使用口哨召唤野兽伙伴，协助探索。可在领地内的兽屋中切换携带的野兽伙伴_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "美食猎人-创意烹饪开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY07",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "可以在灶台进行创意烹饪_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "美食猎人-buff上限增加_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY08",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "同一时间可以生效更多的食物、饮品加成效果_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "美食猎人-同种食物叠加_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY09",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "食用完全相同的食物，可以获得效果强化_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "植物学家-嫁接开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY10",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "能够对作物进行嫁接操作_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "植物学家-随身种植箱使用开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY11",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "随身种植箱种子繁育+_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "植物学家-环境检测开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY12",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "环境检测ui开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘使者-星尘能量值属性开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY13",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "星尘能量：{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘使者-污染区吸收星尘能量开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY14",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "星尘能量恢复速度：{:.0f}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘使者-畸变吞食能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY15",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "畸变吞食能力_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘使者-捕获畸变怪能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY16",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "畸变怪捕获能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘使者-星尘转换能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY17",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "星尘转换能力_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘使者-星尘扩散能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY18",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "星尘扩散能力_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘使者-星尘培育能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY19",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "星尘培育能力_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘能量值_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY20",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "星尘能量值:{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "最大星尘能量值_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY21",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "最大星尘能量值:{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘能量值流失速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY22",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "星尘能量值流失速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "星尘能量值恢复速度_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY23",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "星尘能量值恢复速度+{:.1%}_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "园丁-材料种植能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY24",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "材料种植能力_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    },
+    {
+      "affix_name": {
+        "lan_translate": [
+          "园丁-大世界种植能力开关_$S@TIDS$_c17|0"
+        ]
+      },
+      "attr_id": "ZY25",
+      "effect_range": 1,
+      "format": {
+        "lan_translate": [
+          "大世界自由种植能力_$S@TIDS$_c17|0"
+        ]
+      },
+      "type": 1
+    }
+  ]
+}

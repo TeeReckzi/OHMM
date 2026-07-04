@@ -1,0 +1,150 @@
+{
+  "_meta": {
+    "sourceFile": "00026_00e699c6.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00026_00e699c6.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.349Z",
+    "recordCount": 2,
+    "sourceHash": "3bb034bc5fb01ee4faaa277c9e2e0608268341474ca89090b2b7ab417a037b13",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "275": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "pos",
+            "effect_index": 275,
+            "scope": 0
+          },
+          "type": "NodeBBLoadVectorData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "276": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "rot",
+            "effect_index": 276,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveVectorData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            281,
+            "utility",
+            "output_dir"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "277": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 277,
+            "need_disable": false,
+            "point_name": "",
+            "yaw": 2.73
+          },
+          "type": "NodeSetWarpSyncPoint"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            275,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "279": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "pos",
+            "effect_index": 279,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveVectorData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            281,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "280": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 280
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            279,
+            276,
+            277
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "281": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 281,
+            "search_radius": 150,
+            "user_data": "position1"
+          },
+          "type": "NodeGetPerceivedPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 280,
+      "name": "behavior_ancientones_plane_reborn_s4_warp",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "ancientones_plane",
+        "reborn_s4",
+        ""
+      ],
+      "tid": 16440
+    }
+  ]
+}

@@ -1,0 +1,4484 @@
+{
+  "_meta": {
+    "sourceFile": "01437_31d000ca.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01437_31d000ca.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:42.697Z",
+    "recordCount": 22,
+    "sourceHash": "7c08396866a827943510a87cc0b7c0229f183cd3924598ea0dc4fed0c99c2bac",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "data": [
+        {
+          "attrs": {
+            "RuntimeAttrFeaturePrefabDoor": {
+              "buff_list": [
+                820001000
+              ],
+              "close_block_hf": "compdevice/airlock_door_02a_close.mesh",
+              "close_sound_event": "Play_obj_airtight_door_close",
+              "close_timeline": "",
+              "cls_type": "RuntimeAttrFeaturePrefabDoor",
+              "open_block_hf": "compdevice/airlock_door_02a_open.mesh",
+              "open_sound_event": "Play_obj_airtight_door_open",
+              "open_timeline": "",
+              "timeline_play_rate": 1
+            },
+            "RuntimeAttrInteract": {
+              "buff_list": [
+                810020024
+              ],
+              "cls_type": "RuntimeAttrInteract",
+              "cur_state": "",
+              "enable_exec_state": false,
+              "interact_configs": [
+                {
+                  "cls_type": "RuntimeInteractItemBase",
+                  "enable_culling": true,
+                  "exec_state": "",
+                  "forbidden_interact_tips": {
+                    "lan_translate": [
+                      "电闸通电中_$S@TIDS$_5gt0|0"
+                    ]
+                  },
+                  "interact_behavior": "cardroom_electric",
+                  "interact_condition": [
+                    {
+                      "cls_type": "RuntimeInteractConditionCheckItemCount",
+                      "compare_type": "NO_LESS_THAN",
+                      "interact_text_no_satisfied": "114514",
+                      "interact_text_no_unsatisfied": "114514",
+                      "item_count": 1,
+                      "item_no": 30332069,
+                      "need_consume": true
+                    }
+                  ],
+                  "interact_cooldown": 3,
+                  "interact_detail_ui_type": "",
+                  "interact_icon_path": "",
+                  "interact_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "interact_sense_range": 8,
+                  "interact_time": 0,
+                  "interact_ui_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "need_auto_move": true,
+                  "tag": "001"
+                }
+              ],
+              "state_list": [
+                ""
+              ]
+            },
+            "RuntimeAttrPerceive": {
+              "cls_type": "RuntimeAttrPerceive",
+              "perceives": [
+                {
+                  "cls_type": "RuntimePerceiveItemNormal",
+                  "group": "SceneUnit",
+                  "pos": [
+                    0.4917,
+                    0.2101,
+                    -0.3381
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    0.595,
+                    1,
+                    0.6702
+                  ],
+                  "shape": "box",
+                  "tag": "001",
+                  "type": "trigger_query"
+                }
+              ]
+            },
+            "RuntimeAttrTrigger": {
+              "cls_type": "RuntimeAttrTrigger",
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "cls_type": "RuntimeTriggerItemInteract",
+                  "send_event_to_bf": true,
+                  "send_event_to_buff": true,
+                  "tag": "001"
+                }
+              ]
+            },
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s1101",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                820001000,
+                810020024,
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                4.1543,
+                1.2658,
+                69.9069,
+                0,
+                3.1355,
+                0,
+                1,
+                1,
+                1
+              ],
+              "name": "s1101",
+              "node_uuid": "6931382b90f22c49a40c5540",
+              "world_trans": [
+                4.1543,
+                1.2658,
+                69.9069,
+                0,
+                3.1355,
+                0,
+                1,
+                1,
+                1
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": false,
+              "enable_static_collision": true,
+              "enable_vertical_occluder": true,
+              "init_model_path": "environment/dynamic_objects/interaction/cardroom/control_panel_02.gim",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        },
+        {
+          "attrs": {
+            "RuntimeAttrFeaturePrefabDoor": {
+              "buff_list": [
+                820001000
+              ],
+              "close_block_hf": "compdevice/cardroom_door_l_c.mesh",
+              "close_sound_event": "Play_obj_airtight_door_close",
+              "close_timeline": "environment/dynamic_objects/cardroom/cardroom_door_l_close.animation",
+              "cls_type": "RuntimeAttrFeaturePrefabDoor",
+              "open_block_hf": "",
+              "open_sound_event": "Play_obj_airtight_door_open",
+              "open_timeline": "environment/dynamic_objects/cardroom/cardroom_door_l_open.animation",
+              "timeline_play_rate": 1
+            },
+            "RuntimeAttrTrigger": {
+              "cls_type": "RuntimeAttrTrigger",
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "cls_type": "RuntimeTriggerItemInteract",
+                  "send_event_to_bf": true,
+                  "send_event_to_buff": false,
+                  "tag": "001"
+                }
+              ]
+            },
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s1110",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                820001000,
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                28.7227,
+                -0.11,
+                38.5525,
+                0,
+                1.57,
+                0,
+                0.7863,
+                1.0835,
+                0.6568
+              ],
+              "name": "s1110",
+              "node_uuid": "6931382b90f22c49a40c5542",
+              "world_trans": [
+                28.7227,
+                -0.11,
+                38.5525,
+                0,
+                1.57,
+                0,
+                0.7863,
+                1.0835,
+                0.6568
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": true,
+              "enable_static_collision": false,
+              "enable_vertical_occluder": true,
+              "init_model_path": "environment/dynamic_objects/cardroom/cardroom_door_l.gim",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        },
+        {
+          "attrs": {
+            "RuntimeAttrFeaturePrefabDoor": {
+              "buff_list": [
+                820001000
+              ],
+              "close_block_hf": "compdevice/cardroom_door_l_c.mesh",
+              "close_sound_event": "Play_obj_airtight_door_close",
+              "close_timeline": "environment/dynamic_objects/cardroom/cardroom_door_l_close.animation",
+              "cls_type": "RuntimeAttrFeaturePrefabDoor",
+              "open_block_hf": "",
+              "open_sound_event": "Play_obj_airtight_door_open",
+              "open_timeline": "environment/dynamic_objects/cardroom/cardroom_door_l_open.animation",
+              "timeline_play_rate": 1
+            },
+            "RuntimeAttrInteract": {
+              "buff_list": [
+                810020024
+              ],
+              "cls_type": "RuntimeAttrInteract",
+              "cur_state": "",
+              "enable_exec_state": false,
+              "interact_configs": [
+                {
+                  "cls_type": "RuntimeInteractItemBase",
+                  "enable_culling": true,
+                  "exec_state": "",
+                  "forbidden_interact_tips": {
+                    "lan_translate": [
+                      "无法从这一侧打开_$S@TIDS$_5gt0|0"
+                    ]
+                  },
+                  "interact_behavior": "idf_idcard",
+                  "interact_condition": [
+                    {
+                      "cls_type": "RuntimeInteractConditionAlwaysTrue",
+                      "interact_text_no_satisfied": "1000",
+                      "interact_text_no_unsatisfied": ""
+                    }
+                  ],
+                  "interact_cooldown": 3,
+                  "interact_detail_ui_type": "",
+                  "interact_icon_path": "",
+                  "interact_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "interact_sense_range": 8,
+                  "interact_time": 0,
+                  "interact_ui_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "need_auto_move": false,
+                  "tag": "001"
+                }
+              ],
+              "state_list": [
+                ""
+              ]
+            },
+            "RuntimeAttrPerceive": {
+              "cls_type": "RuntimeAttrPerceive",
+              "perceives": [
+                {
+                  "cls_type": "RuntimePerceiveItemNormal",
+                  "group": "SceneUnit",
+                  "pos": [
+                    -2.1006,
+                    0.9094,
+                    0.052
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    1.1341,
+                    1.2667,
+                    4.0787
+                  ],
+                  "shape": "box",
+                  "tag": "001",
+                  "type": "trigger_query"
+                }
+              ]
+            },
+            "RuntimeAttrTrigger": {
+              "cls_type": "RuntimeAttrTrigger",
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "cls_type": "RuntimeTriggerItemInteract",
+                  "send_event_to_bf": true,
+                  "send_event_to_buff": false,
+                  "tag": "001"
+                }
+              ]
+            },
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s1114",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                820001000,
+                810020024,
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                23.6235,
+                0.1476,
+                28.83,
+                0,
+                0,
+                0,
+                0.3532,
+                1.1012,
+                0.793
+              ],
+              "name": "s1114",
+              "node_uuid": "6931382b90f22c49a40c5544",
+              "world_trans": [
+                23.6235,
+                0.1476,
+                28.83,
+                0,
+                0,
+                0,
+                0.3532,
+                1.1012,
+                0.793
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": true,
+              "enable_static_collision": false,
+              "enable_vertical_occluder": true,
+              "init_model_path": "environment/dynamic_objects/cardroom/cardroom_door_l.gim",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        },
+        {
+          "attrs": {
+            "RuntimeAttrInteract": {
+              "buff_list": [
+                810020024
+              ],
+              "cls_type": "RuntimeAttrInteract",
+              "cur_state": "",
+              "enable_exec_state": false,
+              "interact_configs": [
+                {
+                  "cls_type": "RuntimeInteractItemBase",
+                  "enable_culling": true,
+                  "exec_state": "",
+                  "forbidden_interact_tips": {
+                    "lan_translate": [
+                      "需要通电并使用低级战备卡开启_$S@TIDS$_5gt0|0"
+                    ]
+                  },
+                  "interact_behavior": "idf_idcard",
+                  "interact_condition": [
+                    {
+                      "cls_type": "RuntimeInteractConditionCheckItemCount",
+                      "compare_type": "NO_LESS_THAN",
+                      "interact_text_no_satisfied": "114514",
+                      "interact_text_no_unsatisfied": "114514",
+                      "item_count": 1,
+                      "item_no": 30332065,
+                      "need_consume": true
+                    }
+                  ],
+                  "interact_cooldown": 3,
+                  "interact_detail_ui_type": "",
+                  "interact_icon_path": "",
+                  "interact_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "interact_sense_range": 8,
+                  "interact_time": 1.7,
+                  "interact_ui_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "need_auto_move": false,
+                  "tag": "001"
+                }
+              ],
+              "state_list": [
+                ""
+              ]
+            },
+            "RuntimeAttrPerceive": {
+              "cls_type": "RuntimeAttrPerceive",
+              "perceives": [
+                {
+                  "cls_type": "RuntimePerceiveItemNormal",
+                  "group": "SceneUnit",
+                  "pos": [
+                    0.0776,
+                    -0.136,
+                    -0.4846
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    0.922,
+                    1.3447,
+                    0.7164
+                  ],
+                  "shape": "box",
+                  "tag": "001",
+                  "type": "trigger_query"
+                }
+              ]
+            },
+            "RuntimeAttrTrigger": {
+              "cls_type": "RuntimeAttrTrigger",
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "cls_type": "RuntimeTriggerItemInteract",
+                  "send_event_to_bf": true,
+                  "send_event_to_buff": true,
+                  "tag": "001"
+                }
+              ]
+            },
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s1136",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                810020024,
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                25.8257,
+                1.8634,
+                38.6785,
+                0,
+                -3.1381,
+                0,
+                1,
+                1,
+                1
+              ],
+              "name": "s1136",
+              "node_uuid": "6931382b90f22c49a40c5542",
+              "world_trans": [
+                25.8257,
+                1.8634,
+                38.6785,
+                0,
+                -3.1381,
+                0,
+                1,
+                1,
+                1
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": false,
+              "enable_static_collision": true,
+              "enable_vertical_occluder": true,
+              "init_model_path": "environment/dynamic_objects/interaction/cardroom/codedlock_04.gim",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        },
+        {
+          "attrs": {
+            "RuntimeAttrInteract": {
+              "buff_list": [
+                810020024
+              ],
+              "cls_type": "RuntimeAttrInteract",
+              "cur_state": "",
+              "enable_exec_state": false,
+              "interact_configs": [
+                {
+                  "cls_type": "RuntimeInteractItemBase",
+                  "enable_culling": true,
+                  "exec_state": "",
+                  "forbidden_interact_tips": "",
+                  "interact_behavior": "idf_idcard",
+                  "interact_condition": [
+                    {
+                      "cls_type": "RuntimeInteractConditionAlwaysTrue",
+                      "interact_text_no_satisfied": "1000",
+                      "interact_text_no_unsatisfied": ""
+                    }
+                  ],
+                  "interact_cooldown": 3,
+                  "interact_detail_ui_type": "",
+                  "interact_icon_path": "",
+                  "interact_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "interact_sense_range": 8,
+                  "interact_time": 0,
+                  "interact_ui_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "need_auto_move": false,
+                  "tag": "001"
+                }
+              ],
+              "state_list": [
+                ""
+              ]
+            },
+            "RuntimeAttrPerceive": {
+              "cls_type": "RuntimeAttrPerceive",
+              "perceives": [
+                {
+                  "cls_type": "RuntimePerceiveItemNormal",
+                  "group": "SceneUnit",
+                  "pos": [
+                    -0.0278,
+                    0.2346,
+                    0.6256
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    1.0637,
+                    1.3447,
+                    1.017
+                  ],
+                  "shape": "box",
+                  "tag": "001",
+                  "type": "trigger_query"
+                }
+              ]
+            },
+            "RuntimeAttrTrigger": {
+              "cls_type": "RuntimeAttrTrigger",
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "cls_type": "RuntimeTriggerItemInteract",
+                  "send_event_to_bf": true,
+                  "send_event_to_buff": false,
+                  "tag": "001"
+                }
+              ]
+            },
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s1174",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                810020024,
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                26.0898,
+                1.5257,
+                38.4731,
+                0,
+                -3.1228,
+                0,
+                1,
+                1,
+                1
+              ],
+              "name": "s1174",
+              "node_uuid": "6931382b90f22c49a40c5542",
+              "world_trans": [
+                26.0898,
+                1.5257,
+                38.4731,
+                0,
+                -3.1228,
+                0,
+                1,
+                1,
+                1
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": false,
+              "enable_static_collision": true,
+              "enable_vertical_occluder": true,
+              "init_model_path": "environment/prefab/not_proxy/anim/codelock.prefab",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        },
+        {
+          "attrs": {
+            "RuntimeAttrInteract": {
+              "buff_list": [
+                810020024
+              ],
+              "cls_type": "RuntimeAttrInteract",
+              "cur_state": "",
+              "enable_exec_state": false,
+              "interact_configs": [
+                {
+                  "cls_type": "RuntimeInteractItemBase",
+                  "enable_culling": true,
+                  "exec_state": "",
+                  "forbidden_interact_tips": "",
+                  "interact_behavior": "idf_idcard",
+                  "interact_condition": [
+                    {
+                      "cls_type": "RuntimeInteractConditionAlwaysTrue",
+                      "interact_text_no_satisfied": "1000",
+                      "interact_text_no_unsatisfied": ""
+                    }
+                  ],
+                  "interact_cooldown": 3,
+                  "interact_detail_ui_type": "",
+                  "interact_icon_path": "",
+                  "interact_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "interact_sense_range": 8,
+                  "interact_time": 0,
+                  "interact_ui_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "need_auto_move": false,
+                  "tag": "001"
+                }
+              ],
+              "state_list": [
+                ""
+              ]
+            },
+            "RuntimeAttrPerceive": {
+              "cls_type": "RuntimeAttrPerceive",
+              "perceives": [
+                {
+                  "cls_type": "RuntimePerceiveItemNormal",
+                  "group": "SceneUnit",
+                  "pos": [
+                    -0.032,
+                    0.1508,
+                    0.7617
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    1.0446,
+                    1.3447,
+                    1.1327
+                  ],
+                  "shape": "box",
+                  "tag": "001",
+                  "type": "trigger_query"
+                }
+              ]
+            },
+            "RuntimeAttrTrigger": {
+              "cls_type": "RuntimeAttrTrigger",
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "cls_type": "RuntimeTriggerItemInteract",
+                  "send_event_to_bf": true,
+                  "send_event_to_buff": false,
+                  "tag": "001"
+                }
+              ]
+            },
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s1175",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                810020024,
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                23.5244,
+                1.6805,
+                24.0781,
+                0,
+                1.55,
+                0,
+                1,
+                1,
+                1
+              ],
+              "name": "s1175",
+              "node_uuid": "6931382b90f22c49a40c5542",
+              "world_trans": [
+                23.5244,
+                1.6805,
+                24.0781,
+                0,
+                1.55,
+                0,
+                1,
+                1,
+                1
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": false,
+              "enable_static_collision": true,
+              "enable_vertical_occluder": true,
+              "init_model_path": "environment/prefab/not_proxy/anim/codelock.prefab",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        },
+        {
+          "attrs": {
+            "RuntimeAttrFeaturePrefabDoor": {
+              "buff_list": [
+                820001000
+              ],
+              "close_block_hf": "compdevice/cardroom_door_l_c.mesh",
+              "close_sound_event": "Play_obj_airtight_door_close",
+              "close_timeline": "environment/dynamic_objects/cardroom/cardroom_door_l_close.animation",
+              "cls_type": "RuntimeAttrFeaturePrefabDoor",
+              "open_block_hf": "",
+              "open_sound_event": "Play_obj_airtight_door_open",
+              "open_timeline": "environment/dynamic_objects/cardroom/cardroom_door_l_open.animation",
+              "timeline_play_rate": 1
+            },
+            "RuntimeAttrInteract": {
+              "buff_list": [
+                810020024
+              ],
+              "cls_type": "RuntimeAttrInteract",
+              "cur_state": "",
+              "enable_exec_state": false,
+              "interact_configs": [
+                {
+                  "cls_type": "RuntimeInteractItemBase",
+                  "enable_culling": true,
+                  "exec_state": "",
+                  "forbidden_interact_tips": {
+                    "lan_translate": [
+                      "无法从这一侧打开_$S@TIDS$_5gt0|1"
+                    ]
+                  },
+                  "interact_behavior": "idf_idcard",
+                  "interact_condition": [
+                    {
+                      "cls_type": "RuntimeInteractConditionAlwaysTrue",
+                      "interact_text_no_satisfied": "1000",
+                      "interact_text_no_unsatisfied": ""
+                    }
+                  ],
+                  "interact_cooldown": 3,
+                  "interact_detail_ui_type": "",
+                  "interact_icon_path": "",
+                  "interact_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "interact_sense_range": 8,
+                  "interact_time": 0,
+                  "interact_ui_offset_trans": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "need_auto_move": false,
+                  "tag": "001"
+                }
+              ],
+              "state_list": [
+                ""
+              ]
+            },
+            "RuntimeAttrPerceive": {
+              "cls_type": "RuntimeAttrPerceive",
+              "perceives": [
+                {
+                  "cls_type": "RuntimePerceiveItemNormal",
+                  "group": "SceneUnit",
+                  "pos": [
+                    -1.5234,
+                    0.9094,
+                    0.0522
+                  ],
+                  "rot": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "scale": [
+                    1.3805,
+                    1.2667,
+                    4.1595
+                  ],
+                  "shape": "box",
+                  "tag": "001",
+                  "type": "trigger_query"
+                }
+              ]
+            },
+            "RuntimeAttrTrigger": {
+              "cls_type": "RuntimeAttrTrigger",
+              "triggers": [
+                {
+                  "buff_event_name": "perceive_trigger",
+                  "cls_type": "RuntimeTriggerItemInteract",
+                  "send_event_to_bf": true,
+                  "send_event_to_buff": false,
+                  "tag": "001"
+                }
+              ]
+            },
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s1236",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                820001000,
+                810020024,
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                23.6235,
+                0.1476,
+                20.7336,
+                0,
+                0,
+                0,
+                0.3532,
+                1.1012,
+                0.793
+              ],
+              "name": "s1236",
+              "node_uuid": "6931382b90f22c49a40c5544",
+              "world_trans": [
+                23.6235,
+                0.1476,
+                20.7336,
+                0,
+                0,
+                0,
+                0.3532,
+                1.1012,
+                0.793
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": true,
+              "enable_static_collision": false,
+              "enable_vertical_occluder": true,
+              "init_model_path": "environment/dynamic_objects/cardroom/cardroom_door_l.gim",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        },
+        {
+          "attrs": {
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s1254",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                -5.4165,
+                -0.0817,
+                68.2728,
+                0,
+                -1.5694,
+                0,
+                1,
+                1,
+                1
+              ],
+              "name": "s1254",
+              "node_uuid": "69313d4991e5808d845d7032",
+              "world_trans": [
+                -5.4165,
+                -0.0817,
+                68.2728,
+                0,
+                -1.5694,
+                0,
+                1,
+                1,
+                1
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": true,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": true,
+              "enable_static_collision": true,
+              "enable_vertical_occluder": true,
+              "init_model_path": "environment/dynamic_objects/interaction/cardroom/distributionbox_01.gim",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        }
+      ],
+      "meta": {}
+    },
+    {},
+    {},
+    {},
+    {
+      "Type": "BasicConfigNode",
+      "auto_adjust_unit_property": false,
+      "can_revive_when_die": false,
+      "changed_model_scale": 1,
+      "die_drop_configs": "",
+      "die_not_cost_durability": false,
+      "disable_hear_params": false,
+      "disable_small_map_ui": false,
+      "dun_member": 4,
+      "dun_no": 117120,
+      "dun_subtype": 8,
+      "dun_type": "public_event",
+      "enable_monster_area_level": false,
+      "exit_dungeon_radius": -1,
+      "exit_dungeon_radius_countdown": 0,
+      "hide_btn_exit": false,
+      "is_card_room": true,
+      "is_consume_item_revive": false,
+      "is_display_death_ui": false,
+      "is_forbidden_litter_in_dungeon": false,
+      "is_migrate_leave": false,
+      "is_persist_dungeon": false,
+      "is_reset_dun_in_wipe": false,
+      "is_show_toast_ui": false,
+      "item_revive_num": 0,
+      "medium_stronghold_no": 0,
+      "modify_npc_level": -1,
+      "modify_npc_strength": -1,
+      "need_remove_hold_hand_tags": [],
+      "need_remove_item_no_list": [],
+      "no_fail_on_die": false,
+      "no_leave_effect": false,
+      "node_type": "trigger",
+      "public_event_destroy_delay_time": 0,
+      "public_event_duration": 0,
+      "public_event_radius": 123,
+      "remain_weather": false,
+      "restart_on_lose_connect": false,
+      "scense_file": "scene/scene_openworld/scene_openworld.scn",
+      "use_prefab": true
+    },
+    {
+      "0": [
+        [
+          0,
+          0,
+          0.0001,
+          -77.2404
+        ]
+      ]
+    },
+    {},
+    {},
+    {},
+    {
+      "s1001,OutputStageCreate": [
+        [
+          "s1057",
+          "InputStart"
+        ],
+        [
+          "s1104",
+          "InputStart"
+        ],
+        [
+          "s1116",
+          "InputStart"
+        ],
+        [
+          "s1159",
+          "InputStart"
+        ],
+        [
+          "s1249",
+          "InputStart"
+        ]
+      ],
+      "s1057,OutputNormal": [
+        [
+          "s1110",
+          "InputStart"
+        ],
+        [
+          "s1114",
+          "InputStart"
+        ],
+        [
+          "s1136",
+          "InputStart"
+        ],
+        [
+          "s1174",
+          "InputStart"
+        ],
+        [
+          "s1136",
+          "InputDisableInteract"
+        ],
+        [
+          "s1175",
+          "InputStart"
+        ],
+        [
+          "s1177",
+          "InputStart"
+        ],
+        [
+          "s1236",
+          "InputStart"
+        ]
+      ],
+      "s1101,OutputTriggerInteract": [
+        [
+          "s1101",
+          "InputDisableInteract"
+        ],
+        [
+          "s1161",
+          "InputStart"
+        ],
+        [
+          "s1168",
+          "InputStart"
+        ],
+        [
+          "s1186",
+          "InputStart"
+        ],
+        [
+          "s1195",
+          "InputStart"
+        ],
+        [
+          "s1193",
+          "InputStart"
+        ]
+      ],
+      "s1104,OutputNormal": [
+        [
+          "s1144",
+          "InputStart"
+        ],
+        [
+          "s1200",
+          "InputStart"
+        ],
+        [
+          "s1201",
+          "InputStart"
+        ],
+        [
+          "s1199",
+          "InputStart"
+        ],
+        [
+          "s1202",
+          "InputStart"
+        ],
+        [
+          "s1204",
+          "InputStart"
+        ]
+      ],
+      "s1113,OutputNormal": [
+        [
+          "s1198",
+          "InputStart"
+        ],
+        [
+          "s1254",
+          "InputStart"
+        ]
+      ],
+      "s1116,OutputNormal": [
+        [
+          "s1101",
+          "InputStart"
+        ],
+        [
+          "s1113",
+          "InputStart"
+        ],
+        [
+          "s1180",
+          "InputStart"
+        ]
+      ],
+      "s1136,OutputTriggerInteract": [
+        [
+          "s1110",
+          "InputInteractWithDoor"
+        ],
+        [
+          "s1158",
+          "InputStart"
+        ],
+        [
+          "s1235",
+          "InputStart"
+        ],
+        [
+          "s1157",
+          "InputSomeone"
+        ],
+        [
+          "s1136",
+          "InputDisableInteract"
+        ],
+        [
+          "s1255",
+          "InputStart"
+        ]
+      ],
+      "s1158,OutputNormal": [
+        [
+          "s1110",
+          "InputCloseDoor"
+        ],
+        [
+          "s1136",
+          "InputEnableInteract"
+        ]
+      ],
+      "s1161,OutputWin": [
+        [
+          "s1160",
+          "InputStart"
+        ],
+        [
+          "s1211",
+          "InputStart"
+        ],
+        [
+          "s1136",
+          "InputEnableInteract"
+        ],
+        [
+          "s1119",
+          "InputSomeone"
+        ]
+      ],
+      "s1168,OutputNormal": [
+        [
+          "s1167",
+          "InputStart"
+        ],
+        [
+          "s1169",
+          "InputSomeone"
+        ],
+        [
+          "s1226",
+          "InputStart"
+        ],
+        [
+          "s1196",
+          "InputStart"
+        ],
+        [
+          "s1179",
+          "InputStart"
+        ],
+        [
+          "s1101",
+          "InputEnableInteract"
+        ]
+      ],
+      "s1174,OutputTriggerInteract": [
+        [
+          "s1110",
+          "InputInteractWithDoor"
+        ],
+        [
+          "s1231",
+          "InputStart"
+        ],
+        [
+          "s1235",
+          "InputStart"
+        ]
+      ],
+      "s1175,OutputTriggerInteract": [
+        [
+          "s1114",
+          "InputInteractWithDoor"
+        ],
+        [
+          "s1230",
+          "InputStart"
+        ],
+        [
+          "s1235",
+          "InputStart"
+        ],
+        [
+          "s1236",
+          "InputInteractWithDoor"
+        ]
+      ],
+      "s1177,OutputNormal": [
+        [
+          "s1114",
+          "InputDisableInteract"
+        ],
+        [
+          "s1236",
+          "InputDisableInteract"
+        ]
+      ],
+      "s1179,OutputNormal": [
+        [
+          "s1101",
+          "InputSetBuff"
+        ]
+      ],
+      "s1180,OutputNormal": [
+        [
+          "s1179",
+          "InputStart"
+        ]
+      ],
+      "s1186,OutputNormal": [
+        [
+          "s1101",
+          "InputSetBuff"
+        ]
+      ],
+      "s1193,OutputNormal": [
+        [
+          "s1254",
+          "InputSetBuff"
+        ]
+      ],
+      "s1194,OutputNormal": [
+        [
+          "s1254",
+          "InputSetBuff"
+        ]
+      ],
+      "s1195,OutputNormal": [
+        [
+          "s1254",
+          "InputSetBuff"
+        ]
+      ],
+      "s1196,OutputNormal": [
+        [
+          "s1197",
+          "InputStart"
+        ],
+        [
+          "s1194",
+          "InputStart"
+        ]
+      ],
+      "s1197,OutputNormal": [
+        [
+          "s1254",
+          "InputSetBuff"
+        ]
+      ],
+      "s1198,OutputNormal": [
+        [
+          "s1194",
+          "InputStart"
+        ]
+      ],
+      "s1203,OutputNormal": [
+        [
+          "s1144",
+          "InputSetBuff"
+        ],
+        [
+          "s1199",
+          "InputSetBuff"
+        ],
+        [
+          "s1200",
+          "InputSetBuff"
+        ],
+        [
+          "s1201",
+          "InputSetBuff"
+        ]
+      ],
+      "s1204,OutputNormal": [
+        [
+          "s1203",
+          "InputStart"
+        ],
+        [
+          "s1205",
+          "InputStart"
+        ]
+      ],
+      "s1205,OutputNormal": [
+        [
+          "s1202",
+          "InputSetBuff"
+        ]
+      ],
+      "s1206,OutputNormal": [
+        [
+          "s1200",
+          "InputSetBuff"
+        ],
+        [
+          "s1144",
+          "InputSetBuff"
+        ],
+        [
+          "s1199",
+          "InputSetBuff"
+        ],
+        [
+          "s1201",
+          "InputSetBuff"
+        ]
+      ],
+      "s1207,OutputNormal": [
+        [
+          "s1202",
+          "InputSetBuff"
+        ]
+      ],
+      "s1211,OutputNormal": [
+        [
+          "s1136",
+          "InputSetBuff"
+        ]
+      ],
+      "s1226,OutputNormal": [
+        [
+          "s1136",
+          "InputDisableInteract"
+        ],
+        [
+          "s1232",
+          "InputStart"
+        ]
+      ],
+      "s1230,OutputNormal": [
+        [
+          "s1114",
+          "InputCloseDoor"
+        ],
+        [
+          "s1236",
+          "InputCloseDoor"
+        ]
+      ],
+      "s1231,OutputNormal": [
+        [
+          "s1110",
+          "InputCloseDoor"
+        ]
+      ],
+      "s1232,OutputNormal": [
+        [
+          "s1136",
+          "InputSetBuff"
+        ]
+      ],
+      "s1235,OutputNormal": [
+        [
+          "s1234",
+          "InputStart"
+        ],
+        [
+          "s1206",
+          "InputStart"
+        ],
+        [
+          "s1207",
+          "InputStart"
+        ]
+      ],
+      "s1243,OutputNormal": [
+        [
+          "s1250",
+          "InputStart"
+        ],
+        [
+          "s1242",
+          "InputStart"
+        ]
+      ],
+      "s1249,OutputNormal": [
+        [
+          "s1241",
+          "InputStart"
+        ],
+        [
+          "s1246",
+          "InputStart"
+        ],
+        [
+          "s1248",
+          "InputStart"
+        ],
+        [
+          "s1243",
+          "InputStart"
+        ],
+        [
+          "s1238",
+          "InputStart"
+        ],
+        [
+          "s1252",
+          "InputStart"
+        ],
+        [
+          "s1253",
+          "InputStart"
+        ]
+      ],
+      "s1255,OutputNormal": [
+        [
+          "s1248",
+          "InputEnableInteract"
+        ],
+        [
+          "s1246",
+          "InputEnableInteract"
+        ],
+        [
+          "s1241",
+          "InputEnableInteract"
+        ],
+        [
+          "s1252",
+          "InputEnableInteract"
+        ],
+        [
+          "s1238",
+          "InputEnableInteract"
+        ],
+        [
+          "s1253",
+          "InputEnableInteract"
+        ],
+        [
+          "s1242",
+          "InputEnableInteract"
+        ]
+      ]
+    },
+    {
+      "s1000": {
+        "Type": "TriggerStartEvent",
+        "node_type": "trigger"
+      },
+      "s1001": {
+        "Type": "TriggerStageCreate",
+        "node_type": "trigger"
+      },
+      "s1057": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1057",
+        "node_type": "trigger"
+      },
+      "s1101": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s1101",
+        "node_type": "trigger"
+      },
+      "s1104": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1104",
+        "node_type": "trigger"
+      },
+      "s1110": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s1110",
+        "node_type": "trigger"
+      },
+      "s1113": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1113",
+        "node_type": "trigger"
+      },
+      "s1114": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s1114",
+        "node_type": "trigger"
+      },
+      "s1116": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1116",
+        "node_type": "trigger"
+      },
+      "s1119": {
+        "Type": "TriggerDungeonMechanismTips",
+        "describe_text": {
+          "lan_translate": [
+            "卡房门禁已通电_$S@TIDS$_5gt0|0"
+          ]
+        },
+        "explain_text": {
+          "lan_translate": [
+            "此处线路可维持五分钟_$S@TIDS$_5gt0|0"
+          ]
+        },
+        "nid": "s1119",
+        "node_type": "trigger",
+        "time": 8
+      },
+      "s1136": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s1136",
+        "node_type": "trigger"
+      },
+      "s1144": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          -89.9486,
+          -89.9658,
+          35.0765
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/interaction/indicator_light/indicator_light.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|0"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1144",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          34.2354,
+          4.4531,
+          18.9877
+        ],
+        "prefab_id": "base|1601011221",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1144",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|1"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1157": {
+        "Type": "TriggerDungeonMechanismTips",
+        "describe_text": {
+          "lan_translate": [
+            "门禁已打开_$S@TIDS$_5gt0|0"
+          ]
+        },
+        "explain_text": {
+          "lan_translate": [
+            "12s后自动关闭_$S@TIDS$_5gt0|0"
+          ]
+        },
+        "nid": "s1157",
+        "node_type": "trigger",
+        "time": 3
+      },
+      "s1158": {
+        "Time": 12,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1158",
+        "node_type": "trigger"
+      },
+      "s1159": {
+        "Type": "TriggerCacheCounter",
+        "init_value": 0,
+        "nid": "s1159",
+        "node_type": "trigger",
+        "param_name": "switch"
+      },
+      "s1160": {
+        "Type": "TriggerChangeCacheCounter",
+        "nid": "s1160",
+        "node_type": "trigger",
+        "param_name": "switch",
+        "value": 1
+      },
+      "s1161": {
+        "Type": "TriggerCheckCacheCounter",
+        "cmp": 2,
+        "nid": "s1161",
+        "node_type": "trigger",
+        "param_name": "switch",
+        "value": 0
+      },
+      "s1167": {
+        "Type": "TriggerChangeCacheCounter",
+        "nid": "s1167",
+        "node_type": "trigger",
+        "param_name": "switch",
+        "value": -1
+      },
+      "s1168": {
+        "Time": 300,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1168",
+        "node_type": "trigger"
+      },
+      "s1169": {
+        "Type": "TriggerDungeonMechanismTips",
+        "describe_text": {
+          "lan_translate": [
+            "某处保险丝已失效_$S@TIDS$_5gt0|0"
+          ]
+        },
+        "explain_text": {
+          "lan_translate": [
+            "电路已断开_$S@TIDS$_5gt0|0"
+          ]
+        },
+        "nid": "s1169",
+        "node_type": "trigger",
+        "time": 5
+      },
+      "s1174": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s1174",
+        "node_type": "trigger"
+      },
+      "s1175": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s1175",
+        "node_type": "trigger"
+      },
+      "s1177": {
+        "Time": 1,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1177",
+        "node_type": "trigger"
+      },
+      "s1179": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000408
+        ],
+        "change_stack": 0,
+        "nid": "s1179",
+        "node_type": "trigger",
+        "set_type": "add_buff",
+        "snapshot_start_buff": false
+      },
+      "s1180": {
+        "Time": 1,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1180",
+        "node_type": "trigger"
+      },
+      "s1186": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000408
+        ],
+        "change_stack": 0,
+        "nid": "s1186",
+        "node_type": "trigger",
+        "set_type": "del_buff",
+        "snapshot_start_buff": false
+      },
+      "s1193": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000407
+        ],
+        "change_stack": 0,
+        "nid": "s1193",
+        "node_type": "trigger",
+        "set_type": "add_buff",
+        "snapshot_start_buff": false
+      },
+      "s1194": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000406
+        ],
+        "change_stack": 0,
+        "nid": "s1194",
+        "node_type": "trigger",
+        "set_type": "add_buff",
+        "snapshot_start_buff": false
+      },
+      "s1195": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000406
+        ],
+        "change_stack": 0,
+        "nid": "s1195",
+        "node_type": "trigger",
+        "set_type": "del_buff",
+        "snapshot_start_buff": false
+      },
+      "s1196": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1196",
+        "node_type": "trigger"
+      },
+      "s1197": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000407
+        ],
+        "change_stack": 0,
+        "nid": "s1197",
+        "node_type": "trigger",
+        "set_type": "del_buff",
+        "snapshot_start_buff": false
+      },
+      "s1198": {
+        "Time": 1,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1198",
+        "node_type": "trigger"
+      },
+      "s1199": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          89.9544,
+          89.9544,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/interaction/indicator_light/indicator_light.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|2"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1199",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          23.4375,
+          4.4531,
+          24.5153
+        ],
+        "prefab_id": "base|1601011221",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1199",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|3"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1200": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          -89.9429,
+          -90.0346,
+          -40.3019
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/interaction/indicator_light/indicator_light.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|4"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1200",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          33.9243,
+          4.4531,
+          38.7905
+        ],
+        "prefab_id": "base|1601011221",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1200",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|5"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1201": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          89.8913,
+          90.1033,
+          -65.4146
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/interaction/indicator_light/indicator_light.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|6"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1201",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          23.2598,
+          4.4531,
+          38.4843
+        ],
+        "prefab_id": "base|1601011221",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1201",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|7"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1202": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          89.9658,
+          179.9431,
+          1.5298
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/static_objects/misc/rosetta/rosetta_alarm_1.gim",
+        "model_scale": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|8"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1202",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          28.6733,
+          4.2837,
+          38.7357
+        ],
+        "prefab_id": "base|1601011222",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1202",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|9"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1203": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000409
+        ],
+        "change_stack": 0,
+        "nid": "s1203",
+        "node_type": "trigger",
+        "set_type": "add_buff",
+        "snapshot_start_buff": false
+      },
+      "s1204": {
+        "Time": 2,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1204",
+        "node_type": "trigger"
+      },
+      "s1205": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000410
+        ],
+        "change_stack": 0,
+        "nid": "s1205",
+        "node_type": "trigger",
+        "set_type": "add_buff",
+        "snapshot_start_buff": false
+      },
+      "s1206": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000409
+        ],
+        "change_stack": 0,
+        "nid": "s1206",
+        "node_type": "trigger",
+        "set_type": "del_buff",
+        "snapshot_start_buff": false
+      },
+      "s1207": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000410
+        ],
+        "change_stack": 0,
+        "nid": "s1207",
+        "node_type": "trigger",
+        "set_type": "del_buff",
+        "snapshot_start_buff": false
+      },
+      "s1211": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000412
+        ],
+        "change_stack": 0,
+        "nid": "s1211",
+        "node_type": "trigger",
+        "set_type": "add_buff",
+        "snapshot_start_buff": false
+      },
+      "s1226": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1226",
+        "node_type": "trigger"
+      },
+      "s1230": {
+        "Time": 15,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1230",
+        "node_type": "trigger"
+      },
+      "s1231": {
+        "Time": 15,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1231",
+        "node_type": "trigger"
+      },
+      "s1232": {
+        "Type": "TriggerSetNPCBuff",
+        "buff_list": [
+          500000412
+        ],
+        "change_stack": 0,
+        "nid": "s1232",
+        "node_type": "trigger",
+        "set_type": "del_buff",
+        "snapshot_start_buff": false
+      },
+      "s1234": {
+        "Type": "TriggerPublicEventRoomCD",
+        "nid": "s1234",
+        "node_type": "trigger"
+      },
+      "s1235": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1235",
+        "node_type": "trigger"
+      },
+      "s1236": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s1236",
+        "node_type": "trigger"
+      },
+      "s1238": {
+        "Type": "InteractAcquisition",
+        "card_room_box_type": 0,
+        "card_room_type": 0,
+        "disappear_after_interact": true,
+        "drop_no": "12410011",
+        "enable_collider": true,
+        "euler": [
+          0,
+          -179.0149,
+          0
+        ],
+        "forbidden_interact_tips": {
+          "lan_translate": [
+            "门禁处刷卡后箱子才可开启_$S@TIDS$_5gt0|0"
+          ]
+        },
+        "init_enable_interact": false,
+        "init_mtl_type": "collect_box_blue",
+        "interact_mode": 10001,
+        "interact_radius": 0,
+        "is_scene_sfx": true,
+        "model_path": "environment/static_objects/common/prop/box/iron_box_01/iron_box_01.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "nid": "s1238",
+        "node_type": "entity",
+        "pos3": [
+          32.6611,
+          -0.0164,
+          23.9695
+        ],
+        "sfx_euler_y": 0,
+        "sfx_height_offset": 0,
+        "sfx_loop": false,
+        "sfx_path": "",
+        "sfx_scale": [
+          1,
+          1,
+          1
+        ],
+        "update_time": 0
+      },
+      "s1241": {
+        "Type": "InteractAcquisition",
+        "card_room_box_type": 2,
+        "card_room_type": 1,
+        "disappear_after_interact": true,
+        "drop_no": "13101001",
+        "enable_collider": true,
+        "euler": [
+          0,
+          91.6217,
+          0
+        ],
+        "forbidden_interact_tips": {
+          "lan_translate": [
+            "门禁处刷卡后箱子才可开启_$S@TIDS$_5gt0|1"
+          ]
+        },
+        "init_enable_interact": false,
+        "init_mtl_type": "collect_cratemonster01",
+        "interact_mode": 10001,
+        "interact_radius": 0,
+        "is_scene_sfx": true,
+        "model_path": "environment/static_objects/common/prop/box/iron_box_02/iron_box_02.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "nid": "s1241",
+        "node_type": "entity",
+        "pos3": [
+          33.1807,
+          2.8353,
+          20.4363
+        ],
+        "sfx_euler_y": 0,
+        "sfx_height_offset": 0,
+        "sfx_loop": false,
+        "sfx_path": "",
+        "sfx_scale": [
+          1,
+          1,
+          1
+        ],
+        "update_time": 0
+      },
+      "s1242": {
+        "Type": "InteractAcquisition",
+        "card_room_box_type": 0,
+        "card_room_type": 0,
+        "disappear_after_interact": true,
+        "drop_no": "26101102",
+        "enable_collider": true,
+        "euler": [
+          0,
+          53.0502,
+          0
+        ],
+        "forbidden_interact_tips": {
+          "lan_translate": [
+            "门禁处刷卡后箱子才可开启_$S@TIDS$_5gt0|2"
+          ]
+        },
+        "init_enable_interact": false,
+        "init_mtl_type": "",
+        "interact_mode": 10001,
+        "interact_radius": 0,
+        "is_scene_sfx": true,
+        "model_path": "environment/dynamic_objects/interaction/cardroom/access_card_02.gim",
+        "model_scale": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "nid": "s1242",
+        "node_type": "entity",
+        "pos3": [
+          33.1445,
+          0.8277,
+          27.8658
+        ],
+        "sfx_euler_y": 0,
+        "sfx_height_offset": 0,
+        "sfx_loop": false,
+        "sfx_path": "",
+        "sfx_scale": [
+          1,
+          1,
+          1
+        ],
+        "update_time": 0
+      },
+      "s1243": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1243",
+        "node_type": "trigger"
+      },
+      "s1246": {
+        "Type": "InteractAcquisition",
+        "card_room_box_type": 1,
+        "card_room_type": 1,
+        "disappear_after_interact": true,
+        "drop_no": "12701001",
+        "enable_collider": true,
+        "euler": [
+          0,
+          -179.0149,
+          0
+        ],
+        "forbidden_interact_tips": {
+          "lan_translate": [
+            "门禁处刷卡后箱子才可开启_$S@TIDS$_5gt0|3"
+          ]
+        },
+        "init_enable_interact": false,
+        "init_mtl_type": "collect_cratemonster01",
+        "interact_mode": 10001,
+        "interact_radius": 0,
+        "is_scene_sfx": true,
+        "model_path": "environment/static_objects/common/prop/box/weapon_box_02/weapon_box_02.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "nid": "s1246",
+        "node_type": "entity",
+        "pos3": [
+          32.7607,
+          1.9951,
+          36.1238
+        ],
+        "sfx_euler_y": 0,
+        "sfx_height_offset": 0,
+        "sfx_loop": false,
+        "sfx_path": "",
+        "sfx_scale": [
+          1,
+          1,
+          1
+        ],
+        "update_time": 0
+      },
+      "s1248": {
+        "Type": "InteractAcquisition",
+        "card_room_box_type": 3,
+        "card_room_type": 1,
+        "disappear_after_interact": true,
+        "drop_no": "13701001",
+        "enable_collider": true,
+        "euler": [
+          0,
+          89.2668,
+          0
+        ],
+        "forbidden_interact_tips": {
+          "lan_translate": [
+            "门禁处刷卡后箱子才可开启_$S@TIDS$_5gt0|4"
+          ]
+        },
+        "init_enable_interact": false,
+        "init_mtl_type": "",
+        "interact_mode": 10001,
+        "interact_radius": 0,
+        "is_scene_sfx": true,
+        "model_path": "environment/static_objects/common/prop/box/box_random_03.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "nid": "s1248",
+        "node_type": "entity",
+        "pos3": [
+          29.3633,
+          -0.0164,
+          31.0219
+        ],
+        "sfx_euler_y": 0,
+        "sfx_height_offset": 0,
+        "sfx_loop": false,
+        "sfx_path": "",
+        "sfx_scale": [
+          1,
+          1,
+          1
+        ],
+        "update_time": 0
+      },
+      "s1249": {
+        "Time": 2,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1249",
+        "node_type": "trigger"
+      },
+      "s1250": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale",
+          "only_create_static_col"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          3.4836,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/fortified_point/asylum/asylum_box/box_d.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|a"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1250",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": true,
+        "play_anim_times": 0,
+        "pos3": [
+          33.1475,
+          -0.0164,
+          27.8464
+        ],
+        "prefab_id": "base|1601011226",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "StaticGunless",
+        "unit_id": "dungeon_117120_s1250",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|b"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1252": {
+        "Type": "InteractAcquisition",
+        "card_room_box_type": 2,
+        "card_room_type": 1,
+        "disappear_after_interact": true,
+        "drop_no": "13101001",
+        "enable_collider": true,
+        "euler": [
+          0,
+          -179.0149,
+          0
+        ],
+        "forbidden_interact_tips": {
+          "lan_translate": [
+            "门禁处刷卡后箱子才可开启_$S@TIDS$_5gt0|5"
+          ]
+        },
+        "init_enable_interact": false,
+        "init_mtl_type": "collect_cratemonster01",
+        "interact_mode": 10001,
+        "interact_radius": 0,
+        "is_scene_sfx": true,
+        "model_path": "environment/static_objects/common/prop/box/iron_box_02/iron_box_02.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "nid": "s1252",
+        "node_type": "entity",
+        "pos3": [
+          33.5767,
+          -0.0112,
+          31.5332
+        ],
+        "sfx_euler_y": 0,
+        "sfx_height_offset": 0,
+        "sfx_loop": false,
+        "sfx_path": "",
+        "sfx_scale": [
+          1,
+          1,
+          1
+        ],
+        "update_time": 0
+      },
+      "s1253": {
+        "Type": "InteractAcquisition",
+        "card_room_box_type": 0,
+        "card_room_type": 0,
+        "disappear_after_interact": true,
+        "drop_no": "12410011",
+        "enable_collider": true,
+        "euler": [
+          0,
+          -179.0149,
+          0
+        ],
+        "forbidden_interact_tips": {
+          "lan_translate": [
+            "门禁处刷卡后箱子才可开启_$S@TIDS$_5gt0|6"
+          ]
+        },
+        "init_enable_interact": false,
+        "init_mtl_type": "collect_box_blue",
+        "interact_mode": 10001,
+        "interact_radius": 0,
+        "is_scene_sfx": true,
+        "model_path": "environment/static_objects/common/prop/box/iron_box_01/iron_box_01.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "nid": "s1253",
+        "node_type": "entity",
+        "pos3": [
+          24.3594,
+          -0.0799,
+          36.2114
+        ],
+        "sfx_euler_y": 0,
+        "sfx_height_offset": 0,
+        "sfx_loop": false,
+        "sfx_path": "",
+        "sfx_scale": [
+          1,
+          1,
+          1
+        ],
+        "update_time": 0
+      },
+      "s1254": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s1254",
+        "node_type": "trigger"
+      },
+      "s1255": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s1255",
+        "node_type": "trigger"
+      }
+    },
+    {
+      "Type": "PrefabNode",
+      "euler": [
+        0,
+        0,
+        0
+      ],
+      "nid": "s1004",
+      "node_type": "entity",
+      "pos3": [
+        5412.9897,
+        128.0018,
+        -1575.9171
+      ],
+      "prefab_id": "",
+      "prefab_instance_name": "",
+      "prefab_path": "",
+      "query_nearby_prefab": null,
+      "show_prefab_center_cross": null,
+      "transform_matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transport_to_prefab_center": null,
+      "use_manual_prs": false
+    },
+    {},
+    {},
+    {},
+    {
+      "s1007": {
+        "Type": "BirthPointNode",
+        "camp_no": 0,
+        "is_init_birth_point": true,
+        "is_rebirth_point": true,
+        "nid": "s1007",
+        "node_type": "trigger",
+        "pos4": [
+          0,
+          0,
+          0.0001,
+          -77.2404
+        ]
+      }
+    },
+    {
+      "rune_dead_seq_receive_dict": {},
+      "rune_dead_seq_send_dict": {}
+    },
+    {},
+    {},
+    {
+      "left_top": [
+        -8192,
+        8192
+      ],
+      "min_zone_radius": 50,
+      "right_bottom": [
+        8192,
+        -8192
+      ],
+      "space_life_type": "once",
+      "zone_tree": 1,
+      "zones": {
+        "1": {
+          "fixed_bound": true,
+          "left_top": [
+            -8192,
+            8192
+          ],
+          "right_bottom": [
+            8192,
+            -8192
+          ]
+        }
+      }
+    },
+    {
+      "dungeon_117120_s1144": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          -89.9486,
+          -89.9658,
+          35.0765
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/interaction/indicator_light/indicator_light.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|c"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1144",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          34.2354,
+          4.4531,
+          18.9877
+        ],
+        "prefab_id": "base|1601011221",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1144",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|d"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_117120_s1199": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          89.9544,
+          89.9544,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/interaction/indicator_light/indicator_light.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|e"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1199",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          23.4375,
+          4.4531,
+          24.5153
+        ],
+        "prefab_id": "base|1601011221",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1199",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|f"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_117120_s1200": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          -89.9429,
+          -90.0346,
+          -40.3019
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/interaction/indicator_light/indicator_light.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|g"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1200",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          33.9243,
+          4.4531,
+          38.7905
+        ],
+        "prefab_id": "base|1601011221",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1200",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|h"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_117120_s1201": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          89.8913,
+          90.1033,
+          -65.4146
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/interaction/indicator_light/indicator_light.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|i"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1201",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          23.2598,
+          4.4531,
+          38.4843
+        ],
+        "prefab_id": "base|1601011221",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1201",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|j"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_117120_s1202": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          89.9658,
+          179.9431,
+          1.5298
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/static_objects/misc/rosetta/rosetta_alarm_1.gim",
+        "model_scale": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|k"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1202",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          28.6733,
+          4.2837,
+          38.7357
+        ],
+        "prefab_id": "base|1601011222",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "Boss",
+        "unit_id": "dungeon_117120_s1202",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|l"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_117120_s1250": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": null,
+        "anim_graph_path": "",
+        "animation_path": "",
+        "aoi_radius": -1,
+        "aoi_radius2": 0,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_path",
+          "can_mod_pos_y",
+          "use_alias",
+          "model_scale",
+          "only_create_static_col"
+        ],
+        "combat_prototype_no": "",
+        "combat_unit_no": "",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          3.4836,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "environment/dynamic_objects/fortified_point/asylum/asylum_box/box_d.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|m"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s1250",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": true,
+        "play_anim_times": 0,
+        "pos3": [
+          33.1475,
+          -0.0164,
+          27.8464
+        ],
+        "prefab_id": "base|1601011226",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": "",
+        "unit_camp_template_no": "102",
+        "unit_entity_type": "StaticGunless",
+        "unit_id": "dungeon_117120_s1250",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "战场中心_$S@TIDS$_5gt0|n"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": false,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      }
+    },
+    {}
+  ]
+}

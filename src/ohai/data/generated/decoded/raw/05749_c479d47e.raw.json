@@ -1,0 +1,600 @@
+{
+  "_meta": {
+    "sourceFile": "05749_c479d47e.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05749_c479d47e.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:54.493Z",
+    "recordCount": 2,
+    "sourceHash": "aab5462b634eb6301b4c639e77836d0e804d6f6c2eb12fb37a46b986d8ba91c9",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            326,
+            295,
+            306,
+            298,
+            297,
+            296,
+            313
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "252": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 252,
+            "gravity_add_rate": -75,
+            "need_disable": true
+          },
+          "type": "NodeGravityAddRate"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "293": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "glide_falling_speed",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -1.35,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 293,
+            "max_level": 0,
+            "need_disable": true
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "294": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "bag_max_personal_heavy",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 200,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 294,
+            "max_level": 0,
+            "need_disable": true
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "295": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 295
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            294,
+            323
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "296": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 296
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            302,
+            324,
+            301
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "297": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 297
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            293
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "298": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 298
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            252
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "301": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 301,
+            "immunity_id_list": [
+              410000023,
+              410000024,
+              408004100,
+              408004200,
+              408004300,
+              408004400
+            ],
+            "immunity_type": 0,
+            "need_disable": false
+          },
+          "type": "NodeImmunityBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "302": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "fall_hp_loss_reduce_rate",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 100,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 302,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "303": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "aoi_radius": 10,
+            "describe_text": {
+              "lan_translate": [
+                "失重力潮_$S@TIDS$_24u0|0"
+              ]
+            },
+            "effect_index": 303,
+            "explain_text": {
+              "lan_translate": [
+                "你感受到重力发生变化，身体变得轻盈_$S@TIDS$_24u0|0"
+              ]
+            },
+            "is_aoi_tip": false,
+            "is_single_tip": false,
+            "match_id": "442010100",
+            "need_disable": false,
+            "notify_main_client": true,
+            "reset": false,
+            "show_time": 3,
+            "ui_state_up": 0
+          },
+          "type": "NodeShowMechanismTip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "304": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 1,
+            "effect_index": 304
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            303
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "306": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 306
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            304
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "308": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": true,
+            "cd": 0,
+            "effect_index": 308,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 346777171346739200,
+                "params": {
+                  "buff_id": 530001500,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::530001500"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            311
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "310": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "double_jump_speed",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -50,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 310,
+            "max_level": 0,
+            "need_disable": true
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "311": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "jump_height",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -1,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 311,
+            "max_level": 0,
+            "need_disable": true
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "312": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": true,
+            "cd": 0,
+            "effect_index": 312,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 351280770974109700,
+                "params": {
+                  "attribute": "is_enable_double_jump",
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_attr_changed::is_enable_double_jump"
+                  ],
+                  "op": 0,
+                  "role": 0,
+                  "value": 1
+                },
+                "type": "attr_value_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            310
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "313": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 313
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            308,
+            312
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "323": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "jump_height",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 4,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 323,
+            "max_level": 0,
+            "need_disable": true
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "324": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "falling_speed_add_rate",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 1,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 324,
+            "max_level": 0,
+            "need_disable": true
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "326": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 326,
+            "need_disable": false,
+            "ori_static_view": "3p_jump_dft",
+            "rep_static_view": "3p_jump_s1",
+            "replace": true
+          },
+          "type": "NodeReplaceCameraView"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "331": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 331
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            332,
+            0
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "332": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 332
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            333
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "333": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "degrade": false,
+            "dispel_buff_sub_tag_list": [],
+            "dispel_buff_tag_list": [],
+            "dispel_debuff_num": 1,
+            "dispel_id_list": [
+              501100002
+            ],
+            "dispel_tag_list": [],
+            "dispel_type": 0,
+            "effect_index": 333,
+            "match_caster_id": false,
+            "need_disable": false
+          },
+          "type": "NodeDispelBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            334,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "334": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 334
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 331,
+      "name": "buff_442010101_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        442010101,
+        1
+      ],
+      "tid": 9573
+    }
+  ]
+}

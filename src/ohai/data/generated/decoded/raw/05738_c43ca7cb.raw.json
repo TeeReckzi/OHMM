@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "sourceFile": "05738_c43ca7cb.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05738_c43ca7cb.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:54.480Z",
+    "recordCount": 2,
+    "sourceHash": "25662ef175bf933fcbf2b5e910a58a2380fd5918093b5416009dc1d335ffb9fc",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "37": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "body_disappear_keep_time": 10,
+            "body_fade_out_start_time": 6,
+            "body_fade_out_time_length": 2,
+            "custom_death_data": false,
+            "death_cause": 13,
+            "death_effect_scale": 0,
+            "death_effect_type": 0,
+            "effect_index": 37,
+            "enable_ragdoll": true,
+            "force_drop": false,
+            "need_disable": false,
+            "normal_suicide": true
+          },
+          "type": "NodeSuicide"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "38": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 38
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            37
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 38,
+      "name": "behavior_starcu_lighthouse_ice_bomb_die",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "starcu",
+        "lighthouse_ice_bomb",
+        ""
+      ],
+      "tid": 16134
+    }
+  ]
+}

@@ -1,0 +1,2929 @@
+{
+  "_meta": {
+    "sourceFile": "00763_1a399312.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00763_1a399312.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.477Z",
+    "recordCount": 74,
+    "sourceHash": "b39e4450fa853cffcc6556cf6393ec3e33199d0fd49f2b5cc5235091676fc73b",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "default_value": 2,
+      "default_value_pc": 2,
+      "drop_down_no": 0,
+      "group_no": 10,
+      "label_name": {
+        "lan_translate": [
+          "常规视角_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_auto_fire_hip",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "常规视角下腰射时的自动开火设定\n开启有延迟后，瞄准时经过短暂延迟再自动开火。武器射速越慢延迟越高。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "有延迟_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "无延迟_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 2,
+      "drop_down_no": 0,
+      "group_no": 10,
+      "label_name": {
+        "lan_translate": [
+          "肩射视角_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_auto_fire_shoulder",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "肩射视角下射击时的自动开火设定\n开启有延迟后，瞄准时经过短暂延迟再自动开火。武器射速越慢延迟越高。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "有延迟_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "无延迟_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 2,
+      "drop_down_no": 0,
+      "group_no": 10,
+      "label_name": {
+        "lan_translate": [
+          "开镜视角_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_auto_fire_ads",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": {
+        "lan_translate": [
+          "开镜视角下射击时的自动开火设定\n开启有延迟后，瞄准时经过短暂延迟再自动开火。武器射速越慢延迟越高。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_732|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "有延迟_$S@TIDS$_732|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "无延迟_$S@TIDS$_732|2"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 11,
+      "label_name": {
+        "lan_translate": [
+          "开镜按钮操作方式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_ads_method",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "点击：点击按钮开镜，再次点击退出；长按：长按按钮开镜，松开则退出；混合：长按按钮超过0.3秒开镜，松开退出，也可单次点击进入，再次点击退出。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "点击_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "混合_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 11,
+      "label_name": {
+        "lan_translate": [
+          "肩射按钮操作方式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "shoulder_shot_mod",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "点击：点击按钮进入肩射视角，再次点击退出；长按：长按按钮进入，松开则退出；混合：长按按钮超过0.3秒进入，松开退出，也可单次点击进入，再次点击退出。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "点击_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "混合_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 11,
+      "label_name": {
+        "lan_translate": [
+          "左射击键视角模式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_left_shoot_btn_mode",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "默认_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自动肩射_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自动开镜_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 11,
+      "label_name": {
+        "lan_translate": [
+          "右射击键视角模式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_right_shoot_btn_mode",
+      "standard_value": 0,
+      "sub_group_no": 4,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 2,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "默认_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自动肩射_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自动开镜_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 11,
+      "label_name": {
+        "lan_translate": [
+          "开镜按钮转动视角_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_ads_hold_move",
+      "standard_value": 0,
+      "sub_group_no": 5,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 3,
+      "ui_tip": {
+        "lan_translate": [
+          "开启后按住该按钮滑动屏幕时会转动视角_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 11,
+      "label_name": {
+        "lan_translate": [
+          "肩射按钮转动视角_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_shoulder_hold_move",
+      "standard_value": 0,
+      "sub_group_no": 6,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 3,
+      "ui_tip": {
+        "lan_translate": [
+          "开启后按住该按钮滑动屏幕时会转动视角_$S@TIDS$_732|1"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 12,
+      "label_name": {
+        "lan_translate": [
+          "无弹药时自动切换可用弹药类型_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "noammo_switch_type",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "子弹打空后会自动切换到其他可用子弹（优先选取数量最多）_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 12,
+      "label_name": {
+        "lan_translate": [
+          "无弹药时自动切换手持武器_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "noammo_switch_weapon",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "子弹全部打空后会自动切换到其他武器（优先选取1或2号栏位仍有子弹的武器）_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 12,
+      "label_name": {
+        "lan_translate": [
+          "换弹退出第一人称_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_switch_reload_cancel_ads",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": {
+        "lan_translate": [
+          "开启后在第一人称开镜视角下进行换弹会自动回到第三人称视角_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 1,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|2"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 13,
+      "label_name": {
+        "lan_translate": [
+          "左手射击按钮_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_left_shoot_button",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "常驻_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开镜开启_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_732|3"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 13,
+      "label_name": {
+        "lan_translate": [
+          "单发霰弹枪射击操作方式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_semi_fire_mode_stg",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "适用于双管猎枪、DP12、M870系列霰弹枪_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "单点开火_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "松手开火_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 13,
+      "label_name": {
+        "lan_translate": [
+          "栓动狙击枪射击操作方式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_semi_fire_mode_sg",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": {
+        "lan_translate": [
+          "左右射击键使用自动肩射或开镜时强制为松手开火。适用于M700、AWM系列栓动狙击枪_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "单点开火_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "松手开火_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 13,
+      "label_name": {
+        "lan_translate": [
+          "连发狙击枪射击操作方式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_semi_fire_mode_snp",
+      "standard_value": 0,
+      "sub_group_no": 4,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 2,
+      "ui_tip": {
+        "lan_translate": [
+          "适用于M82A1系列连发狙击枪_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "单点开火_$S@TIDS$_732|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "松手开火_$S@TIDS$_732|2"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 13,
+      "label_name": {
+        "lan_translate": [
+          "弩射击操作方式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_semi_fire_mode_cb",
+      "standard_value": 0,
+      "sub_group_no": 5,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 3,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "单点开火_$S@TIDS$_732|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "松手开火_$S@TIDS$_732|3"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 13,
+      "label_name": {
+        "lan_translate": [
+          "手枪射击模式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "handgun_fire_mode",
+      "standard_value": 0,
+      "sub_group_no": 6,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 3,
+      "ui_tip": {
+        "lan_translate": [
+          "单击：每次按下按键时开火\n长按：按住按键时自动持续开火\n适用于沙鹰、左轮、Glock系列_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "单击_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_732|2"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 13,
+      "label_name": {
+        "lan_translate": [
+          "霰弹枪射击模式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "shotgun_fire_mode_pa",
+      "standard_value": 0,
+      "sub_group_no": 7,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 4,
+      "ui_tip": {
+        "lan_translate": [
+          "单击：每次按下按键时开火\n长按：按住按键时自动持续开火\n适用于双管猎枪、DP12、M870系列_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "单击_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_732|3"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 13,
+      "label_name": {
+        "lan_translate": [
+          "连发狙击枪射击模式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "semi_sniper_fire_mode",
+      "standard_value": 0,
+      "sub_group_no": 8,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 4,
+      "ui_tip": {
+        "lan_translate": [
+          "单击：每次按下按键时开火\n长按：按住按键时自动持续开火\n适用于M82A1系列连发狙击枪_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "单击_$S@TIDS$_732|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_732|4"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 13,
+      "label_name": {
+        "lan_translate": [
+          "弩射击模式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "crossbow_fire_mode_pa",
+      "standard_value": 0,
+      "sub_group_no": 9,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 5,
+      "ui_tip": {
+        "lan_translate": [
+          "单击：每次按下按键时开火\n长按：按住按键时自动持续开火_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "单击_$S@TIDS$_732|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "长按_$S@TIDS$_732|5"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 60,
+      "default_value_pc": 60,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "疾跑灵敏度_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "sprint_sensitivity",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 2,
+      "value_range": [
+        0,
+        100
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "幅度_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "快捷近战攻击_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "quick_close_combat",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 2,
+      "ui_tip": {
+        "lan_translate": [
+          "显示快捷近战攻击按钮_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 1,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|3"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "近战挥砍相机自动跟随_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "cam_melee_follow",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|4"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 2,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "自动攀爬翻越_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "climb_enable_auto",
+      "standard_value": 0,
+      "sub_group_no": 4,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 3,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|2"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "滑翔时允许攀爬_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "glide_enable_climb",
+      "standard_value": 0,
+      "sub_group_no": 5,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 3,
+      "ui_tip": {
+        "lan_translate": [
+          "滑翔过程中是否触发攀爬_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|3"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "手电筒光照跟随相机_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "light_follow_cam",
+      "standard_value": 0,
+      "sub_group_no": 6,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 4,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|4"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "战术道具快捷使用_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "quick_use_tactic",
+      "standard_value": 0,
+      "sub_group_no": 7,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 5,
+      "ui_tip": {
+        "lan_translate": [
+          "通过拖动、长按道具栏来快速使用道具_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|5"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "是否允许自动开关手电筒_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "light_auto_open",
+      "standard_value": 0,
+      "sub_group_no": 8,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 4,
+      "ui_tip": {
+        "lan_translate": [
+          "决定手电筒是否会根据场景亮度自动调节开关_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|6"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "自动填充快捷栏_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "auto_add_shortcut",
+      "standard_value": 0,
+      "sub_group_no": 9,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 5,
+      "ui_tip": {
+        "lan_translate": [
+          "是：快捷栏物品使用完后自动从其他背包格中进行填充。\n否：快捷栏物品使用完后空置对应栏位不再进行填充_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|7"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "自动拾取_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "auto_pick_up",
+      "standard_value": 0,
+      "sub_group_no": 10,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 6,
+      "ui_tip": {
+        "lan_translate": [
+          "是：看到素材和掉落物后自动拾取\n否：手动点击拾取_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|8"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "生存道具快捷使用_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "quick_use_ui_show_setting",
+      "standard_value": 0,
+      "sub_group_no": 11,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 6,
+      "ui_tip": {
+        "lan_translate": [
+          "是：生命值/理智值低于30%时，弹出对应生存道具快捷使用栏\n否：关闭生存道具快捷使用_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 1,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|5"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "血月状态生存道具快捷使用_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [
+        1001,
+        1011,
+        1002,
+        1003,
+        1004
+      ],
+      "setting_name": "quick_use_ui_show_setting_bloodmoon",
+      "standard_value": 0,
+      "sub_group_no": 12,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 7,
+      "ui_tip": {
+        "lan_translate": [
+          "是：血月状态下，开启生存道具快捷使用功能\n否：血月状态下，关闭生存道具快捷使用功能_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 1,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|6"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "快捷装配提醒_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "quick_assembly",
+      "standard_value": 0,
+      "sub_group_no": 13,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "是：获取到更高品阶和等级的装备会弹出快捷装配提醒\n否：不弹出快捷装配提醒_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|9"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 2,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "快速攀爬_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "climb_traditional_mode",
+      "standard_value": 0,
+      "sub_group_no": 14,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 8,
+      "ui_tip": {
+        "lan_translate": [
+          "是：开启后攀爬优先跳跃。\n否：原有默认攀爬优先级。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|a"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|a"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "待机自动收枪_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "Auto_Swto_NL_Stdby",
+      "standard_value": 0,
+      "sub_group_no": 15,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 8,
+      "ui_tip": {
+        "lan_translate": [
+          "是：无操作待机一定时长后会进行套装表演。\n否：不会主动进入套装表演。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|b"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|b"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "攀爬打断_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "climb_break_mode",
+      "standard_value": 0,
+      "sub_group_no": 17,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 9,
+      "ui_tip": {
+        "lan_translate": [
+          "是：开启后攀爬中可打断功能。\n否：不开启攀爬中打断功能。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|c"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|c"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 14,
+      "label_name": {
+        "lan_translate": [
+          "开启自动关门_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "enable_auto_close_door",
+      "standard_value": 0,
+      "sub_group_no": 18,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 10,
+      "ui_tip": {
+        "lan_translate": [
+          "是：开启后玩家开启的门将会在3秒后自动关闭。\n否：不开启自动关门设置。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|d"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|d"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 4,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 21,
+      "label_name": {
+        "lan_translate": [
+          "辅助瞄准_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_switch_aim_assist",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 14,
+      "value_range": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "弱_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "中_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "强_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 22,
+      "label_name": {
+        "lan_translate": [
+          "陀螺仪_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_gyroscope",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开镜开启_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "总是开启_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 22,
+      "label_name": {
+        "lan_translate": [
+          "陀螺仪反向_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "setting_gyroscope_invert",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "开启后，陀螺仪的上下体感效果将会反向_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|7"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 36,
+      "label_name": {
+        "lan_translate": [
+          "个性化推荐_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "personalized_recommendation",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "开启时将通过您的行为数据为您推荐活动内容_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 1,
+      "value_range": [
+        0,
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|a"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|8"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "引导模式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "Guide Mode",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "切换当前应用的引导模式\n强引导模式：启动大部分操作性引导和智能引导，显示生存手册入口指引\n弱引导模式：屏蔽大部分操作性引导和智能引导，关闭生存手册入口指引，更沉浸地体验游戏_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "强引导_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "弱引导_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "内嵌3D导航开关_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "visual_navigation_mode",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": {
+        "lan_translate": [
+          "切换当前应用的引导模式\n沉浸模式：不显示内置导航信息，\n半指引模式：仅显示路牌和蝶指引信息；\n全指引模式：显示路牌和蝶指引信息和道路路面指引信息。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        0,
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "沉浸式_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "半指引_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "全指引_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 30,
+      "label_name": {
+        "lan_translate": [
+          "水电线显隐_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "wire_visible",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "用于控制水管，电线的显示或隐藏_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "显示_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "隐藏_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 30,
+      "label_name": {
+        "lan_translate": [
+          "设施作用范围显隐_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "build_fac_range",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "用于控制各种功能设施作用范围的显示或隐藏_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "显示_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "隐藏_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 30,
+      "label_name": {
+        "lan_translate": [
+          "可建造区域显隐_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "show_build_area",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": {
+        "lan_translate": [
+          "用于控制可建造区域的显示范围或隐藏_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "显示_$S@TIDS$_732|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "隐藏_$S@TIDS$_732|2"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "姓名板及血条显示_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "hp_hud_setting",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 2,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|b"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "伤害跳字显示_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "damage_hud_setting",
+      "standard_value": 0,
+      "sub_group_no": 4,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 4,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|a"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|c"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 2,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "伤害跳字模式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "old_damage_hud_setting",
+      "standard_value": 0,
+      "sub_group_no": 5,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 4,
+      "ui_tip": {
+        "lan_translate": [
+          "传统式：在命中点侧面显示伤害数字；\n迸发式：伤害数字随攻击方向在命中点跳出；\n叠加式：连续造成伤害时跳字会叠加到1个数字上并显示在目标血条附近。_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2,
+        3
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "传统式_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "迸发式_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "叠加式_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "天气变化提醒频率_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "weather_change_toast_show_setting",
+      "standard_value": 0,
+      "sub_group_no": 6,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 3,
+      "ui_tip": {
+        "lan_translate": [
+          "控制大世界中的天气变化提醒出现频率_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2,
+        3
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "总是显示_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "异常天气提醒_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "永不显示_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "威胁提示_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "danger_tips",
+      "standard_value": 0,
+      "sub_group_no": 7,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 3,
+      "ui_tip": {
+        "lan_translate": [
+          "2D：使用2DUI的圆弧和箭头提示敌人攻击。\n3D：使用三维空间箭头指向攻击、威胁方_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        "2D",
+        "3D"
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "性能负载提示_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "performance_load_setting",
+      "standard_value": 0,
+      "sub_group_no": 8,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "控制性能负载提示功能的开启/关闭_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|b"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|d"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "低血量屏幕效果显示_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "show_near_death_screen_effect",
+      "standard_value": 0,
+      "sub_group_no": 9,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 5,
+      "ui_tip": {
+        "lan_translate": [
+          "控制角色低血量时屏幕效果显示功能的开启/关闭_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|c"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|e"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 31,
+      "label_name": {
+        "lan_translate": [
+          "声纹显示_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": true,
+      "season_soc_tag_limit": [],
+      "setting_name": "voiceprint_display_settings",
+      "standard_value": 0,
+      "sub_group_no": 5,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 5,
+      "ui_tip": {
+        "lan_translate": [
+          "完整版：显示具体声纹种类；\n精简版：显示声纹大类；\n关闭：不显示声纹；\n注：PVP剧本专用，PVE剧本未开放；_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2,
+        3
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "完整版_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "精简版_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "无声纹_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 3,
+      "default_value_pc": 2,
+      "drop_down_no": 0,
+      "group_no": 32,
+      "label_name": {
+        "lan_translate": [
+          "十字准星粗细_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "crosshair_thickness",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 2,
+      "value_range": [
+        2,
+        12
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "粗细_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 100,
+      "default_value_pc": 100,
+      "drop_down_no": 0,
+      "group_no": 32,
+      "label_name": {
+        "lan_translate": [
+          "准星透明度_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "crosshair_alpha",
+      "standard_value": 0,
+      "sub_group_no": 4,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 2,
+      "value_range": [
+        50,
+        100
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "透明度_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 0,
+      "default_value_pc": 12,
+      "drop_down_no": 0,
+      "group_no": 33,
+      "label_name": {
+        "lan_translate": [
+          "相机距离_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "cam_dis",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 2,
+      "value_range": [
+        0,
+        100
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "距离_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 30,
+      "default_value_pc": 0,
+      "drop_down_no": 0,
+      "group_no": 33,
+      "label_name": {
+        "lan_translate": [
+          "相机高度_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "cam_height",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 2,
+      "value_range": [
+        0,
+        100
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "距离_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 50,
+      "default_value_pc": 50,
+      "drop_down_no": 0,
+      "group_no": 33,
+      "label_name": {
+        "lan_translate": [
+          "屏幕震动幅度_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "cam_shake",
+      "standard_value": 1,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": "",
+      "ui_type": 2,
+      "value_range": [
+        0,
+        100
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "幅度_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 2,
+      "drop_down_no": 0,
+      "group_no": 33,
+      "label_name": {
+        "lan_translate": [
+          "相机自动跟随_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "cam_auto_follow",
+      "standard_value": 0,
+      "sub_group_no": 4,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 3,
+      "ui_tip": "",
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "是_$S@TIDS$_732|e"
+          ]
+        },
+        {
+          "lan_translate": [
+            "否_$S@TIDS$_732|e"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 34,
+      "label_name": {
+        "lan_translate": [
+          "留言模型显示_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "ugc_setting",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 14,
+      "value_range": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "总是开启_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "领地内关闭_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "据点内关闭_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "领地和据点内关闭_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "总是关闭_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 34,
+      "label_name": {
+        "lan_translate": [
+          "留言评论权限_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "ugc_msg_comment_permission",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2,
+        3
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "所有人_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "好友_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "无_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 34,
+      "label_name": {
+        "lan_translate": [
+          "留言回复权限_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "ugc_comment_reply_permission",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 2,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2,
+        3
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "所有人_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "好友_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "无_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 34,
+      "label_name": {
+        "lan_translate": [
+          "留言花通知设置_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "ugc_msg_notice_setting",
+      "standard_value": 0,
+      "sub_group_no": 4,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 3,
+      "ui_tip": "",
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|d"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|f"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 35,
+      "label_name": {
+        "lan_translate": [
+          "小地图显示范围_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "map_mini_range",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "小地图显示的范围\n小：100米\n中：150米\n大：200米_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2,
+        3
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "小_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "中_$S@TIDS$_732|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "大_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 35,
+      "label_name": {
+        "lan_translate": [
+          "小地图固定形式_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "map_mini_fix_type",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 2,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "小地图的固定形式\n地图方向固定：东西南北固定，小地图不会跟随镜头移动而旋转\n镜头朝向固定：小地图_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 4,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "地图方向固定_$S@TIDS$_732|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "镜头朝向固定_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 35,
+      "label_name": {
+        "lan_translate": [
+          "地图导航开关_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "map_navi_switch",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": {
+        "lan_translate": [
+          "开启或关闭地图中的导航线_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|e"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|g"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 2,
+      "default_value_pc": 2,
+      "drop_down_no": 0,
+      "group_no": 37,
+      "label_name": {
+        "lan_translate": [
+          "使用默认体型_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "use_default_body_type",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": {
+        "lan_translate": [
+          "开启：使用捏脸时塑造的体型，外观不再受体重影响，属性数值加成仍会生效\n关闭：体型会随着体重大小变化\n需要拥有捏脸数据才能生效，可通过重塑功能捏脸_$S@TIDS$_732|0"
+        ]
+      },
+      "ui_type": 1,
+      "value_range": [
+        1,
+        2
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "开_$S@TIDS$_732|f"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关_$S@TIDS$_732|h"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 51,
+      "label_name": {
+        "lan_translate": [
+          "隐私政策_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "privacy_policy",
+      "standard_value": 0,
+      "sub_group_no": 1,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 1,
+      "ui_tip": "",
+      "ui_type": 8,
+      "value_range": [
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "查看_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 51,
+      "label_name": {
+        "lan_translate": [
+          "已收集个人信息清单_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "personal_information_list",
+      "standard_value": 0,
+      "sub_group_no": 2,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 2,
+      "ui_tip": "",
+      "ui_type": 8,
+      "value_range": [
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "查看_$S@TIDS$_732|1"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 51,
+      "label_name": {
+        "lan_translate": [
+          "第三方共享个人信息清单_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "third_party_sharing_information_list",
+      "standard_value": 0,
+      "sub_group_no": 3,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 3,
+      "ui_tip": "",
+      "ui_type": 8,
+      "value_range": [
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "查看_$S@TIDS$_732|2"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 51,
+      "label_name": {
+        "lan_translate": [
+          "注销账号_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "cancel_the_account",
+      "standard_value": 0,
+      "sub_group_no": 4,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 4,
+      "ui_tip": "",
+      "ui_type": 8,
+      "value_range": [
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "注销_$S@TIDS$_732|0"
+          ]
+        }
+      ]
+    },
+    {
+      "default_value": 1,
+      "default_value_pc": 1,
+      "drop_down_no": 0,
+      "group_no": 51,
+      "label_name": {
+        "lan_translate": [
+          "用户协议_$S@TIDS$_732|0"
+        ]
+      },
+      "need_ui_tip": false,
+      "season_soc_tag_limit": [],
+      "setting_name": "show_user_protocol_readonly",
+      "standard_value": 0,
+      "sub_group_no": 6,
+      "ui_pos_column_no": 1,
+      "ui_pos_row_no": 6,
+      "ui_tip": "",
+      "ui_type": 8,
+      "value_range": [
+        1
+      ],
+      "value_range_name": [
+        {
+          "lan_translate": [
+            "查看_$S@TIDS$_732|3"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "_meta": {
+    "sourceFile": "04242_9052f062.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04242_9052f062.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.513Z",
+    "recordCount": 2,
+    "sourceHash": "afb00e82e1aa0a94e75e6fdd1e0223cf115831161cdc57663679f6da2dfbf6c3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "43": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 43,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "abn_fire_01",
+              "bind_type": 5,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 7,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": false,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "bow_redspot",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/skill/weapon_skill/fx_bowredspot1.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.2,
+                1.2,
+                1.2
+              ],
+              "sfx_budget_rule_id": 400,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": 8
+            },
+            "need_disable": true,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": true
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "45": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": true,
+            "cd": 0,
+            "effect_index": 45,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [
+              {
+                "checker_sid": 50665495873511420,
+                "params": {
+                  "dynamic_event": [
+                    "on_buff_stack_change::%source_lv"
+                  ],
+                  "event_names": [
+                    "on_buff_stack_change"
+                  ],
+                  "op": 3,
+                  "value": 4,
+                  "effect_index": 44
+                },
+                "type": "buff_stack_checker"
+              }
+            ],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 50665495873511420,
+                "params": {
+                  "dynamic_event": [
+                    "on_buff_stack_change::%source_lv"
+                  ],
+                  "event_names": [
+                    "on_buff_stack_change"
+                  ],
+                  "op": 0,
+                  "value": 4,
+                  "effect_index": 46
+                },
+                "type": "buff_stack_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            56
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "47": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 47
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            45
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "51": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 51,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "abn_fire_01",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 7,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": false,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "bow_redspot",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/skill/weapon_skill/fx_bowredspot1.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1.2,
+                1.2,
+                1.2
+              ],
+              "sfx_budget_rule_id": 400,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": 8
+            },
+            "need_disable": true,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": true
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "56": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 56
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [
+            51
+          ],
+          "True": [
+            43
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            58,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "58": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "check_self": false,
+            "effect_index": 58,
+            "prototype_no_lst": [
+              "700009"
+            ]
+          },
+          "type": "NodeCompCombatPropNo"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "unit_id": [
+            59,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "59": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 59
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 47,
+      "name": "buff_354702001_1",
+      "preload_res_list": [
+        "effect/skill/weapon_skill/fx_bowredspot1.pse",
+        "effect/skill/weapon_skill/fx_bowredspot1.pse"
+      ],
+      "source_info": [
+        "buff",
+        354702001,
+        1
+      ],
+      "tid": 16014
+    }
+  ]
+}

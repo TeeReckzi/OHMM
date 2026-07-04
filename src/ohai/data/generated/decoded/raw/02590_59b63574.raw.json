@@ -1,0 +1,150 @@
+{
+  "_meta": {
+    "sourceFile": "02590_59b63574.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02590_59b63574.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:45.670Z",
+    "recordCount": 2,
+    "sourceHash": "42cf5f232b29b0f16e4a7f357a7cd57049b25786d867b041abea006d3ad5cefa",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            69,
+            71
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "69": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "aoi_radius": 80,
+            "describe_text": {
+              "lan_translate": [
+                "裂空遗器返回虚空了_$S@TIDS$_script/game_common/data/logic_tree/buff_24400012_1|(31,1)"
+              ]
+            },
+            "effect_index": 69,
+            "explain_text": {
+              "lan_translate": [
+                "里面的东西也是_$S@TIDS$_script/game_common/data/logic_tree/buff_24400012_1|(33,1)"
+              ]
+            },
+            "is_aoi_tip": true,
+            "is_single_tip": false,
+            "match_id": "",
+            "need_disable": false,
+            "notify_main_client": false,
+            "reset": true,
+            "show_time": 5,
+            "ui_state_up": 0
+          },
+          "type": "NodeShowMechanismTip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "71": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 71,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": true,
+              "bind_name": "root",
+              "bind_type": 0,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": false,
+              "del_type": 3,
+              "delay_remove": true,
+              "delay_remove_time": 5,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": false,
+              "follow_scale": false,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "s4_collect_loop_1",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                1,
+                0
+              ],
+              "res_path": "effect/task/s4/fx_s4_collect.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                6,
+                6,
+                6
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 20,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": false,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_24400012_1",
+      "preload_res_list": [
+        "effect/task/s4/fx_s4_collect.pse"
+      ],
+      "source_info": [
+        "buff",
+        24400012,
+        1
+      ],
+      "tid": 16243
+    }
+  ]
+}

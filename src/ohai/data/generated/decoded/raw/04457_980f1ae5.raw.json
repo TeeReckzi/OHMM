@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "sourceFile": "04457_980f1ae5.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04457_980f1ae5.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:51.100Z",
+    "recordCount": 2,
+    "sourceHash": "f17930faf58e650b517f3b6e775bbab98844194275a55aaf128d095a2a8fd4a7",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "cd": 0,
+            "check_args": {
+              "attack_negate": false,
+              "attack_type": [],
+              "bullet_hit_source": false,
+              "check_all_bullet": false,
+              "check_all_hit": false,
+              "check_all_hit_same_one": true,
+              "check_detect_mark": false,
+              "check_hit_source": false,
+              "check_node": false,
+              "check_weapon_no": false,
+              "crit_attack": false,
+              "damage_feature_negate": false,
+              "damage_feature_type": [],
+              "element_negate": false,
+              "element_type": [],
+              "formula_attack_type": [],
+              "formula_negate": false,
+              "hit_part": [],
+              "hit_part_negate": false,
+              "in_weapon_range": false,
+              "keyword": [],
+              "keyword_negate": false,
+              "keyword_tag": [],
+              "keyword_tag_negate": false,
+              "multi_bullet_one_attack": true,
+              "node_index": -1,
+              "sub_melee_attack_negate": false,
+              "sub_melee_attack_type": [],
+              "target_negate": false,
+              "target_type": [],
+              "unit_species": [],
+              "unit_species_negate": false,
+              "weak_attack": false,
+              "weapon_no": []
+            },
+            "checker_sid": 1125899973361664,
+            "dynamic_event": [],
+            "effect_index": 1,
+            "event_names": [
+              "on_killed"
+            ],
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "reset_last_effect": true,
+            "task_checker": "killed_checker",
+            "trigger_checker": []
+          },
+          "type": "NodeBeKilledEvent"
+        },
+        "event_action": {
+          "trigger": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": [
+            "attacker",
+            "victim",
+            "hit_pos"
+          ]
+        }
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 60143063,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 2,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            3,
+            "utility",
+            "owner_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "3": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 3,
+            "owner_type": 0
+          },
+          "type": "NodeGetSummonOwnerID"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "owner_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_60143062_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        60143062,
+        1
+      ],
+      "tid": 16240
+    }
+  ]
+}

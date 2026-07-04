@@ -1,0 +1,228 @@
+{
+  "_meta": {
+    "sourceFile": "00186_0700d3b5.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00186_0700d3b5.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.603Z",
+    "recordCount": 2,
+    "sourceHash": "437dc301ce0fd0cf4c6bceade058820765238eee67eb6f541c273568d1394368",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "1": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 1
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            2,
+            4,
+            3
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 2,
+            "invincible_state": 1,
+            "invincible_tag": "",
+            "need_disable": false,
+            "reset": false
+          },
+          "type": "NodeSwitchInvincible"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "3": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 3,
+            "enter_max_times": -1,
+            "exit_max_times": -1,
+            "perceive_tag": "",
+            "select_data": {
+              "select_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 2,
+                  "label_enemy": false,
+                  "label_enemy_only_editor0": true,
+                  "label_enemy_only_editor1": false,
+                  "label_friend": false,
+                  "label_friend_only_editor0": true,
+                  "label_friend_only_editor1": false,
+                  "label_neutral": false,
+                  "label_neutral_only_editor0": true,
+                  "label_neutral_only_editor1": false,
+                  "label_self": false
+                }
+              }
+            }
+          },
+          "type": "NodeSetPerceivedEvent"
+        },
+        "event_action": {
+          "enter": [
+            8,
+            5
+          ],
+          "exit": []
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "enter": [
+            "enter_id"
+          ],
+          "exit": [
+            "exit_id"
+          ]
+        }
+      },
+      "4": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 4,
+            "is_active": true,
+            "match_id": "tree_",
+            "material_params": {
+              "delay_remove": false,
+              "delay_remove_time": 3,
+              "effect_speed": 1,
+              "is_fade_in": true,
+              "mtl_type": "dc_water_appear",
+              "need_dynamic_priority": false,
+              "need_keep": true,
+              "need_revert": false,
+              "offset_y": 0,
+              "priority": 1,
+              "revert_speed": 1,
+              "slot_type": 0,
+              "steal_type": 1,
+              "target_slot": [],
+              "traits_direction": [
+                0,
+                0,
+                0
+              ],
+              "traits_pos": [
+                0,
+                0,
+                0
+              ],
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "reset": true
+          },
+          "type": "NodeMaterial"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "5": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 50000303,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": true,
+            "effect_index": 5,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            3,
+            "enter",
+            "enter_id"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "7": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "body_disappear_keep_time": 10,
+            "body_fade_out_start_time": 6,
+            "body_fade_out_time_length": 2,
+            "custom_death_data": false,
+            "death_cause": 13,
+            "death_effect_scale": 0,
+            "death_effect_type": 0,
+            "effect_index": 7,
+            "enable_ragdoll": true,
+            "force_drop": false,
+            "need_disable": false,
+            "normal_suicide": true
+          },
+          "type": "NodeSuicide"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "8": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 8
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            7
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 1,
+      "name": "buff_50000302_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        50000302,
+        1
+      ],
+      "tid": 16084
+    }
+  ]
+}

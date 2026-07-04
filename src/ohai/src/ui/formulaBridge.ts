@@ -55,11 +55,11 @@ export interface CalculationInput {
  totalModifiersExtracted: number;
  /** Base weapon damage per projectile, scaled by stars & tier, from CanonicalWeapon.damagePerProjectile */
  baseWeaponDMG?: number;
- /** Weapon base crit rate (e.g. 0.25 for 25%), from CanonicalWeapon.critRatePercent */
+ /** Weapon base crit rate as a decimal fraction (e.g. 0.06 for 6%), converted from CanonicalWeapon.critRatePercent */
  baseCritRate?: number;
- /** Weapon base crit damage (e.g. 0.50 for 50%), from CanonicalWeapon.critDamagePercent */
+ /** Weapon base crit damage as a multiplier (e.g. 1.30 for +30%), converted from CanonicalWeapon.critDamagePercent */
  baseCritDamage?: number;
- /** Weapon base weakspot damage (e.g. 0.60 for 60%), from CanonicalWeapon.weakspotDamagePercent */
+ /** Weapon base weakspot damage as a decimal fraction (e.g. 0.55 for 55%), converted from CanonicalWeapon.weakspotDamagePercent */
  baseWeakspotDamage?: number;
  /** Weapon fire rate in rounds per second, from CanonicalWeapon.fireRate */
  baseFireRate?: number;
@@ -533,13 +533,13 @@ export function buildCalculationInputFromSelection(
   baseWeaponDMG = scaled * projectiles;
  }
  if (weaponItem?.critRatePercent !== undefined) {
-  baseCritRate = weaponItem.critRatePercent;
+  baseCritRate = weaponItem.critRatePercent / 100;
  }
  if (weaponItem?.critDamagePercent !== undefined) {
-  baseCritDamage = weaponItem.critDamagePercent;
+  baseCritDamage = 1 + weaponItem.critDamagePercent / 100;
  }
  if (weaponItem?.weakspotDamagePercent !== undefined) {
-  baseWeakspotDamage = weaponItem.weakspotDamagePercent;
+  baseWeakspotDamage = weaponItem.weakspotDamagePercent / 100;
  }
  if (weaponItem?.fireRate !== undefined) {
   baseFireRate = weaponItem.fireRate;

@@ -1,0 +1,399 @@
+{
+  "_meta": {
+    "sourceFile": "02494_56abfe45.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02494_56abfe45.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:45.344Z",
+    "recordCount": 2,
+    "sourceHash": "37774afe1c794dbecc228c274f1b8d1bb383ad8d5e41c0a1405a3b03f05deb2a",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "38": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 38
+          },
+          "type": "NodeBreakHitInfo"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "hit_info": [
+            40,
+            "process",
+            "hit_info"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "attacker_uid",
+            "target_uid",
+            "target_pos",
+            "target_dir",
+            "delay_time",
+            "bone_name"
+          ]
+        }
+      },
+      "40": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "attack_building_set": false,
+            "bind_target": false,
+            "box_data": {
+              "angle": 60,
+              "atk_lose_color_tags": [],
+              "attack_box_hit_dir_type": 0,
+              "attack_box_type": 3,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 1,
+                  "label_enemy": false,
+                  "label_friend": false,
+                  "label_neutral": false,
+                  "label_self": false
+                }
+              },
+              "attack_repeat_num": 1,
+              "attenuation_factor": 0,
+              "be_hit_sfx_no": "",
+              "block_filter": false,
+              "block_filter_size": 0.5,
+              "can_destroy_tree": true,
+              "can_swing_tree": false,
+              "config_be_hit_dir": [
+                0,
+                0,
+                0
+              ],
+              "config_hit_sfx_dir": false,
+              "disregard_block_normal": false,
+              "disregard_building": false,
+              "disregard_collection": false,
+              "disregard_environment": true,
+              "disregard_shield": false,
+              "disregard_terrain": false,
+              "enable_cost_durability": true,
+              "env_col_box_size": [
+                1,
+                1,
+                1
+              ],
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "env_collision_shape": 2,
+              "env_collision_type": 1,
+              "filter_num": 0,
+              "filter_rule": 0,
+              "follow_socket": false,
+              "group_id": 1,
+              "group_id_behavior_range": true,
+              "group_id_with_opera": false,
+              "height": 0.5,
+              "hit_sfx_dir": [
+                0,
+                0,
+                0
+              ],
+              "hit_sound_event": "",
+              "inner_radius": 0.5,
+              "mute_entity_hit_sound": false,
+              "mute_env_hit_sound": false,
+              "mute_hit_sound": false,
+              "need_group": false,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "preferentially_select_destroy_part": false,
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                2,
+                2,
+                2
+              ],
+              "select_hit_box_offset": [
+                0,
+                0,
+                0
+              ],
+              "select_owned_summon": true,
+              "shape": 0,
+              "simple_check": {
+                "angle_data": {
+                  "local_angle": 0,
+                  "offset_angle": 3.1416
+                },
+                "distance_data": {
+                  "max_distance": 2,
+                  "min_distance": -2
+                }
+              },
+              "strike_death": true,
+              "swing_size": [
+                1,
+                1,
+                1
+              ],
+              "target_socket_name": "",
+              "thickness": 0.5,
+              "use_specify_attacker_camp": true,
+              "with_building_attack": true
+            },
+            "building_aoi_radius": 10,
+            "check_hold_no": false,
+            "custom_aoi_radius": 10,
+            "custom_aoi_set": false,
+            "dir_type": 1,
+            "effect_index": 40,
+            "frame_lock_time": 0,
+            "large_range_flag": false,
+            "only_new_hit_result": false,
+            "only_use_server_atk_box": false,
+            "pause_by_tick_flag": true,
+            "ray_sfx_match_id": "",
+            "record_bone_name": false,
+            "target_name": "",
+            "target_type": 2
+          },
+          "type": "NodeAttackBox"
+        },
+        "event_action": {
+          "hit": [],
+          "miss": [],
+          "process": [
+            42
+          ],
+          "process_building": []
+        },
+        "in_data_pin": {
+          "center_pos": [
+            43,
+            "trigger",
+            "trigger_pos"
+          ],
+          "damage_pos": [
+            43,
+            "trigger",
+            "trigger_pos"
+          ]
+        },
+        "out_data_pin": {
+          "hit": [
+            "len_hit_list",
+            "hit_list"
+          ],
+          "miss": [],
+          "process": [
+            "hit_info"
+          ],
+          "process_building": [
+            "hit_building_info_lst"
+          ]
+        }
+      },
+      "42": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 501100035,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 42,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            38,
+            "utility",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "43": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 43,
+            "info": {
+              "aim_target_type": 1,
+              "attack_duration": 0.5,
+              "attack_type": 2,
+              "be_hit_hp_base": "hp",
+              "be_hit_hp_type": 7,
+              "be_hit_value": 1,
+              "brownian_action_radius": 1,
+              "brownian_angle_stable_speed": 10,
+              "brownian_forward_speed_acc": 0.1,
+              "brownian_forward_speed_init": 1,
+              "brownian_interval_max": 0.4,
+              "brownian_interval_min": 0.2,
+              "brownian_interval_stable_speed": 0.2,
+              "brownian_pitch_offset": 15,
+              "brownian_rand_angle_pitch_max": 25,
+              "brownian_rand_angle_yaw_max": 40,
+              "brownian_rotate_speed_acc": 0,
+              "brownian_rotate_speed_init": 100,
+              "brownian_target_distance_min": 10,
+              "brownian_time_max": 2.2,
+              "bullet_acc": 0,
+              "bullet_speed": 30,
+              "can_be_hit": false,
+              "collision_box_size": [
+                2,
+                2,
+                2
+              ],
+              "collision_box_size_be_hit_check": [
+                1,
+                1,
+                1
+              ],
+              "collision_sfx_path": "effect/monster/tujiu/jinzhan/tujiu_bombman_destruct_bomb.pse",
+              "collision_sfx_scale": 20,
+              "collision_shape": 0,
+              "collision_shape_be_hit_check": -1,
+              "collision_type": 3,
+              "destroy_when_target_die": false,
+              "disregard_shield": false,
+              "explose_on_destroy": true,
+              "flx_sfx_update_rotation": true,
+              "fly_sfx_path": "effect/monster/suffering/suffering_thunderball.pse",
+              "fly_sfx_scale": 10,
+              "gravity": 0,
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 0,
+              "hit_box_size": [
+                2,
+                2,
+                2
+              ],
+              "is_aim_socket": true,
+              "is_attach_ground": false,
+              "is_brownian_forward": false,
+              "launch_angle": -90,
+              "launch_dir_type": 0,
+              "launch_yaw": 0,
+              "max_fly_time": 60,
+              "max_rotate": 360,
+              "max_rotate_acc": 0,
+              "missile_count": 1,
+              "multi_missile": [],
+              "rand_angle_range": [
+                -180,
+                180
+              ],
+              "rand_launch_dir": true,
+              "rand_launch_time": false,
+              "rand_launch_time_range": [
+                0,
+                1
+              ],
+              "rand_yaw_range": [
+                -180,
+                180
+              ],
+              "sfx_budget_rule_id": 500,
+              "socket_fail_use_table": false,
+              "socket_name": "fx_lightning_glow",
+              "socket_offset": [
+                0,
+                0,
+                0
+              ],
+              "speed_change": [
+                {
+                  "change_speed": 8,
+                  "change_time": 1.5
+                }
+              ],
+              "stop_time": 0,
+              "target_socket_name": "fx_laser_side1",
+              "throw_aim_bone_type": 2,
+              "track_timing": 0,
+              "use_ai_choose_pos": false
+            }
+          },
+          "type": "NodeMonsterMissile"
+        },
+        "event_action": {
+          "init": [],
+          "trigger": [
+            40
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "init": [
+            "fly_pid"
+          ],
+          "trigger": [
+            "trigger_pos",
+            "bone_name",
+            "hit_dir",
+            "target_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 43,
+      "name": "behavior_tongyong_plane_cancel_cancel",
+      "preload_res_list": [
+        "effect/monster/suffering/suffering_thunderball.pse",
+        "effect/monster/tujiu/jinzhan/tujiu_bombman_destruct_bomb.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "tongyong",
+        "plane_cancel",
+        ""
+      ],
+      "tid": 16162
+    }
+  ]
+}

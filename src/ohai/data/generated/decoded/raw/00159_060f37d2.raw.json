@@ -1,0 +1,188 @@
+{
+  "_meta": {
+    "sourceFile": "00159_060f37d2.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00159_060f37d2.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.581Z",
+    "recordCount": 2,
+    "sourceHash": "f8eebe0dbe3d49e48b1efa8207d91542a06b828caabe92b425fa82bd185d39d8",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            1,
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "water_loss_speed",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -8,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 1,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": true,
+            "cd": 0,
+            "effect_index": 2,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [
+              {
+                "checker_sid": 2251799875608578,
+                "params": {
+                  "buff_id": 499006050,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::499006050"
+                  ],
+                  "exist": false,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              },
+              {
+                "checker_sid": 2251800949350402,
+                "params": {
+                  "buff_id": 499006070,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::499006070"
+                  ],
+                  "exist": false,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 2251799875608577,
+                "params": {
+                  "buff_id": 499006070,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::499006070"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              },
+              {
+                "checker_sid": 2251800949350401,
+                "params": {
+                  "buff_id": 499006050,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::499006050"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 0
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            5
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "5": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "water_loss_speed",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -8,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 5,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_499006080_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        499006080,
+        1
+      ],
+      "tid": 15118
+    }
+  ]
+}

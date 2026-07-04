@@ -1,0 +1,4265 @@
+{
+  "_meta": {
+    "sourceFile": "03078_6a29f5ce.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03078_6a29f5ce.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:47.069Z",
+    "recordCount": 110,
+    "sourceHash": "39329af2dfbb1ff1af251d57efa123acb82480d29812566958f9861368dffb36",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}x{1}",
+        {
+          "lan_translate": [
+            "{0}%概率_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        5,
+        6
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "{1}%概率掉落{0}x{2}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "道具_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "SupplyBoxItemWeight",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "投放概率（%）_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "item_max_num",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "SupplyBoxItemNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "投放数量_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设定{0}_$S@TIDS$_29hg|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "第{0}天，{1}刷新,{2}个_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 2,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        9,
+        10,
+        11
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "设置{0}：第{1}天{2}，刷新{3}个空投_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "空投设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "data_refresh_rule": "select_day",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "AirDropStartDay",
+      "save_value_type": "Int",
+      "select_type": 5,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "剧本开始第几天后开始掉落空投_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "AirDropRefreshTime",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "刷新时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "10"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "AirDropPutInNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "每次投放刷新总数_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        "x{0}"
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        13
+      ],
+      "sub_max_num": 0,
+      "sub_title": "{0}x{1}",
+      "title": {
+        "lan_translate": [
+          "道具_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "item_max_num",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BagItemNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "道具数量_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}x{1}",
+        {
+          "lan_translate": [
+            "{0}%概率_$S@TIDS$_29hg|1"
+          ]
+        }
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        5,
+        6
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "{1}%概率掉落{0}x{2}_$S@TIDS$_29hg|1"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "道具_$S@TIDS$_29hg|2"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "MonsterDropTypeS",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        14
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "小怪掉落_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|1"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|1"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|1"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "MonsterDropTypeM",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        14
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "精英怪掉落_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|2"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|2"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|2"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "MonsterDropTypeLeader",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        14
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "首领掉落_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|3"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|3"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|3"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "MonsterDropTypeBoss",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        14
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "BOSS掉落_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加Buff_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|4"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "不设置自定义buff_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "BuffValue",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        25901
+      ],
+      "sub_max_num": 1,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "战斗BUFF设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|4"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_29hg|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|5"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "关闭时不可添加物品_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "BagItems",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        12
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "初始背包道具_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加空投_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|6"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加空投_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "AirDropValue",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        8
+      ],
+      "sub_max_num": 3,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "空投参数设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|5"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|7"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|4"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "SupplyBoxPutIn",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        4
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "武器箱子掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|6"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|8"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|5"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "SupplyBoxPutIn",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        4
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "补给箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|7"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|9"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|6"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "SupplyBoxPutIn",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        4
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "低级战备箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|8"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|a"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|7"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "SupplyBoxPutIn",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        4
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "中级战备箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|9"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|b"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|8"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "SupplyBoxPutIn",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        4
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "高级战备箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "新增保护期_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义设置_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "不设置保护期_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "BuildingProtectValve",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        52101
+      ],
+      "sub_max_num": 3,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "领地保护期设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加航线设置_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|a"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|c"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置不可设置_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "NewAirDropValue",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        52201
+      ],
+      "sub_max_num": 1,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "罗塞塔空投运输机航线设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|a"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|b"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|d"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|9"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "SupplyBoxPutIn",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        4
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "弹药箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|b"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|c"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|e"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|a"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "SupplyBoxPutIn",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        4
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "神秘宝箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|c"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_29hg|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|f"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "关闭时不可添加物品_$S@TIDS$_29hg|1"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "DayGiftItems",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        13011
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "初始礼包道具_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|d"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_29hg|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|g"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "关闭时不可添加物品_$S@TIDS$_29hg|2"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "DayGiftItems2",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        13021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "初始礼包道具_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "新增模因禁止规则_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义设置_$S@TIDS$_29hg|1"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "不设置模因禁止规则_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "MemeLock",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        31031
+      ],
+      "sub_max_num": 3,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "模因禁止规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "规则设置_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|h"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "不自定义设置_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "ScriptDropRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        61011
+      ],
+      "sub_max_num": 1,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "设置掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加额外掉落道具_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义设置_$S@TIDS$_29hg|2"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "关闭时不可添加物品_$S@TIDS$_29hg|3"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "NewAirExtraDropItem",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62011
+      ],
+      "sub_max_num": 1,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "空投额外掉落设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|e"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|d"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|i"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|b"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "GreenHouseWeaponBoxRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "绿卡房内的武器箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|f"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|e"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|j"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|c"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "GreenHouseSupplyBoxRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "绿卡房内的大储物箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|g"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|f"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|k"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|d"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "GreenHouseGreenBoxRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "绿卡房内的低级战备箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|h"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|g"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|l"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|e"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "BlueHouseWeaponBoxRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "蓝卡房内的武器箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|i"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|h"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|m"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|f"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "BlueHouseSupplyBoxRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "蓝卡房内的大储物箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|j"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|i"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|n"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|g"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "BlueHouseBlueBoxRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "蓝卡房内的中级战备箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|k"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|j"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|o"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|h"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "RedHouseWeaponBoxRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "红卡房内的武器箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|l"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|k"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|p"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|i"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "RedHouseSupplyBoxRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "红卡房内的大储物箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|m"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "默认配置_$S@TIDS$_29hg|l"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|q"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "默认配置下不可添加物品_$S@TIDS$_29hg|j"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [
+        "deviation_random"
+      ],
+      "is_root": 1,
+      "name_param": "RedHouseRedBoxRule",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        62021
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "红卡房内的高级战备箱掉落规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "新增可登录时间段_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义设置_$S@TIDS$_29hg|3"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "不设置可登录时间段_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "TRModTime",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        64021
+      ],
+      "sub_max_num": 2,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "服务器每日可登录时间设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "新增特殊掉落时间段_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义设置_$S@TIDS$_29hg|4"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "不设置特殊掉落时间段_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "TRToken",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        64051
+      ],
+      "sub_max_num": 1,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "每日特殊掉落时间规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加特殊掉落道具_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义设置_$S@TIDS$_29hg|5"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "关闭时不可添加物品_$S@TIDS$_29hg|4"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "TokenDropItem",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        64061
+      ],
+      "sub_max_num": 1,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "特殊掉落道具规则_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "新增禁止放置_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义设置_$S@TIDS$_29hg|6"
+          ]
+        }
+      ],
+      "customize_title_text": {
+        "lan_translate": [
+          "选择需要限制的设施_$S@TIDS$_29hg|0"
+        ]
+      },
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "禁用设置_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "BanBuildFacility",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        64071
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "target_page_type": [
+        11
+      ],
+      "title": {
+        "lan_translate": [
+          "不可放置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        "x{0}"
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        13012
+      ],
+      "sub_max_num": 0,
+      "sub_title": "{0}x{1}",
+      "title": {
+        "lan_translate": [
+          "道具_$S@TIDS$_29hg|3"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "item_max_num",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "DayGiftItemNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "道具数量_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        "x{0}"
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        13022
+      ],
+      "sub_max_num": 0,
+      "sub_title": "{0}x{1}",
+      "title": {
+        "lan_translate": [
+          "道具_$S@TIDS$_29hg|4"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "item_max_num",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "DayGiftItemNum2",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "道具数量_$S@TIDS$_29hg|2"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "PvpCustomStartTime",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "PvP开启时间：{0}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "PvP开启时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "PvpCustomEndTime",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "PvP结束时间：{0}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "PvP结束时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设置{0}_$S@TIDS$_29hg|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "{0} 开启BUFF:{3}的{2}，持续{1}分钟_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 3,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        25902,
+        25903,
+        25904,
+        25905
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "设置{0}：{1} 开启BUFF:{4}的{3}，持续{2}分钟_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "战斗BUFF设置_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BuffStartTime",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "BUFF开启时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "1439"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "60",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BuffDuration",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "持续时间：{0}分钟_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "BUFF持续时间（分钟）_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "select_buff_id",
+      "default_text": "",
+      "default_value": "0",
+      "desc": "BuffDetailDesc",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BuffId",
+      "save_value_type": "Int",
+      "select_type": 5,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "BUFF名称_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "select_buff_level",
+      "default_text": "",
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BuffLevel",
+      "save_value_type": "Int",
+      "select_type": 5,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "BUFF等级_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设置{0}_$S@TIDS$_29hg|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "{0} ~{1} 期间禁止模因{2}_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        31032,
+        31033,
+        31034
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "设置{0}：{1} ~{2} 开启，期间禁止{3}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "模因禁止规则_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "5",
+        "5"
+      ],
+      "data_refresh_rule": "aboslute_time",
+      "default_text": "",
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "MemelockTimeStart",
+      "save_value_type": "Int",
+      "select_type": 9,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|1"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "模因禁止开始时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "5",
+        "5"
+      ],
+      "data_refresh_rule": "aboslute_time",
+      "default_text": "",
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "MemelockTimeEnd",
+      "save_value_type": "Int",
+      "select_type": 9,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|2"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "模因禁止结束时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "99"
+      ],
+      "data_refresh_rule": "select_meme",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "MemelockItems",
+      "save_value_type": "List",
+      "select_type": 10,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "禁止模因：{0}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "禁止模因_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BloodMoonTime",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|3"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "开启时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "59"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "30",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BloodMoonDuration",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "持续时间：{0}分钟_$S@TIDS$_29hg|1"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "持续时间(分钟)_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BloodMoonTime",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|4"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "开启时间_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "1439"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "60",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BloodMoonDuration",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "持续时间：{0}分钟_$S@TIDS$_29hg|2"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "持续时间(分钟)_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设置{0}_$S@TIDS$_29hg|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "{0} ~{1} 开启，建筑免疫系数{2}_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 3,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        52102,
+        52103,
+        52104
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "设置{0}：{1} ~{2} 开启，建筑减免{3}%伤害_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "领地保护期设置_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BuildingProtectStartTime",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|5"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "保护期开启时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BuildingProtectEndTime",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "结束时间：{0}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "保护期结束时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "0",
+        "100"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "100",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BuildingProtectProtortion",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "建筑减免伤害_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设置{0}_$S@TIDS$_29hg|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "第{0}天0:00开始，每{1}个半小时出现航线，投放{2}个空投_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 2,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        52202,
+        52203,
+        52204
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "设置{0}：从第{1}天0:00开始，每{2}个半小时，投放{3}个空投_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "罗塞塔空投运输机航线设置_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "10",
+        "14"
+      ],
+      "data_refresh_rule": "select_day",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "NewAirDropStartDay",
+      "save_value_type": "Int",
+      "select_type": 5,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "剧本开始第几天开始出现航线_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "48"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "NewAirDropRefreshTime",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "刷新间隔：{0}个半小时_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "航线刷新间隔（每半小时）_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "10"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "NewAirDropPutInNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "每次航线投放空投总数_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设置{0}_$S@TIDS$_29hg|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "从开服第{0}天开始，持续{1}天，一共掉落{2}，每次掉落概率{3}%_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 4,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        61012,
+        61013,
+        61014,
+        61015
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "设置{0}：从开服第{1}天开始，持续{2}天，一共掉落{3}，每次掉落概率{4}%_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "掉落规则设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "180"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "60",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "ScriptDropRuleTime",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|6"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "开服第几天开启掉落_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "180"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "60",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "ScriptDropRuleDuration",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "掉落持续时间：{0}天_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "掉落持续时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "9999"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "ScriptDropRuleNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "掉落总数：{0}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "掉落总数_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "ScriptDropRuleWeight",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "掉落概率：{0}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "每次掉落概率（%）_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设置{0}_$S@TIDS$_29hg|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "{1}~{2}期间，{3}%概率额外掉落{0}个_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        62012,
+        62013,
+        62014,
+        62015
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "{2}~{3}期间，{4}%概率额外掉落{0}个{1}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "空投额外掉落道具设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "item_max_num",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "NewAirExtraDropItemNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "空投额外掉落道具数量_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "5",
+        "5"
+      ],
+      "data_refresh_rule": "aboslute_time",
+      "default_text": "",
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "NewAirExtraDropStartTime",
+      "save_value_type": "Int",
+      "select_type": 9,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|7"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "空投额外掉落开启时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "5",
+        "5"
+      ],
+      "data_refresh_rule": "aboslute_time",
+      "default_text": "",
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "NewAirExtraDropEndTime",
+      "save_value_type": "Int",
+      "select_type": 9,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|8"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "空投额外掉落结束时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "NewAirExtraDropItemWeight",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "空投额外掉落道具概率(%）_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        {
+          "lan_translate": [
+            "{1}%概率掉落{0}个_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        62022,
+        62023
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "{2}%概率掉落{0}x{1}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "道具_$S@TIDS$_29hg|5"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "item_max_num",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BoxItemNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "掉落数量_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "BoxItemProbability",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "掉落概率（%）_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设置{0}_$S@TIDS$_29hg|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "{0} ~{1} 期间允许玩家可登入服务器_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        64022,
+        64023
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "设置{0}：{1} ~{2} 开启，期间玩家可登入服务器_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "服务器每日可登录时间设置_$S@TIDS$_29hg|1"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "TRModTimeStart",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|9"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "服务器每日可登录开始时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "TRModTimeEnd",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "结束时间：{0}_$S@TIDS$_29hg|1"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "服务器每日可登录结束时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设置{0}_$S@TIDS$_29hg|7"
+          ]
+        },
+        {
+          "lan_translate": [
+            "{0} ~{1} 期间击杀非本队玩家掉落特殊道具_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        64052,
+        64053
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "设置{0}：{1} ~{2} 开启，期间击杀非本队玩家掉落特殊道具_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "每日特殊掉落时间设置_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "TRTokenTimeStart",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "开启时间：{0}_$S@TIDS$_29hg|a"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "每日特殊掉落开始时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "select_time",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "TRTokenTimeEnd",
+      "save_value_type": "Str",
+      "select_type": 8,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "结束时间：{0}_$S@TIDS$_29hg|2"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "每日特殊掉落结束时间_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        {
+          "lan_translate": [
+            "设置{0}_$S@TIDS$_29hg|8"
+          ]
+        },
+        {
+          "lan_translate": [
+            "{1}%概率掉落{0}个_$S@TIDS$_29hg|1"
+          ]
+        }
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        64062,
+        64063
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "{2}%概率掉落{0}个{1}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "特殊掉落道具_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "item_max_num",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "TokenDropItemNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "特殊掉落道具数量_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "TokenDropItemWeight",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "特殊掉落道具概率(%）_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        {
+          "lan_translate": [
+            "不可放置_$S@TIDS$_29hg|1"
+          ]
+        }
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "{0}不可放置_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "不可放置道具_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "新增禁止制作的物品_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "不设置_$S@TIDS$_29hg|9"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义设置_$S@TIDS$_29hg|7"
+          ]
+        }
+      ],
+      "customize_title_text": {
+        "lan_translate": [
+          "选择需要限制的物品_$S@TIDS$_29hg|0"
+        ]
+      },
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "选择后，该物品无法通过工作台和装备台制作_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "DisableMakeItem",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        310
+      ],
+      "sub_id_list": [
+        1401000201
+      ],
+      "sub_max_num": 20,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "禁止制作的物品_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|n"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_29hg|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|r"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "关闭时不可添加物品_$S@TIDS$_29hg|5"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "KillToGetItemNam",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        311
+      ],
+      "sub_id_list": [
+        15000200101
+      ],
+      "sub_max_num": 1,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "击杀玩家是否获取物品_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加物品_$S@TIDS$_29hg|o"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_29hg|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自定义配置_$S@TIDS$_29hg|s"
+          ]
+        }
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "关闭时不可添加物品_$S@TIDS$_29hg|6"
+        ]
+      },
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 1,
+      "name_param": "ByTimeGetItems",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        311
+      ],
+      "sub_id_list": [
+        15000200201
+      ],
+      "sub_max_num": 1,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "定时自动获得物品_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加自定义武器_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "关闭自定义_$S@TIDS$_29hg|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开启自定义_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "customize_title_text": {
+        "lan_translate": [
+          "选择模板武器_$S@TIDS$_29hg|0"
+        ]
+      },
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "无自定义武器_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": {
+        "lan_translate": [
+          "开启自定义后可以创建自定义武器。\n创建步骤：\n 1.选择模板武器\n 2.调整武器参数\n 3.配置武器特性\n 4.配置额外被动效果（穿戴相同特性和效果不叠加数值）\n 5.确认创建后即可在创世服内投放该武器 \n*自定义武器为独立的新武器，调整的参数与效果不会影响原模板武器。_$S@TIDS$_29hg|0"
+        ]
+      },
+      "extra_setting_params": [
+        "editing_custom"
+      ],
+      "is_root": 1,
+      "name_param": "CustomWeapon",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        312
+      ],
+      "sub_id_list": [
+        18000000101
+      ],
+      "sub_max_num": 10,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "自定义武器_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加自定义防具_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "关闭自定义_$S@TIDS$_29hg|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开启自定义_$S@TIDS$_29hg|1"
+          ]
+        }
+      ],
+      "customize_title_text": {
+        "lan_translate": [
+          "选择模板防具_$S@TIDS$_29hg|0"
+        ]
+      },
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "无自定义防具_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": {
+        "lan_translate": [
+          "开启自定义后可添加自定义防具。\\创建步骤：\n 1.选择模板防具\n 2.调整防具参数\n 3.配置防具基础使用效果\n 4.配置防具额外使用效果（玩家穿戴含有相同效果的防具不叠加数值）\n 5..确认创建后即可在创世服内投放该防具。\n*自定义防具为独立的新防具，调整的参数与效果不会影响原模板。_$S@TIDS$_29hg|0"
+        ]
+      },
+      "extra_setting_params": [
+        "editing_custom"
+      ],
+      "is_root": 1,
+      "name_param": "CustomArmor",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        313
+      ],
+      "sub_id_list": [
+        18000000201
+      ],
+      "sub_max_num": 10,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "自定义防具_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": {
+        "lan_translate": [
+          "添加自定义道具_$S@TIDS$_29hg|0"
+        ]
+      },
+      "can_select_range": [
+        "0",
+        "1",
+        {
+          "lan_translate": [
+            "关闭自定义_$S@TIDS$_29hg|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开启自定义_$S@TIDS$_29hg|2"
+          ]
+        }
+      ],
+      "customize_title_text": {
+        "lan_translate": [
+          "选择模板道具_$S@TIDS$_29hg|0"
+        ]
+      },
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "无自定义道具_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "0",
+      "desc": {
+        "lan_translate": [
+          "开启自定义后可以创建自定义道具。\n创建步骤：\n 1.选择模板道具\n 2.配置道具基础使用效果\n 3.配置额外使用效果（配置多个相同效果，使用数值不叠加）\n 4.确认创建即可在创世服内投放该道具\n*自定义道具为独立的新道具，调整的效果不会影响原模板道具。_$S@TIDS$_29hg|0"
+        ]
+      },
+      "extra_setting_params": [
+        "editing_custom"
+      ],
+      "is_root": 1,
+      "name_param": "CustomItem",
+      "save_value_type": "Int",
+      "select_type": 2,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [
+        314
+      ],
+      "sub_id_list": [
+        18000000301
+      ],
+      "sub_max_num": 10,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "自定义道具_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        {
+          "lan_translate": [
+            "不可制作_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "{0}不可制作_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "选择物品_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "2460"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "0000",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "KillToGetItemNam",
+      "save_value_type": "Int",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        {
+          "lan_translate": [
+            "击杀后获得{0}个，{1}分钟内重复杀死相同玩家无效_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        15000200102,
+        15000200103
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "每次击杀玩家后获得{0}x{1}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "获得物品_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "0",
+        "100"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "0",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "KillToGetItemNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "获得数量_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "0",
+        "60"
+      ],
+      "data_refresh_rule": "",
+      "default_text": {
+        "lan_translate": [
+          "用于防止玩家互刷作弊，配置后，冷却时间内杀死相同玩家不获得物品_$S@TIDS$_29hg|0"
+        ]
+      },
+      "default_value": "60",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "KillToGetItemCD",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "重复杀死相同玩家冷却时间（分钟）_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        {
+          "lan_translate": [
+            "每{1}分钟获得{0}个_$S@TIDS$_29hg|0"
+          ]
+        }
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [
+        15000200202,
+        15000200203
+      ],
+      "sub_max_num": 0,
+      "sub_title": {
+        "lan_translate": [
+          "每{2}分钟，获得{0}x{1}_$S@TIDS$_29hg|0"
+        ]
+      },
+      "title": {
+        "lan_translate": [
+          "物品_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "100"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "ByTimeGetItemsNum",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "物品数量_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [
+        "1",
+        "60"
+      ],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "1",
+      "desc": "",
+      "extra_setting_params": [],
+      "is_root": 0,
+      "name_param": "ByTimeGetItemsTime",
+      "save_value_type": "Int",
+      "select_type": 4,
+      "simple_show_text": [],
+      "special_text_type": 0,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "",
+      "title": {
+        "lan_translate": [
+          "获取间隔（分钟）_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [
+        "editing_custom"
+      ],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        ""
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "{0}",
+      "title": {
+        "lan_translate": [
+          "选择武器_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [
+        "editing_custom"
+      ],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        ""
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "{0}",
+      "title": {
+        "lan_translate": [
+          "选择防具_$S@TIDS$_29hg|0"
+        ]
+      }
+    },
+    {
+      "add_text": "",
+      "can_select_range": [],
+      "data_refresh_rule": "",
+      "default_text": "",
+      "default_value": "",
+      "desc": "",
+      "extra_setting_params": [
+        "editing_custom"
+      ],
+      "is_root": 0,
+      "name_param": "",
+      "save_value_type": "",
+      "select_type": 7,
+      "simple_show_text": [
+        "{0}",
+        ""
+      ],
+      "special_text_type": 1,
+      "sub_can_choose_list": [],
+      "sub_id_list": [],
+      "sub_max_num": 0,
+      "sub_title": "{0}",
+      "title": {
+        "lan_translate": [
+          "选择道具_$S@TIDS$_29hg|0"
+        ]
+      }
+    }
+  ]
+}

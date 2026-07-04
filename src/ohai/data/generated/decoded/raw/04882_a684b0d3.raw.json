@@ -1,0 +1,149 @@
+{
+  "_meta": {
+    "sourceFile": "04882_a684b0d3.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04882_a684b0d3.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:52.125Z",
+    "recordCount": 2,
+    "sourceHash": "fb0f53a071f344aa3363b107180ebf9e4fa33d54750b0efb3cdb261c0ec701e1",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 1,
+          "global_name": "scene_openworld_07E80817-0B120020-EB8F5256-0CE8201D_default_prefab_boss_energy_ball",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_sp_containmentsilo_04_entrance_383112",
+          "season_config": {}
+        },
+        "RuntimeAttrClientDungeonEntry": {
+          "boss_entry_tag": "silo_entrance_04",
+          "cls_type": "RuntimeAttrClientDungeonEntry",
+          "shoot_dungeon_id": "114514",
+          "trig_group": "dungeon_ui",
+          "trig_radius": "6",
+          "type": "boss"
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -4.5262,
+            5.3121,
+            -11.4138,
+            0,
+            1.57,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "prefab_boss_energy_ball",
+          "node_uuid": "69e1de914633391918926663",
+          "world_trans": [
+            5488.5205,
+            142.222,
+            -520.9599,
+            0,
+            1.57,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80817-0B120020-EB8F5256-0CE8201D_chief_chief_kitchen",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_sp_containmentsilo_04_entrance_383112",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrGameplayPortableKitchen": {
+          "cls_type": "RuntimeAttrGameplayPortableKitchen",
+          "pk_uid": "1"
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -6.3896,
+            3.8713,
+            -19.3618,
+            0,
+            -1.6853,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "chief_kitchen",
+          "node_uuid": "2fbf3b183a914a98afd006d8",
+          "world_trans": [
+            5486.6572,
+            140.7812,
+            -528.9079,
+            0,
+            -1.6853,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/interaction/chef_food_counter/chef_food_counter.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

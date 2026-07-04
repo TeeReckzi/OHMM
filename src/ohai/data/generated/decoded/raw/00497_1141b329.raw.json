@@ -1,0 +1,326 @@
+{
+  "_meta": {
+    "sourceFile": "00497_1141b329.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00497_1141b329.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.065Z",
+    "recordCount": 2,
+    "sourceHash": "909a983ed73678cc0ab99c2b04f71064a97c78a73d08627cf5ab3d44eb6b7c9b",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            3
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 2,
+            "info": {
+              "aim_target_type": 1,
+              "attack_duration": 0.5,
+              "attack_type": 0,
+              "be_hit_hp_base": "hp",
+              "be_hit_hp_type": 1,
+              "be_hit_value": 1,
+              "brownian_action_radius": 1,
+              "brownian_angle_stable_speed": 10,
+              "brownian_forward_speed_acc": 0.1,
+              "brownian_forward_speed_init": 1,
+              "brownian_interval_max": 0.4,
+              "brownian_interval_min": 0.2,
+              "brownian_interval_stable_speed": 0.2,
+              "brownian_pitch_offset": 15,
+              "brownian_rand_angle_pitch_max": 25,
+              "brownian_rand_angle_yaw_max": 40,
+              "brownian_rotate_speed_acc": 0,
+              "brownian_rotate_speed_init": 100,
+              "brownian_target_distance_min": 10,
+              "brownian_time_max": 2.2,
+              "bullet_acc": 0,
+              "bullet_speed": 4,
+              "can_be_hit": false,
+              "collision_box_size": [
+                1,
+                1,
+                1
+              ],
+              "collision_box_size_be_hit_check": [
+                1,
+                1,
+                1
+              ],
+              "collision_sfx_path": "effect/boss/lighthouse/lighthouse_tentacle_fix_skill_hit.pse",
+              "collision_sfx_scale": 4,
+              "collision_shape": 2,
+              "collision_shape_be_hit_check": -1,
+              "collision_type": 1,
+              "destroy_when_target_die": false,
+              "disregard_shield": false,
+              "explose_on_destroy": false,
+              "flx_sfx_update_rotation": true,
+              "fly_sfx_path": "effect/boss/lighthouse/lighthouse_tentacle_fix_skill_fly.pse",
+              "fly_sfx_scale": 4,
+              "gravity": 0,
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "is_aim_socket": false,
+              "is_attach_ground": false,
+              "is_brownian_forward": false,
+              "launch_angle": 0,
+              "launch_dir_type": 0,
+              "launch_yaw": 0,
+              "max_fly_time": 10,
+              "max_rotate": 240,
+              "max_rotate_acc": 0,
+              "missile_count": 1,
+              "multi_missile": [],
+              "rand_angle_range": [
+                -180,
+                180
+              ],
+              "rand_launch_dir": false,
+              "rand_launch_time": false,
+              "rand_launch_time_range": [
+                0,
+                1
+              ],
+              "rand_yaw_range": [
+                -180,
+                180
+              ],
+              "sfx_budget_rule_id": 500,
+              "socket_fail_use_table": false,
+              "socket_name": "fx_lightning_glow",
+              "socket_offset": [
+                0,
+                0,
+                0
+              ],
+              "speed_change": [],
+              "stop_time": 0,
+              "target_socket_name": "",
+              "throw_aim_bone_type": 0,
+              "track_timing": 0,
+              "use_ai_choose_pos": false
+            }
+          },
+          "type": "NodeMonsterMissile"
+        },
+        "event_action": {
+          "init": [],
+          "trigger": [
+            6
+          ]
+        },
+        "in_data_pin": {
+          "target_uid": [
+            4,
+            "process",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {
+          "init": [
+            "fly_pid"
+          ],
+          "trigger": [
+            "trigger_pos",
+            "bone_name",
+            "hit_dir",
+            "target_uid"
+          ]
+        }
+      },
+      "3": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "aoi_height": 70,
+            "aoi_range": 100,
+            "camp_type": 99,
+            "condition": [
+              {
+                "params": {
+                  "buff_id": 10200013,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::10200013"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0,
+                  "effect_index": 5
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 3,
+            "max_entity_num": 0,
+            "order_by_distance": false,
+            "persist": false,
+            "save_to_bb": false,
+            "save_to_bb_key": "",
+            "scope": 0
+          },
+          "type": "NodeGetAoiEntity"
+        },
+        "event_action": {
+          "process": [
+            4
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": [
+            "entity_list",
+            "entity_count"
+          ]
+        }
+      },
+      "4": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 4
+          },
+          "type": "NodeForeachIdList"
+        },
+        "event_action": {
+          "process": [
+            2
+          ]
+        },
+        "in_data_pin": {
+          "id_list": [
+            3,
+            "process",
+            "entity_list"
+          ]
+        },
+        "out_data_pin": {
+          "process": [
+            "target_uid"
+          ]
+        }
+      },
+      "6": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 10200015,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 6,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            2,
+            "trigger",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "7": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 7
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            8
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "8": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 90,
+            "effect_index": 8
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            0
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 7,
+      "name": "buff_102000151_1",
+      "preload_res_list": [
+        "effect/boss/lighthouse/lighthouse_tentacle_fix_skill_hit.pse",
+        "effect/boss/lighthouse/lighthouse_tentacle_fix_skill_fly.pse"
+      ],
+      "source_info": [
+        "buff",
+        102000151,
+        1
+      ],
+      "tid": 16262
+    }
+  ]
+}

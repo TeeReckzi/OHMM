@@ -1,0 +1,1809 @@
+{
+  "_meta": {
+    "sourceFile": "05179_b07d5751.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05179_b07d5751.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:53.221Z",
+    "recordCount": 17,
+    "sourceHash": "cf8de831a70238b1fc8e59c7d8fe36d55e5240a0cf3c88abd544d760ad854596",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_anchor_worldstone01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "102",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "WORLD_STONE",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrGameplayWorldStone": {
+          "cls_type": "RuntimeAttrGameplayWorldStone",
+          "init_state": "001",
+          "reward_no": "",
+          "submit_item_no_list": [],
+          "unlock_state_infos": [
+            {
+              "state_name": "001",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "002",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01_to_02.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_02.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "003",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_02_to_03.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_03.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020024,
+            810020059,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "001",
+          "enable_exec_state": true,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "001",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": false,
+              "tag": "001",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "002",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "003",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            "001",
+            "002",
+            "003"
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            4.7744,
+            0.218,
+            42.5518,
+            0,
+            -0.9144,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "worldstone01",
+          "node_uuid": "69312fbe03ca0a42dc19a92c",
+          "world_trans": [
+            -392.3463,
+            404.2095,
+            5517.0928,
+            0,
+            2.2256,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": false,
+          "enable_vertical_occluder": false,
+          "init_model_path": "environment/dynamic_objects/world_stone/world_stone_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                20,
+                4,
+                20
+              ],
+              "shape": "box",
+              "tag": "001",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            },
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                4,
+                5
+              ],
+              "shape": "box",
+              "tag": "002",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "first_meet_world_stone",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "001",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "002",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_upladder_01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -2.812,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            1.3065,
+            -0.6957,
+            -0.1357,
+            0,
+            0.1424,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "upladder_01",
+          "node_uuid": "69312fb303ca0a42dc19a74f",
+          "world_trans": [
+            -371.0735,
+            319.7421,
+            5503.6807,
+            0,
+            0.1424,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_upladder_02",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -5.6349,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            4.739,
+            21.0359,
+            -1.1562,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "upladder_02",
+          "node_uuid": "69312fb303ca0a42dc19a7cc",
+          "world_trans": [
+            -367.641,
+            341.4737,
+            5502.6602,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_upladder_03",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -2.9197,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            4.0622,
+            38.725,
+            -1.0938,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "upladder_03",
+          "node_uuid": "69312fb303ca0a42dc19a70b",
+          "world_trans": [
+            -368.3178,
+            359.1628,
+            5502.7227,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_s1013",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": 10,
+              "scale_change_velocity": -0.2,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 0,
+              "max_temperature": 10,
+              "min_temperature": 0,
+              "scale_change_velocity": -0.1,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            38.9751,
+            -0.5762,
+            -17.7134,
+            0,
+            -1.3122,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1013",
+          "node_uuid": "69312fb303ca0a42dc19a777",
+          "world_trans": [
+            -244.285,
+            314.7431,
+            5501.6035,
+            0,
+            -1.3122,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_5.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_s1014",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": 10,
+              "scale_change_velocity": -0.2,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 0,
+              "max_temperature": 10,
+              "min_temperature": 0,
+              "scale_change_velocity": -0.1,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            38.7546,
+            -0.5763,
+            8.0298,
+            0,
+            -0.471,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1014",
+          "node_uuid": "69312fb303ca0a42dc19a7a1",
+          "world_trans": [
+            -244.5055,
+            314.743,
+            5527.3467,
+            0,
+            -0.471,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_5.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_s1015",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": 10,
+              "scale_change_velocity": -0.2,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 0,
+              "max_temperature": 10,
+              "min_temperature": 0,
+              "scale_change_velocity": -0.1,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            22.7375,
+            -7.5044,
+            29.6709,
+            0,
+            -2.4217,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1015",
+          "node_uuid": "69312fb303ca0a42dc19a820",
+          "world_trans": [
+            -384.3008,
+            379.4685,
+            5410.3462,
+            0,
+            -2.4217,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_5.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_s1016",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": 10,
+              "scale_change_velocity": -0.2,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 0,
+              "max_temperature": 10,
+              "min_temperature": 0,
+              "scale_change_velocity": -0.1,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            22.4701,
+            -7.5624,
+            27.0938,
+            0,
+            1.3218,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1016",
+          "node_uuid": "69312fb303ca0a42dc19a83a",
+          "world_trans": [
+            -384.5682,
+            379.4105,
+            5407.769,
+            0,
+            1.3218,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_3.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_s1017",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": 10,
+              "scale_change_velocity": -0.2,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 0,
+              "max_temperature": 10,
+              "min_temperature": 0,
+              "scale_change_velocity": -0.1,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": true,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 600,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            29.7819,
+            -7.4401,
+            11.1182,
+            0,
+            0.5183,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1017",
+          "node_uuid": "69312fb303ca0a42dc19a87d",
+          "world_trans": [
+            -377.2564,
+            379.5328,
+            5391.7935,
+            0,
+            0.5183,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_4.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_ladder_02",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -3.1523,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -2.9178,
+            8.3134,
+            -14.8838,
+            0,
+            -1.5702,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_02",
+          "node_uuid": "69312fb303ca0a42dc19a75b",
+          "world_trans": [
+            -302.2165,
+            313.5556,
+            5630.7407,
+            0,
+            -1.5702,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_ladder_03",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -7.1936,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            16.7938,
+            -11.8109,
+            23.2715,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_03",
+          "node_uuid": "69312fb303ca0a42dc19a79f",
+          "world_trans": [
+            -282.5049,
+            293.4313,
+            5668.896,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_ladder_04",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -4.9192,
+            -0.0001
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -21.1692,
+            -11.7947,
+            5.561,
+            0,
+            -1.5249,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_04",
+          "node_uuid": "69312fb303ca0a42dc19a7ec",
+          "world_trans": [
+            -320.4679,
+            293.4475,
+            5651.1855,
+            0,
+            -1.5249,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_ladder_05",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0005,
+            -8.6276,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            5.0944,
+            8.5035,
+            -13.8306,
+            0,
+            1.5674,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder_05",
+          "node_uuid": "69312fb303ca0a42dc19a84b",
+          "world_trans": [
+            -294.2043,
+            313.7457,
+            5631.7939,
+            0,
+            1.5674,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_ladder__01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -13.5443,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -13.8631,
+            3.3979,
+            -8.3882,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "ladder__01",
+          "node_uuid": "69312fb303ca0a42dc19a6ff",
+          "world_trans": [
+            -313.1618,
+            308.6401,
+            5637.2363,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_s1011",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": 10,
+              "scale_change_velocity": -0.2,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 0,
+              "max_temperature": 10,
+              "min_temperature": 0,
+              "scale_change_velocity": -0.1,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            23.1296,
+            -0.2632,
+            -2.3486,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1011",
+          "node_uuid": "69312fb303ca0a42dc19a74b",
+          "world_trans": [
+            -274.613,
+            392.4993,
+            5381.5049,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_5.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_s1012",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureTemperature": {
+          "active": true,
+          "cls_type": "RuntimeAttrFeatureTemperature",
+          "destroy_delay": 0.15,
+          "destroy_sfx": "effect/scene/interaction/components/ice_cube/ice_break_01.pse",
+          "destroy_sfx_offset": [
+            0,
+            0,
+            0
+          ],
+          "destroy_sfx_scale": [
+            1,
+            1,
+            1
+          ],
+          "distance": 1,
+          "events": [
+            {
+              "buff_id": 0,
+              "max_temperature": 20,
+              "min_temperature": 10,
+              "scale_change_velocity": -0.2,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            },
+            {
+              "buff_id": 0,
+              "max_temperature": 10,
+              "min_temperature": 0,
+              "scale_change_velocity": -0.1,
+              "sfx_offset": [
+                0,
+                0,
+                0
+              ],
+              "sfx_path": "effect/scene/interaction/components/ice_cube/ice_melt_01.pse",
+              "sfx_scale": [
+                1,
+                1,
+                1
+              ],
+              "cls_type": "RuntimeTemperatureEvent"
+            }
+          ],
+          "interval": 1,
+          "min_destroy_scale": 0.5
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020016,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            19.0708,
+            -0.2633,
+            -26.7354,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1012",
+          "node_uuid": "69312fb303ca0a42dc19a74c",
+          "world_trans": [
+            -278.6718,
+            392.4992,
+            5357.1182,
+            0,
+            3.14,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/task/ice/ice_task_5.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80806-0F300019-B13CD719-0CE8201D_default_s1019",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_spot_t8_12",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureMemeContainer": {
+          "cls_type": "RuntimeAttrFeatureMemeContainer",
+          "meme_config": [],
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "probability": 1,
+          "refresh_time": 0
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020015
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            46.5494,
+            22.1189,
+            7.3315,
+            1.5708,
+            -1.5708,
+            -1.0262,
+            1,
+            1,
+            1
+          ],
+          "name": "s1019",
+          "node_uuid": "69312fb303ca0a42dc19a72a",
+          "world_trans": [
+            -391.779,
+            404.6118,
+            5509.5654,
+            1.5708,
+            -1.5708,
+            -1.0262,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/containment_unit_a/containment_unit_a.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "_meta": {
+    "sourceFile": "02375_52c7898a.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02375_52c7898a.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:45.115Z",
+    "recordCount": 2,
+    "sourceHash": "470a607f235ecb5d0334dcff44e957ea06ef1a503a5610f52e622d0011b66a0d",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "64": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 64,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": true,
+              "bind_name": "fx_laser_side1",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": true,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/ancientones/ancientones_plasma_thick_beam_1.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "67": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 67
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            64
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 67,
+      "name": "behavior_ancientones_plane_turn85_bombl_s4_charge2",
+      "preload_res_list": [
+        "effect/boss/ancientones/ancientones_plasma_thick_beam_1.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "ancientones_plane",
+        "turn85_bombl_s4",
+        ""
+      ],
+      "tid": 16125
+    }
+  ]
+}

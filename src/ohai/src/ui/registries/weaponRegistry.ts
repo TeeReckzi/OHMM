@@ -1,6 +1,7 @@
 import type { CanonicalWeapon } from "../itemTypes";
 import { weapons as generatedWeapons } from "./generated/weapons.generated";
 import { lredragolWeaponEntries } from "./generated/weaponsStats.generated";
+import { bindictWeaponEntries } from "./generated/weaponsStats.bindict.generated";
 
 /** Normalize a name for fuzzy matching */
 function normKey(s: string): string {
@@ -52,6 +53,36 @@ function isNonCanonicalWeapon(w: CanonicalWeapon): boolean {
 
 const vettedLReDragolWeaponEntries = lredragolWeaponEntries.filter((w) => !isNonCanonicalWeapon(w));
 const vettedGeneratedWeapons = generatedWeapons.filter((w) => !isNonCanonicalWeapon(w));
+const vettedBindictWeapons = bindictWeaponEntries.filter((w) => !isNonCanonicalWeapon(w));
+
+// Build bindict lookup by normalized name for stat backfilling
+const bindictByName = new Map<string, CanonicalWeapon>();
+for (const w of vettedBindictWeapons) {
+  if (w.originalName) bindictByName.set(normKey(w.originalName), w);
+  bindictByName.set(normKey(w.name), w);
+}
+
+function findBindictEntry(weapon: CanonicalWeapon): CanonicalWeapon | undefined {
+  const byName = bindictByName.get(normKey(weapon.name));
+  if (byName) return byName;
+  if (weapon.originalName) {
+    const byOrig = bindictByName.get(normKey(weapon.originalName));
+    if (byOrig) return byOrig;
+  }
+  return undefined;
+}
+
+/** Merge bindict-decoded stats into a weapon entry (lowest priority backfill) */
+function mergeBindictStats(weapon: CanonicalWeapon): CanonicalWeapon {
+  const bindict = findBindictEntry(weapon);
+  if (!bindict) return weapon;
+  return {
+    ...weapon,
+    fireRate: weapon.fireRate ?? bindict.fireRate,
+    magazineCapacity: weapon.magazineCapacity ?? bindict.magazineCapacity,
+    reloadTimeSeconds: weapon.reloadTimeSeconds ?? bindict.reloadTimeSeconds,
+  };
+}
 
 // Build ID + name-key lookup for lReDragol entries
 const lreById = new Map<string, CanonicalWeapon>();
@@ -261,10 +292,15 @@ const lreAdditions = vettedLReDragolWeaponEntries.filter((w) => !curatedIds.has(
 const lreOrCuratedIds = new Set([...curatedIds, ...lreAdditions.map((w) => w.id)]);
 const genAdditions = vettedGeneratedWeapons.filter((w) => !lreOrCuratedIds.has(w.id));
 
+// Bindict entries: only add new weapons not already in curated/lReDragol/generated
+const allExistingIds = new Set([...lreOrCuratedIds, ...genAdditions.map((w) => w.id)]);
+const bindictAdditions = vettedBindictWeapons.filter((w) => !allExistingIds.has(w.id));
+
 export const weaponRegistry: CanonicalWeapon[] = [
- ...curatedEntries.map(mergeLReStats),
- ...lreAdditions,
- ...genAdditions,
+ ...curatedEntries.map(mergeLReStats).map(mergeBindictStats),
+ ...lreAdditions.map(mergeBindictStats),
+ ...genAdditions.map(mergeBindictStats),
+ ...bindictAdditions,
 ].filter((w) => !isNonCanonicalWeapon(w));
 
 export function getWeapon(id: string): CanonicalWeapon | undefined {

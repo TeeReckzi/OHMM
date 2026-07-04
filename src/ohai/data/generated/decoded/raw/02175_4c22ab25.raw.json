@@ -1,0 +1,319 @@
+{
+  "_meta": {
+    "sourceFile": "02175_4c22ab25.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02175_4c22ab25.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:44.561Z",
+    "recordCount": 4,
+    "sourceHash": "ee9677565f98e003e0010bfa65320e397d2cc5785a08f27028774c73f1dccd98",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70903-0B270016-648215E6-54727B2F_default_pvp_respawn_a_01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_sp_pvp_respawn_a_01_31204",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -4.947,
+            2.1036,
+            -5.9952,
+            0,
+            0.606,
+            0,
+            26.3013,
+            12.7461,
+            27.9516
+          ],
+          "name": "pvp_respawn_a_01",
+          "node_uuid": "6959dc3c03ca0a343c8e5046",
+          "world_trans": [
+            4281.002,
+            125.7468,
+            -3334.4297,
+            0,
+            1.555,
+            0,
+            26.3013,
+            12.7461,
+            27.9516
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "prefab_sp_pvp_respawn_a_01_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70903-0B270016-648215E6-54727B2F_default_room",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_sp_pvp_respawn_a_01_31204",
+          "season_config": {
+            "whitelist": "ne_frac"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            3.6006,
+            0.3175,
+            -0.7483,
+            0,
+            0.2529,
+            0,
+            7.2999,
+            3.9231,
+            7.3274
+          ],
+          "name": "room",
+          "node_uuid": "6959dc3c03ca0a343c8e5044",
+          "world_trans": [
+            4285.1099,
+            122.7125,
+            -3340.5825,
+            0,
+            3.1277,
+            0,
+            7.2999,
+            3.9231,
+            7.3274
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "audio_state",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "shape": "box",
+              "tag": "",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70903-0B270016-648215E6-54727B2F_block_node",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_sp_pvp_respawn_a_01_31204",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -6.248,
+            -0.0183,
+            1.4763,
+            0,
+            -0.8731,
+            0,
+            2.0079,
+            1,
+            3.4963
+          ],
+          "name": "node",
+          "node_uuid": "69e6e69d90f22c7b3873a1f4",
+          "world_trans": [
+            4297.4126,
+            119.7809,
+            -3344.6011,
+            0,
+            -0.8731,
+            0,
+            2.0079,
+            1,
+            3.4963
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/brick/brick_floor_2.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E70903-0B270016-648215E6-54727B2F_block_node1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_sp_pvp_respawn_a_01_31204",
+          "season_config": {
+            "blacklist": "ne_frac"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            139.7427,
+            75.2762,
+            -130.9744,
+            0,
+            -0.8731,
+            0,
+            2.4228,
+            1.367,
+            5.4593
+          ],
+          "name": "node1",
+          "node_uuid": "69e6eb1690f22c7b3873a1f5",
+          "world_trans": [
+            4443.4058,
+            195.0754,
+            -3477.0488,
+            0,
+            -0.8731,
+            0,
+            2.4228,
+            1.367,
+            5.4593
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/brick/brick_floor_2.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

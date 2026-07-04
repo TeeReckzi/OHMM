@@ -1,0 +1,157 @@
+{
+  "_meta": {
+    "sourceFile": "07304_fcd805af.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07304_fcd805af.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.925Z",
+    "recordCount": 2,
+    "sourceHash": "1a87b32853123386b5c327a8dada9aac9b819cfb1e233e4fb892ee5d98350672",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            7,
+            5
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "5": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 5,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "",
+              "bind_type": 5,
+              "common_name": "electric",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/skill/buff/gain_01.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": true,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "reset": true,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMountSfx"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "res_path": "effect/skill/buff/gain_01.pse"
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "6": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 6,
+            "value": "effect/skill/buff/gain_01.pse"
+          },
+          "type": "NodeConstStr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "7": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "swimdivespeed",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -75,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 7,
+            "max_level": 1,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_455406900_1",
+      "preload_res_list": [
+        "effect/skill/buff/gain_01.pse"
+      ],
+      "source_info": [
+        "buff",
+        455406900,
+        1
+      ],
+      "tid": 16133
+    }
+  ]
+}

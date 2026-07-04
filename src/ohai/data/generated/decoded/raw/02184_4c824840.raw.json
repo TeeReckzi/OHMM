@@ -1,0 +1,188 @@
+{
+  "_meta": {
+    "sourceFile": "02184_4c824840.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02184_4c824840.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:44.567Z",
+    "recordCount": 2,
+    "sourceHash": "d653f58e94e473fd592419c70fee59a2be3e4265ec4908e83ef2663722a1999c",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            1,
+            3,
+            5,
+            7
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "element_type_dam_add_rate_fire",
+            "effect_index": 1,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": 0.02
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 2,
+            "value": 0.02
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "element_type_dam_add_rate_ice",
+            "effect_index": 3,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": 0.02
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "4": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 4,
+            "value": 0.02
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "5": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "element_type_dam_add_rate_explode",
+            "effect_index": 5,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": 0.02
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "6": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 6,
+            "value": 0.02
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "7": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "element_type_dam_add_rate_lightning",
+            "effect_index": 7,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": 0.02
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "8": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 8,
+            "value": 0.02
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_589649000_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        589649000,
+        1
+      ],
+      "tid": 16278
+    }
+  ]
+}

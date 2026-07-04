@@ -1,0 +1,93 @@
+{
+  "_meta": {
+    "sourceFile": "03031_689e8534.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03031_689e8534.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:46.988Z",
+    "recordCount": 2,
+    "sourceHash": "c88b4372612f1e415c98b40a0fbf1e67795b3aa237670ac6cd49cce53ef8749c",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "284": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 501100044,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 284,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            287,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "287": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 287
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "298": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 298
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            284
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 298,
+      "name": "behavior_ancientones_plane_lv2_straight1_s4_3to1_field",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "ancientones_plane",
+        "lv2_straight1_s4_3to1",
+        ""
+      ],
+      "tid": 16354
+    }
+  ]
+}

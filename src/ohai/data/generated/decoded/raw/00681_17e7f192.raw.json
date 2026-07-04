@@ -1,0 +1,752 @@
+{
+  "_meta": {
+    "sourceFile": "00681_17e7f192.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00681_17e7f192.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.386Z",
+    "recordCount": 2,
+    "sourceHash": "8cc866b5e432d9a59e937079c0c7d59dbb32010cabee85b241af888d4b0a6ed5",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            123,
+            55,
+            56,
+            89,
+            54,
+            10
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "4": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 4
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "5": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 5,
+            "ignore_magazine_limit": false,
+            "need_disable": false,
+            "need_reload_suc_event": true,
+            "type": true,
+            "value": 1,
+            "value_type": 1
+          },
+          "type": "NodeAddAmmunition"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "gun_id": [
+            9,
+            "utility",
+            "item_id"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 9,
+            "hand_hold_type": 0
+          },
+          "type": "NodeGetHoldItemAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "item_id",
+            "item_no",
+            "type",
+            "sub_type"
+          ]
+        }
+      },
+      "10": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 10,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": false,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 11258999125540864,
+                "params": {
+                  "check_skill_tag": "304",
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_skill_tag_event::1",
+                    "on_skill_tag_event::1"
+                  ],
+                  "skill_state": 1,
+                  "effect_index": 25
+                },
+                "type": "skill_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            11,
+            15
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "11": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 363004002,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 11,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            4,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "12": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 12,
+            "need_disable": false,
+            "roll_behavior": "sidestep_pistal"
+          },
+          "type": "NodeSwitchRollBehavior"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "14": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 363004001,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 14,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            4,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "15": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "buff_id": 354702000,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::354702000"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0,
+                  "effect_index": 62
+                },
+                "type": "buff_checker"
+              },
+              {
+                "params": {
+                  "buff_id": 347412000,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::347412000"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0,
+                  "effect_index": 63
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "condition_op": 0,
+            "effect_index": 15
+          },
+          "type": "NodeBuffCheckerTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            14,
+            5
+          ]
+        },
+        "in_data_pin": {
+          "target_id": [
+            17,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "17": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 17
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "35": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 35,
+            "need_disable": false,
+            "roll_behavior": "sidestep_base"
+          },
+          "type": "NodeSwitchRollBehavior"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "36": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 36,
+            "need_disable": false,
+            "roll_behavior": "sidestep"
+          },
+          "type": "NodeSwitchRollBehavior"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "54": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 54,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 60798595026616320,
+                "params": {
+                  "buff_id": 354702000,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::354702000"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0,
+                  "effect_index": 60
+                },
+                "type": "buff_checker"
+              },
+              {
+                "checker_sid": 60798596100358140,
+                "params": {
+                  "buff_id": 347412000,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::347412000"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0,
+                  "effect_index": 61
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 0
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            36
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "55": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 55,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 61924494933458940,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 2,
+                  "hold_type": 1,
+                  "effect_index": 105
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 61924496007200770,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 3,
+                  "hold_type": 1,
+                  "effect_index": 104
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 61924497080942590,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 4,
+                  "hold_type": 1,
+                  "effect_index": 103
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 61924498154684420,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 5,
+                  "hold_type": 1,
+                  "effect_index": 100
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 61924499228426240,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 6,
+                  "hold_type": 1,
+                  "effect_index": 102
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 61924500302168060,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 8,
+                  "hold_type": 1,
+                  "effect_index": 101
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 61924501375909890,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 9,
+                  "hold_type": 1,
+                  "effect_index": 107
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 61924502449651710,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 10,
+                  "hold_type": 1,
+                  "effect_index": 106
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 61924503523393540,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 11,
+                  "hold_type": 1,
+                  "effect_index": 99
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 61924504597135360,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 7,
+                  "hold_type": 1,
+                  "effect_index": 108
+                },
+                "type": "hold_item_check"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 0
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            35
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "56": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 56,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 63050394840301570,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 0,
+                  "hold_type": 3,
+                  "effect_index": 110
+                },
+                "type": "hold_item_check"
+              },
+              {
+                "checker_sid": 63050395914043390,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 1,
+                  "hold_type": 1,
+                  "effect_index": 38
+                },
+                "type": "hold_item_check"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 0
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            12
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "86": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 86,
+            "need_disable": false,
+            "roll_behavior": "sidestep_melee"
+          },
+          "type": "NodeSwitchRollBehavior"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "89": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 89,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 100205091766108160,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_sub_type": 0,
+                  "hold_type": 2,
+                  "effect_index": 91
+                },
+                "type": "hold_item_check"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 0
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            86
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "121": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 121,
+            "need_disable": false,
+            "roll_behavior": "roll"
+          },
+          "type": "NodeSwitchRollBehavior"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "123": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 123,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 138485688598757380,
+                "params": {
+                  "check_negate": false,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_update_hold_item_no"
+                  ],
+                  "hold_item_no_list": [
+                    0
+                  ],
+                  "effect_index": 122
+                },
+                "type": "hold_item_no_check"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 0
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            121
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_363004000_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        363004000,
+        1
+      ],
+      "tid": 13944
+    }
+  ]
+}

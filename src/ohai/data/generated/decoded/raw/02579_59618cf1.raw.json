@@ -1,0 +1,73 @@
+{
+  "_meta": {
+    "sourceFile": "02579_59618cf1.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02579_59618cf1.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:45.651Z",
+    "recordCount": 2,
+    "sourceHash": "db93897afdb4b5cc9b2426acfa9c1da06660d3f98256baec3a521215019e25f3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "53": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attribute": "bag_max_personal_heavy",
+            "effect_index": 53,
+            "need_disable": false,
+            "value_type": 1
+          },
+          "type": "NodeChangeAttrInputValue"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "value": 40
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "54": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 54,
+            "value": 40
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {
+        "54": [
+          [
+            [
+              "effect_params",
+              "params",
+              "value"
+            ],
+            0
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_49900250100_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        49900250100,
+        1
+      ],
+      "tid": 487
+    }
+  ]
+}

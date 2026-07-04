@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "sourceFile": "07198_f9576631.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07198_f9576631.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.615Z",
+    "recordCount": 2,
+    "sourceHash": "5cd99530ef422ee28b8706b69fe3a8f2b8957aff22f192bbb5a566d696ff51e9",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            8,
+            4
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 1,
+            "need_disable": false,
+            "volume_fog_args": {
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "curve_name": "",
+              "density": 0.2,
+              "duration": -1,
+              "emissive_color": [
+                0,
+                0,
+                0
+              ],
+              "emissive_scale": 0,
+              "height_attenuation": 1,
+              "noise_intenstity": 0.3,
+              "noise_scale": 3,
+              "noise_speed": 3,
+              "radius": 70,
+              "scattering": 2.6,
+              "use_curve_params": true,
+              "volume_name": "111"
+            }
+          },
+          "type": "NodeCreateVolumeFog"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "input_pos": [
+            3,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "3": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 3
+          },
+          "type": "NodeGetCasterPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "4": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 4,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 4503599693357057,
+                "params": {
+                  "attribute": "hp",
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_attr_changed::hp"
+                  ],
+                  "op": 3,
+                  "role": 0,
+                  "value": 10
+                },
+                "type": "attr_value_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            7
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "7": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 7,
+            "need_disable": false,
+            "volume_fog_args": {
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "curve_name": "",
+              "density": 0.2,
+              "duration": 1,
+              "emissive_color": [
+                0,
+                0,
+                0
+              ],
+              "emissive_scale": 0,
+              "height_attenuation": 1,
+              "noise_intenstity": 0.3,
+              "noise_scale": 3,
+              "noise_speed": 3,
+              "radius": 70,
+              "scattering": 2.6,
+              "use_curve_params": true,
+              "volume_name": "111"
+            }
+          },
+          "type": "NodeCreateVolumeFog"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "input_pos": [
+            3,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "8": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.6,
+            "effect_index": 8
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_500000434_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        500000434,
+        1
+      ],
+      "tid": 16110
+    }
+  ]
+}

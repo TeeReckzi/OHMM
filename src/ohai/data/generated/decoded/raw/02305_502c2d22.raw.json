@@ -1,0 +1,150 @@
+{
+  "_meta": {
+    "sourceFile": "02305_502c2d22.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02305_502c2d22.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:44.974Z",
+    "recordCount": 2,
+    "sourceHash": "c93b0e1e47f96acfcf338dd775e534bae7144256288ac0a1590e46e5fe5217e7",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            59,
+            60,
+            58
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "58": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 58,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": false,
+              "bind_name": "tunshizhe",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": true,
+              "decrease_emitter": false,
+              "del_type": 3,
+              "delay_remove": false,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "s4_collect_loop_1",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/task/s4/fx_s4_collect_loop_1.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 20,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": false
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "59": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "col_only": false,
+            "effect_index": 59,
+            "enable": false,
+            "hit_box_only": true,
+            "need_disable": false
+          },
+          "type": "NodeDisableColHitBox"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "60": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "distance": 0.01,
+            "effect_index": 60,
+            "need_disable": false
+          },
+          "type": "NodeLimitAIVisibleDis"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_24400003_1",
+      "preload_res_list": [
+        "effect/task/s4/fx_s4_collect_loop_1.pse"
+      ],
+      "source_info": [
+        "buff",
+        24400003,
+        1
+      ],
+      "tid": 16062
+    }
+  ]
+}

@@ -1,0 +1,993 @@
+{
+  "_meta": {
+    "sourceFile": "01436_31cece9c.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01436_31cece9c.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:42.695Z",
+    "recordCount": 2,
+    "sourceHash": "00a80e8537643d3d429f0f3798bae851f21708dba38752385e66545d01cafeaf",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            98
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "sp_exhausted_time",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 100,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 3,
+            "max_level": 0,
+            "need_disable": true
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "8": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 8,
+            "loop_max_times": 0,
+            "loop_time": 0.5,
+            "reset_last_effect": true,
+            "start_trigger": false
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            162,
+            139,
+            30
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "15": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 15,
+            "immunity_type": 1,
+            "need_disable": true
+          },
+          "type": "NodeImmunitySanChange"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "22": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "swimspeed",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -25,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 22,
+            "max_level": 1,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "28": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 28
+          },
+          "type": "NodeGetTargetInfo"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            31,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "snapshot"
+          ]
+        }
+      },
+      "30": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attack_level": 1,
+            "be_hit_type": 0,
+            "can_jump_word": false,
+            "damage_cause_type": 0,
+            "damage_feature_type": 0,
+            "damage_select_arg": {
+              "hard_hit_type": 0,
+              "hard_hit_units": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "ignore_hard_hit_cd": false,
+              "is_select_entity": false
+            },
+            "death_cause": 22,
+            "death_cause_label": {
+              "ldcc_default": false,
+              "ldcc_ori_source_id": false
+            },
+            "direct_damage_ignore_field": true,
+            "dmg_src": "",
+            "effect_index": 30,
+            "element_type": 1,
+            "extra_toughness_dam_rate": 1,
+            "force_jump_word": false,
+            "formula_attack_type": 4,
+            "ignore_field": false,
+            "ignore_structure_field": false,
+            "ignore_weak_part_rate": false,
+            "invincible_tag": [],
+            "is_anesthesia": false,
+            "is_buff_damage": true,
+            "is_keyword_damage": false,
+            "is_keyword_sfx_use": false,
+            "jump_word_element_type": false,
+            "keyword": 0,
+            "keyword_event_id": 0,
+            "keyword_sfx_path": "",
+            "keyword_tag": 104,
+            "knock_back_dis": 0,
+            "need_disable": false,
+            "need_knock_back": false,
+            "pvp_damage_rate": 1,
+            "recycle_weapon": false,
+            "rm_sync_point_name": "",
+            "source_behavior": "",
+            "sub_melee_attack_type": 0,
+            "use_final_dam_add_rate": false,
+            "use_final_ignore_dam_rate": false
+          },
+          "type": "NodeAttack"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "attack_value": [
+            137,
+            "utility",
+            "data"
+          ],
+          "attacker_snapshot": [
+            28,
+            "utility",
+            "snapshot"
+          ],
+          "attacker_uid": [
+            31,
+            "utility",
+            "holder_uid"
+          ],
+          "target_uid": [
+            31,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "31": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 31
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "79": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 79,
+            "mount_params": {
+              "alpha_interval": 0.2,
+              "auto_gen_mount_uid": false,
+              "bind_name": "spine_03",
+              "bind_type": 2,
+              "common_name": "electric",
+              "decrease_alpha": true,
+              "decrease_emitter": true,
+              "del_type": 2,
+              "delay_remove": false,
+              "delay_remove_time": 3,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": true,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "body",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/task/contaminate_water/mild_contaminate_body.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 200,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 5,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": 1
+            },
+            "need_disable": true,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "reset": true,
+            "restart": false,
+            "skin_event_name": "",
+            "skin_switch": false,
+            "uid_with_caster": true
+          },
+          "type": "NodeCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "98": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": true,
+            "cd": 0,
+            "effect_index": 98,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 110338190933647360,
+                "params": {
+                  "buff_id": 455401090,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "exist": false,
+                  "mapping_buff": true,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::455401090"
+                  ],
+                  "role": 0
+                },
+                "type": "buff_checker"
+              },
+              {
+                "checker_sid": 110338192007389180,
+                "params": {
+                  "in_state": true,
+                  "state": 13,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_state_change::13"
+                  ],
+                  "role": 0
+                },
+                "type": "state_checker"
+              },
+              {
+                "checker_sid": 110338193081131000,
+                "params": {
+                  "buff_id": 455401080,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "exist": false,
+                  "mapping_buff": true,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::455401080"
+                  ],
+                  "role": 0
+                },
+                "type": "buff_checker"
+              },
+              {
+                "checker_sid": 110338194154872830,
+                "params": {
+                  "buff_id": 462000999,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "exist": false,
+                  "mapping_buff": true,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::462000999"
+                  ],
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            79,
+            123,
+            22,
+            3,
+            15,
+            112,
+            161,
+            8
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "112": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "dynamic_pollution_value",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 25,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 112,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "115": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 115
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [
+            134
+          ],
+          "True": [
+            133
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            118,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "116": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "hp",
+            "effect_index": 116,
+            "percent": 2.62
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            119,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "118": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 118,
+            "operation": 0
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data1": [
+            116,
+            "utility",
+            "data"
+          ],
+          "data2": [
+            120,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "119": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 119
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "120": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "max_hp",
+            "effect_index": 120,
+            "percent": 0.88
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            121,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "121": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 121
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "123": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "swimdivespeed",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -25,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 123,
+            "max_level": 1,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "133": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "damage",
+            "effect_index": 133,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            116,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "134": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "damage",
+            "effect_index": 134,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            120,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "137": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "damage",
+            "effect_index": 137,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "139": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 139
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [
+            155
+          ],
+          "True": [
+            115
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            167,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "155": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "damage",
+            "effect_index": 155,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            169,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "156": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 156
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "157": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "max_hp",
+            "effect_index": 157,
+            "percent": 1
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            156,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "161": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "t",
+            "effect_index": 161,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 0
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "162": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "t",
+            "effect_index": 162,
+            "need_disable": false,
+            "operation": 0,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBChangeFloatData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 0.5
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "163": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 163,
+            "value": 0
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "164": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 164,
+            "value": 0.5
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "166": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "t",
+            "effect_index": 166,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "167": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 167,
+            "operation": 2
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 0
+        },
+        "in_data_pin": {
+          "data1": [
+            166,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "168": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 168,
+            "value": 0
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "169": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 169,
+            "operation": 1
+          },
+          "type": "NodeBBFloatCalculation"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data1": [
+            157,
+            "utility",
+            "data"
+          ],
+          "data2": [
+            171,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "170": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "t",
+            "effect_index": 170,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "171": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 171,
+            "operation": 3
+          },
+          "type": "NodeBBFloatCalculation"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 120
+        },
+        "in_data_pin": {
+          "data1": [
+            170,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "172": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 172,
+            "value": 120
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {
+        "22": [
+          [
+            [
+              "effect_params",
+              "params",
+              "change_attr",
+              0,
+              "value"
+            ],
+            1
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_455401000_1",
+      "preload_res_list": [
+        "effect/task/contaminate_water/mild_contaminate_body.pse"
+      ],
+      "source_info": [
+        "buff",
+        455401000,
+        1
+      ],
+      "tid": 15398
+    }
+  ]
+}

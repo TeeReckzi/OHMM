@@ -1,0 +1,594 @@
+{
+  "_meta": {
+    "sourceFile": "06098_d11adcb1.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06098_d11adcb1.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:55.078Z",
+    "recordCount": 22,
+    "sourceHash": "c7f370fbaba17c70510733f2eb63efbdc1d80a9d886c3288f67d718ed5f48b57",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "data": [
+        {
+          "attrs": {
+            "RuntimeAttrBasis": {
+              "cls_type": "RuntimeAttrBasis",
+              "data_source": 2,
+              "ep_type": 0,
+              "global_name": "s7",
+              "parent_global_name": "",
+              "prefab_instance_id": "",
+              "season_config": {}
+            },
+            "RuntimeAttrIndicatorUnit": {
+              "buff_list": [
+                800000302
+              ],
+              "can_revive": false,
+              "cls_type": "RuntimeAttrIndicatorUnit",
+              "revive_gap": 10,
+              "use_private_unit": false
+            },
+            "RuntimeAttrNodeBase": {
+              "cls_type": "RuntimeAttrNodeBase",
+              "indicator_entity_type": "",
+              "local_trans": [
+                -5564,
+                48.3561,
+                -2281,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              "name": "s7",
+              "node_uuid": "6a0c0b6c91e5809f5c45909c",
+              "world_trans": [
+                -5564,
+                48.3561,
+                -2281,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            },
+            "RuntimeAttrNormalVisual": {
+              "add_to_detour": false,
+              "aoi_radius": 0,
+              "can_mod_pos_y": false,
+              "cls_type": "RuntimeAttrNormalVisual",
+              "enable_hit_box": false,
+              "enable_static_collision": true,
+              "enable_vertical_occluder": true,
+              "init_model_path": "character/boss/lighthouse/foundation/lighthouse_foundation.prefab",
+              "init_pse_offset": [
+                0,
+                0,
+                0
+              ],
+              "init_sfx_path": "",
+              "init_socket_sfx_name": "",
+              "init_socket_sfx_path": "",
+              "is_proxy": false,
+              "lock_hp": false,
+              "mirror_retain_visual_uuid": "",
+              "retain_visual_time": 0,
+              "static_collision_group": [
+                16
+              ],
+              "static_collision_mask": [],
+              "static_hit_box": false
+            }
+          },
+          "cls_type": "EPEntityProto",
+          "parent": ""
+        }
+      ],
+      "meta": {}
+    },
+    {},
+    {},
+    {},
+    {
+      "Type": "BasicConfigNode",
+      "auto_adjust_unit_property": false,
+      "can_revive_when_die": false,
+      "changed_model_scale": 1,
+      "die_drop_configs": "",
+      "die_not_cost_durability": false,
+      "disable_hear_params": false,
+      "disable_small_map_ui": false,
+      "dun_member": 4,
+      "dun_no": 6014006,
+      "dun_subtype": 0,
+      "dun_type": "pve",
+      "enable_monster_area_level": false,
+      "exit_dungeon_radius": -1,
+      "exit_dungeon_radius_countdown": 0,
+      "hide_btn_exit": false,
+      "is_consume_item_revive": false,
+      "is_display_death_ui": false,
+      "is_forbidden_litter_in_dungeon": false,
+      "is_migrate_leave": false,
+      "is_persist_dungeon": false,
+      "is_reset_dun_in_wipe": false,
+      "is_show_toast_ui": false,
+      "item_revive_num": 0,
+      "medium_stronghold_no": 0,
+      "modify_npc_level": -1,
+      "modify_npc_strength": -1,
+      "need_remove_hold_hand_tags": [],
+      "need_remove_item_no_list": [],
+      "no_fail_on_die": false,
+      "no_leave_effect": false,
+      "node_type": "trigger",
+      "public_event_destroy_delay_time": 0,
+      "public_event_duration": 0,
+      "public_event_radius": 300,
+      "remain_weather": false,
+      "restart_on_lose_connect": false,
+      "scense_file": "scene/scene_openworld/scene_openworld.scn",
+      "use_prefab": false
+    },
+    {
+      "0": [
+        [
+          -5336,
+          48,
+          -2534,
+          0
+        ]
+      ]
+    },
+    {},
+    {},
+    {},
+    {
+      "s10,OutputNormal": [
+        [
+          "s9",
+          "InputStart"
+        ]
+      ],
+      "s2,OutputStageCreate": [
+        [
+          "s6",
+          "InputStart"
+        ],
+        [
+          "s7",
+          "InputStart"
+        ],
+        [
+          "s10",
+          "InputStart"
+        ]
+      ]
+    },
+    {
+      "s1": {
+        "Type": "TriggerStartEvent",
+        "node_type": "trigger"
+      },
+      "s10": {
+        "Time": 0,
+        "Type": "TriggerNormalTimer",
+        "log_enable": false,
+        "max_count": 0,
+        "nid": "s10",
+        "node_type": "trigger"
+      },
+      "s2": {
+        "Type": "TriggerStageCreate",
+        "node_type": "trigger"
+      },
+      "s5": {
+        "Type": "BirthPointNode",
+        "camp_no": 0,
+        "is_init_birth_point": true,
+        "is_rebirth_point": false,
+        "nid": "s5",
+        "node_type": "trigger",
+        "pos4": [
+          -5336,
+          48,
+          -2534,
+          0
+        ]
+      },
+      "s6": {
+        "Type": "TriggerWeatherChange",
+        "nid": "s6",
+        "node_type": "trigger",
+        "transition_time": 0,
+        "weather_type": 7
+      },
+      "s7": {
+        "Type": "NewTriggerNakedEditorPlatformEntity",
+        "go_ep_edit": null,
+        "monster_group_id": "",
+        "nid": "s7",
+        "node_type": "trigger"
+      },
+      "s9": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_boss",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_body.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_scale",
+          "unit_prototype",
+          "ai_file",
+          "unit_alias",
+          "use_alias",
+          "combat_unit_no",
+          "head_bar_rule_list",
+          "name",
+          "unit_name",
+          "can_mod_pos_y"
+        ],
+        "combat_prototype_no": "911533",
+        "combat_unit_no": "91153308001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          71.3848,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          31,
+          2
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_body.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灾厄之塔·深渊_$S@TIDS$_5n2v|0"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s9",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          -5559.0498,
+          53.86,
+          -2282.8701
+        ],
+        "prefab_id": "base|5101010206",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灾厄之塔·深渊_$S@TIDS$_5n2v|0"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Monster",
+        "unit_id": "dungeon_6014006_s9",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灾厄之塔·深渊_$S@TIDS$_5n2v|1"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "rune_dead_seq_receive_dict": {},
+      "rune_dead_seq_send_dict": {}
+    },
+    {},
+    {},
+    {
+      "left_top": [
+        -8192,
+        8192
+      ],
+      "min_zone_radius": 50,
+      "right_bottom": [
+        8192,
+        -8192
+      ],
+      "space_life_type": "once",
+      "zone_tree": 1,
+      "zones": {
+        "1": {
+          "fixed_bound": true,
+          "left_top": [
+            -8192,
+            8192
+          ],
+          "right_bottom": [
+            8192,
+            -8192
+          ]
+        }
+      }
+    },
+    {
+      "dungeon_6014006_s9": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [],
+        "ai_file": "bt_lighthouse_boss",
+        "anim_graph_path": "character/boss/lighthouse/anim_graph/lighthouse_body.animgraph",
+        "animation_path": "",
+        "aoi_radius": 300,
+        "aoi_radius2": 300,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": false,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id",
+          "model_scale",
+          "unit_prototype",
+          "ai_file",
+          "unit_alias",
+          "use_alias",
+          "combat_unit_no",
+          "head_bar_rule_list",
+          "name",
+          "unit_name",
+          "can_mod_pos_y"
+        ],
+        "combat_prototype_no": "911533",
+        "combat_unit_no": "91153308001",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "",
+        "drop_show_id": "1000001",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          71.3848,
+          0
+        ],
+        "forced_move_resistance": 4,
+        "head_bar_rule_list": [
+          31,
+          2
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 10,
+        "model_path": "character/boss/lighthouse/lighthouse_body.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "灾厄之塔·深渊_$S@TIDS$_5n2v|2"
+          ]
+        },
+        "need_perceptron": true,
+        "nid": "s9",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": true,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          -5559.0498,
+          53.86,
+          -2282.8701
+        ],
+        "prefab_id": "base|5101010206",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "1000002",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###灾厄之塔·深渊_$S@TIDS$_5n2v|1"
+          ]
+        },
+        "unit_camp_template_no": "201",
+        "unit_entity_type": "Monster",
+        "unit_id": "dungeon_6014006_s9",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "灾厄之塔·深渊_$S@TIDS$_5n2v|3"
+          ]
+        },
+        "unit_prototype": 3,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": "",
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      }
+    },
+    {}
+  ]
+}

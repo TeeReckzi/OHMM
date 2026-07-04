@@ -1,0 +1,88 @@
+{
+  "_meta": {
+    "sourceFile": "00871_1dc191df.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00871_1dc191df.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.703Z",
+    "recordCount": 2,
+    "sourceHash": "93ca2018df379246dd4cf24f0fa8c1378532cbd0bdc44cb5b48ddb481508cf67",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "13": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "combat_unit_no": "24063502003",
+            "duration": 30,
+            "effect_index": 13,
+            "logic_tree_name": "wuran",
+            "need_disable": false,
+            "summon_key": "",
+            "summon_use_skill_config": false,
+            "trap_type": 0
+          },
+          "type": "NodeCreateTrap"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            21,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "20": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 20
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            13
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "21": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 21
+          },
+          "type": "NodeGetCasterPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 20,
+      "name": "behavior_hszm_fog_xianjin",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "hszm",
+        "fog",
+        ""
+      ],
+      "tid": 1223
+    }
+  ]
+}

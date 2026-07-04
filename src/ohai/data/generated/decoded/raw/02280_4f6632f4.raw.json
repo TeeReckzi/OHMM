@@ -1,0 +1,385 @@
+{
+  "_meta": {
+    "sourceFile": "02280_4f6632f4.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02280_4f6632f4.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:44.866Z",
+    "recordCount": 2,
+    "sourceHash": "e5041425c15bb71f9358be04008d0fac9e088dd491cf3e02d89ba3be335b2f7c",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "155": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "box_data": {
+              "atk_center_type": 1,
+              "atk_lose_color_tags": [],
+              "attach_socket_name": "Socket_attack_box",
+              "attack_box_type": 1,
+              "attack_group": {
+                "label_avatar_type": {
+                  "label_avatar": true,
+                  "label_summon": true
+                },
+                "label_camp": {
+                  "label_camp_rule": 0,
+                  "label_enemy": false,
+                  "label_enemy_only_editor0": true,
+                  "label_enemy_only_editor1": false,
+                  "label_friend": false,
+                  "label_friend_only_editor0": true,
+                  "label_friend_only_editor1": false,
+                  "label_neutral": false,
+                  "label_neutral_only_editor0": true,
+                  "label_neutral_only_editor1": false,
+                  "label_self": false
+                }
+              },
+              "be_hit_sfx_no": "",
+              "be_hit_sfx_rand_angle": 0,
+              "central_angle": 180,
+              "detection_duration": 0.15,
+              "disregard_block_normal": false,
+              "disregard_building": false,
+              "disregard_collection": false,
+              "disregard_environment": false,
+              "disregard_shield": false,
+              "disregard_terrain": false,
+              "enable_cost_durability": true,
+              "env_col_box_size": [
+                1,
+                1,
+                1
+              ],
+              "env_col_start_off1": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_off2": [
+                0,
+                0,
+                0
+              ],
+              "env_col_start_type": 0,
+              "env_collision_shape": 2,
+              "env_collision_type": 1,
+              "group_id": 1,
+              "group_id_behavior_range": false,
+              "hit_impulse": 250,
+              "hit_intensity": 8,
+              "hit_sound_event": "",
+              "hitslomo_duration": 0,
+              "hitslomo_play_rate": 0,
+              "inter_angle": 15,
+              "mute_entity_hit_sound": false,
+              "mute_env_hit_sound": false,
+              "mute_hit_sound": false,
+              "query_type": 1,
+              "scanning_scope": [
+                0,
+                0,
+                0
+              ],
+              "sector_radius": 1.5,
+              "sector_thickness": 1,
+              "self_hitslomo_duration": 0.1,
+              "self_hitslomo_play_rate": 0.1,
+              "sweep_direction": 1,
+              "sweep_pos_off": [
+                0,
+                -0.2,
+                0.3
+              ],
+              "sweep_rot_off": [
+                0,
+                -90,
+                0
+              ],
+              "use_hitslomo": true
+            },
+            "effect_index": 155,
+            "match_id": "",
+            "reset_on_behavior_stop": true
+          },
+          "type": "NodePlayerCreateDiffSweepAtkBox"
+        },
+        "event_action": {
+          "hit": [
+            161
+          ],
+          "process": [
+            158
+          ],
+          "process_building": [
+            157
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "hit": [
+            "hit_list"
+          ],
+          "process": [
+            "hit_info"
+          ],
+          "process_building": [
+            "hit_building_info_lst"
+          ]
+        }
+      },
+      "156": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 156
+          },
+          "type": "NodeGetTargetInfo"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            160,
+            "utility",
+            "attacker_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "snapshot"
+          ]
+        }
+      },
+      "157": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "building_data": {
+              "attached_building_extra_damage_factor": 1,
+              "damage_value": 0,
+              "element_type": 0,
+              "ignore_camp": false,
+              "is_formula": false,
+              "is_from_player": false,
+              "is_value": false,
+              "skill_rate": 1,
+              "structure_attack_rate": 0,
+              "structure_attack_trans_factor": 0,
+              "weapon_deepen_rate": 0
+            },
+            "effect_index": 157,
+            "force_self_damage": false,
+            "need_disable": false,
+            "self_damage_ratio": 1,
+            "use_input_damage": false
+          },
+          "type": "NodeBuildingListDamage"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "building_hit_list": [
+            155,
+            "process_building",
+            "hit_building_info_lst"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "158": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "attack_level": 1,
+            "be_hit_type": 0,
+            "can_jump_word": true,
+            "damage_cause_type": 0,
+            "damage_feature_type": 0,
+            "damage_select_arg": {
+              "hard_hit_type": "strike_melee_1",
+              "hard_hit_units": [
+                1
+              ],
+              "ignore_hard_hit_cd": true,
+              "is_select_entity": true
+            },
+            "death_cause": 0,
+            "death_cause_label": {
+              "ldcc_default": false,
+              "ldcc_ori_source_id": false
+            },
+            "direct_damage_ignore_field": true,
+            "dmg_src": "",
+            "effect_index": 158,
+            "element_type": 0,
+            "extra_toughness_dam_rate": 1,
+            "force_jump_word": false,
+            "formula_attack_type": 1,
+            "ignore_field": false,
+            "ignore_structure_field": false,
+            "ignore_weak_part_rate": false,
+            "invincible_tag": [],
+            "is_anesthesia": false,
+            "is_buff_damage": false,
+            "is_keyword_damage": false,
+            "is_keyword_sfx_use": false,
+            "jump_word_element_type": false,
+            "keyword": 0,
+            "keyword_event_id": 0,
+            "keyword_sfx_path": "",
+            "keyword_tag": 151,
+            "knock_back_dis": 0,
+            "need_disable": false,
+            "need_knock_back": false,
+            "pvp_damage_rate": 1,
+            "recycle_weapon": false,
+            "rm_sync_point_name": "",
+            "source_behavior": "",
+            "sub_melee_attack_type": 1,
+            "use_final_dam_add_rate": true,
+            "use_final_ignore_dam_rate": true
+          },
+          "type": "NodeAttack"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "attack_value": [
+            159,
+            "utility",
+            "output_value"
+          ],
+          "attacker_snapshot": [
+            156,
+            "utility",
+            "snapshot"
+          ],
+          "attacker_uid": [
+            160,
+            "utility",
+            "attacker_uid"
+          ],
+          "hit_info": [
+            155,
+            "process",
+            "hit_info"
+          ],
+          "target_uid": [
+            160,
+            "utility",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "159": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_info": [
+              {
+                "attribute": "attack",
+                "percent": 100,
+                "value_base": 0,
+                "value_source": "hp",
+                "value_type": 4
+              }
+            ],
+            "base_value": 0,
+            "effect_index": 159,
+            "melee_rate_no": "atk_01",
+            "skill_rate": 1,
+            "skill_rate_type": "melee_index_rate"
+          },
+          "type": "NodeFormulaCalcNode"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_value"
+          ]
+        }
+      },
+      "160": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 160
+          },
+          "type": "NodeBreakHitInfo"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "hit_info": [
+            155,
+            "process",
+            "hit_info"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "attacker_uid",
+            "target_uid",
+            "target_pos",
+            "target_dir",
+            "delay_time",
+            "bone_name"
+          ]
+        }
+      },
+      "161": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 161,
+            "need_disable": false,
+            "range": 7.5,
+            "sub_id": 206
+          },
+          "type": "NodeTriggerAISound"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            162,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "162": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 162
+          },
+          "type": "NodeGetCasterPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 155,
+      "name": "behavior_player_melee_tachi_attack_dashland_attack_air",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "melee_tachi_attack",
+        ""
+      ],
+      "tid": 9847
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "_meta": {
+    "sourceFile": "06690_e7061109.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06690_e7061109.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:56.385Z",
+    "recordCount": 2,
+    "sourceHash": "6592661ad873290f9be13b595707594a3407af7977d7237ab0823da53f031097",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "270": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 270,
+            "loop_time": 0.7,
+            "start_trigger": true,
+            "total_time": 3
+          },
+          "type": "NodeLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            273
+          ],
+          "time_out": []
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": [],
+          "time_out": []
+        }
+      },
+      "271": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 271
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            270
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "272": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 272
+          },
+          "type": "NodeGetCasterPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "273": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "camera_noise_args": {
+              "ads_track_name": "",
+              "amp": 2,
+              "max_limit": 100,
+              "min_limit": 0,
+              "speed": 2,
+              "template_no": 1,
+              "tps_track_name": "camtrack_boom_oildrum"
+            },
+            "effect_index": 273,
+            "need_disable": false
+          },
+          "type": "NodeCameraNoise"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            272,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 271,
+      "name": "behavior_ancientones_plane_lv1_straight2_s4_1to2_zhenping",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "ancientones_plane",
+        "lv1_straight2_s4_1to2",
+        ""
+      ],
+      "tid": 16358
+    }
+  ]
+}

@@ -1,0 +1,1723 @@
+{
+  "_meta": {
+    "sourceFile": "02523_57a1aa4f.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02523_57a1aa4f.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:45.379Z",
+    "recordCount": 21,
+    "sourceHash": "0f3fe23d87d0e34bf23cb186c5ea05b7452b09903d78be5e205dd281a8586c5c",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_anchor_worldstone01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "102",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "WORLD_STONE",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrGameplayWorldStone": {
+          "cls_type": "RuntimeAttrGameplayWorldStone",
+          "init_state": "001",
+          "reward_no": "",
+          "submit_item_no_list": [],
+          "unlock_state_infos": [
+            {
+              "state_name": "001",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "002",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01_to_02.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_02.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "003",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_02_to_03.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_03.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020024,
+            810020059,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "001",
+          "enable_exec_state": true,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "001",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": false,
+              "tag": "001",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "002",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "003",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            "001",
+            "002",
+            "003"
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -0.5322,
+            -0.1391,
+            2.5269,
+            0,
+            -0.7499,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "worldstone01",
+          "node_uuid": "6931343a03ca0a42dc19ed23",
+          "world_trans": [
+            -5879.8936,
+            71.0193,
+            7298.877,
+            0,
+            -0.7499,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": false,
+          "enable_vertical_occluder": false,
+          "init_model_path": "environment/dynamic_objects/world_stone/world_stone_03.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                1,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                20,
+                6,
+                20
+              ],
+              "shape": "box",
+              "tag": "001",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            },
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                4,
+                5
+              ],
+              "shape": "box",
+              "tag": "002",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "first_meet_world_stone",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "001",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "002",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_s1015",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureMemeContainer": {
+          "cls_type": "RuntimeAttrFeatureMemeContainer",
+          "meme_config": [
+            {
+              "containment_item_no": "",
+              "probability": 1,
+              "cls_type": "RuntimeMemeContainerItem"
+            }
+          ],
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "probability": 1,
+          "refresh_time": 0
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020015
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            40.8145,
+            51.8956,
+            49.2583,
+            0,
+            2.3432,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1015",
+          "node_uuid": "6931343103ca0a42dc19ebba",
+          "world_trans": [
+            -5834.8906,
+            91.9182,
+            7343.3179,
+            0,
+            2.3432,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/containment_unit_a/containment_unit_a.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_s1016",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureMemeContainer": {
+          "cls_type": "RuntimeAttrFeatureMemeContainer",
+          "meme_config": [
+            {
+              "containment_item_no": "",
+              "probability": 1,
+              "cls_type": "RuntimeMemeContainerItem"
+            }
+          ],
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "probability": 1,
+          "refresh_time": 0
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020015
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            49.189,
+            51.8956,
+            41.0991,
+            0,
+            2.3432,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1016",
+          "node_uuid": "6931343103ca0a42dc19eb9f",
+          "world_trans": [
+            -5826.5161,
+            91.9182,
+            7335.1587,
+            0,
+            2.3432,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/containment_unit_a/containment_unit_a.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_s1017",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureMemeContainer": {
+          "cls_type": "RuntimeAttrFeatureMemeContainer",
+          "meme_config": [
+            {
+              "containment_item_no": "",
+              "probability": 1,
+              "cls_type": "RuntimeMemeContainerItem"
+            }
+          ],
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "probability": 1,
+          "refresh_time": 0
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020015
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            32.124,
+            51.8956,
+            57.7261,
+            0,
+            2.3432,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1017",
+          "node_uuid": "6931343103ca0a42dc19eba6",
+          "world_trans": [
+            -5843.5811,
+            91.9182,
+            7351.7856,
+            0,
+            2.3432,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/containment_unit_a/containment_unit_a.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_s1019",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureMemeContainer": {
+          "cls_type": "RuntimeAttrFeatureMemeContainer",
+          "meme_config": [
+            {
+              "containment_item_no": "",
+              "probability": 1,
+              "cls_type": "RuntimeMemeContainerItem"
+            }
+          ],
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "probability": 1,
+          "refresh_time": 0
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020015
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            23.9707,
+            36.2606,
+            -27.4727,
+            0,
+            -2.117,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1019",
+          "node_uuid": "6931343103ca0a42dc19ebbf",
+          "world_trans": [
+            -5851.7344,
+            76.2832,
+            7266.5869,
+            0,
+            -2.117,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/containment_unit_a/containment_unit_a.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_s1022",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureMemeContainer": {
+          "cls_type": "RuntimeAttrFeatureMemeContainer",
+          "meme_config": [
+            {
+              "containment_item_no": "",
+              "probability": 1,
+              "cls_type": "RuntimeMemeContainerItem"
+            }
+          ],
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "probability": 1,
+          "refresh_time": 0
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020015
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -32.5674,
+            36.4576,
+            50.1724,
+            0,
+            0.8121,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1022",
+          "node_uuid": "6931343103ca0a42dc19ec16",
+          "world_trans": [
+            -5908.2725,
+            76.4802,
+            7344.2319,
+            0,
+            0.8121,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/containment_unit_a/containment_unit_a.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_s1023",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureMemeContainer": {
+          "cls_type": "RuntimeAttrFeatureMemeContainer",
+          "meme_config": [
+            {
+              "containment_item_no": "",
+              "probability": 1,
+              "cls_type": "RuntimeMemeContainerItem"
+            }
+          ],
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "probability": 1,
+          "refresh_time": 0
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020015
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -41.3555,
+            36.4576,
+            41.8403,
+            0,
+            0.8121,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1023",
+          "node_uuid": "6931343103ca0a42dc19eb94",
+          "world_trans": [
+            -5917.0605,
+            76.4802,
+            7335.8999,
+            0,
+            0.8121,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/containment_unit_a/containment_unit_a.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_s1024",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrFeatureMemeContainer": {
+          "cls_type": "RuntimeAttrFeatureMemeContainer",
+          "meme_config": [
+            {
+              "containment_item_no": "",
+              "probability": 1,
+              "cls_type": "RuntimeMemeContainerItem"
+            }
+          ],
+          "offset": [
+            0,
+            2,
+            0
+          ],
+          "probability": 1,
+          "refresh_time": 0
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020015
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -50.1919,
+            36.4576,
+            33.4648,
+            0,
+            0.8121,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "s1024",
+          "node_uuid": "6931343103ca0a42dc19eb98",
+          "world_trans": [
+            -5925.897,
+            76.4802,
+            7327.5244,
+            0,
+            0.8121,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/containment_unit_a/containment_unit_a.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node156",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -2.275,
+            -0.0002
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0.5068,
+            -0.6247,
+            -60.7168,
+            0,
+            0.8052,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node156",
+          "node_uuid": "6931343103ca0a42dc19ec12",
+          "world_trans": [
+            -5905.1851,
+            87.876,
+            7232.0498,
+            0,
+            0.8052,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node185",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            -0.0005,
+            -4.8783,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -32.2109,
+            -4.5186,
+            26.1787,
+            0.0404,
+            2.2068,
+            0.0548,
+            1,
+            1,
+            1
+          ],
+          "name": "node185",
+          "node_uuid": "6931343103ca0a42dc19ec69",
+          "world_trans": [
+            -5937.9028,
+            83.9821,
+            7318.9453,
+            0.0404,
+            2.2068,
+            0.0548,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node216",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            -0.001,
+            -5.5884,
+            -0.0503
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            145.1406,
+            11.8358,
+            -25.4883,
+            -0.0044,
+            -1.5258,
+            -0.0985,
+            1,
+            1,
+            1
+          ],
+          "name": "node216",
+          "node_uuid": "6931343103ca0a42dc19eba1",
+          "world_trans": [
+            -5760.5513,
+            100.3365,
+            7267.2783,
+            -0.0044,
+            -1.5258,
+            -0.0985,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node234",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            -0.0005,
+            -8.209,
+            -0.0488
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -49.1514,
+            -7.3576,
+            -32.6758,
+            0,
+            -3.0535,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node234",
+          "node_uuid": "6931343103ca0a42dc19ec5b",
+          "world_trans": [
+            -5954.8433,
+            81.1431,
+            7260.0908,
+            0,
+            -3.0535,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node235",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            -0.0005,
+            -10.233,
+            -0.0483
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -57.7261,
+            -7.2645,
+            -27.7524,
+            0,
+            -1.2537,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node235",
+          "node_uuid": "6931343103ca0a42dc19eb93",
+          "world_trans": [
+            -5963.418,
+            81.2362,
+            7265.0142,
+            0,
+            -1.2537,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node236",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            -0.0004,
+            -3.9446,
+            -0.0508
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -23.627,
+            -11.3938,
+            -54.6411,
+            -0.1294,
+            -0.8353,
+            -0.1443,
+            1,
+            1,
+            1
+          ],
+          "name": "node236",
+          "node_uuid": "6931343103ca0a42dc19ebf3",
+          "world_trans": [
+            -5929.3188,
+            77.1069,
+            7238.1255,
+            -0.1294,
+            -0.8353,
+            -0.1443,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node237",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0044,
+            -3.8476,
+            -0.042
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -18.2842,
+            -4.993,
+            -55.7588,
+            0,
+            -1.7531,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node237",
+          "node_uuid": "6931343103ca0a42dc19ec24",
+          "world_trans": [
+            -5923.9761,
+            83.5077,
+            7237.0078,
+            0,
+            -1.7531,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node206",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -2.9437,
+            0.1167
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "industry_ladder_04",
+          "top_control_point_pos": [
+            0,
+            3,
+            0.1169
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -12.9951,
+            14.3,
+            -21.1143,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node206",
+          "node_uuid": "6931343103ca0a42dc19ebef",
+          "world_trans": [
+            -5784.1514,
+            99.4058,
+            7385.8867,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node22",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -1.8,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            6.3564,
+            4.6888,
+            -13.585,
+            0,
+            -0.0164,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node22",
+          "node_uuid": "6931343103ca0a42dc19eb96",
+          "world_trans": [
+            -5764.7998,
+            89.7946,
+            7393.416,
+            0,
+            -0.0164,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node30",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0,
+            -4.6506,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            2.7373,
+            1.3929,
+            17.167,
+            0,
+            3.1239,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node30",
+          "node_uuid": "6931343103ca0a42dc19ec84",
+          "world_trans": [
+            -5768.4189,
+            86.4987,
+            7424.168,
+            0,
+            3.1239,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node48",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0264,
+            -2.5618,
+            0.0747
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder_metal",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            -0.049
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            8.9668,
+            9.1427,
+            -15.5303,
+            -0.0008,
+            1.5525,
+            0.0436,
+            1,
+            1,
+            1
+          ],
+          "name": "node48",
+          "node_uuid": "6931343103ca0a42dc19ec02",
+          "world_trans": [
+            -5762.1895,
+            94.2485,
+            7391.4707,
+            -0.0008,
+            1.5525,
+            0.0436,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node57",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            -0.0002,
+            -3.2516,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -19.0015,
+            21.2859,
+            -57.0444,
+            0,
+            -1.1838,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node57",
+          "node_uuid": "6931343103ca0a42dc19ec1f",
+          "world_trans": [
+            -5790.1577,
+            106.3917,
+            7349.9565,
+            0,
+            -1.1838,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_007C050B-0A30000D-FFFFFFFF-0CE8201D_default_node58",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t9_e",
+          "season_config": {}
+        },
+        "RuntimeAttrLadder": {
+          "bottom_control_point_pos": [
+            0.0005,
+            -3.4081,
+            0
+          ],
+          "cls_type": "RuntimeAttrLadder",
+          "table_ladder_key": "ladder1",
+          "top_control_point_pos": [
+            0,
+            1.8,
+            0
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -7.0811,
+            21.4664,
+            -45.4521,
+            0,
+            -1.6194,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node58",
+          "node_uuid": "6931343103ca0a42dc19ec01",
+          "world_trans": [
+            -5778.2373,
+            106.5722,
+            7361.5488,
+            0,
+            -1.6194,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

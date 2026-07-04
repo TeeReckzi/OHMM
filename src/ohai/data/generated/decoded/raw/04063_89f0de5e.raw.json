@@ -1,0 +1,254 @@
+{
+  "_meta": {
+    "sourceFile": "04063_89f0de5e.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04063_89f0de5e.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.088Z",
+    "recordCount": 2,
+    "sourceHash": "1cf088020e7fa6891f14980d7eb02a0292c2551a6711331d05f7047efd207d4f",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "137": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 137,
+            "need_disable": false,
+            "shield_data": {
+              "anim_graph_path": "effect/modeleffect/sphere_shield04/anim_graph/sphere_shield04.animgraph",
+              "attach_name": "socket_gun_r",
+              "check_legal": false,
+              "create_anim_time": 0.1,
+              "custom_shield_list": [
+                {
+                  "shield_box_name": "dome_box",
+                  "shield_material": "pmg/default.pmg::skill_shield",
+                  "shield_offset": [
+                    -70,
+                    0,
+                    0
+                  ],
+                  "shield_radius": 3.8,
+                  "shield_segmentation": 20
+                }
+              ],
+              "drag_upon": false,
+              "enable_blast": false,
+              "enable_collision": false,
+              "enable_fall": false,
+              "finish_anim_time": 2,
+              "gravity": 0,
+              "hide_take_back_pref": false,
+              "hp_fixed": 3000,
+              "hp_relative_attr_name": "",
+              "hp_relative_attr_value": 0,
+              "hp_relative_master_attr_name": "",
+              "hp_relative_master_attr_value": 0,
+              "ignore_be_hit_event": false,
+              "is_ignore_scale_adjust_by_model": true,
+              "is_trigger_auto_fire": false,
+              "model_path": "effect/modeleffect/sphere_shield04/sphere_shield04.gim",
+              "need_bind_rotate": true,
+              "offset_pos": [
+                0,
+                0,
+                0
+              ],
+              "output_crush_id": false,
+              "output_crush_scale": [
+                1,
+                1,
+                1
+              ],
+              "output_init_scale": [
+                1,
+                1,
+                1
+              ],
+              "prevent_group": {
+                "label_attack_type": {
+                  "label_bomb": true,
+                  "label_default": true,
+                  "label_gun": true,
+                  "label_melee": false
+                },
+                "label_camp": {
+                  "label_enemy": true,
+                  "label_friend": false,
+                  "label_neutral": true,
+                  "label_self": false,
+                  "label_single_aisle": false
+                }
+              },
+              "relate_scope_state": false,
+              "shield_hp_type": 4,
+              "shield_name": "shield_qiongdingshouwei_ssr",
+              "shield_scale": [
+                1,
+                1,
+                1
+              ],
+              "shield_trigger_file_name": "",
+              "shield_type": 1,
+              "skill_strength_extra_rate": 5,
+              "special_crush_time": 999,
+              "summon_use_skill_config": false,
+              "velocity": 0
+            }
+          },
+          "type": "NodeAddShield"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "input_shield_val": [
+            154,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "145": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 145,
+            "need_disable": false,
+            "shield_name": "shield_qiongdingshouwei_ssr"
+          },
+          "type": "NodeActiveShield"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "147": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 147
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            137,
+            145
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "149": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "max_hp",
+            "effect_index": 149,
+            "percent": 100
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            150,
+            "utility",
+            "owner_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "150": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 150,
+            "owner_type": 1
+          },
+          "type": "NodeGetSummonOwnerID"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "owner_uid"
+          ]
+        }
+      },
+      "152": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "attr_name": "skill_power",
+            "effect_index": 152,
+            "percent": 10000
+          },
+          "type": "NodeGetTargetFloatAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            150,
+            "utility",
+            "owner_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "154": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 154,
+            "operation": 1
+          },
+          "type": "NodeBBFloatCalculation"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data1": [
+            149,
+            "utility",
+            "data"
+          ],
+          "data2": [
+            152,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 147,
+      "name": "behavior_player_me58_skill01_throw_data",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "me58_skill01",
+        ""
+      ],
+      "tid": 8157
+    }
+  ]
+}

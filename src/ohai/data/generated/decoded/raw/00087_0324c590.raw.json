@@ -1,0 +1,404 @@
+{
+  "_meta": {
+    "sourceFile": "00087_0324c590.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00087_0324c590.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.410Z",
+    "recordCount": 6,
+    "sourceHash": "d78b3b80bd794c52e2fc408e12778a1917de25227d4bccc77e39c6effb18d5f1",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attenuation_value": -1,
+      "base_damage_length": -1,
+      "bomb_gap_num": -1,
+      "bomb_gap_time": [
+        -1
+      ],
+      "bomb_hit_delay_time": 0,
+      "bomb_speed": -1,
+      "build_damage": 0,
+      "build_structure_attack": "",
+      "collect_efficiency": "",
+      "create_npc_wait_time": -1,
+      "cur_level": "1",
+      "damage_length_per_exp": -1,
+      "delay_time": -1,
+      "exp_range": [
+        0,
+        1
+      ],
+      "icon": "icon_cbt2_hedanche_item.png",
+      "launch_cd_time": -1,
+      "layer_radius": -1,
+      "level_desc": "0",
+      "model_path": "character/player/backpack_sco/sco_me03/nyssa_jellyfish.gim",
+      "nuclear_boom_config_list": [],
+      "nuclear_boom_sfx_path": "",
+      "nuclear_fall_config_list": [],
+      "nuclear_fall_sfx_path": "",
+      "overlap_radius": -1,
+      "prepare_launch_time": -1,
+      "protection_radius": -1,
+      "state_desc": {
+        "lan_translate": [
+          "幼体流星_$S@TIDS$_ckg|0"
+        ]
+      },
+      "transport_door_config_list": [],
+      "transport_door_duration": 1,
+      "transport_door_sfx_path": ""
+    },
+    {
+      "attenuation_value": 0,
+      "base_damage_length": 150,
+      "bomb_gap_num": 9,
+      "bomb_gap_time": [
+        0.5,
+        1.5
+      ],
+      "bomb_hit_delay_time": 1,
+      "bomb_speed": 15,
+      "build_damage": 550,
+      "build_structure_attack": {
+        "lan_translate": [
+          "一倍_$S@TIDS$_ckg|0"
+        ]
+      },
+      "collect_efficiency": {
+        "lan_translate": [
+          "木头材质_$S@TIDS$_ckg|0"
+        ]
+      },
+      "create_npc_wait_time": -1,
+      "cur_level": "2",
+      "damage_length_per_exp": 0,
+      "delay_time": 5,
+      "exp_range": [
+        1,
+        200
+      ],
+      "icon": "icon_cbt2_hedanche_item.png",
+      "launch_cd_time": 0,
+      "layer_configs": [
+        {
+          "damage": 550,
+          "delay": 0,
+          "is_protection": false,
+          "radius": 50
+        },
+        {
+          "damage": 550,
+          "delay": 5,
+          "is_protection": false,
+          "radius": 100
+        },
+        {
+          "damage": 550,
+          "delay": 10,
+          "is_protection": false,
+          "radius": 150
+        }
+      ],
+      "layer_radius": 50,
+      "level_desc": "2",
+      "model_path": "character/player/npc/nyssa_lily/nyssa_lily.gim",
+      "nuclear_boom_config_list": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "nuclear_boom_sfx_path": "effect/boss/kxm0417/kxm_degeneracy_bomb_explode.pse",
+      "nuclear_fall_config_list": [
+        0,
+        0,
+        0,
+        5
+      ],
+      "nuclear_fall_sfx_path": "effect/boss/kxm0417/kxm_signal_missile.pse",
+      "overlap_radius": 2,
+      "prepare_launch_time": 300,
+      "protection_radius": -1,
+      "state_desc": {
+        "lan_translate": [
+          "可发射 · 能量越高伤害越高_$S@TIDS$_ckg|0"
+        ]
+      },
+      "transport_door_config_list": [
+        0,
+        -120,
+        0,
+        1
+      ],
+      "transport_door_duration": 13,
+      "transport_door_sfx_path": "effect/boss/kxm0417/oblivion_skyhole.pse"
+    },
+    {
+      "attenuation_value": 0,
+      "base_damage_length": 150,
+      "bomb_gap_num": 12,
+      "bomb_gap_time": [
+        0.5,
+        1.5
+      ],
+      "bomb_hit_delay_time": 1,
+      "bomb_speed": 15,
+      "build_damage": 550,
+      "build_structure_attack": {
+        "lan_translate": [
+          "一倍_$S@TIDS$_ckg|1"
+        ]
+      },
+      "collect_efficiency": {
+        "lan_translate": [
+          "木头材质_$S@TIDS$_ckg|1"
+        ]
+      },
+      "create_npc_wait_time": -1,
+      "cur_level": "3",
+      "damage_length_per_exp": 0,
+      "delay_time": 5,
+      "exp_range": [
+        200,
+        300
+      ],
+      "icon": "icon_cbt2_hedanche_item.png",
+      "launch_cd_time": 0,
+      "layer_configs": [
+        {
+          "damage": 550,
+          "delay": 0,
+          "is_protection": false,
+          "radius": 50
+        },
+        {
+          "damage": 550,
+          "delay": 5,
+          "is_protection": false,
+          "radius": 100
+        },
+        {
+          "damage": 550,
+          "delay": 10,
+          "is_protection": false,
+          "radius": 150
+        }
+      ],
+      "layer_radius": 50,
+      "level_desc": "3",
+      "model_path": "character/player/npc/nyssa_lily/nyssa_lily.gim",
+      "nuclear_boom_config_list": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "nuclear_boom_sfx_path": "effect/boss/kxm0417/kxm_degeneracy_bomb_explode.pse",
+      "nuclear_fall_config_list": [
+        0,
+        0,
+        0,
+        5
+      ],
+      "nuclear_fall_sfx_path": "effect/boss/kxm0417/kxm_signal_missile.pse",
+      "overlap_radius": 5,
+      "prepare_launch_time": 300,
+      "protection_radius": -1,
+      "state_desc": {
+        "lan_translate": [
+          "可发射 · 能量越高伤害越高_$S@TIDS$_ckg|1"
+        ]
+      },
+      "transport_door_config_list": [
+        0,
+        -120,
+        0,
+        1
+      ],
+      "transport_door_duration": 13,
+      "transport_door_sfx_path": "effect/boss/kxm0417/oblivion_skyhole.pse"
+    },
+    {
+      "attenuation_value": 0,
+      "base_damage_length": 150,
+      "bomb_gap_num": 12,
+      "bomb_gap_time": [
+        0.5,
+        1.5
+      ],
+      "bomb_hit_delay_time": 1,
+      "bomb_speed": 15,
+      "build_damage": 1500,
+      "build_structure_attack": {
+        "lan_translate": [
+          "一倍_$S@TIDS$_ckg|2"
+        ]
+      },
+      "collect_efficiency": {
+        "lan_translate": [
+          "石头材质_$S@TIDS$_ckg|0"
+        ]
+      },
+      "create_npc_wait_time": -1,
+      "cur_level": "4",
+      "damage_length_per_exp": 0,
+      "delay_time": 6,
+      "exp_range": [
+        300,
+        450
+      ],
+      "icon": "icon_cbt2_hedanche_item.png",
+      "launch_cd_time": 0,
+      "layer_configs": [
+        {
+          "damage": 1500,
+          "delay": 0,
+          "is_protection": false,
+          "radius": 50
+        },
+        {
+          "damage": 1500,
+          "delay": 6,
+          "is_protection": false,
+          "radius": 100
+        },
+        {
+          "damage": 1500,
+          "delay": 12,
+          "is_protection": false,
+          "radius": 150
+        }
+      ],
+      "layer_radius": 50,
+      "level_desc": "4",
+      "model_path": "character/player/npc/nyssa_lily/nyssa_lily.gim",
+      "nuclear_boom_config_list": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "nuclear_boom_sfx_path": "effect/boss/kxm0417/kxm_degeneracy_bomb_explode.pse",
+      "nuclear_fall_config_list": [
+        0,
+        0,
+        0,
+        5
+      ],
+      "nuclear_fall_sfx_path": "effect/boss/kxm0417/kxm_signal_missile.pse",
+      "overlap_radius": 5,
+      "prepare_launch_time": 300,
+      "protection_radius": -1,
+      "state_desc": {
+        "lan_translate": [
+          "可发射 · 能量越高伤害越高_$S@TIDS$_ckg|2"
+        ]
+      },
+      "transport_door_config_list": [
+        0,
+        -120,
+        0,
+        1
+      ],
+      "transport_door_duration": 13,
+      "transport_door_sfx_path": "effect/boss/kxm0417/oblivion_skyhole.pse"
+    },
+    {
+      "attenuation_value": 0,
+      "base_damage_length": 150,
+      "bomb_gap_num": 12,
+      "bomb_gap_time": [
+        0.5,
+        1.5
+      ],
+      "bomb_hit_delay_time": 1,
+      "bomb_speed": 15,
+      "build_damage": 4200,
+      "build_structure_attack": {
+        "lan_translate": [
+          "一倍_$S@TIDS$_ckg|3"
+        ]
+      },
+      "collect_efficiency": {
+        "lan_translate": [
+          "金属材质_$S@TIDS$_ckg|0"
+        ]
+      },
+      "create_npc_wait_time": -1,
+      "cur_level": "5",
+      "damage_length_per_exp": -1,
+      "delay_time": 8,
+      "exp_range": [
+        450,
+        -1
+      ],
+      "icon": "icon_cbt2_hedanche_item.png",
+      "launch_cd_time": 0,
+      "layer_configs": [
+        {
+          "damage": 4200,
+          "delay": 0,
+          "is_protection": false,
+          "radius": 50
+        },
+        {
+          "damage": 4200,
+          "delay": 8,
+          "is_protection": false,
+          "radius": 100
+        },
+        {
+          "damage": 4200,
+          "delay": 16,
+          "is_protection": false,
+          "radius": 150
+        }
+      ],
+      "layer_radius": 50,
+      "level_desc": "5",
+      "model_path": "character/player/npc/nyssa_lily/nyssa_lily.gim",
+      "nuclear_boom_config_list": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "nuclear_boom_sfx_path": "effect/boss/kxm0417/kxm_degeneracy_bomb_explode.pse",
+      "nuclear_fall_config_list": [
+        0,
+        0,
+        0,
+        5
+      ],
+      "nuclear_fall_sfx_path": "effect/boss/kxm0417/kxm_signal_missile.pse",
+      "overlap_radius": 5,
+      "prepare_launch_time": 300,
+      "protection_radius": -1,
+      "state_desc": {
+        "lan_translate": [
+          "可发射 · 能量越高伤害越高_$S@TIDS$_ckg|3"
+        ]
+      },
+      "transport_door_config_list": [
+        0,
+        -120,
+        0,
+        1
+      ],
+      "transport_door_duration": 13,
+      "transport_door_sfx_path": "effect/boss/kxm0417/oblivion_skyhole.pse"
+    },
+    {
+      "exp_list": [
+        0,
+        1,
+        200,
+        300,
+        450,
+        -1
+      ]
+    }
+  ]
+}

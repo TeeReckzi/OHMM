@@ -1,0 +1,152 @@
+{
+  "_meta": {
+    "sourceFile": "00590_145b08fd.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00590_145b08fd.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.318Z",
+    "recordCount": 2,
+    "sourceHash": "bf02748c32acf98447746a6a9cdba010c8724e91a29be8461b1ab67ee06c34f0",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            5,
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 2,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 2251799880232961,
+                "params": {
+                  "dynamic_event": [],
+                  "enter_state": true,
+                  "event_names": [
+                    "on_state_change::5"
+                  ],
+                  "role": 0,
+                  "state": 5,
+                  "effect_index": 1
+                },
+                "type": "enter_state_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            3
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 5300320214,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 3,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            4,
+            "utility",
+            "owner_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "4": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 4,
+            "owner_type": 0
+          },
+          "type": "NodeGetSummonOwnerID"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "owner_uid"
+          ]
+        }
+      },
+      "5": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 5,
+            "need_disable": false
+          },
+          "type": "NodeBanEntityCulled"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_5300320213_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        5300320213,
+        1
+      ],
+      "tid": 16247
+    }
+  ]
+}

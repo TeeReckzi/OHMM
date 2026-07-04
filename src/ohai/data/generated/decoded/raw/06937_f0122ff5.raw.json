@@ -1,0 +1,227 @@
+{
+  "_meta": {
+    "sourceFile": "06937_f0122ff5.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06937_f0122ff5.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.043Z",
+    "recordCount": 2,
+    "sourceHash": "8eb6c1f81187e1331291c0bf58642602fa77b78c75b1cd73a3d19881ce1d9ce1",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "4": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 4
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            18,
+            5,
+            6,
+            7
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "5": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 5,
+            "enter_share_group": true,
+            "need_disable": false,
+            "private_share": false,
+            "reset": false,
+            "share_enable": false,
+            "share_group_name": "lighthouse_kuxiu",
+            "share_rate": 50
+          },
+          "type": "NodeShareDamageGroup"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_uid": [
+            9,
+            "utility",
+            "holder_uid"
+          ],
+          "target_uid": [
+            9,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "6": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "destroy_sfx_path": "",
+            "effect_id": 0,
+            "effect_index": 6,
+            "end_sfx_path": "",
+            "is_bending": true,
+            "max_dis": 0,
+            "need_disable": false,
+            "remove_without_target_pos": true,
+            "sfx_path": "effect/monster/common/monsterlink_protect.pse",
+            "socket_name": "fx_lightning_glow",
+            "tar_type": 4,
+            "target_socket": "fx_lightning_glow",
+            "use_target_id": false,
+            "visual_selection": -1
+          },
+          "type": "NodeCreateGuideBendingSfx"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            8,
+            "utility",
+            "output_ai_friend_target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "7": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 7,
+            "enter_share_group": true,
+            "need_disable": false,
+            "private_share": false,
+            "reset": false,
+            "share_enable": true,
+            "share_group_name": "lighthouse_kuxiu",
+            "share_rate": 100
+          },
+          "type": "NodeShareDamageGroup"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "caster_uid": [
+            9,
+            "utility",
+            "holder_uid"
+          ],
+          "target_uid": [
+            8,
+            "utility",
+            "output_ai_friend_target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "8": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 8
+          },
+          "type": "NodeGetGuideTargetUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_ai_target_uid",
+            "output_ai_friend_target_uid"
+          ]
+        }
+      },
+      "9": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 9
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "17": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 60143010,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 17,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            8,
+            "utility",
+            "output_ai_friend_target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "18": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 18,
+            "loop_max_times": 0,
+            "loop_time": 1.6,
+            "reset_last_effect": true,
+            "start_trigger": true
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            17
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 4,
+      "name": "buff_60143006_1",
+      "preload_res_list": [
+        "effect/monster/common/monsterlink_protect.pse"
+      ],
+      "source_info": [
+        "buff",
+        60143006,
+        1
+      ],
+      "tid": 13691
+    }
+  ]
+}

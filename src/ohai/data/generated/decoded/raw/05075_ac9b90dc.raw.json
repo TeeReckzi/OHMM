@@ -1,0 +1,451 @@
+{
+  "_meta": {
+    "sourceFile": "05075_ac9b90dc.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05075_ac9b90dc.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:52.814Z",
+    "recordCount": 2,
+    "sourceHash": "f6cb121ce430d4333888867a59fbaa3b62f7bd2c78715d4c0cd3e54092059245",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "24": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 24,
+            "info": {
+              "aim_target_type": 0,
+              "attack_duration": 0.5,
+              "attack_type": 0,
+              "axis_angle_off": 0,
+              "be_hit_hp_base": "hp",
+              "be_hit_hp_type": 1,
+              "be_hit_value": 1,
+              "bullet_speed": 20,
+              "can_be_hit": false,
+              "collision_box_size": [
+                1,
+                1,
+                1
+              ],
+              "collision_box_size_be_hit_check": [
+                1,
+                1,
+                1
+              ],
+              "collision_sfx_path": "",
+              "collision_sfx_scale": 3,
+              "collision_shape": 2,
+              "collision_shape_be_hit_check": -1,
+              "collision_type": 1,
+              "create_fly_3d_ui": false,
+              "custom_max_fly_time": 10,
+              "disregard_shield": false,
+              "enable_water_penetration": false,
+              "explose_on_destroy": false,
+              "fixed_fly_height": 3,
+              "flx_sfx_update_rotation": true,
+              "fly_effect_water": "",
+              "fly_model_path": "",
+              "fly_model_scale": 1,
+              "fly_sfx_bind_socket": "",
+              "fly_sfx_path": "",
+              "fly_sfx_scale": 4,
+              "fly_visual_type": 0,
+              "flyer_count": 1,
+              "gravity": -9.8,
+              "higher_normal_threshold_sfx_path": "",
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "is_aim_socket": false,
+              "is_random_speed": false,
+              "max_dis": 160,
+              "max_rate": 2,
+              "max_time_rate": 1,
+              "max_underwater_fly_distance": 0,
+              "min_dis": 0.5,
+              "min_rate": 1,
+              "min_time_rate": 1,
+              "missed_sfx_path": "",
+              "need_ignore_friend": false,
+              "normal_threshold": 5,
+              "offset_list": [
+                [
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  1,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  1
+                ]
+              ],
+              "only_sight_block": false,
+              "random_round": 3,
+              "range_angle_off": 0,
+              "range_radius": 30,
+              "range_src_offset": [
+                0,
+                0,
+                0
+              ],
+              "range_target_num": 1,
+              "scatter_angle": 10,
+              "sfx_budget_rule_id": 500,
+              "socket_fail_use_table": false,
+              "socket_name": "fx_lightning_glow",
+              "socket_offset": [
+                0,
+                0,
+                8
+              ],
+              "sound_fly_end": "",
+              "sound_fly_start": "",
+              "sound_fly_water_rtpc": "",
+              "spread_type": 2,
+              "stop_time": 0,
+              "target_height": 1,
+              "target_socket_name": "",
+              "throw_aim_bone_type": 0,
+              "throw_bullet_type": 1,
+              "throw_fly_time": 8,
+              "throw_target_offset": [
+                10,
+                10,
+                10
+              ],
+              "throw_target_type": 0,
+              "underwater_fall_effect": "",
+              "underwater_fall_gravity_scale": 2,
+              "warn_sfx_delay_time": 0,
+              "warn_sfx_life_time": 8,
+              "warn_sfx_path": "effect/skill/skill_scope/skill_scope_red.pse",
+              "warn_sfx_scale": 4,
+              "warn_sfx_show_time_base_on_hit": true,
+              "water_damage_decay_rate": 0,
+              "water_drag_coefficient": 0,
+              "water_enter_effect": "",
+              "water_gravity_scale": 1,
+              "water_speed_decay_rate": 0,
+              "will_use_normal": false
+            }
+          },
+          "type": "NodeMonsterThrow"
+        },
+        "event_action": {
+          "init": [],
+          "trigger": [
+            26
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "init": [
+            "fly_pid"
+          ],
+          "trigger": [
+            "trigger_type",
+            "trigger_pos",
+            "ground_pos",
+            "hit_normal",
+            "bone_name",
+            "hit_dir",
+            "target_uid",
+            "water_damage_factor",
+            "water_enter_pos"
+          ]
+        }
+      },
+      "26": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "combat_unit_no": "",
+            "duration": 31,
+            "effect_index": 26,
+            "logic_tree_name": "tornado",
+            "need_disable": false,
+            "summon_key": "",
+            "summon_use_skill_config": false,
+            "trap_type": 0
+          },
+          "type": "NodeCreateTrap"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            24,
+            "trigger",
+            "trigger_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "34": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "combat_unit_no": "",
+            "duration": 31,
+            "effect_index": 34,
+            "logic_tree_name": "tornado",
+            "need_disable": false,
+            "summon_key": "1",
+            "summon_use_skill_config": false,
+            "trap_type": 0
+          },
+          "type": "NodeCreateTrap"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "normal": [
+            35,
+            "trigger",
+            "hit_normal"
+          ],
+          "pos": [
+            35,
+            "trigger",
+            "ground_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "35": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 35,
+            "info": {
+              "aim_target_type": 0,
+              "attack_duration": 0.5,
+              "attack_type": 0,
+              "axis_angle_off": 0,
+              "be_hit_hp_base": "hp",
+              "be_hit_hp_type": 1,
+              "be_hit_value": 1,
+              "bullet_speed": 20,
+              "can_be_hit": false,
+              "collision_box_size": [
+                1,
+                1,
+                1
+              ],
+              "collision_box_size_be_hit_check": [
+                1,
+                1,
+                1
+              ],
+              "collision_sfx_path": "",
+              "collision_sfx_scale": 3,
+              "collision_shape": 2,
+              "collision_shape_be_hit_check": -1,
+              "collision_type": 1,
+              "create_fly_3d_ui": false,
+              "custom_max_fly_time": 10,
+              "disregard_shield": false,
+              "enable_water_penetration": false,
+              "explose_on_destroy": false,
+              "fixed_fly_height": 3,
+              "flx_sfx_update_rotation": true,
+              "fly_effect_water": "",
+              "fly_model_path": "",
+              "fly_model_scale": 1,
+              "fly_sfx_bind_socket": "",
+              "fly_sfx_path": "",
+              "fly_sfx_scale": 4,
+              "fly_visual_type": 0,
+              "flyer_count": 2,
+              "gravity": -9.8,
+              "higher_normal_threshold_sfx_path": "",
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "is_aim_socket": false,
+              "is_random_speed": false,
+              "max_dis": 160,
+              "max_rate": 2,
+              "max_time_rate": 1,
+              "max_underwater_fly_distance": 0,
+              "min_dis": 0.5,
+              "min_rate": 1,
+              "min_time_rate": 1,
+              "missed_sfx_path": "",
+              "need_ignore_friend": false,
+              "normal_threshold": 5,
+              "offset_list": [
+                [
+                  -1,
+                  -1,
+                  -1
+                ],
+                [
+                  1,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  -1,
+                  -1
+                ],
+                [
+                  -1,
+                  -1,
+                  1
+                ]
+              ],
+              "only_sight_block": false,
+              "random_round": 30,
+              "range_angle_off": 0,
+              "range_radius": 30,
+              "range_src_offset": [
+                0,
+                0,
+                0
+              ],
+              "range_target_num": 1,
+              "scatter_angle": 10,
+              "sfx_budget_rule_id": 500,
+              "socket_fail_use_table": false,
+              "socket_name": "fx_lightning_glow",
+              "socket_offset": [
+                0,
+                0,
+                5
+              ],
+              "sound_fly_end": "",
+              "sound_fly_start": "",
+              "sound_fly_water_rtpc": "",
+              "spread_type": 2,
+              "stop_time": 0,
+              "target_height": 1,
+              "target_socket_name": "",
+              "throw_aim_bone_type": 0,
+              "throw_bullet_type": 1,
+              "throw_fly_time": 8,
+              "throw_target_offset": [
+                10,
+                10,
+                10
+              ],
+              "throw_target_type": 0,
+              "underwater_fall_effect": "",
+              "underwater_fall_gravity_scale": 2,
+              "warn_sfx_delay_time": 0,
+              "warn_sfx_life_time": 8,
+              "warn_sfx_path": "effect/skill/skill_scope/skill_scope_red.pse",
+              "warn_sfx_scale": 4,
+              "warn_sfx_show_time_base_on_hit": true,
+              "water_damage_decay_rate": 0,
+              "water_drag_coefficient": 0,
+              "water_enter_effect": "",
+              "water_gravity_scale": 1,
+              "water_speed_decay_rate": 0,
+              "will_use_normal": false
+            }
+          },
+          "type": "NodeMonsterThrow"
+        },
+        "event_action": {
+          "init": [],
+          "trigger": [
+            34
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "init": [
+            "fly_pid"
+          ],
+          "trigger": [
+            "trigger_type",
+            "trigger_pos",
+            "ground_pos",
+            "hit_normal",
+            "bone_name",
+            "hit_dir",
+            "target_uid",
+            "water_damage_factor",
+            "water_enter_pos"
+          ]
+        }
+      },
+      "36": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 36
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            24,
+            35
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 36,
+      "name": "behavior_lighthouse_dcs_lighthouse_foghorn_skill1_fog_sy_fog",
+      "preload_res_list": [
+        "effect/skill/skill_scope/skill_scope_red.pse",
+        "effect/skill/skill_scope/skill_scope_red.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "lighthouse_dcs",
+        "lighthouse_foghorn_skill1_fog_sy",
+        ""
+      ],
+      "tid": 16115
+    }
+  ]
+}

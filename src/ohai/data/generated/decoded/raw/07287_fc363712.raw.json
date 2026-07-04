@@ -1,0 +1,192 @@
+{
+  "_meta": {
+    "sourceFile": "07287_fc363712.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07287_fc363712.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.881Z",
+    "recordCount": 2,
+    "sourceHash": "b6d6d2904d118d797e56a3bff4d1aad17164c6b8d0b78b719596e6f033d4ffc1",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "16": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 16
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            32
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "31": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 31,
+            "logic_tree_name": "",
+            "need_disable": false,
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": "bt_lighthouse_youti_summon_left",
+              "anim_graph_path": "",
+              "aoi_radius": -1,
+              "aoi_radius2": 0,
+              "can_mod_pos_y": false,
+              "combat_prototype_no": "911564",
+              "combat_unit_no": "23011707003",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": true,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": true,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": 53,
+              "dynamic_mask_level": 0,
+              "enable_damage_sync": false,
+              "head_bar_rule_list": [
+                30,
+                31
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "model_path": "character/empty/kongmoxing_lighthouse.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 0,
+              "pulse_detect_effects": [],
+              "removed_no_drop": false,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|5101010213",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": false,
+              "unit_camp_template_no": "208",
+              "unit_entity_type": "Boss",
+              "unit_hold_item": "",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "unit_physics_control_data": {
+              "bounding_offset": [
+                0,
+                0,
+                0
+              ],
+              "bullet_num": 0,
+              "item_no": 0,
+              "override_physics_control": false,
+              "physical_control_enabled": false,
+              "physical_summer_control": false,
+              "physical_unit_no": "",
+              "physics_control_type": 1,
+              "show_interact_btn": true
+            }
+          },
+          "type": "NodeSummon"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            32,
+            "process",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "32": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 32,
+            "socket_name": "skill"
+          },
+          "type": "NodeGetTargetSocketPos"
+        },
+        "event_action": {
+          "process": [
+            31
+          ]
+        },
+        "in_data_pin": {
+          "target_id": [
+            33,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "process": [
+            "output_pos"
+          ]
+        }
+      },
+      "33": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 33
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 16,
+      "name": "behavior_light_flower_lighthouse_flower_rotation_left_summon",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "light_flower",
+        "lighthouse_flower_rotation_left",
+        ""
+      ],
+      "tid": 16242
+    }
+  ]
+}

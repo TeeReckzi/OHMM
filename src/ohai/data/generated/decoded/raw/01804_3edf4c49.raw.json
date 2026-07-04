@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "sourceFile": "01804_3edf4c49.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\01804_3edf4c49.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:43.640Z",
+    "recordCount": 2,
+    "sourceHash": "227b89fa79e3560c8f8db44ccfc73fab84070054123421ad0833b6272fc4cfb9",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "35": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 35
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            38
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "38": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "condition": [
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [],
+                  "event_type": 2,
+                  "negate": false,
+                  "effect_index": 37
+                },
+                "type": "soc_event_active_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 38
+          },
+          "type": "NodeCheckerTask"
+        },
+        "event_action": {
+          "False": [
+            40
+          ],
+          "True": [
+            39
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "39": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "check",
+            "effect_index": 39,
+            "need_disable": false,
+            "persist": false,
+            "scope": 1
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 1
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "40": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "check",
+            "effect_index": 40,
+            "need_disable": false,
+            "persist": false,
+            "scope": 1
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data": 0
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "41": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 41,
+            "value": 0
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "42": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 42,
+            "value": 1
+          },
+          "type": "NodeConstInt"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 35,
+      "name": "behavior_player_item_uppower_set_check",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "item_uppower_set",
+        ""
+      ],
+      "tid": 16043
+    }
+  ]
+}

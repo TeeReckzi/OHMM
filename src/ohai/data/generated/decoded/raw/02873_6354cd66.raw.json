@@ -1,0 +1,147 @@
+{
+  "_meta": {
+    "sourceFile": "02873_6354cd66.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02873_6354cd66.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:46.393Z",
+    "recordCount": 2,
+    "sourceHash": "94c5b04e191b9c55b71739f82fdff7726478cc4f08d321639f94980923ba94ef",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "16": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 16
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            18
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "17": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 17
+          },
+          "type": "NodeForeachIdList"
+        },
+        "event_action": {
+          "process": [
+            20
+          ]
+        },
+        "in_data_pin": {
+          "id_list": [
+            18,
+            "process",
+            "entity_list"
+          ]
+        },
+        "out_data_pin": {
+          "process": [
+            "target_uid"
+          ]
+        }
+      },
+      "18": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "aoi_height": 50,
+            "aoi_range": 300,
+            "camp_type": 8,
+            "condition": [
+              {
+                "params": {
+                  "dynamic_event": [],
+                  "event_names": [],
+                  "target_negate": false,
+                  "target_type": [
+                    0
+                  ]
+                },
+                "type": "unit_prototype_checker"
+              }
+            ],
+            "condition_op": 1,
+            "effect_index": 18,
+            "max_entity_num": 8,
+            "order_by_distance": false,
+            "persist": false,
+            "save_to_bb": false,
+            "save_to_bb_key": "",
+            "scope": 0
+          },
+          "type": "NodeGetAoiEntity"
+        },
+        "event_action": {
+          "process": [
+            17
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": [
+            "entity_list",
+            "entity_count"
+          ]
+        }
+      },
+      "20": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 60143028,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 20,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            17,
+            "process",
+            "target_uid"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 16,
+      "name": "behavior_lighthouse_body_lighthouse_coreskill2_line_perform_line",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "lighthouse_body",
+        "lighthouse_coreskill2_line_perform",
+        ""
+      ],
+      "tid": 16320
+    }
+  ]
+}

@@ -1,0 +1,5049 @@
+{
+  "_meta": {
+    "sourceFile": "05188_b0acf14d.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05188_b0acf14d.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:53.254Z",
+    "recordCount": 21,
+    "sourceHash": "c806de9c8dd1883e773d8c71537fa6bccd60c036f160cd770b2c59e646b4acb3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_anchor_worldstone01",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {}
+        },
+        "RuntimeAttrBattleBase": {
+          "camp": "102",
+          "cls_type": "RuntimeAttrBattleBase",
+          "combat_proto_no": "100100100"
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "WORLD_STONE",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrGameplayWorldStone": {
+          "cls_type": "RuntimeAttrGameplayWorldStone",
+          "init_state": "001",
+          "reward_no": "",
+          "submit_item_no_list": [],
+          "unlock_state_infos": [
+            {
+              "state_name": "001",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_01.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "002",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_01_to_02.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_02.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "state_name": "003",
+              "unlock_anim": "environment/dynamic_objects/world_stone/animation/step_02_to_03.animation",
+              "unlock_loop_anim": "environment/dynamic_objects/world_stone/animation/step_03.animation",
+              "unlock_pse": "",
+              "unlock_pse_offset": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            810020024,
+            810020059,
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "001",
+          "enable_exec_state": true,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "001",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": false,
+              "tag": "001",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "002",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 5,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            },
+            {
+              "enable_culling": true,
+              "exec_state": "003",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "investigate1_poi",
+              "interact_condition": [],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "UIWorldStonePrompt",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 4,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "002",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            "001",
+            "002",
+            "003"
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            17.7896,
+            114.9792,
+            72.9524,
+            0,
+            -2.7104,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "worldstone01",
+          "node_uuid": "69312b9f03ca0a42dc19612f",
+          "world_trans": [
+            5583.8682,
+            374.3383,
+            3341.6956,
+            0,
+            -2.7104,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": true,
+          "enable_static_collision": false,
+          "enable_vertical_occluder": false,
+          "init_model_path": "environment/dynamic_objects/world_stone/world_stone_02.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                20,
+                4,
+                20
+              ],
+              "shape": "box",
+              "tag": "001",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            },
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                2,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                4,
+                5
+              ],
+              "shape": "box",
+              "tag": "002",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "first_meet_world_stone",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "001",
+              "cls_type": "RuntimeTriggerItemEnter"
+            },
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "002",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_acoustic_bake_0",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -9.9781,
+            126.0442,
+            -16.9316,
+            0,
+            0.6456,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_0",
+          "node_uuid": "69312b8a03ca0a42dc195dd2",
+          "world_trans": [
+            5575.7671,
+            387.7002,
+            3253.5129,
+            0,
+            -0.2271,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                109.8804,
+                121.4892,
+                159.2038
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_a_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_acoustic_bake_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -166.0096,
+            83.406,
+            -38.7766,
+            0,
+            0.588,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_1",
+          "node_uuid": "69312b8a03ca0a42dc195daa",
+          "world_trans": [
+            5492.2061,
+            345.062,
+            3119.9443,
+            0,
+            -0.2847,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                25.0198,
+                17.4123,
+                51.859
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_a_1",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_acoustic_bake_2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -111.4296,
+            75.3963,
+            -84.5639,
+            0,
+            -0.3218,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_2",
+          "node_uuid": "69312b8a03ca0a42dc195d70",
+          "world_trans": [
+            5562.3647,
+            337.0523,
+            3132.3235,
+            0,
+            -1.1945,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                28.6485,
+                31.2743,
+                62.9918
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_a_2",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_acoustic_bake_3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -140.2666,
+            83.5052,
+            -105.3768,
+            0,
+            0.588,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_3",
+          "node_uuid": "69312b8a03ca0a42dc195d34",
+          "world_trans": [
+            5559.7725,
+            345.1612,
+            3096.8547,
+            0,
+            -0.2847,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                25.1867,
+                17.2139,
+                51.1277
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_a_3",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_prefab_entry",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "PREFAB_DETOUR_ENTRY",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            78.1567,
+            6.7069,
+            142.5154,
+            0,
+            0.8727,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "prefab_entry",
+          "node_uuid": "69312b8a03ca0a42dc195d23",
+          "world_trans": [
+            5510.2759,
+            268.3629,
+            3423.5188,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_node231",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node231",
+          "node_uuid": "69312b8a03ca0a42dc195d19",
+          "world_trans": [
+            5444.0024,
+            284.4095,
+            3460.0488,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrTrainTrail": {
+          "cls_type": "RuntimeAttrTrainTrail",
+          "vertices": [
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.3604,
+                0.41,
+                -1.2002
+              ],
+              "is_stop": true,
+              "pos": [
+                -3.5845,
+                3.4205,
+                -4.6743
+              ],
+              "speed": 0,
+              "start_tangent": [
+                1.1602,
+                -0.36,
+                1.0303
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                1.1396,
+                0,
+                4.3896
+              ],
+              "is_stop": false,
+              "pos": [
+                -9.1743,
+                2.8905,
+                -22.644
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -1.04,
+                0,
+                -4.0107
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.1494,
+                0,
+                0.5303
+              ],
+              "is_stop": false,
+              "pos": [
+                -41.5845,
+                39.0205,
+                -128.3442
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.3701,
+                0,
+                -1.3105
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.21,
+                0,
+                1.5098
+              ],
+              "is_stop": false,
+              "pos": [
+                -42.645,
+                39.0205,
+                -131.9946
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.1592,
+                0,
+                -1.0898
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.8408,
+                0,
+                -2.1299
+              ],
+              "is_stop": false,
+              "pos": [
+                -75.0942,
+                59.5505,
+                -200.2944
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.2598,
+                0,
+                3.7998
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.79,
+                0,
+                -0.0898
+              ],
+              "is_stop": false,
+              "pos": [
+                -85.4644,
+                59.5405,
+                -223.2241
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.5693,
+                0,
+                0.0293
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -79.9243,
+                59.6305,
+                -226.9644
+              ],
+              "speed": 0,
+              "start_tangent": [
+                2.1299,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.7207,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -69.4243,
+                59.5405,
+                -209.6646
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.5596,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.1299,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -35.5649,
+                38.7705,
+                -133.3647
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.4902,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.1299,
+                0,
+                -0.5098
+              ],
+              "is_stop": false,
+              "pos": [
+                -34.7446,
+                38.4305,
+                -129.7144
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.2305,
+                0,
+                0.5498
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -4.0498,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -1.2446,
+                2.9605,
+                -24.0542
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.54,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.54,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                5.5757,
+                2.9505,
+                -5.4048
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.7695,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.3604,
+                0.41,
+                -1.2002
+              ],
+              "is_stop": true,
+              "pos": [
+                -3.5845,
+                3.4205,
+                -4.6743
+              ],
+              "speed": 0,
+              "start_tangent": [
+                1.1602,
+                -0.36,
+                1.0303
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_node232",
+          "parent_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_track_01",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020024,
+            810020014
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "",
+          "enable_exec_state": false,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "",
+              "interact_condition": [
+                {
+                  "interact_text_no_satisfied": "1009",
+                  "interact_text_no_unsatisfied": "",
+                  "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                }
+              ],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 8,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "1",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            ""
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -3.6729,
+            2.6169,
+            -5.8015,
+            0,
+            -2.9694,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node232",
+          "node_uuid": "69312b8a03ca0a42dc195ded",
+          "world_trans": [
+            5440.3291,
+            287.0264,
+            3454.2476,
+            0,
+            -2.9694,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/huohoucave/telpher_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                -4.5,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                5,
+                5
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrainMove": {
+          "audio_running": "Play_obj_cablecar_lp",
+          "audio_start": "",
+          "audio_stop": "",
+          "bind_trail_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_node231",
+          "cls_type": "RuntimeAttrTrainMove",
+          "revive_stop_index": 0,
+          "run_countdown_time": 3,
+          "sockets": [
+            "seatbone_01",
+            "seatbone_02"
+          ],
+          "trail_data": null,
+          "trail_root_trans": []
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_node233",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -9.7622,
+            -2.1153,
+            -45.1047,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node233",
+          "node_uuid": "69312b8a03ca0a42dc195dae",
+          "world_trans": [
+            5536.3022,
+            357.2985,
+            3102.9419,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrTrainTrail": {
+          "cls_type": "RuntimeAttrTrainTrail",
+          "vertices": [
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5.5498,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -0.7676,
+                5.6515,
+                -8.0005
+              ],
+              "speed": 0,
+              "start_tangent": [
+                1.8604,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.2207,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                0.3027,
+                5.5615,
+                14.3091
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.3799,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -2.2998,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -18.2979,
+                34.2415,
+                66.9087
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.25,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.2803,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -16.6875,
+                34.2015,
+                70.9087
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.1602,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -2.8193,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                27.832,
+                61.5715,
+                110.3687
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.8701,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.8496,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                39.6924,
+                61.6715,
+                122.8491
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.0596,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.5107,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                39.582,
+                61.7115,
+                127.1089
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.0801,
+                0,
+                0
+              ],
+              "stop_time": 10,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -3.1299,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                33.8623,
+                62.1215,
+                128.9487
+              ],
+              "speed": 0,
+              "start_tangent": [
+                0.7998,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.2207,
+                0,
+                -0.0107
+              ],
+              "is_stop": false,
+              "pos": [
+                21.7627,
+                61.5415,
+                115.5396
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.0498,
+                0,
+                0.1396
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -290.0176,
+                105.4715,
+                110.689
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -294.2773,
+                105.3815,
+                110.689
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -564.6074,
+                163.2915,
+                -16.6714
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -567.6572,
+                163.4015,
+                -16.1714
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -3.8604,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -733.9277,
+                136.2315,
+                0.3091
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.79,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.3096,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -736.7979,
+                136.0615,
+                3.5493
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.71,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -759.0977,
+                93.1915,
+                191.8491
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.2002,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.5703,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -759.0977,
+                93.1315,
+                195.229
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.46,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -726.3672,
+                84.9315,
+                312.0288
+              ],
+              "speed": 0,
+              "start_tangent": [
+                0.8896,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.5801,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -725.1279,
+                84.8015,
+                331.6294
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -3.6299,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.6904,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -777.6074,
+                110.7315,
+                495.189
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -768.6475,
+                -10.7885,
+                729.9487
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.6299,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.7207,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -768.1172,
+                -10.7885,
+                733.3687
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.8096,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                2.3701,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -777.3877,
+                -22.4385,
+                780.0591
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.2998,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                4.2197,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -778.1475,
+                -22.3785,
+                801.2192
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -3.5303,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                1.6709,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -783.5381,
+                -22.5085,
+                801.2192
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.2793,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.0098,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -784.4678,
+                -22.4385,
+                780.0591
+              ],
+              "speed": 0,
+              "start_tangent": [
+                2.71,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -4.0801,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -773.458,
+                -11.1685,
+                733.4087
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.0605,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.3301,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -773.458,
+                -10.8985,
+                728.5493
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -783.9277,
+                111.0915,
+                495.189
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                5.6699,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -732.3779,
+                84.9815,
+                331.6294
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.6797,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.75,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -734.2773,
+                85.0315,
+                312.0288
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -766.958,
+                92.6715,
+                194.2388
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.7803,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.7598,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -766.958,
+                92.6715,
+                190.5396
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -741.1172,
+                135.7615,
+                -1.2104
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.6592,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.5098,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -737.8379,
+                135.9015,
+                -4.4409
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.0205,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -567.6572,
+                163.4015,
+                -24.5913
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -563.4277,
+                163.4015,
+                -24.5913
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -294.2773,
+                105.3815,
+                103.269
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -289.0576,
+                105.3815,
+                103.269
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -24.6475,
+                33.6715,
+                73.1187
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.3398,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.4297,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -24.6475,
+                33.6915,
+                68.5493
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.21,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                1.8301,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -7.1074,
+                5.6315,
+                14.3091
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.8604,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.1602,
+                -0.02,
+                0.0605
+              ],
+              "is_stop": false,
+              "pos": [
+                -8.4473,
+                5.6515,
+                -7.9214
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.1699,
+                0.5,
+                -1.2393
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -4.0195,
+                0,
+                -0.2695
+              ],
+              "is_stop": false,
+              "pos": [
+                -3.5479,
+                5.8215,
+                -9.8511
+              ],
+              "speed": 5,
+              "start_tangent": [
+                4.1299,
+                0,
+                0.2803
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5.5498,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -0.7676,
+                5.6515,
+                -8.0005
+              ],
+              "speed": 0,
+              "start_tangent": [
+                1.8604,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_node234",
+          "parent_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_track_02",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020024,
+            810020014
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "",
+          "enable_exec_state": false,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "",
+              "interact_condition": [
+                {
+                  "interact_text_no_satisfied": "1009",
+                  "interact_text_no_unsatisfied": "",
+                  "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                }
+              ],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 8,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "1",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            ""
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -10.3027,
+            3.2559,
+            -52.4792,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node234",
+          "node_uuid": "69312b8a03ca0a42dc195de7",
+          "world_trans": [
+            5535.7612,
+            362.6697,
+            3095.5674,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/huohoucave/telpher_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                -4.5,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                3,
+                5
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrainMove": {
+          "audio_running": "",
+          "audio_start": "",
+          "audio_stop": "",
+          "bind_trail_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_node233",
+          "cls_type": "RuntimeAttrTrainMove",
+          "revive_stop_index": 0,
+          "run_countdown_time": 3,
+          "sockets": [
+            "seatbone_01",
+            ""
+          ],
+          "trail_data": null,
+          "trail_root_trans": []
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_node235",
+          "parent_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_track_02",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "blacklist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020024,
+            810020014
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "",
+          "enable_exec_state": false,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "",
+              "interact_condition": [
+                {
+                  "interact_text_no_satisfied": "1009",
+                  "interact_text_no_unsatisfied": "",
+                  "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                }
+              ],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 8,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "1",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            ""
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            12.1387,
+            59.308,
+            70.457,
+            0,
+            -2.4252,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node235",
+          "node_uuid": "69312b8a03ca0a42dc195cef",
+          "world_trans": [
+            5558.207,
+            418.7218,
+            3218.5029,
+            0,
+            -2.4252,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/huohoucave/telpher_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                -4.5,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                3,
+                5
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrainMove": {
+          "audio_running": "",
+          "audio_start": "",
+          "audio_stop": "",
+          "bind_trail_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_default_node233",
+          "cls_type": "RuntimeAttrTrainMove",
+          "revive_stop_index": 0,
+          "run_countdown_time": 3,
+          "sockets": [
+            "seatbone_01",
+            ""
+          ],
+          "trail_data": null,
+          "trail_root_trans": []
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_acoustic_bake_0",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -9.9781,
+            126.0442,
+            -16.9316,
+            0,
+            0.6456,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_0",
+          "node_uuid": "69312b8b03ca0a42dc195e76",
+          "world_trans": [
+            5575.7671,
+            387.7002,
+            3253.5129,
+            0,
+            -0.2271,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                109.8804,
+                121.4892,
+                159.2038
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_a_0",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_acoustic_bake_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -166.0096,
+            83.406,
+            -38.7766,
+            0,
+            0.588,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_1",
+          "node_uuid": "69312b8b03ca0a42dc195e77",
+          "world_trans": [
+            5492.2061,
+            345.062,
+            3119.9443,
+            0,
+            -0.2847,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                25.0198,
+                17.4123,
+                51.859
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_a_1",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_acoustic_bake_2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -111.4296,
+            75.3963,
+            -84.5639,
+            0,
+            -0.3218,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_2",
+          "node_uuid": "69312b8b03ca0a42dc195e78",
+          "world_trans": [
+            5562.3647,
+            337.0523,
+            3132.3235,
+            0,
+            -1.1945,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                28.6485,
+                31.2743,
+                62.9918
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_a_2",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_acoustic_bake_3",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -140.2666,
+            83.5052,
+            -105.3768,
+            0,
+            0.588,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "acoustic_bake_3",
+          "node_uuid": "69312b8b03ca0a42dc195e79",
+          "world_trans": [
+            5559.7725,
+            345.1612,
+            3096.8547,
+            0,
+            -0.2847,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "Acoustics",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                25.1867,
+                17.2139,
+                51.1277
+              ],
+              "shape": "box",
+              "tag": "prefab_poi_t7_a_3",
+              "type": "trigger",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_prefab_entry",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "PREFAB_DETOUR_ENTRY",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            78.1567,
+            6.7069,
+            142.5154,
+            0,
+            0.8727,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "prefab_entry",
+          "node_uuid": "69312b8b03ca0a42dc195eba",
+          "world_trans": [
+            5510.2759,
+            268.3629,
+            3423.5188,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_node231",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node231",
+          "node_uuid": "69312b8b03ca0a42dc195f48",
+          "world_trans": [
+            5444.0024,
+            284.4095,
+            3460.0488,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrTrainTrail": {
+          "cls_type": "RuntimeAttrTrainTrail",
+          "vertices": [
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.3604,
+                0.41,
+                -1.2002
+              ],
+              "is_stop": true,
+              "pos": [
+                -3.5845,
+                3.4205,
+                -4.6743
+              ],
+              "speed": 0,
+              "start_tangent": [
+                1.1602,
+                -0.36,
+                1.0303
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                1.1396,
+                0,
+                4.3896
+              ],
+              "is_stop": false,
+              "pos": [
+                -9.1743,
+                2.8905,
+                -22.644
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -1.04,
+                0,
+                -4.0107
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.1494,
+                0,
+                0.5303
+              ],
+              "is_stop": false,
+              "pos": [
+                -41.5845,
+                39.0205,
+                -128.3442
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.3701,
+                0,
+                -1.3105
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.21,
+                0,
+                1.5098
+              ],
+              "is_stop": false,
+              "pos": [
+                -42.645,
+                39.0205,
+                -131.9946
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.1592,
+                0,
+                -1.0898
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.8408,
+                0,
+                -2.1299
+              ],
+              "is_stop": false,
+              "pos": [
+                -75.0942,
+                59.5505,
+                -200.2944
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.2598,
+                0,
+                3.7998
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.79,
+                0,
+                -0.0898
+              ],
+              "is_stop": false,
+              "pos": [
+                -85.4644,
+                59.5405,
+                -223.2241
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.5693,
+                0,
+                0.0293
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -79.9243,
+                59.6305,
+                -226.9644
+              ],
+              "speed": 0,
+              "start_tangent": [
+                2.1299,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.7207,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -69.4243,
+                59.5405,
+                -209.6646
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.5596,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.1299,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -35.5649,
+                38.7705,
+                -133.3647
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.4902,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.1299,
+                0,
+                -0.5098
+              ],
+              "is_stop": false,
+              "pos": [
+                -34.7446,
+                38.4305,
+                -129.7144
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.2305,
+                0,
+                0.5498
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -4.0498,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -1.2446,
+                2.9605,
+                -24.0542
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.54,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.54,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                5.5757,
+                2.9505,
+                -5.4048
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.7695,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.3604,
+                0.41,
+                -1.2002
+              ],
+              "is_stop": true,
+              "pos": [
+                -3.5845,
+                3.4205,
+                -4.6743
+              ],
+              "speed": 0,
+              "start_tangent": [
+                1.1602,
+                -0.36,
+                1.0303
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_node232",
+          "parent_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_track_01",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020024,
+            810020014
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "",
+          "enable_exec_state": false,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "",
+              "interact_condition": [
+                {
+                  "interact_text_no_satisfied": "1009",
+                  "interact_text_no_unsatisfied": "",
+                  "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                }
+              ],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 8,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "1",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            ""
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -3.6729,
+            2.6169,
+            -5.8015,
+            0,
+            -2.9694,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node232",
+          "node_uuid": "69312b8b03ca0a42dc195f49",
+          "world_trans": [
+            5440.3291,
+            287.0264,
+            3454.2476,
+            0,
+            -2.9694,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/huohoucave/telpher_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                -4.5,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                5,
+                5
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrainMove": {
+          "audio_running": "Play_obj_cablecar_lp",
+          "audio_start": "",
+          "audio_stop": "",
+          "bind_trail_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_node231",
+          "cls_type": "RuntimeAttrTrainMove",
+          "revive_stop_index": 0,
+          "run_countdown_time": 3,
+          "sockets": [
+            "seatbone_01",
+            "seatbone_02"
+          ],
+          "trail_data": null,
+          "trail_root_trans": []
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_node233",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -9.7622,
+            -2.1153,
+            -45.1047,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node233",
+          "node_uuid": "69312b8b03ca0a42dc195f4b",
+          "world_trans": [
+            5536.3022,
+            357.2985,
+            3102.9419,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrTrainTrail": {
+          "cls_type": "RuntimeAttrTrainTrail",
+          "vertices": [
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5.5498,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -0.7676,
+                5.6515,
+                -8.0005
+              ],
+              "speed": 0,
+              "start_tangent": [
+                1.8604,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.2207,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                0.3027,
+                5.5615,
+                14.3091
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.3799,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -2.2998,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -18.2979,
+                34.2415,
+                66.9087
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.25,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.2803,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -16.6875,
+                34.2015,
+                70.9087
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.1602,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -2.8193,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                27.832,
+                61.5715,
+                110.3687
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.8701,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.8496,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                39.6924,
+                61.6715,
+                122.8491
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.0596,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.5107,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                39.582,
+                61.7115,
+                127.1089
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.0801,
+                0,
+                0
+              ],
+              "stop_time": 10,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -3.1299,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                33.8623,
+                62.1215,
+                128.9487
+              ],
+              "speed": 0,
+              "start_tangent": [
+                0.7998,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.2207,
+                0,
+                -0.0107
+              ],
+              "is_stop": false,
+              "pos": [
+                21.7627,
+                61.5415,
+                115.5396
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.0498,
+                0,
+                0.1396
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -290.0176,
+                105.4715,
+                110.689
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -294.2773,
+                105.3815,
+                110.689
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -564.6074,
+                163.2915,
+                -16.6714
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -567.6572,
+                163.4015,
+                -16.1714
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -3.8604,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -733.9277,
+                136.2315,
+                0.3091
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.79,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.3096,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -736.7979,
+                136.0615,
+                3.5493
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.71,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -759.0977,
+                93.1915,
+                191.8491
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.2002,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.5703,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -759.0977,
+                93.1315,
+                195.229
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.46,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -726.3672,
+                84.9315,
+                312.0288
+              ],
+              "speed": 0,
+              "start_tangent": [
+                0.8896,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.5801,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -725.1279,
+                84.8015,
+                331.6294
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -3.6299,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.6904,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -777.6074,
+                110.7315,
+                495.189
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -768.6475,
+                -10.7885,
+                729.9487
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.6299,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.7207,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -768.1172,
+                -10.7885,
+                733.3687
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.8096,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                2.3701,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -777.3877,
+                -22.4385,
+                780.0591
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.2998,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                4.2197,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -778.1475,
+                -22.3785,
+                801.2192
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -3.5303,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                1.6709,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -783.5381,
+                -22.5085,
+                801.2192
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.2793,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.0098,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -784.4678,
+                -22.4385,
+                780.0591
+              ],
+              "speed": 0,
+              "start_tangent": [
+                2.71,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -4.0801,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -773.458,
+                -11.1685,
+                733.4087
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.0605,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.3301,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -773.458,
+                -10.8985,
+                728.5493
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -783.9277,
+                111.0915,
+                495.189
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                5.6699,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -732.3779,
+                84.9815,
+                331.6294
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.6797,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                0.75,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -734.2773,
+                85.0315,
+                312.0288
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -766.958,
+                92.6715,
+                194.2388
+              ],
+              "speed": 5,
+              "start_tangent": [
+                0.7803,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.7598,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -766.958,
+                92.6715,
+                190.5396
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -741.1172,
+                135.7615,
+                -1.2104
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.6592,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -1.5098,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -737.8379,
+                135.9015,
+                -4.4409
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.0205,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -567.6572,
+                163.4015,
+                -24.5913
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -563.4277,
+                163.4015,
+                -24.5913
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -294.2773,
+                105.3815,
+                103.269
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -289.0576,
+                105.3815,
+                103.269
+              ],
+              "speed": 5,
+              "start_tangent": [
+                5,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -24.6475,
+                33.6715,
+                73.1187
+              ],
+              "speed": 5,
+              "start_tangent": [
+                1.3398,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.4297,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -24.6475,
+                33.6915,
+                68.5493
+              ],
+              "speed": 5,
+              "start_tangent": [
+                2.21,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                1.8301,
+                0,
+                0
+              ],
+              "is_stop": false,
+              "pos": [
+                -7.1074,
+                5.6315,
+                14.3091
+              ],
+              "speed": 5,
+              "start_tangent": [
+                -0.8604,
+                0,
+                0
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -0.1602,
+                -0.02,
+                0.0605
+              ],
+              "is_stop": false,
+              "pos": [
+                -8.4473,
+                5.6515,
+                -7.9214
+              ],
+              "speed": 5,
+              "start_tangent": [
+                3.1699,
+                0.5,
+                -1.2393
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -4.0195,
+                0,
+                -0.2695
+              ],
+              "is_stop": false,
+              "pos": [
+                -3.5479,
+                5.8215,
+                -9.8511
+              ],
+              "speed": 5,
+              "start_tangent": [
+                4.1299,
+                0,
+                0.2803
+              ],
+              "stop_time": 0,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            },
+            {
+              "acc": 0,
+              "bezier_len": 0,
+              "end_tangent": [
+                -5.5498,
+                0,
+                0
+              ],
+              "is_stop": true,
+              "pos": [
+                -0.7676,
+                5.6515,
+                -8.0005
+              ],
+              "speed": 0,
+              "start_tangent": [
+                1.8604,
+                0,
+                0
+              ],
+              "stop_time": 5,
+              "time": 0,
+              "cls_type": "RuntimeTrainTrailVertexDefine"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_node234",
+          "parent_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_track_02",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020024,
+            810020014
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "",
+          "enable_exec_state": false,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "",
+              "interact_condition": [
+                {
+                  "interact_text_no_satisfied": "1009",
+                  "interact_text_no_unsatisfied": "",
+                  "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                }
+              ],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 8,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "1",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            ""
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -10.3027,
+            3.2559,
+            -52.4792,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node234",
+          "node_uuid": "69312b8b03ca0a42dc195f4c",
+          "world_trans": [
+            5535.7612,
+            362.6697,
+            3095.5674,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/huohoucave/telpher_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                -4.5,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                3,
+                5
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrainMove": {
+          "audio_running": "",
+          "audio_start": "",
+          "audio_stop": "",
+          "bind_trail_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_node233",
+          "cls_type": "RuntimeAttrTrainMove",
+          "revive_stop_index": 0,
+          "run_countdown_time": 3,
+          "sockets": [
+            "seatbone_01",
+            ""
+          ],
+          "trail_data": null,
+          "trail_root_trans": []
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_node235",
+          "parent_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_track_02",
+          "prefab_instance_id": "prefab_poi_t7_a_288016",
+          "season_config": {
+            "whitelist": "ne_dv"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302,
+            810020024,
+            810020014
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrInteract": {
+          "buff_list": [
+            810020024
+          ],
+          "cls_type": "RuntimeAttrInteract",
+          "cur_state": "",
+          "enable_exec_state": false,
+          "interact_configs": [
+            {
+              "enable_culling": true,
+              "exec_state": "",
+              "forbidden_interact_tips": "",
+              "interact_behavior": "",
+              "interact_condition": [
+                {
+                  "interact_text_no_satisfied": "1009",
+                  "interact_text_no_unsatisfied": "",
+                  "cls_type": "RuntimeInteractConditionAlwaysTrue"
+                }
+              ],
+              "interact_cooldown": 3,
+              "interact_detail_ui_type": "",
+              "interact_icon_path": "",
+              "interact_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "interact_sense_range": 8,
+              "interact_time": 0,
+              "interact_ui_offset_trans": [
+                0,
+                0,
+                0
+              ],
+              "need_auto_move": true,
+              "tag": "1",
+              "cls_type": "RuntimeInteractItemBase"
+            }
+          ],
+          "state_list": [
+            ""
+          ]
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            12.1387,
+            59.308,
+            70.457,
+            0,
+            -2.4252,
+            0,
+            1,
+            1,
+            1
+          ],
+          "name": "node235",
+          "node_uuid": "69312b8b03ca0a42dc195f4d",
+          "world_trans": [
+            5558.207,
+            418.7218,
+            3218.5029,
+            0,
+            -2.4252,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/static_objects/ue_asset/huohoucave/telpher_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        },
+        "RuntimeAttrPerceive": {
+          "cls_type": "RuntimeAttrPerceive",
+          "perceives": [
+            {
+              "group": "SceneUnit",
+              "pos": [
+                0,
+                -4.5,
+                0
+              ],
+              "rot": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                5,
+                3,
+                5
+              ],
+              "shape": "box",
+              "tag": "1",
+              "type": "trigger_query",
+              "cls_type": "RuntimePerceiveItemNormal"
+            }
+          ]
+        },
+        "RuntimeAttrTrainMove": {
+          "audio_running": "",
+          "audio_start": "",
+          "audio_stop": "",
+          "bind_trail_global_name": "scene_openworld_07E80515-12280010-99378ADC-0CE8201D_dv_node233",
+          "cls_type": "RuntimeAttrTrainMove",
+          "revive_stop_index": 0,
+          "run_countdown_time": 3,
+          "sockets": [
+            "seatbone_01",
+            ""
+          ],
+          "trail_data": null,
+          "trail_root_trans": []
+        },
+        "RuntimeAttrTrigger": {
+          "cls_type": "RuntimeAttrTrigger",
+          "triggers": [
+            {
+              "buff_event_name": "perceive_trigger",
+              "send_event_to_bf": true,
+              "send_event_to_buff": true,
+              "tag": "1",
+              "cls_type": "RuntimeTriggerItemInteract"
+            }
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

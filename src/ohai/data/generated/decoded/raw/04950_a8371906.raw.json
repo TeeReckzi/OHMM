@@ -1,0 +1,945 @@
+{
+  "_meta": {
+    "sourceFile": "04950_a8371906.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04950_a8371906.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:52.524Z",
+    "recordCount": 41,
+    "sourceHash": "0ac72400a33b42f3b9549a06b9050e463fbcabf830b70c109094fbeef384f752",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "default_value": 1,
+      "depand_value": [],
+      "input_type": 1,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "镜头类型_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [
+        {
+          "lan_translate": [
+            "第一人称_$S@TIDS$_d2|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "人物环绕_$S@TIDS$_d2|0"
+          ]
+        }
+      ],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 420002,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default_value": 55,
+      "depand_value": [],
+      "input_type": 2,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "广角_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 2,
+      "second_tab_id": 0,
+      "tab_id": 420002,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "天气_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 420004,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "时间_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 2,
+      "second_tab_id": 0,
+      "tab_id": 420004,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "官方模板_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 421111,
+      "tab_id": 420001,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [
+        [
+          1001,
+          1
+        ]
+      ],
+      "input_type": 2,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "镜头旋转_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 3,
+      "second_tab_id": 0,
+      "tab_id": 420002,
+      "value_range": [
+        -90,
+        90
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [
+        [
+          1001,
+          1
+        ]
+      ],
+      "input_type": 2,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "人物旋转_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 420003,
+      "value_range": [
+        -180,
+        180
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "自定义模板_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 2,
+      "second_tab_id": 421112,
+      "tab_id": 420001,
+      "value_range": []
+    },
+    {
+      "default_value": 1,
+      "depand_value": [],
+      "input_type": 1,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "景深_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_d2|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_d2|0"
+          ]
+        }
+      ],
+      "need_json_parse": false,
+      "order": 4,
+      "second_tab_id": 0,
+      "tab_id": 420002,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default_value": 1,
+      "depand_value": [
+        [
+          3001,
+          0
+        ],
+        [
+          1001,
+          1
+        ]
+      ],
+      "input_type": 1,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "自动对焦_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_d2|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_d2|1"
+          ]
+        }
+      ],
+      "need_json_parse": false,
+      "order": 6,
+      "second_tab_id": 0,
+      "tab_id": 420002,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default_value": 60,
+      "depand_value": [
+        [
+          3001,
+          0
+        ]
+      ],
+      "input_type": 2,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "光圈_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 5,
+      "second_tab_id": 0,
+      "tab_id": 420002,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default_value": 100,
+      "depand_value": [
+        [
+          3001,
+          0
+        ],
+        [
+          3002,
+          1
+        ]
+      ],
+      "input_type": 2,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "焦距_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 7,
+      "second_tab_id": 0,
+      "tab_id": 420002,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "人物显示_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 420005,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [
+        [
+          4001,
+          0
+        ],
+        [
+          1001,
+          1
+        ]
+      ],
+      "input_type": 3,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "动作_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 5,
+      "second_tab_id": 0,
+      "tab_id": 420007,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [
+        [
+          4001,
+          0
+        ],
+        [
+          1001,
+          1
+        ]
+      ],
+      "input_type": 1,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "视线管理_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [
+        {
+          "lan_translate": [
+            "注视镜头_$S@TIDS$_d2|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "自然视线_$S@TIDS$_d2|0"
+          ]
+        }
+      ],
+      "need_json_parse": false,
+      "order": 3,
+      "second_tab_id": 0,
+      "tab_id": 420003,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default_value": 1,
+      "depand_value": [
+        [
+          4001,
+          0
+        ],
+        [
+          1001,
+          1
+        ]
+      ],
+      "input_type": 1,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "装备武器_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_d2|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_d2|2"
+          ]
+        }
+      ],
+      "need_json_parse": false,
+      "order": 4,
+      "second_tab_id": 0,
+      "tab_id": 420003,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default_value": 10,
+      "depand_value": [],
+      "input_type": 2,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "曝光_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 3,
+      "second_tab_id": 0,
+      "tab_id": 420004,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default_value": 50,
+      "depand_value": [],
+      "input_type": 2,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "对比度_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 4,
+      "second_tab_id": 0,
+      "tab_id": 420004,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "纹理滤镜_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 420006,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "灯光_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": true,
+      "order": 8,
+      "second_tab_id": 0,
+      "tab_id": 420004,
+      "value_range": []
+    },
+    {
+      "default_value": 50,
+      "depand_value": [
+        [
+          1001,
+          1
+        ]
+      ],
+      "input_type": 2,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "人物光_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 2,
+      "second_tab_id": 0,
+      "tab_id": 420003,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default_value": 1,
+      "depand_value": [],
+      "input_type": 1,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "风场_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_d2|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_d2|3"
+          ]
+        }
+      ],
+      "need_json_parse": false,
+      "order": 5,
+      "second_tab_id": 0,
+      "tab_id": 420004,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "风场_$S@TIDS$_d2|1"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 9,
+      "second_tab_id": 0,
+      "tab_id": 420004,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "贴纸_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 2,
+      "second_tab_id": 0,
+      "tab_id": 420006,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "边框_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 3,
+      "second_tab_id": 0,
+      "tab_id": 420006,
+      "value_range": []
+    },
+    {
+      "default_value": 1,
+      "depand_value": [],
+      "input_type": 1,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "文本_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_d2|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_d2|4"
+          ]
+        }
+      ],
+      "need_json_parse": false,
+      "order": 4,
+      "second_tab_id": 0,
+      "tab_id": 420006,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [
+        [
+          7003,
+          0
+        ]
+      ],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "文本颜色_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 5,
+      "second_tab_id": 0,
+      "tab_id": 420006,
+      "value_range": []
+    },
+    {
+      "default_value": 1,
+      "depand_value": [],
+      "input_type": 1,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "辅助线_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_d2|5"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_d2|5"
+          ]
+        }
+      ],
+      "need_json_parse": false,
+      "order": 2,
+      "second_tab_id": 0,
+      "tab_id": 420005,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "画面比例_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 3,
+      "second_tab_id": 0,
+      "tab_id": 420005,
+      "value_range": []
+    },
+    {
+      "default_value": 1,
+      "depand_value": [],
+      "input_type": 1,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "灯光_$S@TIDS$_d2|1"
+        ]
+      },
+      "name_enum": [
+        {
+          "lan_translate": [
+            "开启_$S@TIDS$_d2|6"
+          ]
+        },
+        {
+          "lan_translate": [
+            "关闭_$S@TIDS$_d2|6"
+          ]
+        }
+      ],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 4200041,
+      "value_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "default_value": 50,
+      "depand_value": [],
+      "input_type": 2,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "灯光强度_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 4200041,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "灯光颜色_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 4200041,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "灯光位置_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 4200041,
+      "value_range": []
+    },
+    {
+      "default_value": 20,
+      "depand_value": [],
+      "input_type": 2,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "风力强度_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 6,
+      "second_tab_id": 0,
+      "tab_id": 420004,
+      "value_range": [
+        0,
+        100
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 3,
+      "is_save": true,
+      "name": {
+        "lan_translate": [
+          "风向_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 7,
+      "second_tab_id": 0,
+      "tab_id": 420004,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 2,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "X轴_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 50047,
+      "value_range": [
+        -100,
+        100
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 2,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "Y轴_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 50047,
+      "value_range": [
+        -100,
+        100
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 2,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "Z轴_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 50047,
+      "value_range": [
+        -100,
+        100
+      ]
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 0,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "灯光一_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 0,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 0,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "灯光二_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 0,
+      "value_range": []
+    },
+    {
+      "default_value": 0,
+      "depand_value": [],
+      "input_type": 0,
+      "is_save": false,
+      "name": {
+        "lan_translate": [
+          "灯光三_$S@TIDS$_d2|0"
+        ]
+      },
+      "name_enum": [],
+      "need_json_parse": false,
+      "order": 1,
+      "second_tab_id": 0,
+      "tab_id": 0,
+      "value_range": []
+    }
+  ]
+}

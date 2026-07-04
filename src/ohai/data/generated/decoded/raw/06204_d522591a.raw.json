@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "sourceFile": "06204_d522591a.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06204_d522591a.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:55.326Z",
+    "recordCount": 2,
+    "sourceHash": "cc8e82bb65876145f5a3f2382251a567914264460cc00e2c4bde894a801cbb90",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "41": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 41,
+            "input_factor": 100,
+            "probability": 0,
+            "speed_factor": 0.8,
+            "use_expect_rate": false,
+            "use_input": true
+          },
+          "type": "NodeBuffProbabilityTask"
+        },
+        "event_action": {
+          "process": [
+            43
+          ]
+        },
+        "in_data_args": {
+          "input_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": []
+        }
+      },
+      "42": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 42,
+            "value": 0.3
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {
+        "42": [
+          [
+            [
+              "effect_params",
+              "params",
+              "value"
+            ],
+            0
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_49900110300_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        49900110300,
+        1
+      ],
+      "tid": 480
+    }
+  ]
+}

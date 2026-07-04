@@ -1,5 +1,6 @@
 .ohmm-app-shell,
 :root {
+  --ohmm-header-height: 58px;
   --void-900: #010710;
   --void-800: #030c14;
   --void-700: #051019;
@@ -107,7 +108,7 @@ body {
 }
 
 .ohmm-workspace {
-  height: calc(100vh - 58px);
+  height: calc(100dvh - var(--ohmm-header-height));
   flex: none;
   display: flex;
   gap: var(--space-6);
@@ -129,7 +130,7 @@ body {
 }
 
 .ohmm-app-header {
-  height: 58px;
+  height: var(--ohmm-header-height);
   flex: none;
   display: flex;
   align-items: center;
@@ -205,4 +206,8 @@ body {
   .ohmm-workspace {
     min-width: 1040px;
   }
+}
+
+.ohmm-theorycraft-region {
+  padding: 0 1rem 1rem;
 }

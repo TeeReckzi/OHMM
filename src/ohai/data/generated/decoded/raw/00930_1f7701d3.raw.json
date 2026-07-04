@@ -1,0 +1,168 @@
+{
+  "_meta": {
+    "sourceFile": "00930_1f7701d3.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00930_1f7701d3.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.770Z",
+    "recordCount": 2,
+    "sourceHash": "00e99235c51c747769f5831d302edeadf7b20815f3bc05208739d65ed852cd92",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            57
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "57": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 57,
+            "loop_max_times": 0,
+            "loop_time": 1,
+            "reset_last_effect": true,
+            "start_trigger": false
+          },
+          "type": "NodeBuffLoopTask"
+        },
+        "event_action": {
+          "loop_trigger": [
+            69
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "loop_trigger": []
+        }
+      },
+      "68": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 68,
+            "value": 6
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "69": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 69,
+            "input_factor": 100,
+            "probability": 0,
+            "speed_factor": 0.8,
+            "use_expect_rate": false,
+            "use_input": true
+          },
+          "type": "NodeBuffProbabilityTask"
+        },
+        "event_action": {
+          "process": [
+            70
+          ]
+        },
+        "in_data_args": {
+          "input_rate": 6
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "process": []
+        }
+      },
+      "70": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 499003710,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 70,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            71,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "71": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 71
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {
+        "68": [
+          [
+            [
+              "effect_params",
+              "params",
+              "value"
+            ],
+            0
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_499003700_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        499003700,
+        1
+      ],
+      "tid": 5092
+    }
+  ]
+}

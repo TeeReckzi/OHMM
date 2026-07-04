@@ -1,0 +1,113 @@
+{
+  "_meta": {
+    "sourceFile": "02128_4a2fb196.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02128_4a2fb196.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:44.505Z",
+    "recordCount": 2,
+    "sourceHash": "acc8d377e862b8b0d4930e5590168d029d33b6df87caae60e11fd6771f57880d",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "7": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 7
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            10
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "9": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 9
+          },
+          "type": "NodeGetCasterPos"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      },
+      "10": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "angle_max_params": {
+              "angle": 0,
+              "percent": 0
+            },
+            "angle_min_params": {
+              "angle": 0,
+              "percent": 0
+            },
+            "angle_reduce": false,
+            "distance_reduce": false,
+            "effect_index": 10,
+            "fixed_dis_params": [
+              0,
+              0
+            ],
+            "fixed_time_params": [
+              0,
+              0
+            ],
+            "is_hinder_by_block": false,
+            "need_disable": false,
+            "need_set_pos": false,
+            "pattern_id": 1076,
+            "play_audio_event": "",
+            "pos_param": "",
+            "reduce_params": [
+              0,
+              0
+            ],
+            "resume": false,
+            "stop_audio_event": "",
+            "time_fixed": false,
+            "visual_selection": 8
+          },
+          "type": "NodeCreatePostProcess"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            9,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 7,
+      "name": "behavior_player_inspect_range_ar_aug_sk_a_01_effect1",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "inspect_range_ar_aug_sk_a_01",
+        ""
+      ],
+      "tid": 16426
+    }
+  ]
+}

@@ -87,7 +87,8 @@ export function loadoutEffectResolver(
   // fall back to legacy flat mods. This prevents the previous divergence where UI changes
   // were ignored by the calculation pipeline.
   const modIds = deriveCanonicalModIds(build);
-  all.push(...resolveModEffects(modIds, uptimeProfile, customAssumptions));
+  const suffixTiers = build.modSuffixTiers as Record<string, number> | undefined;
+  all.push(...resolveModEffects(modIds, uptimeProfile, customAssumptions, suffixTiers));
 
   // 4. Cradle (with conditional evaluation + cap)
   all.push(...resolveCradleEffects(build, uptimeProfile, customAssumptions));

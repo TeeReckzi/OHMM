@@ -1,0 +1,394 @@
+{
+  "_meta": {
+    "sourceFile": "06273_d782ea1d.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06273_d782ea1d.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:55.438Z",
+    "recordCount": 5,
+    "sourceHash": "fda03c45c240aa01bc8d0f0dec54f696783aad85766c1068d78079e43fe4a4f3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07EA0110-0E360007-F309F6E4-497C481A_block_node",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_defence_mine_large_546447",
+          "season_config": {
+            "whitelist": "ne_dv#ne_frac"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            42.8994,
+            109.2394,
+            -0.812,
+            0,
+            0,
+            0,
+            2.5,
+            3,
+            5.2
+          ],
+          "name": "node",
+          "node_uuid": "6969e0c94633398fc8e91d49",
+          "world_trans": [
+            -7805.0112,
+            59.305,
+            -6148.6221,
+            0,
+            -2.2559,
+            0,
+            2.5,
+            3,
+            5.2
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": true,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/dynamic_objects/fortified_point/brick/brick_floor_2.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 10,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrAreaDefine": {
+          "area_uuid": 0,
+          "areas": [
+            {
+              "tag": "area_1",
+              "vertices": [
+                [
+                  20,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  -20
+                ],
+                [
+                  -20,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  20
+                ]
+              ],
+              "cls_type": "RuntimeAreaDefineItemPolygon"
+            }
+          ],
+          "cls_type": "RuntimeAttrAreaDefine",
+          "export_area_data": "",
+          "gameplay_subtype": "",
+          "gameplay_type": "",
+          "gameplay_value": 0,
+          "import_area_data": "",
+          "mask_pixel_size": 4
+        },
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07EA0110-0E360007-F309F6E4-497C481A_mine2_area_1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_defence_mine_large_546447",
+          "season_config": {
+            "blacklist": "ne_dv#ne_frac"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "DEFENSE_FORTIFY_AREA",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": "area_1"
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            0.1201,
+            29.2467,
+            7.5811,
+            0,
+            -0.7497,
+            0,
+            4.0001,
+            4,
+            4.0001
+          ],
+          "name": "area_1",
+          "node_uuid": "6925685c4633398b6439d0b2",
+          "world_trans": [
+            -7777.9624,
+            -28.8673,
+            -6179.002,
+            0,
+            -3.0056,
+            0,
+            4.0001,
+            4,
+            4.0001
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07EA0110-0E360007-F309F6E4-497C481A_mine2_lift",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_defence_mine_large_546447",
+          "season_config": {
+            "blacklist": "ne_dv#ne_frac"
+          }
+        },
+        "RuntimeAttrCustomExport": {
+          "classify_tag": "NONE",
+          "cls_type": "RuntimeAttrCustomExport",
+          "ref_area_tag": ""
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            45.8907,
+            28.3038,
+            4.6836,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "name": "lift",
+          "node_uuid": "693697f44633390ae9e64cec",
+          "world_trans": [
+            -7804.6807,
+            -29.8102,
+            -6141.7266,
+            0,
+            -2.2559,
+            0,
+            2,
+            2,
+            2
+          ]
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07EA0110-0E360007-F309F6E4-497C481A_mine2_ore1",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_defence_mine_large_546447",
+          "season_config": {
+            "blacklist": "ne_dv#ne_frac"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -32.5562,
+            23.4121,
+            -44.5168,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "name": "ore1",
+          "node_uuid": "692d48494633396860e8a5db",
+          "world_trans": [
+            -7716.9443,
+            -34.7019,
+            -6171.3389,
+            0,
+            -2.2559,
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/ecosystem/rock/ore/tong_kuang_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    },
+    {
+      "attrs": {
+        "RuntimeAttrBasis": {
+          "cls_type": "RuntimeAttrBasis",
+          "data_source": 0,
+          "ep_type": 0,
+          "global_name": "scene_openworld_07EA0110-0E360007-F309F6E4-497C481A_mine2_ore2",
+          "parent_global_name": "",
+          "prefab_instance_id": "prefab_defence_mine_large_546447",
+          "season_config": {
+            "blacklist": "ne_dv#ne_frac"
+          }
+        },
+        "RuntimeAttrIndicatorUnit": {
+          "buff_list": [
+            800000302
+          ],
+          "can_revive": false,
+          "cls_type": "RuntimeAttrIndicatorUnit",
+          "revive_gap": 10,
+          "use_private_unit": false
+        },
+        "RuntimeAttrNodeBase": {
+          "cls_type": "RuntimeAttrNodeBase",
+          "indicator_entity_type": "",
+          "local_trans": [
+            -38.6797,
+            24.4475,
+            50.0283,
+            0,
+            -0.5173,
+            0,
+            2,
+            2,
+            2
+          ],
+          "name": "ore2",
+          "node_uuid": "692d48494633396860e8a5d9",
+          "world_trans": [
+            -7786.2798,
+            -33.6665,
+            -6235.9053,
+            0,
+            -2.7732,
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        "RuntimeAttrNormalVisual": {
+          "add_to_detour": false,
+          "aoi_radius": 0,
+          "can_mod_pos_y": false,
+          "cls_type": "RuntimeAttrNormalVisual",
+          "enable_hit_box": false,
+          "enable_static_collision": true,
+          "enable_vertical_occluder": true,
+          "init_model_path": "environment/ecosystem/rock/ore/tong_kuang_01.gim",
+          "init_pse_offset": [
+            0,
+            0,
+            0
+          ],
+          "init_sfx_path": "",
+          "init_socket_sfx_name": "",
+          "init_socket_sfx_path": "",
+          "is_proxy": false,
+          "lock_hp": false,
+          "mirror_retain_visual_uuid": "",
+          "retain_visual_time": 0,
+          "static_collision_group": [
+            16
+          ],
+          "static_collision_mask": [],
+          "static_hit_box": false
+        }
+      },
+      "cls_type": "EPEntityProto",
+      "parent": ""
+    }
+  ]
+}

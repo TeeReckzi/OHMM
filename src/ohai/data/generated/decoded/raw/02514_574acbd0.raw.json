@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "sourceFile": "02514_574acbd0.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02514_574acbd0.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:45.372Z",
+    "recordCount": 2,
+    "sourceHash": "557f11acebb2de5fe580cd0ff95f212d0097e2e03379ad2a027e8107b75fa231",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "281": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "degrade": false,
+            "dispel_buff_sub_tag_list": [],
+            "dispel_buff_tag_list": [],
+            "dispel_debuff_num": 1,
+            "dispel_id_list": [],
+            "dispel_tag_list": [],
+            "dispel_type": 0,
+            "effect_index": 281,
+            "match_caster_id": false,
+            "need_disable": false
+          },
+          "type": "NodeDispelBuff"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            283,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "282": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 282
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            281
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "283": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 283
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 282,
+      "name": "behavior_ancientones_plane_lv2tolv1_s4_1to2",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "ancientones_plane",
+        "lv2tolv1_s4_1to2",
+        ""
+      ],
+      "tid": 16514
+    }
+  ]
+}

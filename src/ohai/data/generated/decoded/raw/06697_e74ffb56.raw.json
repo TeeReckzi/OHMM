@@ -1,0 +1,137 @@
+{
+  "_meta": {
+    "sourceFile": "06697_e74ffb56.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\06697_e74ffb56.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:56.393Z",
+    "recordCount": 2,
+    "sourceHash": "249e6f58da880d706a8de044c4b7f806550557aef83240956ce1533b362bb8bd",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "7": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 7,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 7881299413258241,
+                "params": {
+                  "check_gid_list": [
+                    10100051,
+                    10100151,
+                    10100052,
+                    10100152
+                  ],
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_gain_endow_reward"
+                  ]
+                },
+                "type": "gain_endow_reward_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            8,
+            15
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "8": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "aoi_radius": 10,
+            "describe_text": {
+              "lan_translate": [
+                "运动水壶装满了水_$S@TIDS$_5lg3|0"
+              ]
+            },
+            "effect_index": 8,
+            "explain_text": "",
+            "is_aoi_tip": false,
+            "is_single_tip": false,
+            "match_id": "499006471",
+            "need_disable": false,
+            "notify_main_client": true,
+            "reset": false,
+            "show_time": 3,
+            "ui_state_up": 1
+          },
+          "type": "NodeShowMechanismTip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 9
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            7
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "15": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "dur_percent": 0,
+            "dur_val": 500,
+            "effect_index": 15,
+            "is_only_top_item": false,
+            "item_no": 30349023,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemDur"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 9,
+      "name": "buff_499006471_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        499006471,
+        1
+      ],
+      "tid": 15957
+    }
+  ]
+}

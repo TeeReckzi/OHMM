@@ -1,0 +1,506 @@
+{
+  "_meta": {
+    "sourceFile": "03235_6f054427.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\03235_6f054427.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:47.602Z",
+    "recordCount": 2,
+    "sourceHash": "c8579938b92762c0d41c96b7929514d657047c7c8cd4fab65bc546f3ea50cc29",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            45,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            66,
+            64,
+            65,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            74,
+            75,
+            76
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "45": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 45,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 50665495829221380,
+                "params": {
+                  "dynamic_event": [],
+                  "enter_state": false,
+                  "event_names": [
+                    "on_state_change::68"
+                  ],
+                  "role": 0,
+                  "state": 68
+                },
+                "type": "enter_state_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            56
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "49": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 49,
+            "value": 0.3
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "56": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 499001910,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 56,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            57,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "57": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 57
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "58": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 58,
+            "item_no": 30152010,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "59": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 59,
+            "item_no": 30152011,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "60": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 60,
+            "item_no": 30152012,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "61": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 61,
+            "item_no": 30152000,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "62": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 62,
+            "item_no": 30152001,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "63": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 63,
+            "item_no": 30152002,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "64": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 64,
+            "item_no": 30152021,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "65": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 65,
+            "item_no": 30152022,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "66": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 66,
+            "item_no": 30152020,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "67": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 67,
+            "item_no": 30150009,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "68": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 68,
+            "item_no": 30150118,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "69": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 69,
+            "item_no": 30150019,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "70": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 70,
+            "item_no": 30150116,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "71": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 71,
+            "item_no": 30150117,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "72": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 72,
+            "item_no": 30150216,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "74": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 74,
+            "item_no": 30152120,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "75": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 75,
+            "item_no": 30152121,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "76": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_rate": 0,
+            "effect_index": 76,
+            "item_no": 30152130,
+            "need_disable": false
+          },
+          "type": "NodeChangeItemWeight"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "change_rate": 0.3
+        },
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {
+        "49": [
+          [
+            [
+              "effect_params",
+              "params",
+              "value"
+            ],
+            0
+          ]
+        ]
+      },
+      "entry_node": 0,
+      "name": "buff_499001900_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        499001900,
+        1
+      ],
+      "tid": 5201
+    }
+  ]
+}

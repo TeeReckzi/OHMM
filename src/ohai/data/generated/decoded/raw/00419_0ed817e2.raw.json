@@ -1,0 +1,173 @@
+{
+  "_meta": {
+    "sourceFile": "00419_0ed817e2.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00419_0ed817e2.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:40.981Z",
+    "recordCount": 2,
+    "sourceHash": "e8161472d7ae263c5c69016bc3568f01b4a5e238bcf177cbd69e87059194b5c4",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "decay_ratio": -0.8,
+            "effect_index": 1,
+            "item_subtype": 7,
+            "item_type": 3,
+            "need_disable": false
+          },
+          "type": "NodeSetAvtSoulBagItemDecayRatio"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 2
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            5
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "aoi_radius": 10,
+            "describe_text": {
+              "lan_translate": [
+                "随身冰箱生效_$S@TIDS$_5m6o|0"
+              ]
+            },
+            "effect_index": 3,
+            "explain_text": {
+              "lan_translate": [
+                "背包内料理腐败速度降低_$S@TIDS$_5m6o|0"
+              ]
+            },
+            "is_aoi_tip": false,
+            "is_single_tip": false,
+            "match_id": "",
+            "need_disable": false,
+            "notify_main_client": true,
+            "reset": true,
+            "show_time": 3,
+            "ui_state_up": 0
+          },
+          "type": "NodeShowMechanismTip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "5": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": true,
+            "cd": 0,
+            "effect_index": 5,
+            "max_effect_count": 1000,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [
+              {
+                "checker_sid": 5629499599994882,
+                "params": {
+                  "buff_id": 499006450,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::499006450"
+                  ],
+                  "exist": true,
+                  "mapping_buff": false,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "reset_last_effect": true,
+            "reset_op": 0,
+            "trigger_checker": [
+              {
+                "checker_sid": 5629499599994881,
+                "params": {
+                  "buff_id": 499006450,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::499006450"
+                  ],
+                  "exist": false,
+                  "mapping_buff": false,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              },
+              {
+                "checker_sid": 5629500673736705,
+                "params": {
+                  "buff_id": 499006465,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::499006465"
+                  ],
+                  "exist": false,
+                  "mapping_buff": false,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "trigger_once": false,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            3,
+            1
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 2,
+      "name": "buff_499006464_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        499006464,
+        1
+      ],
+      "tid": 16060
+    }
+  ]
+}

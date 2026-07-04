@@ -1,0 +1,590 @@
+{
+  "_meta": {
+    "sourceFile": "05548_bde01098.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\05548_bde01098.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:54.195Z",
+    "recordCount": 2,
+    "sourceHash": "2cf002834721e7e56f53556780fad1f3d0e0830e201fb307dfc84e7d7fe6c55d",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            54,
+            48,
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "sprint_sp_cost_speed",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": -50,
+                "value_type": 2
+              }
+            ],
+            "effect_index": 2,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "29": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 408001401,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 29,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            34,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "34": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 34
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "39": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 39,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 43910096393248770,
+                "params": {
+                  "buff_id": 408001401,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::408001401"
+                  ],
+                  "exist": true,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            42
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "42": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "buff_id_list": [
+              408001401
+            ],
+            "buff_sub_tag_list": [],
+            "buff_tag_list": [],
+            "effect_index": 42,
+            "extend_percent": 0,
+            "extend_time": 600,
+            "extend_type": 1,
+            "need_disable": false,
+            "skill_tag_list": [],
+            "unique_tag": ""
+          },
+          "type": "NodeExtendBuffTime"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            34,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "43": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 43,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 48413696020619260,
+                "params": {
+                  "buff_id": 408001401,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::408001401"
+                  ],
+                  "exist": false,
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "buff_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            47,
+            29
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "45": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "aoi_radius": 10,
+            "describe_text": {
+              "lan_translate": [
+                "你喝得非常足_$S@TIDS$_kom|0"
+              ]
+            },
+            "effect_index": 45,
+            "explain_text": {
+              "lan_translate": [
+                "10分钟内饮水度不会自然降低_$S@TIDS$_kom|0"
+              ]
+            },
+            "is_aoi_tip": false,
+            "is_single_tip": false,
+            "match_id": "",
+            "need_disable": false,
+            "notify_main_client": true,
+            "reset": true,
+            "show_time": 3,
+            "ui_state_up": 1
+          },
+          "type": "NodeShowMechanismTip"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "46": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "buff_id_list": [
+              408001401
+            ],
+            "buff_sub_tag_list": [],
+            "buff_tag_list": [],
+            "effect_index": 46,
+            "extend_percent": 0,
+            "extend_time": 600,
+            "extend_type": 1,
+            "need_disable": false,
+            "skill_tag_list": [],
+            "unique_tag": ""
+          },
+          "type": "NodeExtendBuffTime"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            34,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "47": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 47
+          },
+          "type": "NodeBuffDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            46
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "48": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "change_attr": [
+              {
+                "attribute": "sprint_speed_add_rate",
+                "attributeChangeSpeed": "corrupted_hp_loss_speed",
+                "extra_value": 0,
+                "value": 0.2,
+                "value_type": 1
+              }
+            ],
+            "effect_index": 48,
+            "max_level": 0,
+            "need_disable": false
+          },
+          "type": "NodeChangeAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "49": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "overflow",
+            "effect_index": 49,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            54,
+            "trigger",
+            "overflow"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "50": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "water",
+            "effect_index": 50,
+            "need_disable": false,
+            "persist": false,
+            "scope": 0
+          },
+          "type": "NodeBBSaveFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            54,
+            "trigger",
+            "attr_value"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "51": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 51,
+            "value": 100
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "52": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "water",
+            "effect_index": 52,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "53": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 53,
+            "value": 0
+          },
+          "type": "NodeConstFloat"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "54": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "attr_name": "water",
+            "effect_index": 54
+          },
+          "type": "NodeAttrChangeTask"
+        },
+        "event_action": {
+          "trigger": [
+            50,
+            49,
+            56
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": [
+            "old_value",
+            "attr_value",
+            "overflow",
+            "delta_value",
+            "delta_percent"
+          ]
+        }
+      },
+      "55": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "bb_key": "overflow",
+            "effect_index": 55,
+            "scope": 0
+          },
+          "type": "NodeBBLoadFloatData"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "data"
+          ]
+        }
+      },
+      "56": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 56
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            58
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            60,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "58": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "effect_index": 58
+          },
+          "type": "NodeBuffIfTask"
+        },
+        "event_action": {
+          "False": [],
+          "True": [
+            45,
+            43,
+            39
+          ]
+        },
+        "in_data_pin": {
+          "Condition": [
+            59,
+            "utility",
+            "result"
+          ]
+        },
+        "out_data_pin": {
+          "False": [],
+          "True": []
+        }
+      },
+      "59": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 59,
+            "operation": 0
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 0
+        },
+        "in_data_pin": {
+          "data1": [
+            55,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      },
+      "60": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 60,
+            "operation": 0
+          },
+          "type": "NodeCompareFloat"
+        },
+        "event_action": {},
+        "in_data_args": {
+          "data2": 100
+        },
+        "in_data_pin": {
+          "data1": [
+            52,
+            "utility",
+            "data"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "result"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_408001402_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        408001402,
+        1
+      ],
+      "tid": 6442
+    }
+  ]
+}

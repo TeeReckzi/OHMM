@@ -1,0 +1,88 @@
+{
+  "_meta": {
+    "sourceFile": "02633_5bcb3cc7.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\02633_5bcb3cc7.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:45.763Z",
+    "recordCount": 2,
+    "sourceHash": "65e243b284e9d1d1a572e4a47030d9f7b2dff87ca70f6bb86413365ec1dac1df",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "60": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 60,
+            "hand_hold_type": 0
+          },
+          "type": "NodeGetHoldItemAttr"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "item_id",
+            "item_no",
+            "type",
+            "sub_type"
+          ]
+        }
+      },
+      "61": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 61
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            62
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "62": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bb_key": "item_id",
+            "effect_index": 62,
+            "need_disable": false,
+            "persist": false,
+            "scope": 1
+          },
+          "type": "NodeBBSaveIntData"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "data": [
+            60,
+            "utility",
+            "item_no"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 61,
+      "name": "behavior_player_throw_pvp_bomb1_in_water_item_id",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "throw_pvp_bomb1_in_water",
+        ""
+      ],
+      "tid": 14362
+    }
+  ]
+}

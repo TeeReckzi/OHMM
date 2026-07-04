@@ -1,0 +1,781 @@
+{
+  "_meta": {
+    "sourceFile": "04946_a80fb939.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04946_a80fb939.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:52.517Z",
+    "recordCount": 2,
+    "sourceHash": "49466ac03f68e3091971dc358841b367fed4118767ed3b43e54c7a75eef41aaa",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "58": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 58
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            72,
+            73,
+            74
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "59": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 59,
+            "logic_tree_name": "",
+            "need_disable": false,
+            "summon_data": {
+              "ai_can_hatred": true,
+              "aoi_radius": 60,
+              "aoi_radius2": 20,
+              "can_mod_pos_y": false,
+              "cost_summer_percent_hp": 0,
+              "die_with_summoner": true,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "duration": -1,
+              "enable_damage_sync": false,
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_ignore_player_owner": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "pos_off": [
+                0,
+                3,
+                0
+              ],
+              "pos_off_base": 0,
+              "pos_off_circle": false,
+              "pulse_detect_effects": [],
+              "radius_angle": [
+                0,
+                0
+              ],
+              "removed_no_drop": true,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|2301011157",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": true,
+              "unit_trigger_file": "",
+              "use_world_area_level": false
+            },
+            "unit_physics_control_data": {
+              "bounding_offset": [
+                0,
+                0,
+                0
+              ],
+              "bullet_num": 0,
+              "item_no": 0,
+              "override_physics_control": false,
+              "physical_control_enabled": false,
+              "physical_summer_control": false,
+              "physical_unit_no": "",
+              "physics_control_type": 1,
+              "show_interact_btn": true
+            }
+          },
+          "type": "NodeSummonUnit"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            61,
+            "trigger",
+            "trigger_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "60": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 60
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            59
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "61": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 61,
+            "info": {
+              "aim_target_type": 0,
+              "attack_duration": 1,
+              "attack_type": 0,
+              "axis_angle_off": 0,
+              "be_hit_hp_base": "hp",
+              "be_hit_hp_type": 1,
+              "be_hit_value": 1,
+              "bullet_speed": 30,
+              "can_be_hit": false,
+              "collision_box_size": [
+                1,
+                1,
+                1
+              ],
+              "collision_box_size_be_hit_check": [
+                1,
+                1,
+                1
+              ],
+              "collision_sfx_path": "effect/boss/ancientones/ancientones_plasma_homing_01.pse",
+              "collision_sfx_scale": 3,
+              "collision_shape": 2,
+              "collision_shape_be_hit_check": -1,
+              "collision_type": 1,
+              "create_fly_3d_ui": false,
+              "custom_max_fly_time": 3,
+              "disregard_shield": false,
+              "enable_water_penetration": false,
+              "explose_on_destroy": false,
+              "fixed_fly_height": 20,
+              "flx_sfx_update_rotation": true,
+              "fly_effect_water": "",
+              "fly_model_path": "",
+              "fly_model_scale": 1,
+              "fly_sfx_bind_socket": "",
+              "fly_sfx_path": "effect/boss/ancientones/ancientones_plasma_homing.pse",
+              "fly_sfx_scale": 3,
+              "fly_visual_type": 0,
+              "flyer_count": 3,
+              "gravity": 0,
+              "higher_normal_threshold_sfx_path": "",
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "is_aim_socket": false,
+              "is_random_speed": false,
+              "max_dis": 120,
+              "max_rate": 2,
+              "max_time_rate": 1,
+              "max_underwater_fly_distance": 0,
+              "min_dis": 0.5,
+              "min_rate": 1,
+              "min_time_rate": 1,
+              "missed_sfx_path": "",
+              "need_ignore_friend": false,
+              "normal_threshold": 5,
+              "offset_list": [],
+              "only_sight_block": true,
+              "random_round": 5,
+              "range_angle_off": 360,
+              "range_radius": 30,
+              "range_src_offset": [
+                0,
+                20,
+                0
+              ],
+              "range_target_num": 5,
+              "scatter_angle": 20,
+              "sfx_budget_rule_id": 500,
+              "socket_fail_use_table": false,
+              "socket_name": "fx_laser_side1",
+              "socket_offset": [
+                0,
+                0,
+                0
+              ],
+              "sound_fly_end": "",
+              "sound_fly_start": "",
+              "sound_fly_water_rtpc": "",
+              "spread_type": 2,
+              "stop_time": 0,
+              "target_height": 1,
+              "target_socket_name": "",
+              "throw_aim_bone_type": 0,
+              "throw_bullet_type": 1,
+              "throw_fly_time": 2,
+              "throw_target_offset": [
+                30,
+                30,
+                0
+              ],
+              "throw_target_type": 0,
+              "underwater_fall_effect": "",
+              "underwater_fall_gravity_scale": 2,
+              "warn_sfx_delay_time": 0,
+              "warn_sfx_life_time": 2,
+              "warn_sfx_path": "",
+              "warn_sfx_scale": 1,
+              "warn_sfx_show_time_base_on_hit": false,
+              "water_damage_decay_rate": 0,
+              "water_drag_coefficient": 0,
+              "water_enter_effect": "",
+              "water_gravity_scale": 1,
+              "water_speed_decay_rate": 0,
+              "will_use_normal": false
+            }
+          },
+          "type": "NodeMonsterThrow"
+        },
+        "event_action": {
+          "init": [],
+          "trigger": [
+            63,
+            60
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "init": [
+            "fly_pid"
+          ],
+          "trigger": [
+            "trigger_type",
+            "trigger_pos",
+            "ground_pos",
+            "hit_normal",
+            "bone_name",
+            "hit_dir",
+            "target_uid",
+            "water_damage_factor",
+            "water_enter_pos"
+          ]
+        }
+      },
+      "63": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "combat_unit_no": "",
+            "duration": 7,
+            "effect_index": 63,
+            "logic_tree_name": "trap",
+            "need_disable": false,
+            "summon_key": "1",
+            "summon_use_skill_config": false,
+            "trap_type": 0
+          },
+          "type": "NodeCreateTrap"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "normal": [
+            61,
+            "trigger",
+            "hit_normal"
+          ],
+          "pos": [
+            61,
+            "trigger",
+            "ground_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "66": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 66,
+            "logic_tree_name": "",
+            "need_disable": false,
+            "summon_data": {
+              "ai_can_hatred": true,
+              "aoi_radius": 60,
+              "aoi_radius2": 0,
+              "can_mod_pos_y": false,
+              "cost_summer_percent_hp": 0,
+              "die_with_summoner": true,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "duration": -1,
+              "enable_damage_sync": false,
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_ignore_player_owner": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "pos_off": [
+                0,
+                3,
+                0
+              ],
+              "pos_off_base": 0,
+              "pos_off_circle": false,
+              "pulse_detect_effects": [],
+              "radius_angle": [
+                0,
+                0
+              ],
+              "removed_no_drop": true,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|2101011138",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": true,
+              "unit_trigger_file": "",
+              "use_world_area_level": false
+            },
+            "unit_physics_control_data": {
+              "bounding_offset": [
+                0,
+                0,
+                0
+              ],
+              "bullet_num": 0,
+              "item_no": 0,
+              "override_physics_control": false,
+              "physical_control_enabled": false,
+              "physical_summer_control": false,
+              "physical_unit_no": "",
+              "physics_control_type": 1,
+              "show_interact_btn": true
+            }
+          },
+          "type": "NodeSummonUnit"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            67,
+            "trigger",
+            "trigger_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "67": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 67,
+            "info": {
+              "aim_target_type": 0,
+              "attack_duration": 1,
+              "attack_type": 0,
+              "axis_angle_off": 0,
+              "be_hit_hp_base": "hp",
+              "be_hit_hp_type": 1,
+              "be_hit_value": 1,
+              "bullet_speed": 30,
+              "can_be_hit": false,
+              "collision_box_size": [
+                1,
+                1,
+                1
+              ],
+              "collision_box_size_be_hit_check": [
+                1,
+                1,
+                1
+              ],
+              "collision_sfx_path": "effect/boss/ancientones/ancientones_plasma_homing_01.pse",
+              "collision_sfx_scale": 3,
+              "collision_shape": 2,
+              "collision_shape_be_hit_check": -1,
+              "collision_type": 1,
+              "create_fly_3d_ui": false,
+              "custom_max_fly_time": 3,
+              "disregard_shield": false,
+              "enable_water_penetration": false,
+              "explose_on_destroy": false,
+              "fixed_fly_height": 20,
+              "flx_sfx_update_rotation": true,
+              "fly_effect_water": "",
+              "fly_model_path": "",
+              "fly_model_scale": 1,
+              "fly_sfx_bind_socket": "",
+              "fly_sfx_path": "effect/boss/ancientones/ancientones_plasma_homing.pse",
+              "fly_sfx_scale": 3,
+              "fly_visual_type": 0,
+              "flyer_count": 2,
+              "gravity": 0,
+              "higher_normal_threshold_sfx_path": "",
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "is_aim_socket": false,
+              "is_random_speed": false,
+              "max_dis": 120,
+              "max_rate": 2,
+              "max_time_rate": 1,
+              "max_underwater_fly_distance": 0,
+              "min_dis": 0.5,
+              "min_rate": 1,
+              "min_time_rate": 1,
+              "missed_sfx_path": "",
+              "need_ignore_friend": false,
+              "normal_threshold": 5,
+              "offset_list": [],
+              "only_sight_block": true,
+              "random_round": 5,
+              "range_angle_off": 360,
+              "range_radius": 30,
+              "range_src_offset": [
+                0,
+                20,
+                0
+              ],
+              "range_target_num": 5,
+              "scatter_angle": 20,
+              "sfx_budget_rule_id": 500,
+              "socket_fail_use_table": false,
+              "socket_name": "fx_laser_side3",
+              "socket_offset": [
+                0,
+                0,
+                0
+              ],
+              "sound_fly_end": "",
+              "sound_fly_start": "",
+              "sound_fly_water_rtpc": "",
+              "spread_type": 2,
+              "stop_time": 0,
+              "target_height": 1,
+              "target_socket_name": "",
+              "throw_aim_bone_type": 0,
+              "throw_bullet_type": 1,
+              "throw_fly_time": 2,
+              "throw_target_offset": [
+                30,
+                30,
+                0
+              ],
+              "throw_target_type": 0,
+              "underwater_fall_effect": "",
+              "underwater_fall_gravity_scale": 2,
+              "warn_sfx_delay_time": 0,
+              "warn_sfx_life_time": 2,
+              "warn_sfx_path": "",
+              "warn_sfx_scale": 1,
+              "warn_sfx_show_time_base_on_hit": false,
+              "water_damage_decay_rate": 0,
+              "water_drag_coefficient": 0,
+              "water_enter_effect": "",
+              "water_gravity_scale": 1,
+              "water_speed_decay_rate": 0,
+              "will_use_normal": false
+            }
+          },
+          "type": "NodeMonsterThrow"
+        },
+        "event_action": {
+          "init": [],
+          "trigger": [
+            68,
+            71
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "init": [
+            "fly_pid"
+          ],
+          "trigger": [
+            "trigger_type",
+            "trigger_pos",
+            "ground_pos",
+            "hit_normal",
+            "bone_name",
+            "hit_dir",
+            "target_uid",
+            "water_damage_factor",
+            "water_enter_pos"
+          ]
+        }
+      },
+      "68": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "combat_unit_no": "",
+            "duration": 7,
+            "effect_index": 68,
+            "logic_tree_name": "trap2",
+            "need_disable": false,
+            "summon_key": "1",
+            "summon_use_skill_config": false,
+            "trap_type": 0
+          },
+          "type": "NodeCreateTrap"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "normal": [
+            67,
+            "trigger",
+            "hit_normal"
+          ],
+          "pos": [
+            67,
+            "trigger",
+            "ground_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "71": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 0.1,
+            "effect_index": 71
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            66
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      },
+      "72": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 72,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": true,
+              "bind_name": "fx_laser_side1",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": true,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/ancientones/ancientones_plasma_thick_beam_1.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "73": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "anim_loop": false,
+            "anim_path": "",
+            "effect_index": 73,
+            "mount_params": {
+              "alpha_interval": 0.1,
+              "auto_gen_mount_uid": true,
+              "bind_name": "fx_laser_side3",
+              "bind_type": 1,
+              "common_name": "fire",
+              "decrease_alpha": false,
+              "decrease_emitter": false,
+              "del_type": 2,
+              "delay_remove": true,
+              "delay_remove_time": 1,
+              "enable_physic_bone": false,
+              "follow_bounding_box_scale": false,
+              "follow_rotation": true,
+              "follow_scale": true,
+              "graph_path": "",
+              "hide_state_list": [],
+              "loop": false,
+              "material_fade_in": false,
+              "model_map": [],
+              "model_type": 0,
+              "model_type_for_scene": 0,
+              "mount_uid": "",
+              "only_player_state_hide": true,
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "res_path": "effect/boss/ancientones/ancientones_plasma_thick_beam_1.pse",
+              "rot_off": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "sfx_budget_rule_id": 500,
+              "slot_list": [],
+              "socket_for_scene": "",
+              "state_conflict_hide": false,
+              "times_in_sec": 1,
+              "transform_follow": true,
+              "use_socket_pos": false,
+              "visual_selection": -1
+            },
+            "need_disable": false,
+            "ori_anim_time": 0,
+            "playa_anim": false,
+            "skin_event_name": "",
+            "skin_switch": false
+          },
+          "type": "NodeBehaviorCreateMount"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "74": {
+        "NodeType": 4,
+        "effect_params": {
+          "params": {
+            "delay_time": 2,
+            "effect_index": 74
+          },
+          "type": "NodeDelayTask"
+        },
+        "event_action": {
+          "time_trigger": [
+            67,
+            61
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "time_trigger": []
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 58,
+      "name": "behavior_ancientones_plane_straight21_s4_shoot",
+      "preload_res_list": [
+        "effect/boss/ancientones/ancientones_plasma_thick_beam_1.pse",
+        "effect/boss/ancientones/ancientones_plasma_thick_beam_1.pse",
+        "effect/boss/ancientones/ancientones_plasma_homing.pse",
+        "effect/boss/ancientones/ancientones_plasma_homing_01.pse",
+        "effect/boss/ancientones/ancientones_plasma_homing.pse",
+        "effect/boss/ancientones/ancientones_plasma_homing_01.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "ancientones_plane",
+        "straight21_s4",
+        ""
+      ],
+      "tid": 16020
+    }
+  ]
+}

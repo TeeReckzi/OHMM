@@ -1,0 +1,583 @@
+{
+  "_meta": {
+    "sourceFile": "04470_9887c50f.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04470_9887c50f.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:51.160Z",
+    "recordCount": 14,
+    "sourceHash": "4e7acf42b84cdf629515689031f61b0fa7b2ca214a644a3de2b2439aae33e004",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "永恒岛内建造将无视房屋支撑规则，即建筑物可以无限延展，且拆除支撑将不会导致房屋崩塌。_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "rule_island_form",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": false,
+      "name": {
+        "lan_translate": [
+          "建造规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        1
+      ],
+      "parent_idx": 1,
+      "sort": 1,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "无视支撑关系_$S@TIDS$_cjb|0"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 4
+    },
+    {
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "设置永恒岛的可访问玩家规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "permission_type",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "访客规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ],
+      "parent_idx": 2,
+      "sort": 1,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "公开_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "仅好友-需审核_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "仅好友-无需审核_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "私人_$S@TIDS$_cjb|0"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 0,
+      "desc": {
+        "lan_translate": [
+          "凭此代码，玩家可跨服务器进行岛屿访问_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "rule_visit_code",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": false,
+      "name": {
+        "lan_translate": [
+          "岛屿访问代码_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [],
+      "parent_idx": 2,
+      "sort": 3,
+      "sort_str": [],
+      "ui_hide": 0,
+      "ui_type": 4
+    },
+    {
+      "default": 2,
+      "desc": {
+        "lan_translate": [
+          "设置永恒岛的设施可访问玩家规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "interact_permission",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "设施交互权限_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        2,
+        3,
+        1
+      ],
+      "parent_idx": 2,
+      "sort": 2,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "公开_$S@TIDS$_cjb|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "仅好友_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "私人_$S@TIDS$_cjb|1"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置永恒岛内的天气规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "weather_id",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "天气_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "parent_idx": 3,
+      "sort": 1,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "实时_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "晴_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "阴_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "雨_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "雾_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "沙暴_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "雷暴_$S@TIDS$_cjb|0"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置永恒岛内的时间规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "custom_time",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "时间_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "parent_idx": 3,
+      "sort": 2,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "实时_$S@TIDS$_cjb|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "清晨_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "正午_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "黄昏_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "黑夜_$S@TIDS$_cjb|0"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置所有玩家是否可以互相攻击_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "rule_behavior_pvp",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "战斗权限_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        1,
+        2
+      ],
+      "parent_idx": 4,
+      "sort": 1,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "关闭PVP_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "开启PVP_$S@TIDS$_cjb|0"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置所有玩家可使用武器的类型_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "fire_permission",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "武器权限_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        1,
+        2,
+        3
+      ],
+      "parent_idx": 4,
+      "sort": 2,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "允许任意武器_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "仅近战武器_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "禁止任意武器_$S@TIDS$_cjb|0"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置所有玩家是否可以召唤载具_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "vehicle_permission",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "载具权限_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        1,
+        2
+      ],
+      "parent_idx": 4,
+      "sort": 3,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "允许召唤_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "禁止召唤_$S@TIDS$_cjb|0"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置所有玩家的生命值规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "rule_survive_hp",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "生命值_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        1,
+        2
+      ],
+      "parent_idx": 5,
+      "sort": 1,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "锁定满值_$S@TIDS$_cjb|0"
+          ]
+        },
+        {
+          "lan_translate": [
+            "实时变化_$S@TIDS$_cjb|0"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置所有玩家的饱食度规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "rule_survive_food",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "饱食度_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        1,
+        2
+      ],
+      "parent_idx": 5,
+      "sort": 3,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "锁定满值_$S@TIDS$_cjb|1"
+          ]
+        },
+        {
+          "lan_translate": [
+            "实时变化_$S@TIDS$_cjb|1"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置所有玩家的饮水度规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "rule_survive_water",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "饮水度_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        1,
+        2
+      ],
+      "parent_idx": 5,
+      "sort": 4,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "锁定满值_$S@TIDS$_cjb|2"
+          ]
+        },
+        {
+          "lan_translate": [
+            "实时变化_$S@TIDS$_cjb|2"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置所有玩家的理智度规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "rule_survive_san",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "理智度_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        1,
+        2
+      ],
+      "parent_idx": 5,
+      "sort": 5,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "锁定满值_$S@TIDS$_cjb|3"
+          ]
+        },
+        {
+          "lan_translate": [
+            "实时变化_$S@TIDS$_cjb|3"
+          ]
+        }
+      ],
+      "ui_hide": 0,
+      "ui_type": 1
+    },
+    {
+      "default": 1,
+      "desc": {
+        "lan_translate": [
+          "设置所有玩家的体重规则_$S@TIDS$_cjb|0"
+        ]
+      },
+      "english_name": "rule_survive_weight",
+      "guest_visible": true,
+      "has_desc": 1,
+      "is_server_use": true,
+      "name": {
+        "lan_translate": [
+          "体重_$S@TIDS$_cjb|0"
+        ]
+      },
+      "order": [
+        1,
+        2
+      ],
+      "parent_idx": 5,
+      "sort": 6,
+      "sort_str": [
+        {
+          "lan_translate": [
+            "锁定满值_$S@TIDS$_cjb|4"
+          ]
+        },
+        {
+          "lan_translate": [
+            "实时变化_$S@TIDS$_cjb|4"
+          ]
+        }
+      ],
+      "ui_hide": 1,
+      "ui_type": 1
+    }
+  ]
+}

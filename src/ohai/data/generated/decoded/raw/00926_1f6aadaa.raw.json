@@ -1,0 +1,111 @@
+{
+  "_meta": {
+    "sourceFile": "00926_1f6aadaa.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00926_1f6aadaa.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.765Z",
+    "recordCount": 2,
+    "sourceHash": "b3de42713480a26e33a5ee265a4eec7ea0344466bbb235144a82dc067845aed9",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            1,
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "1": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bgm_state": "",
+            "effect_index": 1,
+            "is_switch": false,
+            "need_disable": false,
+            "sound_event": "Play_mus_boss_Lighthouse_battle",
+            "state_name": "",
+            "stop_sound_event": "Stop_mus_boss_Lighthouse_battle"
+          },
+          "type": "NodeSwitchBgm"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "2": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "bool_param_dict": {},
+            "buff_id": 601430331,
+            "buff_lv": 1,
+            "destroy_buff_on_leave": false,
+            "effect_index": 2,
+            "float_param_dict": {},
+            "id_param_dict": {},
+            "int_param_dict": {},
+            "mapping_buff": true,
+            "need_disable": false,
+            "persist": false,
+            "reset": false,
+            "str_param_dict": {},
+            "vector_param_dict": {}
+          },
+          "type": "NodeCastBuffToTarget"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_uid": [
+            3,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "3": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 3
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "buff_60143033_1",
+      "preload_res_list": [],
+      "source_info": [
+        "buff",
+        60143033,
+        1
+      ],
+      "tid": 16091
+    }
+  ]
+}

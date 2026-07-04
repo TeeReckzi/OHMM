@@ -1,0 +1,302 @@
+{
+  "_meta": {
+    "sourceFile": "04149_8cabefe7.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04149_8cabefe7.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:50.243Z",
+    "recordCount": 2,
+    "sourceHash": "69d665cb46edec9a66e14c3f93d50311551a17792ff8a73da2c3eef344106fa0",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "0": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 0
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            2
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "2": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 2,
+            "info": {
+              "aim_target_type": 0,
+              "attack_duration": 0.5,
+              "attack_type": 0,
+              "axis_angle_off": 0,
+              "be_hit_hp_base": "hp",
+              "be_hit_hp_type": 1,
+              "be_hit_value": 1,
+              "bullet_speed": 3,
+              "can_be_hit": false,
+              "collision_box_size": [
+                1,
+                1,
+                1
+              ],
+              "collision_box_size_be_hit_check": [
+                1,
+                1,
+                1
+              ],
+              "collision_sfx_path": "",
+              "collision_sfx_scale": 1,
+              "collision_shape": 2,
+              "collision_shape_be_hit_check": -1,
+              "collision_type": 1,
+              "create_fly_3d_ui": false,
+              "custom_max_fly_time": 10,
+              "disregard_shield": false,
+              "enable_water_penetration": false,
+              "explose_on_destroy": false,
+              "fixed_fly_height": 6,
+              "flx_sfx_update_rotation": true,
+              "fly_effect_water": "",
+              "fly_model_path": "",
+              "fly_model_scale": 1,
+              "fly_sfx_bind_socket": "",
+              "fly_sfx_path": "effect/monster/lighthouse_seed/lightseed_boom.pse",
+              "fly_sfx_scale": 1,
+              "fly_visual_type": 0,
+              "flyer_count": 5,
+              "gravity": -9.8,
+              "higher_normal_threshold_sfx_path": "",
+              "hit_box_pos_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_rot_off": [
+                0,
+                0,
+                0
+              ],
+              "hit_box_shape": 2,
+              "hit_box_size": [
+                1,
+                1,
+                1
+              ],
+              "is_aim_socket": false,
+              "is_random_speed": false,
+              "max_dis": 60,
+              "max_rate": 2,
+              "max_time_rate": 1,
+              "max_underwater_fly_distance": 0,
+              "min_dis": 5,
+              "min_rate": 1,
+              "min_time_rate": 1,
+              "missed_sfx_path": "",
+              "need_ignore_friend": false,
+              "normal_threshold": 5,
+              "offset_list": [],
+              "only_sight_block": false,
+              "random_round": 20,
+              "range_angle_off": 60,
+              "range_radius": 30,
+              "range_src_offset": [
+                0,
+                0,
+                0
+              ],
+              "range_target_num": 1,
+              "scatter_angle": 20,
+              "sfx_budget_rule_id": 500,
+              "socket_fail_use_table": false,
+              "socket_name": "lasser",
+              "socket_offset": [
+                0,
+                0,
+                0
+              ],
+              "sound_fly_end": "",
+              "sound_fly_start": "",
+              "sound_fly_water_rtpc": "",
+              "spread_type": 2,
+              "stop_time": 0,
+              "target_height": 0,
+              "target_socket_name": "",
+              "throw_aim_bone_type": 0,
+              "throw_bullet_type": 2,
+              "throw_fly_time": 5,
+              "throw_target_offset": [
+                0,
+                0,
+                0
+              ],
+              "throw_target_type": 1,
+              "underwater_fall_effect": "",
+              "underwater_fall_gravity_scale": 2,
+              "warn_sfx_delay_time": 0,
+              "warn_sfx_life_time": 2,
+              "warn_sfx_path": "",
+              "warn_sfx_scale": 1,
+              "warn_sfx_show_time_base_on_hit": false,
+              "water_damage_decay_rate": 0,
+              "water_drag_coefficient": 0,
+              "water_enter_effect": "",
+              "water_gravity_scale": 1,
+              "water_speed_decay_rate": 0,
+              "will_use_normal": false
+            }
+          },
+          "type": "NodeMonsterThrow"
+        },
+        "event_action": {
+          "init": [],
+          "trigger": [
+            3
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "init": [
+            "fly_pid"
+          ],
+          "trigger": [
+            "trigger_type",
+            "trigger_pos",
+            "ground_pos",
+            "hit_normal",
+            "bone_name",
+            "hit_dir",
+            "target_uid",
+            "water_damage_factor",
+            "water_enter_pos"
+          ]
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 3,
+            "logic_tree_name": "",
+            "need_disable": false,
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": "bt_lighthouse_seed_mine",
+              "anim_graph_path": "",
+              "aoi_radius": -1,
+              "aoi_radius2": 0,
+              "can_mod_pos_y": false,
+              "combat_prototype_no": "911562",
+              "combat_unit_no": "61401000101",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": false,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": 30,
+              "dynamic_mask_level": 0,
+              "enable_damage_sync": false,
+              "head_bar_rule_list": [
+                30
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 10,
+              "model_path": "character/empty/kongmoxing_sphere.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 0,
+              "pulse_detect_effects": [],
+              "removed_no_drop": false,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "",
+              "summon_model_scale": [
+                0,
+                0,
+                0
+              ],
+              "summon_prefab_id": "base|5101010233",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": false,
+              "unit_camp_template_no": "602",
+              "unit_entity_type": "StaticGunless",
+              "unit_hold_item": "",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "unit_physics_control_data": {
+              "bounding_offset": [
+                0,
+                0,
+                0
+              ],
+              "bullet_num": 0,
+              "item_no": 0,
+              "override_physics_control": false,
+              "physical_control_enabled": false,
+              "physical_summer_control": false,
+              "physical_unit_no": "",
+              "physics_control_type": 1,
+              "show_interact_btn": true
+            }
+          },
+          "type": "NodeSummon"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "pos": [
+            2,
+            "trigger",
+            "ground_pos"
+          ]
+        },
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 0,
+      "name": "behavior_lighthouse_seed_mul_mine_shoot",
+      "preload_res_list": [
+        "effect/monster/lighthouse_seed/lightseed_boom.pse"
+      ],
+      "source_info": [
+        "behavior",
+        "lighthouse_seed",
+        "mul_mine",
+        ""
+      ],
+      "tid": 16123
+    }
+  ]
+}

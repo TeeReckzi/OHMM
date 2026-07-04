@@ -1,0 +1,193 @@
+{
+  "_meta": {
+    "sourceFile": "07030_f3a2ee50.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\07030_f3a2ee50.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:57.238Z",
+    "recordCount": 2,
+    "sourceHash": "56a82c2e78e03d955199c3ba334ab499564a95479bc2e659f5c9fd0a1cfbbed3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "13": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 13
+          },
+          "type": "NodeGetHolderUid"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {
+          "utility": [
+            "holder_uid"
+          ]
+        }
+      },
+      "14": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 14
+          },
+          "type": "NodeNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            15
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "15": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 15,
+            "logic_tree_name": "",
+            "need_disable": false,
+            "summon_data": {
+              "ai_can_hatred": true,
+              "ai_file": "",
+              "anim_graph_path": "",
+              "aoi_radius": -1,
+              "aoi_radius2": 0,
+              "can_mod_pos_y": false,
+              "combat_prototype_no": "615019",
+              "combat_unit_no": "61501300101",
+              "cost_summer_percent_hp": 0,
+              "custom_init_id": -1,
+              "deviation_consume_containment_once": 0,
+              "deviation_containment_auto_delete": false,
+              "deviation_unit_soul_type": "",
+              "die_with_summoner": true,
+              "die_with_summoner_dying": false,
+              "disable_sight_params": false,
+              "dun_adaptive_gameplay_id": 0,
+              "duration": 60,
+              "dynamic_mask_level": 0,
+              "enable_damage_sync": false,
+              "head_bar_rule_list": [
+                30
+              ],
+              "head_bar_rule_no": "",
+              "hp_bar_config_key": "",
+              "inherit_summer_max_hp_percent": 0,
+              "is_bloodmoon_summon": false,
+              "is_elder_airplane": false,
+              "is_ignore_player_owner": false,
+              "is_show_be_hit": true,
+              "is_stronghold_npc": false,
+              "limit_max_num": false,
+              "mask_ignore_npc": true,
+              "max_summon": 1,
+              "model_path": "environment/dynamic_objects/task/season_effect_object/s01_gravity/s01_jump_point.gim",
+              "npc_mesh_no": "",
+              "pos_off": [
+                0,
+                0,
+                0
+              ],
+              "pos_off_base": 1,
+              "pulse_detect_effects": [],
+              "removed_no_drop": false,
+              "replace_unit_trigger_file": false,
+              "summon_group": "",
+              "summon_inherit_hp_type": false,
+              "summon_key": "up_power_S4",
+              "summon_model_scale": [
+                2,
+                2,
+                2
+              ],
+              "summon_prefab_id": "base|5101010255",
+              "summon_source": "",
+              "summon_use_own_camp": false,
+              "summon_use_skill_config": false,
+              "summon_with_owner_level": false,
+              "unit_camp_template_no": "102",
+              "unit_entity_type": "StaticGunless",
+              "unit_hold_item": "",
+              "unit_hold_item2": "",
+              "unit_trigger_file": "",
+              "unit_type": "monster",
+              "use_world_area_level": false
+            },
+            "unit_physics_control_data": {
+              "bounding_offset": [
+                0,
+                0,
+                0
+              ],
+              "bullet_num": 0,
+              "item_no": 0,
+              "override_physics_control": false,
+              "physical_control_enabled": false,
+              "physical_summer_control": false,
+              "physical_unit_no": "",
+              "physics_control_type": 1,
+              "show_interact_btn": true
+            }
+          },
+          "type": "NodeSummon"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "dir": [
+            16,
+            "utility",
+            "output_dir"
+          ],
+          "pos": [
+            16,
+            "utility",
+            "output_pos"
+          ]
+        },
+        "out_data_pin": {}
+      },
+      "16": {
+        "NodeType": 3,
+        "effect_params": {
+          "params": {
+            "effect_index": 16,
+            "include_fly_height": false
+          },
+          "type": "NodeGetTargetPos"
+        },
+        "event_action": {},
+        "in_data_pin": {
+          "target_id": [
+            13,
+            "utility",
+            "holder_uid"
+          ]
+        },
+        "out_data_pin": {
+          "utility": [
+            "output_pos",
+            "output_dir"
+          ]
+        }
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 14,
+      "name": "behavior_player_item_uppower_set_use_item",
+      "preload_res_list": [],
+      "source_info": [
+        "behavior",
+        "player",
+        "item_uppower_set",
+        ""
+      ],
+      "tid": 16045
+    }
+  ]
+}

@@ -1,0 +1,2052 @@
+{
+  "_meta": {
+    "sourceFile": "00946_1ff55567.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\00946_1ff55567.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:41.795Z",
+    "recordCount": 81,
+    "sourceHash": "bec11c04eddaf1404eea541fb9f20383463fd0cad6bfb8980b168d409e7da5d3",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "behavior_name": "dust_pull_skill",
+      "combat_skill_id": 0,
+      "priority": 9999,
+      "skill_ban_icon": "abnormal_cbt2_icon_kzz1_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "念控_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_func_type": 1,
+      "skill_icon": "abnormal_cbt2_icon_kzz1_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "念控_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_cbt2_icon_kzz1_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_cbt2_icon_kzz1_sel.png",
+      "skill_state_icon": "abnormal_cbt2_icon_kzz1_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me01_bigskill01",
+      "combat_skill_id": 99000001,
+      "skill_ban_icon": "abnormal_me01_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "#[k=b5]（异能评级为5时）#l释放后自动装填#[k=b4]{0}%#l弹匣，发射自动追踪目标的蝶形子弹，同时提升玩家枪械伤害#[k=b4]{1}%#l，攻击必定造成#[k=b6]弱点伤害#l，持续#[k=b4]{2}#l秒。同时对目标添加#[k=b4]{3}%#l的#[k=b6]枪械易伤#l，易伤持续#[k=b4]{4}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me01_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "灵蝶指引_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me01_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me01_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me01_bigskill01_nml.png",
+      "skill_value_desc": [
+        "100",
+        "30",
+        "18",
+        "34",
+        "10"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me01_skill01",
+      "combat_skill_id": 99000001,
+      "skill_ban_icon": "abnormal_me01_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "对目标方向发射一簇力场构成的蝶群，蝶群会自动追踪最多#[k=b4]{0}#l名敌人，并对每个敌人造成#[k=b4]{1}#l次伤害，每次造成#[k=b4]{2}%#l的超感强度的#[k=b6]枪械伤害#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me01_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "飞散蝶群_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me01_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me01_skill01_sel.png",
+      "skill_state_icon": "abnormal_me01_skill01_nml.png",
+      "skill_value_desc": [
+        "3",
+        "5",
+        "120"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me03_bigskill01",
+      "combat_skill_id": 99000003,
+      "skill_ban_icon": "abnormal_me03_banskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤水母产生大量的冰霜烟雾，对附近造成范围霜寒元素伤害，降低目标的温度。效果持续{0}秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me03_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "极冰雾域_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me03_nmlskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me03_selskill01_sel.png",
+      "skill_state_icon": "abnormal_me03_nmlskill01_nml.png",
+      "skill_value_desc": [
+        "25"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me03_bigskill01_pve",
+      "combat_skill_id": 99000003,
+      "skill_ban_icon": "abnormal_me03_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤水母对附近周期性造成范围霜寒元素异常伤害。\n#[k=b5]（异能评级为5时）#l每#[k=b4]{0}#l秒对范围内目标造成#[k=b4]{1}%#l超感强度的#[k=b6]霜寒元素异常伤害#l，并冻结目标#[k=b4]{2}#l秒。同时对目标添加#[k=b4]{3}%#l的#[k=b6]异常伤害易伤#l。玩家可以操控投掷，重新部署。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me03_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "极冰雾域_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me03_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me03_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me03_bigskill01_nml.png",
+      "skill_value_desc": [
+        "3",
+        "1200",
+        "1",
+        "40"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me03_skill01",
+      "combat_skill_id": 99000003,
+      "skill_ban_icon": "abnormal_me03_skill01_ban.png",
+      "skill_cd_type": 2,
+      "skill_desc": {
+        "lan_translate": [
+          "投掷水母到目标点爆炸，对范围内的目标造成范围霜寒元素伤害，并降低目标的移动速度、视角旋转速度。效果持续{0}秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me03_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "霜寒爆发_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me03_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me03_skill01_sel.png",
+      "skill_state_icon": "abnormal_me03_skill01_nml.png",
+      "skill_value_desc": [
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me03_skill01_pve",
+      "combat_skill_id": 99000003,
+      "skill_ban_icon": "abnormal_me03_skill01_ban.png",
+      "skill_cd_type": 2,
+      "skill_desc": {
+        "lan_translate": [
+          "投掷水母到目标点爆炸。\n对范围内目标造成#[k=b4]{0}%#l超感强度的#[k=b6]霜寒元素异常伤害#l，冻结目标#[k=b4]{1}#l秒，并降低目标的移动与视角旋转速度，持续#[k=b4]{2}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me03_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "霜寒爆发_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me03_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me03_skill01_sel.png",
+      "skill_state_icon": "abnormal_me03_skill01_nml.png",
+      "skill_value_desc": [
+        "1300",
+        "2",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me08_bigskill01",
+      "combat_skill_id": 99000008,
+      "skill_ban_icon": "abnormal_me08_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤活性凝胶，构成可阻挡攻击的固定掩体。在掩体附近的友方玩家恢复生命。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me08_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "拟态掩体_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me08_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me08_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me08_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me08_bigskill01_pve",
+      "combat_skill_id": 99000008,
+      "skill_ban_icon": "abnormal_me08_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤活性凝胶，构成可阻挡攻击的固定掩体。在掩体附近的所有友方玩家每秒恢复生命值和理智。\n#[k=b5]（异能评级为5时）#l每秒恢复#[k=b4]{0}%#l生命值#[k=b4]{1}%#l理智值。玩家可以操控投掷，重新部署。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me08_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "拟态掩体_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me08_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me08_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me08_bigskill01_nml.png",
+      "skill_value_desc": [
+        "8",
+        "0.6"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me08_skill01",
+      "combat_skill_id": 99000008,
+      "skill_ban_icon": "abnormal_me08_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "使用活性凝胶包裹自身，获得大量护盾。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me08_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "同化防护_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me08_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me08_skill01_sel.png",
+      "skill_state_icon": "abnormal_me08_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me08_skill01_pve",
+      "combat_skill_id": 99000008,
+      "skill_ban_icon": "abnormal_me08_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "使用活性凝胶包裹自身，获得护盾，持续#[k=b4]{0}#l秒。\n获得#[k=b4]{1}%#l最大生命值的护盾。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me08_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "同化防护_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me08_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me08_skill01_sel.png",
+      "skill_state_icon": "abnormal_me08_skill01_nml.png",
+      "skill_value_desc": [
+        "6",
+        "35"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me11_bigskill01",
+      "combat_skill_id": 99000011,
+      "skill_ban_icon": "abnormal_me11_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "在目标地点释放群狼杀阵。#[k=b5]（异能评级为5时）#l杀阵每#[k=b4]{0}#l秒造成#[k=b4]{1}%#l超感强度的#[k=b6]枪械伤害#l，持续#[k=b4]{2}#l秒。召唤三只自主战斗的低语孤狼。\n低语孤狼攻击对目标造成#[k=b4]{3}%#l超感强度的#[k=b6]枪械伤害#l、横扫对范围内目标造成#[k=b4]{4}%#l超感强度的#[k=b6]枪械伤害#l。\n伤害同时对目标添加#[k=b4]{5}%#l的#[k=b6]枪械易伤#l和#[k=b6]近战易伤#l，#[k=b6]易伤#l持续#[k=b4]{6}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me11_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "群狼杀阵_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me11_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me11_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me11_bigskill01_nml.png",
+      "skill_value_desc": [
+        "0.5",
+        "350",
+        "2.5",
+        "1800",
+        "800",
+        "34",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me11_bigskill02",
+      "combat_skill_id": 99000011,
+      "skill_ban_icon": "abnormal_me11_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "废案待删_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me11_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "低语·次元斩_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me11_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me11_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me11_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me11_skill01",
+      "combat_skill_id": 99000011,
+      "skill_ban_icon": "abnormal_me11_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤孤狼向前方直线奔袭，对范围内的敌人造成#[k=b4]{0}%#l超感强度的#[k=b6]枪械伤害#l，并牵引被命中的敌人。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me11_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "暗影狂奔_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me11_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me11_skill01_sel.png",
+      "skill_state_icon": "abnormal_me11_skill01_nml.png",
+      "skill_value_desc": [
+        "800"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me18_bigskill01",
+      "combat_skill_id": 99000018,
+      "skill_ban_icon": "abnormal_me18_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤一只大型熊医生提供战场支援，熊医生能够基于目标最大生命值治疗与扶起友方超越者。\n熊医生出场时对范围内友方超越者添加强化激素效果，在提供治疗的同时，同时能提升超越者#[k=b4]{0}%#l的伤害减免、换弹速度、射击速度的属性加成，强化激素效果持续#[k=b4]{1}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me18_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "激素扩散_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me18_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me18_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me18_bigskill01_nml.png",
+      "skill_value_desc": [
+        "25",
+        "10"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me18_skill01",
+      "combat_skill_id": 99000018,
+      "skill_ban_icon": "abnormal_me18_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "释放熊医生附着在超越者身上。每#[k=b4]{0}#l秒提供当前目标#[k=b4]{1}%#l最大生命的治疗效果。\n若屏幕中存在友方超越者，则同时向其释放熊医生。共享治疗持续#[k=b4]{2}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me18_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "共享疗法_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me18_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me18_skill01_sel.png",
+      "skill_state_icon": "abnormal_me18_skill01_nml.png",
+      "skill_value_desc": [
+        "1.5",
+        "12",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me25_bigskill01",
+      "combat_skill_id": 99000025,
+      "skill_ban_icon": "abnormal_me25_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "同步黑猫的能力进入特殊状态，状态期间能够可视化附近敌方超越者的心跳与脚步声，并免疫侦测类技能的效果，感知强化状态持续#[k=b4]{0}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me25_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "感知强化_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me25_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me25_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me25_bigskill01_nml.png",
+      "skill_value_desc": [
+        "20"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me25_skill01",
+      "combat_skill_id": 99000025,
+      "skill_ban_icon": "abnormal_me25_skill01_ban.png",
+      "skill_cd_type": 2,
+      "skill_desc": {
+        "lan_translate": [
+          "同步黑猫的灵巧，向当前朝向发动超级跳跃，跳跃效果将会随超越者的移动速度与视角而改变，可充能#[k=b4]{1}#l次。跳跃期间免疫#[k=b4]{0}%#l伤害。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me25_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "跃动模态_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me25_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me25_skill01_sel.png",
+      "skill_state_icon": "abnormal_me25_skill01_nml.png",
+      "skill_value_desc": [
+        "30",
+        "2"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me26_bigskill01",
+      "combat_skill_id": 99000026,
+      "skill_ban_icon": "abnormal_me26_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "在场地中召唤永恒烈阳，永恒烈阳携带着燃烧的星核，坠向地面，对碰撞到的敌人造成伤害。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me26_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "星核坠落_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me26_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me26_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me26_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me26_bigskill01_pve",
+      "combat_skill_id": 99000026,
+      "skill_ban_icon": "abnormal_me26_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤永恒烈阳对附近造成范围伤害，永恒烈阳周期性迸射陨石，陨石落地后会留下火焰，持续对范围内敌人造成伤害。\n#[k=b5]（异能评级为5时）#l永恒烈阳登场对范围内的目标造成超感强度#[k=b4]{0}%#l的#[k=b6]炽能元素异常伤害#l并施加#[k=b4]{8}%#l的#[k=b6]异常伤害易伤#l，随后每个陨石对半径#[k=b4]{1}#l米内的敌人造成#[k=b4]{2}%#l超感强度的#[k=b6]炽能元素异常伤害#l，地面火焰持续#[k=b4]{3}#l秒，每#[k=b4]{4}#l秒对范围内目标造成#[k=b4]{5}%#l超感强度的#[k=b6]炽能元素异常伤害#l并添加#[k=b4]{7}#l层灼烧效果。受到陨石伤害后的敌人受到的#[k=b6]异常伤害#l+#[k=b4]{6}%#l_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me26_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "星核坠落_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me26_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me26_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me26_bigskill01_nml.png",
+      "skill_value_desc": [
+        "400",
+        "4",
+        "1100",
+        "8",
+        "3",
+        "800",
+        "40",
+        "2",
+        "20"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me26_skill01",
+      "combat_skill_id": 99000026,
+      "skill_ban_icon": "abnormal_me26_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "向前方扇形区域推出冲击波，击倒敌人。被冲击波命中的敌人受到#[k=b6]炽能伤害#l增加，并且会反馈你#[k=b4]{0}%#l最大生命值的护盾。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me26_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "日冕抛射_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me26_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me26_skill01_sel.png",
+      "skill_state_icon": "abnormal_me26_skill01_nml.png",
+      "skill_value_desc": [
+        "25"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me26_skill01_pve",
+      "combat_skill_id": 99000026,
+      "skill_ban_icon": "abnormal_me26_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "向前方扇形区域推出冲击波，灼烧并击倒敌人，随后获得护盾，持续#[k=b4]{0}#l秒。造成#[k=b4]{1}%#l超感强度的#[k=b6]炽能元素异常伤害#l，命中#[k=b4]{2}#l名目标可获得#[k=b4]{3}%#l最大生命值的护盾，最多#[k=b4]{4}%#l，命中BOSS时获得#[k=b4]{5}%#l额外护盾。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me26_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "日冕抛射_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me26_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me26_skill01_sel.png",
+      "skill_state_icon": "abnormal_me26_skill01_nml.png",
+      "skill_value_desc": [
+        "15",
+        "1200",
+        "1",
+        "5",
+        "10",
+        "10"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me30_bigskill01",
+      "combat_skill_id": 99000030,
+      "skill_ban_icon": "abnormal_me30_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤自由战斗的红龙，可以通过念控之手与她魔法合体，红龙会喷吐爆裂火焰弹攻击所有敌人。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me30_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "爆裂焰弹_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me30_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me30_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me30_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me30_bigskill01_pve",
+      "combat_skill_id": 99000030,
+      "skill_ban_icon": "abnormal_me30_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤自由战斗的红龙喷射火焰或者火球对敌人造成伤害，也可以通过念控之手与她魔法合体发射火球。\n#[k=b5]（异能评级为5时）#l红龙喷火每秒造成#[k=b4]{0}#l次#[k=b4]{1}%#l超感强度的#[k=b6]炽能元素异常伤害#l。红龙火球造成#[k=b4]{2}%#l超感强度的#[k=b6]炽能元素异常伤害#l。合体火球造成#[k=b4]{3}%#l超感强度的#[k=b6]炽能元素异常伤害#l，并在地面留下持续#[k=b4]{4}#l秒火场，火场间隔#[k=b4]{5}#l秒造成#[k=b4]{6}%#l超感强度的#[k=b6]炽能元素异常伤害#l。红龙的伤害为敌人添加#[k=b4]{7}%#l#[k=b6]异常伤害易伤#l效果，持续#[k=b4]{8}#l秒。\n敌人被红龙喷射火焰或者火球命中后，#[k=b4]{9}#l秒内为敌人添加灼烧会造成#[k=b4]{10}%#l超感强度的#[k=b6]炽能元素异常伤害#l的燃爆效果，同一单位#[k=b4]{11}#l秒内仅触发一次燃爆。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me30_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "爆裂焰弹_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me30_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me30_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me30_bigskill01_nml.png",
+      "skill_value_desc": [
+        "20",
+        "30",
+        "750",
+        "600",
+        "13",
+        "1.5",
+        "200",
+        "48",
+        "5",
+        "5",
+        "600",
+        "2"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me30_skill01",
+      "combat_skill_id": 99000030,
+      "skill_ban_icon": "abnormal_me30_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤飞翔的红龙，一面喷吐烈焰一面向前飞行，灼烧途经的敌人，并留下持续的火焰轨迹。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me30_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "火焰飞行_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me30_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me30_skill01_sel.png",
+      "skill_state_icon": "abnormal_me30_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me30_skill01_pve",
+      "combat_skill_id": 99000030,
+      "skill_ban_icon": "abnormal_me30_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤飞翔的红龙，一面喷吐烈焰一面向前飞行，灼烧途经的敌人，并留下持续的火焰轨迹，命中的目标#[k=b4]{0}#l秒内添加灼烧时触发燃爆。喷吐烈焰造成#[k=b4]{1}%#l超感强度的#[k=b6]炽能元素异常伤害#l，火焰轨迹持续#[k=b4]{2}#l秒，每#[k=b4]{3}#l秒造成#[k=b4]{4}%#l超感强度的#[k=b6]炽能元素异常伤害#l，最终结束爆炸造成1次#[k=b4]{5}%#l超感强度的#[k=b6]炽能元素异常伤害#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me30_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "火焰飞行_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me30_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me30_skill01_sel.png",
+      "skill_state_icon": "abnormal_me30_skill01_nml.png",
+      "skill_value_desc": [
+        "5",
+        "900",
+        "5",
+        "1",
+        "200",
+        "900"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me32_bigskill01",
+      "combat_skill_id": 99000032,
+      "skill_ban_icon": "abnormal_me32_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤空之子生成风场，乘着风柱腾空而起，抵达最高点的气流平台；同时给予释放者#[k=b4]{0}%#l的移速提升以及免疫跌落伤害效果。空流升域及增益效果持续#[k=b4]{1}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me32_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "空流升域_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me32_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me32_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me32_bigskill01_nml.png",
+      "skill_value_desc": [
+        "15",
+        "20"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me32_skill01",
+      "combat_skill_id": 99000032,
+      "skill_ban_icon": "abnormal_me32_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "向前方召唤基于超越者最大生命值#[k=b4]{0}%#l护盾值的风墙，阻挡敌人的攻击，风墙持续#[k=b4]{1}#l秒。穿越自己与友方释放的风墙将会获得#[k=b4]{2}%#l的移速提升效果。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me32_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "气动防壁_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me32_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me32_skill01_sel.png",
+      "skill_state_icon": "abnormal_me32_skill01_nml.png",
+      "skill_value_desc": [
+        "120",
+        "6",
+        "15"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me34_bigskill01",
+      "combat_skill_id": 99000034,
+      "skill_ban_icon": "abnormal_me34_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤Mr.Wish使用你的副武器攻击敌人，造成#[k=b4]{0}%#l的#[k=b6]伤害#l。Mr.Wish有自己的小金库，因此不会消耗你任何弹药。\n主动异能\"双倍报价\"启动期间，Mr.Wish同样获得其效果加成。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me34_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "商用授权_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me34_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me34_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me34_bigskill01_nml.png",
+      "skill_value_desc": [
+        "50"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me34_bigskill01_pve",
+      "combat_skill_id": 99000034,
+      "skill_ban_icon": "abnormal_me34_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤Mr.Wish使用你的主武器攻击敌人，造成#[k=b6]伤害#l。Mr.Wish有自己的小金库，因此不会消耗你任何弹药。\n#[k=b5]（异能评级为5时）#lMr.Wish#[k=b6]伤害#l比例为#[k=b4]{0}%#l。\nMr.Wish也能享受双倍代价的增伤效果。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me34_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "商用授权_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me34_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me34_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me34_bigskill01_nml.png",
+      "skill_value_desc": [
+        "100"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me34_skill01",
+      "combat_skill_id": 99000034,
+      "skill_ban_icon": "abnormal_me34_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "你当前持握的武器消耗双倍弹药，伤害提升。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me34_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "双倍报价_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me34_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me34_skill01_sel.png",
+      "skill_state_icon": "abnormal_me34_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me34_skill01_pve",
+      "combat_skill_id": 99000034,
+      "skill_ban_icon": "abnormal_me34_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "当前手持武器直接从备弹消耗双倍弹药，提升伤害。\n枪械伤害提升#[k=b4]{0}%#l，持续#[k=b5]{1}秒#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me34_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "双倍报价_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me34_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me34_skill01_sel.png",
+      "skill_state_icon": "abnormal_me34_skill01_nml.png",
+      "skill_value_desc": [
+        "75",
+        "8"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me35_bigskill01",
+      "combat_skill_id": 99000035,
+      "skill_ban_icon": "abnormal_me35_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "投掷蒜你狠，落地后扎根并成长成为一颗巨大的洋葱。洋葱散发恶臭，持续对范围内的所有敌方单位造成混乱效果。同时不断在范围内敌对单位身上种植球根种子，达到一定数量后造成伤害。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me35_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "疯狂生长_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me35_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me35_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me35_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me35_bigskill01_pve",
+      "combat_skill_id": 99000035,
+      "skill_ban_icon": "abnormal_me35_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "投掷蒜你狠，落地后变为巨大蒜头，散发恶臭存在#[k=b5]{0}秒#l。#[k=b5]（异能评级为5时）#l每#[k=b5]{1}秒#l对范围内的敌对单位添加恶臭孢子，使目标产生混乱的同时减低移速{2}%，恶臭孢子会造成每#[k=b5]{3}秒#l造成#[k=b5]{4}%#l超感强度的异常伤害，#[k=b5]{5}%#l异常伤害易伤，持续#[k=b5]{6}秒#l，可被刷新。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me35_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "疯狂生长_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me35_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me35_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me35_bigskill01_nml.png",
+      "skill_value_desc": [
+        "25",
+        "2",
+        "20",
+        "0.5",
+        "220",
+        "40",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me35_skill01",
+      "combat_skill_id": 99000035,
+      "skill_ban_icon": "abnormal_me35_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "投掷一个带嘲讽的大蒜，在命中位置爆炸，混乱附近的单位，同时使周围怪物一起攻击该单位。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me35_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "失心臭云_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me35_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me35_skill01_sel.png",
+      "skill_state_icon": "abnormal_me35_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me35_skill01_pve",
+      "combat_skill_id": 99000035,
+      "skill_ban_icon": "abnormal_me35_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "投掷带嘲讽的球根，在命中位置爆炸。造成#[k=b4]{0}%#l超感强度的异常伤害，混乱附近的单位们，使周围单位们相互攻击，持续#[k=b5]{1}秒#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me35_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "失心臭云_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me35_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me35_skill01_sel.png",
+      "skill_state_icon": "abnormal_me35_skill01_nml.png",
+      "skill_value_desc": [
+        "1400",
+        "10"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me38_bigskill01",
+      "combat_skill_id": 99000038,
+      "skill_ban_icon": "abnormal_me38_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤皆斩，周期性瞬移到敌对目标附近，进行蓄力近战攻击。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me38_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "祓魔无相剑_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me38_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me38_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me38_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me38_bigskill01_pve",
+      "combat_skill_id": 99000038,
+      "skill_ban_icon": "abnormal_me38_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤皆斩，周期性瞬移到敌对目标附近，进行蓄力近战攻击。驻场期间，玩家获得近战吸附能力。\n#[k=b5]（异能评级为5时）#l皆斩造成#[k=b4]{0}%#l超感强度的#[k=b6]物理近战伤害#l，并对目标造成#[k=b4]{1}%#l#[k=b6]枪械易伤和近战易伤，#l持续#[k=b5]{2}秒#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me38_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "祓魔无相剑_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me38_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me38_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me38_bigskill01_nml.png",
+      "skill_value_desc": [
+        "3500",
+        "40",
+        "15"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me38_skill01",
+      "combat_skill_id": 99000038,
+      "skill_ban_icon": "abnormal_me38_skill01_ban.png",
+      "skill_cd_type": 2,
+      "skill_desc": {
+        "lan_translate": [
+          "向当前移动方向突进，并获得近战吸附的强化效果。可以充能#[k=b4]{0}#l次。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me38_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "踏影奇袭_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me38_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me38_skill01_sel.png",
+      "skill_state_icon": "abnormal_me38_skill01_nml.png",
+      "skill_value_desc": [
+        "2"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me38_skill01_pve",
+      "combat_skill_id": 99000038,
+      "skill_ban_icon": "abnormal_me38_skill01_ban.png",
+      "skill_cd_type": 2,
+      "skill_desc": {
+        "lan_translate": [
+          "向当前移动方向突进，并获得近战吸附的强化效果。可以充能#[k=b4]{0}#l次。_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_icon": "abnormal_me38_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "踏影奇袭_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me38_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me38_skill01_sel.png",
+      "skill_state_icon": "abnormal_me38_skill01_nml.png",
+      "skill_value_desc": [
+        "2"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me40_bigskill01",
+      "combat_skill_id": 99000040,
+      "skill_ban_icon": "abnormal_me40_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "吸附在玩家背上，对视野范围内所有敌对目标添加标记。同时显示附近敌对玩家一定时间的脚印。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me40_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "世界快照_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me40_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me40_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me40_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me40_bigskill01_pve",
+      "combat_skill_id": 99000040,
+      "skill_ban_icon": "abnormal_me40_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "吸附在玩家背上，对视野范围内#[k=b4]至多{0}名#l敌对目标添加#[k=b4]{1}%#l的枪械易伤，持续#[k=b4]{2}秒#l，同时具有显示附近敌对玩家近期脚印。#[k=b5]（异能评级为5时）#l在肩射、开镜状态下每持续{3}秒对当前朝向范围内的敌人额外造成#[k=b4]{4}%#l超感强度的枪械伤害，有效开火可加速扫描。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me40_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "世界快照_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me40_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me40_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me40_bigskill01_nml.png",
+      "skill_value_desc": [
+        "5",
+        "34",
+        "15",
+        "5",
+        "500"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me40_skill01",
+      "combat_skill_id": 99000040,
+      "skill_ban_icon": "abnormal_me40_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "向瞄准方向触发#[k=b4]{0}#次闪光拍摄，可透过障碍对一定范围内的目标触发标记。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me40_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "高速抓拍_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me40_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me40_skill01_sel.png",
+      "skill_state_icon": "abnormal_me40_skill01_nml.png",
+      "skill_value_desc": [
+        "1"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me40_skill01_pve",
+      "combat_skill_id": 99000040,
+      "skill_ban_icon": "abnormal_me40_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "向瞄准方向触发闪光拍摄，可透过障碍对一定范围内的#[k=b4]至多{0}名#l敌对目标触发标记。造成#[k=b4]{1}%#l超感强度的枪械伤害。同时对目标添加猎人标记。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me40_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "高速抓拍_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me40_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me40_skill01_sel.png",
+      "skill_state_icon": "abnormal_me40_skill01_nml.png",
+      "skill_value_desc": [
+        "5",
+        "800"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me47_bigskill01",
+      "combat_skill_id": 99000047,
+      "skill_ban_icon": "abnormal_me47_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "释放巫毒娃娃，对#[k=b4]{0}#l米范围内的敌方单位造成伤害，同时为自身和玩家恢复血量。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me47_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "饮命灵光_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me47_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me47_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me47_bigskill01_nml.png",
+      "skill_value_desc": [
+        "20"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me47_bigskill01_pve",
+      "combat_skill_id": 99000047,
+      "skill_ban_icon": "abnormal_me47_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤巫毒娃娃，使玩家以及附近敌人受到#[k=b6]枪械#l、#[k=b6]近战#l、#[k=b6]异常伤害#l的易伤效果，娃娃会承受#[k=b4]{0}%#l玩家受到的伤害，并每秒对附近敌人造成伤害，使用诅咒庇护时，敌人也会受到诅咒效果。\n#[k=b5]（异能评级为5时）#l易伤效果强度为#[k=b4]{1}%#l，娃娃额外获得#[k=b4]{2}%#l玩家最大生命值，每秒对#[k=b4]{3}#l米内的最近#[k=b4]{4}#l名敌人造成#[k=b4]{5}%#l超感强度的#[k=b6]超感伤害#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me47_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "饮命灵光_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me47_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me47_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me47_bigskill01_nml.png",
+      "skill_value_desc": [
+        "50",
+        "60",
+        "100",
+        "20",
+        "5",
+        "500"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me47_skill01",
+      "combat_skill_id": 99000047,
+      "skill_ban_icon": "abnormal_me47_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "开启血液狂热，立刻扣除当前#[k=b4]{0}%#l的生命并转化成双倍临时护盾，状态下使用武器命中目标恢复血量，持续#[k=b4]{1}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me47_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "诅咒庇护_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me47_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me47_skill01_sel.png",
+      "skill_state_icon": "abnormal_me47_skill01_nml.png",
+      "skill_value_desc": [
+        "45",
+        "15"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me47_skill01_pve",
+      "combat_skill_id": 99000047,
+      "skill_ban_icon": "abnormal_me47_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "玩家自身获得#[k=b4]{0}%#l#[k=b6]枪械伤害#l加成、#[k=b6]异常伤害#l加成、#[k=b6]近战伤害#l加成，同时获得#[k=b4]{1}%#l#[k=b6]枪械易伤#l、#[k=b6]异常伤害易伤#l、#[k=b6]近战伤害易伤#l效果持续#[k=b4]{2}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me47_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "诅咒庇护_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me47_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me47_skill01_sel.png",
+      "skill_state_icon": "abnormal_me47_skill01_nml.png",
+      "skill_value_desc": [
+        "18",
+        "18",
+        "10"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me49_bigskill01",
+      "combat_skill_id": 99000049,
+      "skill_ban_icon": "abnormal_me49_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "玩家戴上破碎少女头套，石化所有朝向玩家的目标。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me49_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "石化视线_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me49_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me49_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me49_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me49_bigskill_pve",
+      "combat_skill_id": 99000049,
+      "skill_ban_icon": "abnormal_me49_skill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "#[k=b5]（异能评级为5时）#l召唤破碎少女跟随，过程中发现敌人会依据目标距离对目标进行远程或近战攻击，被攻击的目标会被石化，近战时每#[k=b4]{0}#l秒造成#[k=b4]{1}%#l超感强度的#[k=b6]异常伤害#l，远程每次攻击造成#[k=b4]{2}%#l超感强度的#[k=b6]异常伤害#l，同时会使敌方降低#[k=b4]{3}%#l的#[k=b6]异常伤害#l抗性。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me49_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "破碎凝视_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me49_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me49_skill01_sel.png",
+      "skill_state_icon": "abnormal_me49_skill01_nml.png",
+      "skill_value_desc": [
+        "0.5",
+        "400",
+        "400",
+        "40"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me49_skill01",
+      "combat_skill_id": 99000049,
+      "skill_ban_icon": "abnormal_me49_skill01_ban.png",
+      "skill_cd_type": 2,
+      "skill_desc": {
+        "lan_translate": [
+          "向前方召唤破碎少女向前移动，过程中发现敌人会对目标进行攻击，被持续攻击的目标会降低移动速度。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me49_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "破碎凝视_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me49_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me49_skill01_sel.png",
+      "skill_state_icon": "abnormal_me49_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me49_skill_pve",
+      "combat_skill_id": 99000049,
+      "skill_ban_icon": "abnormal_me49_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "玩家戴上破碎少女头套，石化视野中#[k=b4]{0}#l米以内的目标，同时对目标每#[k=b4]{1}#l秒造成#[k=b4]{2}%#l超感强度的#[k=b6]异能伤害#l。技能持续#[k=b4]{3}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me49_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "石化视线_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me49_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me49_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me49_bigskill01_nml.png",
+      "skill_value_desc": [
+        "15",
+        "0.5",
+        "100",
+        "8"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me50_bigskill01",
+      "combat_skill_id": 99000050,
+      "skill_ban_icon": "abnormal_me50_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "在目标地点召唤黑洞，将范围内所有敌人吸引至中心。被黑洞引力场控制的敌人不能移动与攻击。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me50_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "黑洞_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me50_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me50_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me50_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me50_bigskill01_pve",
+      "combat_skill_id": 99000050,
+      "skill_ban_icon": "abnormal_me50_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "在目标地点召唤黑洞，将范围内所有敌人吸引至中心。被黑洞引力场控制的敌人不能移动与攻击。#[k=b5]（异能评级为5时）#l每隔{0}秒，造成#[k=b4]{1}%#l的枪械伤害，同时添加#[k=b4]{2}%#l的枪械易伤，持续#[k=b4]{3}秒#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me50_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "黑洞_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me50_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me50_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me50_bigskill01_nml.png",
+      "skill_value_desc": [
+        "0.5",
+        "220",
+        "34",
+        "15"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me50_skill01",
+      "combat_skill_id": 99000050,
+      "skill_ban_icon": "abnormal_me50_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤白洞跟随并保护你，所有敌人的子弹都会被弹开。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me50_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "白洞_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me50_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me50_skill01_sel.png",
+      "skill_state_icon": "abnormal_me50_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me50_skill01_pve",
+      "combat_skill_id": 99000050,
+      "skill_ban_icon": "abnormal_me50_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤白洞跟随并保护你，所有敌人的子弹都会被弹开，持续时间#[k=b4]{0}秒#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me50_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "白洞_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me50_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me50_skill01_sel.png",
+      "skill_state_icon": "abnormal_me50_skill01_nml.png",
+      "skill_value_desc": [
+        "9"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me53_bigskill01",
+      "combat_skill_id": 99000053,
+      "skill_ban_icon": "abnormal_me53_bigskill01_syzj_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "#[k=b5]（异能评级为5时）#l在目标地点召唤#[k=b4]{0}#l只触手，触手对周围的目标进行攻击，每次造成#[k=b4]{1}%#l超感强度的#[k=b6]异常伤害#l，同时召唤迷你黄衣登场。迷你黄衣召唤独立的触手进行攻击，每次攻击造成#[k=b4]{2}%#l超感强度的#[k=b6]异常伤害#l。伤害同时降低目标的#[k=b6]异常伤害#l抗性#[k=b4]{3}%#l，持续#[k=b4]{4}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me53_bigskill01_syzj_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "深渊降临_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me53_bigskill01_syzj_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me53_bigskill01_syzj_sel.png",
+      "skill_state_icon": "abnormal_me53_bigskill01_syzj_nml.png",
+      "skill_value_desc": [
+        "6",
+        "500",
+        "1400",
+        "40",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me53_skill01",
+      "combat_skill_id": 99000053,
+      "skill_ban_icon": "abnormal_me53_skill01_wckt_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "在目标地点召唤噩梦之眼，持续牵引周围目标，并每#[k=b4]{0}#l秒对牵引目标造成#[k=b4]{1}%#l超感强度的#[k=b6]异常伤害#l，持续#[k=b4]{2}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me53_skill01_wckt_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "强制入席_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me53_skill01_wckt_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me53_skill01_wckt_sel.png",
+      "skill_state_icon": "abnormal_me53_skill01_wckt_nml.png",
+      "skill_value_desc": [
+        "0.5",
+        "150",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me58_bigskill01",
+      "combat_skill_id": 99000058,
+      "skill_ban_icon": "abnormal_me58_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤冬灵，对周边区域造成伤害，随后在场上对目标敌人召唤冬灵冰球造成范围伤害，在场时，每秒会在附近随机一个敌人身边召唤冰晶。\n#[k=b5]（异能评级为5时）#l对周边造成#[k=b4]{0}%#l超感强度的#[k=b6]霜寒伤害#l，冬灵冰球造成#[k=b4]{1}%#l超感强度的#[k=b6]霜寒伤害#l。造成伤害为目标添加#[k=b4]{2}%#l#[k=b6]异常易伤#l效果，持续#[k=b5]{3}秒#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me58_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "妖精呼唤_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me58_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me58_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me58_bigskill01_nml.png",
+      "skill_value_desc": [
+        "2000",
+        "2000",
+        "40",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me58_bigskill01_pve",
+      "combat_skill_id": 99000058,
+      "skill_ban_icon": "abnormal_me58_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤冬灵，对周边区域造成伤害，随后在场上对目标敌人召唤冬灵冰球造成范围伤害，在场时，每{0}秒会在附近随机一个敌人身边召唤冰晶。\n#[k=b5]（异能评级为5时）#l对周边造成#[k=b4]{1}%#l超感强度的#[k=b6]霜寒元素异常伤害#l，冬灵冰球造成#[k=b4]{2}%#l超感强度的#[k=b6]霜寒元素异常伤害#l。造成伤害为目标添加#[k=b4]{3}%#l#[k=b6]异常易伤#l效果，持续#[k=b5]{4}秒#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me58_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "妖精呼唤_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me58_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me58_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me58_bigskill01_nml.png",
+      "skill_value_desc": [
+        "3",
+        "2000",
+        "1500",
+        "48",
+        "10"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me58_skill01",
+      "combat_skill_id": 99000058,
+      "skill_ban_icon": "abnormal_me58_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "向前释放霜雪禁区。对范围内目标每#[k=b4]{0}#l秒造成#[k=b4]{1}%#l超感强度的#[k=b6]霜寒伤害#l；并降低目标的移动速度，持续#[k=b4]{2}#l秒。释放时会引爆霜雪禁区中的冰晶，每引爆一个冰晶，降低技能#[k=b4]{3}#l秒冷却时间。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me58_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "霜雪禁区_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me58_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me58_skill01_sel.png",
+      "skill_state_icon": "abnormal_me58_skill01_nml.png",
+      "skill_value_desc": [
+        "0.5",
+        "120",
+        "5",
+        "2"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me58_skill01_pve",
+      "combat_skill_id": 99000058,
+      "skill_ban_icon": "abnormal_me58_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "向前释放霜雪禁区。对范围内目标每#[k=b4]{0}#l秒造成#[k=b4]{1}%#l超感强度的#[k=b6]霜寒元素异常伤害#l；并降低目标的移动速度，持续#[k=b4]{2}#l秒。释放时会引爆霜雪禁区中的冰晶，每引爆一个冰晶，降低技能#[k=b4]{3}#l秒冷却时间。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me58_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "霜雪禁区_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me58_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me58_skill01_sel.png",
+      "skill_state_icon": "abnormal_me58_skill01_nml.png",
+      "skill_value_desc": [
+        "0.5",
+        "120",
+        "5",
+        "2"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me59_bigskill01",
+      "combat_skill_id": 99000059,
+      "skill_ban_icon": "abnormal_me59_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤一只自主战斗的电蝾螈。#[k=b5]（异能评级为5时）#l电蝾螈出场对周围目标造成#[k=b4]{0}%#l超感强度的#[k=b6]电离元素异常伤害#l，使目标护盾失效，并封锁敌方超越者的技能。\n电蝾螈召唤雷云进行攻击，对目标造成#[k=b4]{1}%#l超感强度的#[k=b6]电离元素异常伤害#l。\n使用念控之手操控电蝾螈，向目标喷吐球形闪电，造成#[k=b4]{2}%#l超感强度的#[k=b6]电离元素异常伤害#l。\n伤害同时对目标添加#[k=b4]{3}%#l的#[k=b6]异常易伤#l，易伤持续#[k=b4]{4}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me59_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "电荷过载_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me59_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me59_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me59_bigskill01_nml.png",
+      "skill_value_desc": [
+        "2800",
+        "450",
+        "700",
+        "40",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me59_skill01",
+      "combat_skill_id": 99000059,
+      "skill_ban_icon": "abnormal_me59_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "电蝾螈附身，提升冲刺速度；在超越者周身产生闪电，每#[k=b4]{0}#l秒对附近单位造成#[k=b4]{1}%#l超感强度的#[k=b6]电离元素异常伤害#l；雷光疾驰持续#[k=b4]{2}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me59_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "雷光疾驰_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me59_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me59_skill01_sel.png",
+      "skill_state_icon": "abnormal_me59_skill01_nml.png",
+      "skill_value_desc": [
+        "0.2",
+        "70",
+        "8"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me64_bigskill01",
+      "combat_skill_id": 99000064,
+      "skill_ban_icon": "abnormal_me64_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤一只自主战斗的鲸狗将战场转化为水下世界。#[k=b5]（异能评级为5时）#l鲸狗出场对周围目标造成#[k=b4]{0}%#l超感强度的#[k=b6]枪械伤害#l并击退目标；鲸狗喷吐水柱造成#[k=b4]{1}%#l超感强度的#[k=b6]枪械伤害#l、喷吐水球造成#[k=b4]{2}%#l超感强度的#[k=b6]枪械伤害#l。\n在水下世界中，超越者与鲸狗的攻击效果提升，被命中的敌人将被水流控制无法行动。\n伤害同时对目标添加#[k=b4]{3}%#l的#[k=b6]枪械易伤#l，易伤持续#[k=b4]{4}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me64_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "唤潮_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me64_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me64_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me64_bigskill01_nml.png",
+      "skill_value_desc": [
+        "3000",
+        "1500",
+        "400",
+        "34",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me64_skill01",
+      "combat_skill_id": 99000064,
+      "skill_ban_icon": "abnormal_me64_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "超越者化身鲸狗进入溯游状态，提升移动速度；溯游期间超越者的生命值将临时替换为异常物生命值；溯游结束后提供至多#[k=b4]{0}%#l的弹匣装填。变身持续#[k=b4]{1}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me64_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "泳动潜行_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me64_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me64_skill01_sel.png",
+      "skill_state_icon": "abnormal_me64_skill01_nml.png",
+      "skill_value_desc": [
+        "200",
+        "10"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me66_bigskill01",
+      "combat_skill_id": 99000066,
+      "skill_ban_icon": "abnormal_me66_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤一只自主战斗的唤生灵，与超越者并肩作战。#[k=b5]（异能评级为5时）#l唤生灵呼唤幻生煌雀攻击目标，造成#[k=b4]{0}%#l超感强度的#[k=b6]枪械伤害#l、释放箭雨对范围内目标造成#[k=b4]{1}%#l超感强度的#[k=b6]枪械伤害#l。\n唤生灵将赋予超越者召唤幻生煌雀能力，超越者每次枪械命中都有#[k=b4]{2}%#l的概率释放一只幻生煌雀攻击目标，造成#[k=b4]{3}%#l超感强度的#[k=b6]枪械伤害#l。\n伤害同时对目标添加#[k=b4]{4}%#l的#[k=b6]枪械易伤#l，易伤持续#[k=b4]{5}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me66_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "唤生仪式_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me66_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me66_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me66_bigskill01_nml.png",
+      "skill_value_desc": [
+        "350",
+        "800",
+        "15",
+        "350",
+        "40",
+        "5"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me66_bigskill01_weapon",
+      "combat_skill_id": 0,
+      "priority": 100,
+      "skill_ban_icon": "abnormal_me01_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": "XXXX",
+      "skill_effect_param": "skill_me66",
+      "skill_effect_type": 1,
+      "skill_icon": "abnormal_me01_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "唤生灵赋能_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me01_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me01_skill01_sel.png",
+      "skill_state_icon": "abnormal_me01_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me66_skill01",
+      "combat_skill_id": 99000066,
+      "skill_ban_icon": "abnormal_me66_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤一只唤生羽雀直线飞行，对沿途目标施加猎人标记效果；并对目标造成#[k=b4]{0}%#l超感强度的#[k=b6]枪械伤害#l。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me66_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "锐利之眼_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me66_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me66_skill01_sel.png",
+      "skill_state_icon": "abnormal_me66_skill01_nml.png",
+      "skill_value_desc": [
+        "600"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me67_bigskill01",
+      "combat_skill_id": 99000067,
+      "skill_ban_icon": "abnormal_me67_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤勇士乔治协助战斗。勇士乔治出场时，在范围内释放“理想箱庭”，同时骑乘贝西摩斯对路径上的目标造成伤害。\n“理想箱庭”内的超越者会获得高额护盾，并进入守护状态，降低被击退的可能。\n#[k=b5]（异能评级为5时）#l提升护盾上限至#[k=b4]{0}%#l最大生命值，并立刻获得#[k=b4]{1}%#l最大生命值的护盾；同时每秒进行#[k=b4]{2}%#l最大生命值的护盾补充。离开“理想箱庭”后，所有强化效果均会被移除。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me67_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "硬盒奇兵_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me67_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me67_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me67_bigskill01_nml.png",
+      "skill_value_desc": [
+        "300",
+        "200",
+        "13"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me67_skill01",
+      "combat_skill_id": 99000067,
+      "skill_ban_icon": "abnormal_me67_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "使用乔治剑盾的力量，进入伤害吸收状态，同时嘲讽附近的单位。\n状态期间吸收#[k=b4]{0}%#l受到的伤害；状态结束时，将吸收的伤害平均返还给附近目标，最高返还#[k=b4]{1}%#l最大生命值的伤害。伤害吸收状态持续#[k=b4]{2}#l秒。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me67_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "勇气回响_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me67_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me67_skill01_sel.png",
+      "skill_state_icon": "abnormal_me67_skill01_nml.png",
+      "skill_value_desc": [
+        "80",
+        "3000",
+        "8"
+      ],
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me68_bigskill01",
+      "combat_skill_id": 99000068,
+      "skill_ban_icon": "abnormal_me68_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": "XXXX",
+      "skill_icon": "abnormal_me68_bigskill01_big.png",
+      "skill_name": "XXXX",
+      "skill_nml_icon": "abnormal_me68_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me68_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me68_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me68_skill01",
+      "combat_skill_id": 99000068,
+      "skill_ban_icon": "abnormal_me68_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": "XXXX",
+      "skill_icon": "abnormal_me68_skill01_big.png",
+      "skill_name": "XXXX",
+      "skill_nml_icon": "abnormal_me68_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me68_skill01_sel.png",
+      "skill_state_icon": "abnormal_me68_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me69_bigskill01",
+      "combat_skill_id": 99000069,
+      "skill_ban_icon": "abnormal_me69_bigskill01_ban.png",
+      "skill_cd_type": 3,
+      "skill_desc": {
+        "lan_translate": [
+          "召唤贝西摩斯登场，获得全新技能，使用后骑乘贝西摩斯战斗。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me69_bigskill01_big.png",
+      "skill_name": "XXXX",
+      "skill_nml_icon": "abnormal_me69_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me69_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me69_bigskill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "me69_skill01",
+      "combat_skill_id": 99000069,
+      "skill_ban_icon": "abnormal_me69_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "玩家右手幻化成龙爪，向前方单位释放范围攻击。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_icon": "abnormal_me69_skill01_big.png",
+      "skill_name": "XXXX",
+      "skill_nml_icon": "abnormal_me69_skill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me69_skill01_sel.png",
+      "skill_state_icon": "abnormal_me69_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "sco_takeback",
+      "combat_skill_id": 0,
+      "priority": 9999,
+      "skill_ban_icon": "abnormal_cbt2_icon_knapsack_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "收回异常物_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_func_type": 2,
+      "skill_icon": "abnormal_cbt2_icon_knapsack_nml.png",
+      "skill_name": {
+        "lan_translate": [
+          "收回异常物_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_cbt2_icon_knapsack_nml.png",
+      "skill_press_type": 2,
+      "skill_sel_icon": "abnormal_cbt2_icon_knapsack_sel.png",
+      "skill_state_icon": "abnormal_cbt2_icon_knapsack_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "sco_takeback_me66",
+      "combat_skill_id": 0,
+      "priority": 9999,
+      "skill_ban_icon": "abnormal_me01_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "收回异常物_$S@TIDS$_36un|2"
+        ]
+      },
+      "skill_effect_param": "skill_me66",
+      "skill_effect_type": 1,
+      "skill_func_type": 2,
+      "skill_icon": "abnormal_me01_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "收回异常物_$S@TIDS$_36un|3"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me01_skill01_nml.png",
+      "skill_press_type": 2,
+      "skill_sel_icon": "abnormal_me01_skill01_sel.png",
+      "skill_state_icon": "abnormal_me01_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "sco_takeback_me66_hawk",
+      "combat_skill_id": 0,
+      "priority": 9999,
+      "skill_ban_icon": "abnormal_me01_skill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "收回异常物_$S@TIDS$_36un|4"
+        ]
+      },
+      "skill_effect_param": "skill_me66_hawk",
+      "skill_effect_type": 1,
+      "skill_func_type": 2,
+      "skill_icon": "abnormal_me01_skill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "收回异常物_$S@TIDS$_36un|5"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me01_skill01_nml.png",
+      "skill_press_type": 2,
+      "skill_sel_icon": "abnormal_me01_skill01_sel.png",
+      "skill_state_icon": "abnormal_me01_skill01_nml.png",
+      "unit_name": "player"
+    },
+    {
+      "behavior_name": "cosplay_out",
+      "combat_skill_id": 99000064,
+      "priority": 9999,
+      "skill_ban_icon": "abnormal_cbt2_icon_kzz1_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": {
+        "lan_translate": [
+          "超越者退出化身鲸狗状态。_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_effect_type": 2,
+      "skill_icon": "abnormal_cbt2_icon_kzz1_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "退出变身_$S@TIDS$_36un|0"
+        ]
+      },
+      "skill_nml_icon": "abnormal_cbt2_icon_kzz1_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_cbt2_icon_kzz1_sel.png",
+      "skill_state_icon": "abnormal_cbt2_icon_kzz1_nml.png",
+      "unit_name": "sco_me64"
+    },
+    {
+      "behavior_name": "cosplay_out",
+      "combat_skill_id": 0,
+      "priority": 9999,
+      "skill_ban_icon": "abnormal_me59_bigskill01_ban.png",
+      "skill_cd_type": 1,
+      "skill_desc": "XXXX",
+      "skill_effect_param": "550006602",
+      "skill_effect_type": 2,
+      "skill_icon": "abnormal_me59_bigskill01_big.png",
+      "skill_name": {
+        "lan_translate": [
+          "退出变身_$S@TIDS$_36un|1"
+        ]
+      },
+      "skill_nml_icon": "abnormal_me59_bigskill01_nml.png",
+      "skill_press_type": 1,
+      "skill_sel_icon": "abnormal_me59_bigskill01_sel.png",
+      "skill_state_icon": "abnormal_me59_bigskill01_nml.png",
+      "unit_name": "sco_me66"
+    },
+    {
+      "player_attr_set": []
+    }
+  ]
+}

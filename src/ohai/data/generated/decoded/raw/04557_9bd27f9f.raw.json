@@ -1,0 +1,1332 @@
+{
+  "_meta": {
+    "sourceFile": "04557_9bd27f9f.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04557_9bd27f9f.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:51.277Z",
+    "recordCount": 22,
+    "sourceHash": "eaf5e6069c465a4ba8fcf830873f3b745be53654ae8e2679618ab5df55e91e8a",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "data": [],
+      "meta": {}
+    },
+    {},
+    {},
+    {},
+    {
+      "Type": "BasicConfigNode",
+      "auto_adjust_unit_property": false,
+      "can_revive_when_die": false,
+      "changed_model_scale": 1,
+      "die_drop_configs": "",
+      "die_not_cost_durability": false,
+      "disable_hear_params": false,
+      "disable_small_map_ui": false,
+      "dun_member": 4,
+      "dun_no": 90001,
+      "dun_subtype": 32,
+      "dun_type": "normal",
+      "enable_monster_area_level": false,
+      "exit_dungeon_radius": -1,
+      "exit_dungeon_radius_countdown": 0,
+      "hide_btn_exit": false,
+      "is_consume_item_revive": false,
+      "is_display_death_ui": false,
+      "is_forbidden_litter_in_dungeon": false,
+      "is_migrate_leave": false,
+      "is_persist_dungeon": false,
+      "is_reset_dun_in_wipe": false,
+      "is_show_toast_ui": false,
+      "item_revive_num": 0,
+      "medium_stronghold_no": 0,
+      "modify_npc_level": -1,
+      "modify_npc_strength": -1,
+      "need_remove_hold_hand_tags": [],
+      "need_remove_item_no_list": [],
+      "no_fail_on_die": false,
+      "no_leave_effect": false,
+      "node_type": "trigger",
+      "public_event_destroy_delay_time": 0,
+      "public_event_duration": 0,
+      "public_event_radius": 60,
+      "remain_weather": false,
+      "restart_on_lose_connect": false,
+      "scense_file": "scene/bc_tower_01/bc_tower_01.scn",
+      "use_prefab": false
+    },
+    {
+      "0": [
+        [
+          -20,
+          116.608,
+          -5,
+          141.1424
+        ]
+      ]
+    },
+    {},
+    {},
+    {},
+    {
+      "s1001,OutputStageCreate": [
+        [
+          "s1006",
+          "InputStart"
+        ]
+      ],
+      "s1006,OutputAllDie": [
+        [
+          "s1007",
+          "InputBattleWin"
+        ]
+      ],
+      "s1006,OutputInclude": [
+        [
+          "s1005",
+          "InputStart"
+        ],
+        [
+          "s1008",
+          "InputStart"
+        ],
+        [
+          "s1009",
+          "InputStart"
+        ]
+      ]
+    },
+    {
+      "s1000": {
+        "Type": "TriggerStartEvent",
+        "node_type": "trigger"
+      },
+      "s1001": {
+        "Type": "TriggerStageCreate",
+        "node_type": "trigger"
+      },
+      "s1004": {
+        "Type": "BirthPointNode",
+        "camp_no": 0,
+        "is_init_birth_point": true,
+        "is_rebirth_point": false,
+        "nid": "s1004",
+        "node_type": "trigger",
+        "pos4": [
+          -20,
+          116.608,
+          -5,
+          141.1424
+        ]
+      },
+      "s1005": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [
+          {
+            "bool_value": 0,
+            "enum_value": 0,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "BornType",
+            "param_type": "EBornType",
+            "str_list_value": [],
+            "str_value": 0
+          },
+          {
+            "bool_value": 0,
+            "enum_value": 0,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "UncombatBehavior",
+            "param_type": "UCMB",
+            "str_list_value": [],
+            "str_value": 0
+          },
+          {
+            "bool_value": true,
+            "enum_value": null,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "FarkZtoMw9ABRwf7JHounD",
+            "param_type": "2",
+            "str_list_value": [],
+            "str_value": 0
+          }
+        ],
+        "ai_file": "bt_lst_assault_s3zhuilie",
+        "anim_graph_path": "character/monster/mob/anim_graph/mob.animgraph",
+        "animation_path": "",
+        "aoi_radius": 60,
+        "aoi_radius2": 60,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id"
+        ],
+        "combat_prototype_no": "120115",
+        "combat_unit_no": "12011505002",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "26550501",
+        "drop_show_id": "1205044",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "forced_move_resistance": 0,
+        "head_bar_rule_list": [
+          38,
+          5
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 40,
+        "model_path": "character/player/npc/lstsb209_hs/lstsb0209_blue_s3_01/lstsb0209_blue_s3_01.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "【畸变】收容员_$S@TIDS$_5mlt|0"
+          ]
+        },
+        "need_perceptron": false,
+        "nid": "s1005",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": false,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          5.7817,
+          82.7568,
+          -49.1842
+        ],
+        "prefab_id": "base|1301011105",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###罗塞塔步兵_idle态_s3紊乱追猎者_$S@TIDS$_5mlt|0"
+          ]
+        },
+        "unit_camp_template_no": "412",
+        "unit_entity_type": "Enemy",
+        "unit_id": "dungeon_90001_s1005",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "【畸变】收容员_$S@TIDS$_5mlt|1"
+          ]
+        },
+        "unit_prototype": 1,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": {
+          "lan_translate": [
+            "###DEBUG_ONLY###默认类型_$S@TIDS$_5mlt|0"
+          ]
+        },
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1006": {
+        "Type": "TriggerMonsterGroup",
+        "is_add_by_trigger": false,
+        "is_team": false,
+        "max_num": 10,
+        "monster_list": [
+          "s1005",
+          "s1008",
+          "s1009"
+        ],
+        "nid": "",
+        "node_type": "trigger",
+        "random_num": 0
+      },
+      "s1007": {
+        "Type": "TriggerEndEvent",
+        "leave_countdown": -1,
+        "nid": "",
+        "node_type": "trigger"
+      },
+      "s1008": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [
+          {
+            "bool_value": 0,
+            "enum_value": 1,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "BornType",
+            "param_type": "EBornType",
+            "str_list_value": [],
+            "str_value": 0
+          },
+          {
+            "bool_value": 0,
+            "enum_value": 0,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "UncombatBehavior",
+            "param_type": "UCMB",
+            "str_list_value": [],
+            "str_value": 0
+          }
+        ],
+        "ai_file": "bt_s3_lst_gatling_zhuilie",
+        "anim_graph_path": "character/player/npc/lstdz208/anim_graph/lstdz_gatling.animgraph",
+        "animation_path": "",
+        "aoi_radius": 60,
+        "aoi_radius2": 60,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id"
+        ],
+        "combat_prototype_no": "120423",
+        "combat_unit_no": "12042305002",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "26550507",
+        "drop_show_id": "1205045",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "forced_move_resistance": 2,
+        "head_bar_rule_list": [
+          38
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 40,
+        "model_path": "character/monster/zombie/lstgrz_01_light_s3_01/lstgrz_01_light_s3_01.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "s1006",
+        "name": {
+          "lan_translate": [
+            "【畸变】重装员_$S@TIDS$_5mlt|0"
+          ]
+        },
+        "need_perceptron": false,
+        "nid": "s1008",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": false,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          3.3652,
+          82.8931,
+          -47.8704
+        ],
+        "prefab_id": "base|1361011104",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###罗塞塔重装_首领_idle态s3监视追猎者_$S@TIDS$_5mlt|0"
+          ]
+        },
+        "unit_camp_template_no": "412",
+        "unit_entity_type": "Enemy",
+        "unit_id": "dungeon_90001_s1008",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "【畸变】重装员_$S@TIDS$_5mlt|1"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": {
+          "lan_translate": [
+            "###DEBUG_ONLY###默认类型_$S@TIDS$_5mlt|1"
+          ]
+        },
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "s1009": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [
+          {
+            "bool_value": 0,
+            "enum_value": 1,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "BornType",
+            "param_type": "EBornType",
+            "str_list_value": [],
+            "str_value": 0
+          },
+          {
+            "bool_value": 0,
+            "enum_value": 0,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "UncombatBehavior",
+            "param_type": "UCMB",
+            "str_list_value": [],
+            "str_value": 0
+          }
+        ],
+        "ai_file": "bt_vulture_ax_s3zhuilie",
+        "anim_graph_path": "character/monster/mob/anim_graph/mob.animgraph",
+        "animation_path": "",
+        "aoi_radius": 60,
+        "aoi_radius2": 60,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id"
+        ],
+        "combat_prototype_no": "110404",
+        "combat_unit_no": "11040405002",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "26550505",
+        "drop_show_id": "1205044",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "forced_move_resistance": 0,
+        "head_bar_rule_list": [
+          38,
+          5
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 40,
+        "model_path": "character/player/npc/vulture/vulture_vanguard_s3_01/vulture_vanguard_s3_01.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "s1006",
+        "name": {
+          "lan_translate": [
+            "【畸变】尖兵_$S@TIDS$_5mlt|0"
+          ]
+        },
+        "need_perceptron": false,
+        "nid": "s1009",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": false,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          1.8807,
+          81.5027,
+          -55.4746
+        ],
+        "prefab_id": "base|1401101057",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###新秃鹫—s3暴食追猎者_$S@TIDS$_5mlt|0"
+          ]
+        },
+        "unit_camp_template_no": "412",
+        "unit_entity_type": "Enemy",
+        "unit_id": "dungeon_90001_s1009",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "【畸变】尖兵_$S@TIDS$_5mlt|1"
+          ]
+        },
+        "unit_prototype": 1,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": {
+          "lan_translate": [
+            "###DEBUG_ONLY###默认类型_$S@TIDS$_5mlt|2"
+          ]
+        },
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "rune_dead_seq_receive_dict": {},
+      "rune_dead_seq_send_dict": {}
+    },
+    {},
+    {},
+    {
+      "left_top": [
+        -8192,
+        8192
+      ],
+      "min_zone_radius": 50,
+      "right_bottom": [
+        8192,
+        -8192
+      ],
+      "space_life_type": "once",
+      "zone_tree": 1,
+      "zones": {
+        "1": {
+          "fixed_bound": true,
+          "left_top": [
+            -8192,
+            8192
+          ],
+          "right_bottom": [
+            8192,
+            -8192
+          ]
+        }
+      }
+    },
+    {
+      "dungeon_90001_s1005": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [
+          {
+            "bool_value": 0,
+            "enum_value": 0,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "BornType",
+            "param_type": "EBornType",
+            "str_list_value": [],
+            "str_value": 0
+          },
+          {
+            "bool_value": 0,
+            "enum_value": 0,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "UncombatBehavior",
+            "param_type": "UCMB",
+            "str_list_value": [],
+            "str_value": 0
+          },
+          {
+            "bool_value": true,
+            "enum_value": null,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "FarkZtoMw9ABRwf7JHounD",
+            "param_type": "2",
+            "str_list_value": [],
+            "str_value": 0
+          }
+        ],
+        "ai_file": "bt_lst_assault_s3zhuilie",
+        "anim_graph_path": "character/monster/mob/anim_graph/mob.animgraph",
+        "animation_path": "",
+        "aoi_radius": 60,
+        "aoi_radius2": 60,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id"
+        ],
+        "combat_prototype_no": "120115",
+        "combat_unit_no": "12011505002",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "26550501",
+        "drop_show_id": "1205044",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "forced_move_resistance": 0,
+        "head_bar_rule_list": [
+          38,
+          5
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 40,
+        "model_path": "character/player/npc/lstsb209_hs/lstsb0209_blue_s3_01/lstsb0209_blue_s3_01.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "",
+        "name": {
+          "lan_translate": [
+            "【畸变】收容员_$S@TIDS$_5mlt|2"
+          ]
+        },
+        "need_perceptron": false,
+        "nid": "s1005",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": false,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          5.7817,
+          82.7568,
+          -49.1842
+        ],
+        "prefab_id": "base|1301011105",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###罗塞塔步兵_idle态_s3紊乱追猎者_$S@TIDS$_5mlt|1"
+          ]
+        },
+        "unit_camp_template_no": "412",
+        "unit_entity_type": "Enemy",
+        "unit_id": "dungeon_90001_s1005",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "【畸变】收容员_$S@TIDS$_5mlt|3"
+          ]
+        },
+        "unit_prototype": 1,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": {
+          "lan_translate": [
+            "###DEBUG_ONLY###默认类型_$S@TIDS$_5mlt|3"
+          ]
+        },
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_90001_s1008": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [
+          {
+            "bool_value": 0,
+            "enum_value": 1,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "BornType",
+            "param_type": "EBornType",
+            "str_list_value": [],
+            "str_value": 0
+          },
+          {
+            "bool_value": 0,
+            "enum_value": 0,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "UncombatBehavior",
+            "param_type": "UCMB",
+            "str_list_value": [],
+            "str_value": 0
+          }
+        ],
+        "ai_file": "bt_s3_lst_gatling_zhuilie",
+        "anim_graph_path": "character/player/npc/lstdz208/anim_graph/lstdz_gatling.animgraph",
+        "animation_path": "",
+        "aoi_radius": 60,
+        "aoi_radius2": 60,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id"
+        ],
+        "combat_prototype_no": "120423",
+        "combat_unit_no": "12042305002",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "26550507",
+        "drop_show_id": "1205045",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "forced_move_resistance": 2,
+        "head_bar_rule_list": [
+          38
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 40,
+        "model_path": "character/monster/zombie/lstgrz_01_light_s3_01/lstgrz_01_light_s3_01.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "s1006",
+        "name": {
+          "lan_translate": [
+            "【畸变】重装员_$S@TIDS$_5mlt|2"
+          ]
+        },
+        "need_perceptron": false,
+        "nid": "s1008",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": false,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          3.3652,
+          82.8931,
+          -47.8704
+        ],
+        "prefab_id": "base|1361011104",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###罗塞塔重装_首领_idle态s3监视追猎者_$S@TIDS$_5mlt|1"
+          ]
+        },
+        "unit_camp_template_no": "412",
+        "unit_entity_type": "Enemy",
+        "unit_id": "dungeon_90001_s1008",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "【畸变】重装员_$S@TIDS$_5mlt|3"
+          ]
+        },
+        "unit_prototype": 5,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": {
+          "lan_translate": [
+            "###DEBUG_ONLY###默认类型_$S@TIDS$_5mlt|4"
+          ]
+        },
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      },
+      "dungeon_90001_s1009": {
+        "3dui_path": 0,
+        "Type": "NpcNode",
+        "ai_blackboard_vars": [
+          {
+            "bool_value": 0,
+            "enum_value": 1,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "BornType",
+            "param_type": "EBornType",
+            "str_list_value": [],
+            "str_value": 0
+          },
+          {
+            "bool_value": 0,
+            "enum_value": 0,
+            "bool_list_value": [],
+            "float_list_value": [],
+            "float_value": 0,
+            "int_list_value": [],
+            "int_value": 0,
+            "param_key": "UncombatBehavior",
+            "param_type": "UCMB",
+            "str_list_value": [],
+            "str_value": 0
+          }
+        ],
+        "ai_file": "bt_vulture_ax_s3zhuilie",
+        "anim_graph_path": "character/monster/mob/anim_graph/mob.animgraph",
+        "animation_path": "",
+        "aoi_radius": 60,
+        "aoi_radius2": 60,
+        "avoid_be_hit": 0,
+        "battle_same_time": false,
+        "can_be_locked_by_player_melee": true,
+        "can_mod_pos_y": true,
+        "can_stealth": false,
+        "can_stealth_server": false,
+        "can_trigger_range_listener": false,
+        "changed_attrs": [
+          "prefab_id"
+        ],
+        "combat_prototype_no": "110404",
+        "combat_unit_no": "11040405002",
+        "condition_drops": [],
+        "create_by_start_port": true,
+        "current_rate": 0,
+        "custom_init_id": -1,
+        "data_source": "BaseNPCEnum",
+        "deviation_consume_containment_once": 0,
+        "deviation_containment_auto_delete": false,
+        "deviation_unit_soul_type": "",
+        "device_type": 0,
+        "disable_capsule": false,
+        "disable_col_and_hit_box": false,
+        "disable_sight_params": false,
+        "drop_gift_id": "26550505",
+        "drop_show_id": "1205044",
+        "dun_adaptive_gameplay_id": 0,
+        "dynamic_mask_level": 0,
+        "enable_ai_public_exit_combat": false,
+        "enable_warrior_npc": false,
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "forced_move_resistance": 0,
+        "head_bar_rule_list": [
+          38,
+          5
+        ],
+        "head_bar_rule_no": "",
+        "hide_damage_tips": false,
+        "hide_npc_word": false,
+        "high_light_range": 0,
+        "init_buff_list": [],
+        "init_invisible": false,
+        "init_mtl_type": "",
+        "interactable_text": "",
+        "is_default_perceived_params": true,
+        "is_detect_detour_height": false,
+        "is_disable_exit_combat_dis": false,
+        "is_elder_airplane": false,
+        "is_mod_pos_y_top": false,
+        "is_public_npc": 1,
+        "is_shield_drop_exp": false,
+        "is_show_be_hit": true,
+        "is_show_scene_3dui": false,
+        "is_stealth": false,
+        "is_stealth_server": false,
+        "is_stronghold_npc": false,
+        "is_transport_npc": false,
+        "join_calculate_dungeon_center": true,
+        "max_summon": 40,
+        "model_path": "character/player/npc/vulture/vulture_vanguard_s3_01/vulture_vanguard_s3_01.gim",
+        "model_scale": [
+          1,
+          1,
+          1
+        ],
+        "monster_group_id": "s1006",
+        "name": {
+          "lan_translate": [
+            "【畸变】尖兵_$S@TIDS$_5mlt|2"
+          ]
+        },
+        "need_perceptron": false,
+        "nid": "s1009",
+        "node_type": "entity",
+        "normal_anim_no": "",
+        "npc_interactable": false,
+        "npc_mesh_no": "",
+        "npc_rotatable": false,
+        "npc_show_name_bar_range": 0,
+        "only_create_static_col": false,
+        "play_anim_times": 0,
+        "pos3": [
+          1.8807,
+          81.5027,
+          -55.4746
+        ],
+        "prefab_id": "base|1401101057",
+        "pub_evt_hp_persist": false,
+        "pulse_detect_effects": [],
+        "pvp_vehicle_radius": 0,
+        "record_combat_info": false,
+        "resume_sight_params_exit_combat": false,
+        "s_animal_path": "",
+        "s_idle_animal_path": "",
+        "sense_height": 0,
+        "sense_height_offset": [
+          0,
+          0,
+          0
+        ],
+        "sense_range": 0,
+        "shoot_range_target_id": 0,
+        "show_interactable": false,
+        "special_anim_no": [],
+        "special_drop_gift_id": "",
+        "special_drop_show_id": "",
+        "stealth_duration": 0,
+        "stealth_duration_server": 0,
+        "stealth_type": 1001,
+        "task_event_id": 0,
+        "traffic_light_transport_pos3": [
+          0,
+          0,
+          0
+        ],
+        "ui_key": 0,
+        "unit_alias": {
+          "lan_translate": [
+            "###DEBUG_ONLY###新秃鹫—s3暴食追猎者_$S@TIDS$_5mlt|1"
+          ]
+        },
+        "unit_camp_template_no": "412",
+        "unit_entity_type": "Enemy",
+        "unit_id": "dungeon_90001_s1009",
+        "unit_label": "",
+        "unit_name": {
+          "lan_translate": [
+            "【畸变】尖兵_$S@TIDS$_5mlt|3"
+          ]
+        },
+        "unit_prototype": 1,
+        "unit_title": "",
+        "unit_type": "monster",
+        "unit_upper_type_name": {
+          "lan_translate": [
+            "###DEBUG_ONLY###默认类型_$S@TIDS$_5mlt|5"
+          ]
+        },
+        "use_alias": true,
+        "warrior_effect_types": [
+          null
+        ],
+        "warrior_types": [
+          null
+        ],
+        "will_use_perf_budget": true
+      }
+    },
+    {}
+  ]
+}

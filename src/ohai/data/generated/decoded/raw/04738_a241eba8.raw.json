@@ -1,0 +1,234 @@
+{
+  "_meta": {
+    "sourceFile": "04738_a241eba8.pyc",
+    "sourceScannedPath": "C:\\Users\\tyr3x\\Downloads\\makeoh\\.codex\\neox_probe\\script_extract_full\\files\\04738_a241eba8.pyc",
+    "extractionMethod": "bindict",
+    "decodedAt": "2026-07-04T09:50:51.610Z",
+    "recordCount": 2,
+    "sourceHash": "66badd33c50d5283f0d90e169e389d592c1ea3edf531d19a654803078df5ea45",
+    "pipelineVersion": "0.1.0"
+  },
+  "records": [
+    {
+      "1": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "effect_index": 1
+          },
+          "type": "NodeBuffNone"
+        },
+        "event_action": {
+          "none_task_out": [
+            3,
+            4,
+            5
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "none_task_out": []
+        }
+      },
+      "3": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 3,
+            "need_disable": false,
+            "shield_data": {
+              "attach_name": "",
+              "check_legal": false,
+              "create_sfx_path": "effect/common/boss_shield/boss_shield_open_gold.pse",
+              "create_sfx_time": 9999,
+              "custom_shield_list": [
+                {
+                  "shield_box_name": "",
+                  "shield_material": "",
+                  "shield_offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "shield_radius": 8,
+                  "shield_segmentation": 15
+                }
+              ],
+              "drag_upon": false,
+              "enable_blast": false,
+              "enable_collision": true,
+              "enable_fall": false,
+              "finish_sfx_path": "effect/common/boss_shield/boss_shield_open_gold.pse",
+              "finish_sfx_time": 2,
+              "gravity": 0,
+              "hide_take_back_pref": false,
+              "hp_fixed": 800,
+              "hp_relative_attr_name": "",
+              "hp_relative_attr_value": 1,
+              "hp_relative_master_attr_name": "",
+              "hp_relative_master_attr_value": 0,
+              "ignore_be_hit_event": true,
+              "is_ignore_scale_adjust_by_model": true,
+              "is_trigger_auto_fire": false,
+              "loop_sfx_path": "",
+              "model_path": "effect/modeleffect/sphere_shield/sphere_shield.gim",
+              "need_bind_rotate": true,
+              "offset_pos": [
+                0,
+                0,
+                0
+              ],
+              "output_crush_id": false,
+              "output_crush_scale": [
+                1,
+                1,
+                1
+              ],
+              "output_init_scale": [
+                1,
+                1,
+                1
+              ],
+              "prevent_group": {
+                "label_attack_type": {
+                  "label_bomb": false,
+                  "label_default": false,
+                  "label_gun": false,
+                  "label_melee": false
+                },
+                "label_camp": {
+                  "label_enemy": true,
+                  "label_friend": true,
+                  "label_neutral": true,
+                  "label_self": true,
+                  "label_single_aisle": true
+                }
+              },
+              "shield_hp_type": 5,
+              "shield_name": "shield2",
+              "shield_scale": [
+                2.4,
+                2.4,
+                2.4
+              ],
+              "shield_trigger_file_name": "",
+              "shield_type": 1,
+              "skill_strength_extra_rate": 1,
+              "special_crush_time": 999,
+              "summon_use_skill_config": false,
+              "velocity": 0
+            }
+          },
+          "type": "NodeAddSimpleShield"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "4": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 4,
+            "need_disable": false,
+            "shield_name": "shield2"
+          },
+          "type": "NodeActiveShield"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "5": {
+        "NodeType": 1,
+        "effect_params": {
+          "params": {
+            "auto_reset_trigger": false,
+            "cd": 0,
+            "effect_index": 5,
+            "max_effect_count": 20,
+            "max_effect_times": 0,
+            "max_reset_times": 0,
+            "reset_cd": 0,
+            "reset_checker": [],
+            "reset_last_effect": true,
+            "reset_op": 1,
+            "trigger_checker": [
+              {
+                "checker_sid": 5629499600166913,
+                "params": {
+                  "add_buff": false,
+                  "buff_id": 500000432,
+                  "buff_lv": 1,
+                  "check_caster": 0,
+                  "dynamic_event": [],
+                  "event_names": [
+                    "on_buff_change::500000432"
+                  ],
+                  "mapping_buff": true,
+                  "role": 0
+                },
+                "type": "change_buff_checker"
+              }
+            ],
+            "trigger_once": true,
+            "trigger_op": 1
+          },
+          "type": "NodeChecker"
+        },
+        "event_action": {
+          "trigger": [
+            8,
+            9
+          ]
+        },
+        "in_data_pin": {},
+        "out_data_pin": {
+          "trigger": []
+        }
+      },
+      "8": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 8,
+            "need_disable": false,
+            "shield_name": "shield2"
+          },
+          "type": "NodeInactiveShield"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      },
+      "9": {
+        "NodeType": 2,
+        "effect_params": {
+          "params": {
+            "effect_index": 9,
+            "need_disable": false,
+            "shield_name": "shield2"
+          },
+          "type": "NodeRemoveShield"
+        },
+        "event_action": {},
+        "in_data_pin": {},
+        "out_data_pin": {}
+      }
+    },
+    {
+      "dynamic_params": {},
+      "entry_node": 1,
+      "name": "buff_500000432_1",
+      "preload_res_list": [
+        "effect/common/boss_shield/boss_shield_open_gold.pse"
+      ],
+      "source_info": [
+        "buff",
+        500000432,
+        1
+      ],
+      "tid": 16102
+    }
+  ]
+}
