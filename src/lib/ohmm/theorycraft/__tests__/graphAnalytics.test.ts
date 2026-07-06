@@ -295,6 +295,47 @@ await runProperty("Property 13: Connected Component Coverage", () => {
   );
 });
 
+// ─── Property 13_B: Eigenvector Centrality Convergence ───────────────────────
+
+await runProperty("Property 13: Eigenvector Centrality Convergence", () => {
+  fc.assert(
+    fc.property(arbGraph(), ({ nodes, edges }) => {
+      const analytics = computeGraphAnalytics(nodes, edges);
+      if (nodes.length === 0) return true;
+
+      const nonZeroCentrality = analytics.centralities.some((c) => c.eigenvector > 0);
+      if (!nonZeroCentrality) return true;
+
+      let maxVal = 0;
+      for (const c of analytics.centralities) {
+        if (Number.isNaN(c.eigenvector)) {
+          throw new Error("Eigenvector centrality contains NaN");
+        }
+        if (c.eigenvector > maxVal) {
+          maxVal = c.eigenvector;
+        }
+      }
+
+      if (maxVal !== 1.0) {
+        throw new Error(`Expected max eigenvector value to be 1.0, got ${maxVal}`);
+      }
+
+      // To verify convergence to a unit vector, we check that the L2-normalized sum of squares is ≈ 1.0.
+      const l2NormSq = analytics.centralities.reduce((sum, c) => sum + Math.pow(c.eigenvector, 2), 0);
+      const l2Norm = Math.sqrt(l2NormSq);
+      if (l2NormSq > 0) {
+        const sumSqNormalized = analytics.centralities.reduce((sum, c) => sum + Math.pow(c.eigenvector / l2Norm, 2), 0);
+        if (Math.abs(sumSqNormalized - 1.0) > 1e-6) {
+          throw new Error(`L2-normalized sum of squares is not 1.0: ${sumSqNormalized}`);
+        }
+      }
+
+      return true;
+    }),
+    { numRuns: 100 }
+  );
+});
+
 // ─── Summary ──────────────────────────────────────────────────────────────────
 
 const failed = results.filter((r) => !r.passed);

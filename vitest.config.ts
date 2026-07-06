@@ -16,5 +16,6 @@ export default defineConfig({
     include: ['src/**/*.{test,spec}.{ts,tsx}'],
     exclude: ['src/ohai/**', 'node_modules/**'],
     passWithNoTests: true,
+    setupFiles: ['./vitest.setup.ts'],
   },
 })

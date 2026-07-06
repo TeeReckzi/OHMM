@@ -146,6 +146,7 @@ function computeGridLayout(
 export function useForceGraph(
   viewModel: BuildGraphViewModel,
   onSettled?: (positions: Map<string, { x: number; y: number; z: number }>) => void,
+  ticksPerFrame: number = FORCE_CONFIG.ticksPerFrame,
 ): UseForceGraphResult {
   const simulationRef = useRef<ForceSimulation | null>(null);
   const positionsRef = useRef<PositionsRef>({ current: new Map(), frameId: 0 });
@@ -158,6 +159,10 @@ export function useForceGraph(
   // Store onSettled callback in a ref to avoid re-creating effects
   const onSettledRef = useRef(onSettled);
   onSettledRef.current = onSettled;
+
+  // Store ticksPerFrame in a ref to avoid stale closure in useFrame
+  const ticksRef = useRef(ticksPerFrame);
+  ticksRef.current = ticksPerFrame;
 
   // Store viewModel in a ref for grid fallback computation
   const viewModelRef = useRef(viewModel);
@@ -214,8 +219,8 @@ export function useForceGraph(
     // Gate: nothing to tick if no simulation, already settled, or using grid fallback
     if (!sim || isSettledRef.current || isGridFallbackRef.current) return;
 
-    // Tick simulation
-    const nodes = sim.tick(TICKS_PER_FRAME);
+    // Tick simulation using current LOD ticks
+    const nodes = sim.tick(ticksRef.current);
 
     // Write positions to mutable ref — ZERO setState
     const map = positionsRef.current.current;

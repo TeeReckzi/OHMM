@@ -142,6 +142,9 @@ export function deriveBuildComparison(
     // 6. Walk each loadout slot for slot diffs
     const slotDiffs: SlotDiff[] = buildSlotDiffs(currentSelection, validatedSaved.build);
 
+    // 7. Calculate net verdict
+    const netVerdict = generateNetVerdict(rawDeltas, currentOutput, savedOutput);
+
     return {
       currentBuildName: currentSelection.label ?? "Current Build",
       savedBuildName: validatedSaved.buildName ?? "Saved Build",
@@ -150,6 +153,7 @@ export function deriveBuildComparison(
       isAvailable: true,
       errorMessage: null,
       emptyStateMessage: null,
+      netVerdict,
     };
   } catch {
     // Never throw — return safe error state
@@ -161,8 +165,56 @@ export function deriveBuildComparison(
       isAvailable: false,
       errorMessage: "Failed to compute build comparison — engine error.",
       emptyStateMessage: null,
+      netVerdict: null,
     };
   }
+}
+
+// ─── Net Verdict Generator ──────────────────────────────────────────────────
+
+function generateNetVerdict(
+  rawDeltas: ReturnType<typeof compareCombatOutputs>,
+  currentOutput: CombatOutput,
+  savedOutput: CombatOutput,
+): string {
+  const parts: string[] = [];
+
+  // DPS percentage change
+  const savedDPS = savedOutput.damageOutput.DPS ?? 0;
+  if (savedDPS > 0 && rawDeltas.dpsDelta !== 0) {
+    const pct = (rawDeltas.dpsDelta / savedDPS) * 100;
+    parts.push(`${pct > 0 ? "+" : ""}${pct.toFixed(1)}% DPS`);
+  }
+
+  // TTK percentage change (if applicable)
+  const savedTTK = savedOutput.pvpDuel.outgoingTTK ?? 0;
+  if (savedTTK > 0 && rawDeltas.ttkDelta !== 0) {
+    const pct = (rawDeltas.ttkDelta / savedTTK) * 100;
+    // For TTK, a negative change is good, positive is bad
+    parts.push(`${pct > 0 ? "+" : ""}${pct.toFixed(1)}% Time-to-Kill`);
+  }
+
+  // Fallback: expected damage
+  if (parts.length === 0 && rawDeltas.outgoingDamageDelta !== 0) {
+    const savedDmg = savedOutput.damageOutput.expectedDamage ?? 0;
+    if (savedDmg > 0) {
+      const pct = (rawDeltas.outgoingDamageDelta / savedDmg) * 100;
+      parts.push(`${pct > 0 ? "+" : ""}${pct.toFixed(1)}% expected hit`);
+    }
+  }
+
+  if (parts.length === 0) {
+    return "No change in core performance metrics.";
+  }
+
+  let tone = "stable trade";
+  if (rawDeltas.dpsDelta > 0) {
+    tone = "performance upgrade";
+  } else if (rawDeltas.dpsDelta < 0) {
+    tone = "performance downgrade";
+  }
+
+  return `${parts.join(", ")} — ${tone}`;
 }
 
 // ─── Metric delta construction ───────────────────────────────────────────────

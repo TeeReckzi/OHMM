@@ -76,15 +76,14 @@ export function computeCohesion(
     criticalPathEfficiency,
   };
 
-  // Product formula with cube-root normalization, clamped to [0, 1]
-  const product =
-    networkDensity *
-    averageEdgeWeight *
-    connectivity *
-    nodeUtilization *
-    criticalPathEfficiency;
+  const activeNodeIds = new Set(activeNodes.map(n => n.id));
+  const activeCentralities = analytics.centralities.filter(c => activeNodeIds.has(c.nodeId));
+  const avgEigenvector = activeCentralities.length > 0
+    ? activeCentralities.reduce((sum, c) => sum + c.eigenvector, 0) / activeCentralities.length
+    : 0;
 
-  const score = Math.min(1.0, Math.max(0.0, Math.cbrt(product)));
+  // Calculate cohesion score = eigenvector centrality average × network density (Req 5.1)
+  const score = Math.min(1.0, Math.max(0.0, avgEigenvector * networkDensity));
 
   // Classify label
   const label = classifyLabel(score);

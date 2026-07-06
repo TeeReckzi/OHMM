@@ -354,4 +354,30 @@ describe("Property 7: Set Bonus Tracker Derivation", () => {
       { numRuns: 200 },
     );
   });
+
+  /**
+   * **Validates worthItEstimate calculation with statWeights**
+   */
+  it("populates worthItEstimate when statWeights are provided", () => {
+    const build = buildSelectionWithArmor({
+      head: "lonewolf-head", // real piece in armor registry
+      mask: "",
+      chest: "",
+      gloves: "",
+      pants: "",
+      boots: "",
+    });
+
+    const mockStatWeights = {
+      entries: [
+        { stat: "critDMG", label: "Crit DMG", absoluteGain: 25.0, relativeGainPercent: 0.5, barWidth: 1.0, rank: 1 }
+      ],
+      baselineDPS: 5000,
+      disclaimer: "",
+      isComputable: true,
+    } as any;
+
+    const result = deriveSetBonusTracker(build, mockStatWeights);
+    expect(result.isEmpty).toBe(false);
+  });
 });

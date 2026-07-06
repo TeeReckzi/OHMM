@@ -60,24 +60,86 @@ function ConfidenceBadge({ level }: { level: ConfidenceLevel }) {
   );
 }
 
+// ─── Group Header with Tooltip ────────────────────────────────────────────────
+
+interface GroupHeaderProps {
+  label: string;
+  tooltip: string;
+}
+
+function GroupHeader({ label, tooltip }: GroupHeaderProps) {
+  const [show, setShow] = useState(false);
+
+  return (
+    <div className="flex items-center gap-1.5 mb-1.5 relative">
+      <span className="text-[9px] uppercase tracking-wider text-[#4a6a7e]">
+        {label}
+      </span>
+      <button
+        type="button"
+        className="text-[#4a6a7e] hover:text-[#8ab4c8] focus:text-[#8ab4c8] outline-none cursor-pointer"
+        onMouseEnter={() => setShow(true)}
+        onMouseLeave={() => setShow(false)}
+        onFocus={() => setShow(true)}
+        onBlur={() => setShow(false)}
+        onKeyDown={(e) => {
+          if (e.key === "Escape") {
+            setShow(false);
+          }
+        }}
+        aria-label={`About ${label}`}
+      >
+        <HelpCircle size={10} />
+      </button>
+
+      {show && (
+        <div className="absolute z-50 bottom-full left-0 mb-1 w-52 p-2 rounded bg-gray-900 border border-white/10 text-[9px] text-gray-300 shadow-xl pointer-events-none normal-case leading-normal">
+          {tooltip}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Line Item Row ───────────────────────────────────────────────────────────
 
-function LineItemRow({ item }: { item: ExplainerLineItem }) {
+interface LineItemRowProps {
+  item: ExplainerLineItem;
+  maxContribution: number;
+}
+
+function LineItemRow({ item, maxContribution }: LineItemRowProps) {
+  const barWidth = maxContribution > 0 ? (item.contributionPercent / maxContribution) * 100 : 0;
+
   return (
-    <div className="flex items-center gap-2 py-1 px-2 rounded text-[11px]" style={{ background: "rgba(0,200,255,0.03)" }}>
-      <span className="flex-1 min-w-0 truncate text-[#c0dde8]" title={item.source}>
-        {item.label}
-      </span>
-      <span
-        className="font-mono text-[10px] flex-shrink-0"
-        style={{ color: item.groupType === "multiplicative" ? "#a78bfa" : "#7dd3fc" }}
-      >
-        {item.formattedValue}
-      </span>
-      <span className="text-[9px] text-[#6b8a9e] flex-shrink-0 w-10 text-right">
-        {item.contributionPercent > 0 ? `${item.contributionPercent.toFixed(1)}%` : "—"}
-      </span>
-      <ConfidenceBadge level={item.confidence} />
+    <div className="flex flex-col gap-1 py-1.5 px-2 rounded text-[11px] relative overflow-hidden mb-0.5" style={{ background: "rgba(0,200,255,0.03)" }}>
+      {/* Relative contribution bar */}
+      <div
+        className="absolute inset-y-0 left-0 bg-cyan-500/5 transition-all duration-300"
+        style={{ width: `${barWidth}%` }}
+      />
+      
+      <div className="flex items-center gap-2 relative z-10">
+        <span className="flex-1 min-w-0 truncate text-[#c0dde8]" title={item.source}>
+          {item.label}
+        </span>
+        <span
+          className="font-mono text-[10px] flex-shrink-0"
+          style={{ color: item.groupType === "multiplicative" ? "#a78bfa" : "#7dd3fc" }}
+        >
+          {item.formattedValue}
+        </span>
+        <span className="text-[9px] text-[#6b8a9e] flex-shrink-0 w-10 text-right">
+          {item.contributionPercent > 0 ? `${item.contributionPercent.toFixed(1)}%` : "—"}
+        </span>
+        <ConfidenceBadge level={item.confidence} />
+      </div>
+
+      {item.hypotheticalDPSIfRemoved && (
+        <div className="text-[9px] text-red-400/90 relative z-10 font-medium text-left">
+          If removed: {item.hypotheticalDPSIfRemoved}
+        </div>
+      )}
     </div>
   );
 }
@@ -114,6 +176,14 @@ export function FormulaExplainer({ viewModel }: FormulaExplainerProps) {
     activeContributorCount,
     totalExpectedDamage,
   } = viewModel;
+
+  const allItems = [...additiveGroup, ...multiplicativeGroup];
+  const maxContribution = allItems.reduce((max, item) => Math.max(max, item.contributionPercent), 0);
+  
+  const maxItem = allItems.reduce((max, item) => (item.contributionPercent > (max?.contributionPercent ?? 0) ? item : max), null as ExplainerLineItem | null);
+  const largestContributorText = maxItem && maxItem.contributionPercent > 0
+    ? `${maxItem.label} (${maxItem.contributionPercent.toFixed(1)}%)`
+    : null;
 
   // Animation transition: 300ms ease-out, or instant if user prefers reduced motion
   const expandTransition = shouldReduceMotion
@@ -179,6 +249,13 @@ export function FormulaExplainer({ viewModel }: FormulaExplainerProps) {
             style={{ overflow: "hidden" }}
           >
             <div className="px-3 pb-3 space-y-3">
+              {/* Largest contributor summary line */}
+              {largestContributorText && maxItem && (
+                <div className="pt-2 rounded border border-cyan-500/10 bg-cyan-950/20 p-2 text-[11px] text-cyan-300/95 leading-relaxed">
+                  <strong>Largest Contributor:</strong> {maxItem.label} is your single largest DPS driver, accounting for <strong>{maxItem.contributionPercent.toFixed(1)}%</strong> of expected damage.
+                </div>
+              )}
+
               {/* Base Weapon Damage */}
               <div className="pt-1">
                 <div className="text-[9px] uppercase tracking-wider text-[#4a6a7e] mb-1">
@@ -192,12 +269,13 @@ export function FormulaExplainer({ viewModel }: FormulaExplainerProps) {
               {/* Additive Group */}
               {additiveGroup.length > 0 && (
                 <div>
-                  <div className="text-[9px] uppercase tracking-wider text-[#4a6a7e] mb-1">
-                    Additive Bonuses ({additiveGroup.length})
-                  </div>
+                  <GroupHeader
+                    label={`Additive Bonuses (${additiveGroup.length})`}
+                    tooltip="Additive modifiers sum together first (1 + modA + modB) before multiplying other layers."
+                  />
                   <div className="space-y-0.5">
                     {additiveGroup.map((item) => (
-                      <LineItemRow key={item.id} item={item} />
+                      <LineItemRow key={item.id} item={item} maxContribution={maxContribution} />
                     ))}
                   </div>
                 </div>
@@ -206,12 +284,13 @@ export function FormulaExplainer({ viewModel }: FormulaExplainerProps) {
               {/* Multiplicative Group */}
               {multiplicativeGroup.length > 0 && (
                 <div>
-                  <div className="text-[9px] uppercase tracking-wider text-[#4a6a7e] mb-1">
-                    Multiplicative Layers ({multiplicativeGroup.length})
-                  </div>
+                  <GroupHeader
+                    label={`Multiplicative Layers (${multiplicativeGroup.length})`}
+                    tooltip="Multiplicative modifiers act as independent multiplier layers (x1.15 × x1.10), magnifying your total output."
+                  />
                   <div className="space-y-0.5">
                     {multiplicativeGroup.map((item) => (
-                      <LineItemRow key={item.id} item={item} />
+                      <LineItemRow key={item.id} item={item} maxContribution={maxContribution} />
                     ))}
                   </div>
                 </div>

@@ -70,26 +70,20 @@ Data Pipeline (src/ohai/data/)
 | 3 | Architecture Extraction / UI Decomposition | ✅ Complete |
 | 3.5 | Pre-Phase-4 Cleanups | ✅ Complete |
 | 4A | Build Persistence (save/load/restore) | ✅ Complete |
+| 4B | Theorycrafting UX / Decision-Support Layer | ✅ Complete |
+| 4C | Neural Build Graph v2 (3D Interactive Analysis) | ✅ Complete |
 
 ### Current Phase
 
-**Phase 4B — Theorycrafting UX / Decision-Support Layer** (in progress)
+**Phase 4D — Share / Import / Export** (in progress)
 
-Goal: Make OHMM's outputs visible, explainable, and actionable.
-
-Features planned:
-1. Hero Metrics Bar — at-a-glance DPS, TTK, mode, completeness
-2. Formula Explainer — breakdown of damage contributors
-3. Set Bonus Tracker — armor set progress and active bonuses
-4. Stat Weight Calculator — ranked stat upgrade priorities
-5. Build Comparison — delta view against saved builds
+Goal: URL sharing, JSON import/export, and build optimization tools.
 
 ### Future Phases
 
 | Phase | Description |
 |-------|-------------|
-| 4C | Share / Import / Export (URL sharing, JSON import/export) |
-| 4D | Build Quality / Recommendations (upgrade suggestions, warnings) |
+| 4E | Build Quality / Recommendations (upgrade suggestions, warnings) |
 | 5 | Progressive Disclosure / Selector UX / Workflow Polish |
 | 6 | Data Quality / Provenance / Confidence UI |
 | 7 | Responsive / Accessibility |

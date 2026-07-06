@@ -134,13 +134,7 @@ export function computeTheoryCraftState(
     isExpanded: false,
   };
 
-  // 3. Derive set bonus tracker
-  const setBonusTracker = safeDerive(
-    () => deriveSetBonusTracker(buildSelection),
-    FALLBACK_SET_BONUS_TRACKER,
-  );
-
-  // 4. Derive stat weights (memoized by BuildSelection hash)
+  // 3. Derive stat weights (memoized by BuildSelection hash)
   const currentHash = safeDerive(() => hashBuildSelection(buildSelection), "");
   let statWeights: StatWeightViewModel;
 
@@ -157,6 +151,12 @@ export function computeTheoryCraftState(
     cachedStatWeightsHash = currentHash;
     cachedStatWeights = statWeights;
   }
+
+  // 4. Derive set bonus tracker
+  const setBonusTracker = safeDerive(
+    () => deriveSetBonusTracker(buildSelection, statWeights),
+    FALLBACK_SET_BONUS_TRACKER,
+  );
 
   // 5. Derive build comparison (null when no saved build provided)
   const buildComparison: BuildComparisonViewModel | null = savedBuild

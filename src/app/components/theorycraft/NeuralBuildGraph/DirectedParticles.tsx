@@ -1,46 +1,26 @@
-/**
- * DirectedParticles — GPU-Instanced Directional Energy Flow
- *
- * Particles travel FROM source TO target along each edge, communicating:
- *   - Direction of influence/damage flow
- *   - Speed proportional to edge category (fast = damage, slow = passive)
- *   - Brightness proportional to edge weight
- *   - Color matches edge category semantic
- *
- * Architecture:
- *   - Single InstancedMesh for ALL particles (one draw call)
- *   - Pre-allocated particle data array (no per-frame allocations)
- *   - Eased motion: particles accelerate from source, decelerate near target
- *   - Staggered offsets per particle for organic stream effect
- *   - Additive blending for glow/bloom interaction
- *
- * Performance: single draw call regardless of particle count.
- * Budget: <0.5ms for 200 particles at 60 FPS.
- *
- * HOOKS SAFETY: useFrame is called unconditionally. Early return is inside the callback.
- */
-
 import React, { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
-import type { GraphEdge } from "@/lib/ohmm/theorycraft/buildGraph.types";
+import type { GraphEdge, EdgeCategory } from "@/lib/ohmm/theorycraft/buildGraph.types";
 import { EDGE_VISUAL_CONFIG, LOD_CONFIG } from "@/lib/ohmm/theorycraft/buildGraph.constants";
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
 export interface DirectedParticlesProps {
   edges: GraphEdge[];
-  positions: Map<string, { x: number; y: number; z: number }>;
+  positionsRef: React.RefObject<any>; // type PositionsRef
   /** Max particles per edge (1–8, driven by LOD) */
   particleCount?: number;
+  activeEdgeId?: string | null;
 }
 
 // ─── Pre-allocated Structures ─────────────────────────────────────────────────
 
 interface ParticleSlot {
-  sx: number; sy: number; sz: number; // source
-  tx: number; ty: number; tz: number; // target
-  cx: number; cy: number; cz: number; // control point (for curved path)
+  edgeId: string;
+  sourceId: string;
+  targetId: string;
+  category: EdgeCategory;
   speed: number;
   offset: number;
   scale: number; // size variation
@@ -60,12 +40,32 @@ function curveControlY(sy: number, ty: number, dist: number): number {
   return (sy + ty) * 0.5 + Math.min(dist * 0.08, 3);
 }
 
+// ─── Color Helper (exported for property testing) ─────────────────────────────
+
+/**
+ * Builds the Float32Array containing per-instance particle colors.
+ * Rebuilt only when edges/LOD configuration changes.
+ */
+export function buildParticleColors(slots: ParticleSlot[]): Float32Array {
+  const array = new Float32Array(slots.length * 3);
+  for (let i = 0; i < slots.length; i++) {
+    const s = slots[i];
+    const colorHex = EDGE_VISUAL_CONFIG[s.category]?.particleColor ?? "#ffffff";
+    const color = new THREE.Color(colorHex);
+    array[i * 3] = color.r;
+    array[i * 3 + 1] = color.g;
+    array[i * 3 + 2] = color.b;
+  }
+  return array;
+}
+
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export function DirectedParticles({
   edges,
-  positions,
+  positionsRef,
   particleCount = LOD_CONFIG.maxParticlesPerEdge,
+  activeEdgeId = null,
 }: DirectedParticlesProps): JSX.Element | null {
   const meshRef = useRef<THREE.InstancedMesh>(null);
 
@@ -74,36 +74,20 @@ export function DirectedParticles({
 
   const clampedCount = Math.max(1, Math.min(8, particleCount));
 
-  // Build particle slot data — only recomputes when edges/positions change
+  // Build particle slot data — only recomputes when edges change
   const slots = useMemo((): ParticleSlot[] => {
     const result: ParticleSlot[] = [];
 
     for (const edge of edges) {
-      const src = positions.get(edge.source);
-      const tgt = positions.get(edge.target);
-      if (!src || !tgt) continue;
-
-      const dx = tgt.x - src.x;
-      const dy = tgt.y - src.y;
-      const dz = tgt.z - src.z;
-      const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
-
-      // Skip very short edges (nodes nearly overlapping)
-      if (dist < 0.5) continue;
-
       const edgeConfig = EDGE_VISUAL_CONFIG[edge.category];
       const speed = edgeConfig.particleSpeed;
 
-      // Control point for curved path
-      const cy = curveControlY(src.y, tgt.y, dist);
-
       for (let i = 0; i < clampedCount; i++) {
         result.push({
-          sx: src.x, sy: src.y, sz: src.z,
-          tx: tgt.x, ty: tgt.y, tz: tgt.z,
-          cx: (src.x + tgt.x) * 0.5,
-          cy,
-          cz: (src.z + tgt.z) * 0.5,
+          edgeId: edge.id,
+          sourceId: edge.source,
+          targetId: edge.target,
+          category: edge.category,
           speed,
           offset: i / clampedCount,
           // Size variation: leading particles slightly larger
@@ -113,32 +97,52 @@ export function DirectedParticles({
     }
 
     return result;
-  }, [edges, positions, clampedCount]);
+  }, [edges, clampedCount]);
 
-  // Compute a representative color for the instanced material
-  // (InstancedMesh with single material — we use the dominant edge category color)
-  const materialColor = useMemo(() => {
-    if (edges.length === 0) return new THREE.Color("#ff8844");
-    // Use the highest-weight edge's particle color for the material
-    let best = edges[0];
-    for (let i = 1; i < edges.length; i++) {
-      if (edges[i].weight > best.weight) best = edges[i];
-    }
-    return new THREE.Color(EDGE_VISUAL_CONFIG[best.category].particleColor);
-  }, [edges]);
+  // Compute per-instance colors (Req 9.1, 9.2)
+  const colorArray = useMemo(() => buildParticleColors(slots), [slots]);
 
   // ─── Per-frame animation (UNCONDITIONAL — hooks rules) ──────────────────
   useFrame(({ clock }) => {
     const mesh = meshRef.current;
-    if (!mesh || slots.length === 0) return;
+    if (!mesh || slots.length === 0 || !positionsRef.current) return;
 
     const time = clock.getElapsedTime();
+    const positions = positionsRef.current.current;
 
     for (let i = 0; i < slots.length; i++) {
       const s = slots[i];
+      const src = positions.get(s.sourceId);
+      const tgt = positions.get(s.targetId);
 
-      // Raw progress along path [0, 1], repeating
-      const rawT = ((time * s.speed * 0.25 + s.offset) % 1.0);
+      if (!src || !tgt) {
+        tempObj.scale.setScalar(0);
+        tempObj.updateMatrix();
+        mesh.setMatrixAt(i, tempObj.matrix);
+        continue;
+      }
+
+      const dx = tgt.x - src.x;
+      const dy = tgt.y - src.y;
+      const dz = tgt.z - src.z;
+      const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
+
+      if (dist < 0.5) {
+        tempObj.scale.setScalar(0);
+        tempObj.updateMatrix();
+        mesh.setMatrixAt(i, tempObj.matrix);
+        continue;
+      }
+
+      const cy = curveControlY(src.y, tgt.y, dist);
+
+      // Detect active edge for playback particle burst (Req 7.8)
+      const isEdgeActive = activeEdgeId != null && s.edgeId === activeEdgeId;
+      const speedMultiplier = isEdgeActive ? 2.5 : 1.0;
+      const sizeMultiplier = isEdgeActive ? 2.0 : 1.0;
+
+      // Raw progress along path [0, 1], repeating — active edge runs faster
+      const rawT = ((time * s.speed * 0.25 * speedMultiplier + s.offset) % 1.0);
 
       // Apply easing — accelerate from source, decelerate near target
       const t = easeInOutCubic(rawT);
@@ -149,13 +153,16 @@ export function DirectedParticles({
       const b = 2 * oneMinusT * t;
       const c = t * t;
 
-      const x = a * s.sx + b * s.cx + c * s.tx;
-      const y = a * s.sy + b * s.cy + c * s.ty;
-      const z = a * s.sz + b * s.cz + c * s.tz;
+      const cx = (src.x + tgt.x) * 0.5;
+      const cz = (src.z + tgt.z) * 0.5;
 
-      // Scale: particles shrink near endpoints (fade in/out)
+      const x = a * src.x + b * cx + c * tgt.x;
+      const y = a * src.y + b * cy + c * tgt.y;
+      const z = a * src.z + b * cz + c * tgt.z;
+
+      // Scale: particles shrink near endpoints (fade in/out) — active edge has larger burst size
       const edgeFade = Math.sin(rawT * Math.PI); // 0 at start/end, 1 at midpoint
-      const finalScale = s.scale * (0.4 + edgeFade * 0.6) * 0.12;
+      const finalScale = s.scale * (0.4 + edgeFade * 0.6) * 0.12 * sizeMultiplier;
 
       tempObj.position.set(x, y, z);
       tempObj.scale.setScalar(finalScale);
@@ -175,13 +182,38 @@ export function DirectedParticles({
       args={[undefined, undefined, slots.length]}
       frustumCulled={false}
     >
-      <sphereGeometry args={[1, 6, 4]} />
+      <sphereGeometry args={[1, 6, 4]}>
+        <instancedBufferAttribute
+          attach="attributes-aColor"
+          args={[colorArray, 3]}
+        />
+      </sphereGeometry>
       <meshBasicMaterial
-        color={materialColor}
         transparent
         opacity={0.9}
         depthWrite={false}
         blending={THREE.AdditiveBlending}
+        onBeforeCompile={(shader) => {
+          shader.vertexShader = `
+            attribute vec3 aColor;
+            varying vec3 vColor;
+            ${shader.vertexShader}
+          `.replace(
+            `#include <begin_vertex>`,
+            `
+            #include <begin_vertex>
+            vColor = aColor;
+            `
+          );
+
+          shader.fragmentShader = `
+            varying vec3 vColor;
+            ${shader.fragmentShader}
+          `.replace(
+            `vec4 diffuseColor = vec4( diffuse, opacity );`,
+            `vec4 diffuseColor = vec4( vColor, opacity );`
+          );
+        }}
       />
     </instancedMesh>
   );

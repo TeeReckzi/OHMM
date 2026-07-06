@@ -7,7 +7,8 @@
  * Validates: Requirements 1.1, 1.5, 1.6, 1.7, 1.8, 1.11, 2.1, 2.4
  */
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { motion, useReducedMotion } from "motion/react";
 import {
   Zap,
   Crosshair,
@@ -89,9 +90,43 @@ interface MetricCardProps {
   isBiggestContributor?: boolean;
 }
 
+function isMetricImprovement(id: string, oldValue: number, newValue: number): boolean {
+  if (id === "ttk") {
+    // Outgoing Time to Kill: lower is better
+    return newValue < oldValue;
+  }
+  return newValue > oldValue;
+}
+
 function MetricCard({ metric, isBiggestContributor = false }: MetricCardProps) {
   const IconComponent = ICON_MAP[metric.icon] ?? Zap;
   const showProvenance = metric.confidence === "estimated" || metric.confidence === "placeholder";
+  const prefersReduced = useReducedMotion();
+
+  const [showTooltip, setShowTooltip] = useState(false);
+  const prevValueRef = useRef<number | null>(null);
+  const [changeType, setChangeType] = useState<"improvement" | "regression" | null>(null);
+
+  useEffect(() => {
+    if (prevValueRef.current !== null && prevValueRef.current !== metric.numericValue) {
+      const isImproved = isMetricImprovement(metric.id, prevValueRef.current, metric.numericValue);
+      setChangeType(isImproved ? "improvement" : "regression");
+    }
+    prevValueRef.current = metric.numericValue;
+  }, [metric.numericValue, metric.id]);
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape") {
+      setShowTooltip(false);
+    }
+  };
+
+  const shouldAnimate = !prefersReduced && changeType !== null;
+  const animateProps = shouldAnimate
+    ? changeType === "improvement"
+      ? { scale: [1, 1.02, 1] }
+      : { opacity: [1, 0.7, 1] }
+    : {};
 
   return (
     <div
@@ -99,13 +134,23 @@ function MetricCard({ metric, isBiggestContributor = false }: MetricCardProps) {
       role="group"
       aria-label={`${metric.label}: ${metric.value}${isBiggestContributor ? " (biggest gain)" : ""}`}
       tabIndex={0}
+      onMouseEnter={() => setShowTooltip(true)}
+      onMouseLeave={() => setShowTooltip(false)}
+      onFocus={() => setShowTooltip(true)}
+      onBlur={() => setShowTooltip(false)}
+      onKeyDown={handleKeyDown}
     >
       <IconComponent
         size={18}
         className="shrink-0 text-cyan-400/80"
         aria-hidden="true"
       />
-      <div className="min-w-0 flex flex-col">
+      <motion.div
+        key={`${metric.id}-${metric.numericValue}`}
+        animate={animateProps}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="min-w-0 flex flex-col flex-1"
+      >
         <div className="flex items-center gap-1.5">
           <span className="text-[11px] text-gray-400 leading-tight truncate">
             {metric.label}
@@ -126,7 +171,16 @@ function MetricCard({ metric, isBiggestContributor = false }: MetricCardProps) {
           )}
           {showProvenance && <MetricConfidenceBadge confidence={metric.confidence} />}
         </div>
-      </div>
+      </motion.div>
+
+      {showTooltip && metric.tooltip && (
+        <div
+          className="absolute z-50 bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-48 p-2 rounded bg-gray-900 border border-white/10 text-[10px] text-gray-300 shadow-xl pointer-events-none text-center"
+          role="tooltip"
+        >
+          {metric.tooltip}
+        </div>
+      )}
     </div>
   );
 }

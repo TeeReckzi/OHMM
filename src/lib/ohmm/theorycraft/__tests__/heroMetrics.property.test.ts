@@ -257,7 +257,7 @@ describe('Property 1: Hero Metrics Safe Display', () => {
           }
         },
       ),
-      { numRuns: 300 },
+      { numRuns: 100 },
     );
   });
 

@@ -336,6 +336,13 @@ export function BuildComparisonView({ viewModel }: BuildComparisonViewProps) {
         </span>
       </div>
 
+      {viewModel.netVerdict && (
+        <div className="mb-4 rounded border border-purple-500/10 bg-purple-950/20 p-2 text-[11px] text-purple-300/95 leading-normal flex items-start gap-1.5">
+          <span className="font-semibold shrink-0 text-purple-400">Net Verdict:</span>
+          <span>{viewModel.netVerdict}</span>
+        </div>
+      )}
+
       {/* Metric Deltas */}
       {metricDeltas.length > 0 && (
         <div className="space-y-1.5 mb-4" role="table" aria-label="Metric deltas">

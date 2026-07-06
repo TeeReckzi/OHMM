@@ -133,7 +133,7 @@ export function deriveStatWeights(
     const maxGain = results[0]?.absoluteGain || 1;
     results.forEach((r, i) => {
       r.rank = i + 1;
-      r.barWidth = maxGain > 0 ? r.absoluteGain / maxGain : 0;
+      r.barWidth = maxGain > 0 ? Math.max(0, r.absoluteGain / maxGain) : 0;
       r.relativeGainPercent = (r.absoluteGain / baselineDPS) * 100;
     });
 

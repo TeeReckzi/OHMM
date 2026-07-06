@@ -110,8 +110,21 @@ function buildThresholds(setName: string, equippedCount: number): SetThreshold[]
  * - Sorts sets by equipped count descending
  * - Never throws; always returns a safe, well-typed SetBonusTrackerViewModel
  */
+import type { StatWeightViewModel } from "./types";
+
+const PERTURBATION_DELTAS: Record<string, number> = {
+  weaponDMGBonus: 0.01,
+  statusDMGBonus: 0.01,
+  elementalDMGBonus: 0.01,
+  critRate: 0.01,
+  critDMG: 0.01,
+  weakspotDMG: 0.01,
+  psiIntensity: 1.0,
+};
+
 export function deriveSetBonusTracker(
   buildSelection: BuildSelection | null | undefined,
+  statWeights?: StatWeightViewModel | null,
 ): SetBonusTrackerViewModel {
   // Guard: null/undefined input → empty state
   if (!buildSelection?.armor) {
@@ -181,6 +194,27 @@ export function deriveSetBonusTracker(
       ? nextThreshold - accumulator.equippedCount
       : null;
 
+    // Estimate DPS gain of reaching the next threshold
+    let worthItEstimate: string | null = null;
+    if (statWeights && statWeights.isComputable && statWeights.baselineDPS > 0 && nextThreshold !== null) {
+      const overrideKey = `${setName}-${nextThreshold}pc`;
+      const override = armorSetTierOverrides[overrideKey];
+      if (override?.statModifiers && override.statModifiers.length > 0) {
+        let totalGain = 0;
+        for (const mod of override.statModifiers) {
+          const weight = statWeights.entries.find((e) => e.stat === mod.stat);
+          if (weight) {
+            const pertDelta = PERTURBATION_DELTAS[mod.stat] ?? 0.01;
+            totalGain += (mod.value / pertDelta) * weight.absoluteGain;
+          }
+        }
+        if (totalGain > 0) {
+          const pct = (totalGain / statWeights.baselineDPS) * 100;
+          worthItEstimate = `+${pct.toFixed(1)}% est. DPS`;
+        }
+      }
+    }
+
     entries.push({
       setName: displayName,
       equippedCount: accumulator.equippedCount,
@@ -190,6 +224,7 @@ export function deriveSetBonusTracker(
       thresholds,
       nextThreshold,
       piecesNeeded,
+      worthItEstimate,
     });
   }
 

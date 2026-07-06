@@ -492,6 +492,52 @@ await runProperty("Property 26: Confidence Classification Completeness", () => {
   );
 });
 
+// ─── Property 5 (from Tasks): Graph Data Contracts ───────────────────────────
+
+await runProperty("Property 5: Graph data contracts preserved", () => {
+  fc.assert(
+    fc.property(arbFullInput, ([buildSelection, calcInput, combatOutput]) => {
+      const result = deriveBuildGraph(buildSelection as any, calcInput as any, combatOutput as any);
+      if (!result.isRenderable) return true;
+
+      const nodeIds = new Set(result.nodes.map(n => n.id));
+
+      for (const edge of result.edges) {
+        // Referential integrity
+        if (!nodeIds.has(edge.source)) {
+          throw new Error(`Edge ${edge.id} references missing source node ${edge.source}`);
+        }
+        if (!nodeIds.has(edge.target)) {
+          throw new Error(`Edge ${edge.id} references missing target node ${edge.target}`);
+        }
+        
+        // No self-edges
+        if (edge.source === edge.target) {
+          throw new Error(`Edge ${edge.id} is a self-edge`);
+        }
+
+        // Weights in [0,1]
+        if (edge.weight < 0 || edge.weight > 1) {
+          throw new Error(`Edge ${edge.id} has weight ${edge.weight} out of bounds [0, 1]`);
+        }
+        
+        // Directed flow: sourceLayer index <= targetLayer index
+        const srcNode = result.nodes.find(n => n.id === edge.source)!;
+        const tgtNode = result.nodes.find(n => n.id === edge.target)!;
+        const srcIdx = LAYER_ORDER.indexOf(srcNode.layer);
+        const tgtIdx = LAYER_ORDER.indexOf(tgtNode.layer);
+        
+        if (srcIdx > tgtIdx) {
+          throw new Error(`Edge ${edge.id} breaks directed flow: ${srcNode.layer} -> ${tgtNode.layer}`);
+        }
+      }
+
+      return true;
+    }),
+    { numRuns: 200 }
+  );
+});
+
 // ─── Summary ──────────────────────────────────────────────────────────────────
 
 const failed = results.filter((r) => !r.passed);

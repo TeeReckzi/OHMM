@@ -25,6 +25,8 @@ import type {
 } from "@/lib/ohmm/theorycraft/buildGraph.types";
 import { LAYER_ORDER, CONFIDENCE_VISUAL_MAP } from "@/lib/ohmm/theorycraft/buildGraph.types";
 import { LAYER_VISUAL_CONFIG, EDGE_VISUAL_CONFIG } from "@/lib/ohmm/theorycraft/buildGraph.constants";
+import { CohesionIndicator } from "./CohesionIndicator";
+import { AnalyticsPanel } from "./AnalyticsPanel";
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
@@ -165,7 +167,7 @@ function getCohesionBgColor(label: string): string {
 
 export function BuildGraphFallback({
   viewModel,
-  showCohesion = false,
+  showCohesion = true,
   showAnalytics = false,
   enableFailureMode = false,
 }: BuildGraphFallbackProps): JSX.Element {
@@ -175,6 +177,9 @@ export function BuildGraphFallback({
   // ─── Focus state ────────────────────────────────────────────────────────────
   const [focusedNodeId, setFocusedNodeId] = useState<string | null>(null);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+
+  // ─── Sidebar state ──────────────────────────────────────────────────────────
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   // ─── Computed layout (static, no animation) ────────────────────────────────
   const positions = useMemo(() => computeStaticLayout(nodes), [nodes]);
@@ -286,273 +291,282 @@ export function BuildGraphFallback({
   // ─── Failure mode state ────────────────────────────────────────────────────
   const [failureNodeId, setFailureNodeId] = useState<string | null>(null);
 
-  // ─── Render ────────────────────────────────────────────────────────────────
   return (
-    <div className="relative w-full">
-      {/* SVG Graph */}
-      <svg
-        ref={svgRef}
-        viewBox={`0 0 ${SVG_WIDTH} ${SVG_HEIGHT}`}
-        className="w-full h-auto border border-gray-700 rounded-lg bg-gray-950"
-        role="graphics-document"
-        aria-label={`Neural build graph with ${nodes.length} nodes and ${edges.length} edges`}
-        tabIndex={0}
-        onKeyDown={handleKeyDown}
-      >
-        {/* Arrow marker definitions */}
-        <defs>
-          {LAYER_ORDER.map((layer) => (
-            <marker
-              key={`marker-${layer}`}
-              id={`arrowhead-${layer}`}
-              markerWidth="8"
-              markerHeight="6"
-              refX="8"
-              refY="3"
-              orient="auto"
-              markerUnits="strokeWidth"
-            >
-              <polygon
-                points="0 0, 8 3, 0 6"
-                fill={LAYER_VISUAL_CONFIG[layer].color}
-              />
-            </marker>
-          ))}
-          {/* Generic arrowheads per edge category */}
-          {Object.entries(EDGE_VISUAL_CONFIG).map(([category, config]) => (
-            <marker
-              key={`marker-edge-${category}`}
-              id={`arrowhead-edge-${category}`}
-              markerWidth="8"
-              markerHeight="6"
-              refX="8"
-              refY="3"
-              orient="auto"
-              markerUnits="strokeWidth"
-            >
-              <polygon points="0 0, 8 3, 0 6" fill={config.color} />
-            </marker>
-          ))}
-        </defs>
-
-        {/* Edges */}
-        {edges.map((edge) => {
-          const sourcePos = positions.get(edge.source);
-          const targetPos = positions.get(edge.target);
-          if (!sourcePos || !targetPos) return null;
-
-          const sourceNode = nodeMap.get(edge.source);
-          const targetNode = nodeMap.get(edge.target);
-          if (!sourceNode || !targetNode) return null;
-
-          // Shorten line to account for target node radius
-          const targetRadius = getNodeRadius(targetNode);
-          const dx = targetPos.x - sourcePos.x;
-          const dy = targetPos.y - sourcePos.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          const shortenFactor = dist > 0 ? (dist - targetRadius - 4) / dist : 1;
-
-          const endX = sourcePos.x + dx * shortenFactor;
-          const endY = sourcePos.y + dy * shortenFactor;
-
-          const strokeWidth = getEdgeStrokeWidth(edge.weight);
-          const strokeDash = getEdgeStrokeDash(edge.confidence);
-          const edgeColor = EDGE_VISUAL_CONFIG[edge.category]?.color ?? "#666";
-
-          return (
-            <line
-              key={edge.id}
-              x1={sourcePos.x}
-              y1={sourcePos.y}
-              x2={endX}
-              y2={endY}
-              stroke={edgeColor}
-              strokeWidth={strokeWidth}
-              strokeDasharray={strokeDash}
-              opacity={CONFIDENCE_VISUAL_MAP[edge.confidence]?.opacity ?? 0.6}
-              markerEnd={`url(#arrowhead-edge-${edge.category})`}
-              aria-label={`Edge from ${sourceNode.label} to ${targetNode.label}, Category: ${edge.category}, Weight: ${edge.weight.toFixed(2)}`}
-            />
-          );
-        })}
-
-        {/* Nodes */}
-        {nodes.map((node) => {
-          const pos = positions.get(node.id);
-          if (!pos) return null;
-
-          const radius = getNodeRadius(node);
-          const color = LAYER_VISUAL_CONFIG[node.layer]?.color ?? "#888";
-          const opacity = CONFIDENCE_OPACITY[node.metadata.confidence] ?? 0.6;
-          const isFocused = focusedNodeId === node.id;
-          const isSelected = selectedNodeId === node.id;
-
-          return (
-            <g key={node.id}>
-              {/* Focus ring */}
-              {isFocused && (
-                <circle
-                  cx={pos.x}
-                  cy={pos.y}
-                  r={radius + 4}
-                  fill="none"
-                  stroke="#60a5fa"
-                  strokeWidth={2}
-                  strokeDasharray="3 2"
-                />
-              )}
-              {/* Selection ring */}
-              {isSelected && (
-                <circle
-                  cx={pos.x}
-                  cy={pos.y}
-                  r={radius + 3}
-                  fill="none"
-                  stroke="#fbbf24"
-                  strokeWidth={2}
-                />
-              )}
-              {/* Node circle */}
-              <circle
-                cx={pos.x}
-                cy={pos.y}
-                r={radius}
-                fill={color}
-                opacity={opacity}
-                stroke={isFocused ? "#60a5fa" : "none"}
-                strokeWidth={isFocused ? 1.5 : 0}
-                role="img"
-                aria-label={`Node: ${node.label}, Layer: ${node.layer}, Energy: ${node.energyLevel.toFixed(2)}, Confidence: ${node.metadata.confidence}`}
-                onClick={() => {
-                  setFocusedNodeId(node.id);
-                  setSelectedNodeId(node.id);
-                }}
-                className="cursor-pointer"
-              />
-              {/* Text label */}
-              <text
-                x={pos.x}
-                y={pos.y + radius + 14}
-                textAnchor="middle"
-                fill="#e5e7eb"
-                fontSize={10}
-                className="pointer-events-none select-none"
-              >
-                {truncateLabel(node.label)}
-              </text>
-            </g>
-          );
-        })}
-      </svg>
-
-      {/* Cohesion Badge */}
-      {showCohesion && (
-        <div
-          className={`absolute top-3 right-3 px-3 py-1.5 rounded-md text-xs font-medium ${getCohesionBgColor(metrics.cohesion.label)} ${getCohesionColor(metrics.cohesion.label)} border border-gray-700`}
+    <div
+      className="relative w-full flex overflow-hidden"
+      style={{ height: 600 }}
+    >
+      {/* SVG Canvas Container */}
+      <div className="relative flex-1 h-full">
+        {/* SVG Graph */}
+        <svg
+          ref={svgRef}
+          viewBox={`0 0 ${SVG_WIDTH} ${SVG_HEIGHT}`}
+          className="w-full h-full border border-gray-700 rounded-lg bg-gray-950"
+          role="graphics-document"
+          aria-label={`Neural build graph with ${nodes.length} nodes and ${edges.length} edges`}
+          tabIndex={0}
+          onKeyDown={handleKeyDown}
         >
-          <span className="font-semibold">{metrics.cohesion.score.toFixed(2)}</span>
-          <span className="ml-1.5 opacity-80">{metrics.cohesion.label}</span>
-        </div>
-      )}
+          {/* Arrow marker definitions */}
+          <defs>
+            {LAYER_ORDER.map((layer) => (
+              <marker
+                key={`marker-${layer}`}
+                id={`arrowhead-${layer}`}
+                markerWidth="8"
+                markerHeight="6"
+                refX="8"
+                refY="3"
+                orient="auto"
+                markerUnits="strokeWidth"
+              >
+                <polygon
+                  points="0 0, 8 3, 0 6"
+                  fill={LAYER_VISUAL_CONFIG[layer].color}
+                />
+              </marker>
+            ))}
+            {/* Generic arrowheads per edge category */}
+            {Object.entries(EDGE_VISUAL_CONFIG).map(([category, config]) => (
+              <marker
+                key={`marker-edge-${category}`}
+                id={`arrowhead-edge-${category}`}
+                markerWidth="8"
+                markerHeight="6"
+                refX="8"
+                refY="3"
+                orient="auto"
+                markerUnits="strokeWidth"
+              >
+                <polygon points="0 0, 8 3, 0 6" fill={config.color} />
+              </marker>
+            ))}
+          </defs>
 
-      {/* Analytics Panel */}
-      {showAnalytics && (
-        <div className="mt-3 p-3 bg-gray-900 rounded-lg border border-gray-700 text-xs text-gray-300">
-          <h4 className="font-semibold text-gray-100 mb-2">Graph Analytics</h4>
-          <div className="grid grid-cols-2 gap-2">
-            <div>
-              <span className="text-gray-500">Nodes:</span>{" "}
-              {metrics.totalNodeCount}
-            </div>
-            <div>
-              <span className="text-gray-500">Edges:</span>{" "}
-              {metrics.totalEdges}
-            </div>
-            <div>
-              <span className="text-gray-500">Density:</span>{" "}
-              {metrics.analytics.networkDensity.toFixed(3)}
-            </div>
-            <div>
-              <span className="text-gray-500">Components:</span>{" "}
-              {metrics.analytics.connectedComponents.length}
-            </div>
-            <div>
-              <span className="text-gray-500">Communities:</span>{" "}
-              {metrics.analytics.communities.length}
-            </div>
-            <div>
-              <span className="text-gray-500">Isolated:</span>{" "}
-              {metrics.isolatedNodeCount}
-            </div>
+          {/* Edges */}
+          {edges.map((edge) => {
+            const sourcePos = positions.get(edge.source);
+            const targetPos = positions.get(edge.target);
+            if (!sourcePos || !targetPos) return null;
+
+            const sourceNode = nodeMap.get(edge.source);
+            const targetNode = nodeMap.get(edge.target);
+            if (!sourceNode || !targetNode) return null;
+
+            // Shorten line to account for target node radius
+            const targetRadius = getNodeRadius(targetNode);
+            const dx = targetPos.x - sourcePos.x;
+            const dy = targetPos.y - sourcePos.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            const shortenFactor = dist > 0 ? (dist - targetRadius - 4) / dist : 1;
+
+            const endX = sourcePos.x + dx * shortenFactor;
+            const endY = sourcePos.y + dy * shortenFactor;
+
+            const strokeWidth = getEdgeStrokeWidth(edge.weight);
+            const strokeDash = getEdgeStrokeDash(edge.confidence);
+            const edgeColor = EDGE_VISUAL_CONFIG[edge.category]?.color ?? "#666";
+
+            return (
+              <line
+                key={edge.id}
+                x1={sourcePos.x}
+                y1={sourcePos.y}
+                x2={endX}
+                y2={endY}
+                stroke={edgeColor}
+                strokeWidth={strokeWidth}
+                strokeDasharray={strokeDash}
+                opacity={CONFIDENCE_VISUAL_MAP[edge.confidence]?.opacity ?? 0.6}
+                markerEnd={`url(#arrowhead-edge-${edge.category})`}
+                aria-label={`Edge from ${sourceNode.label} to ${targetNode.label}, Category: ${edge.category}, Weight: ${edge.weight.toFixed(2)}`}
+              />
+            );
+          })}
+
+          {/* Nodes */}
+          {nodes.map((node) => {
+            const pos = positions.get(node.id);
+            if (!pos) return null;
+
+            const radius = getNodeRadius(node);
+            const color = LAYER_VISUAL_CONFIG[node.layer]?.color ?? "#888";
+            const opacity = CONFIDENCE_OPACITY[node.metadata.confidence] ?? 0.6;
+            const isFocused = focusedNodeId === node.id;
+            const isSelected = selectedNodeId === node.id;
+
+            return (
+              <g key={node.id}>
+                {/* Focus ring */}
+                {isFocused && (
+                  <circle
+                    cx={pos.x}
+                    cy={pos.y}
+                    r={radius + 4}
+                    fill="none"
+                    stroke="#60a5fa"
+                    strokeWidth={2}
+                    strokeDasharray="3 2"
+                  />
+                )}
+                {/* Selection ring */}
+                {isSelected && (
+                  <circle
+                    cx={pos.x}
+                    cy={pos.y}
+                    r={radius + 3}
+                    fill="none"
+                    stroke="#fbbf24"
+                    strokeWidth={2}
+                  />
+                )}
+                {/* Node circle */}
+                <circle
+                  cx={pos.x}
+                  cy={pos.y}
+                  r={radius}
+                  fill={color}
+                  opacity={opacity}
+                  stroke={isFocused ? "#60a5fa" : "none"}
+                  strokeWidth={isFocused ? 1.5 : 0}
+                  role="img"
+                  aria-label={`Node: ${node.label}, Layer: ${node.layer}, Energy: ${node.energyLevel.toFixed(2)}, Confidence: ${node.metadata.confidence}`}
+                  onClick={() => {
+                    setFocusedNodeId(node.id);
+                    setSelectedNodeId(node.id);
+                  }}
+                  className="cursor-pointer"
+                />
+                {/* Text label */}
+                <text
+                  x={pos.x}
+                  y={pos.y + radius + 14}
+                  textAnchor="middle"
+                  fill="#e5e7eb"
+                  fontSize={10}
+                  className="pointer-events-none select-none"
+                >
+                  {truncateLabel(node.label)}
+                </text>
+              </g>
+            );
+          })}
+        </svg>
+
+        {/* Floating Cohesion Badge */}
+        {showCohesion && (
+          <div className="absolute top-3 right-3 z-10">
+            <CohesionIndicator cohesion={metrics.cohesion} />
           </div>
-          {metrics.strongestSynergy && (
-            <div className="mt-2 text-gray-400">
-              <span className="text-gray-500">Strongest:</span>{" "}
-              {metrics.strongestSynergy}
-            </div>
-          )}
-        </div>
-      )}
+        )}
 
-      {/* Selected Node Details */}
-      {selectedNode && (
-        <div className="mt-3 p-3 bg-gray-900 rounded-lg border border-gray-700 text-xs text-gray-300">
-          <h4 className="font-semibold text-gray-100 mb-1">
-            {selectedNode.label}
-          </h4>
-          <div className="grid grid-cols-2 gap-1">
-            <div>
-              <span className="text-gray-500">Layer:</span>{" "}
-              {LAYER_VISUAL_CONFIG[selectedNode.layer]?.label ?? selectedNode.layer}
-            </div>
-            <div>
-              <span className="text-gray-500">Energy:</span>{" "}
-              {selectedNode.energyLevel.toFixed(2)}
-            </div>
-            <div>
-              <span className="text-gray-500">Influence:</span>{" "}
-              {selectedNode.influenceScore.toFixed(2)}
-            </div>
-            <div>
-              <span className="text-gray-500">Confidence:</span>{" "}
-              {selectedNode.metadata.confidence}
-            </div>
-            {selectedNode.metadata.formattedValue && (
-              <div className="col-span-2">
-                <span className="text-gray-500">Value:</span>{" "}
-                {selectedNode.metadata.formattedValue}
-              </div>
-            )}
-            {selectedNode.metadata.dpsContribution != null && (
-              <div className="col-span-2">
-                <span className="text-gray-500">DPS Contribution:</span>{" "}
-                {selectedNode.metadata.dpsContribution.toFixed(1)}%
-              </div>
-            )}
-          </div>
-
-          {/* Failure Mode button */}
-          {enableFailureMode && selectedNode.layer !== "final-output" && (
-            <button
-              className="mt-2 px-2 py-1 bg-red-900/40 border border-red-700 rounded text-red-300 text-xs hover:bg-red-900/60 transition-colors"
-              onClick={() => setFailureNodeId(selectedNode.id)}
-            >
-              Analyze removal impact
-            </button>
-          )}
-        </div>
-      )}
-
-      {/* Failure Mode Result (placeholder — actual computation deferred to integration) */}
-      {enableFailureMode && failureNodeId && (
-        <div className="mt-2 p-2 bg-red-950/40 rounded border border-red-800 text-xs text-red-300">
-          <span className="font-medium">Failure analysis</span> for node "{nodeMap.get(failureNodeId)?.label ?? failureNodeId}" is available when integrated with the failure mode engine.
+        {/* Toggle Sidebar Button */}
+        {showAnalytics && (
           <button
-            className="ml-2 text-red-400 underline"
-            onClick={() => setFailureNodeId(null)}
+            onClick={() => setSidebarOpen((prev) => !prev)}
+            style={{
+              position: "absolute",
+              top: 12,
+              left: 12,
+              zIndex: 10,
+            }}
+            className="flex items-center gap-1.5 rounded-lg border border-neutral-700 bg-neutral-900/90 px-3 py-1.5 text-xs font-medium text-neutral-300 transition-colors hover:bg-neutral-800 hover:text-neutral-100"
+            aria-label="Toggle analytics panel"
           >
-            Dismiss
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
+            Analytics
           </button>
+        )}
+
+        {/* Selected Node Details & Failure Mode trigger */}
+        {selectedNode && (
+          <div className="absolute bottom-3 left-3 right-3 p-3 bg-neutral-900/95 border border-neutral-700 rounded-lg text-xs text-neutral-300 z-10 backdrop-blur-sm">
+            <div className="flex items-center justify-between mb-1">
+              <h4 className="font-semibold text-neutral-100">
+                {selectedNode.label}
+              </h4>
+              <button
+                className="text-neutral-500 hover:text-neutral-300"
+                onClick={() => setSelectedNodeId(null)}
+              >
+                Dismiss
+              </button>
+            </div>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+              <div>
+                <span className="text-neutral-500">Layer:</span>{" "}
+                {LAYER_VISUAL_CONFIG[selectedNode.layer]?.label ?? selectedNode.layer}
+              </div>
+              <div>
+                <span className="text-neutral-500">Energy:</span>{" "}
+                {selectedNode.energyLevel.toFixed(2)}
+              </div>
+              <div>
+                <span className="text-neutral-500">Influence:</span>{" "}
+                {selectedNode.influenceScore.toFixed(2)}
+              </div>
+              <div>
+                <span className="text-neutral-500">Confidence:</span>{" "}
+                {selectedNode.metadata.confidence}
+              </div>
+              {selectedNode.metadata.formattedValue && (
+                <div className="col-span-2">
+                  <span className="text-neutral-500">Value:</span>{" "}
+                  {selectedNode.metadata.formattedValue}
+                </div>
+              )}
+              {selectedNode.metadata.dpsContribution != null && (
+                <div className="col-span-2">
+                  <span className="text-neutral-500">DPS Contribution:</span>{" "}
+                  {selectedNode.metadata.dpsContribution.toFixed(1)}%
+                </div>
+              )}
+            </div>
+
+            {/* Failure Mode button */}
+            {enableFailureMode && selectedNode.layer !== "final-output" && (
+              <button
+                className="mt-2 px-2 py-1 bg-red-950/40 border border-red-800 rounded text-red-400 text-xs hover:bg-red-900/40 transition-colors"
+                onClick={() => setFailureNodeId(selectedNode.id)}
+              >
+                Analyze removal impact
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* Failure Mode Result Overlay (mocked here, actual handled by FailureModeOverlay wrapper) */}
+        {enableFailureMode && failureNodeId && (
+          <div className="absolute bottom-3 left-3 right-3 p-3 bg-red-950/95 border border-red-800 rounded-lg text-xs text-red-200 z-20 backdrop-blur-sm">
+            <span className="font-semibold">Failure analysis</span> for node "{nodeMap.get(failureNodeId)?.label ?? failureNodeId}" is available when integrated with the failure mode engine.
+            <button
+              className="ml-2 text-red-400 underline font-medium"
+              onClick={() => setFailureNodeId(null)}
+            >
+              Dismiss
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* Sidebar Panel container */}
+      {showAnalytics && sidebarOpen && (
+        <div
+          style={{
+            width: 320,
+            height: "100%",
+            flexShrink: 0,
+            zIndex: 15,
+          }}
+        >
+          <AnalyticsPanel
+            analytics={metrics.analytics}
+            nodes={nodes}
+            insights={viewModel.insights ?? undefined}
+          />
         </div>
       )}
     </div>

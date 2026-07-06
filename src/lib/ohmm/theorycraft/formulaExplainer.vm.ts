@@ -251,6 +251,29 @@ export function deriveFormulaExplainer(
   const allItems = [...additiveGroup, ...multiplicativeGroup];
   computeContributions(allItems);
 
+  // Compute hypothetical DPS if removed for top 3 contributors
+  const sumAdditive = additiveGroup.reduce((sum, item) => sum + item.value, 0);
+  const baselineDPS = combatOutput?.damageOutput?.DPS ?? 0;
+
+  if (baselineDPS > 0 && allItems.length > 0) {
+    const sortedContributors = [...allItems]
+      .filter((item) => item.value > 0)
+      .sort((a, b) => b.contributionPercent - a.contributionPercent);
+
+    const top3 = sortedContributors.slice(0, 3);
+    for (const item of top3) {
+      if (item.groupType === "additive") {
+        // Additive group math
+        const hypDPS = baselineDPS * (1 + sumAdditive - item.value) / (1 + sumAdditive);
+        item.hypotheticalDPSIfRemoved = `${Math.round(hypDPS).toLocaleString("en-US")} DPS`;
+      } else {
+        // Multiplicative group math
+        const hypDPS = baselineDPS / (1 + item.value);
+        item.hypotheticalDPSIfRemoved = `${Math.round(hypDPS).toLocaleString("en-US")} DPS`;
+      }
+    }
+  }
+
   // ── Step 6: Build target assumptions ──
   const targetAssumptions = calcInput
     ? buildTargetAssumptions(calcInput)

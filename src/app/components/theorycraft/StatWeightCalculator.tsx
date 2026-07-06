@@ -8,13 +8,50 @@
  */
 
 import React from "react";
-import { TrendingUp, AlertTriangle } from "lucide-react";
+import { TrendingUp, AlertTriangle, Crown } from "lucide-react";
 import type { StatWeightViewModel, StatWeightEntry } from "@/lib/ohmm/theorycraft/types";
 import { CONFIDENCE_DISPLAY } from "@/lib/ohmm/theorycraft/constants";
 import { EmptyState } from "./shared/EmptyState";
 import { AnimatedNumber } from "./shared/AnimatedNumber";
 
-// ─── Formatting Helpers ──────────────────────────────────────────────────────
+// ─── Stat Source Mapping ──────────────────────────────────────────────────────
+
+const STAT_SOURCE_MAP: Record<string, string> = {
+  weaponDMGBonus: "Chest / Pants / Mod (Core) / Weapon Calibration",
+  statusDMGBonus: "Mod (Core) / Food Buffs / Energy Drink",
+  elementalDMGBonus: "Mod (Core) / Cradle Perks / Food Buffs",
+  critRate: "Mask / Gloves / Mod (Suffix) / Weapon Calibration",
+  critDMG: "Head / Gloves / Mod (Suffix) / Weapon Calibration",
+  weakspotDMG: "Head / Pants / Mod (Suffix)",
+  psiIntensity: "Mod (Core) / Food Buffs / Weapon Calibration",
+};
+
+// ─── Sparkline Renderer ──────────────────────────────────────────────────────
+
+function renderSparkline(history: number[]) {
+  if (!history || history.length < 2) return null;
+  const points = history.map((rank, i) => {
+    const x = (i / (history.length - 1)) * 30 + 1;
+    // Rank ranges 1 to 7. We want rank 1 to be high (y=1) and rank 7 to be low (y=11)
+    const y = 11 - ((7 - rank) / 6) * 10;
+    return `${x},${y}`;
+  }).join(" ");
+
+  return (
+    <svg width="32" height="12" className="overflow-visible shrink-0 ml-1.5" aria-hidden="true" title={`Rank trend: ${history.join(" -> ")}`}>
+      <polyline
+        fill="none"
+        stroke="#22d3ee"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        points={points}
+      />
+    </svg>
+  );
+}
+
+// ─── Stat Weight Entry Row ───────────────────────────────────────────────────
 
 function formatAbsoluteGain(value: number): string {
   if (value === 0) return "0";
@@ -29,20 +66,19 @@ function formatRelativeGain(value: number): string {
   return `+${value.toFixed(2)}%`;
 }
 
-// ─── Stat Weight Entry Row ───────────────────────────────────────────────────
-
 interface StatWeightRowProps {
   entry: StatWeightEntry;
+  history?: number[];
 }
 
-function StatWeightRow({ entry }: StatWeightRowProps) {
-  const { rank, label, absoluteGain, relativeGainPercent, barWidth } = entry;
+function StatWeightRow({ entry, history }: StatWeightRowProps) {
+  const { rank, label, absoluteGain, relativeGainPercent, barWidth, stat } = entry;
 
   const isZero = absoluteGain === 0;
 
   return (
     <li
-      className="flex items-center gap-3 py-2"
+      className="flex items-center gap-3 py-2 border-b border-white/[0.02] last:border-0"
       aria-label={`Rank ${rank}: ${label}, DPS gain ${absoluteGain === 0 ? "0" : formatAbsoluteGain(absoluteGain)}, relative ${formatRelativeGain(relativeGainPercent)}`}
     >
       {/* Rank number */}
@@ -57,14 +93,26 @@ function StatWeightRow({ entry }: StatWeightRowProps) {
 
       {/* Stat label & values */}
       <div className="flex-1 min-w-0">
-        <div className="flex items-baseline justify-between gap-2 mb-1">
-          <span
-            className={`text-sm font-medium truncate ${
-              isZero ? "text-gray-500" : "text-gray-100"
-            }`}
-          >
-            {label}
-          </span>
+        <div className="flex items-baseline justify-between gap-2 mb-0.5">
+          <div className="flex items-center gap-1.5 min-w-0">
+            <span
+              className={`text-sm font-medium truncate ${
+                isZero ? "text-gray-500" : "text-gray-100"
+              }`}
+            >
+              {label}
+            </span>
+            {rank === 1 && !isZero && (
+              <span
+                className="inline-flex items-center gap-0.5 rounded bg-amber-500/15 border border-amber-500/20 px-1 py-0.5 text-[8px] font-semibold text-amber-300 shrink-0"
+                aria-label="Best Upgrade"
+              >
+                <Crown size={8} aria-hidden="true" className="shrink-0" />
+                Best Upgrade
+              </span>
+            )}
+            {history && history.length > 1 && renderSparkline(history)}
+          </div>
           <div className="flex items-baseline gap-2 shrink-0">
             <span
               className={`text-sm font-semibold tabular-nums ${
@@ -92,7 +140,14 @@ function StatWeightRow({ entry }: StatWeightRowProps) {
           </div>
         </div>
 
-        {/* Visual bar indicator — bar length communicates ranking */}
+        {/* Sources/Slot text */}
+        {!isZero && STAT_SOURCE_MAP[stat] && (
+          <p className="text-[10px] text-gray-500 mb-1 leading-normal truncate">
+            Sources: {STAT_SOURCE_MAP[stat]}
+          </p>
+        )}
+
+        {/* Visual bar indicator */}
         <div
           className="h-1.5 w-full rounded-full bg-gray-700/50 overflow-hidden"
           role="meter"
@@ -117,6 +172,7 @@ function StatWeightRow({ entry }: StatWeightRowProps) {
 
 export interface StatWeightCalculatorProps {
   viewModel: StatWeightViewModel;
+  rankHistory?: Record<string, number[]>;
 }
 
 /**
@@ -129,7 +185,7 @@ export interface StatWeightCalculatorProps {
  * - Shows disclaimer label at bottom
  * - Receives view model as prop — no engine imports
  */
-export function StatWeightCalculator({ viewModel }: StatWeightCalculatorProps) {
+export function StatWeightCalculator({ viewModel, rankHistory }: StatWeightCalculatorProps) {
   const { entries, isComputable, errorMessage, disclaimer } = viewModel;
 
   // Error state: display empty state guidance when isComputable is false
@@ -157,6 +213,9 @@ export function StatWeightCalculator({ viewModel }: StatWeightCalculatorProps) {
     );
   }
 
+  const QUICK_WIN_STATS = new Set(["psiIntensity", "critRate", "statusDMGBonus"]);
+  const quickWinEntry = entries.find((e) => e.absoluteGain > 0 && QUICK_WIN_STATS.has(e.stat));
+
   return (
     <section
       aria-label="Stat Weight Calculator"
@@ -177,9 +236,23 @@ export function StatWeightCalculator({ viewModel }: StatWeightCalculatorProps) {
       {/* Ranked entry list */}
       <ol className="space-y-0" aria-label="Stat weight rankings">
         {entries.map((entry) => (
-          <StatWeightRow key={entry.stat} entry={entry} />
+          <StatWeightRow
+            key={entry.stat}
+            entry={entry}
+            history={rankHistory?.[entry.stat]}
+          />
         ))}
       </ol>
+
+      {/* Quick win callout */}
+      {quickWinEntry && (
+        <div className="mt-3 rounded border border-cyan-500/10 bg-cyan-950/20 p-2 text-[11px] text-cyan-300/95 leading-normal flex items-start gap-1.5">
+          <span className="font-semibold shrink-0 text-cyan-400">Quick Win:</span>
+          <span>
+            Boosting <strong>{quickWinEntry.label}</strong> is highly effective and easily obtainable via Food Buffs or Calibration Slots!
+          </span>
+        </div>
+      )}
 
       {/* Disclaimer with confidence provenance indicator */}
       <div className="mt-3 flex items-center gap-2">

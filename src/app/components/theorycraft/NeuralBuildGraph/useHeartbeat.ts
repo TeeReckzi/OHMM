@@ -42,8 +42,7 @@ interface HeartbeatState {
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const FREQ_INTERPOLATION_DURATION_MS = 500;
-const DEACTIVATION_DURATION_MS = 1000;
+const DEACTIVATION_DURATION_MS = ENERGY_CONFIG.pulseDecayMs;
 const TWO_PI = Math.PI * 2;
 
 // ─── Hook ─────────────────────────────────────────────────────────────────────

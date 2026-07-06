@@ -34,8 +34,8 @@ const CONFIDENCE_OPACITY: Record<ConfidenceLevel, number> = {
 
 export interface GraphEdge3DProps {
   edge: GraphEdge;
-  sourcePos: [number, number, number];
-  targetPos: [number, number, number];
+  positionsRef: React.RefObject<any>; // type PositionsRef
+  isActive?: boolean;
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -78,7 +78,7 @@ function computeControlPoint(
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export function GraphEdge3D({ edge, sourcePos, targetPos }: GraphEdge3DProps): JSX.Element {
+export function GraphEdge3D({ edge, positionsRef, isActive = false }: GraphEdge3DProps): JSX.Element {
   const tubeRef = useRef<THREE.Mesh>(null);
   const glowRef = useRef<THREE.Mesh>(null);
 
@@ -86,60 +86,119 @@ export function GraphEdge3D({ edge, sourcePos, targetPos }: GraphEdge3DProps): J
   const color = useMemo(() => new THREE.Color(edgeConfig.color), [edgeConfig.color]);
   const opacity = CONFIDENCE_OPACITY[edge.confidence] ?? 0.4;
 
-  // Core tube radius: driven by weight (min 0.03, max 0.15)
-  const coreRadius = 0.03 + edge.weight * 0.12;
+  // Core tube radius: driven by weight (min 0.03, max 0.15) — slightly thicker if active
+  const coreRadius = (0.03 + edge.weight * 0.12) * (isActive ? 1.4 : 1.0);
 
   // Glow tube radius: 2.5× core for bloom
   const glowRadius = coreRadius * 2.5;
 
   // Build curved geometry via TubeGeometry + QuadraticBezierCurve3
-  const { coreGeometry, glowGeometry } = useMemo(() => {
-    const src = new THREE.Vector3(...sourcePos);
-    const tgt = new THREE.Vector3(...targetPos);
-    const ctrl = computeControlPoint(src, tgt, edge.id);
+  // Since TubeGeometry is expensive to recreate, we only recompute if positions change significantly
+  const [geometryData, setGeometryData] = React.useState<{ coreGeometry: THREE.TubeGeometry; glowGeometry: THREE.TubeGeometry } | null>(null);
 
-    const curve = new THREE.QuadraticBezierCurve3(src, ctrl, tgt);
+  // We check for updates in useFrame instead of useMemo
+  const lastSrcRef = useRef(new THREE.Vector3(NaN, NaN, NaN));
+  const lastTgtRef = useRef(new THREE.Vector3(NaN, NaN, NaN));
 
-    // Tube segments: more for longer edges, fewer for short ones
-    const dist = src.distanceTo(tgt);
-    const segments = Math.max(8, Math.min(32, Math.floor(dist * 1.5)));
+  useFrame(() => {
+    if (!positionsRef.current) return;
+    const positions = positionsRef.current.current;
+    const srcPos = positions.get(edge.source);
+    const tgtPos = positions.get(edge.target);
+    if (!srcPos || !tgtPos) return;
 
-    const core = new THREE.TubeGeometry(curve, segments, coreRadius, 6, false);
-    const glow = new THREE.TubeGeometry(curve, segments, glowRadius, 6, false);
+    // Check if moved more than 0.1 units (threshold to avoid micro-recomputations)
+    const distSq =
+      Math.pow(srcPos.x - lastSrcRef.current.x, 2) +
+      Math.pow(srcPos.y - lastSrcRef.current.y, 2) +
+      Math.pow(srcPos.z - lastSrcRef.current.z, 2) +
+      Math.pow(tgtPos.x - lastTgtRef.current.x, 2) +
+      Math.pow(tgtPos.y - lastTgtRef.current.y, 2) +
+      Math.pow(tgtPos.z - lastTgtRef.current.z, 2);
 
-    return { coreGeometry: core, glowGeometry: glow };
-  }, [sourcePos, targetPos, edge.id, coreRadius, glowRadius]);
+    if (distSq > 0.05 || !geometryData) {
+      lastSrcRef.current.set(srcPos.x, srcPos.y, srcPos.z);
+      lastTgtRef.current.set(tgtPos.x, tgtPos.y, tgtPos.z);
 
-  // Subtle pulse on the glow layer — driven by edge weight
+      const src = new THREE.Vector3(srcPos.x, srcPos.y, srcPos.z);
+      const tgt = new THREE.Vector3(tgtPos.x, tgtPos.y, tgtPos.z);
+      const ctrl = computeControlPoint(src, tgt, edge.id);
+
+      const curve = new THREE.QuadraticBezierCurve3(src, ctrl, tgt);
+      const dist = src.distanceTo(tgt);
+      const segments = Math.max(8, Math.min(32, Math.floor(dist * 1.5)));
+
+      const core = new THREE.TubeGeometry(curve, segments, coreRadius, 6, false);
+      const glow = new THREE.TubeGeometry(curve, segments, glowRadius, 6, false);
+
+      if (geometryData) {
+        geometryData.coreGeometry.dispose();
+        geometryData.glowGeometry.dispose();
+      }
+      setGeometryData({ coreGeometry: core, glowGeometry: glow });
+    }
+  });
+
+  const [hovered, setHovered] = React.useState(false);
+
+  const handlePointerOver = React.useCallback((e: any) => {
+    e.stopPropagation();
+    setHovered(true);
+    document.body.style.cursor = "pointer";
+  }, []);
+
+  const handlePointerOut = React.useCallback((e: any) => {
+    e.stopPropagation();
+    setHovered(false);
+    document.body.style.cursor = "auto";
+  }, []);
+
+  // Subtle pulse on the glow layer — driven by edge weight (boosted 60% on hover, 150% if active) (Req 7.8)
+  const glowMultiplier = (hovered ? 1.6 : 1.0) * (isActive ? 2.5 : 1.0);
+
   useFrame(({ clock }) => {
     if (!glowRef.current) return;
     const t = clock.getElapsedTime();
     const pulse = 0.5 + Math.sin(t * 1.5 * edge.weight + edge.weight * 10) * 0.3;
-    (glowRef.current.material as THREE.MeshBasicMaterial).opacity = opacity * 0.15 * pulse;
+    (glowRef.current.material as THREE.MeshBasicMaterial).opacity = opacity * 0.15 * pulse * glowMultiplier;
   });
 
   return (
     <group>
-      {/* Core conduit — solid emissive tube */}
-      <mesh ref={tubeRef} geometry={coreGeometry}>
-        <meshBasicMaterial
-          color={color}
-          transparent
-          opacity={opacity * 0.8}
-          depthWrite={false}
-        />
-      </mesh>
+      {geometryData && (
+        <>
+          {/* Core conduit — solid emissive tube */}
+          <mesh
+            ref={tubeRef}
+            geometry={geometryData.coreGeometry}
+            onPointerOver={handlePointerOver}
+            onPointerOut={handlePointerOut}
+          >
+            <meshBasicMaterial
+              color={color}
+              transparent
+              opacity={opacity * (hovered ? 0.95 : 0.8)}
+              depthWrite={false}
+            />
+          </mesh>
 
-      {/* Glow sheath — additive bloom interaction */}
-      <mesh ref={glowRef} geometry={glowGeometry}>
-        <meshBasicMaterial
-          color={color}
-          transparent
-          opacity={opacity * 0.12}
-          depthWrite={false}
-          blending={THREE.AdditiveBlending}
-        />
-      </mesh>
+          {/* Glow sheath — additive bloom interaction */}
+          <mesh
+            ref={glowRef}
+            geometry={geometryData.glowGeometry}
+            onPointerOver={handlePointerOver}
+            onPointerOut={handlePointerOut}
+          >
+            <meshBasicMaterial
+              color={color}
+              transparent
+              opacity={opacity * 0.12 * glowMultiplier}
+              depthWrite={false}
+              blending={THREE.AdditiveBlending}
+            />
+          </mesh>
+        </>
+      )}
     </group>
   );
 }

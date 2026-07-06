@@ -31,6 +31,8 @@ import { LAYER_ORDER } from "./buildGraph.types";
 import { ENERGY_CONFIG, INFLUENCE_WEIGHTS } from "./buildGraph.constants";
 import { computeGraphAnalytics } from "./graphAnalytics";
 import { computeCohesion } from "./graphCohesion";
+import { buildTemporalChain } from "./temporalChain";
+import { generateBuildInsights } from "./buildGraphInsights";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -180,6 +182,7 @@ function createNonRenderableResult(message: string): BuildGraphViewModel {
     isRenderable: false,
     emptyStateMessage: message,
     visibleLayers: null,
+    insights: null,
   };
 }
 
@@ -1519,8 +1522,8 @@ export function deriveBuildGraph(
 
   // Extract equipment nodes to check renderability
   const equipmentNodes = extractEquipmentNodes(buildSelection);
-  if (equipmentNodes.length < 1) {
-    return createNonRenderableResult("Equip at least 1 item to generate a build graph.");
+  if (equipmentNodes.length < 2) {
+    return createNonRenderableResult("Equip at least 2 items to generate a build graph.");
   }
 
   // Extract all nodes
@@ -1577,9 +1580,51 @@ export function deriveBuildGraph(
     metrics,
     energyState,
     heartbeat,
-    temporalChain: null,
+    temporalChain: (combatOutput?.damageOutput?.DPS != null &&
+      combatOutput.damageOutput.DPS > 0 &&
+      uniqueNodes.some((n) => n.layer === "equipment" && n.category === "weapon"))
+      ? (() => {
+          const chain = buildTemporalChain(combatOutput, uniqueNodes, edges);
+          if (chain && chain.frames) {
+            const nodeIds = new Set(uniqueNodes.map((n) => n.id));
+            for (const frame of chain.frames) {
+              if (!nodeIds.has(frame.activeNodeId)) {
+                console.warn(
+                  `[deriveBuildGraph] Frame references invalid node ID: ${frame.activeNodeId}. Remapping to nearest valid node.`
+                );
+                let invalidLayer: GraphLayer = "equipment";
+                if (frame.activeNodeId.startsWith("eq-")) invalidLayer = "equipment";
+                else if (frame.activeNodeId.startsWith("stat-")) invalidLayer = "stats";
+                else if (frame.activeNodeId.startsWith("kw-")) invalidLayer = "keywords";
+                else if (frame.activeNodeId.startsWith("status-")) invalidLayer = "status-effects";
+                else if (frame.activeNodeId.startsWith("formula-")) invalidLayer = "combat-formula";
+                else if (frame.activeNodeId.startsWith("output-")) invalidLayer = "final-output";
+
+                const invalidLayerIdx = LAYER_ORDER.indexOf(invalidLayer);
+                let bestNode: GraphNode | null = null;
+                let minLayerDist = Infinity;
+
+                for (const n of uniqueNodes) {
+                  const nLayerIdx = LAYER_ORDER.indexOf(n.layer);
+                  const dist = Math.abs(nLayerIdx - invalidLayerIdx);
+                  if (dist < minLayerDist) {
+                    minLayerDist = dist;
+                    bestNode = n;
+                  }
+                }
+
+                if (bestNode) {
+                  frame.activeNodeId = bestNode.id;
+                }
+              }
+            }
+          }
+          return chain;
+        })()
+      : null,
     isRenderable: true,
     emptyStateMessage: null,
     visibleLayers: null,
+    insights: generateBuildInsights(uniqueNodes, edges, analytics, cohesion.score),
   };
 }

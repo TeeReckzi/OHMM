@@ -34,6 +34,18 @@ The Once Human Meta Metrics (OHMM) project is structured as a React-based web ap
   - Fixed regression issues REG-01 through REG-05.
   - Resolved stat mapping key drift, normalized mod tags, restored missing staging translation entries, fixed PSI-based Burn test fixtures, and established complete PvP mitigation scaling and clamping.
   - Confirmed 100% pass rate for all registry, staging, and formula validation tests.
+- **Phase 2: Neural Build Graph v2 (Interactive 3D Visualizer & Advanced Analysis)**
+  - Implemented 3D Force-Directed Graph (`d3-force-3d`) with customizable layer layout and settlement camera zoom-to-fit.
+  - Wired `HeartbeatEngine` for node scaling, brightness pulsing, and sinusoidal breathing.
+  - Integrated selective post-processing bloom for high-emissive nodes.
+  - Created multi-colored instanced particle system with per-category custom colors and active-conduit bursts.
+  - Added cinematic camera auto-orbit and focus transitions.
+  - Developed **Temporal Playback Engine** animating combat sequences via energy pulses and conduit particle bursts.
+  - Integrated **Failure Mode Overlay** analyzing the hypothetical impact of removing a selected node on graph cohesion, severed edges, and split communities.
+  - Refined **Graph Cohesion** to use average eigenvector centrality and network density.
+  - Added Level of Detail (LOD) tier management with hysteresis and performance auto-throttling.
+  - Built 2D SVG Accessibility Fallback with full keyboard navigation and ARIA labels.
+  - Established a 138-test property-based validation suite running successfully under Vitest.
 
 ---
 
@@ -53,6 +65,9 @@ The Once Human Meta Metrics (OHMM) project is structured as a React-based web ap
    - `docs/data-authority.md` (trust levels)
    - `docs/mod-selection-model.md` (suffix requirements)
    - `docs/image-resolution-policy.md` (Supabase paths)
+5. **Outstanding Neural Build Graph v2 Spec Tasks**:
+   - Write the property test for LOD tier hysteresis (`Property 16` / Task 14.2).
+   - Implement and wire the explainability/insights engine (`generateBuildInsights` / Task 13).
 
 ---
 
@@ -67,5 +82,5 @@ The Once Human Meta Metrics (OHMM) project is structured as a React-based web ap
 
 ## Next Recommended Task
 
-**Phase 2: UI Component Extraction and Refactoring**
-Extract sub-components (such as modals, charts, and calculation panels) out of the massive `App.tsx` into clean, testable React components, improving code readability and reducing the file size.
+**Phase 3: Explainability Engine and Analytics Panel**
+Implement the natural language explainability/insights engine (`generateBuildInsights` in `buildGraphInsights.ts`) and mount the collapsible `AnalyticsPanel` and floating `CohesionIndicator` in `GraphScene.tsx` as outlined in Task 13 of the Neural Build Graph v2 specification.

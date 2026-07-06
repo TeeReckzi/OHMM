@@ -102,7 +102,7 @@ const TIER_ORDER: LODTier[] = ["full", "reduced", "minimal", "static"];
  * Determine the base tier from node count, applying hysteresis
  * based on the current tier to prevent oscillation.
  */
-function computeTierFromNodeCount(nodeCount: number, currentTier: LODTier): LODTier {
+export function computeTierFromNodeCount(nodeCount: number, currentTier: LODTier): LODTier {
   // Apply hysteresis: use different thresholds depending on direction
   // Going UP in quality (lower tier → higher tier) requires crossing below (boundary - margin)
   // Going DOWN in quality (higher tier → lower tier) requires crossing above (boundary + margin)

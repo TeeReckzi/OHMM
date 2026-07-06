@@ -355,7 +355,7 @@ describe('Property 11: Stat Weight Bar Scaling', () => {
           const maxGain = result.entries[0].absoluteGain;
 
           for (const entry of result.entries) {
-            const expectedBarWidth = entry.absoluteGain / maxGain;
+            const expectedBarWidth = Math.max(0, entry.absoluteGain / maxGain);
             expect(entry.barWidth).toBeCloseTo(expectedBarWidth, 10);
           }
         },

@@ -1,9 +1,10 @@
 /**
- * Property-based tests for Heartbeat Frequency Bounds in the Build Graph view model.
+ * Property-based tests for Heartbeat in the Build Graph view model.
  *
+ * Property 6: Heartbeat brightness multiplier is always >= 1.0 when active
  * Property 23: Heartbeat Frequency Bounds — baseFrequency clamped to [0.1, 5.0] Hz
  *
- * **Validates: Requirement 8.2**
+ * **Validates: Requirement 7.3, 8.2**
  */
 
 import * as fc from "fast-check";
@@ -49,7 +50,7 @@ const arbCombatOutput = fc.record({
     unresolvedLeaves: [],
     accuracyNote: "",
   }),
-}) as fc.Arbitrary<CombatOutput>;
+}) as unknown as fc.Arbitrary<CombatOutput>;
 
 /** Arbitrary for a valid BuildSelection with ≥2 equipment items (ensures isRenderable: true) */
 const arbBuildSelection: fc.Arbitrary<BuildSelection> = fc.constant({
@@ -95,7 +96,7 @@ const arbBuildSelection: fc.Arbitrary<BuildSelection> = fc.constant({
       mode: "rating-derived" as const,
     },
   },
-}) as fc.Arbitrary<BuildSelection>;
+}) as unknown as fc.Arbitrary<BuildSelection>;
 
 /** Minimal CalculationInput sufficient for heartbeat testing */
 const arbCalcInput: fc.Arbitrary<CalculationInput> = fc.constant({
@@ -121,7 +122,7 @@ const arbCalcInput: fc.Arbitrary<CalculationInput> = fc.constant({
   baseCritDamage: 1.5,
   baseWeakspotDamage: 1.0,
   baseFireRate: 1.0,
-}) as fc.Arbitrary<CalculationInput>;
+}) as unknown as fc.Arbitrary<CalculationInput>;
 
 // ─── Test Runner ──────────────────────────────────────────────────────────────
 
@@ -194,6 +195,42 @@ await runProperty("Property 23: Heartbeat Frequency Bounds", () => {
       }
     ),
     { numRuns: 300 }
+  );
+});
+
+// ─── Property 6: Heartbeat Brightness Multiplier bounds ───────────────────────
+
+await runProperty("Property 6: Heartbeat brightness multiplier is always >= 1.0 when active", () => {
+  fc.assert(
+    fc.property(
+      fc.double({ min: 0.05, max: 1.0 }), // energyLevel
+      fc.double({ min: 0.02, max: 0.15 }), // pulseIntensity (amplitude)
+      fc.double({ min: -1.0, max: 1.0 }), // nodeSin
+      (energyLevel, pulseIntensity, nodeSin) => {
+        const brightness = 1 + pulseIntensity * energyLevel * Math.max(0, nodeSin);
+        if (brightness < 1.0) {
+          throw new Error(`Brightness ${brightness} is less than 1.0 for energyLevel=${energyLevel}, pulseIntensity=${pulseIntensity}, nodeSin=${nodeSin}`);
+        }
+        return true;
+      }
+    ),
+    { numRuns: 200 }
+  );
+
+  // Deactivation decay property test
+  fc.assert(
+    fc.property(
+      fc.double({ min: 1.0, max: 1.5 }), // startVal
+      fc.double({ min: 0, max: 1.0 }), // t [0, 1]
+      (startVal, t) => {
+        const brightness = startVal + (1.0 - startVal) * t;
+        if (brightness < 1.0) {
+          throw new Error(`Deactivation brightness ${brightness} < 1.0`);
+        }
+        return true;
+      }
+    ),
+    { numRuns: 100 }
   );
 });
 

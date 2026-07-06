@@ -60,6 +60,8 @@ export interface ExplainerLineItem {
   confidence: ConfidenceLevel;
   /** 0–100, share of total output */
   contributionPercent: number;
+  /** Hypothetical DPS if this contributor were removed (e.g. "3,420 DPS") */
+  hypotheticalDPSIfRemoved?: string | null;
 }
 
 export interface TargetAssumption {
@@ -107,6 +109,8 @@ export interface SetBonusEntry {
   nextThreshold: number | null;
   /** nextThreshold - equippedCount, or null */
   piecesNeeded: number | null;
+  /** Estimated DPS gain of reaching the next threshold (e.g. "+3.4% est. DPS") */
+  worthItEstimate?: string | null;
 }
 
 export interface SetBonusTrackerViewModel {
@@ -185,6 +189,8 @@ export interface BuildComparisonViewModel {
   isAvailable: boolean;
   errorMessage: string | null;
   emptyStateMessage: string | null;
+  /** Net verdict summary line (e.g. "+12.5% DPS, -5.0% TTK — aggressive trade") */
+  netVerdict?: string | null;
 }
 
 // ─── Orchestrator State ──────────────────────────────────────────────────────

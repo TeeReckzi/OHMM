@@ -193,10 +193,16 @@ function SetEntryCard({ entry }: SetEntryCardProps) {
 
       {/* Pieces needed for next threshold */}
       {piecesNeeded !== null && piecesNeeded > 0 && (
-        <p className="mt-2 text-[11px] text-amber-400/80 leading-tight">
-          {piecesNeeded} more {piecesNeeded === 1 ? "piece" : "pieces"} needed
-          for next bonus
-        </p>
+        <div className="mt-2 flex items-center justify-between gap-2">
+          <p className="text-[11px] text-amber-400/80 leading-tight">
+            {piecesNeeded} more {piecesNeeded === 1 ? "piece" : "pieces"} needed for next bonus
+          </p>
+          {entry.worthItEstimate && (
+            <span className="shrink-0 rounded bg-cyan-950/40 border border-cyan-800/30 px-1.5 py-0.5 text-[9px] font-semibold text-cyan-300">
+              Worth it? {entry.worthItEstimate}
+            </span>
+          )}
+        </div>
       )}
     </div>
   );

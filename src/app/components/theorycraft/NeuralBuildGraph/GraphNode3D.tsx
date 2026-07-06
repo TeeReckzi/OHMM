@@ -21,8 +21,8 @@
  * Performance: ~0.3ms per node at 60 FPS. Safe for 100 nodes.
  */
 
-import React, { useRef, useState, useCallback, useMemo } from "react";
-import { useFrame } from "@react-three/fiber";
+import React, { useRef, useState, useCallback, useMemo, useEffect } from "react";
+import { useFrame, useThree } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
 import * as THREE from "three";
 import type { GraphNode } from "@/lib/ohmm/theorycraft/buildGraph.types";
@@ -30,7 +30,9 @@ import {
   LAYER_VISUAL_CONFIG,
   ENERGY_CONFIG,
 } from "@/lib/ohmm/theorycraft/buildGraph.constants";
-import type { PositionsRef } from "./useNodeDrag";
+import { useNodeDrag, type PositionsRef } from "./useNodeDrag";
+import type { ForceSimulation } from "./ForceSimulation";
+import { useHeartbeatContext } from "./HeartbeatEngine";
 
 // ─── Semantic Color Palette ───────────────────────────────────────────────────
 // Refined colors with better contrast against dark backgrounds
@@ -50,11 +52,16 @@ export interface GraphNode3DProps {
   node: GraphNode;
   /** Mutable position ref — node reads its position from here every frame */
   positionsRef: React.RefObject<PositionsRef>;
+  /** Reference to the underlying ForceSimulation for drag pinning */
+  simulationRef: React.RefObject<ForceSimulation | null>;
+  /** Reference to OrbitControls — disabled during drag */
+  controlsRef: React.RefObject<any>;
   /** Fallback position for initial render before positionsRef has data */
   position?: [number, number, number];
   onHover?: (node: GraphNode | null) => void;
   onClick?: (node: GraphNode) => void;
-  onDragEnd?: (nodeId: string, x: number, y: number, z: number) => void;
+  isSelected?: boolean;
+  energyOverride?: number;
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -62,17 +69,44 @@ export interface GraphNode3DProps {
 export function GraphNode3D({
   node,
   positionsRef,
+  simulationRef,
+  controlsRef,
   position,
   onHover,
   onClick,
-  onDragEnd,
+  isSelected = false,
+  energyOverride,
 }: GraphNode3DProps): JSX.Element {
   const groupRef = useRef<THREE.Group>(null);
   const coreRef = useRef<THREE.Mesh>(null);
   const haloRef = useRef<THREE.Mesh>(null);
   const coronaRef = useRef<THREE.Mesh>(null);
+  const selectionRef = useRef<THREE.Mesh>(null);
   const [hovered, setHovered] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
+
+  // Get camera from R3F context for drag plane computation
+  const { camera } = useThree();
+
+  // Call useNodeDrag unconditionally (Requirement 3.2) — always invoked regardless of state
+  const { bind, isDragging } = useNodeDrag(
+    node.id,
+    positionsRef,
+    simulationRef,
+    camera,
+    controlsRef,
+  );
+
+  // Consume heartbeat context unconditionally
+  const heartbeat = useHeartbeatContext();
+
+  // Assign node meshes to Three.js render layer 1 (bloom layer) (Req 8.2)
+  useEffect(() => {
+    if (coreRef.current) coreRef.current.layers.set(1);
+    if (haloRef.current) haloRef.current.layers.set(1);
+    if (coronaRef.current) coronaRef.current.layers.set(1);
+    if (selectionRef.current) selectionRef.current.layers.set(1);
+  }, [isSelected]); // Re-run when selection state changes to ensure selection ring layer is correct
 
   // ─── Computed visuals ───────────────────────────────────────────────────
   const color = useMemo(
@@ -83,8 +117,11 @@ export function GraphNode3D({
   // Size driven by influence score — minimum 0.4, max 1.2
   const baseRadius = 0.4 + node.influenceScore * 0.8;
 
-  // Emissive intensity driven by energy level (DPS contribution)
-  const baseEmissive = 0.3 + node.energyLevel * 1.5;
+  // Use playback energy override if active, else fall back to base energyLevel (Req 7.5, 7.6)
+  const effectiveEnergy = energyOverride !== undefined ? energyOverride : node.energyLevel;
+
+  // Emissive intensity driven by energy level (DPS contribution) and boosted 40% on hover (Req 10.3)
+  const baseEmissive = (0.3 + effectiveEnergy * 1.5) * (hovered ? 1.4 : 1.0);
 
   // Confidence affects material clarity
   const confidenceAlpha = node.metadata.confidence === "project_verified" ? 1.0
@@ -93,6 +130,13 @@ export function GraphNode3D({
     : 0.5;
 
   // ─── Per-frame animation ────────────────────────────────────────────────
+
+  // Manage cursor based on drag state
+  useFrame(() => {
+    if (isDragging) {
+      document.body.style.cursor = "grabbing";
+    }
+  });
 
   useFrame(({ clock }) => {
     const t = clock.getElapsedTime();
@@ -103,28 +147,43 @@ export function GraphNode3D({
       groupRef.current.position.set(posData.x, posData.y, posData.z);
     }
 
-    // Breathing — slow sinusoidal scale oscillation
-    const breathe = 1.0 + Math.sin(t * Math.PI * 2 * ENERGY_CONFIG.breathingFrequency) * 0.03 * node.energyLevel;
+    // Read heartbeat multipliers
+    const brightnessMultiplier = heartbeat.brightnessMultipliers.get(node.id) ?? 1.0;
+    const breathingScale = heartbeat.breathingScales.get(node.id) ?? 1.0;
+
+    // Apply brightnessMultiplier to core emissiveIntensity
+    if (coreRef.current) {
+      (coreRef.current.material as THREE.MeshStandardMaterial).emissiveIntensity =
+        baseEmissive * brightnessMultiplier;
+    }
 
     // Hover expand
     const hoverScale = hovered ? 1.2 : 1.0;
 
-    // Apply to group
+    // Apply to group scale (breathingScale * hoverScale)
     if (groupRef.current) {
-      const s = breathe * hoverScale;
+      const s = breathingScale * hoverScale;
       groupRef.current.scale.setScalar(s);
     }
 
     // Halo pulse — slightly offset frequency for organic feel
     if (haloRef.current) {
-      const haloPulse = 0.06 + Math.sin(t * 2.1 + node.energyLevel * 3) * 0.03;
-      (haloRef.current.material as THREE.MeshBasicMaterial).opacity = haloPulse * node.energyLevel * confidenceAlpha;
+      const haloPulse = 0.06 + Math.sin(t * 2.1 + effectiveEnergy * 3) * 0.03;
+      (haloRef.current.material as THREE.MeshBasicMaterial).opacity =
+        haloPulse * effectiveEnergy * confidenceAlpha * brightnessMultiplier;
     }
 
     // Corona slow rotation for visual interest
     if (coronaRef.current) {
       coronaRef.current.rotation.z = t * 0.15;
       coronaRef.current.rotation.x = Math.sin(t * 0.08) * 0.1;
+    }
+
+    // Selection ring pulse and spin (Req 10.3)
+    if (selectionRef.current) {
+      const pulse = 1.0 + Math.sin(t * 5.0) * 0.08;
+      selectionRef.current.scale.setScalar(pulse);
+      selectionRef.current.rotation.z = t * 0.5;
     }
   });
 
@@ -135,10 +194,10 @@ export function GraphNode3D({
       e.stopPropagation();
       setHovered(true);
       setShowTooltip(true);
-      document.body.style.cursor = "pointer";
+      if (!isDragging) document.body.style.cursor = "pointer";
       onHover?.(node);
     },
-    [node, onHover],
+    [node, onHover, isDragging],
   );
 
   const handlePointerOut = useCallback(
@@ -146,10 +205,10 @@ export function GraphNode3D({
       e.stopPropagation();
       setHovered(false);
       setShowTooltip(false);
-      document.body.style.cursor = "auto";
+      if (!isDragging) document.body.style.cursor = "auto";
       onHover?.(null);
     },
-    [onHover],
+    [onHover, isDragging],
   );
 
   const handleClick = useCallback(
@@ -168,6 +227,7 @@ export function GraphNode3D({
         onPointerOver={handlePointerOver}
         onPointerOut={handlePointerOut}
         onClick={handleClick}
+        {...(bind() as any)}
       >
         <sphereGeometry args={[baseRadius, 24, 16]} />
         <meshStandardMaterial
@@ -204,6 +264,21 @@ export function GraphNode3D({
             depthWrite={false}
             blending={THREE.AdditiveBlending}
             side={THREE.DoubleSide}
+          />
+        </mesh>
+      )}
+
+      {/* Selection ring — renders when isSelected is true */}
+      {isSelected && (
+        <mesh ref={selectionRef} rotation-x={Math.PI / 2}>
+          <ringGeometry args={[baseRadius * 1.3, baseRadius * 1.45, 32]} />
+          <meshBasicMaterial
+            color="#ffffff"
+            transparent
+            opacity={0.8}
+            side={THREE.DoubleSide}
+            depthWrite={false}
+            blending={THREE.AdditiveBlending}
           />
         </mesh>
       )}

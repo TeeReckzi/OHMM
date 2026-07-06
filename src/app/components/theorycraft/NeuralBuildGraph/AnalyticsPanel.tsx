@@ -18,12 +18,14 @@ import type {
   GraphNode,
   ConfidenceLevel,
 } from "@/lib/ohmm/theorycraft/buildGraph.types";
+import type { BuildInsight } from "@/lib/ohmm/theorycraft/buildGraphInsights";
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
 export interface AnalyticsPanelProps {
   analytics: GraphAnalytics;
   nodes: GraphNode[];
+  insights?: BuildInsight[];
 }
 
 // ─── Confidence Labels ────────────────────────────────────────────────────────
@@ -95,7 +97,7 @@ function ConfidenceBadge({ confidence }: ConfidenceTooltipProps): JSX.Element {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export function AnalyticsPanel({ analytics, nodes }: AnalyticsPanelProps): JSX.Element {
+export function AnalyticsPanel({ analytics, nodes, insights }: AnalyticsPanelProps): JSX.Element {
   // Derive top 5 nodes by eigenvector centrality
   const topCentrality = useMemo(() => {
     return [...analytics.centralities]
@@ -131,6 +133,32 @@ export function AnalyticsPanel({ analytics, nodes }: AnalyticsPanelProps): JSX.E
 
       {/* Scrollable Content */}
       <div className="flex-1 overflow-y-auto">
+        {/* ─── Build Insights ────────────────────────────────────────── */}
+        {insights && insights.length > 0 && (
+          <Section title="Build Insights" defaultOpen={true}>
+            <div className="space-y-2">
+              {insights.map((insight) => (
+                <div key={insight.id} className="rounded border border-neutral-800 bg-neutral-800/20 p-2">
+                  <div className="mb-1 flex items-center justify-between gap-2">
+                    <span className="text-xs font-semibold text-neutral-200">
+                      {insight.title}
+                    </span>
+                    <span className={`text-[9px] uppercase font-bold rounded px-1.5 py-0.2 border border-neutral-700 bg-neutral-900 shrink-0 ${
+                      insight.category === 'warning' ? 'text-red-400 border-red-500/30' :
+                      insight.category === 'bottleneck' ? 'text-amber-400 border-amber-500/30' :
+                      insight.category === 'upgrade' ? 'text-blue-400 border-blue-500/30' :
+                      insight.category === 'synergy' ? 'text-green-400 border-green-500/30' : 'text-neutral-400'
+                    }`}>
+                      {insight.category}
+                    </span>
+                  </div>
+                  <p className="text-[10px] text-neutral-400 leading-normal">{insight.description}</p>
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
+
         {/* ─── Centrality Rankings ─────────────────────────────────────── */}
         <Section title="Centrality Rankings" defaultOpen={true}>
           {topCentrality.length === 0 ? (

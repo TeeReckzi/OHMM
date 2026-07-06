@@ -1,4 +1,5 @@
 // src/lib/ohmm/theorycraft/buildGraph.types.ts
+import type { BuildInsightsResult } from "./buildGraphInsights";
 
 // ─── Layer System ─────────────────────────────────────────────────────────────
 
@@ -342,4 +343,6 @@ export interface BuildGraphViewModel {
   emptyStateMessage: string | null;
   /** Active layer filter (null = show all) */
   visibleLayers: GraphLayer[] | null;
+  /** Generated natural language insights and rating */
+  insights: BuildInsightsResult | null;
 }
