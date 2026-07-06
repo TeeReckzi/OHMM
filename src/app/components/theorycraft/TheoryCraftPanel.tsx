@@ -8,7 +8,7 @@
  * Validates: Requirements 10.2, 10.4, 11.9
  */
 
-import React from "react";
+import React, { useMemo } from "react";
 import { Clock } from "lucide-react";
 import "./shared/theorycraft-tokens.css";
 import type { BuildSelection } from "@/ohai/src/ui/types";
@@ -22,6 +22,8 @@ import { StatWeightCalculator } from "./StatWeightCalculator";
 import { BuildComparisonView } from "./BuildComparisonView";
 import { EmptyState } from "./shared/EmptyState";
 import { EMPTY_STATE_MESSAGES } from "@/lib/ohmm/theorycraft/constants";
+import { NeuralBuildGraph } from "./NeuralBuildGraph";
+import { deriveBuildGraph } from "@/lib/ohmm/theorycraft/buildGraph.vm";
 
 // ─── Props ───────────────────────────────────────────────────────────────────
 
@@ -61,6 +63,12 @@ export function TheoryCraftPanel({
   combatOutput,
 }: TheoryCraftPanelProps) {
   const state = useTheoryCraft(buildSelection, calcInput, combatOutput);
+
+  // Derive the Neural Build Graph view model from upstream inputs
+  const buildGraphViewModel = useMemo(
+    () => deriveBuildGraph(buildSelection, calcInput, combatOutput),
+    [buildSelection, calcInput, combatOutput]
+  );
 
   // FormulaExplainer receives the view model without the isExpanded UI state
   // (component manages its own expand/collapse state internally)
@@ -103,6 +111,18 @@ export function TheoryCraftPanel({
           />
         </section>
       )}
+
+      {/* 6. Neural Build Graph */}
+      <section aria-label="Build Neural Graph" className="mt-3">
+        <h3 className="text-xs font-medium text-gray-400 mb-2">Build Neural Graph</h3>
+        <NeuralBuildGraph
+          viewModel={buildGraphViewModel}
+          showCohesion={true}
+          showAnalytics={false}
+          enableFailureMode={true}
+          enableTemporalPlayback={true}
+        />
+      </section>
     </div>
   );
 }

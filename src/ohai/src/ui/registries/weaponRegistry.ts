@@ -3,6 +3,25 @@ import { weapons as generatedWeapons } from "./generated/weapons.generated";
 import { lredragolWeaponEntries } from "./generated/weaponsStats.generated";
 import { bindictWeaponEntries } from "./generated/weaponsStats.bindict.generated";
 
+/**
+ * Weapon keyword/effect overlay — sourced from paldex.io game data wiki.
+ * Applied during registry assembly to populate keywordAssociations and effectSummary
+ * on weapons that are missing this data from the lReDragol/generated sources.
+ * Awaiting owner confirmation before being marked as verified.
+ */
+const WEAPON_KEYWORD_OVERLAY: Record<string, { keywords: string[]; effect: string }> = {
+ "m416-silent-anabasis": { keywords: ["frostVortex"], effect: "12% chance to trigger Frost Vortex. Generates Ice Crystals (1.5s CD, 15s duration). Explode for 100% Psi as Frost Vortex DMG. Premature detonation = 350%. Frost Elemental DMG +30%, +8% per shattered crystal (3 stacks, 15s)." },
+ "mg4-conflicting-memories": { keywords: ["shrapnel"], effect: "Trigger Shrapnel after hitting target 12 times. Per 25 rounds in magazine, Shrapnel triggers on 1 additional body part, up to 6. If magazine >90 rounds, per 15 extra rounds Shrapnel DMG +10%. Magazine capacity +40." },
+ "de-50-jaws": { keywords: ["unstableBomber"], effect: "Every 3 weapon hits trigger Unstable Bomber. Crit shots count as 2 hits. 30% on crit to trigger UB. Unlocks crit for UB, +35% Crit Rate." },
+ "socr-the-last-valor": { keywords: ["shrapnel"], effect: "Hitting 4 times triggers Shrapnel. Crit hits count as 2. After crit, Shrapnel additionally triggers 1 more time. Shrapnel Crit DMG +30%." },
+ "mps7-outer-space": { keywords: ["powerSurge"], effect: "30% chance to apply Power Surge on hit. After hitting Power Surge target 12 times, summon lightning dealing 500% Psi Shock DMG. After reload, Power Surge bonus +40% for 6s. Shock Elemental DMG +30%." },
+ "sks-pathfinder": { keywords: ["frostVortex"], effect: "On hit triggers Frost Vortex (5s CD, -1s per hit). Charged shot = penetrating ice spike 110% Attack as Ice DMG. Ice Elemental DMG +30%, +8% after charged shot (3 stacks, 15s)." },
+ "tec9-additional-rules": { keywords: ["fortressWarfare"], effect: "On hit triggers Fortress Warfare (10s CD). After Deviant skill, bullets deal 120% Attack as Elemental Status DMG. In Fortress state, Crit Rate +15%." },
+ "g17-hazardous-object": { keywords: ["unstableBomber"], effect: "20% chance to trigger UB on hit. Reload replaced by throwing weapon for UB DMG. UB DMG and Range +10% per UB hit, max 5 stacks." },
+ "kam-abyss-glance": { keywords: ["frostVortex"], effect: "On hit triggers Frost Vortex (7s CD, -0.5s per hit). Non-Meta hits in Frost Vortex: final Frost Vortex DMG +5%, up to 10 stacks. Frost Elemental DMG +30%, Frost Vortex frequency +100%." },
+ "mg4-predator": { keywords: ["fastGunner"], effect: "40% chance to trigger Fast Gunner on hit. At 5 stacks, gain Unlimited Ammo 0.5s. Consecutive hits: Weapon DMG +4%, max 20 stacks. When bullets >40% magazine, Attack +60%." },
+};
+
 /** Normalize a name for fuzzy matching */
 function normKey(s: string): string {
  return s.toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -81,6 +100,21 @@ function mergeBindictStats(weapon: CanonicalWeapon): CanonicalWeapon {
     fireRate: weapon.fireRate ?? bindict.fireRate,
     magazineCapacity: weapon.magazineCapacity ?? bindict.magazineCapacity,
     reloadTimeSeconds: weapon.reloadTimeSeconds ?? bindict.reloadTimeSeconds,
+  };
+}
+
+/** Apply keyword/effect overlay from decoded game data (paldex source) */
+function applyKeywordOverlay(weapon: CanonicalWeapon): CanonicalWeapon {
+  const overlay = WEAPON_KEYWORD_OVERLAY[weapon.id];
+  if (!overlay) return weapon;
+  return {
+    ...weapon,
+    keywordAssociations: weapon.keywordAssociations && weapon.keywordAssociations.length > 0
+      ? weapon.keywordAssociations
+      : overlay.keywords,
+    effectSummary: weapon.effectSummary && weapon.effectSummary.trim().length > 0
+      ? weapon.effectSummary
+      : overlay.effect,
   };
 }
 
@@ -292,15 +326,15 @@ const lreAdditions = vettedLReDragolWeaponEntries.filter((w) => !curatedIds.has(
 const lreOrCuratedIds = new Set([...curatedIds, ...lreAdditions.map((w) => w.id)]);
 const genAdditions = vettedGeneratedWeapons.filter((w) => !lreOrCuratedIds.has(w.id));
 
-// Bindict entries: only add new weapons not already in curated/lReDragol/generated
-const allExistingIds = new Set([...lreOrCuratedIds, ...genAdditions.map((w) => w.id)]);
-const bindictAdditions = vettedBindictWeapons.filter((w) => !allExistingIds.has(w.id));
+// Bindict entries: used ONLY for stat backfill via mergeBindictStats().
+// Do NOT add to the user-facing weaponRegistry — decoded Chinese-named entries
+// and 自定义 (custom/calibration) variants are not player-selectable weapons.
+// They provide RPM/magazine/reload data to curated/lReDragol/generated entries only.
 
 export const weaponRegistry: CanonicalWeapon[] = [
- ...curatedEntries.map(mergeLReStats).map(mergeBindictStats),
- ...lreAdditions.map(mergeBindictStats),
- ...genAdditions.map(mergeBindictStats),
- ...bindictAdditions,
+ ...curatedEntries.map(mergeLReStats).map(mergeBindictStats).map(applyKeywordOverlay),
+ ...lreAdditions.map(mergeBindictStats).map(applyKeywordOverlay),
+ ...genAdditions.map(mergeBindictStats).map(applyKeywordOverlay),
 ].filter((w) => !isNonCanonicalWeapon(w));
 
 export function getWeapon(id: string): CanonicalWeapon | undefined {
