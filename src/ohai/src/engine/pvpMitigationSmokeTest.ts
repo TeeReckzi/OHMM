@@ -59,11 +59,11 @@ function makeBuild(overrides?: Partial<BuildSelection>): BuildSelection {
     armor: { head: "none", mask: "none", chest: "none", gloves: "none", pants: "none", boots: "none" },
     mods: { weapon: "none", head: "none", mask: "none", chest: "none", gloves: "none", pants: "none", boots: "none" },
     cradle: { perks: [] },
-    deviant: { id: "none", level: 1, activityRating: 1, trait: "" },
+    deviant: { id: "none", trait: "" },
     food: {
       food: "none",
       drink: "none",
-      chefRex: { enabled: false, skillRating: 1, activityRating: 1, bonusPercent: 0, mode: "manual" },
+      chefRex: { enabled: false, bonusPercent: 0 },
     },
   };
   if (overrides) {
@@ -77,7 +77,7 @@ function makeBuildFoodOnly(foodId: string, drinkId: string): Pick<BuildSelection
     food: {
       food: foodId,
       drink: drinkId,
-      chefRex: { enabled: false, skillRating: 1, activityRating: 1, bonusPercent: 0, mode: "manual" },
+      chefRex: { enabled: false, bonusPercent: 0 },
     },
   };
 }
@@ -87,7 +87,7 @@ function makeBuildChefRex(foodId: string, bonusPercent: number): Pick<BuildSelec
     food: {
       food: foodId,
       drink: "none",
-      chefRex: { enabled: true, skillRating: 5, activityRating: 5, bonusPercent, mode: bonusPercent > 42 ? "manual" : "rating-derived" },
+      chefRex: { enabled: true, bonusPercent },
     },
   };
 }

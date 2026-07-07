@@ -3,7 +3,7 @@ export type Side = "offensive" | "defensive";
 
 export type ModalKind =
   | "weapon" | "armor" | "weapon_mod" | "armor_mod"
-  | "attachment" | "buff" | "deviation" | "cradle" | "calibration"
+  | "attachment" | "ammo" | "buff" | "deviation" | "cradle" | "calibration"
   | null;
 
 export interface EquippedItem {

@@ -9,7 +9,6 @@ export const CURRENT_SCHEMA_VERSION = 1 as const;
 
 const blueprintStarsSchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5), z.literal(6)]);
 const gearTierSchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5)]);
-const chefRatingSchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5)]);
 
 const attachmentSelectionSchema = z.object({
  optic: z.string(),
@@ -96,17 +95,12 @@ const cradleSelectionSchema = z.object({
 
 const deviantSelectionSchema = z.object({
  id: z.string(),
- level: z.number(),
- activityRating: z.number(),
  trait: z.string(),
 });
 
 const chefRexSelectionSchema = z.object({
  enabled: z.boolean(),
- skillRating: chefRatingSchema,
- activityRating: chefRatingSchema,
  bonusPercent: z.number(),
- mode: z.enum(["rating-derived", "manual"]),
 });
 
 const foodBuffSelectionSchema = z.object({
@@ -358,19 +352,7 @@ export function sanitizeBuildOnLoad(raw: unknown): {
   warnings.push('Failed to derive canonical mods during sanitization');
  }
 
- // 3. ChefRex bonus consistency
- if (sanitized.food?.chefRex) {
-  const cr = sanitized.food.chefRex;
-  if (cr.mode === 'rating-derived' && cr.skillRating && cr.activityRating) {
-   // We can re-derive to check
-   // (import would cycle, so simple heuristic)
-   const expected = Math.min(42, Math.round((20 + (cr.skillRating - 1) * 3.5 + (cr.activityRating - 1) * 2) * 10) / 10);
-   if (Math.abs((cr.bonusPercent || 0) - expected) > 1) {
-    warnings.push(`ChefRex bonusPercent (${cr.bonusPercent}) did not match derived value from ratings (${expected}). May have been manually overridden or from old version.`);
-    // Do not auto-fix unless mode allows; just warn
-   }
-  }
- }
+  // 3. ChefRex bonus consistency — removed rating-derived check (star ratings eliminated)
 
  // 4. Registry-based ID sanity (warnings only, never drop data)
  try {
@@ -423,8 +405,8 @@ export function sanitizeBuildOnLoad(raw: unknown): {
   mods: sanitized.mods || {},
   modSelections: sanitized.modSelections,
   cradle: sanitized.cradle || { perks: [] },
-  deviant: sanitized.deviant || { id: 'none', level: 1, activityRating: 1, trait: '' },
-  food: sanitized.food || { food: 'none', drink: 'none', chefRex: { enabled: false, skillRating: 1, activityRating: 1, bonusPercent: 0, mode: 'manual' } },
+  deviant: sanitized.deviant || { id: 'none', trait: '' },
+  food: sanitized.food || { food: 'none', drink: 'none', chefRex: { enabled: false, bonusPercent: 0 } },
  };
 
  return {

@@ -47,8 +47,8 @@ const TEST_BUILD_A: BuildSelection = {
   mods: { weapon: "violent", head: "precision", mask: "status-amplifier", chest: "elemental-overload", gloves: "crit-boost", pants: "violent", boots: "precision" },
   modSelections: {},
  cradle: { perks: ["tactical-combo", "status-enhancement", "light-weapon-mastery"] },
- deviant: { id: "pyro-dino", level: 4, activityRating: 3, trait: "test" },
- food: { food: "safety-sandwich", drink: "anti-gravity-milkshake", chefRex: { enabled: true, skillRating: 4, activityRating: 3, bonusPercent: 38, mode: "rating-derived" } },
+  deviant: { id: "pyro-dino", trait: "test" },
+  food: { food: "safety-sandwich", drink: "anti-gravity-milkshake", chefRex: { enabled: true, bonusPercent: 38 } },
 };
 
 const TEST_BUILD_B: BuildSelection = {
@@ -59,8 +59,8 @@ const TEST_BUILD_B: BuildSelection = {
  armor: { head: "shelterer", mask: "lonewolf", chest: "bastille", gloves: "bbq-gloves", pants: "blackstone", boots: "renegade" },
  mods: { weapon: "violent", head: "precision", mask: "crit-boost", chest: "elemental-overload", gloves: "scorched", pants: "violent", boots: "precision" },
  cradle: { perks: ["status-enhancement", "heavy-weapon-mastery"] },
- deviant: { id: "pyro-dino", level: 5, activityRating: 4, trait: "test" },
- food: { food: "burn-dmg-stir-fry", drink: "anti-gravity-milkshake", chefRex: { enabled: false, skillRating: 1, activityRating: 1, bonusPercent: 0, mode: "rating-derived" } },
+  deviant: { id: "pyro-dino", trait: "test" },
+  food: { food: "burn-dmg-stir-fry", drink: "anti-gravity-milkshake", chefRex: { enabled: false, bonusPercent: 0 } },
 };
 
 // ---------------------------------------------------------------------------

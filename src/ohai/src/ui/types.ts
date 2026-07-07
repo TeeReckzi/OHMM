@@ -2,8 +2,6 @@ export type { CatalogItem } from './data/catalog';
 
 export type GearTier = 1 | 2 | 3 | 4 | 5;
 export type BlueprintStars = 1 | 2 | 3 | 4 | 5 | 6;
-export type ChefRexSkillRating = 1 | 2 | 3 | 4 | 5;
-export type ChefRexActivityRating = 1 | 2 | 3 | 4 | 5;
 
 export type CombatMode = 'pve' | 'pvp';
 
@@ -139,17 +137,12 @@ export interface CradleSelection {
 
 export interface DeviantSelection {
  id: string;
- level: number;
- activityRating: number;
  trait: string;
 }
 
 export interface ChefRexSelection {
  enabled: boolean;
- skillRating: ChefRexSkillRating;
- activityRating: ChefRexActivityRating;
  bonusPercent: number;
- mode: 'rating-derived' | 'manual';
 }
 
 export interface FoodBuffSelection {
@@ -163,6 +156,7 @@ export interface BuildSelection {
  label: string;
  role: 'attacker' | 'defender';
  weapon: WeaponSelection;
+ secondaryWeapon?: WeaponSelection;
  armor: ArmorSelection;
  /** Legacy derived map — do not write directly from UI. */
  mods: ModSelection;

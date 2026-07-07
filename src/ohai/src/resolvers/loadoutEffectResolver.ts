@@ -162,24 +162,30 @@ export function loadoutEffectResolver(
   }
 
   const attachSlots = ['optic', 'muzzle', 'magazine', 'tactical', 'stock'] as const;
-  for (const slot of attachSlots) {
-    const aid = build.weapon?.attachments?.[slot];
-    if (aid && aid !== 'none') {
-      const att = getAttachment(aid);
-      if (att) {
-        const mods = (att as any).statModifiers || [];
-        all.push({
-          sourceId: `${aid}-${slot}`,
-          sourceName: `${(att as any).name || aid} (${slot})`,
-          sourceType: 'attachment',
-          effectType: 'stat-buff',
-          mechanicIds: [],
-          statModifiers: mods.map((sm: any) => ({ stat: sm.stat as any, value: sm.value, unit: sm.unit === 'percent' ? 'percent' : 'flat' })),
-          confidence: 'candidate',
-          active: true,
-        });
+  const processWeaponAttachments = (wpn: typeof build.weapon, prefix: string) => {
+    for (const slot of attachSlots) {
+      const aid = wpn?.attachments?.[slot];
+      if (aid && aid !== 'none') {
+        const att = getAttachment(aid);
+        if (att) {
+          const mods = (att as any).statModifiers || [];
+          all.push({
+            sourceId: `${prefix}-${aid}-${slot}`,
+            sourceName: `${(att as any).name || aid} (${prefix} ${slot})`,
+            sourceType: 'attachment',
+            effectType: 'stat-buff',
+            mechanicIds: [],
+            statModifiers: mods.map((sm: any) => ({ stat: sm.stat as any, value: sm.value, unit: sm.unit === 'percent' ? 'percent' : 'flat' })),
+            confidence: 'candidate',
+            active: true,
+          });
+        }
       }
     }
+  };
+  processWeaponAttachments(build.weapon, 'primary');
+  if (build.secondaryWeapon) {
+    processWeaponAttachments(build.secondaryWeapon, 'secondary');
   }
 
   // Dedup by sourceId (defensive)

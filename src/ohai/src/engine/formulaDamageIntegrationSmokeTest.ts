@@ -41,14 +41,14 @@ function makeBuild(overrides?: Partial<BuildSelection>): BuildSelection {
     armor: { head: "none", mask: "none", chest: "none", gloves: "none", pants: "none", boots: "none" },
     mods: { weapon: "none", head: "none", mask: "none", chest: "none", gloves: "none", pants: "none", boots: "none" },
     cradle: { perks: [] },
-    deviant: { id: "none", level: 1, activityRating: 1, trait: "" },
-    food: { food: "none", drink: "none", chefRex: { enabled: false, skillRating: 1, activityRating: 1, bonusPercent: 0, mode: "manual" } },
+    deviant: { id: "none", trait: "" },
+    food: { food: "none", drink: "none", chefRex: { enabled: false, bonusPercent: 0 } },
   };
   return overrides ? { ...base, ...overrides } : base;
 }
 
 function makeFoodOnly(foodId: string, drinkId: string): Pick<BuildSelection, "food"> {
-  return { food: { food: foodId, drink: drinkId, chefRex: { enabled: false, skillRating: 1, activityRating: 1, bonusPercent: 0, mode: "manual" } } };
+  return { food: { food: foodId, drink: drinkId, chefRex: { enabled: false, bonusPercent: 0 } } };
 }
 
 function makeModsOnly(mods: Record<string, string>): Pick<BuildSelection, "mods"> {

@@ -94,18 +94,12 @@ if (weaponWithAmmo) {
   },
   mods: {},
   cradle: { perks: [] },
-  deviant: { id: 'none', level: 1, activityRating: 1, trait: '' },
-  food: {
-   food: 'none',
-   drink: 'none',
-   chefRex: {
-    enabled: false,
-    skillRating: 1,
-    activityRating: 1,
-    bonusPercent: 0,
-    mode: 'manual',
+   deviant: { id: 'none', trait: '' },
+   food: {
+    food: 'none',
+    drink: 'none',
+    chefRex: { enabled: false, bonusPercent: 0 },
    },
-  },
  };
 
  const repaired = repairWeaponAmmoSelection(build, weaponWithAmmo.id);
@@ -152,8 +146,8 @@ if (weaponWithAmmo) {
    mods: {},
    modSelections: undefined,
    cradle: { perks: [] },
-   deviant: { id: 'none', level: 1, activityRating: 1, trait: '' },
-   food: { food: 'none', drink: 'none', chefRex: { enabled: false, skillRating: 1 as any, activityRating: 1 as any, bonusPercent: 0, mode: 'manual' as const } },
+    deviant: { id: 'none', trait: '' },
+    food: { food: 'none', drink: 'none', chefRex: { enabled: false, bonusPercent: 0 } },
   },
  };
  // assume copper-ammo is compatible for many; use same weapon swap to "keep"
@@ -180,11 +174,11 @@ if (weaponWithAmmo) {
   mods: {},
   modSelections: undefined,
   cradle: { perks: [] },
-  deviant: { id: 'none', level: 1, activityRating: 1, trait: '' },
-  food: { food: 'none', drink: 'none', chefRex: { enabled: false, skillRating: 1 as any, activityRating: 1 as any, bonusPercent: 0, mode: 'manual' as const } },
- };
- const repaired = applyWeaponSelection(invalidAmmoBuild, weaponWithAmmo.id);
- const repairedA = getAmmo(repaired.weapon.attachments.ammo);
+  deviant: { id: 'none', trait: '' },
+   food: { food: 'none', drink: 'none', chefRex: { enabled: false, bonusPercent: 0 } },
+  };
+  const repaired = applyWeaponSelection(invalidAmmoBuild, weaponWithAmmo.id);
+  const repairedA = getAmmo(repaired.weapon.attachments.ammo);
  assert(repaired.weapon.attachments.ammo !== 'arrow', 'invalid ammo is replaced');
  assert(repairedA ? weaponWithAmmo.allowedAmmoCategories.includes(repairedA.ammoCategory) : false, 'repaired ammo is compatible');
 } else {
@@ -208,10 +202,10 @@ if (noAmmoWeapon && weaponWithAmmo) {
   mods: {},
   modSelections: undefined,
   cradle: { perks: [] },
-  deviant: { id: 'none', level: 1, activityRating: 1, trait: '' },
-  food: { food: 'none', drink: 'none', chefRex: { enabled: false, skillRating: 1 as any, activityRating: 1 as any, bonusPercent: 0, mode: 'manual' as const } },
- };
- const toNoAmmo = applyWeaponSelection(firearmBuild, noAmmoWeapon.id);
+    deviant: { id: 'none', trait: '' },
+    food: { food: 'none', drink: 'none', chefRex: { enabled: false, bonusPercent: 0 } },
+   };
+   const toNoAmmo = applyWeaponSelection(firearmBuild, noAmmoWeapon.id);
  assert(toNoAmmo.weapon.attachments.ammo === 'none', 'swap to no-ammo weapon forces ammo=none');
 } else {
  console.log(' SKIP No firearm + no-ammo pair for this test');

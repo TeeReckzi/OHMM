@@ -9,8 +9,8 @@ function defaultBuild(id: string, role: 'attacker' | 'defender', label: string):
   armor: { head: '', mask: '', chest: '', gloves: '', pants: '', boots: '' },
   mods: {},
   cradle: { perks: [] },
-  deviant: { id: '', level: 1, activityRating: 1, trait: '' },
-  food: { food: '', drink: '', chefRex: { enabled: false, skillRating: 1 as any, activityRating: 1 as any, bonusPercent: 0, mode: 'rating-derived' as const } },
+   deviant: { id: '', trait: '' },
+   food: { food: '', drink: '', chefRex: { enabled: false, bonusPercent: 0 } },
  };
 }
 

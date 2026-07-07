@@ -42,8 +42,8 @@ const SAMPLE_BUILD: BuildSelection = {
  armor: { head: "a", mask: "b", chest: "c", gloves: "d", pants: "e", boots: "f" },
  mods: { weapon: "a", head: "b", mask: "c", chest: "d", gloves: "e", pants: "f", boots: "g" },
  cradle: { perks: ["a", "b"] },
- deviant: { id: "pyro-dino", level: 4, activityRating: 3, trait: "test" },
- food: { food: "safety-sandwich", drink: "anti-gravity-milkshake", chefRex: { enabled: true, skillRating: 4 as const, activityRating: 3 as const, bonusPercent: 38, mode: "rating-derived" as const } },
+  deviant: { id: "pyro-dino", trait: "test" },
+  food: { food: "safety-sandwich", drink: "anti-gravity-milkshake", chefRex: { enabled: true, bonusPercent: 38 } },
 };
 
 const SAMPLE_BUILD_2: BuildSelection = {

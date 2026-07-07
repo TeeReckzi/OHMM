@@ -23,8 +23,6 @@ import { buildWeaponSelectorItems } from './selectors/weaponSelectorBuilder';
 import { getArmorSelectionId } from './types';
 import type {
  BuildSelection,
- ChefRexActivityRating,
- ChefRexSkillRating,
  DamageProfile,
  ModSelection,
  ProjectionMetric,
@@ -70,14 +68,7 @@ const normalizeArmorSelectionIds = (
  boots: getArmorSelectionId(armor.boots),
 });
 
-function deriveChefRexBonus(skillRating: ChefRexSkillRating, activityRating: ChefRexActivityRating): number {
- const baseline = 20;
- const skillContribution = (skillRating - 1) * 3.5;
- const activityContribution = (activityRating - 1) * 2;
- return Math.min(42, Math.round((baseline + skillContribution + activityContribution) * 10) / 10);
-}
-
-const defaultChefBonus = deriveChefRexBonus(4, 3);
+const defaultChefBonus = 0;
 
 const defaultAmmoByCategory: Record<string, string> = {
  copper: 'copper-ammo',
@@ -150,8 +141,6 @@ const defaultBuild = (id: string, role: 'attacker' | 'defender', label: string):
   },
   deviant: {
    id: 'pyro-dino',
-   level: 4,
-   activityRating: 3,
    trait: 'Damage support trait',
   },
   food: {
@@ -159,10 +148,7 @@ const defaultBuild = (id: string, role: 'attacker' | 'defender', label: string):
    drink: 'anti-gravity-milkshake',
    chefRex: {
     enabled: true,
-    skillRating: 4,
-    activityRating: 3,
     bonusPercent: defaultChefBonus,
-    mode: 'rating-derived',
    },
   },
  };

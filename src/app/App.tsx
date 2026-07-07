@@ -42,7 +42,7 @@ import { foodBuffRegistry } from "../ohai/src/ui/registries/foodBuffRegistry";
 import { attachmentRegistry, getAttachmentsBySlot, getAttachmentsBySlotAndFamily } from "../ohai/src/ui/registries/attachmentRegistry";
 import type { AttachmentSlot } from "../ohai/src/ui/itemTypes";
 import { cradleRegistry } from "../ohai/src/ui/registries/cradleRegistry";
-import { loadoutMapToBuildSelection } from "../lib/ohmm/convertLoadout";
+import { loadoutMapToBuildSelection, buildSelectionToLoadoutMap } from "../lib/ohmm/convertLoadout";
 import { TheoryCraftPanel } from "./components/theorycraft/TheoryCraftPanel";
 
 // Image pipelines: Supabase (structured URLs) + GitHub CDN fallback (ohmm-icondb)
@@ -50,6 +50,15 @@ import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import { getItemImage } from "../ohai/src/presentation/itemImageResolver";
 import { buildCdnUrl, getSupabaseImageUrl } from "../ohai/src/ui/data/supabaseImageResolver";
 import { SUPABASE_URL, ANON_KEY } from "../ohai/src/data/supabaseClient";
+import { getFilteredAmmoOptions } from "../ohai/src/ui/loadoutOptions";
+import {
+  loadAllBuilds as loadPersistedBuilds,
+  saveBuild as persistBuild,
+  deleteBuild as removePersistedBuild,
+  generateBuildId,
+} from "../ohai/src/ui/buildPersistenceService";
+import { downloadBuildAsFile, importBuildFromJSON, triggerImportDialog } from "../ohai/src/ui/buildImportExportService";
+import type { SavedBuild } from "../ohai/src/ui/savedBuildSchema";
 
 const WEAPON_PAIRS = [
   { mainKey: "primary",   modKey: "primary_mod",   label: "Primary Weapon",   icon: <Crosshair size={16} /> },
@@ -71,6 +80,16 @@ const ATTACHMENT_SLOTS = [
   { key: "att_barrel", label: "Barrel",    icon: <Settings size={13} /> },
   { key: "att_mag",    label: "Mag",       icon: <Database size={13} /> },
   { key: "att_stock",  label: "Stock",     icon: <Shield size={13} /> },
+  { key: "att_ammo",   label: "Ammo",      icon: <Bomb size={13} /> },
+];
+
+const SEC_ATTACHMENT_SLOTS = [
+  { key: "sec_att_muzzle", label: "Sec Muzzle", icon: <Filter size={13} /> },
+  { key: "sec_att_sight",  label: "Sec Sight",  icon: <Crosshair size={13} /> },
+  { key: "sec_att_barrel", label: "Sec Barrel", icon: <Settings size={13} /> },
+  { key: "sec_att_mag",    label: "Sec Mag",    icon: <Database size={13} /> },
+  { key: "sec_att_stock",  label: "Sec Stock",   icon: <Shield size={13} /> },
+  { key: "sec_att_ammo",   label: "Sec Ammo",   icon: <Bomb size={13} /> },
 ];
 
 const uiAttachmentSlotToDataSlot: Record<string, AttachmentSlot> = {
@@ -80,11 +99,6 @@ const uiAttachmentSlotToDataSlot: Record<string, AttachmentSlot> = {
   att_mag: 'magazine',
   att_stock: 'stock',
 };
-
-const BUFF_SLOTS = [
-  { key: "food",  label: "Food Buff",  icon: <Flame size={13} />, kind: "buff" as ModalKind },
-  { key: "drink", label: "Drink Buff", icon: <Snowflake size={13} />, kind: "buff" as ModalKind },
-];
 
 const DEVIATION_SLOT = { key: "deviation", label: "Deviation", icon: <AlertTriangle size={13} /> };
 
@@ -272,24 +286,22 @@ function SettingsModal({ onClose, onResetOffensive, onResetDefensive }: {
 // MODAL — DEVIATION SELECTOR
 // ─────────────────────────────────────────────────────────────
 
-const DEV_CATS = ["All", "Combat", "Defensive", "Utility", "Crafting"] as const;
-
 function DeviationModal({ onClose, onSelect, items }: {
   onClose: () => void; onSelect: (item: EquippedItem) => void;
   items?: EquippedItem[];
 }) {
   const [query, setQuery] = useState("");
-  const [cat, setCat] = useState<string>("All");
   const [selected, setSelected] = useState<EquippedItem | null>(null);
-  const devs: EquippedItem[] = items && items.length ? items : (deviationRegistry || []).map((d: any) => ({
+  const devs: EquippedItem[] = items && items.length ? items : (deviationRegistry || [])
+    .filter((d: any) => d.deviationRole === "combat")
+    .map((d: any) => ({
     id: d.id, name: d.name,
-    category: d.deviationRole ? d.deviationRole.charAt(0).toUpperCase() + d.deviationRole.slice(1) : 'Combat',
+    category: 'Combat',
     rarity: 'Legendary' as Rarity, tier: 0, stars: 0,
     iconUrl: buildCdnUrl('deviations', d.id),
     effectSummary: d.effectSummary,
   }));
   const filtered = devs.filter(d =>
-    (cat === "All" || d.category === cat) &&
     d.name.toLowerCase().includes(query.toLowerCase())
   );
 
@@ -305,19 +317,6 @@ function DeviationModal({ onClose, onSelect, items }: {
               className="flex-1 bg-transparent outline-none text-[12px]"
               style={{ color: "#c0dde8", caretColor: VIOLET }} />
           </div>
-        </div>
-        <div className="flex gap-1 px-3 py-2" style={{ borderBottom: `1px solid ${VIOLET}08` }}>
-          {DEV_CATS.map(c => (
-            <button key={c} onClick={() => setCat(c)}
-              className="px-2 py-0.5 rounded-[2px] text-[9px] font-bold tracking-wide transition-all"
-              style={{
-                background: cat === c ? `${VIOLET}14` : `${VIOLET}04`,
-                border: `1px solid ${cat === c ? VIOLET + "40" : VIOLET + "10"}`,
-                color: cat === c ? VIOLET : "#4c6e80",
-              }}>
-              {c.toUpperCase()}
-            </button>
-          ))}
         </div>
         <div className="flex-1 overflow-y-auto p-2"
           style={{ scrollbarWidth: "thin", scrollbarColor: `${VIOLET}12 transparent` }}>
@@ -536,6 +535,76 @@ function AttachmentModal({ slotLabel, onClose, onSelect, items }: {
         ) : (
           <EmptySlate message="Select an attachment to view stats" icon={<Filter size={28} />} />
         )}
+      </div>
+    </ModalShell>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────
+// MODAL — AMMO SELECTOR
+// ─────────────────────────────────────────────────────────────
+
+function AmmoModal({ weaponId, onClose, onSelect }: {
+  weaponId: string; onClose: () => void; onSelect: (item: EquippedItem) => void;
+}) {
+  const [selected, setSelected] = useState<EquippedItem | null>(null);
+  const filteredOptions = weaponId && weaponId !== 'none'
+    ? getFilteredAmmoOptions(weaponId)
+    : [];
+  const ammoItems: EquippedItem[] = filteredOptions.length > 0
+    ? filteredOptions.map((a) => ({
+        id: a.id, name: a.name, category: 'Ammo', rarity: 'Common' as Rarity, tier: 0, stars: 0,
+        iconUrl: a.iconUrl, effectSummary: a.description,
+      }))
+    : [
+        { id: 'copper-ammo', name: 'Copper Ammo', category: 'Ammo', rarity: 'Common', tier: 0, stars: 0 },
+        { id: 'steel-ammo', name: 'Steel Ammo', category: 'Ammo', rarity: 'Common', tier: 0, stars: 0 },
+        { id: 'ap-ammo', name: 'AP Ammo', category: 'Ammo', rarity: 'Common', tier: 0, stars: 0 },
+        { id: 'demolition-ammo', name: 'Demolition Ammo', category: 'Ammo', rarity: 'Common', tier: 0, stars: 0 },
+      ];
+
+  return (
+    <ModalShell title="Ammunition Selector"
+      accent={ORANGE} icon={<Bomb size={14} />} onClose={onClose} width={520} height={420}>
+      <div className="flex flex-col gap-2 p-4">
+        <div className="text-[9px]" style={{ color: "#6aa8c0" }}>
+          {weaponId && weaponId !== 'none' ? 'Ammunition types compatible with the selected weapon.' : 'No weapon selected — showing all available ammunition.'}
+        </div>
+        <div className="flex flex-col gap-1">
+          {ammoItems.map((a) => (
+            <button key={a.id} onClick={() => setSelected(a)}
+              className="text-left p-3 rounded-[3px] transition-all flex gap-3 items-center"
+              style={{
+                background: selected?.id === a.id ? `${ORANGE}12` : `${ORANGE}03`,
+                border: `1px solid ${selected?.id === a.id ? ORANGE + "45" : ORANGE + "10"}`,
+                borderLeft: `2px solid ${ORANGE}`,
+              }}>
+              <div className="flex items-center justify-center rounded-full"
+                style={{ width: 28, height: 28, background: `${ORANGE}12`, border: `1px solid ${ORANGE}25` }}>
+                <Bomb size={14} style={{ color: ORANGE }} />
+              </div>
+              <div>
+                <div className="text-[12px] font-bold"
+                  style={{ color: "#c0dde8", fontFamily: "'Rajdhani', sans-serif" }}>
+                  {a.name}
+                </div>
+                <div className="text-[9px]" style={{ color: "#4c6e80" }}>
+                  {a.category} ammunition
+                </div>
+              </div>
+            </button>
+          ))}
+        </div>
+        <button
+          onClick={() => { if (selected) { onSelect(selected); onClose(); } }}
+          disabled={!selected}
+          className="mt-auto py-2.5 rounded-[3px] text-[12px] font-bold tracking-[0.15em] transition-all disabled:opacity-30"
+          style={{
+            background: `${ORANGE}12`, border: `1px solid ${ORANGE}38`, color: ORANGE,
+            fontFamily: "'Rajdhani', sans-serif",
+          }}>
+          EQUIP AMMO
+        </button>
       </div>
     </ModalShell>
   );
@@ -882,7 +951,7 @@ function LoadoutPanel({ side, loadout, onSlotClick, onUpdateItem, onRemoveItem }
           </div>
         </div>
 
-        {/* ATTACHMENTS */}
+        {/* PRIMARY ATTACHMENTS */}
         <div>
           <PanelSection label="Weapon Attachments" accent={accent} />
           <div className="grid grid-cols-5 gap-1">
@@ -894,6 +963,21 @@ function LoadoutPanel({ side, loadout, onSlotClick, onUpdateItem, onRemoveItem }
             ))}
           </div>
         </div>
+
+        {/* SECONDARY ATTACHMENTS */}
+        {loadout['secondary'] && (
+          <div>
+            <PanelSection label="Secondary Attachments" accent={accent} />
+            <div className="grid grid-cols-5 gap-1">
+              {SEC_ATTACHMENT_SLOTS.map(s => (
+                <AttachTile key={s.key} label={s.label} icon={s.icon}
+                  item={loadout[s.key] || null}
+                  onClick={() => click(s.key, "attachment", s.label)}
+                  onRemove={() => remove(s.key)} />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* ARMOR (paired with 1 mod each) */}
         <div>
@@ -918,16 +1002,25 @@ function LoadoutPanel({ side, loadout, onSlotClick, onUpdateItem, onRemoveItem }
           </div>
         </div>
 
-        {/* BUFFS */}
+        {/* FOOD */}
         <div>
-          <PanelSection label="Buffs" accent={accent} />
+          <PanelSection label="Food" accent={accent} />
           <div className="flex flex-col gap-1">
-            {BUFF_SLOTS.map(s => (
-              <EquipmentSlot key={s.key} label={s.label} icon={s.icon}
-                compact item={loadout[s.key] || null}
-                onClick={() => click(s.key, s.kind, s.label)}
-                onRemove={() => remove(s.key)} />
-            ))}
+            <EquipmentSlot label="Food Buff" icon={<Flame size={13} />}
+              compact item={loadout['food'] || null}
+              onClick={() => click('food', 'buff', 'Food Buff')}
+              onRemove={() => remove('food')} />
+          </div>
+        </div>
+
+        {/* DRINK */}
+        <div>
+          <PanelSection label="Drink" accent={accent} />
+          <div className="flex flex-col gap-1">
+            <EquipmentSlot label="Drink Buff" icon={<Snowflake size={13} />}
+              compact item={loadout['drink'] || null}
+              onClick={() => click('drink', 'buff', 'Drink Buff')}
+              onRemove={() => remove('drink')} />
           </div>
         </div>
 
@@ -1385,7 +1478,7 @@ function AnalysisHub({
 // APP HEADER
 // ─────────────────────────────────────────────────────────────
 
-function AppHeader({ onOpenSettings }: { onOpenSettings: () => void }) {
+function AppHeader({ onOpenSettings, onOpenBuilds }: { onOpenSettings: () => void; onOpenBuilds?: () => void }) {
   return (
     <div className="ohmm-app-header">
       {/* Left status row */}
@@ -1427,6 +1520,9 @@ function AppHeader({ onOpenSettings }: { onOpenSettings: () => void }) {
           <Database size={9} style={{ color: CYAN }} />
           <span style={{ fontFamily: "'JetBrains Mono', monospace" }}>v2.4.1</span>
         </div>
+        <button onClick={onOpenBuilds} className="ohmm-icon-btn" title="Builds">
+          <Database size={12} style={{ color: "#7ab8cc" }} />
+        </button>
         <button onClick={onOpenSettings} className="ohmm-icon-btn" title="Settings">
           <Settings size={12} style={{ color: "#7ab8cc" }} />
         </button>
@@ -1446,6 +1542,11 @@ export default function App() {
     open: false, kind: null, slot: "", side: "offensive", label: "",
   });
   const [showSettings, setShowSettings] = useState(false);
+  const [showBuildsPanel, setShowBuildsPanel] = useState(false);
+  const [currentBuildId, setCurrentBuildId] = useState<string | null>(null);
+  const [currentBuildName, setCurrentBuildName] = useState("My Build");
+  const [savedBuilds, setSavedBuilds] = useState<SavedBuild[]>(() => loadPersistedBuilds());
+  const [buildsPanelTab, setBuildsPanelTab] = useState<"offensive" | "defensive">("offensive");
   const [fullArmorList, setFullArmorList] = useState<any[]>([]);
   const [fullFoodBuffs, setFullFoodBuffs] = useState<any[]>([]);
 
@@ -1602,7 +1703,56 @@ export default function App() {
     updater(prev => { const n = { ...prev }; delete n[slot]; return n; });
   }, []);
 
-  // Real data pipeline for modals: Supabase app_images (preferred structured URLs) + GitHub ohmm-icondb CDN fallback
+  // ── Save/Load handlers ──
+  const handleSaveBuild = useCallback((forEnemy: boolean) => {
+    const loadout = forEnemy ? defLoadout : offLoadout;
+    const role = forEnemy ? 'defender' as const : 'attacker' as const;
+    const build = loadoutMapToBuildSelection(loadout, role);
+    const id = currentBuildId ?? generateBuildId();
+    const name = forEnemy ? `Enemy - ${currentBuildName}` : currentBuildName;
+    persistBuild({ buildId: id, buildName: name, gameMode: 'pvp', build });
+    if (!forEnemy) { setCurrentBuildId(id); setCurrentBuildName(name); }
+    setSavedBuilds(loadPersistedBuilds());
+  }, [offLoadout, defLoadout, currentBuildId, currentBuildName]);
+
+  const handleLoadBuild = useCallback((saved: SavedBuild) => {
+    const loadout = buildSelectionToLoadoutMap(saved.build);
+    if (saved.build.role === 'defender') {
+      setDefLoadout(loadout);
+    } else {
+      setOffLoadout(loadout);
+      setCurrentBuildId(saved.buildId);
+      setCurrentBuildName(saved.buildName);
+    }
+    setShowBuildsPanel(false);
+  }, []);
+
+  const handleDeleteBuild = useCallback((buildId: string) => {
+    removePersistedBuild(buildId);
+    setSavedBuilds(loadPersistedBuilds());
+  }, []);
+
+  const handleImportBuild = useCallback(async () => {
+    try {
+      const text = await triggerImportDialog();
+      const result = importBuildFromJSON(text);
+      if (result.success && result.build) {
+        persistBuild({
+          buildId: result.build.buildId,
+          buildName: result.build.buildName,
+          gameMode: result.build.gameMode as "pve" | "pvp",
+          build: result.build.build,
+        });
+        setSavedBuilds(loadPersistedBuilds());
+      }
+    } catch (e) {
+      if (e instanceof Error && e.message !== "No file selected") {
+        console.warn('Import failed:', e.message);
+      }
+    }
+  }, []);
+
+  // ── Real data pipeline for modals: Supabase app_images (preferred structured URLs) + GitHub ohmm-icondb CDN fallback
   // Supports slot-categorized entries e.g. 'armour-helmet', 'attachments-muzzle', 'mods-weapon-core'
   // Call with category='armour', slot='helmet'  (or category='armour-helmet' if you set that in DB)
   function resolveIcon(item: any, category: string, fallbackSlug?: string, slot?: string): string | undefined {
@@ -1957,11 +2107,11 @@ export default function App() {
   };
 
   // Modal items getters for dispatcher
-  const getCurrentWeaponFamily = (side: Side): string => {
+  const getCurrentWeaponFamily = (side: Side, slot?: string): string => {
     const loadout = side === 'offensive' ? offLoadout : defLoadout;
-    const primary = loadout['primary'] || loadout.primary;
-    const secondary = loadout['secondary'] || loadout.secondary;
-    const weapon = primary || secondary;
+    const isSecondary = slot?.startsWith('sec_');
+    const weaponKey = isSecondary ? 'secondary' : 'primary';
+    const weapon = loadout[weaponKey];
     if (weapon?.category) return weapon.category;
     const weaponId = weapon?.id;
     if (weaponId) {
@@ -1969,6 +2119,14 @@ export default function App() {
       if (w?.family) return w.family;
     }
     return 'AR'; // safe default
+  };
+
+  const getCurrentWeaponId = (side: Side, slot?: string): string => {
+    const loadout = side === 'offensive' ? offLoadout : defLoadout;
+    const isSecondary = slot?.startsWith('sec_') || slot === 'sec_att_ammo';
+    const weaponKey = isSecondary ? 'secondary' : 'primary';
+    const weapon = loadout[weaponKey];
+    return weapon?.id || 'none';
   };
 
   const modalItems = {
@@ -2017,7 +2175,7 @@ export default function App() {
       case 'armor_mod':
         return <ModModal {...commonProps} isWeaponMod={false} targetSlot={modal.slot} items={modalItems.armor_mod(modal.slot)} />;
       case 'attachment':
-        const attFamily = getCurrentWeaponFamily(modal.side);
+        const attFamily = getCurrentWeaponFamily(modal.side, modal.slot);
         return <AttachmentModal {...commonProps} slotLabel={modal.label} items={modalItems.attachment(modal.slot, attFamily)} />;
       case 'buff':
         return <BuffModal {...commonProps} isFood={modal.slot === 'food'} items={modalItems.buff(modal.slot === 'food')} />;
@@ -2025,6 +2183,10 @@ export default function App() {
         return <DeviationModal {...commonProps} items={modalItems.deviation()} />;
       case 'cradle':
         return <CradleModal {...commonProps} slotIndex={parseInt(modal.slot.split('_')[1] || '0')} items={modalItems.cradle()} />;
+      case 'ammo': {
+        const weaponId = getCurrentWeaponId(modal.side, modal.slot);
+        return <AmmoModal {...commonProps} weaponId={weaponId} />;
+      }
       case 'calibration':
         return <CalibrationModal {...commonProps} items={modalItems.calibration()} />;
       default:
@@ -2035,7 +2197,7 @@ export default function App() {
   // The main Figma layout render — 3-column: 272px loadouts flanking Analysis Hub
   return (
     <div className="ohmm-app-shell ohmm-grid-bg">
-      <AppHeader onOpenSettings={() => setShowSettings(true)} />
+      <AppHeader onOpenSettings={() => setShowSettings(true)} onOpenBuilds={() => setShowBuildsPanel(true)} />
 
       <div className="ohmm-workspace">
         {/* OFFENSIVE LOADOUT — 272px */}
@@ -2098,6 +2260,96 @@ export default function App() {
           onResetOffensive={() => setOffLoadout({})}
           onResetDefensive={() => setDefLoadout({})}
         />
+      )}
+
+      {showBuildsPanel && (
+        <div className="drawer-backdrop" onMouseDown={() => setShowBuildsPanel(false)}>
+          <aside className="saved-builds-drawer" onMouseDown={(e) => e.stopPropagation()}
+            style={{ width: 480, maxHeight: '90vh', overflowY: 'auto' }}>
+            <div className="drawer-header">
+              <div>
+                <p className="eyebrow">Build Manager</p>
+                <h3>Saved Builds</h3>
+              </div>
+              <button onClick={() => setShowBuildsPanel(false)}>Close</button>
+            </div>
+
+            <div className="flex gap-2 px-4 py-2" style={{ borderBottom: "1px solid rgba(0,200,255,0.08)" }}>
+              <button onClick={() => setBuildsPanelTab("offensive")}
+                className="text-[10px] px-3 py-1.5 rounded-[3px] font-bold tracking-[0.1em]"
+                style={{
+                  background: buildsPanelTab === "offensive" ? `${CYAN}15` : "rgba(0,200,255,0.04)",
+                  border: `1px solid ${buildsPanelTab === "offensive" ? CYAN + "40" : "rgba(0,200,255,0.12)"}`,
+                  color: buildsPanelTab === "offensive" ? CYAN : "#6aa8c0",
+                  fontFamily: "'Rajdhani', sans-serif",
+                }}>
+                OFFENSIVE
+              </button>
+              <button onClick={() => setBuildsPanelTab("defensive")}
+                className="text-[10px] px-3 py-1.5 rounded-[3px] font-bold tracking-[0.1em]"
+                style={{
+                  background: buildsPanelTab === "defensive" ? `${ORANGE}15` : "rgba(0,200,255,0.04)",
+                  border: `1px solid ${buildsPanelTab === "defensive" ? ORANGE + "40" : "rgba(0,200,255,0.12)"}`,
+                  color: buildsPanelTab === "defensive" ? ORANGE : "#6aa8c0",
+                  fontFamily: "'Rajdhani', sans-serif",
+                }}>
+                ENEMY
+              </button>
+            </div>
+
+            <div className="px-4 py-3 flex gap-2" style={{ borderBottom: "1px solid rgba(0,200,255,0.06)" }}>
+              <button onClick={() => handleSaveBuild(buildsPanelTab === "defensive")}
+                className="btn-primary text-[10px] px-3 py-1.5 rounded-[3px] font-bold">
+                Save Current {buildsPanelTab === "offensive" ? "Offensive" : "Enemy"} Build
+              </button>
+              <button onClick={handleImportBuild}
+                className="btn-secondary text-[10px] px-3 py-1.5 rounded-[3px]">
+                Import
+              </button>
+            </div>
+
+            <div className="px-4 py-2 saved-builds-list">
+              {savedBuilds.length === 0 ? (
+                <p className="fine-print text-center py-6" style={{ color: "#6aa8c0" }}>
+                  No saved builds yet. Use "Save" above.
+                </p>
+              ) : (
+                savedBuilds
+                  .filter((s) => s.build.role === (buildsPanelTab === "defensive" ? "defender" : "attacker"))
+                  .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())
+                  .map((saved) => (
+                    <div key={saved.buildId}
+                      className="saved-build-item flex items-center justify-between px-3 py-2 rounded-[3px] my-1"
+                      style={{
+                        background: saved.buildId === currentBuildId ? `${CYAN}08` : "transparent",
+                        border: `1px solid ${saved.buildId === currentBuildId ? CYAN + "25" : "rgba(0,200,255,0.06)"}`,
+                      }}>
+                      <div className="flex-1 min-w-0">
+                        <strong className="text-[11px]" style={{ color: "#c0dde8", fontFamily: "'Rajdhani', sans-serif" }}>
+                          {saved.buildName}
+                        </strong>
+                        <div className="text-[8px] mt-0.5" style={{ color: "#6aa8c0" }}>
+                          {saved.build.weapon.blueprintId} · {new Date(saved.updatedAt).toLocaleDateString()}
+                        </div>
+                      </div>
+                      <div className="flex gap-1 ml-2">
+                        <button onClick={() => handleLoadBuild(saved)}
+                          className="text-[9px] px-2 py-1 rounded-[2px] font-bold"
+                          style={{ background: `${CYAN}10`, border: `1px solid ${CYAN}25`, color: CYAN }}>
+                          Load
+                        </button>
+                        <button onClick={() => handleDeleteBuild(saved.buildId)}
+                          className="text-[9px] px-2 py-1 rounded-[2px] font-bold"
+                          style={{ background: `${ORANGE}10`, border: `1px solid ${ORANGE}25`, color: ORANGE }}>
+                          Del
+                        </button>
+                      </div>
+                    </div>
+                  ))
+              )}
+            </div>
+          </aside>
+        </div>
       )}
     </div>
   );

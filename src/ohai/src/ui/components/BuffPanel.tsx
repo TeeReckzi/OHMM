@@ -1,8 +1,7 @@
 import { FlaskConical, Sparkles } from 'lucide-react';
-import type { BuildSelection, ChefRexActivityRating } from '../types';
+import type { BuildSelection } from '../types';
 import { ItemSelector } from './ItemSelector';
 import { CradleGrid } from './CradleGrid';
-import { RatingControl } from './RatingControl';
 import { foodBuffRegistry } from '../registries/foodBuffRegistry';
 import { deviationRegistry } from '../registries/deviationRegistry';
 import { cradleRegistry } from '../registries/cradleRegistry';
@@ -18,12 +17,7 @@ export function BuffPanel({ build, onBuildChange }: BuffPanelProps) {
  const chef = build.food.chefRex;
 
  function updateChefRex(patch: any) {
-  const nextChef = { ...chef, ...patch };
-  if (nextChef.mode === 'rating-derived') {
-   const baseline = 20;
-   nextChef.bonusPercent = Math.min(42, Math.round((baseline + (nextChef.skillRating - 1) * 3.5 + (nextChef.activityRating - 1) * 2) * 10) / 10);
-  }
-  onBuildChange({ ...build, food: { ...build.food, chefRex: nextChef } });
+  onBuildChange({ ...build, food: { ...build.food, chefRex: { ...chef, ...patch } } });
  }
 
  return (
@@ -41,7 +35,7 @@ export function BuffPanel({ build, onBuildChange }: BuffPanelProps) {
     <div>
      <span className="text-[10px] uppercase font-bold tracking-wider text-slate-400 block mb-1">Active Deviant</span>
      <ItemSelector
-      items={deviationRegistry as AnyCanonicalItem[]}
+      items={deviationRegistry.filter((d: any) => d.deviationRole === "combat") as AnyCanonicalItem[]}
       selectedId={build.deviant.id}
       onSelect={(id) => onBuildChange({ ...build, deviant: { ...build.deviant, id } })}
       placeholder="Select combat deviant..."
@@ -84,22 +78,14 @@ export function BuffPanel({ build, onBuildChange }: BuffPanelProps) {
      </div>
     </div>
 
-    <div className="grid grid-cols-2 gap-2 mb-4 bg-slate-900/60 p-1 rounded-xl border border-slate-800/60 text-center text-xs">
-     <button className={`py-1.5 rounded-lg transition ${chef.mode === 'rating-derived' ? 'bg-slate-800 text-purple-400 font-bold' : 'text-slate-400'}`} onClick={() => updateChefRex({ mode: 'rating-derived' })}>Scale Rating</button>
-     <button className={`py-1.5 rounded-lg transition ${chef.mode === 'manual' ? 'bg-slate-800 text-purple-400 font-bold' : 'text-slate-400'}`} onClick={() => updateChefRex({ mode: 'manual' })}>Manual Override</button>
-    </div>
-
     <div className="space-y-3">
-     <RatingControl label="Skill Aspect" value={chef.skillRating} onChange={(val) => updateChefRex({ skillRating: val })} />
-     <RatingControl label="Activity Weight" value={chef.activityRating} onChange={(val) => updateChefRex({ activityRating: val as ChefRexActivityRating })} />
-
-     <label className="flex items-center justify-between text-xs pt-2 border-t border-slate-800/60">
-      <span className="text-slate-400">Custom Multiplier %</span>
+     <label className="flex items-center justify-between text-xs">
+      <span className="text-slate-400">Bonus Percent</span>
       <input
        type="number" min="0" max="42" step="0.1"
-       className="w-16 bg-slate-900 border border-slate-800 text-slate-200 rounded-lg p-1 text-center font-mono disabled:opacity-40"
-       value={chef.bonusPercent} disabled={chef.mode !== 'manual'}
-       onChange={(e) => updateChefRex({ mode: 'manual', bonusPercent: Number(e.target.value) })}
+       className="w-16 bg-slate-900 border border-slate-800 text-slate-200 rounded-lg p-1 text-center font-mono"
+       value={chef.bonusPercent}
+       onChange={(e) => updateChefRex({ bonusPercent: Number(e.target.value) })}
       />
      </label>
     </div>
