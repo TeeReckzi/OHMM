@@ -1,0 +1,108 @@
+{
+  "perk_qualities": {
+    "Green": 1,
+    "Blue": 2,
+    "Purple": 3,
+    "Yellow": 4,
+    "Red": 5,
+    "White": 0
+  },
+  "perk_slot_states": [
+    "EmptyCalibrated",
+    "Equipped",
+    "EquippedCalibrated"
+  ],
+  "perk_icon_states": [
+    "Empty",
+    "Normal",
+    "Selected",
+    "BatchSelected",
+    "BatchUnselected",
+    "BatchAllSelected"
+  ],
+  "perk_sort_keys": [
+    "perk_quality",
+    "perk_cost",
+    "perk_lv",
+    "calibration_type",
+    "apply_range",
+    "perk_num"
+  ],
+  "blueprint_data_tables": [
+    "gun_blueprint_chip_map_data",
+    "gun_blueprint_data",
+    "gun_blueprint_brand_data",
+    "gun_blueprint_param_data",
+    "gun_blueprint_attr_data",
+    "gun_blueprint_terms_map_data",
+    "#weapon_blueprint_lvl_endow_tip_data",
+    "equip_blueprint_data",
+    "equip_blueprint_attr_data",
+    "equip_blueprint_chip_map_data",
+    "\"equip_blueprint_lvl_endow_tip_data",
+    " blueprint_collection_params_data",
+    "blueprint_collection_level_data",
+    "blueprint_collection_exp_data",
+    "get_blueprint_terms_map_data"
+  ],
+  "gun_data_tables": [
+    "gun_blueprint_data",
+    "gun_blueprint_attr_data",
+    "gun_blueprint_param_data",
+    "gun_preview_ui_param_data",
+    "gun_attr_adjust_cost_data",
+    "old_gun_attr_adjust_cost_data",
+    "!gun_calibration_affix_option_data",
+    "equip_origin_data",
+    "equip_attr_adjust_cost_data",
+    "old_equip_attr_adjust_cost_data",
+    "gun_correct_print_data",
+    "gun_correct_common_terms_data",
+    "common_data",
+    "item_data",
+    "char_property_data",
+    "bullet_scatter_data",
+    "gun_base_params_data",
+    "affix_prototype_data",
+    "affix_data",
+    "client_data",
+    "global_params_data",
+    "cost_data",
+    "gun_blueprint_terms_map_data",
+    "dft_element_data"
+  ],
+  "calibration_functions": [
+    "!gun_calibration_affix_option_data",
+    "calibration_phase_armor",
+    "calibration_phase_gun",
+    "get_calibration_phaser",
+    "calibration_disassemble_rater",
+    "calibration_phase_func",
+    "calibration_phase",
+    "get_gun_calibration_phase",
+    "get_armor_calibration_phaser",
+    "calibration_option_gunr",
+    "%get_gun_calibration_affix_option_sizer",
+    "%get_gun_calibration_affix_option_libsr",
+    "calibration_style_gun",
+    "get_nml_style_calibration_desc)",
+    "get_buff_style_calibration_descrl",
+    "!get_single_affix_calibration_desc",
+    " get_mixed_affix_calibration_desc)",
+    "!GUN_CALIBRATION_AFFIX_OPTION_DATAr2"
+  ],
+  "blueprint_types": {
+    "EQUIP": 0,
+    "GUN": 1
+  },
+  "blueprint_plaque_data_types": {
+    "INTEGER": 0,
+    "FLOAT": 1
+  },
+  "source_files": [
+    "game_common/guncore/GunCoreHelper.pyc",
+    "game_common/guncore/BluePrintHelper.pyc",
+    "game_common/gunperk/GunPerkConst.pyc",
+    "game_common/data/gun_calibration_affix_option_data.pyc"
+  ]
+}
