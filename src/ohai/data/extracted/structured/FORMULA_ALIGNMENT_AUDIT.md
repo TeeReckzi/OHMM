@@ -1,189 +1,380 @@
 # Damage Formula Alignment Audit
 ## Game Blackboard (BB.*) vs OHMM Engine
 
-This document maps every variable discovered in the game's `damage_formula.pyc`
-to its corresponding field in OHMM's engine, identifies gaps, and recommends changes.
+**Last updated:** 2026-07-13
+**Evidence sources:**
+- `officialAttributes.generated.ts` — recovered attribute definitions with calcType, min, max, parentAttrKey
+- `officialFormulaDefaultsSmokeTest.ts` — proven default/identity values
+- `officialFormulaGraphRecipes.ts` — recovered formula graph (additive structure proven)
+- `damage_formula.pyc` raw string extraction — variable context ordering
+- `CompFormulaAdapter.pyc` — getter function names proving call-site existence
 
 ---
 
-## Legend
-- ✅ = OHMM already models this correctly
-- ⚠️ = OHMM models this but with different semantics or naming
-- ❌ = OHMM does NOT model this — gap to fill
-- 🔄 = OHMM uses a different approach that may need reconciliation
+## Verification Status Legend
+
+- ✅ VERIFIED — Semantics proven from multiple evidence sources. Safe to implement.
+- ⚠️ PARTIAL — Variable exists and is partially understood, but behavior needs one more proof point.
+- ❌ UNVERIFIED — Name-only. Do NOT use in calculations.
+- 🚫 EXCLUDED — Proven to NOT belong in HP damage calculations.
 
 ---
 
-## 1. Base Damage Calculation
+## 1. Variables PROVEN to be ADDITIVE inside `final_attack_additional_rate`
 
-| Game Variable | OHMM Equivalent | Status | Notes |
-|---|---|---|---|
-| `final_attack` | `officialFormulaBridge: base_attack` | ✅ | OHMM computes `baseWpn × (1 + atkPct)` = game's `final_attack` |
-| `base_attack` | `FormulaInput.baseWeaponDMG` | ✅ | Raw weapon damage per projectile |
-| `attack_additional_rate` | `FormulaInput.attackPercent` | ✅ | ATK% bonus from gear/mods |
-| `base_weapon_type` | `OfficialBridgeContext.gunType` | ✅ | Used for tag-resolved leaves |
-| `base_weapon_tier` | Not modeled | ❌ | Weapon tier may affect formula path |
-| `base_gun_type` | `OfficialBridgeContext.gunType` | ✅ | Same as weapon_type |
+The formula graph recipe (HIGH confidence) proves these all sum together:
 
-## 2. Damage Type Multiplier Buckets
-
-| Game Variable | OHMM Equivalent | Status | Notes |
-|---|---|---|---|
-| `attack_type_dam_add_rate` | `officialFormulaLeafResolvers: attack_type_dam_add_rate` | ✅ | Tag-resolved dynamic leaf |
-| `element_type_dam_add_rate` | `officialFormulaLeafResolvers: element_type_dam_add_rate` | ✅ | Elemental DMG bonus |
-| `species_dam_add_rate` | `officialFormulaBridge: species_dam_add_rate` | ⚠️ | OHMM maps `enemyTypeDMGBonus` → this. Game separates species from prototype |
-| `species_field_dam_add_rate` | Not modeled | ❌ | **NEW**: Bonus damage when target is in their "field" (territory effect?) |
-| `unit_prototype_dam_add_rate` | Not modeled | ❌ | **NEW**: Damage bonus vs specific unit prototypes (boss IDs) |
-| `debuff_type_dam_add_rate` | Not modeled | ❌ | **NEW**: Extra damage when target has specific debuff |
-| `keyword_proc_dam_add_rate` | `officialFormulaLeafResolvers: keyword_proc_dam_add_rate` | ✅ | Keyword DMG bonus |
-| `gun_type_dam_add_rate` | `officialFormulaLeafResolvers: gun_type_dam_add_rate` | ✅ | Per-gun-type DMG bonus |
-
-## 3. Crit System
-
-| Game Variable | OHMM Equivalent | Status | Notes |
-|---|---|---|---|
-| `final_crit_rate` | `FormulaInput.critRate` | ✅ | Final computed crit rate |
-| `crit_dam_add_rate` | `FormulaInput.critDMG` | ✅ | Crit damage multiplier |
-| `crit_rate_dis_count` | Not modeled | ❌ | **NEW**: "Crit rate discount" — reduces effective crit rate. Appears to be an enemy stat that reduces incoming crit chance |
-| `final_is_crit` | `ContextFlag: wasCrit` | ✅ | Whether this hit was a crit |
-| `use_crit` | `MechanicBehavior.canCrit` | ✅ | Whether this mechanic can crit |
-| `defined_fixed_crit` | Not modeled | ❌ | **NEW**: Some attacks have a fixed crit override (always crit or never crit) |
-| `attack_type_crit_rate_add_rate` | Not modeled | ❌ | **NEW**: Crit rate bonus per attack type (melee/ranged/skill) |
-| `attack_type_crit_dam_add_rate` | Not modeled | ❌ | **NEW**: Crit DMG bonus per attack type |
-| `keyword_proc_crit_rate_add_rate` | `StatType.KeywordCritRatePercent` | ✅ | Keyword-specific crit rate |
-| `keyword_proc_crit_dam_add_rate` | `StatType.KeywordCritDamagePercent` | ✅ | Keyword-specific crit DMG |
-| `debuff_type_crit_rate_add_rate` | Not modeled | ❌ | **NEW**: Crit rate bonus when target has debuff |
-| `debuff_type_crit_dam_add_rate` | Not modeled | ❌ | **NEW**: Crit DMG bonus when target has debuff |
-| `species_type_crit_rate_add_rate` | Not modeled | ❌ | **NEW**: Crit rate bonus vs specific species |
-| `species_type_crit_dam_add_rate` | Not modeled | ❌ | **NEW**: Crit DMG bonus vs specific species |
-| `melee_type_crit_rate_add_rate` | Not modeled | ❌ | **NEW**: Melee-specific crit rate |
-| `melee_type_crit_dam_add_rate` | Not modeled | ❌ | **NEW**: Melee-specific crit DMG |
-| `tag_melee_crit_rate_add_rate` | Not modeled | ❌ | **NEW**: "Tag melee" crit rate (different from melee_type) |
-| `tag_melee_crit_dam_add_rate` | Not modeled | ❌ | **NEW**: "Tag melee" crit DMG |
-| `tag_bullet_crit_dam_add_rate` | Not modeled | ❌ | **NEW**: Bullet-tagged crit DMG |
-| `bound_crit_dam_rate` | Not modeled | ❌ | **NEW**: Crit damage cap/bound |
-| `ignore_crit_rate` | Not modeled | ❌ | **NEW**: Enemy ignores attacker crit rate (reduces it) |
-| `ignore_crit_dam_rate` | Not modeled | ❌ | **NEW**: Enemy reduces crit damage taken |
-| `highland_crit_dam_rate` | Not modeled | ❌ | **NEW**: Height advantage → bonus crit DMG |
-| `lowland_crit_dam_rate` | Not modeled | ❌ | **NEW**: Height disadvantage → reduced crit DMG |
-
-## 4. Weakspot System
-
-| Game Variable | OHMM Equivalent | Status | Notes |
-|---|---|---|---|
-| `final_weak_rate` | `FormulaInput.weakspotDMG` | ⚠️ | OHMM calls this "weakspot damage bonus %", game calls it "weak rate" |
-| `final_is_weak` | `ContextFlag: wasWeakspot` | ✅ | Whether hit landed on weakspot |
-| `use_weak` | `MechanicBehavior.canWeakspot` | ✅ | Whether this mechanic can weakspot |
-| `weak_ignore_dam_rate` | Not modeled | ❌ | **NEW**: Enemy reduces incoming weakspot damage |
-| `keyword_proc_weak_dam_add_rate` | Not modeled | ❌ | **NEW**: Keyword-specific weakspot DMG bonus |
-| `debuff_type_weak_dam_add_rate` | Not modeled | ❌ | **NEW**: Weakspot bonus when target has debuff |
-| `none_weak_ignore_dam_rate` | Not modeled | ❌ | **NEW**: Damage reduction on non-weakspot hits |
-
-## 5. Attack Type Flags
-
-| Game Variable | OHMM Equivalent | Status | Notes |
-|---|---|---|---|
-| `attack_is_melee` | `DamageTrait.Melee` | ✅ | |
-| `attack_is_normal` | Implicit | ✅ | Default when not skill/item |
-| `attack_is_skill` | Not modeled as flag | ⚠️ | Skills vs normal attacks |
-| `attack_is_item` | Not modeled | ❌ | Item-sourced damage |
-| `attack_is_tag_melee` | Not modeled | ❌ | "Tag melee" — distinct from actual melee |
-| `attack_is_sub_melee` | Not modeled | ❌ | Sub-melee type (combo/heavy/dash/backstab) |
-| `attack_is_remote` | Implicit | ✅ | Ranged attacks |
-| `attack_is_buff` | Not modeled | ❌ | Buff-sourced damage |
-| `attack_is_pvp` | `CalculationInput.buildMode === "pvp"` | ✅ | PvP flag |
-| `bullet_is_special` | Not modeled | ❌ | Special bullet flag |
-| `formula_attack_type` | `OfficialBridgeContext.formulaAttackType` | ✅ | Enum: Melee/Remote/Bomb/Skill/Item/Facility |
-
-## 6. PvP & Special Multipliers
-
-| Game Variable | OHMM Equivalent | Status | Notes |
-|---|---|---|---|
-| `pvp_adjust_factor` | `pvpMitigation` system | ⚠️ | OHMM has PvP mitigation as a separate layer. Game applies inline |
-| `hurt_deepen_rate` | Not modeled | ❌ | **NEW**: "Hurt deepen" — damage amplification debuff on target |
-| `final_species_dam_ignore_rate` | Not modeled | ❌ | **NEW**: Species-specific damage ignore (enemy defense) |
-| `attack_ignore_dam_rate` | Not modeled | ❌ | **NEW**: Attacker can ignore some enemy damage reduction |
-| `part_dam_ignore_rate` | Not modeled | ❌ | **NEW**: Body-part-specific damage ignore rate |
-| `dis_dam_rate` | Not modeled | ❌ | **NEW**: Distance-based damage falloff rate |
-| `toughness_dam_rate` | Not modeled | ❌ | **NEW**: Toughness/armor damage factor |
-| `attack_lightning_against_shield` | Not modeled | ❌ | **NEW**: Lightning damage bonus vs shields |
-
-## 7. Target Properties
-
-| Game Variable | OHMM Equivalent | Status | Notes |
-|---|---|---|---|
-| `target_unit_species` | `EnemyType` enum | ⚠️ | OHMM has Normal/Elite/Boss. Game has species: ROSETTA/ALERT/VULCHER |
-| `target_unit_prototype` | Not modeled | ❌ | Specific enemy ID for prototype-specific damage |
-| `attacker_unit_species` | Not modeled | ❌ | Attacker's species (player vs NPC vs deviation) |
-| `attacker_unit_prototype` | Not modeled | ❌ | Attacker's prototype ID |
-| `target_has_field` | Not modeled | ❌ | Whether target is in their field/territory |
-
-## 8. Melee-Specific
-
-| Game Variable | OHMM Equivalent | Status | Notes |
-|---|---|---|---|
-| `base_tag_melee` | Not modeled | ❌ | Whether attack is "tagged" as melee |
-| `base_sub_melee_attack_type` | Not modeled | ❌ | Sub-type: Combo/Heavy/Dash/Backstab |
-| `melee_relate_use_crit` | Not modeled | ❌ | Whether melee-related can crit |
-| `final_melee_type_crit_enable` | Not modeled | ❌ | Melee crit enable flag |
-| `final_tag_melee_crit_enable` | Not modeled | ❌ | Tag-melee crit enable flag |
-
----
-
-## Summary of Gaps
-
-### HIGH PRIORITY (affects DPS accuracy for common builds):
-1. **`crit_rate_dis_count`** — Enemy crit resistance. Without this, crit DPS is overestimated vs tough enemies.
-2. **`debuff_type_dam_add_rate`** — Bonus damage when target has specific debuffs (e.g. burn, freeze). Many builds stack debuffs.
-3. **`species_field_dam_add_rate`** — Bonus in enemy territory zones.
-4. **`hurt_deepen_rate`** — Vulnerability/amplification debuff. If mods/deviations apply this, it's a missing multiplier bucket.
-5. **`dis_dam_rate`** — Distance falloff. Matters for sniper vs shotgun comparisons.
-6. **`keyword_proc_weak_dam_add_rate`** — Keywords can boost weakspot damage. Missing from keyword formula.
-
-### MEDIUM PRIORITY (affects niche builds or accuracy at margins):
-7. **`attack_type_crit_rate_add_rate`** / `attack_type_crit_dam_add_rate` — Per-attack-type crit bonuses
-8. **`highland_crit_dam_rate`** / `lowland_crit_dam_rate` — Height advantage
-9. **`ignore_crit_rate`** / `ignore_crit_dam_rate` — Enemy crit suppression
-10. **`toughness_dam_rate`** — Armor/toughness factor
-11. **`unit_prototype_dam_add_rate`** — Boss-specific damage bonus
-
-### LOW PRIORITY (rare edge cases or PvP-specific):
-12. `defined_fixed_crit` — Hard-coded crit behaviors
-13. `attack_lightning_against_shield` — Shield interaction
-14. `part_dam_ignore_rate` — Body-part damage
-15. `bound_crit_dam_rate` — Crit damage cap
-16. Various sub-melee flags
-
----
-
-## Recommended Implementation Order
-
-### Phase 1: Add missing multiplier buckets to FormulaInput (non-breaking)
-Add these optional fields to `FormulaInput`:
-```typescript
-// Enemy crit resistance (reduces effective crit rate)
-critRateDiscount?: number;
-// Debuff-conditional damage bonus
-debuffTypeDamAddRate?: number;
-// Species field bonus
-speciesFieldDamAddRate?: number;
-// Vulnerability/amplification on target  
-hurtDeepenRate?: number;
-// Distance falloff (0-1, 1 = no falloff)
-distanceDamRate?: number;
-// Keyword weakspot damage bonus
-keywordProcWeakDamAddRate?: number;
+```
+final_attack_additional_rate = 1 + use_final_dam_add_rate × (
+    weapon_attack_add_rate        ← FormulaInput.weaponDMGBonus ✅ ALREADY WIRED
+  + attack_type_dam_add_rate      ← tag-resolved leaf ✅ ALREADY WIRED
+  + gun_type_dam_add_rate         ← tag-resolved leaf ✅ ALREADY WIRED
+  + element_type_dam_add_rate     ← tag-resolved leaf ✅ ALREADY WIRED
+  + keyword_proc_dam_add_rate     ← tag-resolved leaf ✅ ALREADY WIRED
+  + species_dam_add_rate          ← FormulaInput.enemyTypeDMGBonus ✅ ALREADY WIRED
+  + human_dam_add_rate            ← FormulaInput.humanDamageBonus ✅ ALREADY WIRED
+  + debuff_type_dam_add_rate      ← FormulaInput.debuffTypeDamAddRate ✅ VERIFIED, wire into additive sum
+)
 ```
 
-### Phase 2: Wire into formulaApplicator multiplier chain
-For `applyPhysicalWeaponDamage`:
-- Apply `critRateDiscount` before computing crit multiplier
-- Add `debuffTypeDamAddRate` as new multiplier bucket
-- Add `hurtDeepenRate` as new multiplier bucket
-- Apply `distanceDamRate` as final scaling factor
+### debuff_type_dam_add_rate — ✅ VERIFIED
 
-### Phase 3: Add to damageFormulaEngine StatType + Buckets
-Add new `StatType` entries and corresponding `BucketDef` entries for the universal resolution system.
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Additive bonus when target has specific debuff (scorch/frozen/mark/bleeding/surge/vortex) |
+| Identity value | 0 | graph recipe defaultValue |
+| Units | Decimal fraction (0.15 = +15% damage) | calcType=0, max=10.0 |
+| Position in formula | ADDITIVE inside `final_attack_additional_rate` sum | graph recipe exprId 9 |
+| Sub-attributes | `_scorch`, `_frozen`, `_mark`, `_bleeding`, `_surge`, `_vortex` | officialAttributes |
+| Direction | Higher = more damage dealt | min=0.0 |
+| Clamp | [0.0, 10.0] | officialAttributes |
 
-### Phase 4: Bridge from CalculationInput
-Extend `formulaBridge.ts` to extract these values from gear/mod stat modifiers and pipe them through.
+**Implementation:** Add to the existing `final_attack_additional_rate` additive sum in `officialFormulaBridge.ts`. NOT a separate multiplier bucket.
+
+---
+
+## 2. Variables PROVEN to be ADDITIVE inside `final_attack_additional_rate` (per-target)
+
+### species_field_dam_add_rate — ✅ VERIFIED
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Bonus damage vs specific enemy species when in their "field" zone |
+| Identity value | 0 | additive leaf |
+| Units | Decimal fraction | calcType=0, max=3.0 |
+| Position in formula | ADDITIVE (inferred from `_dam_add_rate` suffix + same pattern as species_dam) |
+| Sub-attributes | `_rosetta`, `_vulcher`, `_alters`, `_ascender`, `_creatures`, `_machina`, `_deviation`, `_master` | officialAttributes |
+| Direction | Higher = more damage dealt | min=-0.9 (can also reduce!) |
+| Clamp | [-0.9, 3.0] | officialAttributes |
+
+**Implementation:** Add to the `final_attack_additional_rate` additive sum, resolved by target species + zone context.
+
+### unit_prototype_dam_add_rate — ✅ VERIFIED
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Bonus damage vs specific enemy prototype class |
+| Identity value | 0 | additive leaf |
+| Units | Decimal fraction | calcType=0, max=10.0 |
+| Sub-attributes | `_boss`, `_elite`, `_creeps`, `_leader` | officialAttributes |
+| Direction | Higher = more damage dealt | min=-0.9 |
+| Clamp | [-0.9, 10.0] | officialAttributes |
+
+**Implementation:** Add to the `final_attack_additional_rate` additive sum, resolved by target prototype. Maps to OHMM's existing `EnemyType` (Normal→creeps, Elite→elite, Boss→boss).
+
+---
+
+## 3. Multiplicative Factors (separate from additive sum)
+
+### dis_dam_rate — ✅ VERIFIED
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Distance-based damage scaling multiplier |
+| Identity value | **1** | officialFormulaDefaultsSmokeTest |
+| Units | Direct multiplier (0.8 = 80% damage at range) |
+| Position in formula | Multiplicative (separate from additive sum) | appears alongside `ignore_dam_rate` in damage_formula context |
+| Direction | Lower = less damage at distance |
+| Clamp | Implied [0, 1] for falloff; can exceed 1 for close-range bonus |
+
+**Implementation:** Multiply final damage by this value. Default 1 = no change.
+
+### pvp_adjust_factor — ✅ VERIFIED
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | PvP damage scaling factor (applied per weapon tier) |
+| Identity value | **1** | officialFormulaDefaultsSmokeTest |
+| Units | Direct multiplier |
+| Position in formula | Multiplicative (separate factor) | `get_pvp_adjust_factor_by_weapon_tier` in CompFormulaAdapter |
+| Direction | Lower = reduced PvP damage |
+| Getter | `CompFormulaAdapter.get_pvp_adjust_factor` | corpus evidence |
+
+**Implementation:** Multiply final damage by this value in PvP mode. Relationship to existing `pvpMitigation`: this is the ATTACKER-side PvP scaling (weapon tier based), while `pvpMitigation` is DEFENDER-side (playerDMGReduction). They are separate systems.
+
+### hurt_deepen_rate — ✅ VERIFIED
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Target vulnerability amplification (damage taken increase debuff) |
+| Identity value | 0 | officialAttributes min=0.0 |
+| Units | Additive rate applied as `(1 + hurt_deepen_rate)` multiplier |
+| Position in formula | Multiplicative bucket (separate from additive sum) | appears in BB context alongside ignore/bound variables |
+| Direction | Higher = target takes more damage | max=1.0 (capped at +100%) |
+| Clamp | [0.0, 1.0] | officialAttributes |
+
+**Implementation:** Apply as `× (1 + hurt_deepen_rate)` multiplicative factor. This is a debuff on the TARGET that increases all incoming damage.
+
+---
+
+## 4. Crit System Modifiers
+
+### ignore_crit_rate — ✅ VERIFIED (TARGET attribute)
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | TARGET reduces attacker's effective crit rate |
+| Identity value | 0 |
+| Units | Decimal fraction subtracted from crit rate | calcType=0, max=1.0 |
+| Direction | Higher value on TARGET = attacker crits less | min=-1.0 (can boost crit too) |
+| Clamp | [-1.0, 1.0] | officialAttributes |
+| AttrId | E04 | officialAttributes |
+
+**Implementation:**
+```
+effectiveCritRate = clamp(baseCritRate - target.ignore_crit_rate, 0, 1)
+```
+Note: negative values BOOST attacker crit rate (min=-1.0).
+
+### ignore_crit_dam_rate — ✅ VERIFIED (TARGET attribute)
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | TARGET reduces incoming crit damage bonus |
+| Identity value | 0 |
+| Units | Fraction of crit bonus nullified | calcType=0, max=0.9 |
+| Direction | Higher on TARGET = less crit damage taken | min=-1.0 |
+| Clamp | [-1.0, 0.9] | officialAttributes |
+| AttrId | E05 | officialAttributes |
+
+**Implementation:**
+```
+effectiveCritDMG = baseCritDMG - (baseCritDMG - 1) × target.ignore_crit_dam_rate
+// Or equivalently: effectiveCritBonus = critBonus × (1 - ignore_crit_dam_rate)
+```
+Capped at 0.9 means target can never fully negate crit damage.
+
+### highland_crit_dam_rate — ✅ VERIFIED (ATTACKER attribute)
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | ATTACKER bonus crit damage when elevated above target |
+| Identity value | 0 |
+| Units | Additive to crit damage multiplier | calcType=0 |
+| Direction | Higher = more crit damage from height advantage |
+| Clamp | [-1.0, 2.0] | officialAttributes |
+| AttrId | E174 | officialAttributes |
+| Mutual exclusion | Context-determined: only one of highland/lowland applies per hit |
+
+**Implementation:**
+```
+if (heightAdvantage === "highland") effectiveCritDMG += highland_crit_dam_rate
+```
+
+### lowland_crit_dam_rate — ✅ VERIFIED (ATTACKER attribute)
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | ATTACKER bonus crit damage when below target (height disadvantage) |
+| Identity value | 0 |
+| Units | Additive to crit damage multiplier | calcType=0 |
+| Direction | Positive = bonus from low ground (!) — not a penalty |
+| Clamp | [-1.0, 2.0] | officialAttributes |
+| AttrId | E181 | officialAttributes |
+| Mutual exclusion | Context-determined: only one of highland/lowland applies per hit |
+
+**Implementation:**
+```
+if (heightAdvantage === "lowland") effectiveCritDMG += lowland_crit_dam_rate
+```
+NOTE: Both highland AND lowland are BONUSES (additive to crit DMG). The game may have different gear that boosts one or the other. They're not penalty/bonus — they're just contextual bonuses.
+
+### attack_type_crit_rate_add_rate — ✅ VERIFIED (ATTACKER attribute)
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Bonus crit rate for specific attack type |
+| Identity value | 0 |
+| Units | Additive to crit rate | calcType=0, max=10.0 |
+| Sub-attributes | `_melee`, `_remote`, `_dot`, `_item`, `_skill` | officialAttributes |
+| Direction | Higher = more crit chance for that attack type |
+| Clamp | [-1.0, 10.0] | officialAttributes |
+
+**Implementation:**
+```
+effectiveCritRate += attack_type_crit_rate_add_rate[attackType]
+```
+
+### attack_type_crit_dam_add_rate — ✅ VERIFIED (ATTACKER attribute)
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Bonus crit damage for specific attack type |
+| Identity value | 0 |
+| Units | Additive to crit damage | calcType=0, max=10.0 |
+| Sub-attributes | `_melee`, `_remote`, `_dot`, `_item`, `_skill` | officialAttributes |
+| Direction | Higher = more crit damage for that attack type |
+| Clamp | [-1.0, 10.0] | officialAttributes |
+
+**Implementation:**
+```
+effectiveCritDMG += attack_type_crit_dam_add_rate[attackType]
+```
+
+### crit_rate_dis_count — ⚠️ PARTIAL
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Appears in formula context between `part_dam_add_rate` and `crit_rate` |
+| Identity value | Unknown — not in defaults file |
+| AttrId | Found in attr_const as `crit_rate_dis_count` and `crit_rate_dis_count_client` |
+| Suspicion | Likely a counter/version tracker for crit rate recalculation, NOT a damage modifier |
+
+**Status:** Do NOT implement until call-site usage is proven. The name "dis_count" might be "discount" OR "dispatch count" OR "disconnect count."
+
+---
+
+## 5. Weakspot Modifiers
+
+### keyword_proc_weak_dam_add_rate — ✅ VERIFIED
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Keyword-specific bonus to weakspot damage |
+| Identity value | 0 |
+| Units | Additive to weakspot damage multiplier | calcType=0, max=10.0 |
+| Sub-attributes | `_proj` (Bounce), `_shrap` (Shrapnel) | officialAttributes |
+| Direction | Higher = more weakspot damage for that keyword |
+| Clamp | [-1.0, 10.0] | officialAttributes |
+
+**Implementation:**
+```
+effectiveWeakspotDMG += keyword_proc_weak_dam_add_rate[keyword]
+```
+Only applies to keywords that canWeakspot (Bounce, Shrapnel per existing metadata).
+
+### non_weak_ignore_dam_rate — ✅ VERIFIED (TARGET attribute)
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | TARGET reduces damage taken on NON-weakspot hits |
+| Identity value | 0 |
+| Units | Fraction of damage negated on body shots | calcType=0, max=1.0 |
+| Direction | Higher on TARGET = less damage from body shots |
+| Clamp | [-1.0, 1.0] | officialAttributes |
+| AttrId | G14 | officialAttributes |
+
+**Implementation:**
+```
+if (!wasWeakspot) damage *= (1 - non_weak_ignore_dam_rate)
+```
+Note: This variable was previously labeled `weak_ignore_dam_rate` in our mining — the ACTUAL name is `non_weak_ignore_dam_rate` (reduces non-weakspot damage, not weakspot damage).
+
+---
+
+## 6. EXCLUDED from HP Damage Formula
+
+### toughness_dam_rate — 🚫 EXCLUDED
+
+| Property | Value | Source |
+|----------|-------|--------|
+| Semantics | Stagger/structure damage, NOT HP damage |
+| Evidence | calcType=0, min=0.0, max=**9999999.0** | officialAttributes |
+| AttrId | O05 (different prefix from damage attrs which use E/F/G) |
+| Conclusion | A value capped at 9.9M is clearly NOT a 0-1 mitigation factor. This tracks cumulative toughness/stagger damage dealt to break enemy posture/parts. |
+
+**DO NOT wire into HP damage calculations.**
+
+---
+
+## 7. Debuff-Conditional Crit Modifiers (for future implementation)
+
+### debuff_type_crit_rate_add_rate — ✅ VERIFIED
+
+| Sub-attributes | `_scorch`, `_frozen`, `_mark`, `_bleeding`, `_surge`, `_vortex`, `_all` |
+| Clamp | [0.0, 1.0] |
+| Semantics | Bonus crit rate when target has specified debuff |
+
+### debuff_type_crit_dam_add_rate — ✅ VERIFIED
+
+| Sub-attributes | `_scorch`, `_frozen`, `_mark`, `_bleeding`, `_surge`, `_vortex`, `_all` |
+| Clamp | [0.0, 10.0] |
+| Semantics | Bonus crit damage when target has specified debuff |
+
+### species_type_crit_rate_add_rate — ✅ VERIFIED
+
+| Sub-attributes | `_rosetta`, `_vulcher`, `_alters`, `_ascender`, `_creatures`, `_machina`, `_deviation`, `_master` |
+| Clamp | [-1.0, 1.0] |
+| Semantics | Bonus crit rate vs specific species |
+
+### species_type_crit_dam_add_rate — ✅ VERIFIED
+
+| Sub-attributes | same as above |
+| Clamp | [-0.9, 3.0] |
+| Semantics | Bonus crit damage vs specific species |
+
+---
+
+## 8. Implementation Plan (Verified Fields Only)
+
+### Phase 2A: Additive bucket additions (officialFormulaBridge.ts)
+
+Wire `debuff_type_dam_add_rate` into the existing `DAMAGE_FORMULA_PARTIAL_GRAPH_V2_RECIPE` additive sum. It's already a leaf (exprId 9) — just needs stat bridge resolution.
+
+Wire `species_field_dam_add_rate` and `unit_prototype_dam_add_rate` into the same additive sum (add new leaves to recipe).
+
+### Phase 2B: Multiplicative factors (formulaApplicator.ts fallback path)
+
+Apply `dis_dam_rate` (identity=1), `pvp_adjust_factor` (identity=1), and `hurt_deepen_rate` (as `1 + value`) as separate multiplicative factors AFTER the official graph computation.
+
+### Phase 2C: Crit system modifiers
+
+Apply in this order:
+```
+effectiveCritRate = baseCritRate
+  + attack_type_crit_rate_add_rate[attackType]    // ATTACKER bonus
+  + debuff_type_crit_rate_add_rate[debuff]        // ATTACKER bonus vs debuffed
+  + species_type_crit_rate_add_rate[species]      // ATTACKER bonus vs species
+  - target.ignore_crit_rate                        // TARGET reduction
+effectiveCritRate = clamp(effectiveCritRate, 0, 1)
+
+effectiveCritDMG = baseCritDMG
+  + attack_type_crit_dam_add_rate[attackType]
+  + debuff_type_crit_dam_add_rate[debuff]
+  + species_type_crit_dam_add_rate[species]
+  + highland_crit_dam_rate (if height=highland)
+  + lowland_crit_dam_rate (if height=lowland)
+  - (baseCritDMG - 1) × target.ignore_crit_dam_rate  // TARGET reduction
+```
+
+### Phase 2D: Weakspot modifiers
+
+```
+effectiveWeakspotDMG = baseWeakspotDMG
+  + keyword_proc_weak_dam_add_rate[keyword]
+
+if (!wasWeakspot) damage *= (1 - non_weak_ignore_dam_rate)
+```
+
+---
+
+## 9. Fields Remaining UNVERIFIED (do not implement)
+
+| Field | Reason |
+|-------|--------|
+| `crit_rate_dis_count` | Could be "discount" or "dispatch count" — no call-site proof |
+| `toughness_dam_rate` | Proven to be stagger/structure damage, NOT HP |
+| `attack_lightning_against_shield` | Shield-specific, not general HP formula |
+| `bound_crit_dam_rate` | Crit cap — need formula position proof |
+| `part_dam_ignore_rate` | Body-part specific — need hitbox system integration |
+| Sub-melee flags | Need full melee formula tree |
