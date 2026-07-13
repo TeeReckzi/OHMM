@@ -23,8 +23,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, BinaryIO
 
-NEOX_MAGIC = 3496
-HEADER_SIZE = 16  # 4 magic + 4 flags + 4 timestamp + 4 size (standard 3.9)
+from npk_config import NEOX_MAGIC, NEOX_PYC_HEADER_SIZE as HEADER_SIZE
 
 # Standard CPython marshal type codes
 TYPE_NULL = ord('0')       # 0x30
@@ -362,8 +361,13 @@ def parse_neox_pyc(filepath: Path) -> dict[str, Any]:
 
 # ── CLI + batch processing ──
 
-CORPUS_ROOT = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled\root_script_dictrained\raw")
-OUTPUT_ROOT = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled_src")
+from npk_config import (
+    CORPUS_ROOT as _DEFAULT_CORPUS,
+    DECOMPILED_SRC_DIR as _DEFAULT_OUTPUT,
+)
+
+CORPUS_ROOT = _DEFAULT_CORPUS
+OUTPUT_ROOT = _DEFAULT_OUTPUT
 
 PRIORITY_FILES = [
     "game_common/data/formula_data/damage_formula.pyc",

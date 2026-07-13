@@ -14,9 +14,7 @@ import sys
 import time
 from pathlib import Path
 
-TARGET_DICT_ID = 1783285611
-ZSTD_DICT_MAGIC = b'\x37\xa4\x30\xec'
-GAME_ROOT = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Once Human")
+from npk_config import TARGET_DICT_ID, ZSTD_DICT_MAGIC, GAME_ROOT
 
 # Files to scan (large binaries, DLLs, other NPKs)
 SCAN_PATTERNS = [

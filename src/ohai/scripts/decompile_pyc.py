@@ -22,17 +22,21 @@ import traceback
 from pathlib import Path
 from typing import Any
 
-# Patch magic: NeoX 3496 → CPython 3.9
-NEOX_MAGIC = 3496
+from npk_config import (
+    NEOX_MAGIC,
+    CORPUS_ROOT as _DEFAULT_CORPUS,
+    DECOMPILED_SRC_DIR as _DEFAULT_OUTPUT,
+)
+
 # Try multiple target magics for compatibility
 TARGET_MAGICS = [
     3425,  # Python 3.9a2
-    3424,  # Python 3.9a1  
+    3424,  # Python 3.9a1
     3413,  # Python 3.8
 ]
 
-CORPUS_ROOT = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled\root_script_dictrained\raw")
-OUTPUT_ROOT = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled_src")
+CORPUS_ROOT = _DEFAULT_CORPUS
+OUTPUT_ROOT = _DEFAULT_OUTPUT
 
 # Priority files to decompile (most valuable for OHMM)
 PRIORITY_FILES = [
@@ -80,32 +84,22 @@ def patch_magic(data: bytes, target_magic: int) -> bytes:
 
 
 def try_uncompyle6(patched_data: bytes, filepath: str) -> str | None:
-    """Attempt decompilation with uncompyle6."""
+    """Attempt decompilation with uncompyle6 via its public file-based API."""
     try:
         import uncompyle6
-        from uncompyle6.main import decompile
         import tempfile
 
         with tempfile.NamedTemporaryFile(suffix='.pyc', delete=False) as tmp:
             tmp.write(patched_data)
             tmp_path = tmp.name
 
-        try:
-            out = io.StringIO()
-            decompile(bytecode_version=(3, 9), co=None, out=out,
-                      source_size=0, code_objects={}, timestamp=0,
-                      is_pypy=False, magic_int=3425)
-        except Exception:
-            pass
-
-        # Alternative: use the file-based approach
         out = io.StringIO()
         try:
             uncompyle6.decompile_file(tmp_path, out)
             result = out.getvalue()
             if result and len(result) > 10:
                 return result
-        except Exception as e:
+        except Exception:
             pass
         finally:
             os.unlink(tmp_path)

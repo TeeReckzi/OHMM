@@ -30,12 +30,20 @@ from typing import Any, Optional
 
 faulthandler.enable()
 
+from npk_config import (
+    CORPUS_ROOT as _DEFAULT_CORPUS_ROOT,
+    MINING_OUTPUT_DIR as _DEFAULT_OUTPUT_DIR,
+    PYC_MAX_BYTES,
+    NEOX_PYC_HEADER_SIZE,
+    extract_strings_from_bytes,
+)
+
 # ── Config ──
 
 sys.setrecursionlimit(3000)  # Reasonable limit for marshal
 
-CORPUS_ROOT = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled\root_script_dictrained\raw")
-OUTPUT_DIR = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\mining_output")
+CORPUS_ROOT = _DEFAULT_CORPUS_ROOT
+OUTPUT_DIR = _DEFAULT_OUTPUT_DIR
 
 # Targeted search patterns (case-insensitive)
 SEARCH_TERMS = [
@@ -432,12 +440,16 @@ def run_mining(max_files: int = 0, focus_dirs: list[str] | None = None):
     print(f"  PYC files to deep-analyze: {len(pyc_files)}")
     sys.stdout.flush()
 
+    skipped_large: list[str] = []
+
     for i, sig in enumerate(pyc_files):
         filepath = CORPUS_ROOT / sig.path.replace('/', os.sep)
         if not filepath.exists():
             continue
-        if filepath.stat().st_size > 2_000_000:
-            continue  # Skip files > 2MB to avoid segfaults in marshal
+        file_size = filepath.stat().st_size
+        if file_size > PYC_MAX_BYTES:
+            skipped_large.append(f"{sig.path} ({file_size} bytes)")
+            continue
 
         try:
             analysis = analyze_pyc(filepath, sig)
@@ -498,13 +510,12 @@ def run_mining(max_files: int = 0, focus_dirs: list[str] | None = None):
                 'numerics': analysis['numeric_constants'][:50],
             })
 
-        # Enum detection (files with many short uppercase constants)
-        if analysis['co_names']:
-            upper_names = [n for n in analysis['co_names'] if n.isupper() and len(n) > 2]
-            if len(upper_names) >= 3:
+        # Enum detection via raw strings (uppercase constant patterns)
+        if all_strs:
+            upper_names = [s for s in all_strs if s.isupper() and len(s) > 2 and '_' in s and len(s) < 40]
+            if len(upper_names) >= 5:
                 enum_candidates.append({
                     'path': sig.path,
-                    'names': analysis['co_names'][:50],
                     'upper_constants': upper_names[:30],
                 })
 
@@ -515,6 +526,12 @@ def run_mining(max_files: int = 0, focus_dirs: list[str] | None = None):
             all_strings_index[sig.path] = all_strs[:200]
 
     print(f"  Analysis complete.")
+    if skipped_large:
+        print(f"    Skipped (>{PYC_MAX_BYTES} bytes): {len(skipped_large)} files")
+        for s in skipped_large[:5]:
+            print(f"      {s}")
+        if len(skipped_large) > 5:
+            print(f"      ... and {len(skipped_large) - 5} more")
     print(f"    Bindict files:     {len(bindict_files)}")
     print(f"    Search hits:       {len(all_search_hits)}")
     print(f"    Localization maps: {len(localization_maps)}")

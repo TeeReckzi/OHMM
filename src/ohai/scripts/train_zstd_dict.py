@@ -27,60 +27,19 @@ from typing import Any, Optional
 
 import zstandard as zstd
 
-# ── Constants ──
+from npk_config import (
+    TARGET_DICT_ID,
+    NPK_RECORD_SIZE as RECORD_SIZE,
+    DOCUMENTS_CORPUS_ROOT as DOCUMENTS_RAW,
+    ROOT_NPK_PATH as ROOT_NPK,
+    DICT_PATH as DICT_OUTPUT,
+    EXTRACTED_ROOT,
+    parse_npk_entries,
+    parse_npk_names,
+    safe_output_path,
+)
 
-TARGET_DICT_ID = 1783285611
-DOCUMENTS_RAW = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled\documents_script\raw")
-ROOT_NPK = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Once Human\script.npk")
-OUTPUT_DIR = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled\root_script_dictrained")
-DICT_OUTPUT = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled\trained_dict.zstd")
-RECORD_SIZE = 0x1C
-
-
-# ── NPK Parsing (from decompile_once_human.py) ──
-
-def parse_names(data: bytes, files: int, names_off: int) -> list[str]:
-    names_blob = data[names_off + 16:]
-    names: list[str] = []
-    current = bytearray()
-    for byte in names_blob:
-        if byte == 0:
-            if current:
-                name = bytes(current).decode('utf-8', 'ignore').replace('/', '\\')
-                if name:
-                    names.append(name)
-                    if len(names) == files:
-                        break
-                current.clear()
-            continue
-        current.append(byte)
-    if len(names) != files:
-        raise RuntimeError(f'Failed to recover all entry names: got {len(names)} of {files}')
-    return names
-
-
-def parse_npk_entries(data: bytes | mmap.mmap) -> list[dict[str, Any]]:
-    if data[:4] != b'NXPK':
-        raise RuntimeError('Not an NXPK archive')
-    files = struct.unpack_from('<I', data, 4)[0]
-    entry_off = struct.unpack_from('<I', data, 0x14)[0]
-    names_off = entry_off + files * RECORD_SIZE + 0x10
-    names = parse_names(data, files, names_off)
-    entries = []
-    for index, name in enumerate(names):
-        rec_off = entry_off + index * RECORD_SIZE
-        misc1, offset, zsize, size, misc2, misc3, comp_type = struct.unpack_from('<7I', data, rec_off)
-        entries.append({
-            'index': index,
-            'name': name,
-            'offset': offset,
-            'zsize': zsize,
-            'size': size,
-            'comp_type': comp_type,
-            'misc2': misc2,
-            'misc3': misc3,
-        })
-    return entries
+OUTPUT_DIR = EXTRACTED_ROOT / "decompiled" / "root_script_dictrained"
 
 
 # ── Training ──
@@ -194,7 +153,7 @@ def attempt_extraction(
 
             # Skip entries where stored == original (raw, no compression)
             if zsize == size:
-                out_path = safe_path(raw_dir, name)
+                out_path = safe_output_path(raw_dir, name)
                 out_path.parent.mkdir(parents=True, exist_ok=True)
                 out_path.write_bytes(chunk)
                 success += 1
@@ -214,7 +173,7 @@ def attempt_extraction(
                     results.append({'name': name, 'status': 'skipped', 'reason': f'comp_type={comp_type}'})
                     continue
 
-                out_path = safe_path(raw_dir, name)
+                out_path = safe_output_path(raw_dir, name)
                 out_path.parent.mkdir(parents=True, exist_ok=True)
                 out_path.write_bytes(decoded)
                 success += 1
@@ -273,7 +232,7 @@ def attempt_extraction(
     return summary
 
 
-def safe_path(root: Path, relative_name: str) -> Path:
+def safe_output_path(root: Path, relative_name: str) -> Path:
     parts = [p for p in relative_name.replace('/', '\\').split('\\') if p not in ('', '.', '..')]
     return root.joinpath(*parts)
 

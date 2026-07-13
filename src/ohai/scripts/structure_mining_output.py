@@ -22,29 +22,12 @@ import re
 from pathlib import Path
 from typing import Any
 
-CORPUS_ROOT = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled\root_script_dictrained\raw")
-MINING_DIR = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\mining_output")
-OUTPUT_DIR = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\structured")
-
-
-def extract_strings_from_pyc(filepath: Path, min_len: int = 4) -> list[str]:
-    """Extract printable ASCII strings from a .pyc file."""
-    if not filepath.exists():
-        return []
-    data = filepath.read_bytes()
-    strings = []
-    current = bytearray()
-    for byte in data:
-        if 32 <= byte < 127:
-            current.append(byte)
-        else:
-            if len(current) >= min_len:
-                s = bytes(current).decode('ascii')
-                strings.append(s)
-            current.clear()
-    if len(current) >= min_len:
-        strings.append(bytes(current).decode('ascii'))
-    return strings
+from npk_config import (
+    CORPUS_ROOT,
+    MINING_OUTPUT_DIR as MINING_DIR,
+    STRUCTURED_OUTPUT_DIR as OUTPUT_DIR,
+    extract_strings_from_pyc,
+)
 
 
 def load_mining_json(name: str) -> dict:

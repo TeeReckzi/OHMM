@@ -22,31 +22,22 @@ from pathlib import Path
 
 import zstandard as zstd
 
-EXE_PATH = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Once Human\ONCE_HUMAN.exe")
-DICT_OFFSET = 0x4CA0EA0
-TARGET_DICT_ID = 1783285611
-ROOT_NPK = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Once Human\script.npk")
-OUTPUT_DICT = Path(r"C:\Users\tyr3x\Downloads\OHMM\OHMM\src\ohai\data\extracted\decompiled\game_dict.zstd")
+from npk_config import (
+    EXE_PATH,
+    DICT_OFFSET_IN_EXE as DICT_OFFSET,
+    TARGET_DICT_ID,
+    ROOT_NPK_PATH as ROOT_NPK,
+    DICT_PATH as OUTPUT_DICT,
+    NPK_RECORD_SIZE as RECORD_SIZE,
+    ZSTD_DICT_MAGIC,
+)
 
-# Known sizes to try (zstd dicts are typically 32KB-256KB in games)
+# Known sizes to try when probing dictionary boundary
 CANDIDATE_SIZES = [
-    16 * 1024,      # 16 KB
-    32 * 1024,      # 32 KB
-    64 * 1024,      # 64 KB
-    96 * 1024,      # 96 KB
-    112 * 1024,     # 112 KB
-    128 * 1024,     # 128 KB
-    160 * 1024,     # 160 KB
-    192 * 1024,     # 192 KB
-    224 * 1024,     # 224 KB
-    256 * 1024,     # 256 KB
-    384 * 1024,     # 384 KB
-    512 * 1024,     # 512 KB
-    768 * 1024,     # 768 KB
-    1024 * 1024,    # 1 MB
+    16 * 1024, 32 * 1024, 64 * 1024, 96 * 1024, 112 * 1024,
+    128 * 1024, 160 * 1024, 192 * 1024, 224 * 1024, 256 * 1024,
+    384 * 1024, 512 * 1024, 768 * 1024, 1024 * 1024,
 ]
-
-RECORD_SIZE = 0x1C
 
 
 def parse_npk_first_entries(npk_path: Path, count: int = 20) -> list[dict]:
