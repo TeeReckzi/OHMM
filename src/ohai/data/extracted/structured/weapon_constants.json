@@ -1,0 +1,54 @@
+{
+  "hand_hold_states": {
+    "Empty": 0,
+    "Firearms": 1,
+    "Melee": 2,
+    "Tools": 3
+  },
+  "weapon_categories": {
+    "WEAPON_GUN": "Firearms",
+    "WEAPON_CLOSE_WEAPON": "Melee",
+    "WEAPON_THROW": "Thrown",
+    "WEAPON_TOOL": "Tools",
+    "THROWN": "Thrown",
+    "FLYING_KNIFE": "Thrown",
+    "BUILD_TOOL": "Tools",
+    "FLAME_GUN": "Firearms",
+    "RPG_GUN": "Firearms"
+  },
+  "shield_hp_types": {
+    "Fixed_Value": 0,
+    "Relate_to_Attr": 1,
+    "Relate_to_Master_Attr": 2,
+    "Skill_Strength": 3,
+    "Invincible": 4,
+    "Input_Value": 5
+  },
+  "shield_types": [
+    "shield_self",
+    "shield_offset",
+    "shield_bind_socket",
+    "shield_bind_handhold",
+    "shield_offset_3d"
+  ],
+  "spring_types": [
+    "gun_fire",
+    "gun_mech",
+    "GUN_FIRE",
+    "GUN_MECH",
+    "gun_kick",
+    "gun_force_back",
+    "gun_body_back",
+    "GUN_KICK",
+    "GUN_FORCE_BACK",
+    "GUN_BODY_BACK",
+    "gun_fire_offset",
+    "gun_fire_rate",
+    "GUN_FIRE_OFFSET",
+    "GUN_FIRE_RATE"
+  ],
+  "source_files": [
+    "dcs_extend/const/weapon_const.pyc",
+    "dcs_extend/component/spring/spring_types.pyc"
+  ]
+}
