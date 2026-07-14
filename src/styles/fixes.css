@@ -82,3 +82,69 @@ select option {
 .selector-context-panel label {
   color: #a0b8d0;
 }
+
+/* ── Range input (slider) styling for dark theme ── */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(0, 200, 255, 0.12);
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00c8ff;
+  border: 2px solid #0a1520;
+  box-shadow: 0 0 8px rgba(0, 200, 255, 0.4);
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 14px rgba(0, 200, 255, 0.6);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00c8ff;
+  border: 2px solid #0a1520;
+  box-shadow: 0 0 8px rgba(0, 200, 255, 0.4);
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(0, 200, 255, 0.12);
+}
+
+/* ── Number inputs in dark theme ── */
+input[type="number"] {
+  color-scheme: dark;
+}
+
+.ohmm-app-shell input[type="number"] {
+  background: rgba(8, 22, 38, 0.9) !important;
+  border-color: rgba(0, 200, 255, 0.2) !important;
+  color: #e0eef8 !important;
+}
+
+.ohmm-app-shell input[type="number"]:focus {
+  border-color: rgba(0, 200, 255, 0.5) !important;
+  outline: 1px solid rgba(0, 200, 255, 0.15);
+}
+
+/* ── Calibration modal specific improvements ── */
+.ohmm-app-shell input[type="range"] + .flex input[type="number"],
+.ohmm-app-shell .calibration-field input {
+  font-family: 'JetBrains Mono', monospace;
+}
