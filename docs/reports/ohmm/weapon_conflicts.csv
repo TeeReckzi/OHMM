@@ -1,0 +1,4 @@
+id,name,field,ohmm_value,project_value,severity,notes
+"damage_formula","Universal Bucket Topology","dmg_factor_coefficient_bucket","DMG Factor and DMG Coefficient are additive in same bucket","not confirmed in project","high","ADR-002 claims "113 Test" proved DMG Factor (weapons/mods) and DMG Coefficient (key armor) are additive. Mark as external_model_assumption until project confirms."
+"damage_formula","Hit Amplifier Bucket","crit_weakspot_additive","Crit DMG and Weakspot DMG are additive in Hit Amplifier bucket","separate multiplicative factors","high","ADR-002 claims Crit DMG and Weakspot DMG are additive, not separate multiplicative layers. Project currently models them separately. CONFLICT REQUIRES REVIEW."
+"damage_formula","Final DMG / Ultimate DMG","ultimate_dmg_translation","Ultimate DMG is Final DMG translation variant","not modeled","medium","OHMM treats Ultimate DMG as Final DMG. Keep as review item unless project already confirms."

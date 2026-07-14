@@ -5,7 +5,7 @@ alwaysApply: true
 ---
 
 # Gantry — Design System Rules
-> Auto-generated 2026-07-06. Do not edit manually.
+> Auto-generated 2026-07-14. Do not edit manually.
 
 ## Current design-system health: 56/100 — Needs work
 
@@ -210,15 +210,15 @@ Reject approaches that: mix random HTML, duplicate an existing component, jump t
 
 ## Available design tokens
 
-224 tokens total. Reference CSS-variable tokens with `var(--token)`; reference Tailwind theme tokens via their utility classes (shown per token). Never hardcode a value one of these already expresses.
+225 tokens total. Reference CSS-variable tokens with `var(--token)`; reference Tailwind theme tokens via their utility classes (shown per token). Never hardcode a value one of these already expresses.
 
 ### Color (142)
 - `--ohai-bg`: #02050d
 - `--ohai-bg-deep`: #00040a
-- `--ohai-surface`: rgba(7, 17, 31, 0.78)
-- `--ohai-surface-elevated`: rgba(11, 22, 40, 0.84)
-- `--ohai-border`: rgba(107, 231, 255, 0.18)
-- `--ohai-border-strong`: rgba(0, 240, 255, 0.34)
+- `--ohai-surface`: #07111fc7
+- `--ohai-surface-elevated`: #0b1628d6
+- `--ohai-border`: #6be7ff2e
+- `--ohai-border-strong`: #00f0ff57
 - `--ohai-text`: #eef7ff
 - `--ohai-text-muted`: #8ea2c9
 - `--ohai-cyan`: #00f0ff
@@ -228,9 +228,9 @@ Reject approaches that: mix random HTML, duplicate an existing component, jump t
 - `--ohai-candidate`: #67b7ff
 - `--ohai-blocked`: #ffb457
 - `--ohai-unknown`: #8ea2c9
-- `--ohai-gradient-border`: linear-gradient(135deg, rgba(0, 240, 255, 0.62), rgba(47, 125, 255, 0.42), rgba(143, 54, 255, 0.62))
-- `--theme-soft`: rgba(0, 240, 255, 0.11)
-- `--theme-border`: rgba(0, 240, 255, 0.32)
+- `--ohai-gradient-border`: linear-gradient(135deg, #00f0ff9e, #2f7dff6b, #8f36ff9e)
+- `--theme-soft`: #00f0ff1c
+- `--theme-border`: #00f0ff52
 - `--theme-text`: #9ff7ff
 - `--theme-text-soft`: #8ea2c9
 - `--void-900`: #010710
@@ -257,6 +257,7 @@ Reject approaches that: mix random HTML, duplicate an existing component, jump t
 
 ### Typography (36)
 - `--ohai-gradient-text`: linear-gradient(135deg, var(--ohai-cyan) 0%, var(--ohai-blue) 48%, var(--ohai-violet) 100%)
+- `--font-heading`: "Orbitron", "Inter", ui-sans-serif, system-ui, sans-serif
 - `--text-strong`: var(--ice-100)
 - `--text-body`: var(--ice-200)
 - `--text-faint`: var(--ice-500)
@@ -274,7 +275,6 @@ Reject approaches that: mix random HTML, duplicate an existing component, jump t
 - `--font-size`: 16px
 - `--font-weight-medium`: 500
 - `--font-weight-normal`: 400
-- `--font-heading`: "Orbitron", "Inter", ui-sans-serif, system-ui, sans-serif
 - `--text-glow-cyan`: 0 0 12px rgba(0, 200, 255, 0.45)
 - `--text-glow-ember`: 0 0 12px rgba(255, 107, 53, 0.40)
 - `--text-xl`: 26px
@@ -293,9 +293,10 @@ Reject approaches that: mix random HTML, duplicate an existing component, jump t
 - `--tracking-wider`: 0.15em
 - `--tracking-widest`: 0.22em
 
-### Other (19)
-- `--ohai-card-glow`: 0 0 0 1px rgba(0, 240, 255, 0.08), 0 18px 70px rgba(0, 0, 0, 0.42), 0 0 44px rgba(47, 125, 255, 0.08)
+### Other (20)
+- `--ohai-card-glow`: 0 0 0 1px #00f0ff14, 0 18px 70px #0000006b, 0 0 44px #2f7dff14
 - `--theme-rgb`: 0, 240, 255
+- `--lightningcss-dark`: initial
 - `--perk`: var(--violet-500)
 - `--grid-overlay`: linear-gradient(rgba(0, 200, 255, 0.022) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 200, 255, 0.022) 1px, transparent 1px)

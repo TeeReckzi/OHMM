@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T09:07:40.967Z",
+  "generatedAt": "2026-07-14T01:40:26.845Z",
   "componentsDir": "./src/components",
   "layerMode": "flat",
   "layers": [
@@ -57,7 +57,7 @@
     },
     {
       "name": "--ohai-surface",
-      "value": "rgba(7, 17, 31, 0.78)",
+      "value": "#07111fc7",
       "group": "Color",
       "layer": "semantic",
       "source": "css",
@@ -65,7 +65,7 @@
     },
     {
       "name": "--ohai-surface-elevated",
-      "value": "rgba(11, 22, 40, 0.84)",
+      "value": "#0b1628d6",
       "group": "Color",
       "layer": "semantic",
       "source": "css",
@@ -73,7 +73,7 @@
     },
     {
       "name": "--ohai-border",
-      "value": "rgba(107, 231, 255, 0.18)",
+      "value": "#6be7ff2e",
       "group": "Color",
       "layer": "semantic",
       "source": "css",
@@ -81,7 +81,7 @@
     },
     {
       "name": "--ohai-border-strong",
-      "value": "rgba(0, 240, 255, 0.34)",
+      "value": "#00f0ff57",
       "group": "Color",
       "layer": "semantic",
       "source": "css",
@@ -169,7 +169,7 @@
     },
     {
       "name": "--ohai-gradient-border",
-      "value": "linear-gradient(135deg, rgba(0, 240, 255, 0.62), rgba(47, 125, 255, 0.42), rgba(143, 54, 255, 0.62))",
+      "value": "linear-gradient(135deg, #00f0ff9e, #2f7dff6b, #8f36ff9e)",
       "group": "Color",
       "layer": "semantic",
       "source": "css",
@@ -177,7 +177,7 @@
     },
     {
       "name": "--ohai-card-glow",
-      "value": "0 0 0 1px rgba(0, 240, 255, 0.08), 0 18px 70px rgba(0, 0, 0, 0.42), 0 0 44px rgba(47, 125, 255, 0.08)",
+      "value": "0 0 0 1px #00f0ff14, 0 18px 70px #0000006b, 0 0 44px #2f7dff14",
       "group": "Other",
       "layer": "semantic",
       "source": "css",
@@ -193,7 +193,7 @@
     },
     {
       "name": "--theme-soft",
-      "value": "rgba(0, 240, 255, 0.11)",
+      "value": "#00f0ff1c",
       "group": "Color",
       "layer": "semantic",
       "source": "css",
@@ -201,7 +201,7 @@
     },
     {
       "name": "--theme-border",
-      "value": "rgba(0, 240, 255, 0.32)",
+      "value": "#00f0ff52",
       "group": "Color",
       "layer": "semantic",
       "source": "css",
@@ -222,6 +222,22 @@
       "layer": "semantic",
       "source": "css",
       "usage": "var(--theme-text-soft)"
+    },
+    {
+      "name": "--lightningcss-dark",
+      "value": "initial",
+      "group": "Other",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--lightningcss-dark)"
+    },
+    {
+      "name": "--font-heading",
+      "value": "\"Orbitron\", \"Inter\", ui-sans-serif, system-ui, sans-serif",
+      "group": "Typography",
+      "layer": "semantic",
+      "source": "css",
+      "usage": "var(--font-heading)"
     },
     {
       "name": "--ohmm-header-height",
@@ -1056,14 +1072,6 @@
       "usage": "var(--sidebar-ring)"
     },
     {
-      "name": "--font-heading",
-      "value": "\"Orbitron\", \"Inter\", ui-sans-serif, system-ui, sans-serif",
-      "group": "Typography",
-      "layer": "semantic",
-      "source": "css",
-      "usage": "var(--font-heading)"
-    },
-    {
       "name": "--cyan-300",
       "value": "#7ce0ff",
       "group": "Color",
@@ -1836,34 +1844,34 @@
     {
       "severity": "info",
       "kind": "dead-token",
-      "title": "Unused token `--ohai-surface-elevated`",
-      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
-      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
-      "line": 5
-    },
-    {
-      "severity": "info",
-      "kind": "dead-token",
       "title": "Unused token `--ohai-unknown`",
       "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
-      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
-      "line": 16
+      "relFile": "src/ohai/dist-ui/assets/index-P06Y0_3_.css",
+      "line": 1
     },
     {
       "severity": "info",
       "kind": "dead-token",
       "title": "Unused token `--ohai-gradient-border`",
       "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
-      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
-      "line": 18
+      "relFile": "src/ohai/dist-ui/assets/index-P06Y0_3_.css",
+      "line": 1
     },
     {
       "severity": "info",
       "kind": "dead-token",
       "title": "Unused token `--theme-text-soft`",
       "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
-      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
-      "line": 24
+      "relFile": "src/ohai/dist-ui/assets/index-P06Y0_3_.css",
+      "line": 1
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--lightningcss-dark`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/ohai/dist-ui/assets/index-P06Y0_3_.css",
+      "line": 1
     },
     {
       "severity": "info",
@@ -2008,6 +2016,30 @@
       "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
       "relFile": "src/styles/ohmm-app.css",
       "line": 66
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--font-size`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/theme.css",
+      "line": 4
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--font-weight-medium`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/theme.css",
+      "line": 25
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--font-weight-normal`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/theme.css",
+      "line": 26
     },
     {
       "severity": "info",
@@ -2228,6 +2260,14 @@
     {
       "severity": "info",
       "kind": "dead-token",
+      "title": "Unused token `--ease-out`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 31
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
       "title": "Unused token `--ease-snap`",
       "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
       "relFile": "src/styles/ohmm-design/tokens/effects.css",
@@ -2240,6 +2280,14 @@
       "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
       "relFile": "src/styles/ohmm-design/tokens/effects.css",
       "line": 33
+    },
+    {
+      "severity": "info",
+      "kind": "dead-token",
+      "title": "Unused token `--dur-base`",
+      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
+      "relFile": "src/styles/ohmm-design/tokens/effects.css",
+      "line": 34
     },
     {
       "severity": "info",
@@ -2275,67 +2323,27 @@
     },
     {
       "severity": "info",
-      "kind": "dead-token",
-      "title": "Unused token `--space-7`",
-      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
-      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
-      "line": 16
-    },
-    {
-      "severity": "info",
-      "kind": "dead-token",
-      "title": "Unused token `--space-9`",
-      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
-      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
-      "line": 18
-    },
-    {
-      "severity": "info",
-      "kind": "dead-token",
-      "title": "Unused token `--space-10`",
-      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
-      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
-      "line": 19
-    },
-    {
-      "severity": "info",
-      "kind": "dead-token",
-      "title": "Unused token `--space-12`",
-      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
-      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
-      "line": 20
-    },
-    {
-      "severity": "info",
-      "kind": "dead-token",
-      "title": "Unused token `--border-hairline`",
-      "detail": "Declared but never referenced with `var()` — remove it or wire it up.",
-      "relFile": "src/styles/ohmm-design/tokens/spacing.css",
-      "line": 30
-    },
-    {
-      "severity": "info",
       "kind": "duplicate-token",
       "title": "Duplicate value #8ea2c9",
       "detail": "Same value as --ohai-unknown, --theme-text-soft — consolidate into one semantic token.",
-      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
-      "line": 9
+      "relFile": "src/ohai/dist-ui/assets/index-P06Y0_3_.css",
+      "line": 1
     },
     {
       "severity": "info",
       "kind": "duplicate-token",
       "title": "Duplicate value #8ea2c9",
       "detail": "Same value as --ohai-text-muted, --theme-text-soft — consolidate into one semantic token.",
-      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
-      "line": 16
+      "relFile": "src/ohai/dist-ui/assets/index-P06Y0_3_.css",
+      "line": 1
     },
     {
       "severity": "info",
       "kind": "duplicate-token",
       "title": "Duplicate value #8ea2c9",
       "detail": "Same value as --ohai-text-muted, --ohai-unknown — consolidate into one semantic token.",
-      "relFile": "src/ohai/src/ui/theme/ohaiTheme.css",
-      "line": 24
+      "relFile": "src/ohai/dist-ui/assets/index-P06Y0_3_.css",
+      "line": 1
     },
     {
       "severity": "info",
