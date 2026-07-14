@@ -154,6 +154,17 @@ const BRIDGE_ENTRIES: readonly OfficialResolvedStatBridgeEntry[] = [
       "OHAI shrapnelDMGBonus is the player stat for SHRAP keyword damage percent bonus",
     ],
   },
+  {
+    leafName: "keyword_proc_dam_add_rate",
+    suffix: "proj",
+    statKey: "bounceDMGBonus",
+    confidence: "high",
+    evidence: [
+      "char_property_data.pyc: keyword_proc_dam_add_rate_proj confirmed from bindict extraction",
+      "Corpus mining: BUFF_KEYWORD_PROJ = Bounce keyword",
+      "OHAI bounceDMGBonus is the player stat for PROJ keyword damage percent bonus",
+    ],
+  },
 ];
 
 const BRIDGE_MAP = new Map<string, OfficialResolvedStatBridgeEntry>(
