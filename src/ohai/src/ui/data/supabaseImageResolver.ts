@@ -21,13 +21,18 @@ const extractSlug = (url: string): string =>
  url.split('/').pop()?.replace(/\.png$/i, '') ?? '';
 
 async function initCache(): Promise<void> {
+ // Skip if Supabase app_images table doesn't exist yet
+ if (!SUPABASE_URL || !ANON_KEY) return;
  try {
   // Support both old broad categories and new slot-categorized ones (e.g. armour-helmet, attachments-muzzle)
   const res = await fetch(
    `${SUPABASE_URL}/rest/v1/app_images?select=image_url,category,slot`,
    { headers: { apikey: ANON_KEY, Authorization: `Bearer ${ANON_KEY}` } }
   );
-  if (!res.ok) throw new Error(`Supabase fetch failed: ${res.status}`);
+  if (!res.ok) {
+   // Silently skip — table likely doesn't exist yet. CDN fallback will handle icons.
+   return;
+  }
   const rows = await res.json();
   const cache: ImageCache = {};
   for (const row of rows) {
@@ -46,8 +51,8 @@ async function initCache(): Promise<void> {
   }
   imageCache = cache;
   cacheReady = true;
- } catch (e) {
-  console.warn('Supabase image cache failed, using direct CDN URLs:', e);
+ } catch {
+  // Network error or CORS — silently skip, CDN fallback handles icons
  }
 }
 

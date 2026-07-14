@@ -19,7 +19,7 @@ import { R_COLOR, CYAN, VIOLET, ORANGE, GREEN, OHMM_NAVBAR_LOGO, isWeaponItem } 
 import { ModalShell, EmptySlate, GenericDetail, StarRating, RarityBadge, ModTypeBadge, GlassPanel, PanelSection, StatChip, SimReady, TT_STYLE, pct, num, statValue } from "./components/ui/Primitives";
 
 // Extracted selector modals (Phase 2)
-import { WeaponModal } from "./components/selectors/WeaponSelector";
+import { WeaponModal, type WeaponSetupCommit } from "./components/selectors/WeaponSelector";
 import { ArmorModal, getArmorDisplaySlot } from "./components/selectors/ArmorSelector";
 import { ModModal, normalizeModSlot, gearSlotLabel, categorizeMod } from "./components/selectors/ModSelector";
 
@@ -27,38 +27,41 @@ import { ModModal, normalizeModSlot, gearSlotLabel, categorizeMod } from "./comp
 import { EquipmentSlot, ModTile, CalibrationTile, AttachTile, CradleTile } from "./components/LoadoutTiles";
 
 // Formulas and logic from the core (moved from old structure)
-import { buildCalculationInputFromSelection } from "../ohai/src/ui/formulaBridge";
-import { buildExpectedDamageFromCalculationInput } from "../ohai/src/ui/formulaDamageAdapter";
-import { computeCombatOutput } from "../ohai/src/ui/combatOutput";
-import { aggregateModifiers } from "../ohai/src/engine/modifierAggregation";
-import { weaponBlueprints } from "../ohai/src/ui/data/catalog";
-import { getWeapon as getRegistryWeapon } from "../ohai/src/ui/registries/weaponRegistry";
-import { weaponRegistry } from "../ohai/src/ui/registries/weaponRegistry";
-import { keyGearRegistry, armorRegistry } from "../ohai/src/ui/registries/armorRegistry";
-import { modRegistry } from "../ohai/src/ui/registries/modRegistry";
-import { verifiedSuffixPoolsByModId } from "../ohai/src/ui/registries/verifiedModFamilies";
-import { deviationRegistry } from "../ohai/src/ui/registries/deviationRegistry";
-import { foodBuffRegistry } from "../ohai/src/ui/registries/foodBuffRegistry";
-import { attachmentRegistry, getAttachmentsBySlot, getAttachmentsBySlotAndFamily } from "../ohai/src/ui/registries/attachmentRegistry";
-import type { AttachmentSlot } from "../ohai/src/ui/itemTypes";
-import { cradleRegistry } from "../ohai/src/ui/registries/cradleRegistry";
+import { buildCalculationInputFromSelection } from "@/engine/combat";
+import { buildExpectedDamageFromCalculationInput } from "@/engine/combat";
+import { computeCombatOutput } from "@/engine/combat";
+import { aggregateModifiers } from "@/engine/modifiers";
+import { getWeapon as getRegistryWeapon } from "@/data/registries";
+import { weaponRegistry } from "@/data/registries";
+import { keyGearRegistry, armorRegistry } from "@/data/registries";
+import { modRegistry } from "@/data/registries";
+import { verifiedSuffixPoolsByModId } from "@/data/registries";
+import { deviationRegistry } from "@/data/registries";
+import { foodBuffRegistry } from "@/data/registries";
+import { attachmentRegistry, getAttachmentsBySlot, getAttachmentsBySlotAndFamily } from "@/data/registries";
+import type { AttachmentSlot } from "@/domain/itemTypes";
+import { cradleRegistry } from "@/data/registries";
 import { loadoutMapToBuildSelection, buildSelectionToLoadoutMap } from "../lib/ohmm/convertLoadout";
 import { TheoryCraftPanel } from "./components/theorycraft/TheoryCraftPanel";
 
 // Image pipelines: Supabase (structured URLs) + GitHub CDN fallback (ohmm-icondb)
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
-import { getItemImage } from "../ohai/src/presentation/itemImageResolver";
-import { buildCdnUrl, getSupabaseImageUrl } from "../ohai/src/ui/data/supabaseImageResolver";
-import { SUPABASE_URL, ANON_KEY } from "../ohai/src/data/supabaseClient";
-import { getFilteredAmmoOptions } from "../ohai/src/ui/loadoutOptions";
+import { getItemImage } from "@/data/images";
+import { buildCdnUrl, getSupabaseImageUrl } from "@/data/images";
+import { SUPABASE_URL, ANON_KEY } from "@/data/supabase";
+
+// Feature flag: disable Supabase data fetches when tables don't exist.
+// Set to true once armor/food_buffs tables are created in Supabase.
+const ENABLE_SUPABASE_DATA_FETCH = false;
+import { getFilteredAmmoOptions } from "@/data/loadoutOptions";
 import {
   loadAllBuilds as loadPersistedBuilds,
   saveBuild as persistBuild,
   deleteBuild as removePersistedBuild,
   generateBuildId,
-} from "../ohai/src/ui/buildPersistenceService";
-import { downloadBuildAsFile, importBuildFromJSON, triggerImportDialog } from "../ohai/src/ui/buildImportExportService";
-import type { SavedBuild } from "../ohai/src/ui/savedBuildSchema";
+} from "@/features/buildPersistence";
+import { downloadBuildAsFile, importBuildFromJSON, triggerImportDialog } from "@/features/buildPersistence";
+import type { SavedBuild } from "@/features/buildPersistence";
 
 const WEAPON_PAIRS = [
   { mainKey: "primary",   modKey: "primary_mod",   label: "Primary Weapon",   icon: <Crosshair size={16} /> },
@@ -551,27 +554,23 @@ function AmmoModal({ weaponId, onClose, onSelect }: {
   const filteredOptions = weaponId && weaponId !== 'none'
     ? getFilteredAmmoOptions(weaponId)
     : [];
-  const ammoItems: EquippedItem[] = filteredOptions.length > 0
-    ? filteredOptions.map((a) => ({
-        id: a.id, name: a.name, category: 'Ammo', rarity: 'Common' as Rarity, tier: 0, stars: 0,
-        iconUrl: a.iconUrl, effectSummary: a.description,
-      }))
-    : [
-        { id: 'copper-ammo', name: 'Copper Ammo', category: 'Ammo', rarity: 'Common', tier: 0, stars: 0 },
-        { id: 'steel-ammo', name: 'Steel Ammo', category: 'Ammo', rarity: 'Common', tier: 0, stars: 0 },
-        { id: 'ap-ammo', name: 'AP Ammo', category: 'Ammo', rarity: 'Common', tier: 0, stars: 0 },
-        { id: 'demolition-ammo', name: 'Demolition Ammo', category: 'Ammo', rarity: 'Common', tier: 0, stars: 0 },
-      ];
+  const ammoItems: EquippedItem[] = filteredOptions.map((a) => ({
+    id: a.id, name: a.name, category: 'Ammo', rarity: 'Common' as Rarity, tier: 0, stars: 0,
+    iconUrl: a.iconUrl, effectSummary: a.description,
+  }));
 
   return (
     <ModalShell title="Ammunition Selector"
       accent={ORANGE} icon={<Bomb size={14} />} onClose={onClose} width={520} height={420}>
       <div className="flex flex-col gap-2 p-4">
         <div className="text-[9px]" style={{ color: "#6aa8c0" }}>
-          {weaponId && weaponId !== 'none' ? 'Ammunition types compatible with the selected weapon.' : 'No weapon selected — showing all available ammunition.'}
+          {weaponId && weaponId !== 'none' ? 'Ammunition types compatible with the selected weapon.' : 'No weapon selected. Choose a weapon before selecting ammunition.'}
         </div>
-        <div className="flex flex-col gap-1">
-          {ammoItems.map((a) => (
+        {ammoItems.length === 0 ? (
+          <EmptySlate message={weaponId && weaponId !== 'none' ? 'No compatible ammunition found for this weapon' : 'No weapon selected'} icon={<Bomb size={24} />} />
+        ) : (
+          <div className="flex flex-col gap-1">
+            {ammoItems.map((a) => (
             <button key={a.id} onClick={() => setSelected(a)}
               className="text-left p-3 rounded-[3px] transition-all flex gap-3 items-center"
               style={{
@@ -593,8 +592,9 @@ function AmmoModal({ weaponId, onClose, onSelect }: {
                 </div>
               </div>
             </button>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
         <button
           onClick={() => { if (selected) { onSelect(selected); onClose(); } }}
           disabled={!selected}
@@ -1551,6 +1551,7 @@ export default function App() {
   const [fullFoodBuffs, setFullFoodBuffs] = useState<any[]>([]);
 
   useEffect(() => {
+    if (!ENABLE_SUPABASE_DATA_FETCH) return;
     (async () => {
       try {
         // Try common table names for full armor list in Supabase as source of truth
@@ -1570,7 +1571,7 @@ export default function App() {
         if (combined.length === 0) {
           // fallback to verified if no Supabase armor table
           try {
-            const v = (await import('../ohai/data/verified/armor.verified.json')).default || [];
+            const v = (await import('@/data/verified/armor.verified.json')).default || [];
             combined = v.items || v || [];
           } catch {}
         }
@@ -1583,6 +1584,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    if (!ENABLE_SUPABASE_DATA_FETCH) return;
     (async () => {
       try {
         const res = await fetch(`${SUPABASE_URL}/rest/v1/food_buffs?select=*`, {
@@ -1808,9 +1810,10 @@ export default function App() {
   // is sourced from verifiedModFamilies.ts (ground-truthed from in-game data).
 
   const getWeaponItems = (): EquippedItem[] => {
-    // Use the full formula-ready weaponRegistry (curated + generated + lre stats merged)
-    const source = weaponRegistry && weaponRegistry.length ? weaponRegistry : (weaponBlueprints || []);
-    return source.map((w: any) => {
+    // Use only the formula-ready weaponRegistry. If it fails to populate, keep
+    // the selector empty so the data problem is visible instead of falling back
+    // to older blueprint display rows that may not be combat-ready.
+    return (weaponRegistry || []).map((w: any) => {
       const familySlot = (w.family || '').toLowerCase().replace(/\s+/g, '-');
       const iconUrl = resolveIcon(w, 'weapons', undefined, familySlot) || getItemImage(w, 'weapon') || undefined;
       return {
@@ -2166,8 +2169,88 @@ export default function App() {
     const commonProps = { onClose, onSelect };
 
     switch (modal.kind) {
-      case 'weapon':
-        return <WeaponModal {...commonProps} items={modalItems.weapon()} />;
+      case 'weapon': {
+        const loadout = modal.side === 'offensive' ? offLoadout : defLoadout;
+        const isSecondary = modal.slot === 'secondary';
+        const modKey = isSecondary ? 'secondary_mod' : 'primary_mod';
+        const calibrationKey = isSecondary ? 'secondary_calibration' : 'primary_calibration';
+        const ammoKey = isSecondary ? 'sec_att_ammo' : 'att_ammo';
+        const attachmentKeyMap = isSecondary
+          ? {
+              muzzle: 'sec_att_muzzle',
+              sight: 'sec_att_sight',
+              barrel: 'sec_att_barrel',
+              mag: 'sec_att_mag',
+              stock: 'sec_att_stock',
+            }
+          : {
+              muzzle: 'att_muzzle',
+              sight: 'att_sight',
+              barrel: 'att_barrel',
+              mag: 'att_mag',
+              stock: 'att_stock',
+            };
+        const weaponMods = modalItems.weapon_mod();
+        const calibrations = modalItems.calibration();
+        const handleWeaponSetup = (item: EquippedItem, setup: WeaponSetupCommit) => {
+          const updater = modal.side === 'offensive' ? setOffLoadout : setDefLoadout;
+          updater(prev => {
+            const existing = prev[modal.slot];
+            const next: LoadoutMap = {
+              ...prev,
+              [modal.slot]: {
+                ...item,
+                tier: setup.tier ?? item.tier ?? existing?.tier ?? 4,
+                stars: setup.stars ?? item.stars ?? existing?.stars ?? 3,
+              },
+            };
+            const selectedMod = setup.weaponModId ? weaponMods.find(mod => mod.id === setup.weaponModId) : undefined;
+            if (selectedMod) next[modKey] = selectedMod;
+            const selectedCalibration = setup.calibrationId ? calibrations.find(cal => cal.id === setup.calibrationId) : undefined;
+            if (selectedCalibration) next[calibrationKey] = selectedCalibration;
+            for (const [draftSlot, selectedId] of Object.entries(setup.attachmentIds ?? {})) {
+              const attachmentKey = attachmentKeyMap[draftSlot as keyof typeof attachmentKeyMap];
+              if (!attachmentKey || !selectedId) continue;
+              if (selectedId === 'none') {
+                next[attachmentKey] = null;
+                continue;
+              }
+              const attachment = getAttachmentItems(attachmentKey, item.category).find(option => option.id === selectedId);
+              if (attachment) next[attachmentKey] = attachment;
+            }
+            if (setup.ammoId) {
+              const ammoOption = getFilteredAmmoOptions(item.id).find(ammo => ammo.id === setup.ammoId);
+              if (ammoOption) {
+                next[ammoKey] = {
+                  id: ammoOption.id,
+                  name: ammoOption.name,
+                  category: 'Ammo',
+                  rarity: 'Common' as Rarity,
+                  tier: 0,
+                  stars: 0,
+                  iconUrl: ammoOption.iconUrl,
+                  effectSummary: ammoOption.description,
+                };
+              }
+            }
+            return next;
+          });
+          onClose();
+        };
+        return (
+          <WeaponModal
+            {...commonProps}
+            items={modalItems.weapon()}
+            currentItem={loadout[modal.slot] || null}
+            currentMod={loadout[modKey] || null}
+            currentCalibration={loadout[calibrationKey] || null}
+            currentAmmo={loadout[ammoKey] || null}
+            modItems={weaponMods}
+            calibrationItems={calibrations}
+            onSelectSetup={handleWeaponSetup}
+          />
+        );
+      }
       case 'armor':
         return <ArmorModal {...commonProps} slotLabel={modal.label} items={modalItems.armor()} />;
       case 'weapon_mod':
