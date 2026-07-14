@@ -320,24 +320,113 @@ function applyPhysicalWeaponDamage(input: FormulaInput): FormulaResult {
   addMult("Weapon DMG Bonus", 1 + (input.weaponDMGBonus ?? 0),
     `player stat: weaponDMGBonus=${(input.weaponDMGBonus ?? 0).toFixed(3)}`);
 
+  // ── Phase 2C: Crit system with verified modifiers ──
+  // Order: base + attack-type bonus + debuff bonus - target reduction, clamped [0, 1]
+  let effectiveCritRate = input.critRate ?? 0;
+  if (input.attackTypeCritRateAddRate) {
+    effectiveCritRate += input.attackTypeCritRateAddRate;
+  }
+  if (input.debuffTypeCritRateAddRate) {
+    effectiveCritRate += input.debuffTypeCritRateAddRate;
+  }
+  // targetIgnoreCritRate: TARGET attr, subtracts from attacker crit rate. Range [-1, 1].
+  if (input.targetIgnoreCritRate) {
+    effectiveCritRate -= input.targetIgnoreCritRate;
+  }
+  effectiveCritRate = Math.max(0, Math.min(1, effectiveCritRate));
+
+  // Crit damage: base + attack-type + debuff + height bonus, then target reduction
+  let effectiveCritDMG = input.critDMG ?? 1.0;
+  if (input.attackTypeCritDamAddRate) {
+    effectiveCritDMG += input.attackTypeCritDamAddRate;
+  }
+  if (input.debuffTypeCritDamAddRate) {
+    effectiveCritDMG += input.debuffTypeCritDamAddRate;
+  }
+  // Height bonuses are contextual — only one applies per hit
+  if (input.highlandCritDamRate) {
+    effectiveCritDMG += input.highlandCritDamRate;
+  } else if (input.lowlandCritDamRate) {
+    effectiveCritDMG += input.lowlandCritDamRate;
+  }
+  // targetIgnoreCritDamRate: reduces crit damage bonus. Range [-1, 0.9].
+  // Apply: effective bonus = bonus × (1 - ignore_rate)
+  if (input.targetIgnoreCritDamRate && effectiveCritDMG > 1.0) {
+    const critBonus = effectiveCritDMG - 1.0;
+    effectiveCritDMG = 1.0 + critBonus * (1 - input.targetIgnoreCritDamRate);
+  }
+
+  // ── Phase 2D: Weakspot with keyword bonus and non-weakspot reduction ──
+  let effectiveWeakspotDMG = input.weakspotDMG ?? 0;
+  if (input.keywordProcWeakDamAddRate) {
+    effectiveWeakspotDMG += input.keywordProcWeakDamAddRate;
+  }
+
   const combinedMult = computeCombinedCritWeakspotMultiplier(
-    input.critRate ?? 0,
-    input.critDMG ?? 1.0,
-    input.weakspotDMG ?? 0,
+    effectiveCritRate,
+    effectiveCritDMG,
+    effectiveWeakspotDMG,
     eb.canCrit,
     eb.canWeakspot
   );
-  const critContrib = eb.canCrit ? (input.critRate ?? 0) * ((input.critDMG ?? 1.0) - 1) : 0;
-  const wsContrib = eb.canWeakspot ? (input.weakspotDMG ?? 0) : 0;
+  const critContrib = eb.canCrit ? effectiveCritRate * (effectiveCritDMG - 1) : 0;
+  const wsContrib = eb.canWeakspot ? effectiveWeakspotDMG : 0;
   addMult("Crit + Weakspot (additive)", combinedMult,
-    `canCrit=${eb.canCrit} contribution=${critContrib.toFixed(4)} + canWeakspot=${eb.canWeakspot} contribution=${wsContrib.toFixed(4)}`);
+    `canCrit=${eb.canCrit} cr=${effectiveCritRate.toFixed(3)} cd=${effectiveCritDMG.toFixed(3)} contribution=${critContrib.toFixed(4)} + canWeakspot=${eb.canWeakspot} ws=${effectiveWeakspotDMG.toFixed(3)} contribution=${wsContrib.toFixed(4)}`);
 
   addMult("Weapon Vulnerability", 1 + (input.weaponVulnerability ?? 0),
     `behavior.vulnerabilityType=${eb.vulnerabilityType}, weaponVulnerability=${(input.weaponVulnerability ?? 0).toFixed(3)}`);
   addMult("Enemy Type DMG Bonus", 1 + (input.enemyTypeDMGBonus ?? 0),
     `player stat: enemyTypeDMGBonus=${(input.enemyTypeDMGBonus ?? 0).toFixed(3)}`);
 
+  // ── Phase 2B: Verified multiplicative factors ──
+
+  // hurtDeepenRate: target vulnerability amplification. Identity=0, max 1.0.
+  // Apply as × (1 + value). Proven from officialAttributes: calcType=0, range [0, 1].
+  const hurtDeepen = input.hurtDeepenRate ?? 0;
+  if (hurtDeepen > 0) {
+    addMult("Hurt Deepen (Target Vulnerability)", 1 + hurtDeepen,
+      `VERIFIED: hurt_deepen_rate=${hurtDeepen.toFixed(3)}, range [0,1], target vulnerability amplification`);
+  }
+
+  // distanceDamRate: distance falloff multiplier. Identity=1 (proven default).
+  // Lower values mean reduced damage at range. Direct multiplier.
+  const distFactor = input.distanceDamRate ?? 1;
+  if (distFactor !== 1) {
+    addMult("Distance Falloff", distFactor,
+      `VERIFIED: dis_dam_rate=${distFactor.toFixed(3)}, identity=1, range-based scaling`);
+  }
+
+  // pvpAdjustFactor: attacker-side PvP scaling by weapon tier. Identity=1 (proven default).
+  // Separate from defender-side pvpMitigation system.
+  const pvpFactor = input.pvpAdjustFactor ?? 1;
+  if (pvpFactor !== 1) {
+    addMult("PvP Adjust Factor", pvpFactor,
+      `VERIFIED: pvp_adjust_factor=${pvpFactor.toFixed(3)}, identity=1, weapon-tier PvP scaling`);
+  }
+
+  // nonWeakIgnoreDamRate: TARGET reduces non-weakspot damage. Identity=0, range [-1, 1].
+  // Only applies when the hit is NOT a weakspot. For expected-value computation,
+  // we weight by (1 - weakspot_hit_rate).
+  // NOTE: This is approximated here — exact application requires per-hit scenario split.
+  // For now we do NOT apply it to the expected-value path since it would require
+  // knowing the weakspot hit rate at this layer. It's surfaced as a warning instead.
+  if (input.nonWeakIgnoreDamRate && input.nonWeakIgnoreDamRate > 0) {
+    multipliers.push({
+      label: "Non-Weakspot Reduction (informational)",
+      multiplier: round2(1 - input.nonWeakIgnoreDamRate),
+      source: `VERIFIED: non_weak_ignore_dam_rate=${input.nonWeakIgnoreDamRate.toFixed(3)} — applies only to body shots, not included in expected-value DPS`,
+    });
+    // Intentionally NOT multiplied into product — this needs scenario-split resolution
+  }
+
   const expectedDamage = baseDamage * product;
+
+  const warnings: string[] = [];
+  // Surface crit modifier info when active
+  if ((input.targetIgnoreCritRate ?? 0) !== 0 || (input.targetIgnoreCritDamRate ?? 0) !== 0) {
+    warnings.push(`Target crit resistance active: ignore_crit_rate=${(input.targetIgnoreCritRate ?? 0).toFixed(3)}, ignore_crit_dam_rate=${(input.targetIgnoreCritDamRate ?? 0).toFixed(3)}`);
+  }
 
   return {
     mechanicId: input.mechanicId,
@@ -346,10 +435,10 @@ function applyPhysicalWeaponDamage(input: FormulaInput): FormulaResult {
     baseDamage: round2(baseDamage),
     expectedDamage: round2(expectedDamage),
     expectedCritMultiplier: round2(combinedMult),
-    expectedWeakspotMultiplier: round2(computeExpectedWeakspotMultiplier(input.weakspotDMG ?? 0, eb.canWeakspot)),
+    expectedWeakspotMultiplier: round2(computeExpectedWeakspotMultiplier(effectiveWeakspotDMG, eb.canWeakspot)),
     multipliers,
     effectiveBehavior: snapshotBehavior(input),
-    warnings: [],
+    warnings,
     explanation: [],
   };
 }

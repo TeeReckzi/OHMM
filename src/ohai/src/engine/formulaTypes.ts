@@ -39,6 +39,59 @@ export interface FormulaInput {
   effectiveBehavior: EffectiveMechanicBehavior;
   stackCount?: number;
   damageModelOverride?: Partial<Record<"frostVortex" | "powerSurge" | "ebrFireRing", DamageModelHypothesis>>;
+
+  // ── Game-aligned BB.* variables (from damage_formula.pyc) ──
+  // Verification status documented in: data/extracted/structured/FORMULA_ALIGNMENT_AUDIT.md
+  //
+  // Fields marked VERIFIED have proven semantics from officialAttributes.generated.ts
+  // (calcType, min, max, parentAttrKey) + formula graph recipe + defaults tests.
+  // Fields marked UNVERIFIED have name-only evidence. Do NOT use in calculations.
+
+  // ── VERIFIED: Additive inside final_attack_additional_rate ──
+  /** VERIFIED. Bonus damage when target has debuff. Additive with other _dam_add_rate leaves. Identity=0, range [0, 10]. */
+  debuffTypeDamAddRate?: number;
+  /** VERIFIED. Bonus vs species in field zone. Additive. Identity=0, range [-0.9, 3.0]. Sub-keys: rosetta/vulcher/alters/ascender/creatures/machina/deviation. */
+  speciesFieldDamAddRate?: number;
+  /** VERIFIED. Bonus vs target prototype class. Additive. Identity=0, range [-0.9, 10]. Sub-keys: boss/elite/creeps/leader. */
+  unitPrototypeDamAddRate?: number;
+
+  // ── VERIFIED: Multiplicative factors (identity = 1 unless noted) ──
+  /** VERIFIED. Distance falloff multiplier. Identity=1 (proven default). <1 means reduced damage at range. */
+  distanceDamRate?: number;
+  /** VERIFIED. PvP weapon-tier scaling. Identity=1 (proven default). Attacker-side, separate from pvpMitigation (defender-side). */
+  pvpAdjustFactor?: number;
+  /** VERIFIED. Target vulnerability amplification. Apply as ×(1+value). Identity=0, range [0, 1]. */
+  hurtDeepenRate?: number;
+
+  // ── VERIFIED: Crit modifiers ──
+  /** VERIFIED. TARGET attribute. Subtracts from attacker crit rate. Identity=0, range [-1, 1]. */
+  targetIgnoreCritRate?: number;
+  /** VERIFIED. TARGET attribute. Reduces crit damage bonus. Identity=0, range [-1, 0.9]. Apply: effectiveCritBonus × (1 - value). */
+  targetIgnoreCritDamRate?: number;
+  /** VERIFIED. ATTACKER per-attack-type crit rate bonus. Identity=0, range [-1, 10]. Resolved by attack type. */
+  attackTypeCritRateAddRate?: number;
+  /** VERIFIED. ATTACKER per-attack-type crit DMG bonus. Identity=0, range [-1, 10]. Resolved by attack type. */
+  attackTypeCritDamAddRate?: number;
+  /** VERIFIED. ATTACKER height-advantage crit DMG bonus. Identity=0, range [-1, 2]. Context: attacker above target. */
+  highlandCritDamRate?: number;
+  /** VERIFIED. ATTACKER low-ground crit DMG bonus. Identity=0, range [-1, 2]. Context: attacker below target. */
+  lowlandCritDamRate?: number;
+  /** VERIFIED. Bonus crit rate when target has debuff. Identity=0, range [0, 1]. Sub-keys: scorch/frozen/mark/bleeding/surge/vortex. */
+  debuffTypeCritRateAddRate?: number;
+  /** VERIFIED. Bonus crit DMG when target has debuff. Identity=0, range [0, 10]. Sub-keys: scorch/frozen/mark/bleeding/surge/vortex. */
+  debuffTypeCritDamAddRate?: number;
+
+  // ── VERIFIED: Weakspot modifiers ──
+  /** VERIFIED. Keyword-specific weakspot DMG bonus. Identity=0, range [-1, 10]. Sub-keys: proj (Bounce), shrap (Shrapnel). */
+  keywordProcWeakDamAddRate?: number;
+  /** VERIFIED. TARGET reduces non-weakspot damage. Identity=0, range [-1, 1]. Apply: if !weakspot, damage × (1-value). */
+  nonWeakIgnoreDamRate?: number;
+
+  // ── UNVERIFIED: Do NOT use in calculations ──
+  /** UNVERIFIED. Could be "discount" or "dispatch count" — no call-site proof. */
+  critRateDiscount?: number;
+  /** 🚫 EXCLUDED. Proven to be stagger/structure damage (max=9999999), NOT HP damage. DO NOT USE. */
+  toughnessDamRate?: number;
 }
 
 export interface FormulaMultiplierBreakdown {
