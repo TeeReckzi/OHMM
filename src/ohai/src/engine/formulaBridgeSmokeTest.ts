@@ -196,9 +196,9 @@ assertIncludes(pvpMode.formulaWarnings, "PvP Mode", "pvp-mode: includes PvP mode
 
 // 10. Unmodeled item produces unresolved effect
 console.log("\n--- Unmodeled Item ---");
-const unmodeled = buildCalculationInputFromSelection(makeBuild(makeBuildFoodOverride("burn-dmg-stir-fry", "none")), "pve");
-// burn-dmg-stir-fry has keywordAssociations: ["burn"] → classified as partially-modeled (or unresolved in pipeline)
-assert(unmodeled.partiallyModeledEffects.length + unmodeled.unresolvedEffects.length + unmodeled.displayOnlyEffects.length > 0, "unmodeled: burn-dmg-stir-fry produces at least one effect entry (tolerant)");
+const unmodeled = buildCalculationInputFromSelection(makeBuild(makeBuildFoodOverride("anti-gravity-milkshake", "none")), "pve");
+// anti-gravity-milkshake has no statModifiers and no keywordAssociations → produces a display-only or unresolved effect entry
+assert(unmodeled.partiallyModeledEffects.length + unmodeled.unresolvedEffects.length + unmodeled.displayOnlyEffects.length > 0, "unmodeled: anti-gravity-milkshake produces at least one effect entry (tolerant)");
 
 // 11. Available mechanics are extracted from keyword associations
 console.log("\n--- Available Mechanics ---");

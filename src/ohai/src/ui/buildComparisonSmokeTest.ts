@@ -60,7 +60,7 @@ const TEST_BUILD_B: BuildSelection = {
  mods: { weapon: "violent", head: "precision", mask: "crit-boost", chest: "elemental-overload", gloves: "scorched", pants: "violent", boots: "precision" },
  cradle: { perks: ["status-enhancement", "heavy-weapon-mastery"] },
   deviant: { id: "pyro-dino", trait: "test" },
-  food: { food: "burn-dmg-stir-fry", drink: "anti-gravity-milkshake", chefRex: { enabled: false, bonusPercent: 0 } },
+  food: { food: "anti-gravity-milkshake", drink: "anti-gravity-milkshake", chefRex: { enabled: false, bonusPercent: 0 } },
 };
 
 // ---------------------------------------------------------------------------
