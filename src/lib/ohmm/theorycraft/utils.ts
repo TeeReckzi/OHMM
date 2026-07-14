@@ -1,4 +1,4 @@
-import type { BuildSelection, ArmorSelection } from '@/ohai/src/ui/types';
+import type { BuildSelection, ArmorSelection } from '@/domain/buildTypes';
 import type { ConfidenceLevel } from './types';
 
 /** Confidence hierarchy — lower index = higher trust */
@@ -102,38 +102,41 @@ export function computeCompleteness(build: BuildSelection): number {
   const TOTAL_SLOTS = 11;
   let filled = 0;
 
-  // Weapon: filled if blueprintId is non-empty
-  if (build.weapon && build.weapon.blueprintId) {
+  const isValidId = (id: unknown): boolean =>
+    typeof id === 'string' && id !== '' && id !== 'none';
+
+  // Weapon: filled if blueprintId is a real weapon (not 'none')
+  if (build.weapon && isValidId(build.weapon.blueprintId)) {
     filled++;
   }
 
-  // Armor: 6 slots — filled if piece has a non-empty id
+  // Armor: 6 slots — filled if piece has a real id
   const armorSlots: (keyof ArmorSelection)[] = ['head', 'mask', 'chest', 'gloves', 'pants', 'boots'];
   for (const slot of armorSlots) {
     const piece = build.armor?.[slot];
     if (piece) {
       const id = typeof piece === 'string' ? piece : piece.id;
-      if (id) filled++;
+      if (isValidId(id)) filled++;
     }
   }
 
-  // Mods: filled if mods have at least one non-empty entry
-  if (build.mods && Object.values(build.mods).some((m) => !!m)) {
+  // Mods: filled if mods have at least one real entry (not 'none')
+  if (build.mods && Object.values(build.mods).some((m) => isValidId(m))) {
     filled++;
   }
 
-  // Food: filled if food or drink is selected
-  if (build.food && (build.food.food || build.food.drink)) {
+  // Food: filled if food or drink is a real selection (not 'none')
+  if (build.food && (isValidId(build.food.food) || isValidId(build.food.drink))) {
     filled++;
   }
 
-  // Deviant: filled if id is non-empty
-  if (build.deviant && build.deviant.id) {
+  // Deviant: filled if id is a real selection (not 'none')
+  if (build.deviant && isValidId(build.deviant.id)) {
     filled++;
   }
 
-  // Cradle: filled if perks array has at least one entry
-  if (build.cradle && build.cradle.perks && build.cradle.perks.length > 0) {
+  // Cradle: filled if perks array has at least one real entry
+  if (build.cradle && build.cradle.perks && build.cradle.perks.filter((p) => isValidId(p)).length > 0) {
     filled++;
   }
 
